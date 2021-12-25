@@ -2159,7 +2159,7 @@ enlightenment = {
 
 	bonus = {
 		global_institution_spread = 0.3
-		idea_cost = 0.10
+		idea_cost = -0.10
 		religious_unity = -0.15
 	}
 
