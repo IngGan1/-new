@@ -1,0 +1,350 @@
+jewish_estate = {
+	icon = 12
+
+	# If true, country will get estate
+	trigger = {
+		if = {
+			limit = {
+				religion_group = dharmic
+			}
+			NOT = { has_estate = estate_brahmins }
+		}
+		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { government = native }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { has_estate = estate_dhimmi }
+		is_colonial_nation = no
+		OR = {
+			culture_group = germanic
+			culture_group = high_germanic
+			culture_group = scandinavian
+			culture_group = british
+			culture_group = gaelic
+			culture_group = latin
+			culture_group = iberian
+			culture_group = french
+			culture_group = oc
+			culture_group = south_slavic
+			culture_group = west_slavic
+			culture_group = carpathian
+			culture_group = east_slavic
+			culture_group = baltic
+			culture_group = byzantine
+			culture_group = caucasian
+			culture_group = turko_semitic
+			culture_group = maghrebi
+			culture_group = iranian
+			culture_group = sudanese
+			culture_group = cushitic
+		}
+		OR = {
+			NOT = { has_reform = celestial_empire }
+			has_dlc = "Mandate of Heaven"
+		}
+		OR = {
+			government = theocracy
+			is_nomad = no
+		}
+		NOT = { has_reform = revolutionary_empire_reform }
+		NOT = { religion = jewish }
+		NOT = {
+			AND = {
+				tag = SCO
+				NOT = { is_year = 1650 }
+			}
+		}
+		NOT = {
+			AND = {
+				tag = ICE
+				NOT = { is_year = 1625 }
+			}
+		}
+		NOT = {
+			AND = {
+				tag = HAB
+				NOT = { is_year = 1469 }
+			}
+		}
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = { 
+		global_own_trade_power = 0.25
+		papal_influence = -0.5
+		devotion = -0.5
+		church_power_modifier = -0.1
+		monthly_fervor_increase = -1
+		stability_cost_modifier = 0.1
+	}
+	country_modifier_neutral = {
+        global_trade_power = 0.1
+	}	
+	country_modifier_angry = {
+		global_trade_power = -0.1
+        global_tax_modifier = -0.1
+		devotion = 0.25
+		church_power_modifier = 0.12
+		monthly_fervor_increase = 0.5
+		stability_cost_modifier = -0.05
+		global_unrest = 1
+	}
+
+	land_ownership_modifier = {
+		church_loyalty_modifier = -0.5
+		burghers_loyalty_modifier = -0.1
+	}
+
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			NOT = { religion_group = jewish_group }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { religion = jewish }
+		}
+		modifier = {
+			factor = 1.2
+			base_tax = 10
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 8
+	influence_modifier = {
+		desc = jewish_influence_modifier_0
+		trigger = {
+			OR = {
+				dominant_religion = jewish
+				religion = jewish
+			}
+		}
+		influence = 50
+	}
+
+	influence_modifier = {
+		desc = jewish_influence_modifier_1
+		trigger = {
+			employed_advisor = {
+				religion = jewish
+			}
+		}
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_1
+		trigger = {
+			ruler_religion = jewish
+		}
+		influence = 20
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_3
+		trigger = {
+			is_in_deficit = yes
+		}
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_3
+		trigger = {
+			is_bankrupt = yes
+		}
+		influence = 15
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_3
+		trigger = {
+			inflation = 10
+		}
+		influence = 10
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_1
+		trigger = {
+			heir_religion = jewish
+		}
+		influence = 20
+	}
+
+
+	influence_modifier = {
+		desc = jewish_influence_modifier_1
+		trigger = {
+			consort_religion = jewish
+		}
+		influence = 15
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_2
+		trigger = {
+			NOT = {
+				OR = {
+					tag = POL
+					tag = PLC
+					tag = ENG
+					tag = GBR
+					tag = DAN
+					tag = NED
+					primary_culture = irish
+				}
+			}
+		}
+		influence = -5
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_7
+		trigger = {
+			OR = {
+				tag = SCO
+				tag = ICE
+			}
+			NOT = { total_development = 150 }
+		}
+		influence = -5
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_4
+		trigger = {
+			AND = {
+				is_year = 1650
+				NOT = { is_year = 1713 }
+			}
+		}
+		influence = 5
+	}
+	
+	influence_modifier = {
+		desc = jewish_influence_modifier_5
+		trigger = {
+			AND = {
+				is_year = 1500
+				NOT = { is_year = 1650 }
+				tag = TUR
+			}
+		}
+		influence = 5
+	}
+	
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_0
+		trigger = {
+			OR = {
+				dominant_religion = jewish
+				religion = jewish
+			}
+		}
+		loyalty = 75
+	}
+
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_1
+		trigger = {
+			OR = {
+				tag = POL
+				tag = PLC
+				tag = ENG
+				tag = GBR
+				tag = DAN
+				tag = NED
+				primary_culture = irish
+			}
+		}
+		loyalty = 10
+	}
+	
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_1
+		trigger = {
+			OR = {
+				tag = RUS
+				tag = LIT
+			}
+		}
+		loyalty = 5
+	}
+
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_3
+		trigger = {
+			OR = {
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				tag = PAP
+				tag = PRO
+				tag = POR
+				tag = FRA
+			}
+		}
+		loyalty = -5
+	}
+
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_2
+		trigger = {
+			jewish = 0
+		}
+		loyalty = 5
+	}	
+
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_2
+		trigger = {
+			jewish = 1
+		}
+		loyalty = 10
+	}	
+
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_2
+		trigger = {
+			jewish = 2
+		}
+		loyalty = 20
+	}	
+	
+	loyalty_modifier = {
+		desc = jewish_loyalty_modifier_2
+		trigger = {
+			jewish = 3
+		}
+		loyalty = 40
+	}	
+	
+	contributes_to_curia_treasury = no
+	color = { 51 153 255 }
+
+	privileges = {
+		tax_jewish_privilege
+		autonomy_jewish_privilege
+		acuse_jewish_privilege
+		jewish_trade_exemptions
+		naturalization_rights
+	}
+
+	agendas = {
+		jewish_estate_tolerance
+		jewish_estate_recover_stability
+		jewish_estate_increase_stability
+		jewish_estate_fire_advisor
+		jewish_estate_pay_off_loans
+		jewish_estate_increase_trade_power_in_X
+		jewish_estate_get_cash
+	}
+	influence_from_dev_modifier = 1
+}

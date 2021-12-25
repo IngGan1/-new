@@ -1,0 +1,15 @@
+#Muhazi
+
+owner = RWA
+controller = RWA
+add_core = RWA
+culture = rwandan
+religion = shamanism #Fetishism
+capital = "Muhazi"
+trade_goods = zinc
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african

@@ -1,0 +1,16 @@
+﻿l_english:
+ DEVASTATION_FROM_MIGRATORY_TRIBE:1 "Ž´qÈ )¼©º: $VAL|-2$\n"
+ DEVELOPMENT_FROM_MIGRATORY_TRIBE:0 "$PROV|Y$ ÀÉíÅÐÅÁ )¼©º: $VAL|+2$\n"
+ TRIBE_ADM_DEV:0 "$VAL|2$ £adm£"
+ TRIBE_DIP_DEV:0 "$VAL|2$ £dip£"
+ TRIBE_MIL_DEV:0 "$VAL|2$ £mil£"
+ CAN_NOT_EXPLOIT_MIGRATORY_TRIBE:0 "§RtÇüÈ Ž´qÈNÇ ¬¼Ä³ )ÌèÍ|¹ ¬À©Æ`Õ Â ÆÅµÂÈ²ä².§!"
+ IMPPR_MIGRATORY_TRIBE:0 "§RtÇüÈ Ž´qÈNÇ ÀÉíÅDÇ ¬¼`Õ Â ÆÅµÂÈ²ä².§!"
+ PROVINCE_TRIBAL_LAND:0 "$OWNER|Y$ !ÎNÇ $PROV|Y$ ÀÉíÅDÇ Æ ÑXÇ |ÇŽ´j¸ ô¼à¬ ˆÇµÂÈ²ä²."
+ MIGRATE_PROVINCE_NOT_ADJECENT:0 "$PROV|Y$ ÀÉíÅNÇ ù²àÂXÇ Ž´qÈü¬ xÇÈXÕÀÉ JÅXÅµÂÈ²ä²."
+ MIGRATE_PROVINCE_SETTLED:0 "$PROV|Y$ ÀÉíÅNÇ tÇø» $OWNER|Y$ !ÎtÇ È)ÌˆÕµÂÈ²ä²."
+ PROVINCE_MIGRATE_TOOLTIP:0 "$PROV|Y$ ÀÉíÅ<Çj¸ tÇüÈ"
+ MIGRATE_PROVINCE_NEED:0 "tÇüÈXÕ2¸tº $COST|Y$ $POWER|$ DÕ”Æ.\n"
+ MIGRATE_PROVINCE_COST:0 "$COST|Y$ $POWER|$ ŒÁ¨º\n"
+ CONFIRM_MIGRATE:0 "tÇüÈ UÖÈ"
+ CONFIRM_MIGRATE_TEXT:0 "$PROV|Y$ ÀÉíÅ<Çj¸ tÇüÈXÕÜÂ ¬µÂÈ²L®?\n"

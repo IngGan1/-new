@@ -1,0 +1,53 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Hep-hep Riots
+	id = jewish_estates_events.11
+	title = "jewish_estates_events.11.t"
+	desc = "jewish_estates_events.11.d"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1819
+			OR = {
+				is_part_of_hre = yes
+				tag = GER
+				tag = PRU
+			}
+		}
+	}
+	
+	immediate  = {
+		random_owned_province = { leadered_peasant_rebels = 5 }
+		ROOT = { add_stability = -1 }
+	}
+	
+	option = {
+		name = "SENDMILITIA_J_E"
+		add_estate_loyalty_modifier = {
+			estate = jewish_estate
+			loyalty = 5
+			duration = 7300
+		}
+		every_owned_province = { add_unrest = 1 }
+		ai_chance = { factor = 3 }
+	}
+	
+	option = {
+		name = "SENDNOONE_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -20
+		}
+		ai_chance = { factor = 1 }
+	}
+}

@@ -1,0 +1,38 @@
+﻿l_english:
+ industrial_age:0 "°ÀÅÅTÖXÇ ÜÂ³"
+ industrial_age_desc:0 "É0® 0®­ü¬ 0®Ä¬ õ¬ÅÅXÇ ¼ì²j¸ °ÀÅÅ ÝÀ°ÀtÇ ±ÅÅXÇ ÝÀ°ÀDÇ ¥²¬XÕŒ¬ ´ÈÅµÂÈ²ä². m­ÈDÇ ±˜°Ü´”² õ¬°ÀˆÔXÇ p¬˜·NÆ hÕØ® |Ç(¸XÇ Ü­È¬ ÐÓÀÉ´tºÁ 8ÁÄ¬”² È(Ì Ç.ÇüÈXÇÈxÇ Ë¬È ´ÌÈj¸ ¬Œ¬ ´ÈÅµÂÈ²ä²."
+ 
+ obj_industrial_railroads:0 " ÌÄ³Ý¹"
+ obj_industrial_modern_industry:0 "Ö³°ÀÅÅ"
+ obj_industrial_african_colonies:0 "DÅÕ¬¹tÎ ÁÇÈÐ"
+ obj_industrial_europe_colonies:0 "íÅ¬ÀXÇ íÅÈ"
+ obj_industrial_four_continents:0 "ÀÉÀÉ JÅ”² ÜÐ‘Å"
+ obj_industrial_developed_provinces:0 "1Á¥ÇXÕ”² Ä³ÜÂ"
+ obj_industrial_social_welfare:0 "¬ÀŒÖ õ¼ÀÉ"
+ obj_industrial_modern_resources:0 "àÂÇÐÆ 4»íÅ"
+ obj_industrial_railroads_desc:0 "jÍŒÁ 15¬XÇ  ÌÄ³|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ obj_industrial_modern_industry_desc:0 "jÍŒÁ 5¬XÇ ©Æ­j¸ ¶”² .ÇÈDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ obj_industrial_african_colonies_desc:0 "ÉYÅ DÅÕ¬¹tÎÐÅ 20¬XÇ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ÀÉ0¼XÕíÂÜÂ2Æ."
+ obj_industrial_europe_colonies_desc:0 ".Çý·ÐÅ 20¬XÇ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ÀÉ0¼XÕíÂÜÂ2Æ."
+ obj_industrial_four_continents_desc:0 "ä²x¹ 4¬XÇ ³Y¹ÐÅ ¬¬XÇ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ÀÉ0¼XÕíÂÜÂ2Æ."
+ obj_industrial_developed_provinces_desc:0 "¬¼Ä³ 50 tÇÁÀXÇ ÀÉíÅDÇ 5ó¬ ŒÁ.ÇXÕà¬ ÀÉ0¼XÕíÂÜÂ2Æ."
+ obj_industrial_social_welfare_desc:0 "¬ÀŒÖ ¬ÖDÇ iÕÄ¬ 6¸¨¼ tÇÁÀ ì²1ÁXÕíÂÜÂ2Æ."
+ obj_industrial_modern_resources_desc:0 "ÁÄÐ,Á.Ç,à¬4» É XÕ˜°XÇ ÝÀ°À üÈÄ³m­ ô¼±²Â|¹ »Å<ÇíÂÜÂ2Æ."
+ ab_industrial_construction:0 "t¬2Á °ÀÅÅ"
+ ab_industrial_railroad:0 " ÌÄ³ ´"
+ railroad_ab_industrial:0 "ÂÄ³ÐÅ §Y ÌÄ³§!|¹ t¬2ÁXÕà¬ §Y¬¼Ä³ 40§! tÇÁÀXÇ ŒÁ.ÇÀÉíÅÐÅ §Y ÌÄ³ ´§! À¼Ù³XÎ|¹ ”Í¬jÕä²."
+ railroad_building_slot:0 " ÌÄ³ ´"
+ desc_railroad_building_slot:0 "tÇ ÀÉíÅÐÅ §Y ÌÄ³§!|¹ t¬2Á ¬¥²XÕŒ¬ jÕä²."
+ ab_industrial_colonization:0 "8ÁÁüÈXÇ"
+ ab_industrial_child_labour:0 "DÅÙ³ x±Ù³"
+ ab_industrial_socialist:0 "¬ÀŒÖüÈXÇ"
+ age_ab_socialist:0 "§Y¬ÀŒÖ ¬Ö tÇ²¼¸Ò§!XÇ ¼ÝÀ H¾Ä³|¹ Ä¬°À`Õ Lµ §YUÆXÇ ‰ÕÈ¥²%¸§!tÇ 2 T³ ’±NÇ ƒ¬<Çj¸ Ä¬°À´ä²."
+ ab_industrial_abolitionism:0 "x±ÆÈ ÐÓÀÉ"
+ ab_industrial_grand_artillery:0 "ÑÉÉ ìÓTÖ"
+ ab_industrial_german_tech:0 "”ÆjÕ È²jÏ|·°Æ²Â ðÓ Ü´|·tÇÈ"
+ ab_industrial_usa_production:0 "ø»m­<Çj¸XÇ tÇü»"
+ ab_industrial_japan_revolution:0 ".ÇàÂ ¬Ö"
+ japan_ab_industrial:0 "0®.ÂŒ­ü¬ .ÇÛ²DÇ §YÁl­Œ­§!<Çj¸ À¼Ë¬jÕä²."
+ ab_industrial_italian_unification:0 "µÑ|Ç tÇÈÐ¬¹DÅ"
+
+ russian_states:0 "ì·ÜÂDÅ Èm­"

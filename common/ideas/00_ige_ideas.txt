@@ -1,0 +1,112 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do is only used to determine which idea group is picked if AI_USES_HISTORICAL_IDEA_GROUPS define is 0, OR start is custom/random
+# ai never picks an idea that resolves to ai_will_do = 0, even if AI_USES_HISTORICAL_IDEA_GROUPS = 1
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+
+piracy_idea_groups_expanded = {
+	category = MIL
+
+	bonus = {
+		republican_tradition = 0.25
+	}
+	
+	trigger = {
+		has_reform = pirate_republic_reform
+	}
+
+	loot_for_all = {
+		loot_amount = 0.5
+		land_morale = 0.1
+	}
+	
+	veteran_seadogs = {
+		navy_tradition = 0.5
+		leader_naval_fire = 1
+	}
+
+	black_flag_raiders = {
+		privateer_efficiency = 0.33
+	}
+
+	refugee_shipwrights = {
+		sea_repair = yes 
+	}
+
+	defending_the_coasts = {
+		own_coast_naval_combat_bonus = 1
+	}
+
+	organized_seaman_ranks = {
+		allowed_marine_fraction = 0.33
+		global_sailors_modifier = 0.25
+	}
+
+	pioneered_grappling_hooks = {
+		capture_ship_chance = 0.25
+	}
+
+	ai_will_do = {
+		factor = 20
+	}
+}
+
+power_projection_idea_groups_expanded = {
+	category = DIP
+
+	bonus = {
+		accept_vassalization_reasons = 30
+	}
+
+	trigger = {
+		always = yes
+	}
+	
+	long_echo = {
+		power_projection_from_insults = 1
+	}
+	soft_power = {
+		liberty_desire_from_subject_development = -0.33
+	}
+	foreign_influence = {
+		spy_offence = 0.33
+		discovered_relations_impact = -0.5
+	}
+	global_navy = {
+		global_naval_engagement_modifier = 0.2
+	}
+	shock_marines = {
+		allowed_marine_fraction = 0.20
+		global_sailors_modifier = 0.25
+	}
+	influencial_traders = {
+		placed_merchant_power = 10
+		mercantilism_cost = -0.25
+	}
+	far_and_wide = {
+		global_ship_trade_power = 0.33
+		trade_range_modifier = 0.25
+	}
+	
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.33
+			NOT = { trade_income_percentage = 0.33 }
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.25
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 3
+			trade_income_percentage = 0.33
+		}
+	}
+}

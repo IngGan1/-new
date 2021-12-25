@@ -1,0 +1,4145 @@
+namespace = vic_social
+
+country_event = {
+	id = vic_social.1
+	title = "vic_social.1.t"
+	desc = "vic_social.1.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		current_age = industrial_age
+		NOT = {
+			has_country_flag = social_reforms_activated
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_reforms_activated
+			set_variable = {
+ 				which = social_min_wage
+  				value = 0
+			}
+			set_variable = {
+ 				which = social_max_workhours
+  				value = 0
+			}
+			set_variable = {
+ 				which = social_unemployment
+  				value = 0
+			}
+			set_variable = {
+ 				which = social_safety
+  				value = 0
+			}
+			set_variable = {
+ 				which = social_pension
+  				value = 0
+			}
+			set_variable = {
+ 				which = social_health
+  				value = 0
+			}
+		}
+	}
+
+	option = {
+		name = "vic_social.1.a"
+		trigger = { NOT = { tag = SWE} }
+		set_country_flag = vic_social_reform_decision
+	}
+	option = {
+		name = "vic_social.1.b"
+		trigger = { tag = SWE }
+		set_country_flag = vic_social_reform_decision
+	}		
+}
+
+
+###############################
+##### Minimum Wage events #####
+###############################
+
+
+country_event = {
+	id = vic_social.2
+	title = "vic_social.2.t"
+	desc = "vic_social.2.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_min_wage
+    					value = 2
+    				}	
+				}
+			}
+		}	
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_10	
+		}
+			
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_10
+			clr_country_flag = social_min_wage_20
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.2.a"
+		add_country_modifier = {
+			name = social_min_wage_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.3
+	title = "vic_social.3.t"
+	desc = "vic_social.3.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_min_wage
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_min_wage
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_21
+			clr_country_flag = social_min_wage_20
+			clr_country_flag = social_min_wage_31
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.3.a"
+		add_country_modifier = {
+			name = social_min_wage_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.4
+	title = "vic_social.4.t"
+	desc = "vic_social.4.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_min_wage
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_32
+			clr_country_flag = social_min_wage_31
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.4.a"
+		add_country_modifier = {
+			name = social_min_wage_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.5
+	title = "vic_social.5.t"
+	desc = "vic_social.5.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    				which = social_min_wage
+    				value = 1
+				}
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_31
+			clr_country_flag = social_min_wage_30
+			clr_country_flag = social_min_wage_21
+			clr_country_flag = social_min_wage_32
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.5.a"
+		add_country_modifier = {
+			name = social_min_wage_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_1
+			remove_country_modifier = social_min_wage_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.6
+	title = "vic_social.6.t"
+	desc = "vic_social.6.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_min_wage
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_min_wage
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_20
+			clr_country_flag = social_min_wage_10
+			clr_country_flag = social_min_wage_21
+			clr_country_flag = social_min_wage_30
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.6.a"
+		add_country_modifier = {
+			name = social_min_wage_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_1
+			remove_country_modifier = social_min_wage_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.7
+	title = "vic_social.7.t"
+	desc = "vic_social.7.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_min_wage
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_min_wage
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_min_wage_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_30
+			clr_country_flag = social_min_wage_20
+			clr_country_flag = social_min_wage_31
+			clr_country_flag = social_min_wage_00
+		}
+	}
+
+	option = {
+		name = "vic_social.7.a"
+		add_country_modifier = {
+			name = social_min_wage_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.38
+	title = "vic_social.38.t"
+	desc = "vic_social.38.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_min_wage
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 3
+						}
+					}
+						any_subject_country = {
+						check_variable = {
+    						which = social_min_wage
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_min_wage
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_min_wage
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_min_wage_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_min_wage_00
+			clr_country_flag = social_min_wage_10
+			clr_country_flag = social_min_wage_21
+			clr_country_flag = social_min_wage_32
+		}
+	}
+
+	option = {
+		name = "vic_social.38.a"
+		hidden_effect = {
+			remove_country_modifier = social_min_wage_1
+			remove_country_modifier = social_min_wage_2
+			remove_country_modifier = social_min_wage_3
+		}
+	}
+}
+
+
+####################################
+##### Maximum Workhours events #####
+####################################
+
+
+country_event = {
+	id = vic_social.8
+	title = "vic_social.8.t"
+	desc = "vic_social.8.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_max_workhours
+    					value = 2
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_10
+			clr_country_flag = social_max_workhours_20
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.8.a"
+		add_country_modifier = {
+			name = social_max_workhours_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.9
+	title = "vic_social.9.t"
+	desc = "vic_social.9.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_max_workhours
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_max_workhours
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_21
+			clr_country_flag = social_max_workhours_20
+			clr_country_flag = social_max_workhours_31
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.9.a"
+		add_country_modifier = {
+			name = social_max_workhours_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.10
+	title = "vic_social.10.t"
+	desc = "vic_social.10.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_max_workhours
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_32
+			clr_country_flag = social_max_workhours_31
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.10.a"
+		add_country_modifier = {
+			name = social_max_workhours_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.11
+	title = "vic_social.11.t"
+	desc = "vic_social.11.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_max_workhours
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_31
+			clr_country_flag = social_max_workhours_21
+			clr_country_flag = social_max_workhours_30
+			clr_country_flag = social_max_workhours_32
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.11.a"
+		add_country_modifier = {
+			name = social_max_workhours_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_1
+			remove_country_modifier = social_max_workhours_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.12
+	title = "vic_social.12.t"
+	desc = "vic_social.12.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_max_workhours
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_max_workhours
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_20
+			clr_country_flag = social_max_workhours_10
+			clr_country_flag = social_max_workhours_30
+			clr_country_flag = social_max_workhours_21
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.12.a"
+		add_country_modifier = {
+			name = social_max_workhours_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_1
+			remove_country_modifier = social_max_workhours_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.13
+	title = "vic_social.13.t"
+	desc = "vic_social.13.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_max_workhours
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_max_workhours
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_max_workhours_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_30
+			clr_country_flag = social_max_workhours_20
+			clr_country_flag = social_max_workhours_31
+			clr_country_flag = social_max_workhours_00
+		}
+	}
+
+	option = {
+		name = "vic_social.13.a"
+		add_country_modifier = {
+			name = social_max_workhours_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.39
+	title = "vic_social.39.t"
+	desc = "vic_social.39.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_max_workhours
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 3
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_max_workhours
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_max_workhours
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_max_workhours
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_max_workhours_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_max_workhours_00
+			clr_country_flag = social_max_workhours_10
+			clr_country_flag = social_max_workhours_21
+			clr_country_flag = social_max_workhours_32
+		}
+	}
+
+	option = {
+		name = "vic_social.39.a"
+		hidden_effect = {
+			remove_country_modifier = social_max_workhours_1
+			remove_country_modifier = social_max_workhours_2
+			remove_country_modifier = social_max_workhours_3
+		}
+	}
+}
+
+
+#########################################
+##### Unemployment Subsidies events #####
+#########################################
+
+
+country_event = {
+	id = vic_social.14
+	title = "vic_social.14.t"
+	desc = "vic_social.14.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_unemployment
+    					value = 2
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_10
+			clr_country_flag = social_unemployment_20
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.14.a"
+		add_country_modifier = {
+			name = social_unemployment_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.15
+	title = "vic_social.15.t"
+	desc = "vic_social.15.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_unemployment
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_unemployment
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_21
+			clr_country_flag = social_unemployment_20
+			clr_country_flag = social_unemployment_31
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.15.a"
+		add_country_modifier = {
+			name = social_unemployment_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.16
+	title = "vic_social.16.t"
+	desc = "vic_social.16.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_unemployment
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_32
+			clr_country_flag = social_unemployment_31
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.16.a"
+		add_country_modifier = {
+			name = social_unemployment_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.17
+	title = "vic_social.17.t"
+	desc = "vic_social.17.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_unemployment
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_31
+			clr_country_flag = social_unemployment_21
+			clr_country_flag = social_unemployment_30
+			clr_country_flag = social_unemployment_32
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.17.a"
+		add_country_modifier = {
+			name = social_unemployment_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_1
+			remove_country_modifier = social_unemployment_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.18
+	title = "vic_social.18.t"
+	desc = "vic_social.18.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_unemployment
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_unemployment
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_20
+			clr_country_flag = social_unemployment_10
+			clr_country_flag = social_unemployment_21
+			clr_country_flag = social_unemployment_30
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.18.a"
+		add_country_modifier = {
+			name = social_unemployment_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_1
+			remove_country_modifier = social_unemployment_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.19
+	title = "vic_social.19.t"
+	desc = "vic_social.19.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_unemployment
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_unemployment
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_unemployment_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_30
+			clr_country_flag = social_unemployment_20
+			clr_country_flag = social_unemployment_31
+			clr_country_flag = social_unemployment_00
+		}
+	}
+
+	option = {
+		name = "vic_social.19.a"
+		add_country_modifier = {
+			name = social_unemployment_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.40
+	title = "vic_social.40.t"
+	desc = "vic_social.40.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_unemployment
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 3
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_unemployment
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_unemployment
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_unemployment
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_unemployment_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_unemployment_00
+			clr_country_flag = social_unemployment_10
+			clr_country_flag = social_unemployment_21
+			clr_country_flag = social_unemployment_32
+		}
+	}
+
+	option = {
+		name = "vic_social.40.a"
+		hidden_effect = {
+			remove_country_modifier = social_unemployment_1
+			remove_country_modifier = social_unemployment_2
+			remove_country_modifier = social_unemployment_3
+		}
+	}
+}
+
+
+#####################################
+##### Safety Regulations events #####
+#####################################
+
+
+country_event = {
+	id = vic_social.20
+	title = "vic_social.20.t"
+	desc = "vic_social.20.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_safety
+    					value = 2
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_10
+			clr_country_flag = social_safety_20
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.20.a"
+		add_country_modifier = {
+			name = social_safety_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.21
+	title = "vic_social.21.t"
+	desc = "vic_social.21.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_safety
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_safety
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_21
+			clr_country_flag = social_safety_20
+			clr_country_flag = social_safety_31
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.21.a"
+		add_country_modifier = {
+			name = social_safety_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.22
+	title = "vic_social.22.t"
+	desc = "vic_social.22.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_safety
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_32
+			clr_country_flag = social_safety_31
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.22.a"
+		add_country_modifier = {
+			name = social_safety_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.23
+	title = "vic_social.23.t"
+	desc = "vic_social.23.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_safety
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_31
+			clr_country_flag = social_safety_21
+			clr_country_flag = social_safety_30
+			clr_country_flag = social_safety_32
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.23.a"
+		add_country_modifier = {
+			name = social_safety_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_1
+			remove_country_modifier = social_safety_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.24
+	title = "vic_social.24.t"
+	desc = "vic_social.24.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_safety
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_safety
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_20
+			clr_country_flag = social_safety_10
+			clr_country_flag = social_safety_30
+			clr_country_flag = social_safety_21
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.24.a"
+		add_country_modifier = {
+			name = social_safety_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_1
+			remove_country_modifier = social_safety_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.25
+	title = "vic_social.25.t"
+	desc = "vic_social.25.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_safety
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_safety
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_safety_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_30
+			clr_country_flag = social_safety_20
+			clr_country_flag = social_safety_31
+			clr_country_flag = social_safety_00
+		}
+	}
+
+	option = {
+		name = "vic_social.25.a"
+		add_country_modifier = {
+			name = social_safety_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_safety_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.41
+	title = "vic_social.41.t"
+	desc = "vic_social.41.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_safety
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 3
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_safety
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_safety
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_safety
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_safety_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_safety_00
+			clr_country_flag = social_safety_10
+			clr_country_flag = social_safety_21
+			clr_country_flag = social_safety_32
+		}
+	}
+
+	option = {
+		name = "vic_social.41.a"
+		hidden_effect = {
+			remove_country_modifier = social_safety_1
+			remove_country_modifier = social_safety_2
+			remove_country_modifier = social_safety_3
+		}
+	}
+}
+
+##########################
+##### Pension events #####
+##########################
+
+
+country_event = {
+	id = vic_social.26
+	title = "vic_social.26.t"
+	desc = "vic_social.26.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_pension
+    					value = 2
+    				}	
+				}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_10
+			clr_country_flag = social_pension_20
+			clr_country_flag = social_pension_00
+		}
+	}
+
+	option = {
+		name = "vic_social.26.a"
+		add_country_modifier = {
+			name = social_pension_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.27
+	title = "vic_social.27.t"
+	desc = "vic_social.27.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_pension
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_pension
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_21
+			clr_country_flag = social_pension_20
+			clr_country_flag = social_pension_31
+			clr_country_flag = social_pension_00
+		}
+	}
+
+	option = {
+		name = "vic_social.27.a"
+		add_country_modifier = {
+			name = social_pension_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.28
+	title = "vic_social.28.t"
+	desc = "vic_social.28.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_pension
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_32
+			clr_country_flag = social_pension_31
+			clr_country_flag = social_pension_00
+		}
+	}
+
+	option = {
+		name = "vic_social.28.a"
+		add_country_modifier = {
+			name = social_pension_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.29
+	title = "vic_social.29.t"
+	desc = "vic_social.29.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_pension
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_31
+			clr_country_flag = social_pension_21
+			clr_country_flag = social_pension_30
+			clr_country_flag = social_pension_32
+			clr_country_flag = social_pension_00
+		}
+	}
+
+	option = {
+		name = "vic_social.29.a"
+		add_country_modifier = {
+			name = social_pension_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_1
+			remove_country_modifier = social_pension_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.30
+	title = "vic_social.30.t"
+	desc = "vic_social.30.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_pension
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_pension
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_20
+			clr_country_flag = social_pension_10
+			clr_country_flag = social_pension_30
+			clr_country_flag = social_pension_21
+			clr_country_flag = social_pension_00
+		}
+	}
+
+	option = {
+		name = "vic_social.30.a"
+		add_country_modifier = {
+			name = social_pension_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_1
+			remove_country_modifier = social_pension_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.31
+	title = "vic_social.31.t"
+	desc = "vic_social.31.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_pension
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_pension
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_pension_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_30
+			clr_country_flag = social_pension_20
+			clr_country_flag = social_pension_31
+			clr_country_flag = social_pension_00	
+		}
+	}
+
+	option = {
+		name = "vic_social.31.a"
+		add_country_modifier = {
+			name = social_pension_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_pension_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.42
+	title = "vic_social.42.t"
+	desc = "vic_social.42.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_pension
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 3
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_pension
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_pension
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_pension
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_pension_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_pension_00
+			clr_country_flag = social_pension_10
+			clr_country_flag = social_pension_21
+			clr_country_flag = social_pension_32
+		}
+	}
+
+	option = {
+		name = "vic_social.42.a"
+		hidden_effect = {
+			remove_country_modifier = social_pension_1
+			remove_country_modifier = social_pension_2
+			remove_country_modifier = social_pension_3
+		}
+	}
+}
+
+##############################
+##### Health Care events #####
+##############################
+
+
+country_event = {
+	id = vic_social.32
+	title = "vic_social.32.t"
+	desc = "vic_social.32.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 1
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 1
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 1
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 2
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 2
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_health
+    					value = 2
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_10
+			clr_country_flag = social_health_20
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.32.a"
+		add_country_modifier = {
+			name = social_health_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.33
+	title = "vic_social.33.t"
+	desc = "vic_social.33.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_health
+    					value = 3
+    				}	
+				}
+			}
+		}
+		check_variable = {
+    		which = social_health
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_21
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_21
+			clr_country_flag = social_health_20
+			clr_country_flag = social_health_31
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.33.a"
+		add_country_modifier = {
+			name = social_health_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.34
+	title = "vic_social.34.t"
+	desc = "vic_social.34.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_health
+    		value = 2
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 3
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_32
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_32
+			clr_country_flag = social_health_31
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.34.a"
+		add_country_modifier = {
+			name = social_health_1
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.35
+	title = "vic_social.35.t"
+	desc = "vic_social.35.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+    			}	
+			}
+		}
+		check_variable = {
+    		which = social_health
+    		value = 1
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 2
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_31
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_31
+			clr_country_flag = social_health_21
+			clr_country_flag = social_health_30
+			clr_country_flag = social_health_32
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.35.a"
+		add_country_modifier = {
+			name = social_health_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_1
+			remove_country_modifier = social_health_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.36
+	title = "vic_social.36.t"
+	desc = "vic_social.36.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+				}
+			}	
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+    			}	
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 2
+    			}	
+			}
+		}
+		NOT = {
+			OR = {
+				any_neighbor_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 3
+    				}
+				}
+				any_rival_country = {
+    				check_variable = {
+        				which = social_health
+        				value = 3
+    				}
+				}
+				any_subject_country = {
+					check_variable = {
+    					which = social_health
+    					value = 3
+    				}	
+				}
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_20
+			clr_country_flag = social_health_10
+			clr_country_flag = social_health_21
+			clr_country_flag = social_health_30
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.36.a"
+		add_country_modifier = {
+			name = social_health_2
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_1
+			remove_country_modifier = social_health_3
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.37
+	title = "vic_social.37.t"
+	desc = "vic_social.37.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			any_neighbor_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_rival_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+				}
+			}
+			any_subject_country = {
+				check_variable = {
+    				which = social_health
+    				value = 3
+    			}	
+			}
+		}
+		NOT = {
+    		check_variable = {
+        		which = social_health
+        		value = 1
+    		}
+		}
+		NOT = {
+			has_country_flag = social_health_30
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_30
+			clr_country_flag = social_health_20
+			clr_country_flag = social_health_31
+			clr_country_flag = social_health_00
+		}
+	}
+
+	option = {
+		name = "vic_social.37.a"
+		add_country_modifier = {
+			name = social_health_3
+			duration = -1
+		}
+		hidden_effect = {
+			remove_country_modifier = social_health_2
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.43
+	title = "vic_social.43.t"
+	desc = "vic_social.43.d"
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_country_flag = social_reforms_activated
+		OR = {
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_health
+    						value = 2
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_health
+    						value = 2
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_health
+    						value = 2
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_health
+        			value = 1
+    			}
+			}
+			AND = {
+				NOT = {
+					any_neighbor_country = {
+						check_variable = {
+    						which = social_health
+    						value = 3
+						}
+					}
+					any_rival_country = {
+						check_variable = {
+    						which = social_health
+    						value = 3
+						}
+					}
+					any_subject_country = {
+						check_variable = {
+    						which = social_health
+    						value = 3
+    					}	
+					}
+				}
+    			check_variable = {
+        			which = social_health
+        			value = 2
+    			}
+			}
+			check_variable = {
+        		which = social_health
+        		value = 3
+    		}
+		}	
+		NOT = {
+			has_country_flag = social_health_00
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = social_health_00
+			clr_country_flag = social_health_10
+			clr_country_flag = social_health_21
+			clr_country_flag = social_health_32
+		}
+	}
+
+	option = {
+		name = "vic_social.43.a"
+		hidden_effect = {
+			remove_country_modifier = social_health_1
+			remove_country_modifier = social_health_2
+			remove_country_modifier = social_health_3
+		}
+	}
+}
+
+
+############################
+##### Reforms by Ruler #####
+############################
+
+country_event = {
+	id = vic_social.44
+	title = "vic_social.44.t"
+	desc = "vic_social.44.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_min_wage_10
+			has_country_flag = social_min_wage_21
+			has_country_flag = social_min_wage_32
+			has_country_flag = social_min_wage_20
+			has_country_flag = social_min_wage_31
+			has_country_flag = social_min_wage_30
+		}
+		not = { has_country_modifier = social_min_wage_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.44.a"
+		custom_tooltip = vic_social_min_wage
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = social_min_wage
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_min_wage_l3
+					duration = -1
+				}
+				remove_country_modifier = social_min_wage_l2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = social_min_wage
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_min_wage_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_min_wage_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_min_wage_l1
+					duration = -1
+				}
+			}
+		}	
+		change_variable = {
+			which = social_min_wage
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "vic_social.44.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.45
+	title = "vic_social.45.t"
+	desc = "vic_social.45.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_max_workhours_10
+			has_country_flag = social_max_workhours_21
+			has_country_flag = social_max_workhours_32
+			has_country_flag = social_max_workhours_20
+			has_country_flag = social_max_workhours_31
+			has_country_flag = social_max_workhours_30
+		}
+		not = { has_country_modifier = social_max_workhours_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.45.a"
+		custom_tooltip = vic_social_max_workhours
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = social_max_workhours
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_max_workhours_l3
+					duration = -1
+				}
+				remove_country_modifier = social_max_workhours_l2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = social_max_workhours
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_max_workhours_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_max_workhours_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_max_workhours_l1
+					duration = -1
+				}
+			}
+		}	
+		change_variable = {
+			which = social_max_workhours
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "vic_social.45.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.46
+	title = "vic_social.46.t"
+	desc = "vic_social.46.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_unemployment_10
+			has_country_flag = social_unemployment_21
+			has_country_flag = social_unemployment_32
+			has_country_flag = social_unemployment_20
+			has_country_flag = social_unemployment_31
+			has_country_flag = social_unemployment_30
+		}
+		not = { has_country_modifier = social_unemployment_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.46.a"
+		custom_tooltip = vic_social_unemployment
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = social_unemployment
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_unemployment_l3
+					duration = -1
+				}
+				remove_country_modifier = social_unemployment_l2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = social_unemployment
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_unemployment_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_unemployment_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_unemployment_l1
+					duration = -1
+				}
+			}
+		}	
+		change_variable = {
+			which = social_unemployment
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "vic_social.46.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.47
+	title = "vic_social.47.t"
+	desc = "vic_social.47.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_safety_10
+			has_country_flag = social_safety_21
+			has_country_flag = social_safety_32
+			has_country_flag = social_safety_20
+			has_country_flag = social_safety_31
+			has_country_flag = social_safety_30
+		}
+		not = { has_country_modifier = social_safety_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.47.a"
+		custom_tooltip = vic_social_safety
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = social_safety
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_safety_l3
+					duration = -1
+				}
+				remove_country_modifier = social_safety_l2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = social_safety
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_safety_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_safety_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_safety_l1
+					duration = -1
+				}
+			}
+		}	
+		change_variable = {
+			which = social_safety
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "vic_social.47.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.48
+	title = "vic_social.48.t"
+	desc = "vic_social.48.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_pension_10
+			has_country_flag = social_pension_21
+			has_country_flag = social_pension_32
+			has_country_flag = social_pension_20
+			has_country_flag = social_pension_31
+			has_country_flag = social_pension_30
+		}
+		not = { has_country_modifier = social_pension_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.48.a"
+		custom_tooltip = vic_social_pension
+		hidden_effect = {
+			if = {
+				limit = {	
+					check_variable = {
+						which = social_pension
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_pension_l3
+					duration = -1
+				}
+				remove_country_modifier = social_pension_l2
+			}
+			else_if = {
+				limit = {
+				 	check_variable = {
+						which = social_pension
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_pension_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_pension_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_pension_l1
+					duration = -1
+				}
+			}
+		}
+		change_variable = {
+			which = social_pension
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}			
+	}
+	option = {
+		name = "vic_social.48.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_social.49
+	title = "vic_social.49.t"
+	desc = "vic_social.49.d"
+	picture = PARLIAMENT_eventPicture
+
+	trigger = {
+		is_at_war = no
+		OR = {
+			has_country_flag = social_health_10
+			has_country_flag = social_health_21
+			has_country_flag = social_health_32
+			has_country_flag = social_health_20
+			has_country_flag = social_health_31
+			has_country_flag = social_health_30
+		}
+		not = { has_country_modifier = social_health_l3 }
+	}
+
+	mean_time_to_happen = {
+		months = 48
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 2 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 3 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 5 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { adm = 6 }
+		}
+		modifier = {
+			factor = 0.445
+			has_country_flag = age_ab_socialist
+		}
+	}
+
+	option = {
+		name = "vic_social.49.a"
+		custom_tooltip = vic_social_health
+		ai_chance = { factor = 1 }
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						which = social_health
+						value = 2
+					}
+				}	
+				add_country_modifier = {
+					name = social_health_l3
+					duration = -1
+				}
+				remove_country_modifier = social_health_l2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = social_health
+						value = 1
+					}
+				}	
+				add_country_modifier = {
+					name = social_health_l2
+					duration = -1
+				}	
+				remove_country_modifier = social_health_l1
+			}
+			else = {
+				add_country_modifier = {
+					name = social_health_l1
+					duration = -1
+				}
+			}
+		}	
+		change_variable = {
+			which = social_health
+			value = 1
+		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+	option = {
+		name = "vic_social.49.b"
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { num_of_loans = 1 }
+			}
+			modifier = {
+				factor = 1
+				NOT = { num_of_loans = 5 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 5
+			}
+		}
+	}
+}	

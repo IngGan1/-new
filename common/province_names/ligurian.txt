@@ -1,0 +1,4 @@
+101 = "Ligûria"
+102 = "Nissa"
+2992 = "Arbénga"
+4464 = "Spèza"

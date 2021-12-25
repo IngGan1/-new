@@ -1,0 +1,239 @@
+namespace = ge_events
+# Wanli Emperor
+country_event = { 
+	id = ge_events.47
+	title = "ge_events.47.t"
+	desc = "ge_events.47.d"
+	picture = COURT_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 7
+	}
+
+	trigger = {
+		tag = MNG
+		is_year = 1563
+		NOT = {
+			is_year = 1583
+		}
+		has_global_flag = governments_extended_historical_yes
+	}
+
+	option = {
+		name = ge_events.47.a  
+		ai_chance = { factor = 100 }
+		define_ruler = {
+			name = "Yijun"
+			dynasty = "Zhu"
+			adm = 3
+			dip = 3
+			mil = 3
+                                    fixed = yes
+			age = 9
+		}
+		set_country_flag = wanli_emperor_flag
+	}
+}
+
+# Emperor's strike
+country_event = { 
+	id = ge_events.48
+	title = "ge_events.48.t"
+	desc = "ge_events.48.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	trigger = {
+		tag = MNG
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1600
+		NOT = {
+			is_year = 1620
+		}
+		has_country_flag = wanli_emperor_flag
+	}
+
+	option = {
+		name = ge_events.48.a  
+		ai_chance = { factor = 100 }
+		change_adm = -3
+		change_dip = -3
+		change_mil = -3
+		add_ruler_modifier = { name = absence_of_emperor }
+		add_ruler_modifier = { name = wanli_emperor_extravagance }
+	}
+}
+
+# Li Zicheng Overthrow Ming dynasty
+country_event = { 
+	id = ge_events.49
+	title = "ge_events.49.t"
+	desc = "ge_events.49.d"
+	picture = SIEGE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	trigger = {
+        tag = MNG
+		not = { has_global_flag = no_ge16 }
+        has_global_flag = governments_extended_historical_yes
+        is_year = 1644
+		NOT = {
+		is_year = 1652
+		}
+        NOT = { has_country_flag = li_zicheng_rebel_flag }
+             }
+
+	immediate = {
+		hidden_effect = {
+			north_china_region = { 
+					limit = { 
+						 owned_by = MNG
+					}
+					add_core = CSH
+			}
+			mongolia_region = { 
+					limit = { 
+						 owned_by = MNG
+					}
+					add_core = CSH
+			}
+			release = CSH
+			CSH = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+			}
+			every_owned_province = {
+				limit = {
+					superregion = china_superregion
+				}
+				add_claim = CSH
+			}
+		}
+	}
+
+	option = {
+		name = ge_events.49.a  
+		ai_chance = { factor = 100 }
+		kill_ruler = yes   
+                        remove_country_modifier = aftermath_of_wanli_emperor 
+		set_country_flag = li_zicheng_rebel_flag
+                        CSH = { country_event = { id = ge_events.50 } } 
+                        MCH = { country_event = { id = ge_events.51 } }
+	}
+}
+
+# Fall of Beijing
+country_event = {
+	id = ge_events.50
+	title = "ge_events.50.t"
+	desc = "ge_events.50.d"
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.50.a  
+		ai_chance = { factor = 50 }
+		define_ruler = {
+			name = "Zicheng"
+			dynasty = "Li"
+			adm = 2
+			dip = 3
+			mil = 1
+			fixed = yes
+			age = 38
+		}
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 1.5
+				cavalry = 0.6
+				artillery = 1
+			}
+		}
+		add_treasury = 3000
+		add_manpower = 200
+		declare_war_with_cb = { 
+			who = MNG
+			casus_belli = cb_chinese_unification
+		}
+		add_prestige = 10
+	}
+}
+         
+# Wu Sangui opens Shanhai Pass
+country_event = {
+	id = ge_events.51
+	title = ge_events.51.t
+	desc = ge_events.51.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+  
+	major = yes
+
+	option = { 
+		name = ge_events.51.a
+		ai_chance = { factor = 100 }
+		hebei_area = { 
+			add_core = MCH
+		}
+		liaoning_area = { 
+			limit = { owned_by = MNG }
+			cede_province = MCH
+			add_core = MCH
+		}
+		declare_war_with_cb = { 
+			who = CSH
+			casus_belli = cb_chinese_unification
+		}
+	}
+}         
+ 
+# Aftermath of Wanli Emperor
+country_event = { 
+	id = ge_events.52
+	title = "ge_events.52.t"
+	desc = "ge_events.52.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = MNG
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1620
+		NOT = {
+			is_year = 1640
+		}
+		NOT = { has_country_modifier = absence_of_emperor }
+		NOT = { has_country_modifier = wanli_emperor_extravagance }
+	}
+
+	option = {
+		name = ge_events.52.a  
+		ai_chance = { factor = 100 }
+                        add_country_modifier = {
+			name = "aftermath_of_wanli_emperor"
+			duration = 18000
+		}
+		add_stability = 1   
+	}
+}

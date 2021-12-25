@@ -1,0 +1,150 @@
+namespace = MCE_easter_egg_events
+
+country_event = {
+	id = MCE_easter_egg_events.1
+	title = MCE_easter_egg_events.1.t
+	desc = MCE_easter_egg_events.1.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = { was_tag = WLS }
+		NOT = { has_global_flag = allow_for_the_knights_of_round_table }
+		primary_culture = welsh
+		prestige = 50
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = MCE_easter_egg_events.1.a
+		
+		set_global_flag = allow_for_the_knights_of_round_table
+		custom_tooltip = knights_of_the_round_table_tt
+	}
+}
+
+country_event = {
+	id = MCE_easter_egg_events.2
+	title = MCE_easter_egg_events.2.t
+	desc = MCE_easter_egg_events.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = bedivere_flag }
+		any_hired_mercenary_company = {
+			template = MCE_knights_of_the_round_table
+			hired_for_months = 12
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	option = {
+		name = MCE_easter_egg_events.2.a
+		
+		set_global_flag = bedivere_flag
+		define_general = {
+			shock = 5
+			fire = 4
+			manuever = 5
+			siege = 1
+			name = "Sir Bedivere"
+			trait = defensive_planner_personality
+		}
+	}
+}
+
+country_event = {
+	id = MCE_easter_egg_events.3
+	title = MCE_easter_egg_events.3.t
+	desc = MCE_easter_egg_events.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = artoria_flag }
+		any_hired_mercenary_company = {
+			template = MCE_knights_of_the_round_table
+			hired_for_months = 80
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 50
+	}
+	
+	immediate = {
+		set_global_flag = artoria_flag
+	}
+	
+	option = {
+		name = MCE_easter_egg_events.3.a
+		
+		define_heir = {
+			name = Artoria
+			dynasty = "Pendragon"
+			age = 15
+			adm = 4
+			dip = 6
+			mil = 6
+			culture = welsh
+			claim = 95
+			female = yes
+			no_consort_with_heir = yes
+		}
+		add_heir_personality = immortal_personality
+	}
+	
+	option = {
+		name = MCE_easter_egg_events.3.b
+		
+	}
+}
+
+country_event = {
+	id = MCE_easter_egg_events.4
+	title = MCE_easter_egg_events.4.t
+	desc = MCE_easter_egg_events.4.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRX
+		primary_culture = english
+		NOT = { has_global_flag = astolfo_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = MCE_easter_egg_events.4.a
+		
+		set_global_flag = astolfo_flag
+		define_general = {
+			shock = 5
+			fire = 5
+			manuever = 5
+			siege = 1
+			name = "Astolfo"
+			trait = glory_seeker_personality
+		}
+		custom_tooltip = allow_charlemagne_paladins
+	}
+}

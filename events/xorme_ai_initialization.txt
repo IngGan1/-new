@@ -1,0 +1,19 @@
+namespace = xorme_ai_initialization
+#MAIN SETUP
+
+#DIPLOMACY SETUP
+country_event = {
+	id = xorme_ai_initialization.2
+	title = "NONE"
+	picture = "NONE"
+	desc = "NONE"	
+	hidden = yes
+	is_triggered_only = yes
+
+
+	immediate = {
+		xorme_ai_alliance_initialization_effect = yes
+	}
+
+	option = {}
+}

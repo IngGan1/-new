@@ -1,0 +1,118 @@
+#Bavarian Events
+
+namespace = hee_BAV
+
+# Dealing With the Robber Barons
+country_event = {
+	id = hee_BAV.1
+	title = hee_BAV.1.t
+	desc = hee_BAV.1.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BAV
+		NOT = { is_year = 1555}
+		owns_core_province = 65
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = hee_BAV.1.a
+		add_years_of_income = -1
+		add_manpower = -2
+		add_country_modifier = {
+			name = hee_fought_robber_barons
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = fought_noble_barons
+			influence = -10
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = hee_BAV.1.b
+		add_years_of_income = 5
+		add_stability = -1
+	}
+}
+
+# Reconciliation with the Habsburgs
+country_event = {
+	id = hee_BAV.3
+	title = hee_BAV.3.t
+	desc = hee_BAV.3.d
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BAV
+		is_at_war = no
+		NOT = {
+			is_rival = HAB
+		}
+		is_lesser_in_union = no
+		dynasty = "von Wittelsbach"
+		HAB = {
+			exists = yes
+			is_emperor = yes
+			dynasty =  "von Habsburg"
+		}
+	}
+	
+	option = {	
+		name = hee_BAV.3.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				alliance_with = HAB
+			}
+			modifier = {
+				factor = 0
+				is_rival = HAB
+			}
+		}
+		HAB = {
+			add_opinion = {
+				who = ROOT
+				modifier = hee_bav_reconcile_habsburgs
+			}
+		}
+	}
+
+	option = {	
+		name = hee_BAV.3.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				alliance_with = HAB
+			}
+			modifier = {
+				factor = 100
+				is_rival = HAB
+			}
+		}
+		HAB = {
+			add_opinion = {
+				who = ROOT
+				modifier = hee_bav_against_habsburgs
+			}
+		}
+		add_legitimacy = 10
+		add_prestige = 10
+	}
+}

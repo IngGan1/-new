@@ -1,0 +1,1001 @@
+###################################################################
+###################################################################
+####### Janissaries Start
+###################################################################
+###################################################################
+
+###################################################################
+####### Leader
+###################################################################
+
+estate_priv_idea_variation_9_1 = {
+	icon = IV_privileges_icon_6
+	
+	can_select = {
+		estate_influence = {
+		estate = estate_janissary
+		influence = 20
+		}
+	}
+		
+	on_granted = {
+		
+			if = {
+				limit = { 
+					army_tradition = 100
+				}
+				create_general = { tradition = 100 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 90
+					NOT = { army_tradition = 100 }
+				}
+				create_general = { tradition = 90 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 80
+					NOT = { army_tradition = 90 }
+				}
+				create_general = { tradition = 80 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 70
+					NOT = { army_tradition = 80 }
+				}
+				create_general = { tradition = 70 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 60
+					NOT = { army_tradition = 70 }
+				}
+				create_general = { tradition = 60 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 50
+					NOT = { army_tradition = 60 }
+				}
+				create_general = { tradition = 50 }
+			}
+			if = {
+				limit = { 
+					army_tradition = 0
+					NOT = { army_tradition = 50 }
+				}
+				create_general = { tradition = 40 }
+			}
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.01
+	}
+	
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_priv_idea_variation_9_1
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 80
+			}
+		}
+	}
+}
+
+###################################################################
+####### Advisor 1 (Arti)
+###################################################################
+
+estate_priv_idea_variation_9_2 = {
+	icon = privilege_recruit_minister
+	influence = 0.15
+
+	on_granted = {
+		if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = idea_var_advisor_14
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = idea_var_advisor_14
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}				
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.025
+	}
+	
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_priv_idea_variation_9_2
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Advisor 2 (Inf)
+###################################################################
+
+estate_priv_idea_variation_9_3 = {
+	icon = privilege_recruit_minister
+	influence = 0.15
+
+	on_granted = {
+		if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = idea_var_advisor_12
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = idea_var_advisor_12
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}			
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.025		
+	}
+	
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_priv_idea_variation_9_3
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Underline Influence (Estate)
+###################################################################
+
+estate_priv_idea_variation_9_4 = {
+	icon = privilege_grant_autonomy
+	influence = 0.1
+	loyalty = 0.1
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Underline Power
+###################################################################
+
+estate_priv_idea_variation_9_5 = {
+	icon = privilege_empty_throne
+	influence = 0.2
+
+
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.05
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 75
+				}
+		}
+	}
+}
+
+
+###################################################################
+####### Tax the Land
+###################################################################
+
+estate_priv_idea_variation_9_6 = {
+	icon = privilege_give_money
+	influence = -0.1
+	loyalty = -0.1
+	is_valid = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 1
+		}
+	}
+	can_select = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 5
+		}
+	}
+	
+	modifier_by_land_ownership = {
+		global_tax_modifier = 2.0
+	}
+	
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			estate_territory = {
+			estate = estate_janissary
+			territory = 0
+			}
+		}
+		modifier = {
+			factor = 1
+			estate_territory = {
+			estate = estate_janissary
+			territory = 5
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_territory = {
+			estate = estate_janissary
+			territory = 10
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			estate_territory = {
+			estate = estate_janissary
+			territory = 15
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			estate_territory = {
+			estate = estate_janissary
+			territory = 20
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 25
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 30
+			}
+		}
+	}
+}
+
+
+###################################################################
+####### Conscript from their lands
+###################################################################
+
+estate_priv_idea_variation_9_7 = {
+	icon = privilege_demand_more_troops
+	influence = -0.1
+	loyalty = -0.1
+	is_valid = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 1
+		}
+	}
+	can_select = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 5
+		}
+	}
+	
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 1.0
+		global_sailors_modifier = 1.0
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			estate_territory = {
+			estate = estate_janissary
+			territory = 0
+			}
+		}
+		modifier = {
+			factor = 1
+			estate_territory = {
+			estate = estate_janissary
+			territory = 5
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_territory = {
+			estate = estate_janissary
+			territory = 10
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			estate_territory = {
+			estate = estate_janissary
+			territory = 15
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			estate_territory = {
+			estate = estate_janissary
+			territory = 20
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 25
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 30
+			}
+		}
+	}
+}
+
+
+###################################################################
+####### Support Reforms
+###################################################################
+
+estate_priv_idea_variation_9_8 = {
+	icon = IV_privileges_icon_1
+	influence = 0.1
+	loyalty = -0.1
+	is_valid = {
+		estate_influence = {
+		estate = estate_janissary
+		influence = 20
+		}
+	}
+	can_select = {
+		estate_influence = {
+		estate = estate_janissary
+		influence = 50
+		}
+	}
+	
+	modifier_by_land_ownership = {
+		reform_progress_growth = 0.5
+		global_institution_spread = 0.25
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			estate_territory = {
+			estate = estate_janissary
+			territory = 0
+			}
+		}
+		modifier = {
+			factor = 1
+			estate_territory = {
+			estate = estate_janissary
+			territory = 5
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_territory = {
+			estate = estate_janissary
+			territory = 10
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			estate_territory = {
+			estate = estate_janissary
+			territory = 15
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			estate_territory = {
+			estate = estate_janissary
+			territory = 20
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 25
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_janissary
+				territory = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_janissary
+			territory = 30
+			}
+		}
+	}
+}
+
+###################################################################
+####### Province Administration
+###################################################################
+
+estate_priv_idea_variation_9_12 = {
+	icon = privilege_grant_autonomy
+	influence = 0.1
+
+	is_valid = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 5
+		}
+	}
+	can_select = {
+		estate_territory = {
+		estate = estate_janissary
+		territory = 15
+		}
+	}
+	penalties = {
+		state_maintenance_modifier = 0.1
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_janissary
+					influence = 90
+				}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_territories = 1 }
+		}
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+	}
+}
+
+
+###################################################################
+###################################################################
+####### Janissaries End
+###################################################################
+###################################################################
+
+###################################################################
+###################################################################
+####### Nationalists Start
+###################################################################
+###################################################################
+
+###################################################################
+####### Advisor 1 (Culture)
+###################################################################
+
+estate_priv_idea_variation_12_2 = {
+	icon = privilege_recruit_minister
+	influence = 0.15
+	
+	can_select = {
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	
+	on_granted = {
+		if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = idea_var_advisor_19
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = idea_var_advisor_19
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}				
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.025	
+	}
+	
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_priv_idea_variation_12_2
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_nationalist
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Advisor 2 (War Score)
+###################################################################
+
+estate_priv_idea_variation_12_3 = {
+	icon = privilege_recruit_minister
+	influence = 0.15
+	
+	can_select = {
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	
+	on_granted = {
+		if = {
+				limit = {
+					monthly_income = 25
+				}
+				define_advisor = {
+					type = idea_var_advisor_23
+					skill = 3
+					cost_multiplier = 0.5
+				}
+			}
+			if = {
+				limit = { NOT = { monthly_income = 25 } }
+				define_advisor = {
+					type = idea_var_advisor_23
+					skill = 2
+					cost_multiplier = 0.5
+				}
+			}			
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.025		
+	}
+	
+	cooldown_years = 10
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_priv_idea_variation_12_3
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_nationalist
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Underline Influence (Estate)
+###################################################################
+
+estate_priv_idea_variation_12_4 = {
+	icon = privilege_grant_autonomy
+	influence = 0.1
+	loyalty = 0.1
+	
+	can_select = {
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_nationalist
+					influence = 80
+				}
+		}
+	}
+}
+
+###################################################################
+####### Underline Power
+###################################################################
+
+estate_priv_idea_variation_12_5 = {
+	icon = privilege_empty_throne
+	influence = 0.05
+	loyalty = 0.1
+	can_select = {
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.05
+	}
+
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_nationalist
+					influence = 75
+				}
+		}
+	}
+}
+
+
+###################################################################
+####### Support Reforms
+###################################################################
+
+estate_priv_idea_variation_12_8 = {
+	icon = IV_privileges_icon_1
+	influence = 0.1
+	loyalty = -0.1
+	is_valid = {
+		estate_influence = {
+		estate = estate_nationalist
+		influence = 20
+		}
+	}
+	can_select = {
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	
+	modifier_by_land_ownership = {
+		reform_progress_growth = 0.5
+		global_institution_spread = 0.25
+	}
+
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 0
+			}
+		}
+		modifier = {
+			factor = 1
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 5
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_nationalist
+				territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 10
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_nationalist
+				territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 15
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_nationalist
+				territory = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 20
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_nationalist
+				territory = 25
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 25
+			}
+			NOT = { 
+				estate_territory = {
+				estate = estate_nationalist
+				territory = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_territory = {
+			estate = estate_nationalist
+			territory = 30
+			}
+		}
+	}
+}
+
+###################################################################
+####### Province Administration
+###################################################################
+
+estate_priv_idea_variation_12_12 = {
+	icon = privilege_grant_autonomy
+	influence = 0.1
+
+	is_valid = {
+		estate_territory = {
+		estate = estate_nationalist
+		territory = 5
+		}
+	}
+	can_select = {
+		estate_territory = {
+		estate = estate_nationalist
+		territory = 15
+		}
+		NOT = {	
+			estate_influence = {
+			estate = estate_nationalist
+			influence = 75
+			}
+		}
+	}
+	penalties = {
+		state_maintenance_modifier = 0.1
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+				estate_influence = {
+					estate = estate_nationalist
+					influence = 90
+				}
+		}
+		modifier = {
+			factor = 0
+			NOT = { num_of_territories = 1 }
+		}
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+	}
+}
+
+
+###################################################################
+###################################################################
+####### Nationalists End
+###################################################################
+###################################################################

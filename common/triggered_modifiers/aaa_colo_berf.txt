@@ -1,0 +1,53 @@
+aaa_col_berf_usa = {
+	potential = { has_global_flag = aaa_col_berf_flag }
+	trigger = {
+		is_colonial_nation = yes
+		capital_scope = { colonial_region = colonial_eastern_america }		
+	}
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.01
+	build_cost = -0.1
+	development_cost = -0.2
+}
+aaa_col_berf_lou = {
+	potential = { has_global_flag = aaa_col_berf_flag }
+	trigger = {
+		is_colonial_nation = yes
+		capital_scope = { colonial_region = colonial_louisiana }		
+	}
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.02
+	build_cost = -0.1
+	development_cost = -0.1
+}
+aaa_col_berf_que = {
+	potential = { has_global_flag = aaa_col_berf_flag }
+	trigger = {
+		is_colonial_nation = yes
+		capital_scope = { region = canada_region }
+		has_colonial_parent = FRA
+	}
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.01
+	build_cost = -0.1
+	development_cost = -0.1
+}
+aaa_col_berf_bra = {
+	potential = { has_global_flag = aaa_col_berf_flag }
+	trigger = {
+		is_colonial_nation = yes
+		capital_scope = { colonial_region = colonial_brazil }		
+	}
+	liberty_desire = -20
+}
+
+aaa_col_berf_mex = {
+	potential = { has_global_flag = aaa_col_berf_flag }
+	trigger = {
+		is_colonial_nation = yes
+		capital_scope = { colonial_region = colonial_mexico }		
+	}
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.02
+}
+

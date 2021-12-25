@@ -1,0 +1,103 @@
+# Invite to Celestial Empire(Turn Tributary to a vassal)
+invite_to_celestial_empire = {
+	category = influence
+	
+	alert_index = 41
+	alert_tooltip = invite_to_celestial_empire_tooltip
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		has_global_flag = harmony_achieved
+		FROM = { is_subject_of_type = tributary_state }
+		overlord_of = FROM
+	}
+	is_allowed = {
+		imperial_mandate = 90		
+		FROM = { 
+			   is_subject_of = ROOT
+		       NOT = { liberty_desire = 50 }
+               any_owned_province = {
+			             any_neighbor_province = {
+						        owned_by = ROOT
+						 }           
+			   }
+		}
+	}
+	on_accept = {
+		if = {
+		      limit = { NOT = { FROM = { total_development = 50 } } }
+		      add_mandate = -10
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 100 } } 
+					   FROM = { total_development = 50 }
+			  }
+		      add_mandate = -15
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 150 } } 
+					   FROM = { total_development = 100 }
+			  }
+		      add_mandate = -20
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 200 } } 
+					   FROM = { total_development = 150 }
+			  }
+		      add_mandate = -25
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 250 } } 
+					   FROM = { total_development = 200 }
+			  }
+		      add_mandate = -30
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 300 } } 
+					   FROM = { total_development = 250 }
+			  }
+		      add_mandate = -35
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 350 } } 
+					   FROM = { total_development = 300 }
+			  }
+		      add_mandate = -40
+		}
+		if = {
+		      limit = { 
+			           NOT = { FROM = { total_development = 400 } } 
+					   FROM = { total_development = 350 }
+			  }
+		      add_mandate = -45
+		}
+		if = {
+		      limit = { 
+					  FROM = { total_development = 400 }
+			  }
+		      add_mandate = -50
+		}
+		FROM = { 
+				   country_event = { id = mandate.996 } 
+		}
+	}
+	
+	on_decline =
+	{
+	    add_mandate = -10
+		FROM = { add_liberty_desire = 50 }
+	}
+	
+	
+	ai_will_do = { # this is a trigger
+		always = yes
+	}
+}

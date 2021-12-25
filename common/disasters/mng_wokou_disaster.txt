@@ -1,0 +1,182 @@
+mng_wokou_disaster = {
+	potential = {
+		tag = MNG
+		NOT = {
+			check_variable = {
+				which = num_of_wokou_raid
+				value = 10
+			}
+		}
+		 is_year = 1500
+		NOT = { is_year = 1600 }
+		NOT = { exists = JAP }
+		OR = {
+			has_reform = celestial_empire
+			is_emperor_of_china = yes
+		}
+		NOT = { has_country_flag = wokou_in_ming }
+		num_of_owned_provinces_with = {
+			value = 5
+			has_port = yes
+			superregion = china_superregion
+			NOT = {
+				has_winter = mild_winter
+				has_winter = normal_winter
+				has_winter = severe_winter
+			}
+		}
+	}
+
+
+
+	can_start = {
+		any_country = {
+			NOT = { is_subject_of = ROOT }
+			OR = {
+				has_reform = daimyo
+				has_reform = indep_daimyo
+				has_reform = indep_daimyo_legacy
+				has_reform = shogunate
+			}
+			any_country = {
+				NOT = { is_subject_of = ROOT }
+				OR = {
+					has_reform = daimyo
+					has_reform = indep_daimyo
+					has_reform = indep_daimyo_legacy
+					has_reform = shogunate
+				}
+				war_with = PREV
+			}
+		}
+	}
+	
+	can_stop = {
+		NOT = {
+			any_country = {
+				NOT = { is_subject_of = ROOT }
+				OR = {
+					has_reform = daimyo
+					has_reform = indep_daimyo
+					has_reform = indep_daimyo_legacy
+					has_reform = shogunate
+				}
+				any_country = {
+					NOT = { is_subject_of = ROOT }
+					OR = {
+						has_reform = daimyo
+						has_reform = indep_daimyo
+						has_reform = indep_daimyo_legacy
+						has_reform = shogunate
+					}
+					war_with = PREV
+				}
+			}
+		}
+	}
+	
+	down_progress = {
+		factor = 0.15
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 0.33
+			any_country = {
+				NOT = { is_subject_of = ROOT }
+				OR = {
+					has_reform = daimyo
+					has_reform = indep_daimyo
+					has_reform = indep_daimyo_legacy
+					has_reform = shogunate
+				}
+				any_country = {
+					NOT = { is_subject_of = ROOT }
+					OR = {
+						has_reform = daimyo
+						has_reform = indep_daimyo
+						has_reform = indep_daimyo_legacy
+						has_reform = shogunate
+					}
+					war_with = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			is_year = 1550
+				any_country = {
+					NOT = { is_subject_of = ROOT }
+				OR = {
+					has_reform = daimyo
+					has_reform = indep_daimyo
+					has_reform = indep_daimyo_legacy
+					has_reform = shogunate
+				}
+				any_country = {
+					NOT = { is_subject_of = ROOT }
+					OR = {
+						has_reform = daimyo
+						has_reform = indep_daimyo
+						has_reform = indep_daimyo_legacy
+						has_reform = shogunate
+					}
+					war_with = PREV
+				}
+			}
+		}	
+		
+	}
+
+
+
+
+	
+	can_end = {
+		OR = {
+			has_country_modifier = ming_wokou_disaster_modifier
+			exists = JAP
+			is_emperor_of_china = no
+			check_variable = {
+				which = num_of_wokou_raid
+				value = 20
+			}
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					has_port = yes
+					superregion = china_superregion
+					NOT = {
+						has_winter = mild_winter
+						has_winter = normal_winter
+						has_winter = severe_winter
+					}
+				}
+			}
+		}
+	}
+	
+
+
+
+	modifier = {
+		global_unrest = 1
+		stability_cost_modifier = 0.15
+	}	
+	
+	#this disaster works with a triggered modifer if it starts.
+
+	on_start = rea_events.111
+	#on_end = rea_events.112
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			#None
+			#50 = rea_events.113
+		}
+	}
+}

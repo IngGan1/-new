@@ -1,0 +1,53 @@
+country_decisions = {
+	
+	form_khoshut = {
+		major = yes
+		potential = {
+			is_year = 1500
+			NOT = { exists = KSD }
+			NOT = { tag = ZUN }
+			is_nomad = yes
+			primary_culture = oirats
+			num_of_owned_provinces_with = {
+				value = 1
+				region = tibet_region
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_subject = no
+			stability = 2
+			num_of_owned_provinces_with = {
+				value = 3
+				region = tibet_region
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_horde_unity = 15
+			change_tag = KSD
+			tibet_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_claim = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				total_development = 100
+			}
+			modifier = {
+				factor = 0
+				NOT = { adm = 2 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { dip = 2 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { mil = 2 }
+			}
+		}
+	}

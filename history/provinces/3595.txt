@@ -1,0 +1,17 @@
+#4028 - Mahafaly
+
+owner = ANT
+controller = ANT
+add_core = ANT
+culture = madagasque
+religion = shamanism #Fetishism
+capital = "Antanosy"
+native_size = 90
+trade_goods = sea_turtle
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = east_african
+
+1500.8.20 = { discovered_by = POR } #Diego Dias

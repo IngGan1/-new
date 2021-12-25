@@ -1,0 +1,7 @@
+##############
+# FIXED STATE
+##############
+
+is_been_looting_modifier = {
+	opinion = -25
+}

@@ -1,0 +1,192 @@
+#######
+# All #
+#######
+
+agricultural_nomads = {
+	potential = {
+		OR = {
+			tag = MJZ
+			tag = WGY
+			tag = HAA
+			tag = YLU
+			tag = JCN
+			tag = MHX
+			tag = NYN
+			tag = HFA
+			tag = ULA
+			tag = WOJ
+			tag = MCH
+		}
+	}
+	trigger = {
+		is_nomad = yes
+	}
+
+	shock_damage = 0.10
+	artillery_cost = 0.25
+	cavalry_cost = -0.20
+	infantry_cost = 0.25
+	siege_ability = -0.20
+	years_of_nationalism = -5
+	manpower_recovery_speed = 0.5
+}
+
+kor_agrarianism = {
+	potential = {
+		or = { has_reform = confucian_monarchy has_reform = hermit_kingdom_reform }
+	}
+	trigger = {
+		NOT = { has_country_flag = kor_reform_tax }
+	}
+	production_efficiency = 0.2
+	global_manpower_modifier = 0.25
+	global_tax_modifier = -0.2
+	trade_efficiency = -0.2
+	stability_cost_modifier = -0.1
+	global_unrest = -2
+	global_trade_power = -0.2
+}
+
+ex_without = {
+	potential = {
+		has_idea = general_colonization_law
+		is_colonial_nation = no
+	}
+	trigger = {
+		ai = yes
+		not = { has_idea = colonial_ventures }
+	}
+	colonists = -1
+	missionaries = 1
+}
+
+mng_not_agree = {
+	potential = {
+		OR = {
+            tag = KOR
+			tag = JOS
+		}
+		has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = admit_korean_manchu_flag }
+	}
+	trigger = {
+		not = { total_development = 600 }
+	}
+}
+
+mng_glory_1 = {
+	potential = {
+		tag = MNG
+		ai = yes
+		not = { is_year = 1500 }
+	}
+	trigger = {
+        has_reform = celestial_empire
+	}
+	governing_capacity = 200
+	advisor_cost = 1
+	imperial_mandate = 0.05
+}
+
+mng_glory_2 = {
+	potential = {
+		tag = MNG
+		ai = yes
+		not = { is_year = 1550 }
+	}
+	trigger = {
+        has_reform = celestial_empire
+	}
+	governing_capacity = 200
+	advisor_cost = 1
+	imperial_mandate = 0.05
+}
+
+mng_glory_3 = {
+	potential = {
+		tag = MNG
+		ai = yes
+		not = { is_year = 1600 }
+	}
+	trigger = {
+        has_reform = celestial_empire
+	}
+	governing_capacity = 200
+	advisor_cost = 1
+	imperial_mandate = -0.1
+}
+
+pru_militarilism = {
+	potential = {	
+		has_reform = prussian_monarchy
+	}
+	trigger = {
+		has_idea = militarismus7
+	}
+	monthly_militarized_society = 0.05
+}
+
+tanos3_colony = {
+	potential = {	
+		is_colonial_nation = yes
+		ai = yes
+	}
+	trigger = {
+		has_global_flag = remove_province3
+	}
+	colonists = 1
+}
+
+tanos3_mexico_colony = {
+	potential = {	
+		is_colonial_nation = yes
+		ai = yes
+		capital_scope = {
+			colonial_region = colonial_mexico
+		}
+	}
+	trigger = {
+		has_global_flag = remove_province3
+	}
+	colonists = 1
+}
+
+boho_world = {
+	potential = {
+		or = { tag = BOO tag = BO1 tag = BO2 tag = BO3 tag = BO4 tag = BO5 tag = BO6 tag = BO7 tag = BO8 tag = BO9 tag = BH1 tag = BH2 }
+	}
+	trigger = {
+	}
+	global_unrest = -100
+	build_cost = 500
+	naval_forcelimit = -10000
+	land_forcelimit = -10000
+	global_missionary_strength = -100
+	spy_offence = -10
+	global_spy_defence = 10
+	#global_trade_power = -100
+	#global_prov_trade_power_modifier = -100
+	global_tax_modifier = -1.5
+	#global_trade_goods_size_modifier = -100
+	production_efficiency = -1
+	#trade_efficiency = -1
+	global_manpower_modifier = -100
+	#merchants = -10
+	missionaries = -10
+	diplomatic_reputation = -50
+	tolerance_heathen = 10
+	tolerance_heretic = 10
+	diplomatic_upkeep = -4
+	diplomats = -10
+	governing_capacity = 20000
+	religious_unity = 100
+	state_maintenance_modifier = -10
+	core_decay_on_your_own = 10
+	fort_maintenance_modifier = -10
+	advisor_cost = 100
+	reduced_liberty_desire = 1000
+	hostile_attrition = 50
+	defensiveness = 10
+	global_monthly_devastation = -10
+	imperial_mandate = -0.5
+}

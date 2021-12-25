@@ -1,0 +1,26 @@
+#1753 - Kostroma
+
+owner = MOS
+controller = MOS
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = cloth
+base_manpower = 1
+capital = "Kostroma"
+is_city = yes
+add_core = MOS
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+set_province_flag = starting_fort
+
+1200.1.1 = { 
+	add_building = fort_14th
+}
+
+1503.4.1 = { owner = RUS controller = RUS add_core = RUS remove_core = MOS }
+1598.1.7 = { unrest = 5 } # "Time of troubles"
+1612.3.1 = { unrest = 0 } # Pozharsky army moves through Kostroma

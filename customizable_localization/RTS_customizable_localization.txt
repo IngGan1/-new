@@ -1,0 +1,136 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+#GetTributaryOverlord
+#GetOldEra
+#GetLocalPowerStructure
+#GetGovernmentSupporters
+#GetNoblesReplacementForOtherGovernments
+
+
+
+
+
+
+defined_text = {
+    name = HuiciCustomLocalisation
+
+	text = {
+		localisation_key = HuiciCustomLocalisation_1
+		trigger = {
+			has_country_flag = ts_huici_1
+		}
+	}
+	text = {
+		localisation_key = HuiciCustomLocalisation_2
+		trigger = {
+			has_country_flag = ts_huici_2
+		}
+	}
+	text = {
+		localisation_key = HuiciCustomLocalisation_3
+		trigger = {
+			has_country_flag = ts_huici_3
+		}
+	}
+	text = {
+		localisation_key = HuiciCustomLocalisation_4
+		trigger = {
+			has_country_flag = ts_huici_4
+		}
+	}
+	text = {
+		localisation_key = HuiciCustomLocalisation_5
+		trigger = {
+			has_country_flag = ts_huici_5
+		}
+	}
+}
+
+defined_text = {
+    name = HuiciOptionCustomLocalisation
+
+	text = {
+		localisation_key = HuiciOptionCustomLocalisation_1
+		trigger = {
+			has_country_flag = ts_huici_1
+		}
+	}
+	text = {
+		localisation_key = HuiciOptionCustomLocalisation_2
+		trigger = {
+			has_country_flag = ts_huici_2
+		}
+	}
+	text = {
+		localisation_key = HuiciOptionCustomLocalisation_3
+		trigger = {
+			has_country_flag = ts_huici_3
+		}
+	}
+	text = {
+		localisation_key = HuiciOptionCustomLocalisation_4
+		trigger = {
+			has_country_flag = ts_huici_4
+		}
+	}
+	text = {
+		localisation_key = HuiciOptionCustomLocalisation_5
+		trigger = {
+			has_country_flag = ts_huici_5
+		}
+	}
+}
+
+
+
+defined_text = {
+    name = EndemicCustomLocalisation
+
+	text = {
+		localisation_key = EndemicCustomLocalisation_1
+		trigger = {
+			has_country_flag = the_ruler_ruchao_ts
+		}
+	}
+	text = {
+		localisation_key = EndemicCustomLocalisation_2
+		trigger = {
+			has_country_flag = the_heir_ruchao_ts
+		}
+	}
+	text = {
+		localisation_key = EndemicCustomLocalisation_3
+		trigger = {
+			has_country_flag = the_noble_ruchao_ts
+		}
+	}
+}
+
+
+defined_text = {
+    name = RuchaoDecisionCustomLocalisation
+
+	text = {
+		localisation_key = RuchaoDecisionCustomLocalisation_1
+		trigger = {
+			FROM = { has_country_flag = the_ruler_ruchao_ts }
+		}
+	}
+	text = {
+		localisation_key = RuchaoDecisionCustomLocalisation_2
+		trigger = {
+			FROM = { has_country_flag = the_heir_ruchao_ts }
+		}
+	}
+	text = {
+		localisation_key = RuchaoDecisionCustomLocalisation_3
+		trigger = {
+			FROM = { has_country_flag = the_noble_ruchao_ts }
+		}
+	}
+}

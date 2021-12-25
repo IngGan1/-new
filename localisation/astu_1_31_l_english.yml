@@ -1,0 +1,48 @@
+﻿l_english:
+ centralize_state:0 "üÈ ÉYÅÑÉŒ­TÖ"
+ CENTRALIZE_STATE_DESC:2 "§YüÈ ÉYÅÑÉŒ­TÖ§!\nÈŽ´ ¬ÖÄ³|¹ $COST|Y$Ì¹|Ð ŒÁ¨ºXÕìÅ $STATE|Y$XÇ ¬¥Ç ¬¼Ä³¬ ’±NÇ Õj¸H¾²Â|¹ ÉYÅÑÉŒ­TÖXÕà¬, tÕù² ÀÉíÅXÇ µÑXÎ D¾©ÆDÇ $REDUCTION|0Y$Ì¹|Ð ¬ŒÁÜÂµÐÈ²ä². $YEARS|0Y$D± ÄÖ DÆÌ¸)´È²ä²."
+ CENTRALIZE_STATE_COST:0 "ÈŽ´ ¬ÖÄ³¬ ©Í„´XÕÀÉ JÅµÂÈ²ä²"
+ CENTRALIZE_STATE_TERRITORY:0 "ÉYÅÑÉŒ­TÖ”² ÉüÈ¬ DÅÌ² üÈÐÅÌ¹ ¬¥²iÕÈ²ä²."
+ CENTRALIZE_STATE_DEV:1 "$STATE$XÇ µÑXÎ D¾©ÆNÇ $STATE_DEV|0$ ¬¼Ä³ tÇÁÀtÇ´Å|Å iÕÈ²ä²."
+ CENTRALIZE_STATE_PROVINCES:0 "üÈÐÅ ÁjÕ ¨ºà´ Õj¸H¾²Â|¹ ŒÁ.ÇXÕà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ CENTRALIZE_STATE_DONE:0 "tÇ üÈ”² tÇø» ÉYÅÑÉŒ­TÖ¬ ´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_PROGRESS:0 "t¬•ÍtÇ tÇø» ÄÉ‰Õ ÉtÇpº, $DATE$ÐÅ DÆÌ¸)´È²ä²."
+ CONFIRM_CENTRALIZE_STATE:0 "$STATE$XÇ ÉYÅÑÉŒ­TÖ"
+ CONFIRM_CENTRALIZE_STATE_TEXT:1 "$COST|0$Ì¹|ÐXÇ ÈŽ´ ¬ÖÄ³|¹ ÀÉˆ´XÕà¬ $STATE|Y$XÇ $PROVINCE|Y$ Õj¸H¾²Â|¹ ÉYÅÑÉŒ­TÖXÕìÅ µÑXÎ D¾©ÆDÇ $REDUCTION|0Y$Ì¹|Ð ¬ŒÁÜÂ²ÐÜÂ ¬µÂÈ²L®? tÇ ‘ÇÅÅNÇ $YEARS|0Y$D± ÄÖ DÆÌ¸)´È²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_TITLE:0 "üÈ ÉYÅÑÉŒ­TÖ DÆÌ¸(´"
+ CENTRALIZE_STATE_CONSTRUCTION_SETUP:0 "üÈ ÉYÅÑÉŒ­TÖ¬ DÆÌ¸.´ Lµ."
+ CENTRALIZE_STATE_CONSTRUCTION_1:0 "üÈ ÉYÅÑÉŒ­TÖ DÆÌ¸(´"
+ CENTRALIZE_STATE_CONSTRUCTION_2:0 "$PROVINCE$ÐÅÁXÇ t¬•ÍtÇ DÆÌ¸´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_3:1 "tÇÈ $STATE|Y$ üÈ”² ÉYÅÑÉŒ­TÖ¬ DÆÌ¸´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_LOG:0 "$PROVINCE$ÐÅÁXÇ ÉYÅÑÉŒ­TÖ ‘ÇÅÅtÇ DÆÌ¸´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_BTN1:0 "LÅXÅä²"
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_TITLE:0 "üÈ ÉYÅÑÉŒ­TÖ èÍŒÁ(´"
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_SETUP:0 "üÈ ÉYÅÑÉŒ­TÖ¬ ŒÁ.ÇÇ À¼TÖ˜° ÉüÈj¸XÇ À¼Ë¬<Çj¸ èÍŒÁ.´ Lµ."
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_1:0 "üÈ ÉYÅÑÉŒ­TÖ èÍŒÁ(´"
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_2:0 "$PROVINCE$ÐÅÁXÇ t¬•ÍtÇ èÍŒÁ´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_LOG:0 "$PROVINCE$ÐÅÁXÇ ÉYÅÑÉŒ­TÖ ‘ÇÅÅtÇ èÍŒÁ´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CONSTRUCTION_CANCEL_BTN1:0 "LÅXÅä²"
+ CENTRALIZE_STATE_CANCEL_TITLE:0 "üÈ ÉYÅÑÉŒ­TÖ t¬•Í<» Èp¬(´"
+ CENTRALIZE_STATE_CANCEL_SETUP:0 "üÈ ÉYÅÑÉŒ­TÖ¬ ŒÁ.ÇÇ À¼TÖj¸ Èp¬.´ Lµ."
+ CENTRALIZE_STATE_CANCEL_1:0 "üÈ ÉYÅÑÉŒ­TÖ t¬•Í<» Èp¬(´"
+ CENTRALIZE_STATE_CANCEL_2:0 "$PROVINCE$XÇ t¬•Í<»tÇ Èp¬´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CANCEL_3:1 "ù²àÂNÇ üÈXÇ ¨ºà´ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CANCEL_LOG:0 "$PROVINCE$ÐÅ ˆÇX³ ÉYÅÑÉŒ­TÖ t¬•Í<»tÇ Èp¬´ÈÅµÂÈ²ä²."
+ CENTRALIZE_STATE_CANCEL_BTN1:0 "LÅXÅä²"
+ CONFIRMABANDONSTATECENTRALIZED:0 "$STATE$ üÈ”² T³ tÇÁÀ ÉYÅÑÉŒ­TÖ´ ÁÀÜÐ¬ DÅÙ²È²ä²."
+ INFLACTION_REDUCTION:0 "xÇÕ¸tÇXÁ ¬ŒÁ”² ä²LÇÐÅ XÇtÕ À¼Ù³)´È²ä²:\n"
+ MODIFIER_STATE_GOVERNING_INCREASE_COST:0 "üÈ µÑXÎ D¾©Æ É¬"
+ CENTRALIZE_STATE_CAPITAL:0 "ù²àÂNÇ ÂÄ³ üÈ|¹ ÉYÅÑÉŒ­TÖ `Õ Â ÆÅµÂÈ²ä²"
+ WARNING_CONSTRUCTION_LOST:0 "ÈÀ ÀÉíÅÐÅ mÕl­¬ ÆÅ<Çtº hÕ.Á t¬pÈ¬ èÍŒÁ)´È²ä²."
+ CONSTRUCTION_LOST_TITLE:0 "hÕ.Á t¬pÈ èÍŒÁ(´"
+ CONSTRUCTION_LOST_SETUP:0 "tÇüÈ ÜÂÐÅ hÕ.Á t¬pÈ”² ÈÀ ÀÉíÅÐÅÁ .Ç¨ÖXÕÀÉ JÅDÅ èÍŒÁ)´È²ä²."
+ CONSTRUCTION_LOST_1:0 "t¬pÈ èÍŒÁ(´"
+ CONSTRUCTION_LOST_2:0 "tÇüÈj¸ xÇtÕ .Á¼ t¬pÈ¬ èÍŒÁ´ÈÅµÂÈ²ä²"
+ CONSTRUCTION_LOST_3:0 "mÕl­¬ ÆÅ”² Ë¬°Æ hÕ.ÁDÇ Ì¹ä´ Â ÆÅµÂÈ²ä²"
+ CONSTRUCTION_LOST_LOG:0 "ÈÀ ÀÉíÅ<Çj¸ tÇüÈtÕ hÕ.Á ÁÀäÂ"
+ CONSTRUCTION_LOST_BTN1:0 "LÅXÅä²"
+ PRIMARY_LOCAL:0 "§YüÈ ­¬¹Ç§!\ntÇ Õ¸tÇ´Å”² ¨ºà´ tÇ²¼¸Ò|¹ ¼DÇ ƒ¬…ÇÈ²ä².\n"
+ NOT_PRIMARY_LOCAL:0 "§YŽ´ ­¬¹Ç§!\ntÇ Õ¸tÇ´Å”² tÇ²¼¸Ò|¹ ¼ÀÉ JÅDÇ ƒ¬…ÇÈ²ä².\n"
+ PRIMARY_LOCAL_OBSERVER:0 "§YüÈ ­¬¹Ç§!\ntÇ Õ¸tÇ´Å”² ­ÈÇ ¨ºÜ´ÐÅ ˆÇ<Çpº, Œ¬„Ç ´°ÐÅÁ .ÁÝÐjÕ m­¬XÇ tÇ²¼¸ÒÌ¹ ü¼ Â ˆÇµÂÈ²ä².\n"
+ COOP_NOT_ENABLED:0 "§RÖÙ³ ¨ºÜ´¬ jÖ1ÁTÖ´´Å ˆÇÀÉ JÅµÂÈ²ä²§!\n"
+ KICK_PLAYER:0 "Õ¸tÇ´Å|¹ ¥ÐXÕ2¸tº °ÆtÐ­¹XÕíÂÜÂ2Æ.\n"

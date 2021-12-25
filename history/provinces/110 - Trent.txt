@@ -1,0 +1,68 @@
+#110 - Trent
+
+owner = TNT
+controller = TNT
+add_core = TNT
+culture = venetian
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = lumber
+base_manpower = 2
+capital = "Trent"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1356.12.25 = {
+           add_core = STY
+           add_core = AUT
+           add_core = TIR
+           #remove_core = ANH
+           #owner = HAB
+           #controller = HAB
+}
+1452.1.1 = {
+           owner = STY
+           controller = STY
+}
+1457.11.24 = {
+           owner = HAB
+           controller = HAB
+           add_core = HAB
+           remove_core = STY
+           remove_core = AUT
+}
+1511.6.23 = { base_manpower = 1 } # Landslibell - Tyrolean's only military duty is the defence of their homeland.
+1525.3.1 = { unrest = 8 }
+1525.9.1 = { unrest = 0 }
+1564.7.25 = { base_manpower = 1 } #Ferdinand I dies, Habsburgs split in 3 lines
+1577.1.1 = { base_tax = 3
+base_production = 3 } #Minting moves from Meran to Hall
+1602.1.1 = { base_tax = 4
+base_production = 4 } #Maximilian's economic reforms
+1802.1.1 = {
+owner = HAB
+controller = HAB
+add_core = HAB
+}
+1805.12.26 = {
+           owner = BAV
+           controller = BAV
+           add_core = BAV
+           remove_core = HAB
+} # The Treaty of Pressburg
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1809.10.14 = { owner = ITA
+           controller = ITA
+           add_core = ITA
+           remove_core = BAV
+} # Incorporated into the Kingdom of Italy after the treaty of Sch?brunn
+1814.4.11 = { owner = HAB
+           controller = HAB
+           add_core = HAB
+           remove_core = ITA
+} # Treaty of Fontainebleau, Napoleon abdicates unconditionally

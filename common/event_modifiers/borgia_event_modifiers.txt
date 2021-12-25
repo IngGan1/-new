@@ -1,0 +1,18 @@
+pope_supports_borgia = {
+	mercenary_discipline = 0.05
+	mercenary_cost = -0.25
+	papal_influence = 1
+	ae_impact = -0.25
+}
+
+fighting_borgia = {
+	defensiveness = -0.25
+}
+
+italian_condottieri = {
+	mercenary_discipline = 0.05
+	mercenary_cost = -0.50
+	merc_maintenance_modifier = -0.25
+	mercenary_manpower = 0.50
+	land_forcelimit_modifier = 0.25
+}

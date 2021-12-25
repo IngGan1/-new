@@ -1,0 +1,94 @@
+country_decisions = {
+
+	latin_empire_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_latin_empire_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = ARB }
+			NOT = { tag = CAS }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = MAM }
+			NOT = { tag = ARA }
+			NOT = { tag = POR }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { tag = GRE }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5	#Any big Moroccan tag will try to usurp the title
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				tag = ACH #Achaea
+				tag = NAX #Naxos
+				tag = KNI #The Knights
+				tag = ATH #Athens
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area
+				area = hudavendigar_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			religion = catholic
+			has_idea_group = katholisch0
+			NOT = { exists = BYZ }
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hudavendigar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			change_tag = LTE
+			remove_non_electors_emperors_from_empire_effect = yes
+			add_prestige = 25
+			add_opinion = {
+				who = PAP
+				modifier = fe_latin_empire_formation
+			}
+			if = {
+				limit = { NOT = { has_reform = celestial_empire } }
+				change_government = monarchy #Desert tribes settling down, theocracies become monarchies.
+				set_legacy_government = despotic_monarchy
+			}
+			set_country_flag = formed_latin_empire_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}

@@ -1,0 +1,78 @@
+superiority_chinese_unification_ZHP = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0.05
+		prestige_factor = 1.5
+		peace_cost_factor = 0.05
+		
+		allowed_provinces = {
+			superregion = china_superregion
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CHINESE_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.05
+		prestige_factor = 3.0
+		peace_cost_factor = 0.05
+		
+		allowed_provinces = {
+			OR = {
+				superregion = china_superregion
+				culture_group = FROM
+			}
+		}
+		
+		peace_options = {
+			po_demand_provinces
+		}
+		
+		country_desc = ALL_CGROUP_COUNTRIES
+		prov_desc = ALL_CHINESE_PROVS
+	}
+	
+	war_name = CHINESE_UNIFICATION_WAR_NAME	
+}
+
+
+
+
+take_capital_take_mandate_ZHP = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.05
+		prestige_factor = 1.5
+		peace_cost_factor = 0.05
+
+		peace_options = {
+			po_demand_provinces
+			po_take_mandate
+		}
+
+		country_desc = CHINESE_EMPIRE_COUNTRY
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.05
+		prestige_factor = 3.0
+		peace_cost_factor = 0.05
+
+		peace_options = {
+			po_demand_provinces
+		}
+
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = CELESTIAL_EMPIRE_WAR_NAME
+}

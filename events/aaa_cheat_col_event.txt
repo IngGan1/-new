@@ -1,0 +1,85 @@
+namespace = aaa_cheat
+
+country_event = {
+	id = aaa_cheat.1
+	title = aaa_cheat.t
+	desc = {
+		trigger = {
+			NOT={has_global_flag = aaa_col_limit_flag}
+			NOT={has_global_flag = aaa_col_berf_flag}
+		}
+		desc = aaa_cheat.d1
+	}
+	desc = {
+		trigger = {
+			has_global_flag = aaa_col_limit_flag
+			NOT={has_global_flag = aaa_col_berf_flag}
+		}
+		desc = aaa_cheat.d2
+	}
+	desc = {
+		trigger = {
+			NOT={has_global_flag = aaa_col_limit_flag}
+			has_global_flag = aaa_col_berf_flag
+		}
+		desc = aaa_cheat.d3
+	}
+	desc = {
+		trigger = {
+			has_global_flag = aaa_col_limit_flag
+			has_global_flag = aaa_col_berf_flag
+		}
+		desc = aaa_cheat.d4
+	}
+	picture = PRAYING_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		custom_tooltip = aaa_cheat_tt1
+		custom_tooltip = aaa_cheat_tt2
+		custom_tooltip = aaa_cheat_tt3
+		custom_tooltip = aaa_cheat_tt4
+		custom_tooltip = aaa_cheat_tt5
+		custom_tooltip = aaa_cheat_tt6
+		custom_tooltip = aaa_cheat_tt7
+		custom_tooltip = aaa_cheat_tt8
+		custom_tooltip = aaa_cheat_tt9
+		custom_tooltip = aaa_cheat_tt10
+		custom_tooltip = aaa_cheat_tt11
+		custom_tooltip = aaa_cheat_tt12
+		custom_tooltip = aaa_cheat_tt13
+		custom_tooltip = aaa_cheat_tt14
+	}
+	option = {
+		name = aaa_cheat.on
+		trigger = {
+			NOT={has_global_flag = aaa_col_limit_flag}
+		}
+		set_global_flag = aaa_col_limit_flag
+	}
+	option = {
+		name = aaa_cheat.off
+		trigger = {
+			has_global_flag = aaa_col_limit_flag
+		}
+		clr_global_flag = aaa_col_limit_flag
+	}
+	option = {
+		name = aaa_cheat.on1
+		trigger = {
+			NOT={has_global_flag = aaa_col_berf_flag}
+		}
+		set_global_flag = aaa_col_berf_flag
+	}
+	option = {
+		name = aaa_cheat.off1
+		trigger = {
+			has_global_flag = aaa_col_berf_flag
+		}
+		clr_global_flag = aaa_col_berf_flag
+	}
+	option = {
+		highlight = yes name = aaa_cheat.exit
+	}
+}

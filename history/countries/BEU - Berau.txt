@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = kutai
+technology_group = chinese
+religion = hinduism
+capital = 2710
+
+1530.1.1 = { religion = sunni }

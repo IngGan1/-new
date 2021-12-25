@@ -1,0 +1,70 @@
+# INSTRUCTIONS:
+# -------------
+# is_triggered_only - Triggered from within the code or by event effects. DO NOT REMOVE THE STOCK ONES.
+# months - The number of months this CB will be valid. Only works for triggered CBs.
+# prerequisites - A condition that automatically activates a CB. Does not work for triggered CBs.
+# no_opinion_hit - If yes you get no negative opinion from this
+#
+# ROOT = attacker
+# FROM = target
+#
+# NOTE: The order in which the peace options are listed is the order in which the AI will normally prioritize them in peace treaties
+#
+# TRIGGERED - Triggered from within the code or by event effects
+# --------------------------------------------------------------
+
+# Ottoman Expansion
+cb_conquest_tur = {
+	valid_for_subject = no
+
+	prerequisites = {
+		primary_culture = turkish
+		is_subject = no
+		current_age = age_of_discovery
+		current_age = age_of_reformation
+		FROM = {
+			OR = {
+				carpathia_region = {
+					owned_by = PREV
+				}
+				balkan_region = {
+					owned_by = PREV
+				}
+				anatolia_region = {
+					owned_by = PREV
+				}
+				mashriq_region = {
+					owned_by = PREV
+				}
+				maghreb_region = {
+					owned_by = PREV
+				}
+				egypt_region = {
+					owned_by = PREV
+				}
+			}
+		}
+	}
+
+	war_goal = take_claim_tur
+}
+
+# Hundred years war
+cb_conquest_hyw = {
+	valid_for_subject = no
+
+	prerequisites = {
+		tag = FRA
+		current_age = age_of_discovery
+		FROM = {
+			france_region = {
+				owned_by = PREV
+			}
+			OR = {
+				tag = ENG
+				is_subject_of = ENG
+			}
+		}
+	}
+	war_goal = conquest_hyw
+}

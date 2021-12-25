@@ -1,0 +1,637 @@
+﻿l_english:
+ NEW_ACHIEVEMENT_1_2_NAME:0 "Æ­DÇ ÇXÕìÅ"
+ NEW_ACHIEVEMENT_1_2_DESC:0 "…ÈÁm­DÇ xÆP­È<Çj¸ iÕÑ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_3_NAME:0 "tÇƒ¬tÇ ³!Çp­tÇä²"
+ NEW_ACHIEVEMENT_1_3_DESC:0 "jÍ³ !Çp­ Ñ¼%¸ jÕÄ¬L®ÀÉ !Çp­DÇ É¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_4_NAME:0 "tÇƒ¬tÇ ³tÕp­tÇä²"
+ NEW_ACHIEVEMENT_1_4_DESC:0 "jÍ³ tÕp­ Ñ¼%¸ jÕÄ¬L®ÀÉ tÕp­DÇ É¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_5_NAME:0 "àÂYÅXÇ Â8ÖÇ"
+ NEW_ACHIEVEMENT_1_5_DESC:0 "àÂYÅXÇ Â8ÖÇ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_6_NAME:0 "ýÈLÇtÇ °Æ¬¹|¹ ¬|·“±DÇ LµL®ÀÉ"
+ NEW_ACHIEVEMENT_1_6_DESC:0 "ä²x¹ m­¬NÆXÇ UÆäÂ °¬<ÖDÇ 1Á¬ÀÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_7_NAME:0 "ø­t¬ ´° p¬|Å!"
+ NEW_ACHIEVEMENT_1_7_DESC:0 "ÀÉíÅ XÕ˜°|¹ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_8_NAME:0 "¹Â¬¹|¹ p¬P´ä²!"
+ NEW_ACHIEVEMENT_1_8_DESC:0 "ÈÁÇÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_9_NAME:0 "Œ¼p¬—¼NÇ „Ç®Ø²"
+ NEW_ACHIEVEMENT_1_9_DESC:0 "2Æ²Â¸Ò¬¹DÅ(Austria)|¹ L°´Å´°¬¹à¬ àÂ1Á j¸È¹ Èm­XÇ iÖÈ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_10_NAME:0 "ÀÉl­XÇ ¼³¸Ó"
+ NEW_ACHIEVEMENT_1_10_DESC:0 "2Æ²Â¸Ò¸|Ç¬¹DÅÐÅ ÝÂü»ÀÉ|¹ t¬2ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_11_NAME:0 "ìÅ0®¬ xÇÄ³j¸ ¬”² 8®xÇ¬”Æ?"
+ NEW_ACHIEVEMENT_1_11_DESC:0 "tÎ²ÂðÒ|Å(Castile) ¶”² ²Â˜ÓxÇ(Spain)<Çj¸ DÅTº¬¹tÎ ³Y¹DÇ ¼¬¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_12_NAME:0 "ËÊi¾ )¼(ÓÐÅ Â“±NÇ ®ÉÀ 1¼iÕ"
+ NEW_ACHIEVEMENT_1_12_DESC:0 "Õ‘·²Â(France)j¸ ¨ºà´ Õ‘·²Â TÏ´Å|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_13_NAME:0 "ø­¸Œ¬ Î¹tÇ ¬ÂÕÀÉ”² JÅDÅ”Æ..."
+ NEW_ACHIEVEMENT_1_13_DESC:0 "ìÓt¹,Ò¬(Portugal)j¸ ¾|·ÈÉü¬ DÅÕ¬¹tÎÐÅ ÝÂü»ÀÉ|¹ t¬2ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_14_NAME:0 "ÄÉìÂtÇ|Å?!"
+ NEW_ACHIEVEMENT_1_14_DESC:0 "jÕ ˆ¼XÇ È,ÒÐÅÁ 10,000…ºDÇ ýÈtÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_15_NAME:0 "È³tÇ jÍà¬|Å"
+ NEW_ACHIEVEMENT_1_15_DESC:0 "3,000è¬Ü´|¹ ¨º<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_16_NAME:0 "tÈË¬¼”² Ç"
+ NEW_ACHIEVEMENT_1_16_DESC:0 "100XÇ ÇàÂ, 100XÇ ÈµÑ1Á, +3XÇ HÅÈÄ³|¹ Ù³ÜÂÐÅ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_17_NAME:0 "1ÁäÂjÕ ¬¨Ñ­¹àÂÇ"
+ NEW_ACHIEVEMENT_1_17_DESC:0 "8Á …ºXÇ ”Í0®Ë¬ä´DÇ µÑÈXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_18_NAME:0 "ÄÉÈ XÕ˜²tÇ ´°°¹ µÑXÎÇ"
+ NEW_ACHIEVEMENT_1_18_DESC:0 "5/5/5XÇ µÑXÎÇ|¹ »Å<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_19_NAME:0 "tÇÈÐ¬¹DÅXÇ |ÅÝ¹"
+ NEW_ACHIEVEMENT_1_19_DESC:0 "tÇÈÐ¬¹DÅ(Italy)|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_20_NAME:0 "É°È"
+ NEW_ACHIEVEMENT_1_20_DESC:0 "è² jÕ (ÌN¸XÇ È,ÒÄ³ Œ¼tÇÀÉ JÅà¬ ÈÁÇÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_21_NAME:0 "UÆŒ­"
+ NEW_ACHIEVEMENT_1_21_DESC:0 "Ä¬¹Â ÈÁÇDÇ µÑtÕ ðÅiÕDÇ °¬1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_22_NAME:0 "Ö…º Ì¹8Á!"
+ NEW_ACHIEVEMENT_1_22_DESC:0 "ù²àÂtÇ ÀÉÐÆXÕà¬ ˆÇ”² ÀÐm­ ´° ¼Ž·p­XÇ ”Æl­¬ÀmÕDÇ ­ ÌÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_23_NAME:0 "È°Æ"
+ NEW_ACHIEVEMENT_1_23_DESC:0 "ô¼pÈ 8ÌÈm­<Çj¸Á ÈÁÇÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_24_NAME:0 "´° tÎ¬¹¾ tÕÐÅ tÕÈtÇŽ· ÆÅä²"
+ NEW_ACHIEVEMENT_1_24_DESC:0 "tÎ¬¹¾ tÕ Œ­íÅ È´Ì|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_25_NAME:0 "xÇÄ³XÇ üÈxÇ"
+ NEW_ACHIEVEMENT_1_25_DESC:0 ".Çý· m­¬j¸ xÇÄ³ Œ­íÅ È´Ì|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_26_NAME:0 "²ÂèÆt³tÇ ø»ÐÌ  °ð¶à¬ ˆÇµÂÈ²ä²!"
+ NEW_ACHIEVEMENT_1_26_DESC:0 "²ÂèÆt³(Sweden)<Çj¸ ¼¸Ò tÕ Œ­íÅXÇ tÕHÅ.Á È´Ì|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_27_NAME:0 "°Æ¬¹ !Çp­NÇ œÌXÕ4»È!"
+ NEW_ACHIEVEMENT_1_27_DESC:0 "7.0 tÇÁÀXÇ !Çp­ ¬À0®|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_28_NAME:0 "tÇð· tÕp­tÇ|·tº ¨ºà´ ƒ¬DÇ ¬ÈÉ Â ˆÇ´Å"
+ NEW_ACHIEVEMENT_1_28_DESC:0 "7.0 tÇÁÀXÇ tÕp­ ¬À0®|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_29_NAME:0 "œÓNÇ |Îô¼ä² ¬XÕä²"
+ NEW_ACHIEVEMENT_1_29_DESC:0 "2Æ²Â¸Ò¬¹DÅ(Austria)j¸ Ù³ÜÂÐÅ 3¬XÇ Ù³p­ðÅiÕDÇ °¬1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_30_NAME:0 "ÈµÑÈxÇ Õ¸tÇ´Å"
+ NEW_ACHIEVEMENT_1_30_DESC:0 "90% tÇÁÀXÇ tÕp­ ÈµÑü¬ !Çp­ ÈµÑDÇ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_1_31_NAME:0 "‰Õ´ÆtÇ jÍà¬|Å"
+ NEW_ACHIEVEMENT_1_31_DESC:0 "ÀÉ×­tÇ ÆÅ”² ÁÀÜÐj¸ Ç³jÕ ÀÉ×­DÇ ÁÀ³j¸ jÕ È,ÒÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_0_NAME:0 "¨ºà´ ƒ¬NÇ 'È¹T³ ì·ÜÂDÅ'ÐÅŒ¬j¸"
+ NEW_ACHIEVEMENT_6_0_DESC:0 "ì·ÜÂDÅ 8»TÖŒ­ m­¬j¸ ÜÂ‘ÇXÕìÅ ì·ÜÂDÅ(Russia)|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_1_NAME:0 "¨ºà´ ³Y¹ÐÅÁ"
+ NEW_ACHIEVEMENT_6_1_DESC:0 "¬ ³Y¹È¹ä² È´ÅÄ³ XÕ˜°XÇ ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_2_NAME:0 "²Â˜ÓxÇtÇ iÖÈ·È²ä²"
+ NEW_ACHIEVEMENT_6_2_DESC:0 "²Â˜ÓxÇ(Spain)<Çj¸ àÂ1Á j¸È¹ Èm­XÇ iÖÈ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_3_NAME:0 "ŽÈ tÇx¹ Èm­"
+ NEW_ACHIEVEMENT_6_3_DESC:0 "Å³|Ç(Germany)DÇ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_4_NAME:0 "ôÓŽ·Ü´”² °ÆüÈj¸ ¬ Â ˆÇ´Å"
+ NEW_ACHIEVEMENT_6_4_DESC:0 "ôÓŽ·Ü´(Poland)j¸ ¨ºà´ 0®.ÂXÇ jÍ³ ¸¨¼(32)ÐÅ Ä³ì²XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_5_NAME:0 "8ÁÄ¬XÇ ¼¬¬Ç"
+ NEW_ACHIEVEMENT_6_5_DESC:0 "iÖ4»ÀÉ¬ DÅÌ² ¨ºà´ ´°Y¹ ÀÉíÅDÇ ¼¬¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_6_NAME:0 "m­TÖ UÆŒÈ"
+ NEW_ACHIEVEMENT_6_6_DESC:0 "ä²tÇ»j¸ |Çø¼ Œ­íÅDÇ µÑiÕXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_7_NAME:0 "¼äÂ¸°Æ²Â"
+ NEW_ACHIEVEMENT_6_7_DESC:0 "D¾”ÇðÒÀÆ(Byzantium)<Çj¸ j¸È¹ Èm­DÇ ¬Çt¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_8_NAME:0 "õ¬©¬ÈxÇ Æ Ñ UÖ¥ÇÇ"
+ NEW_ACHIEVEMENT_6_8_DESC:0 "200¬XÇ ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_9_NAME:0 "…ºˆ´ÈÕÈ tÎtÇÈ"
+ NEW_ACHIEVEMENT_6_9_DESC:1 "àÂ1Áj¸È¹Èm­DÇ Ì¹ä´ä²."
+ NEW_ACHIEVEMENT_6_10_NAME:0 "x±t¹èÆtÇXÇ 2Â"
+ NEW_ACHIEVEMENT_6_10_DESC:0 "x±t¹èÆtÇ(Norway)j¸ tÕp­ ô¼	®ˆÔDÇ ÝÀ°ÀXÕ”² ¨ºà´ ÀÉíÅDÇ ÁÉÈ, 9ÖNÇ …ÈÁm­DÇ µÑtÕ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_11_NAME:0 "DÅÕ¬¹tÎXÇ ¬³m­"
+ NEW_ACHIEVEMENT_6_11_DESC:0 "iÏà¬(Kongo)j¸ DÅÕ¬¹tÎXÇ ¨ºà´ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_12_NAME:0 "²<»XÇ 8®NÇ tÇÈ ÆÅ´Å"
+ NEW_ACHIEVEMENT_6_12_DESC:0 "´Ìj¸²Ð(Cherokee)j¸ ¨ºà´ ÜÂ³­DÇ Â©ÆjÕ DÌ 13¬ ÝÂü»ÀÉ ÀÉíÅDÇ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_13_NAME:0 "Ó¬¹ÐÅÁXÇ XÕû¸2¼"
+ NEW_ACHIEVEMENT_6_13_DESC:0 "‰Ç®œ·Ü´(England)j¸ ÜÂ‘ÇXÕìÅ Ó¬¹(Paris)|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ(ø­¸tÇ¸Ò ¾¬¹¼Ò[Great Britain]tÇ DÅÌ² ä²x¹ m­¬|¹ Ö1ÁtÕÁ”² HÅ )´È²ä²)."
+ NEW_ACHIEVEMENT_6_14_NAME:0 "ÀÒ¼¹ÆÅ”² ø¸XÇ .ÂÄÐ"
+ NEW_ACHIEVEMENT_6_14_DESC:0 "2Æ²ÂÌ¹(Ottomans)<Çj¸ j¸È¹(Rome), ¨º²ÂlÐ¼(Moscow), tÇ²ÂÄÐˆ´(Istanbul)DÇ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_15_NAME:0 "ÜÂ¥Ç ÀÉ0¼"
+ NEW_ACHIEVEMENT_6_15_DESC:0 "Áj¸ ä²x¹ 7¬ ÁÀˆÔXÇ 4»íÅ üÈÄ³m­tÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_16_NAME:0 "Èm­XÇ •´4­"
+ NEW_ACHIEVEMENT_6_16_DESC:0 "àÂ1Á j¸È¹ Èm­DÇ tÕ´ÌXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_17_NAME:0 "8ÁÄ¬ Èõ¼Ç"
+ NEW_ACHIEVEMENT_6_17_DESC:0 "È 8ÁÄ¬|¹ ŒÁ.ÇXÕp¬˜° …ÈÁm­DÇ µÑXÕìÅ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_18_NAME:0 "¼À°À"
+ NEW_ACHIEVEMENT_6_18_DESC:0 "X¹PÐ(Ryukyu)j¸ È 8ÁÄ¬|¹ ŒÁ.ÇXÕp¬˜° …ÈÁm­DÇ µÑXÕìÅ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_19_NAME:0 "ÀÉXÕÜ´"
+ NEW_ACHIEVEMENT_6_19_DESC:0 "2±ÀÉÜ´(Najd)j¸ 500¬XÇ ÂÈ²Ó ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_21_NAME:0 "Á‘Å hÎõ¬"
+ NEW_ACHIEVEMENT_6_21_DESC:0 "DÅˆÉMÑ(Aztec)<Çj¸ ¬¹²Âø¼(Lisbon), È¹Ü´¬¹Ü´(Madrid), Ó¬¹(Paris), ð·X³(London), TÅ²ÂLÑt¹ô²(Amsterdam), j¸È¹(Rome)|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_22_NAME:0 "´ÆÂ ‹ÈNÇ  °"
+ NEW_ACHIEVEMENT_6_22_DESC:0 "DÅ|Çœ·Ü´ 8»TÖŒ­ m­¬j¸ ¾¬¹¼Ò ÈÄ³|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_23_NAME:0 "4»íÅ (ÓŒ­m­"
+ NEW_ACHIEVEMENT_6_23_DESC:0 ".Çý· m­¬j¸ ÜÂ‘ÇXÕìÅ DÅt³(Aden), 8Öt¹4»ˆÉ(Hormoz), Ð¹|·tÎ(Malacca)|¹ Èõ¼XÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_24_NAME:0 "ÇÜ´ ÄÖ¬Àt¹"
+ NEW_ACHIEVEMENT_6_24_DESC:0 "+50% tÇÁÀXÇ 0®Ñ¼ È,Ò%¸DÇ ô¼.ÇjÕ DÌj¸ ÇÜ´ ÄÖ¬Àt¹|¹ ù²àÂXÇ ÖíÅ Ñ¼…È<Çj¸ 2ÁÈXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_25_NAME:0 "³ðÅÈ"
+ NEW_ACHIEVEMENT_6_25_DESC:0 "5¬ tÇÁÀXÇ m­¬j¸ l­1Á´ ¼m­¬Ù³ù¹ÐÅ ¬…ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_26_NAME:0 "¬À‘·Ä³ P´ 0¼"
+ NEW_ACHIEVEMENT_6_26_DESC:0 "Ù³p­ðÅiÕ ÆÅtÇ ÜÂ‘ÇXÕìÅ Ù³ÜÂÐÅ P´ ¬XÇ ðÅiÕDÇ .ÇÀÉXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_27_NAME:0 "‹Å¬XÇ xÇ´°"
+ NEW_ACHIEVEMENT_6_27_DESC:0 "1444D±Ž´0Ñ 1820D±L®ÀÉ ñÂ® Õ¸tÇ|¹ ÄÉ‰ÕXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_28_NAME:0 "Ç.Ç¬ DÅÈ²tº ýÈLÇDÇ"
+ NEW_ACHIEVEMENT_6_28_DESC:0 "1776D± ´È¹lÐÐÅÁ ø»m­(USA)<Çj¸ ÜÂ‘ÇXÕìÅ ¨ºà´ ø»m­XÇ TÏ´Å|¹ ÉÓTÖ ÁÀÜÐÐÅ ˆÇ”² Ù³HÅ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_29_NAME:0 "ýÈà¬ öÂNÇ ¬ÀŒ·NÇ ÆÅä²"
+ NEW_ACHIEVEMENT_6_29_DESC:0 "¡Á¬tÇ(Songhai)j¸ Ó´,Ò(Timbuktu)|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_30_NAME:0 "Ö8Á íÅÈ"
+ NEW_ACHIEVEMENT_6_30_DESC:0 "1444D±ÐÅ ³ÍÐÆ .Ç©ºü»<Çj¸ ÜÂ‘ÇXÕìÅ ¨ºà´ ÜÂ³­DÇ Â©ÆXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_6_31_NAME:0 "1ÁŽ´XÇ tÇ„¹<Çj¸"
+ NEW_ACHIEVEMENT_6_31_DESC:0 "ÈP­ŒÖ m­¬j¸ 100XÇ ³üÈP­ Œ­Ç|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_0_NAME:0 "±Æ|Ç¹ÂœÌ"
+ NEW_ACHIEVEMENT_7_0_DESC:0 ".Çý· m­¬j¸ |Çø¼ Œ­íÅ È´Ì|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_1_NAME:0 "ä²=Á ÝÂü»ÀÉ"
+ NEW_ACHIEVEMENT_7_1_DESC:0 "5¬XÇ ÝÂü»ÀÉ m­¬|¹ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_2_NAME:0 "¸-¸iÏ²Ð²ÂÀÐ"
+ NEW_ACHIEVEMENT_7_2_DESC:0 "ø­|·˜°ä²(Granada)j¸ HÅì²è¸ÜÂDÅ(Andalusia)|¹ Ö1ÁXÕà¬ tÇ ¼¬¹DÅ Œ­íÅ È´Ì|¹ ¬ÇÈõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_3_NAME:0 "È8Á|¹ ²´ÑÉ´Å|·"
+ NEW_ACHIEVEMENT_7_3_DESC:0 "ÝÂü»ÀÉj¸ tÕ)¼´´Å ä²x¹ ˜°|·|¹ Ö1ÁXÕÀÉ JÅNÇ DÌj¸ ü¬p¬ …ÈüÈm­DÇ …ÈÁm­<Çj¸ ¼À<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_4_NAME:0 "³xÎ"
+ NEW_ACHIEVEMENT_7_4_DESC:0 "Ëºè¬(Mongolia)tÇ˜° tÇP× xÎm­(Great Horde)<Çj¸ ÜÂ‘ÇXÕìÅ Ém­, ì·ÜÂDÅ, ˜Ót¹ÜÂDÅ Œ­íÅDÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­DÇ µÑtÕ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_5_NAME:0 "4»íÅDÇ ÇjÕ 2± ¬ÀÉ"
+ NEW_ACHIEVEMENT_7_5_DESC:0 "4¬XÇ 4»íÅŒÖ¬À|¹ Ö1ÁXÕà¬ ¨ºà´ 4»íÅŒÖ¬Àj¸Ž´0Ñ ô¼±²Â ÁÀxÇDÇ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_6_NAME:0 "Ç³jÕ 4»ÈhÕ³"
+ NEW_ACHIEVEMENT_7_6_DESC:0 "³œÍ ÆÅtÇ 500™ÌXÇ ³Ö.ÁDÇ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_7_NAME:0 "˜°”² .ÇÀÉ`Õ ƒ¬tÇä²"
+ NEW_ACHIEVEMENT_7_7_DESC:0 "2±j³Ž·Ü´ 8»TÖŒ­ ŒÁm­<Çj¸ ÜÂ‘ÇXÕìÅ 2±j³Ž·Ü´(Netherlands)|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_8_NAME:0 "ô¼8Ö ¼”² ÜÂ¥Ç"
+ NEW_ACHIEVEMENT_7_8_DESC:0 "100%XÇ ÉÁÀüÈXÇ|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_9_NAME:0 "Â1ÁXÇ ìÅUÆ"
+ NEW_ACHIEVEMENT_7_9_DESC:1 "¬ÐNÆ(Kilwa)j¸ ”ÇÀÉ¼t¹(Zanzibar)NÆ ´ ¼tÇ(Bombay)(ÀÐ˜°[Thana])|¹ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_10_NAME:0 "iÖ® T³ø»"
+ NEW_ACHIEVEMENT_7_10_DESC:0 "iÖ®DÇ ÝÀ°ÀXÕ”² 10¬XÇ ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_11_NAME:0 "tÎt¹ÀÐà¬XÇ ÄÖÆ"
+ NEW_ACHIEVEMENT_7_11_DESC:0 "ŽÒÈ²ÀÉ(Tunisia)j¸ ÜÂ`Î¬¹DÅ(Sicily), ¬Àt¹p³Ð°(Sardinia), ¼¸DÅ¸²Â ÈÄ³(the Balearic Islands), LÅÈ(Algiers) tÕHÅü¬ ²Â˜ÓxÇ(Spain) ¨°Ž´ tÕHÅDÇ ŒÁ.ÇXÕà¬ TÏ´Å|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_12_NAME:0 "õ¬üÈØ²Ø®Á tÇ 1ÁÐÅ Ä¬íÂÈ²ä²"
+ NEW_ACHIEVEMENT_7_12_DESC:0 "ìÅ1Á ÄÖÄ¬Ç¬ ÆÅ”² ˜°|·j¸ ÜÂ‘ÇXÕìÅ, ÂÄ³ÐÅ 1ÁtÇ ÀÉ´ÅÄÉ ÁÀÜÐj¸ ìÅ1Á ÄÖÄ¬Ç|¹ »Å<ÇíÂÜÂ2Æ(T³ ’±NÇ ñ´	®XÇ ”ÆÈÀ t¬<»NÇ xÇÈ´ÀÉ JÅµÂÈ²ä²)."
+ NEW_ACHIEVEMENT_7_13_NAME:0 ".Áp¬Œ­DÇ ¬ä²!"
+ NEW_ACHIEVEMENT_7_13_DESC:0 ".ÁÈÄÖj¸ ÜÂ‘ÇXÕÀÉ JÅ”² m­¬j¸ àÂ1Á j¸È¹ Èm­XÇ .ÁÈÄÖ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_14_NAME:0 "¼¬À(Vasa) ¬8»xÇ¬,  ¼ôÒ(Wettin) ¬8»xÇ¬?"
+ NEW_ACHIEVEMENT_7_14_DESC:0 ".Áp¬ p­üÈÈDÇ DÌÝÐXÕà¬ ˆÇ”² ôÓŽ·Ü´(Poland)˜° ôÓŽ·Ü´-¬¹,ÒDÅÈ²DÅ ðÅ)¼(Commonwealth)XÇ UÆŒÈÐÅ ù²àÂ UÆpÈXÇ µÑXÎÇ|¹ ñ´ù­ÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_15_NAME:0 "2Æ¸ÀÉ!"
+ NEW_ACHIEVEMENT_7_15_DESC:0 "100%XÇ õ¬TÖm­ ÈµÑDÇ ÀÉÌ² 2Æ|·j±õ¬Ó|¹ ÑÉŒ­ÜÂ²Ðà¬, Ém­XÇ ÀÉíÅ XÕ˜°|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_16_NAME:0 "ä²²Â¬¹”² UÆNÇ jÕ …ºÐ¿!"
+ NEW_ACHIEVEMENT_7_16_DESC:0 "ôÓŽ·Ü´(Poland)j¸ 8Á„ÇDÇ ÐÓÀÉXÕà¬, È³ p­üÈÈtÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_17_NAME:0 " ¼2±XÎDÅXÇ ¼ä²"
+ NEW_ACHIEVEMENT_7_17_DESC:0 " ¼2±XÎDÅ(Venice)j¸ 10¬ ø»Ì¹XÇ Ä³ÜÂ|¹ ŒÁ.ÇjÕ ÁÀÜÐÐÅÁ LÅ	¸°ÀÜ´¬¹DÅ(Alexandria)NÆ XÏ²ÂÄÐðÒx±Õ(Constantinople) x±Ü´ ¨ºP´ÐÅÁ 75%XÇ 4»íÅ È.Ç(ÇDÇ (ÌÀÉXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_18_NAME:0 "¬ ÌXÇ ³¬"
+ NEW_ACHIEVEMENT_7_18_DESC:0 "t³È¹lÐ(Denmark)j¸ p³xÇj¸(Danelaw) ÀÉ)¼DÇ ´>Ìà¬, t³È¹lÐ 8»TÖj¸ Ì¹Ü´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_19_NAME:0 "Ì¹üÈXÇ …ÇÄÖô¼Ç"
+ NEW_ACHIEVEMENT_7_19_DESC:0 "ìÅÄÉ Ž´qÈ É XÕ˜°j¸ ÜÂ‘ÇXÕìÅ ­Ì˜°|·(Qing)|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_20_NAME:0 "­ìÂXÇ ³ÁÀ"
+ NEW_ACHIEVEMENT_7_20_DESC:0 "¬àÂP­ ¬ÖXÇ ÉìÂÀÉNÆ ¬ÖP­ŒÖ ¬ÖXÇ ÉìÂÀÉ ¨ºP´|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_21_NAME:0 "DÆÈ µÑÈ"
+ NEW_ACHIEVEMENT_7_21_DESC:0 "ÇXÎŒ­ ¶”² ˆ´Ì¹tÇ ÆÅ”² ÀÉíÅDÇ 100¬ tÇÁÀ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_22_NAME:0 "tÇ ¼Ž·p­ ˆ±XÇ&"
+ NEW_ACHIEVEMENT_7_22_DESC:0 "Ö…º m­¬|¹ ³ÁÀ<Çj¸ jÕ m­¬NÆXÇ ÈÁÇÐÅÁ ø­ä´XÇ ÂÄ³|¹ µÑÈXÕà¬ jÍŒÁ 99%XÇ ÈÁÇ ÈÂ|¹ UÖô¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_23_NAME:0 "Ù³)¼XÇ D¾èÍ¬ ˜°”² Eµ"
+ NEW_ACHIEVEMENT_7_23_DESC:0 "ÉYÅ DÅTº¬¹tÎÐÅ ˆ´P­ m­¬ TÏ´Å|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_24_NAME:0 "ÈŒ¬ äÂlÐj¸Ü´|Å!"
+ NEW_ACHIEVEMENT_7_24_DESC:0 "¨ºà´ D¾è² ÝÀ°ÀÀÉíÅDÇ …ÈÁm­<Çj¸ P´p¬˜° È.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_25_NAME:0 "ÄÉÈjÕ ´° jÎl­"
+ NEW_ACHIEVEMENT_7_25_DESC:0 "¼p­DÇ ÀÉÐÆXÕ0® ÇtÕ ÈÁÇDÇ ÜÂ‘ÇjÕ ÄÖ ¹Â¬¹hÕ<Çj¸hÃ ø­ä´XÇ ”Æl­|¹ ä´´ÅüÈíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_26_NAME:0 "'À¼'Ë¬m­tÇ|·Á ÀÉÈ„´tÕ •Í•ÍXÕä²”² t¬&?"
+ NEW_ACHIEVEMENT_7_26_DESC:0 "P´ ¬ tÇÁÀXÇ µÂÀÉ ÀÉíÅDÇ ¬ÄÉ À¼Ë¬m­DÇ p¬²¬¹8Á”Æ."
+ NEW_ACHIEVEMENT_7_27_NAME:0 "UÆÉUÆ"
+ NEW_ACHIEVEMENT_7_27_DESC:0 "Tabarestan(ÀÐ¼¸²ÂÄÐ)<Çj¸ ÜÂ‘ÇtÕÁ ˜Ót¹ÜÂDÅ|¹ Ì¹Ü´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_28_NAME:0 "È¼ ˜° ŽÈ ýÈìÅÉ..."
+ NEW_ACHIEVEMENT_7_28_DESC:0 "708Á¬ ±à¬ 3¬ÀÉ ¥²%¸XÎ ¨ºP´ 1ô¼ä² ®°NÇ µÑXÎÇ|¹ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_29_NAME:0 "àÂ1ÁjÕ ¼ÀÇ|Ç´Ì"
+ NEW_ACHIEVEMENT_7_29_DESC:0 "P­iÖ9¸<Çj¸, Æè¸´À¸DÇ ŒÁ.ÇXÕà¬ ¬¹ô¼È²DÅ 0®¬Àè², œÒ¼Ò 0®¬Àè², l­8Ö 0®¬Àè²DÇ À¼Ë¬m­<Çj¸ p¬²¬¹8Á”Æ."
+ NEW_ACHIEVEMENT_7_30_NAME:0 "²ÂÇ²ÂXÇ 8ÖÂ"
+ NEW_ACHIEVEMENT_7_30_DESC:0 "²ÂÇ²Âj¸ mÕl­|¹ ô¼.ÇXÕÀÉ JÅNÇ ÁÀÜÐj¸  99¬XÇ ÀÉíÅDÇ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_7_31_NAME:0 "Æè¸´À¸XÇ UÆ"
+ NEW_ACHIEVEMENT_7_31_DESC:0 "²ÐÕj¸²Â ¶”² 0®¬Àè² 8Á%¸<Çj¸ Æè¸´À¸ UÆm­DÇ t¬2ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_0_NAME:0 "lÐ|·¼LÑt¹"
+ NEW_ACHIEVEMENT_8_0_DESC:0 "lÐj¸DÅðÒDÅ|¹ 1ÁË¹XÕà¬ ²Â¡ÑNÖ„¹ÐÅ 0®Ñ¼ .ÇÛ²DÇ üÈT´ÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_1_NAME:0 "´)¼XÇ ¬ÀÇ"
+ NEW_ACHIEVEMENT_8_1_DESC:0 "àÂ1Á j¸È¹ Èm­ iÖÈNÆXÇ ÈÁÇtÕÁ ¹Â¬¹XÕ0® ÇXÕìÅ ²ÂèÆt³<Çj¸ ÜÂ‘ÇtÕ àÂP­Ä³ ðÅiÕDÇ tÇD°íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_2_NAME:0 "ÉÓTÖXÇ ô¼ÉxÇ"
+ NEW_ACHIEVEMENT_8_2_DESC:0 "2Æ²ÂÌ¹ Èm­ü¬ ì·ÜÂDÅ, Õ‘·²ÂXÇ Å³Ë¹DÇ ô¼¥ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_3_NAME:0 "Ç¬˜°¸ÒXÇ jÍ!Îü­"
+ NEW_ACHIEVEMENT_8_3_DESC:0 "Orissa(2Æ¿¹¬À)j¸ ÜÂ‘ÇtÕÁ ¨ºà´ ôÅ³ °Æ¼¹ ÀÉíÅDÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­<Çj¸ p¬²¬¹íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_4_NAME:0 "µ¼è¬ 8Ö‘·tÇ"
+ NEW_ACHIEVEMENT_8_4_DESC:0 "µ¼è¬j¸ ÜÂ‘ÇtÕÁ ¬ÀÈ¹t¹xÎ¸Ò|¹ TÏ´ÅÀÉíÅ<Çj¸ Ì¹ä´´Å ô¼.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_5_NAME:0 "Õ¸²Â0Ñ tÈ"
+ NEW_ACHIEVEMENT_8_5_DESC:0 "eÏ¸ÒP­ ÐÅðÒ2Æ<ÕDÅj¸ LÅ	¸°ÀÜ´¬¹DÅ, HÅðÒ2ÆlÐ, XÏ²ÂÄÐðÒx±Õ (Alexandria, Antioch, Constantinople)DÇ ŒÁ.ÇXÕà¬ TÏ´Å|¹ Ì¹Ü´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_6_NAME:0 "LÅè¸Ü´ Ù³ù¹XÇ 1ÁË¹"
+ NEW_ACHIEVEMENT_8_6_DESC:0 "²ÂTÏÀÒœ·Ü´j¸ Õ‘·²Â|¹ …ÈÁm­<Çj¸ Ì¹Ü´íÂÜÂ2Æ (ø­¸tÇ¸Ò ¾¬¹¼Ò(Great Britain)NÇ Ö1ÁXÕÀÉ È¹íÂÜÂ2Æ)."
+ NEW_ACHIEVEMENT_8_7_NAME:0 "à¬¸ÒqÈXÇ hÎõ¬"
+ NEW_ACHIEVEMENT_8_7_DESC:0 "LÑ2ÆÄ³t¹j¸ ÜÂ‘ÇXÕìÅ .Çý· HÅXÇ ¨ºà´ Å³|Ç 8»TÖŒ­ ÀÉíÅDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_8_NAME:0 "à¬P´"
+ NEW_ACHIEVEMENT_8_8_DESC:0 "…º˜°|·j¸ ¨ºà´ ä²x¹ …ÈP­|¹ ÿ»”² …ÈÁm­DÇ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_9_NAME:0 "¼t¹¼j¸¬À"
+ NEW_ACHIEVEMENT_8_9_DESC:0 "È¹ø­¸¾ Ä¬ôÅ m­¬j¸ ˜°ìÓjÕ 0¼|¹ ìÓhÕjÕ Í 500™ÌXÇ ŒÁÖ.ÁDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_10_NAME:0 "´° È¹LÇÁXÇ pÈÀÉDÅ"
+ NEW_ACHIEVEMENT_8_10_DESC:0 "8Á ¬ÀÉXÇ pÈÀÉDÅ m­¬|¹ ¨ºP´ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_11_NAME:0 "LÅ¼È²DÅ ¶”² tÇ ¼¬¹DÅ"
+ NEW_ACHIEVEMENT_8_11_DESC:0 "LÅ¼È²DÅj¸ tÇ ¼¬¹DÅNÆ TÏtÎÁ²Â|¹ È.ÇXÕp¬˜° …ÈÁm­<Çj¸ Ì¹Ü´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_12_NAME:0 "¥ÕÌ¸”² Ä¬Á õ¬	®´´Å|Å jÕä²."
+ NEW_ACHIEVEMENT_8_12_DESC:0 "Ð¹|·|Å|¹ 1ÁË¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_13_NAME:0 "|·ÀÉxÔ¸Ò |·tÇˆ×XÇ |·Ç"
+ NEW_ACHIEVEMENT_8_13_DESC:0 "˜°¬°Æt¹j¸ ¨ºà´ Å³|Ç ÀÉíÅDÇ È9¸XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_14_NAME:0 "tÕ¬ ÀÉÀÉJÅ”² xÇÄ³Èm­"
+ NEW_ACHIEVEMENT_8_14_DESC:0 "Œ×P´²ÂÄÐtÇ˜° ¼|·¸Ò|¹ Ö1ÁXÕà¬ ÏtÇÕ, ð·X³, MÖiÏ(Canton ÀÉíÅXÇ) ø­¬¹à¬ 2ÆÀÐNÆ (Kichesipi ÀÉíÅXÇ)|¹ ŒÁ.ÇXÕp¬˜° …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_15_NAME:0 "œÌ¬¬ ±ÈÅ´Å!!"
+ NEW_ACHIEVEMENT_8_15_DESC:0 "ÈUÖˆ× 1001¬XÇ ÀÉíÅDÇ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_16_NAME:0 "Ü´|·XÐ|·XÇ õ¼Â"
+ NEW_ACHIEVEMENT_8_16_DESC:0 "HÆ|·²ÐDÅ ¶”² °ºä²D¾DÅj¸ ÜÂ‘ÇtÕÁ è¸È¹È²DÅ|¹ Ö1ÁXÕà¬ ¨ºà´ ¼xÎÀÉíÅDÇ …ÈÁm­<Çj¸ Ì¹ä´p¬˜° È.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_17_NAME:0 "DÅ|·D¾DÅ äÎ<Õ"
+ NEW_ACHIEVEMENT_8_17_DESC:0 "DÅ|·D¾DÅ|¹ Ö1ÁXÕà¬ 8ÁÄ¬ È|ÇXÇ äÎ<Õ ÝÀ°ÀÀÉ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_18_NAME:0 "Piet Heyn(2±j³Ž·Ü´XÇ ÈÅ³)ô¼ä² ÌÖm¹jÕ"
+ NEW_ACHIEVEMENT_8_18_DESC:0 "1¬XÇ ô¼<».Áè²DÇ ˜°ìÓtÕÁ 100è¬Ü´|¹ »Å<ÇíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_19_NAME:0 "ÜÐ‘ÅàÂ"
+ NEW_ACHIEVEMENT_8_19_DESC:0 "‰ÇtÎ|¹ Ö1ÁXÕà¬, ¨ºà´ ÜÂ³­DÇ Â©ÆXÕà¬ ¨ºà´ ¨°DÅTº¬¹tÎ ÀÉíÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_20_NAME:0 "­0®XÇ ¬¥ÇÇ¬¹"
+ NEW_ACHIEVEMENT_8_20_DESC:0 "DÅˆÉMÑ<Çj¸, …ÈÐ¹(Doom)DÇ 95L®ÀÉ ,Æ°¹ ²´, 20D± Ù³HÅ …ÈÐ¹tÇ 100ÐÅ tÇt¹ÀÉ JÅŒ¬ XÕ0®."
+ NEW_ACHIEVEMENT_8_21_NAME:0 "È¹2ÈŽ·XÇ mÕtÕ"
+ NEW_ACHIEVEMENT_8_21_DESC:0 "«Ì ˆ¼øÉj¸ 8ÁÄ¬|ÇüÈ|¹ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_22_NAME:0 "²Â˜ÓxÇ Èm­"
+ NEW_ACHIEVEMENT_8_22_DESC:0 "²Â˜ÓxÇ<Çj¸ UºÜÂTÏ, Ó˜°È¹, XÕ¼˜°, àÏˆÉTÏ (Mexico, Panama, Havana, Cuzco)ÐÅ ù²àÂXÇ ÀÉ0¼ XÕXÇ ÝÂü»ÈŽ´|¹ ¬ÑÉÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_23_NAME:0 "	´ÄÁÇ"
+ NEW_ACHIEVEMENT_8_23_DESC:0 "jÍŒÁ 10¬XÇ Èm­ mÕl­|¹ 	´ÄÁXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_24_NAME:0 "µðÄ tÇˆÉ ˜Ót¹ÜÂDÅ!!"
+ NEW_ACHIEVEMENT_8_24_DESC:0 "˜Ót¹ÜÂDÅ|¹ Ö1ÁXÕà¬ tÇÑÉ¸Ò, DÅ˜°¨Ñ¬¹DÅ, ø­¬¹²Â|¹ TÏ´ÅÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_25_NAME:0 "²Ð¬¹ÜÂÄÐ |Çø¼"
+ NEW_ACHIEVEMENT_8_25_DESC:0 "|Çø¼XÇ ä²tÇ»j¸ ÜÂ‘ÇXÕìÅ ù²àÂ ìÓhÕ, È|Çø¼DÇ 0®Å³P­TÖ XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_8_26_NAME:0 "äÕ<Á ©ÆÑ¼³"
+ NEW_ACHIEVEMENT_8_26_DESC:0 "äÕ8Á(Hesee)j¸ jÍŒÁ 50¬XÇ ©ÆÑ¼ ðÅ³|¹ ¬ÀÉà¬ Z¾DÇ ÀÉÀÉ È¹íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_27_NAME:0 "¼¸Ò íÂÇp­"
+ NEW_ACHIEVEMENT_8_27_DESC:0 "œÒ¼Ò 0®¬Àè²tÇ˜° ¬¹ô¼È²DÅ 0®¬Àè²<Çj¸ È ì·ÜÂDÅ ÀÉíÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕà¬ ¬¨Ñ­¹<Çj¸ ¬…ÈXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_28_NAME:0 "àÂ1ÁXÕÀÉÄ³ JÅà¬, Å³|ÇÄ³ DÅÌ²"
+ NEW_ACHIEVEMENT_8_28_DESC:0 "Å³|Ç 8»TÖ¬ DÅÌ² 7¬XÇ Ç.ÇÄ³ÜÂ¬ àÂ1Á j¸È¹ Èm­ÐÅ ˆÇÄ³k¸ XÕ0®"
+ NEW_ACHIEVEMENT_8_29_NAME:0 "ÝÂü»ÀÉ ­¬¹"
+ NEW_ACHIEVEMENT_8_29_DESC:0 "È´ÅÄ³ 3¬ tÇÁÀXÇ ÝÂü»ÀÉ ÍÅ³tÇ ù²àÂÐÅ XÇtÕ „Ç…º´Ä³k¸ XÕ0®."
+ NEW_ACHIEVEMENT_8_30_NAME:0 "ðÅÁ ,ÒjÔ"
+ NEW_ACHIEVEMENT_8_30_DESC:0 "XÇŒÖÐÅÁ 11t¬XÇ HÅt¬DÇ 1Áõ¬È<Çj¸ µÑü¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_8_31_NAME:0 "°ÀÅÅ Ö…º"
+ NEW_ACHIEVEMENT_8_31_DESC:0 "ø­¸tÇ¸Ò ¾¬¹¼Ò<Çj¸Á, ‰Ç®œ·Ü´ È ÀÉíÅDÇ jÍŒÁ 25XÇ ¬¼Ä³|¹ ¬ÄÉ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_9_0_NAME:0 "jÍà¬XÇ Ä³ÜÂ"
+ NEW_ACHIEVEMENT_9_0_DESC:0 "jÍŒÁ 60 tÇÁÀXÇ ¬¼Ä³|¹ ¬ÄÉ TÏ´Å ÀÉíÅ 1ó¬DÇ ŒÁ.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_9_1_NAME:0 "¨ºP´|¹ ä²²Â¬¹”² è² XÕ˜°XÇ ¬8»"
+ NEW_ACHIEVEMENT_9_1_DESC:0 "ù²àÂXÇ ¬8»tÇ Ù³ÜÂÐÅ 8¬XÇ m­¬|¹ ÀÉ0¼XÕÄ³k¸ XÕíÂÜÂ2Æ. Ç1Ám­NÇ ìÓhÕXÕÀÉ JÅµÂÈ²ä²."
+ NEW_ACHIEVEMENT_9_2_NAME:0 "tÇŒ¬ ´° àÂYÅtÇä²"
+ NEW_ACHIEVEMENT_9_2_DESC:0 "¬àÂP­(Protestantism)j¸ ¬…ÈXÕà¬ P­ŒÖ ¹Ò1Á 3¬|¹ tÕÈXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_3_NAME:0 "<Õ h¾DÅ9º0®"
+ NEW_ACHIEVEMENT_9_3_DESC:0 "Ù³ÜÂÐÅ 10¬XÇ ÈÁÇ 0¼ÁÀ®DÇ ¬¬ ä²x¹ m­¬ä´j¸Ž´0Ñ ¼<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_4_NAME:0 "´° ¬À‘·DÇ ¼DÅÉ"
+ NEW_ACHIEVEMENT_9_4_DESC:0 "Z¾DÇ ÀÉÀÉ JÅà¬ 3¬XÇ ä²x¹ Ù³ù¹m­ä´ÐÅŒ¬ ø­ä´XÇ ÔÆ¬ Â…ÇXÇ 50%tÇÁÀDÇ ô¼pÈ® ÀÉÐÆtÕüÈíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_5_NAME:0 "tÇp¬˜° 9º´Å|·, iÕ²ÂŽ´t¹lÐ!"
+ NEW_ACHIEVEMENT_9_5_DESC:0 "ÝÕ¬¬¹j¸ ¨ºà´ 2Æ²Â¸Ò¬¹DÅ ÀÉíÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_6_NAME:0 "XÕŽÅ TÏ|°¬¹"
+ NEW_ACHIEVEMENT_9_6_DESC:0 "DÅ.ÇÀÐ|Åj¸ ¨ºà´ xÇÄ³(ÌtÇ˜° ÀÉíÅÐÅ TÏ´Å|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_7_NAME:0 "ˆ´P­XÇ ¼©¬"
+ NEW_ACHIEVEMENT_9_7_DESC:1 "TÏLÑ˜° xÎµj¸Á, ¨ºà´ xÇÄ³|¹ ŒÁ.ÇXÕà¬ ŒÁ¹Âˆ´P­j¸ ¬…ÈÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_8_NAME:0 "˜°ôÓ¸9Æô¼ä² T³ ÌÖm¹jÕ"
+ NEW_ACHIEVEMENT_9_8_DESC:0 "Õ‘·²Âj¸ D¾ÔÅ˜°,  ¼|¹°¹, ¨º²ÂlÐ¼ÐÅ TÏ´Å|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_9_NAME:0 "lÐà¬ ÓŽ· p¬"
+ NEW_ACHIEVEMENT_9_9_DESC:0 "1500D± tÇÈÐÅ Õ‘·²Âj¸ 100¬XÇ .Çý·ÀÉíÅ TÏ´Å|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_10_NAME:0 "ŽÔ XÕ°Æ²Â"
+ NEW_ACHIEVEMENT_9_10_DESC:0 "3¬XÇ …ÈÁm­ü¬ 2¬XÇ À¼Ë¬m­DÇ Ù³ÜÂÐÅ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_11_NAME:0 "¾™·­Ç"
+ NEW_ACHIEVEMENT_9_11_DESC:0 "5¬XÇ Ä³ÜÂ|¹ ¬ÄÉ …ÈÁm­DÇ 21¬ ¬ÀÉà¬ ¨ºà´ …ÈÁm­ä´tÇ 50% tÇXÕXÇ Å³Ë¹ôÅÝ¹DÇ ¬ÀÉŒ¬ XÕíÂÜÂ2Æ. 4»íÅŒÖ¬À”² ìÓhÕXÕÀÉ JÅµÂÈ²ä²."
+ NEW_ACHIEVEMENT_9_12_NAME:0 "©Í„´jÕ ÆD¾p­"
+ NEW_ACHIEVEMENT_9_12_DESC:0 "11¼Ì¹tÇÁÀXÇ xÇ%¸DÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_13_NAME:0 "ìÅ=Á m­¬ä´"
+ NEW_ACHIEVEMENT_9_13_DESC:0 "tÇj¸üÏtÇj¸ jÍŒÁ 6¬ tÇÁÀXÇ m­¬NÆ ðÅiÕDÇ °¬1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_14_NAME:0 "ô¼äÕø»HÅ"
+ NEW_ACHIEVEMENT_9_14_DESC:0 "ô¼äÕø»DÅj¸ T³¾°¹(Dublin)DÇ ŒÁ.ÇXÕà¬ TÏ´Å ÀÉíÅ<Çj¸ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_15_NAME:0 "dÏ2±x±²Â Èm­"
+ NEW_ACHIEVEMENT_9_15_DESC:0 "¸Ò¸D¾tÈÜ´j¸ Èm­ ÈŽ´ ñ´	®DÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_16_NAME:0 "í·²Ð è¸tÎ"
+ NEW_ACHIEVEMENT_9_16_DESC:0 "è¸tÎj¸ í·˜°°Æ(Lucknow)|¹ ŒÁ.ÇXÕíÂÜÂ2Æ!"
+ NEW_ACHIEVEMENT_9_17_NAME:0 "ÌÖm¹jÕ Goosestep(l­²Â ²ÂkÑ)"
+ NEW_ACHIEVEMENT_9_17_DESC:0 "Õj¸tÇ<ÁDÇ Ö1ÁXÕà¬ jÍŒÁ 125%XÇ Ü­(ÇDÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_18_NAME:0 "È¹tÇ<Á Ä³Ç0®"
+ NEW_ACHIEVEMENT_9_18_DESC:0 "‘Ç<Á(Saxony)j¸ È8ÁÄ¬XÇ ¨ºà´ Ä³Ç0® ÀÉíÅä´DÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_19_NAME:0 "È² 4»íÅ ä² ´°¼®ä²”Æ"
+ NEW_ACHIEVEMENT_9_19_DESC:0 "Èx±DÅ,  ¼2±XÎDÅ, Æm­ tÕÖ(Genoa, Venice, English Channel)ÐÅÁ jÍà¬XÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ÔÆ¬ Â…ÇtÇ jÍŒÁ 300P´‡ÎtÇ ´Œ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_20_NAME:0 "³õ¬m­"
+ NEW_ACHIEVEMENT_9_20_DESC:0 "õ¬m­<Çj¸ ÜÂ‘ÇtÕ, ù²àÂXÇ ÈŽ´ ñ´	®DÇ ,Æ¬¹ÀÉÐ¹à¬ 1000XÇ ¬¼Ä³|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_21_NAME:0 "p¬ÀÉNÆ Ž´Ç"
+ NEW_ACHIEVEMENT_9_21_DESC:0 "ù²àÂtÇ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅä´tÇ ¬¬ ¬¼Ä³ 10tÇ ±ÀÉJÅ”² Ù³ÜÂÐÅ ù²àÂtÇ È 8ÁÄ¬ÐÅÁ jÍà¬XÇ Â…ÇDÇ ¬ÄÉ m­¬¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_22_NAME:0 "²Â¸Ò¸tÇ¸Ò  ÑlÐ"
+ NEW_ACHIEVEMENT_9_22_DESC:0 "8Öt¹4»ˆÉj¸ jÍŒÁ 10XÇ xÆP­ ÉÓÓDÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_23_NAME:0 "YÕl­Ó"
+ NEW_ACHIEVEMENT_9_23_DESC:0 "DÅLÑ2±j¸, 50¬XÇ ³YÕDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_24_NAME:0 "XÕ˜°XÇ àÂYÅ"
+ NEW_ACHIEVEMENT_9_24_DESC:0 "È8ÁÄ¬XÇ ¨ºà´ D¾-iÖ4»ÀÉ ÀÉíÅä´DÇ ù²àÂtÇ …ÈP­|¹ ¬…ÈÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_25_NAME:0 "tÇ¬ÂŒ· 8ÁÄ¬XÇ Â8ÖÇ"
+ NEW_ACHIEVEMENT_9_25_DESC:0 "µÑiÕ´ tÇ¬ÂŒ·DÇ ù²àÂXÇ ÀÉ0¼XÕÐÅ P´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_26_NAME:0 "¸ÅäÎ<ºðÆ²Â"
+ NEW_ACHIEVEMENT_9_26_DESC:0 "¬¹,ÒDÅÈ²DÅj¸ ôÓŽ·Ü´-¬¹,ÒDÅÈ²DÅ ðÅ)¼(Commonwealth)tÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_27_NAME:0 "Ž´t¹à¬t²XÇ Èõ¼"
+ NEW_ACHIEVEMENT_9_27_DESC:0 "Ž´t¹à¬t²j¸ ÈÀÉ³ m­¬ä´DÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕà¬ Õ‘·²ÂNÆ 2Æ²Â¸Ò¬¹DÅ|¹ …ÈÁm­<Çj¸ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_28_NAME:0 "È 3XÇ 8®"
+ NEW_ACHIEVEMENT_9_28_DESC:0 "tÇ¼µ(Ibadi) m­¬j¸ ÜÂ‘ÇtÕ ¨ºà´ tÇ¬ÂŒ· Ë¬ÁÇ YÕÓä´DÇ Èp¬XÕíÂÜÂ2Æ (ä²x¹ …ÈP­|¹ ¬…ÈXÕtº HÅ)´È²ä²)."
+ NEW_ACHIEVEMENT_9_29_NAME:0 "<ÕDÅ²Â¸Òj¸ ŒÖÀ­"
+ NEW_ACHIEVEMENT_9_29_DESC:0 "È¹pÈD¾DÅ˜° Â¸ÀÉÔÅ<Çj¸ ôÓŽ·Ü´|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_30_NAME:0 "³ ˜Ó„¹"
+ NEW_ACHIEVEMENT_9_30_DESC:0 "˜Ó„¹<Çj¸ ì·ÜÂDÅ, ÜÂ ¼¬¹DÅ, ²ÂxÎµ˜°D¾DÅ, Î˜°ä², ÈÕÜ´¨ÂÌ¹, tÎ²ÂtÎtÇä² (Russian, Siberian, Scandinavian, Canadian, Hudson Bay, Cascadian) Œ­íÅDÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_9_31_NAME:0 "|·Çè¸²Â"
+ NEW_ACHIEVEMENT_9_31_DESC:0 "8Át¹D¾DÅj¸ È ¼xÎDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_0_NAME:0 "Ù³°¬ Ç°À"
+ NEW_ACHIEVEMENT_10_0_DESC:0 "x±¾à¬j¸Ü´j¸ ÜÂ‘ÇtÕ 1¼tÕ(White Sea)x±Ü´ÐÅÁ 90% tÇÁÀXÇ 4»íÅ%¸DÇ ¬ÀÉà¬ 1¼tÕ x±Ü´¬ 8ÁÄ¬ÐÅÁ ¬¥Ç ¬XÎˆÇ”² 4»íÅ x±Ü´¬ ´Ä³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_1_NAME:0 "ÀÐÀÐt¹²ÂÄÐ"
+ NEW_ACHIEVEMENT_10_1_DESC:0 "tÎ”ÇtÇ˜° x±¬tÇj¸ ¨ºà´ ÀÐÀÐt¹ 8»TÖ ÀÉíÅä´DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_2_NAME:0 "LÑ|· È¹¬¹DÅ˜°"
+ NEW_ACHIEVEMENT_10_2_DESC:0 "¬¹¬j¸, ¼¸ÒtÕ(Baltic) Œ­íÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_3_NAME:0 "XÕ˜²XÇ àÂDÇ ÇjÕ <Õ!"
+ NEW_ACHIEVEMENT_10_3_DESC:0 "aÑø­¬¹ m­¬j¸ ˜°ÄÖDÅÀÒ(Nahuatl)DÇ <ÖP­XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_4_NAME:0 "tÕè¬XÇ <Õ|·ø»Ü´"
+ NEW_ACHIEVEMENT_10_4_DESC:0 "³ÍÐÆ .Ç©ºü»<Çj¸ jÍŒÁ 30¬¼Ä³XÇ ÀÉíÅDÇ Í ÑTÖXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_5_NAME:0 "ÿ»LÇÁÉ"
+ NEW_ACHIEVEMENT_10_5_DESC:0 "5¬XÇ Ù³ù¹m­tÇ ù²àÂÐÅ ³tÕ 100XÇ àÂ°¸Ä³|¹ ¬ÀÉÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_6_NAME:0 "xÆP­XÇ ðÅ¥Ç.Á"
+ NEW_ACHIEVEMENT_10_6_DESC:0 "ä²x¹ m­¬ÐÅŒ¬ ÈÁÇ ÇÖDÇ µÑtÕ ÀÉíÅDÇ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_7_NAME:0 "ÓŒ¼üÈXÇ"
+ NEW_ACHIEVEMENT_10_7_DESC:0 " ù²àÂXÇ m­¬ÐÅÁ 3¬XÇ ä²x¹ Ä¬5ÎtÇ ¨ºP´ 70% tÇÁÀXÇ Æ¥Õ%¸DÇ ¬ÀÉÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_8_NAME:0 "œÌjÕ ÜÐÝÀ"
+ NEW_ACHIEVEMENT_10_8_DESC:0 "50È tÇXÕXÇ ¬À©ÆÇ ÈXÇ m­¬j¸ ÜÂ‘ÇtÕ jÍŒÁ 2000XÇ ¬¼Ä³|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_9_NAME:0 "DÅtÇµ´Å ¬tÇ"
+ NEW_ACHIEVEMENT_10_9_DESC:0 "Í ¬¼Ä³¬ 3tÇXÕxÇ 800ÈXÇ ¬À©ÆÇ ÈXÇ m­¬j¸ ÜÂ‘ÇtÕ ÔÆ¬ Â…ÇtÇ 500 P´‡Î tÇÁÀtÇ ´Ä³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_10_NAME:0 "2ÆµDÇ ÇXÕìÅ!"
+ NEW_ACHIEVEMENT_10_10_DESC:0 "´l­ àÂTÖ (Norse) …ÈP­XÇ jÍ³ 200È, jÍ³ 5¬ ÀÉíÅDÇ ¬ÄÉ ¬À©ÆÇ ÈXÇ m­¬j¸ ÜÂ‘ÇtÕ ²ÂxÎµ˜°D¾DÅNÆ Æm­ ÈÄ³|¹ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕà¬ ´.Çý· àÂTÖj¸ ¬…ÈXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_11_NAME:0 "ˆ´C¯ ¬ÇÈTÖ"
+ NEW_ACHIEVEMENT_10_11_DESC:0 "jÍ³ 200È, jÍ³ 5¬ ÀÉíÅXÇ pÈj¸DÅ²Â0Ñ ¬À©ÆÇ ÈXÇ m­¬j¸ ÜÂ‘ÇtÕ UÆXÇ ˆ´C¯ ¬ÇÈTÖ|¹ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_12_NAME:0 ".Á)ÌÂ"
+ NEW_ACHIEVEMENT_10_12_DESC:0 "´DÅTº¬¹tÎ˜° ¨°DÅTº¬¹tÎÐÅÁ Á.Çý· 0®.ÂDÇ ¬ÄÉ jÍ³ 200ÈXÇ ¬À©ÆÇ ÈXÇ m­¬j¸ ÜÂ‘ÇtÕ P´ DÅTº¬¹tÎ ³Y¹DÇ µÑ|ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_13_NAME:0 "°Æ¬¹ä´XÇ ¼ä²"
+ NEW_ACHIEVEMENT_10_13_DESC:0 "j¸È¹ Èm­DÇ õ¼ÐÆXÕà¬ ¨ºà´ ÀÉÉtÕNÆ Q×tÕ tÕHÅ ÀÉíÅä´DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_14_NAME:0 "àÏ¼°À ÜÂ¬"
+ NEW_ACHIEVEMENT_10_14_DESC:0 "lÐ°Æ¼(Kuba)j¸ XÕ¼˜°(Havana)|¹ ŒÁ.ÇXÕp¬˜° …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕà¬ ô²0¼XÇ ÝÀ°À üÈÄ³m­tÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_15_NAME:0 "àÏÜÂ Âõ¼"
+ NEW_ACHIEVEMENT_10_15_DESC:0 "²D¾DÅ 8»TÖ m­¬j¸ ÜÂ‘ÇtÕ È tÇÑÉ¸Ò Œ­íÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_16_NAME:0 "˜Ó”Ç ŒÖ‘·"
+ NEW_ACHIEVEMENT_10_16_DESC:0 "˜Ó”Ç<Çj¸ ŽÒÈ²²Â, tÎXÎ˜°, ¬À<Õ, Ó´,Ò(Tunis, Katsina, Safi and Timbuktu) 4»íÅ x±Ü´ÐÅÁ 90% tÇÁÀXÇ 4»íÅ%¸DÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_17_NAME:0 "E¾ Ñ¬¹HÅ 3"
+ NEW_ACHIEVEMENT_10_17_DESC:0 "Busoga, Buganda 9ÖNÇ Karagwe j¸ ‰ÕÈ, xÆP­, p­¬À 0®.Â ¸¨¼ 32ÐÅ Ä³ì²XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_18_NAME:0 "Ù³<»XÇ UÆm­"
+ NEW_ACHIEVEMENT_10_18_DESC:0 "È¹È²xÔt¹j¸ µ¼è¬ Œ­íÅDÇ µÑ|ÇXÕà¬ `ÅÈ²ø»˜É<Çj¸ ¬…ÈÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_19_NAME:0 "iÖ® Ô¿"
+ NEW_ACHIEVEMENT_10_19_DESC:1 "ŒÁÐ¹¬¹ 8»TÖ m­¬j¸ DÅÕ¬¹tÎXÇ Ô¿ Œ­íÅ ÀÉíÅDÇ ¨ºP´ (ÌÀÉXÕà¬ iÖ®<Çj¸Ž´0Ñ ä¹ÔÆ 10P´‡Î tÇÁÀXÇ Â…ÇDÇ ,Æ¬¹íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_20_NAME:0 "jÎqÈ´ÀtÕÇ"
+ NEW_ACHIEVEMENT_10_20_DESC:1 "¸Ò ¼t¹˜° |Åj¸¬Â|·¾, ´·”Ç, ¨¼è¸Èj¸, j¸²Â ÑÕ, 2ÆÄ³ÆÕj¸ °Æ¬¹ m­¬|¹ ÈxÆjÕ ä²x¹ ¨ºà´ X¹¬¹TÏD¾XÎ ¬8»DÇ Èp¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_21_NAME:0 ".ÁÝÐ¼NÇ Ç"
+ NEW_ACHIEVEMENT_10_21_DESC:0 "pÈ.Á(Korea)<Çj¸ È8ÁÄ¬XÇ ¨ºà´ àÂ Ñ, .ÇP­, ˆ´P­ ÀÉíÅä´DÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­ä´tÇ ŒÁ.ÇXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_22_NAME:0 "8Á|Çì·¬º(Sailor Mon)"
+ NEW_ACHIEVEMENT_10_22_DESC:0 "¬ºqÈXÇ ˜°|·xÇ Peguj¸ jÍŒÁ 10Ì¹…ºXÇ .ÁÐÆDÇ UÖô¼XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_10_23_NAME:0 "2±¸ÒÌÆ¹Ð"
+ NEW_ACHIEVEMENT_10_23_DESC:0 "3¬XÇ Ë¬ÁÇm­ÐÅ 100XÇ ©Ìô¼Ý¹ ÈÂ|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_24_NAME:0 "TÖtÇ¸Ò ôÎ|ÓÈ²"
+ NEW_ACHIEVEMENT_10_24_DESC:0 "ù²àÂtÇ XÏÄ³ðÒÐÅ¬¹|¹ L¾2¸É m­¬ÐÅ ³jÕ ÈÁÇÐÅ 8ÌìÅXÕ0®."
+ NEW_ACHIEVEMENT_10_25_NAME:0 "ÜÂ¬ Ä³Q´"
+ NEW_ACHIEVEMENT_10_25_DESC:0 "ä²x¹ m­¬j¸Ž´0Ñ ÀÉÄ³ ÔÖXÎ0®"
+ NEW_ACHIEVEMENT_10_26_NAME:0 "‹Å¬XÇ Ä³ÀÆ"
+ NEW_ACHIEVEMENT_10_26_DESC:0 "|·l­¬Àj¸ jÍŒÁ 5¬XÇ m­¬¬ ˆÇ”² 4»íÅ ðÅiÕDÇ tÇL°à¬ 2Æ²ÂÌ¹DÇ Å³Ë¹ ô¼¥ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_27_NAME:0 "´° ÀÉ¬ÐÅÁ HÅÝÂDÇ"
+ NEW_ACHIEVEMENT_10_27_DESC:0 "Ë¬ÁÇm­XÇ ­¬¹|¹ Ž´(ÓÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_28_NAME:0 "tÇ|¹ ÇtÕ <ÕX×8¸ä²."
+ NEW_ACHIEVEMENT_10_28_DESC:0 "‘Å!Î l×ÝÀÇ¬ 11¼Ì¹ tÇÁÀxÇ È,ÒÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_29_NAME:0 "ù²àÂXÇ Å³DÇ .ÁÝÐXÕ|·"
+ NEW_ACHIEVEMENT_10_29_DESC:0 "Kaffaj¸ Cafa ÀÉíÅDÇ ù²àÂXÇ …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕà¬ Cafa|¹ ¬¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_10_30_NAME:0 "<ÕÇÌ¹ ˆÇ”²Œ¬ DÅÐ°"
+ NEW_ACHIEVEMENT_10_30_DESC:0 "˜°ôÓ¬¹j¸ ôÅ¬XÇ ¼ôÅÐÅ 2Æt¹íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_10_31_NAME:0 "2± ƒ¬tÇ ç¬ ´° ƒ¬."
+ NEW_ACHIEVEMENT_10_31_DESC:0 "ÐÐ•Æ ¹Ò1ÁDÇ ¬ÄÉ µÑXÎÇj¸ ÉÓTÖ ÖÁÀÐÅÁ jÕ m­¬XÇ ¨ºà´ P´‡ÎDÇ »Å´Å´°íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_0_NAME:0 "•Íõ¼¼NÇ m­¬"
+ NEW_ACHIEVEMENT_11_0_DESC:0 "eÏ¸ÒP­ m­¬j¸ ¨ºà´ 5¬XÇ •Íõ¼DÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_1_NAME:0 "Èõ¼XÇ UÆD¾"
+ NEW_ACHIEVEMENT_11_1_DESC:0 "UÆD¾ -ÁÈ ÉÐÅ ÀÉíÅDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_2_NAME:0 "àÂ©Æñ´	® AAA"
+ NEW_ACHIEVEMENT_11_2_DESC:0 "ôÅ¬<Çj¸ ä²x¹ m­¬XÇ Ž´DÌ|¹ 1000 P´‡Î tÇÁÀ  µHÅ0®."
+ NEW_ACHIEVEMENT_11_3_NAME:0 "D¾•Í<»"
+ NEW_ACHIEVEMENT_11_3_DESC:0 "Fetishist …ÈP­ m­¬j¸ 13 XÇ ¬À©Æ¬¥²jÕ -Â0¼³ÁÀDÇ »Å<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_4_NAME:0 ".ÇTÖEÌ"
+ NEW_ACHIEVEMENT_11_4_DESC:0 "õ¬1Á È8» ¸Ò¸‡ÇDÇ ¬ÄÉ ÀÉ×­<Çj¸ ”ÆÈÀÀÉíÅXÇ õ¬1ÁÈÐÅÁ ¹Â¬¹XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_5_NAME:0 "ÈÑ¼ðÅiÕ Ž´³"
+ NEW_ACHIEVEMENT_11_5_DESC:0 "¸Ò¸‡ÇDÇ ¬ÄÉ ÈÅ³ü¬ ¥Çp­DÇ X´ ä² UÖô¼XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_11_6_NAME:0 "ÜÂü¼|·XÇ Ä³ÜÂä´"
+ NEW_ACHIEVEMENT_11_6_DESC:0 "Puebloj¸  10 ¬¼Ä³|¹ ¬ÄÉ ÀÉíÅDÇ jÍŒÁ 7¬ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_7_NAME:0 ",Òt¹lÐXÇ XÖl×"
+ NEW_ACHIEVEMENT_11_7_DESC:0 "Candarj¸ ÜÂ‘ÇtÕ 20¬XÇ 2ÁÕÐ ÀÉíÅDÇ ŒÁ.ÇXÕp¬˜° …ÈÁm­tÇ ŒÁ.ÇXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_8_NAME:0 "Q× Q× Q×‘ÅpÈ"
+ NEW_ACHIEVEMENT_11_8_DESC:0 "tÎ|· TÏ2Çè¸j¸ ‘Å¨º ÝÀ°À üÈÄ³m­tÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_9_NAME:0 "­ÈxÇ ÂÑÉ¬"
+ NEW_ACHIEVEMENT_11_9_DESC:0 "¨ºà´ ÜÂ³­XÇ ¼ÐÆÀÉ|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_10_NAME:0 "TÏ´Å-xÔ"
+ NEW_ACHIEVEMENT_11_10_DESC:0 "Corfuj¸ Õ¸tÇ É ÉÓTÖ ÖÁÀÐÅÁ (ÓÈm­ÐÅ TÏ´Å 5¬ ìÓ0® ”Æl­ ¬”ÆXÕ0®."
+ NEW_ACHIEVEMENT_11_11_NAME:0 "j¸ˆÉÇ(Rozwi) Èm­"
+ NEW_ACHIEVEMENT_11_11_DESC:0 "Butuaj¸ ÜÂ‘ÇtÕ Mutapa(DÇ)|¹ Èõ¼XÕíÂÜÂ2Æ(Zimbabwe and Lower Zambezi ÀÉíÅ)."
+ NEW_ACHIEVEMENT_11_12_NAME:0 "Âè² ÐÆÈ"
+ NEW_ACHIEVEMENT_11_12_DESC:0 "¨ºj¸TÏj¸ ÜÂ‘ÇtÕ,  È²Èt¹(Niger)NÆ ¬ÀìÕ(Sahel) Œ­íÅDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_13_NAME:0 "P´ ¬8»XÇ tÇ|Å0®"
+ NEW_ACHIEVEMENT_11_13_DESC:0 "Vijayanagar 9ÖNÇ Bahmanis j¸ ÜÂ‘ÇtÕ ÁÀ³)¼XÇ ÂÄ³|¹ Èõ¼XÕà¬ xºÝ¹ÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_14_NAME:0 "DÅŽ´ ¼t¹lÐ 28ÁXÇ |ÅÝ¹"
+ NEW_ACHIEVEMENT_11_14_DESC:0 "Malij¸ ÜÂ‘ÇtÕ ¨°DÅTº¬¹tÎÐÅ 4¬XÇ ÝÂü» ÈŽ´|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_15_NAME:0 "¼ä²XÇ Æ¬À­"
+ NEW_ACHIEVEMENT_11_15_DESC:0 "Aragon<Çj¸ ÀÉÉtÕXÇ ¨ºà´ 4»íÅ ÉìÂÀÉ|¹ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_16_NAME:0 "¥ÇÂNÆ ˆ¼ÆDÇ"
+ NEW_ACHIEVEMENT_11_16_DESC:0 "708ÁXÇ µÑXÎÇ|¹ ¬ÀÉà¬ 30¬XÇ üÈ¬ ˆ¼ÆXÕÄ³k¸ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_17_NAME:0 "tÇ ¥ÇË¼ÐÅ ²<»DÇ ¨µl­ä²"
+ NEW_ACHIEVEMENT_11_17_DESC:1 " ¼|¹°¹ÐÅ ÑÉÉìÓ©¬DÇ iÕÈ²ä²."
+ NEW_ACHIEVEMENT_11_18_NAME:0 "iÖ® Èm­"
+ NEW_ACHIEVEMENT_11_18_DESC:0 "àÂ1Áj¸È¹Èm­<Çj¸ iÖ®0®|¹ ìÅíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_11_19_NAME:0 "´Ì¬¹<Õ¹Ð"
+ NEW_ACHIEVEMENT_11_19_DESC:0 "ä²tÇ» …ÈÁm­<Çj¸Ž´0Ñ 31Á ÀÉ×­DÇ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_20_NAME:0 "Ó0®p­tÇìÅ àÂTÖ¬ ´´Å|·."
+ NEW_ACHIEVEMENT_11_20_DESC:1 "ìÅÄÉ(Jurchen) 8»TÖŒ­ m­¬j¸ ÜÂ‘ÇXÕìÅ, 100¬XÇ Ó0®p­ ðÅ³|¹ Ù³ÜÂÐÅ ÕÉÑ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_21_NAME:0 "ì²dÏjÕ pÈTÖ"
+ NEW_ACHIEVEMENT_11_21_DESC:0 ".ÇP­j¸ 7¬XÇ …ÈP­|¹ pÈTÖXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_22_NAME:0 "ÄÁm­ÈEÌ"
+ NEW_ACHIEVEMENT_11_22_DESC:0 "6¬XÇ ¬Àt¬<Çj¸ DÆÈjÕ à¬Ë¹üÈXÇ¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_23_NAME:0 "È³È<Çj¸"
+ NEW_ACHIEVEMENT_11_23_DESC:0 "100XÇ È³üÈXÇ|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_24_NAME:0 "xºÝ¹XÕ|·! tÎt¹ÀÐà¬ìÅ"
+ NEW_ACHIEVEMENT_11_24_DESC:0 "tÇÈÐ¬¹DÅ 8»TÖŒ­XÇ m­¬j¸  TunisXÇ ÆíÅ È´ÌXÇ iÖÐÓTÖÄ³|¹ 100<Çj¸ Ì¹Ü´íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_11_25_NAME:0 "­Ì˜°|·XÇ œÌXÕ"
+ NEW_ACHIEVEMENT_11_25_DESC:1 "­Ì˜°|·j¸ Ém­ iÖÈ¬ ´à¬ Ém­ È ÀÉíÅDÇ ŒÁ.ÇXÕÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_26_NAME:0 "XÕ.ÌNÇ 8Á Ž´qÈ pÈõ¬m­"
+ NEW_ACHIEVEMENT_11_26_DESC:0 "3¬XÇ Ž´qÈm­¬|¹ pÈõ¬m­<Çj¸ p¬²¬¹íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_27_NAME:0 "TºtÇÜ´xÇ ¬Ç,Ó"
+ NEW_ACHIEVEMENT_11_27_DESC:1 "1655D±L®ÀÉ |Çø¼(Japan)<Çj¸ "õ¬¥ÇÈ" ÜÂ³­DÇ Â©ÆXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_28_NAME:0 "«Ìˆ¼øÉ ÀÐ9Æ°Æ(Toungoo) Èm­"
+ NEW_ACHIEVEMENT_11_28_DESC:0 "Taunguj¸ Burman 8»TÖŒ­ ÀÉíÅDÇ 1500D±L®ÀÉ µÑ|ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_29_NAME:0 "h®°ÆhÎXÇ ÈÇä´"
+ NEW_ACHIEVEMENT_11_29_DESC:0 "Dai Viet<Çj¸ 1500D±L®ÀÉ 10¬XÇ m­¬¬ Mahayana(DÇ)|¹ 0µt¹Œ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_30_NAME:0 "ìÂ¥ÇNÇ ´ÅµÐÅ"
+ NEW_ACHIEVEMENT_11_30_DESC:0 "Dahomeyj¸ 1500D± L®ÀÉ Niger NÆ Sahel ÐÅÁ ¨ºà´ Fetishist¬ DÅÌ² m­¬ä´DÇ °ºDÅ´°íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_11_31_NAME:0 "1¼‘Å UÆpÈXÇ ¼e×"
+ NEW_ACHIEVEMENT_11_31_DESC:0 "DÅlÐ TÏ2Çè¸j¸ 1478D±L®ÀÉ Tabriz|¹ ŒÁ.ÇXÕà¬ Qara Qoyunlu|¹ tÈ¬ÇXÕÀÉ JÅŒ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_0_NAME:0 "ìÅ0®ÐÅÁ Ð¹DÇ )¼©ºtÕ|ÅÀÉ..ìÅ0®ÁÄ³..."
+ NEW_ACHIEVEMENT_12_0_DESC:0 ".Ç©ºü»<Çj¸ 200¬XÇ á¬<» ÝÀ°À ÀÉíÅä´DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_1_NAME:0 "è¬Ü´ì·lÂ"
+ NEW_ACHIEVEMENT_12_1_DESC:0 "1500D± ÈL®ÀÉ µÐ(ÌlÐ xÎm­ ¬ÖDÇ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_2_NAME:0 "mÕtÕ¬À"
+ NEW_ACHIEVEMENT_12_2_DESC:0 "ìÓt¹,Ò¬j¸ 1500D± ÈL®ÀÉ DÅÕ¬¹tÎ, xÇÄ³, xÇÄ³2±ÜÂDÅÐÅ ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_3_NAME:0 "p¬´tÇ¬ ¬DÇ 0µ|· ´°2¸¬ä²"
+ NEW_ACHIEVEMENT_12_3_DESC:0 "pÈ.Á(Korea)<Çj¸ 135%XÇ hÕ.Á ´°l­1ÁDÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_14_NAME:0 "¼Åé¸ŒÁ"
+ NEW_ACHIEVEMENT_12_14_DESC:0 "hÕŽ´t¹lÐj¸ ô¼Áü¬ ¬•ÍXÇ 4»íÅ ô¼±²Â|¹ »Å<ÇÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_15_NAME:0 ".ÁÉ·UÆ t¹2±"
+ NEW_ACHIEVEMENT_12_15_DESC:0 "Õj¸)¼²Âj¸ ÜÂ‘ÇXÕìÅ Æè¸´À¸ UÆm­DÇ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_16_NAME:0 "´À|·µXÇ .Ç°À"
+ NEW_ACHIEVEMENT_12_16_DESC:0 "ˆ×¨Â tÎtÇÓj¸ DÅtÇ.Ç¾ Èm­DÇ ¬Çt¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_17_NAME:0 "DÅ¼t¹ xÎm­"
+ NEW_ACHIEVEMENT_12_17_DESC:0 "DÅ¼¬¹DÅj¸ ÝÕ¬¬¹|¹ Èõ¼XÕà¬ Èm­ ñ´	®DÇ ì²1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_18_NAME:0 "D¾¼DÇ ÀÉÏ|·"
+ NEW_ACHIEVEMENT_12_18_DESC:0 "ÆXº<Çj¸ 1700D±L®ÀÉ ´Å²µ .Çý· m­¬Ä³ l­³Y¹´°ÐÅ äÎ<Õ ÝÀ°ÀÀÉ|¹ ŒÁ.ÇXÕÀÉ »ºXÕŒ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_19_NAME:0 "³ ¨º|·D¾DÅ"
+ NEW_ACHIEVEMENT_12_19_DESC:0 "È²¸Ò|·˜° ¨º|·D¾DÅj¸ ³¨º|·D¾DÅ ÀÉ)¼DÇ Âõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_20_NAME:0 "ÆÅÆXÇ XÖÆ"
+ NEW_ACHIEVEMENT_12_20_DESC:0 "tÎ|·Ì¹<Çj¸ ÜÂ‘ÇtÕ, ø¸ .ÂÄÐm­DÇ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_21_NAME:0 "t¬2ÁÇ ä²D¾Ü´"
+ NEW_ACHIEVEMENT_12_21_DESC:0 "tÇTº¸ðÒj¸ pÈÀÉDÅ|¹ Ö1ÁXÕà¬ D¾´Å ˆÇ”² t¬<» ¬Âo¸tÇ ÆÅŒ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_22_NAME:0 "ü¼LÑt¹XÇ EÅËº"
+ NEW_ACHIEVEMENT_12_22_DESC:1 "àÂ1Á j¸È¹ Èm­ÐÅ 100¬ tÇÁÀXÇ m­¬¬ ÁXÕÄ³k¸ XÕíÂÜÂ2Æ,"
+ NEW_ACHIEVEMENT_12_24_NAME:0 "ÓÜ´|Å Èm­"
+ NEW_ACHIEVEMENT_12_24_DESC:0 "È¹Ü´|·tÇj¸ ÜÂ‘ÇtÕ ÓÜ´|Å ÀÉíÅDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_25_NAME:0 "tÇÑÉ¸ÒXÇ UÆÇ"
+ NEW_ACHIEVEMENT_12_25_DESC:0 "<Õ¸´Ìj¸ ÜÂ‘ÇXÕìÅ tÇÑÉ¸Ò|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_26_NAME:0 "80|Ç¬XÇ 8ÁÄ¬|ÇüÈ"
+ NEW_ACHIEVEMENT_12_26_DESC:0 "400È tÇXÕXÇ ¾¬¹¼Ò(British) Œ­íÅXÇ ¬À©ÆÇ ÈXÇ m­¬j¸ 1524D± 11ÔÆ 11|ÇL®ÀÉ t²•Æ, ÌÀÕŽ·ÜÂ²ÂTÏ, ÂÐÅˆÉ, ´ ¼tÇ, ˜ÎäÎÀÐ, MÖiÏ, ”ÆTÏXÕÈ¹|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_27_NAME:0 "˜×à´ ÖÁÀ"
+ NEW_ACHIEVEMENT_12_27_DESC:1 "4»¬Â¼¹ àÂYÅXÇ Â8ÖÇj¸Á, 5¬XÇ ÀÉíÅDÇ ¬…ÈXÕ0® ÇtÕ 4»íÅDÇ µÑtÕ Ð¹è¸tÎÐÅÁ ù²àÂXÇ …ÈP­|¹ ÈÓXÕ8Á”Æ."
+ NEW_ACHIEVEMENT_12_28_NAME:0 "Í0® Ö³È"
+ NEW_ACHIEVEMENT_12_28_DESC:0 "100% ÈÖ(¸Ä³|¹ ¬ÄÉ ðÅ³ 100¬|¹ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_29_NAME:0 "©Í1Á ù¹8Á"
+ NEW_ACHIEVEMENT_12_29_DESC:0 "DÅ|·D¾DÅ Ž´qÈ ðÅ)¼m­¬j¸ ÜÂ‘ÇXÕìÅ DÅ|·D¾DÅ|¹ µÑiÕXÕà¬ jÍ³XÎXÇ Ž´qÈ ©Í1ÁÄ³|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_30_NAME:0 "Ó¬¹ÀÉuÅ ÓäÀ"
+ NEW_ACHIEVEMENT_12_30_DESC:0 "Ó¬¹ÐÅ ÓäÀ|¹ „Ç…ºXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_31_NAME:0 "ä²8»TÖüÈXÇ"
+ NEW_ACHIEVEMENT_12_31_DESC:0 "­ÈÐÅ 4¬XÇ ä²x¹ 8»TÖNÆ 4¬XÇ ä²x¹ …ÈP­¬ tÈ¬ÇXÕŒ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_32_NAME:0 "˜°t¹ÜÂ˜É"
+ NEW_ACHIEVEMENT_12_32_DESC:0 "¥Çp­XÇ tÇ„¹DÇ ù²àÂXÇ tÇ„¹<Çj¸ ÓÉà¬ p­³|¹ tÇL°à¬ ¹Â¬¹XÕŒ¬ XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_33_NAME:0 "¸¼¸ÒXÇ ¼È"
+ NEW_ACHIEVEMENT_12_33_DESC:0 "Ø¹è¸lÐj¸ 100XÇ p­¬À È8»1ÁDÇ ¬ÀÉà¬ 2Æ²ÂÌ¹DÇ iÕÑ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_12_34_NAME:0 "D¾¬jÕ Èµ·"
+ NEW_ACHIEVEMENT_12_34_DESC:0 "°ÀEÅÀÉÖxÇ ÀÉíÅÐÅ ”ÆÈÀNÆ ô¼	®à¬|¹ ÀÉ<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_1_NAME:0 "ä²°ÆÌ¹ÀÐ²Â(Dovmont)XÇ ƒ¬"
+ NEW_ACHIEVEMENT_13_1_DESC:0 "Pskovj¸ ÜÂ‘ÇXÕìÅ 100¬XÇ ²Â¸Ò¸XÎ ðÅ³|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_2_NAME:0 "ÈÀm¸Œ¬ ¸¯ø»0®"
+ NEW_ACHIEVEMENT_13_2_DESC:0 "ÈP­ŒÖ m­¬j¸ ÜÂ‘ÇtÕ j¸È¹ÐÅ ³üÈP­|¹ „Ç…ºXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_3_NAME:0 "MºÐÅ|¹ —¼0®"
+ NEW_ACHIEVEMENT_13_3_DESC:0 "Å³Ë¹m­ ÀÉÇ|¹ .ÇÀÉXÕtºÁ |·”Ç(Ryazan)<Çj¸ ¬À|· ÑÕ(Saratov), lÐ¼¹(Crimea), tÎ”Ç(Kazan)DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_4_NAME:0 "µÑÈ%¸ ŒÖõ¼"
+ NEW_ACHIEVEMENT_13_4_DESC:0 "ÐÆ˜°|·|¹ Ö1ÁXÕà¬ Ém­XÇ  .Ç|ÇjÕ m­¬¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_5_NAME:0 "³É·ÝÀ°À"
+ NEW_ACHIEVEMENT_13_5_DESC:0 "2ÆÄ³ÆÕ(Odoyev)j¸ ÜÂ‘ÇXÕìÅ ¨ºà´ …ÈX¹XÇ õ¬¥ÇDÇ XÕ˜°)Å ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_6_NAME:0 "J°„ÇÆÅtÇ Ù³ËÊ<Çj¸"
+ NEW_ACHIEVEMENT_13_6_DESC:0 "ì·ÜÂDÅ UÆm­<Çj¸ ÜÂ‘ÇtÕÁ, 1600D± L®ÀÉ Ù³Ž´ ÜÂ ¼¬¹DÅ tÕHÅÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_7_NAME:0 "°Æ²Â´Æ Ç"
+ NEW_ACHIEVEMENT_13_7_DESC:0 "XÕXÕ(Haha), äÕäÕ(Hehe) ¼ d¸Ž·Ü´(Lolland) ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_13_8_NAME:0 "HemmingstedtXÇ P­ÈÖ"
+ NEW_ACHIEVEMENT_13_8_DESC:0 "t³È¹lÐ¬ 1ÁË¹´0® ÈÐÅ µ¸ÒÈ¹t¹<Á(Dithmarschen)<Çj¸ xÁŽ·(Sjaelland) ¼ NÖŽ·Ü´(Holland) ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_9_NAME:0 "˜°ÐÅŒ¬”² ø­¬¹²Â¼ÐÅ ÆÅ´Å."
+ NEW_ACHIEVEMENT_13_9_DESC:0 "ø­¬¹²Â|¹ Ö1ÁXÕà¬ ÈÀÐ(Zeta), ÀÐÀÐ(Thatta), Œ·¼(Lamba), j¸(Roh)|¹ È.ÇXÕp¬˜°, ø­ó¬ÐÅ TÏ´Å|¹ ÖÝ´XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_13_10_NAME:0 "52¬XÇ 1ÁDÌ"
+ NEW_ACHIEVEMENT_13_10_DESC:0 "¬t¹HÆ(Garhwal)j¸  Ž´DÌ ÆÅtÇ 52¬XÇ ”ÆÈÀ|¹ ŒÁ.ÇXÕà¬ .ÇÀÉXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_1_NAME:0 "HÖ dÅ ´ÅèÆtÇ"
+ NEW_ACHIEVEMENT_14_1_DESC:0 "èÆ|Ç²Âj¸ tÎµÕ(Cardiff), T³¾°¹(Dublin), ÐÅµ„¼ì·(Edinburgh), j¸È¹(Rome), Ó¬¹(Paris), ð·X³(London)DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_2_NAME:0 "ÜÐ‘ÅXÇ hÎµ·"
+ NEW_ACHIEVEMENT_14_2_DESC:0 "Madyasj¸ Tepeacac, Mexico, Tullucan, Huastec|¹ ŒÁ.ÇXÕà¬ TÏ´Åj¸ Ì¹Ü´ÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_3_NAME:0 "ÜÂ`ÅÀÒXÇ  Ç »º tÇè¸”² 2¼"
+ NEW_ACHIEVEMENT_14_3_DESC:1 "´À¬¹lÂÐÅ ÂÄ³|¹ ¬ÀÉà¬ 10¬XÇ äÎ<Õ|¹ ÝÀ°ÀXÕ”² ÀÉíÅDÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_4_NAME:0 "DÕ¬¹NÕ 8Ö‘·tÇ"
+ NEW_ACHIEVEMENT_14_4_DESC:0 "Cebuj¸ Chola Èm­DÇ ¬Çt¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_5_NAME:0 "Ì¹ Èm­"
+ NEW_ACHIEVEMENT_14_5_DESC:0 "Mann<Çj¸ 8ÁÄ¬XÇ ¨ºà´ ,ÁDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_6_NAME:0 "Dude, Where's my Boat?"
+ NEW_ACHIEVEMENT_14_6_DESC:0 "hÕÁÀ 1¼Ñ¼È P­¬¹|¹ DÌÝÐ ÄÖ  20™ÌXÇ .Á¼DÇ ˜°ìÓXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_7_NAME:0 "ÌÖm¹jÕ ¼ÁÀ"
+ NEW_ACHIEVEMENT_14_7_DESC:0 "50XÇ ÖàÂ1ÁDÇ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_8_NAME:0 "jÎ Æm­Ó"
+ NEW_ACHIEVEMENT_14_8_DESC:0 "¨ºà´ ‰Ç®œ·Ü´NÆ ³ÆÈm­ „Ç4»|¹ DÆÂXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_9_NAME:0 "°ÀÅÅ ¼ÈŒÁ"
+ NEW_ACHIEVEMENT_14_9_DESC:0 "ù²àÂXÇ ˜°|·ÐÅ 10¬XÇ ©Æ­j¸|¹ t¬2ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_14_10_NAME:0 "9Ì 9Ì"
+ NEW_ACHIEVEMENT_14_10_DESC:0 "è² jÕ …ºXÇ p­üÈj¸ 6…ºXÇ Áj¸ ä²x¹ 0¼°ÆÇ|¹ »Å<ÇíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_15_NAME:0 "TºNÆt¹”² ˆ´À¼XÕä²"
+ NEW_ACHIEVEMENT_15_DESC:0 "TºNÆt¹XÇ ¨ºà´ „Ç4»|¹ ì²1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_16_NAME:0 "°ÆÂjÕ Ë¬È"
+ NEW_ACHIEVEMENT_16_DESC:0 "8¸¨¼XÇ 4»íÅ ÉìÂÀÉ 3ó¬DÇ (ÌÀÉXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_17_NAME:0 "È³NÇ |Îô¼ä² ¬XÕä²"
+ NEW_ACHIEVEMENT_17_DESC:0 "xÇÄ³XÇ ˜°|·ÐÅ 4»íÅŒÖ¬À|¹ Ì¹Ü´8Á”Æ"
+ NEW_ACHIEVEMENT_18_NAME:0 "ø­¬¹´Æ à¬¥Õ, tÎ|·TÏø¸"
+ NEW_ACHIEVEMENT_18_DESC:0 "4»t­j¸ Ëºè¬ 8»TÖ|¹ Â©ÆXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_19_NAME:0 "2Æ²ÂPÑT³"
+ NEW_ACHIEVEMENT_19_DESC:0 "2Æ²Â¸Ò¬¹DÅj¸Á, Áµ¼è¬ ÀÉíÅÐÅ l­íÅü¬ p­¬À ­¬¹ ,ÒÇ|¹ XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_20_NAME:0 ".¬ÀÉ²Â xÎ"
+ NEW_ACHIEVEMENT_20_DESC:0 "xÇÄ³ DÅ³Y¹XÇ Ž´qÈ m­¬j¸ ³ÍÐÆ .Ç©ºü»tÇ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_21_NAME:0 "T³ì·´Æ …Ç"
+ NEW_ACHIEVEMENT_21_DESC:0 "m­Ë¬DÇ ÈXÕ”² 10¬ m­¬|¹ ¨ºÅ³XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_22_NAME:0 "ÈŽ´HÅXÇ ìÓðÔ¬¹²Â¸Ò"
+ NEW_ACHIEVEMENT_22_DESC:0 "ÈŽ´ ¬Ö<Çj¸ ÈŽ´ ÖÜÐDÇ ¼¸¯íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_23_NAME:0 "È¹XÕ|·˜° Õ|·ÑÐ"
+ NEW_ACHIEVEMENT_23_DESC:0 "TºNÆt¹j¸ ÜÂ‘ÇXÕìÅ 20¬XÇ |·ˆÉxÔ¸Ò ðÅ³|¹ ¬ÀÉíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_24_NAME:0 "DÌŒÁ|¹ Ü´8Á”Æ"
+ NEW_ACHIEVEMENT_24_DESC:0 "È³üÈXÇ ÜÂ³ÐÅ Kalej¸Á ¨ºà´ y±ÍÀÉ|¹ ÀÉ0¼XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_25_NAME:0 "Œ×P´²ÂÄÐXÇ iÖÈ"
+ NEW_ACHIEVEMENT_25_DESC:0 "x³¬¹j¸ ÜÂ‘ÇXÕìÅ ø­ä´ Èm­XÇ m­Ë¬DÇ Âõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_26_NAME:0 "È¹tÇŒÁt¹XÇ 8Ö‘·tÇ"
+ NEW_ACHIEVEMENT_26_DESC:0 "È¹tÇŒÁt¹j¸ ÜÂ‘ÇXÕìÅ, p³xÎü¬ TÏj¸Ì¹x³DÇ Èõ¼XÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_27_NAME:0 "ðÒ4»t¹XÇ ÄÉÈjÕ ÄÖÄ¬Ç"
+ NEW_ACHIEVEMENT_27_DESC:0 "ðÒ4»t¹XÇ Ám­<Çj¸ ÜÂ‘ÇtÕÁ, 4»t­DÇ Ì¹ä´à¬ xÇÄ³|¹ 1550D± tÇÈÐÅ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_28_NAME:0 "t³È¹lÐ Ù³xÇÄ³ ŒÖ¬ÀXÇ (Ì"
+ NEW_ACHIEVEMENT_28_DESC:0 "t³È¹lÐj¸Á 4»íÅŒÖ|¹ Ì¹ä´à¬ (Ì ÜÂ¥ÇÀÉ„´XÇ jÍŒÁ 10%|¹ (ÌÀÉXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_29_NAME:0 "ÜÂlÐ ŽÓ"
+ NEW_ACHIEVEMENT_29_DESC:0 "ÜÂlÐP­j¸ ¬…ÈXÕà¬, ŽÓÇ¾ÐÅ m­¬|¹ Ì¹Ü´ÜÂ2Æ"
+ NEW_ACHIEVEMENT_30_NAME:0 "”ÇÀÉ|·XÇ tÕÈ Ì¹"
+ NEW_ACHIEVEMENT_30_DESC:0 "l­Ç|·¸Ò 4»íÅ x±Ü´ÐÅÁ 50% tÇÁÀXÇ ¬Àµ·%¸DÇ ¬ÀÉíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_31_NAME:0 "È³j¸ '² ¼t¹'|·à¬ Ð¹XÕÀÉ Ð¹|·."
+ NEW_ACHIEVEMENT_31_DESC:0 "² ¼t¹j¸Á, ¨ºà´ Õ‘·²Â Œ­íÅDÇ TÏ´Å ÀÉíÅ<Çj¸ ŒÁ.ÇXÕíÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_32_NAME:0 "©ÆÁtÕ üÈíÂÜÂ2Æ, È”² àÂÜ´¬ ˆÇµÂÈ²ä²."
+ NEW_ACHIEVEMENT_32_DESC:0 "àÂÜ´j¸Á 0®Å³P­m­¬¬ ´íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_33_NAME:0 "œÁ ”Îµ"
+ NEW_ACHIEVEMENT_33_DESC:0 "Kandyj¸Á tºXÇ ÝÀ°À üÈÄ³m­tÇ ´íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_34_NAME:0 "õ¬‘Ç x¬LÇ"
+ NEW_ACHIEVEMENT_34_DESC:0 "l­t¹tÎj¸ 2±ÓDÇ Ö1ÁXÕà¬ ÈÁÇÐÅÁ 10Ì¹ …º tÇÁÀXÇ Õj¸tÇ<Á ¬ÀÁÀÇ|¹ ´°à¬ ¹Â¬¹XÕíÂÜÂ2Æ. (‘Åm­NÇ ÈÁÇXÇ ÀÉÄ³m­tÇ´Å|Å hÕ)"
+ NEW_ACHIEVEMENT_35_NAME:0 "È¬¹ˆÔ ¬Àå°¼¯"
+ NEW_ACHIEVEMENT_35_DESC:0 "È 0®hÕDÇ ˜°ìÓXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_36_NAME:0 "|ÅXÕXÕXÕ tÕÈXÇ ¶ÀNÇ ˜°XÇ ƒ¬"
+ NEW_ACHIEVEMENT_36_DESC:0 "t² Õj¸D¾X³²Âj¸ Õ¸tÇXÕìÅ tÎ¬¹¾tÕ ÈíÅDÇ Èõ¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_37_NAME:0 "ü·üÈ¬ ´Åµ¬´Å?"
+ NEW_ACHIEVEMENT_37_DESC:0 "DÅ²Â,Ò¬¹DÅ²Âj¸ RumÐÅ Order|¹ 8Á°ÆíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_38_NAME:0 "± ÈÀ ÑÉDÇ ¬à¬, ä²ÜÂ ÈÀ ÑÉDÇ ¬ÈÉ p¬|Å"
+ NEW_ACHIEVEMENT_38_DESC:0 "5¬XÇ ŒÁÂÑÉè²DÇ ”Í)¼XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_39_NAME:0 "ÆÐÆjÕ iÖ®"
+ NEW_ACHIEVEMENT_39_DESC:0 "²Â˜ÓxÇXÇ ¨ºà´ „Ç4»|¹ DÆÂXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_40_NAME:0 "Æ­XÇ ¼²ÂlÐ"
+ NEW_ACHIEVEMENT_40_DESC:0 "˜°¼|·j¸ ÜÂ‘ÇXÕìÅ, È³üÈXÇ ÜÂ³¬ 2Æ0® ÈÐÅ tÇ ¼¬¹DÅ ÈíÅDÇ ¼²ÂlÐ 8»TÖj¸ Ì¹Ü´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_41_NAME:0 "ÆÁÀ ¼XÇ ÄÖô¼"
+ NEW_ACHIEVEMENT_41_DESC:0 "Mzab, Touggourt, Djerid É XÕ˜°j¸ ÜÂ‘ÇXÕìÅ Al-Andalus|¹ ¬Çt¬XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_42_NAME:0 "²Â˜ÓxÇ Ó¬¹(Spanish Fly)"
+ NEW_ACHIEVEMENT_42_DESC:0 "Offalyj¸ ÜÂ‘ÇXÕìÅ tÇ ¼¬¹DÅ m­¬ÐÅ ³jÕ Ù³p­ðÅiÕDÇ üÈÄ³XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_43_NAME:0 "È¹|ÅÓ ðÅù¹"
+ NEW_ACHIEVEMENT_43_DESC:0 "Huastec<Çj¸ ÜÂ‘ÇXÕìÅ È¹|Å|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_44_NAME:0 "´°¬ ´ÅµÐÅ ˆÇ”² p¬|Å?"
+ NEW_ACHIEVEMENT_44_DESC:0 "4»‘ÇÇ àÂ8ÁÄ¬XÇ ÐÆüÈü»<Çj¸ ÜÂ‘ÇXÕìÅ àÂ³Y¹ ÈíÅDÇ ÐÐØÕXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_45_NAME:0 "A.E.I.O.U."
+ NEW_ACHIEVEMENT_45_DESC:0 "2Æ²Â¸Ò¬¹DÅXÇ ¨ºà´ „Ç4»|¹ DÆÂXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_46_NAME:0 "˜°ôÓ¸9ÆXÇ |ÅÝ¹"
+ NEW_ACHIEVEMENT_46_DESC:0 "Ö…ºÕ‘·²Âj¸ 10¬m­¬ÐÅ Ö…ºDÇ ÈÓXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_47_NAME:0 "¼XÕ°Æ²Â(»è¸ˆÉ)i¾ ø»˜·"
+ NEW_ACHIEVEMENT_47_DESC:0 "»è¸ˆÉj¸ ÜÂ‘ÇtÕÁ àÂ1Áj¸È¹Èm­XÇ iÖÈ¬ ´à¬ Èm­DÇ DÆÈˆ× „´Œ­TÖXÕ8Á”Æ."
+ NEW_ACHIEVEMENT_48_NAME:0 "8ÁÄ¬ (ÓŒ­"
+ NEW_ACHIEVEMENT_48_DESC:0 "DÅ4» …ÈX¹XÇ (ÓŒ­%¸ 100%ÐÅ Ä³ì²XÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_50_NAME:0 "àÂXÇ è²Ä¬"
+ NEW_ACHIEVEMENT_50_DESC:0 "tÎ¨Ñ­¹tÇ˜° ÂÈ²Ó¬ DÅÌ² m­¬j¸ 5ðÒ´ÅXÇ àÂYÅXÇ Â8ÖÇ¬ ´íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_51_NAME:0 "²ÂÓŒ¬ðÒ èÆ²Â4Ñ"
+ NEW_ACHIEVEMENT_51_DESC:0 "ü¼j¸Ð°(Bologna)j¸ ÜÂ‘ÇXÕìÅ, UºÜÂTÏ ¶”² MÑ¬À²Â¬ ´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_52_NAME:0 "¼Ì¸ YÌ0®0®"
+ NEW_ACHIEVEMENT_52_DESC:0 "cillij¸ ÜÂ‘ÇXÕìÅ ä²x¹ m­¬|¹ Ö1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_53_NAME:0 "´°Ž´XÇ <ÖŽ·"
+ NEW_ACHIEVEMENT_53_DESC:0 "p­Ä³j¸ ÜÂ‘ÇXÕà¬, 1500D± ÈL®ÀÉ 20¬XÇ ,ÁtÇ DÅÌ² Õj¸H¾²Â|¹ ¬ÀÉ8Á”Æ."
+ NEW_ACHIEVEMENT_54_NAME:0 "¨°Ž´XÇ Ä¼ - FC ¼tÇÐÅx¹ Œ»èÕ QÇÐÆ¬(Stern des Südens)"
+ NEW_ACHIEVEMENT_54_DESC:0 "Œ»èÕ<Çj¸ ¼tÇÐÅx¹DÇ Ö1ÁXÕà¬  ¼t¹T³|¹ ŒÁ.ÇjÕ ¾¸XºDÇ …ÈÁm­<Çj¸ P´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_55_NAME:0 "àÂXÇ UÆm­"
+ NEW_ACHIEVEMENT_55_DESC:0 "P­iÖ9¸(Papal State)j¸ ÜÂ‘ÇXÕìÅ, àÂXÇ UÆm­tÇ ´íÂÜÂ2Æ"
+ NEW_ACHIEVEMENT_56_NAME:0 "ˆ´t­XÇ ¬¹˜Ó"
+ NEW_ACHIEVEMENT_56_DESC:0 "¬¹˜Ó(Lippe)j¸, Æm­ ÈÄ³XÇ ¨ºà´ ,Áä´DÇ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_57_NAME:0 "ä²ÜÂ jÕˆ¼ j¸Ä³²ÂÐÅÁ"
+ NEW_ACHIEVEMENT_57_DESC:0 "0®¬Àè²(The Knights)<Çj¸ ÜÂ‘ÇXÕìÅ, XÏ²ÂÄÐðÒx±Õ, Æè¸´À¸, HÅðÒ2ÆlÐ|¹ Èõ¼XÕà¬ TÏ´Å|¹ ÝÀ1ÁXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_58_NAME:0 "´ÌTÏNÆ È¸Æ"
+ NEW_ACHIEVEMENT_58_DESC:0 "ô¼äÕø»DÅj¸ ÜÂ‘ÇXÕìÅ, jÍŒÁjÕ 50%|¹ ÁÉ`ÕÀÉj¸ ¬ÀÉtºÁ ¬ Ä¬5ÎÐÅŒ¬ jÍŒÁ 2¬XÇ ¹ÒŒ­ Ž´ìÅXÕ|·."
+ NEW_ACHIEVEMENT_59_NAME:0 "j¸ÀÐÁ¹0®DÅXÇ È¹¬¹"
+ NEW_ACHIEVEMENT_59_DESC:0 "Ž´t¹à¬t²j¸ ÜÂ‘ÇXÕìÅ j¸ÀÐÁ¹0®DÅ|¹ Ö1ÁXÕà¬ tÇ„¹tÇ È¹¬¹xÇ ìÅ1ÁÄÖÄ¬Ç|¹ P´íÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_60_NAME:0 "¬¥Ç àÂ1ÁjÕ j¸È¹ Èm­"
+ NEW_ACHIEVEMENT_60_DESC:0 "P­iÖ9¸ ¶”² iÖÈj¸ àÂ1Á j¸È¹ Èm­XÇ õ¬ÝÂ àÂYÅtÇ tÎ¨Ñ­¹|Ç Ù³HÅ P­iÖ9¸DÇ .ÁÈÄÖj¸ Ì¹Ü´ÜÂ2Æ."
+ NEW_ACHIEVEMENT_61_NAME:0 "ÐÆT³ŽÔ"
+ NEW_ACHIEVEMENT_61_DESC:0 "3ðÒ´ÅXÇ 0®P±<»DÇ 8¬ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_62_NAME:0 "²ÂÓtÇ²Â x¬²Â"
+ NEW_ACHIEVEMENT_62_DESC:0 "ìÅ1Á ÀÉÄ³Ç|¹ ô¼.ÇjÕ ÁÀÜÐj¸ È¥Õ, ¥ÕàÂÌ¸, ŒÁ®, 2ÁÕÐXÇ 4»íÅ ô¼±²Â|¹ jÖ1ÁTÖÜÂ²ÐíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_64_NAME:0 "ø¼DÇ ¥ÕtÕÁ"
+ NEW_ACHIEVEMENT_64_DESC:0 "ø¼<Çj¸ jÍŒÁjÕ 7ˆ¼ ÂÄ³|¹ ‹ÅÈÐXÕÜÂ2Æ."
+ NEW_ACHIEVEMENT_65_NAME:0 "ˆ´8®DÇ ÀÉÏ|·"
+ NEW_ACHIEVEMENT_65_DESC:0 "pÈj¸DÅ²Â0ÑP­ m­¬j¸ ¨ºà´ …ÈP­ ÉìÂÀÉ|¹ ŒÁ.ÇXÕà¬ ¼àÏ ˆ´XÇ ¬ÀÐÆ 0®P±<»DÇ 3ðÒ´Åj¸ ô¼.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_66_NAME:0 "ÈÀj¸´Æ t²x³¬¹"
+ NEW_ACHIEVEMENT_66_DESC:0 "p³¬¹j¸ x³¬¹ ÀÉíÅÐÅ ÂÄ³|¹ ¬ÀÉÜÂ2Æ."
+ NEW_ACHIEVEMENT_67_NAME:0 "8Á ¬ÀÉ ˜×"
+ NEW_ACHIEVEMENT_67_DESC:0 "ÁÉ`Õ ÝÂü»ÀÉ, ÇXÎ ÝÂü»ÀÉ, ü»¬ 0®ÅÅ ÝÂü»ÀÉ|¹ ŒÁ.ÇXÕíÂÜÂ2Æ."
+ NEW_ACHIEVEMENT_68_NAME:0 "4ÐˆÉ4ÐˆÉ Õj¸ üÏ°Æ"
+ NEW_ACHIEVEMENT_68_DESC:0 "4ÐˆÉ4ÐˆÉj¸ HÅüÈÀÉ)¼ÐÅ ÂÄ³|¹ ¬ÀÉÜÂ2Æ."
+ NEW_ACHIEVEMENT_69_NAME:0 "ø­ä´NÇ 8»qÈtÇ DÅÙ²È²ä²."
+ NEW_ACHIEVEMENT_69_DESC:0 "˜Ól­j¸ 50¬XÇ ¬º 8»TÖ¬ DÅÌ² ÀÉíÅDÇ È9¸XÕíÂÜÂ2Æ."

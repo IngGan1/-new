@@ -1,0 +1,51 @@
+punish_daimyo_action_delay = {
+
+}
+
+
+liberate_japanese_action_delay = {
+
+}
+
+bakufu_reform_1 = {
+	global_tax_modifier = 0.05
+}
+
+bakufu_reform_2 = {
+	global_unrest = -0.5
+}
+
+bakufu_reform_3 = {
+	stability_cost_modifier = -0.05
+}
+
+bakufu_reform_4 = {
+	global_autonomy = -0.01
+}
+
+bakufu_reform_5 = {
+	vassal_income = 0.1
+}
+
+bakufu_reform_6 = {
+	#autonomy_change_time = -0.25
+}
+
+bakufu_reform_backrash = {
+	legitimacy = -15.00
+	prestige = -2		  
+	diplomatic_reputation = -4
+}
+
+bakufu_unlawful_territory = {
+	local_unrest = 5
+	local_tax_modifier = -0.33
+	local_manpower_modifier = -0.25
+	local_autonomy = 0.05
+}
+
+liberate_japanese_war = {
+
+	liberty_desire = -30
+
+}

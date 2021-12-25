@@ -1,0 +1,216 @@
+﻿l_english:
+ ON_TRADE_MISSION_IRO:0 "§Y$COUNT$§! ™ÌXÇ ŒÁÖ.Á<Çj¸ °Æ¬¹XÇ 4»íÅ ­ìÂÀÉíÅ §Y$WHERE$§!DÇ(|¹) ÀÉ²Ð”²É"
+ ON_PRIVATEER_MISSION_IRO:0 "§Y$COUNT$§! ™ÌXÇ Ë¬hÕ.Á<Çj¸ ÈXÇ 4»íÅ ­ìÂÀÉíÅ §Y$WHERE$§!DÇ(|¹) 4­m¸™×È²ä²."
+ TRADEMAP_OUTGOING:0 "§Y$VAL$§W¤tÇ(¬) §Y$NAME$§W(<Ç)j¸ ô¼´°ÀÉà¬ ˆÇµÂÈ²ä²."
+ TRADEMAP_OUTGOING_BASE:0 "m­¬ä´tÇ .ÇœÍ´”² 4»íÅ ¬XÎ|¹ É¬ÜÂ²Ð0® ÈÐÅ, $BASEVAL?$¤(tÇ)¬ $FROMNODE$(<Ç)j¸Ž´0Ñ `¾8È˜°¬È²ä²."
+ TRADEMAP_OUTGOING_SMALL:0 ".ÇœÍ¬XÎ: -§Y$VAL$§W¤"
+ TRADEMAP_INCOMING:0 ".Ç…Ç¬XÎ: +§Y$VAL$§W¤"
+ TRADEMAP_LOCAL:0 "ÀÉíÅ: +§Y$VAL$§W¤"
+ TRADEMAP_TOTAL:0 "x±Ü´ 4»íÅ ¬XÎ: §Y$VAL$§W¤"
+ TRADEMAP_TOTAL_POWER:0 "x±Ü´ÐÅ tÈ¬ÇXÕ”² Í 4»íÅ%¸: §Y$VAL$§W¤"
+ TRADEMAP_POWER:0 "Ö¬Ç °Æ¬¹XÇ 4»íÅ%¸: §Y$VAL$§W"
+ TRADEMAP_INCOMING_EXP:0 "tÇÈ 4»íÅ x±Ü´j¸Ž´0Ñ 2Æ”² 4»íÅ ¬XÎ."
+ TRADEMAP_OUTGOING_EXP:0 "4»íÅ P×„¹ÐÅÁ DÅ˜·ÐÅ ˆÇ”² x±Ü´j¸ ¬”² Í 4»íÅ ¬XÎ."
+ TRADEMAP_LOCAL_EXP:0 "4»íÅ x±Ü´ÐÅ ÁjÕ ÀÉíÅä´XÇ 4»íÅ ¬XÎ"
+ TRADEMAP_TOTAL_EXP:0 "ÀÉíÅ 4»íÅ x±Ü´XÇ Í¬XÎNÆ Í.Ç…Ç¬XÎ"
+ TRADEMAP_INLAND_TITLE:0 "´°Y¹ 4»íÅ x±Ü´"
+ TRADEMAP_INLAND_DESC:0 "ÁÀxÇ<Çj¸ XÕìÅ® ´°Y¹ 4»íÅ x±Ü´ÐÅÁ 4»íÅ ¬XÎ|¹ ÂÑÉXÕŒ¬ XÕp¬˜° 9ÖNÇ ´°Y¹ 4»íÅ x±Ü´j¸ 4»íÅ P×„¹DÇ .ÁŒÖÜÂ´Ð<Çj¸hÃ, ù²àÂNÇ 4»íÅ ¨Ö(ÇÐÅ 0µ|· tÕù² x±Ü´ÐÅÁ ”Í¬ 4»íÅ%¸DÇ »ÅŒ¬ )´È²ä²."
+ TRADEMAP_WE_COLLECT:0 "°Æ¬¹”² $VAL|Y2$¤DÇ(|¹) ÂÑÉiÕÈ²ä²"
+ WITH_TRADE_POWER_OF:0 "ø­ä´XÇ 4»íÅ%¸”² §G$VAL$§! …ÇÈ²ä²"
+ TRADE_EXPAND:0 "4»íÅ ô¼0®"
+ TRADE_STEERING:0 "4»íÅ pÈÈ"
+ TRADE_POWER_DESC:0 "ÀÉíÅ 4»íÅ%¸: §Y$VAL$§W"
+ TP_PROVINCE_POWER:0 "ÀÉíÅ<Çj¸Ž´0Ñ: $VAL$"
+ TP_SHIP_POWER:0 "ŒÁÖ.Á<Çj¸Ž´0Ñ: $VAL$"
+ BASE_TRADE_VALUE:0 "0®ø¼ 4»íÅ%¸ (4»íÅ ¬XÎ/$DIV$): §Y$VAL$§W"
+ BASE_TRADE_PORT_VALUE:0 "mÕl­ (4»íÅ ¬XÎ/$DIV$): +§G$VAL$§W"
+ COUNTRY_TRADE_EFFICIENCY:0 "4»íÅ ¨Ö(Ç (jÍ³ 200%): $VAL$"
+ COUNTRY_TRADE_EFF_TECH:0 "0®.Â: $VAL$"
+ CURRENT_POWER:0 "Ö¬Ç 4»íÅ%¸: §Y$VAL$§W"
+ OUR_CURRENT_POWER:0 "Ö¬Ç °Æ¬¹XÇ 4»íÅ%¸: §Y$VAL$§W"
+ MAX_POWER:0 "4»íÅ%¸: §Y$VAL$§W"
+ MERCHANT_PRESENT_EFFECT:0 " ÁÀxÇDÇ 0¼XÎhÕ<Çj¸hÃ 4»íÅ%¸DÇ $VAL|1+$ É¬ÜÂµÐÈ²ä²."
+ PROVINCE_POWER:0 "ÀÉíÅ ´° 4»íÅ%¸: §Y$VAL$§W"
+ TRADE_NODE_NOT_YET_DISCOVERED:0 "DÅÁÉ tÇ 4»íÅ x±Ü´XÇ ´Å²µ ÀÉíÅÄ³ ¼¬¬´ÀÉ JÅXÅµÂÈ²ä²."
+ TRADE_NODE_LOCATION_NOT_YET_DISCOVERED:0 "DÅÁÉ 4»íÅ x±Ü´XÇ ÇXÎ¬ ¼¬¬´ÀÉ JÅXÅµÂÈ²ä²."
+ TRADE_MULTI_EXPLA:0 "ø­¬¹à¬ tÇ x±Ü´ÐÅÁ $VAL$XÇ 4»íÅ%¸ À¼Ù³XÎ¬ È©Æ´´Å §Y$MUL$§! Ì¹|Ð É¬."
+ TRADE_POWER_CAPITAL:0 "l­íÅ ´° üÈ”Æ 4»íÅ ÉìÂÀÉ: $VAL$"
+ TRADE_POWER_TAKE:0 "§Y$COUNTRY$§WXÇ ÁÀxÇtÇ tÇ 4»íÅ x±Ü´ÐÅÁ §Y$VAL$§W¤Ì¹|ÐXÇ ¬XÎ|¹ p¬P´à¬ ˆÇµÂÈ²ä²."
+ TRADE_POWER_PIRATES_TAKE:0 "§Y$COUNTRY$§WNÇ(”²) tÇ 4»íÅ x±Ü´ÐÅÁ §Y$VAL$§W¤DÇ(|¹) ÂÑÉXÕà¬ ˆÇµÂÈ²ä²."
+ TRADE_POWER_TAKE_STATE:0 "tÇÉÐÅÁ ø­ä´NÇ Çm­<Çj¸ §Y$VALOTHER$§W¤Ì¹|ÐXÇ ÂuÇDÇ KÌœÍtÕ´°à¬ ˆÇµÂÈ²ä²."
+ TRADE_POWER_PUSH:0 "§Y$COUNTRY$§W !ÎNÇ Çm­XÇ 4»íÅ%¸<Çj¸ §Y$VAL$§W¤XÇ ¬XÎ|¹ ä²LÇ x±Ü´j¸ .Æ0®à¬ ˆÇµÂÈ²ä²."
+ TRADE_VALUE_RETAINED:0 ".ÇÀÉ´ 4»íÅ ¬XÎXÇ §Y$VAL$§W%."
+ TRADE_BASE_VALUE:0 "0®ø¼: §Y$VAL$§W"
+ TRADE_RETENTION_RESULT:0 "¨°NÇ 4»íÅ%¸: $VAL$"
+ MERCHANT_MAX_POWER_BONUS:0 "ÁÀxÇ 0¼XÎ: $VAL|1+$"
+ MERCHANT_MAX_POWER_INLAND:0 "´°Y¹ x±Ü´ÐÅ ÁÀxÇ 0¼XÎ: $VAL|+1$"
+ MERCHANT_MAX_POWER_STEERS_TO_INLAND:0 "ÁÀxÇtÇ ´°Y¹ x±Ü´j¸ 4»íÅ P×„¹DÇ .ÁŒÖÜÂ´Ð: $VAL|+1$"
+ MERCHANT_DAILY_POWER:0 "ÁÀxÇ0®ìÅÄ³: §G$VAL$§W/|Ç."
+ MERCHANT_PRESENT_OFFICE:0 "$COUNTRY$ !ÎNÇ tÇó¬ÐÅ ÁÀxÇDÇ P´à¬ 4»íÅ ¬XÎ|¹ p¬P´à¬ ˆÇµÂÈ²ä²."
+ MERCHANT_PRESENT_OFFICE_PIRATES:0 "tÕÈä´NÇ 4»íÅ ¬XÎ|¹ ÂÑÉXÕ0® ÇtÕ ÁÀxÇDÇ DÕ”Æj¸ XÕÀÉ JÅµÂÈ²ä²."
+ MERCHANT_PRESENT_TRANSIT:0 "$COUNTRY$ !ÎNÇ tÇó¬ÐÅ ÁÀxÇDÇ üÈ¬ÇÜÂ²Ðà¬ 4»íÅ ¬XÎ|¹ ô¼´°à¬ ˆÇµÂÈ²ä²."
+ MERCHANT_NOT_PRESENT:0 "ÁÀxÇ 0®ìÅÄ³ ÆÅLÇ."
+ MERCHANT_DAILY_INCREASE:0 "§Y$VAL$§W/|ÇÌ¹|Ð 4»íÅ%¸ É¬."
+ TRADE_NODE_POWER_SHARE:0 "4»íÅ%¸ «º: §G$VAL$§W%"
+ TRADE_MAX_POWER_MOD:0 "4»íÅ%¸: $VAL$"
+ TRADE_INCOME_MOD:0 "ÂuÇ: $VAL$"
+ TRADE_STEER:0 "°Æ¬¹”² Ö¬Ç $NAME$(<Ç)j¸ 4»íÅDÇ tÇL°à¬ ˆÇµÂÈ²ä²."
+ TRADE_NOT_STEER:0 "°Æ¬¹”² Ö¬Ç $NAME$(<Ç)j¸ 4»íÅDÇ tÇL°à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ STEER_HOME:0 "4»íÅ ¬XÎ|¹ ÂÑÉXÕà¬ ˆÇ”² ó¬ÐÅÁ”² 4»íÅ P×„¹DÇ pÈÈ`Õ Â ÆÅµÂÈ²ä²."
+ STEER_LATER:0 "ù²àÂXÇ ÂÄ³|¹ ÀÉœ° tÇÄÖÐÅ tÇè¸´ÅÀÉ”² 4»íÅNÇ pÈÈ`Õ Â ÆÅµÂÈ²ä²."
+ STEER_NO_POWER:0 "4»íÅDÇ pÈÈXÕ2¸tº tÇó¬ÐÅ 4»íÅ%¸DÇ ¨ºDÅ|ÅiÕÈ²ä²."
+ STEER_NO_PRESENSE:0 "ù²àÂNÇ tÇó¬ÐÅ T´ ÁÀxÇtÇ ÆÅµÂÈ²ä²."
+ TRADE_DISTANCE:0 "$FROM$<Çj¸Ž´0Ñ $TO$XÇ p¬¬¹: $VAL$"
+ TRADE_INCOME_FACTORS:0 "äÂÂ…ÇÐÅ Æ¥ÕDÇ É:"
+ TRADE_COUNTRY_RETAIN:0 "$COUNTRY$XÇ ÁÀxÇä´tÇ §Y$VAL$§W¤XÇ ¬XÎ¬ tÇ x±Ü´ÐÅ 8º<»Ä³k¸ XÕà¬ ˆÇµÂÈ²ä²."
+ TRADE_NAVY_NO_SHIPS:0 "ù²àÂNÇ 4»íÅtÇ˜° ¬Àµ·.ÁDÇ ô¼8ÖXÕ0® ÇtÕÁ ŒÁÖ.ÁDÇ ô¼.ÇtÕ|Å iÕÈ²ä²."
+ TRADE_NAVY_NOT_PORT:0 "4»íÅj¸ ô¼8Ö ‰ÕÙ³DÇ èÍXÕ2¸tº hÕ³¬ mÕl­ÐÅ ÇXÎXÕìÅ|Å iÕÈ²ä²."
+ TRADE_NAVY_MOVEMENT_LOCKED:0 "hÕ³¬ ©ºÈÀÉL®ÀÉ ¬”² Ù³HÅÐÅ”² 4»íÅj¸ ô¼8Ö „Ç4»˜° ¬Àµ· „Ç4»ÐÅ 0¼È`Õ Â ÆÅµÂÈ²ä². ©ºÈÀÉÐÅ Ä³)Ì`Õ LµL®ÀÉ 0®ä²¬¹íÂÜÂ2Æ."
+ TRADE_NAVY_CANCEL:0 "4»íÅj¸ ô¼8Ö|¹ èÍŒÁ"
+ TRADE_NAVY_MISSION:0 "§Y$NAME$§W(DÇ)|¹ X´ì·üÂ 4»íÅj¸|¹ ô¼8ÖXÕ0® ÜÂ‘ÇXÕ0®."
+ TRADE_NAVY_MISSION_DESC:0 "ù²àÂXÇ hÕ³”² l­íÅDÇ Â0ÌXÕpº ù²àÂXÇ ÁÀxÇä´DÇ ô¼8ÖXÕà¬ Ä³¸Æ ƒ¬…ÇÈ²ä². 2ÆÁÉ ŒÁÖ.ÁÌ¹tÇ 4»íÅ%¸DÇ Èõ¬XÕpº ä²x¹ .Á¼ä´NÇ ø­xÆXÇ ô¼8Öj¸ Ä³ÀÆDÇ É Â ˆÇµÂÈ²ä²."
+ TRADE_NUM_SHIPS:0 "ŒÁÖ.Á ³Â: $VAL$"
+ SHIP_POWER:0 "ŒÁÖ.Á Èõ¬ 4»íÅ%¸: §Y$VAL$§W"
+ PREV_MAX_POWER:0 "XÕÇ x±Ü´ÐÅÁ tÇ¹ÀÉ”² 4»íÅDÇ µÑtÕ »Å”² 4»íÅ%¸: §Y$VAL$§W"
+ TRADE_MISSION_OFFICE:0 "4»íÅ ¬XÎ ÂÑÉ"
+ TRADE_MISSION_TRANSIT:0 "4»íÅ ¬XÎ tÇ¡Á"
+ TRADE_MISSION_OFFICE_DESC:0 "4»íÅ ¬XÎ ÂÑÉNÇ °Æ¬¹¬ È³DÇ ¨ºDÇ Â ˆÇŒ¬ iÕÈ²ä². °Æ¬¹XÇ ÂÄ³¬ ˆÇ”² x±Ü´ ¼e®ÐÅÁ”² 2ÆÁÉ ÁÀxÇDÇ ô¼´°|ÅÌ¹ 4»íÅ ¬XÎ|¹ ÂÑÉ`Õ Â ˆÇµÂÈ²ä². ÁÀxÇtÇ ŒÁXÖ´ä²tº ø­ x±Ü´”² 4»íÅ ¬XÎ tÇ¡ÁÌ¹DÇ iÕÈ²ä²."
+ TRADE_MISSION_TRANSIT_DESC:0 "üÈ”Æ 4»íÅ ÉìÂÀÉ|¹ ÈxÆXÕà¬, ù²àÂtÇ 4»íÅ%¸DÇ ô¼.ÇjÕ ¨ºà´ x±Ü´”² tÇ¡Áx±Ü´…ÇÈ²ä². ø­ó¬ÐÅÁ ù²àÂXÇ 4»íÅ%¸NÇ 4»íÅDÇ pÈ…ÈXÕà¬ 4»íÅ ¬XÎ¬ XÕX¹j¸ P×t¹Ä³k¸ `Õ ƒ¬…ÇÈ²ä²."
+ NON_CAPITAL_OFFICE_2:0 "ù²àÂXÇ üÈ”Æ 4»íÅ ÉìÂÀÉ¬ DÅÌ² ó¬ÐÅÁ 4»íÅ<Çj¸ »Å”² ‘Å: $VAL$"
+ ENVOY_TRADING_TRADE_MISSION_TRANSIT:1 "$NAME$ !ÎNÇ §Y$FROMPROV$§WÐÅÁ §Y$TOPROV$§W(<Ç)j¸ 4»íÅ%¸DÇ ô¼´°à¬ ˆÇµÂÈ²ä²."
+ ENVOY_TRADING_TRADE_MISSION_OFFICE:0 "$NAME$NÇ(”²) §Y$PROV$§WÐÅÁ 4»íÅ ¬XÎ|¹ ÂÑÉÉ…ÇÈ²ä²."
+ MERCHANT_PRESENT:1 "ÁÀxÇ tÈ¬Ç: §Y$VAL$§W"
+ TRADE_POWER_PUSH_DESC:0 "4»íÅ%¸ É §Y$VAL$§W%Ì¹|ÐtÇ 4»íÅDÇ L°´Å2Æ”²p³ ¬À©Æ´à¬ ˆÇµÂÈ²ä²."
+ TRADE_POWER_DIRECT_DESC:0 "4»íÅ%¸ É §Y$VAL$§W%Ì¹|ÐtÇ tÇ )¼¥Õ<Çj¸ 4»íÅ ¬XÎ|¹ ô¼Å°È²ä²."
+ TRADE_DIRECTOR_TOOLTIP:0 "§Y$NAME$§WNÇ(”²) §Y$VAL$§WÌ¹|ÐXÇ 4»íÅ%¸DÇ tÇ )¼¥Õ<Çj¸ ðÄà¬ ˆÇµÂÈ²ä²."
+ TRADE_PROJECTOR_TOOLTIP:0 "§Y$NAME$§WNÇ(”²) §Y$VAL$§WÌ¹|ÐXÇ 4»íÅ%¸DÇ tÇ x±Ü´ÐÅÁ ‰Õ¬ÀiÕÈ²ä²."
+ TRADE_PROJECTOR_SHARE_TOOLTIP:0 "tÇ”² tÕù² x±Ü´ 4»íÅ%¸ ÍiÕXÇ §Y$VAL$%§W…ÇÈ²ä²."
+ POTENTIAL_MAX:0 " Ç¬Ç%¸ «º: §Y$VAL$§W%."
+ EMBARGO_EFFICIENCY:0 "4»íÅ ®ÀÉ ¨Ö(Ç: §Y$VAL$§W"
+ EMBARGOED_BY:0 "§Y$OTHER$§WXÇ 4»íÅ ®ÀÉ9¸: -§R$VAL$§W%"
+ TN_COUNTRY:0 "m­¬"
+ TN_RETENTION_POWER:0 "ô¼.Ç ÉxÇ 4»íÅ ¬XÎ"
+ TN_INCOME_SHARING:0 "ÂuÇÈ.Ç(Ç"
+ TN_TRADE_POWER:0 "4»íÅ%¸"
+ TN_OUTGOING_VALUE:0 ".ÇœÍ:"
+ TN_TOTAL_VALUE:0 "ÍÄ¬:"
+ TN_LOCAL_VALUE:0 "ÀÉíÅ:"
+ TN_INCOMING_VALUE:0 ".Ç…Ç:"
+ TN_SEND_MERCHANT:0 "ÁÀxÇ Ó¬¬"
+ TN_MERCHANT_PRESENT:0 "$NAME$ ($TYPE$)"
+ TRADE_RETENTION:0 "§Y$PART$§W%Ì¹|ÐXÇ 4»íÅ%¸<Çj¸ §Y$VAL$§W¤XÇ ¬XÎ|¹ ÂÑÉXÕà¬ ˆÇµÂÈ²ä²."
+ TRADE_PULL:0 "§Y$PART$§W%Ì¹|ÐXÇ 4»íÅ%¸<Çj¸ §Y$VAL$§W¤DÇ XÕX¹ x±Ü´j¸ X×2¸ô¼´°à¬ ˆÇµÂÈ²ä²."
+ TRADE_POWER_TAKE_PART:0 "4»íÅ ¬XÎ|¹ ÂÑÉXÕà¬ ˆÇ”² m­¬ ÉÐÅ §Y$COUNTRY$§WNÇ(”²) §Y$PART$%§WÌ¹|ÐXÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ TRADER_ALLREADY_THERE:0 "´Å² x±Ü´tÇà´ÀÉ jÕ …ºXÇ ÁÀxÇÌ¹tÇ üÈ¬Ç`Õ Â ˆÇµÂÈ²ä²."
+ TRADER_IN_RANGE:0 "”¼Ç ´°ÐÅ tÈ¬ÇtÕ|Å hÕ. (Ö¬Ç ”¼Ç: §Y$CURR$§W jÍ³ ”¼Ç: §Y$MAX$§W)"
+ TRADER_FREE_ENVOY:0 "¬À©Æ ¬¥²jÕ ÁÀxÇtÇ jÕ …ºNÇ ˆÇ´Å|Å iÕÈ²ä²."
+ TRADE_CANCEL:0 "ÁÀxÇ ŒÁXÖ"
+ TRADE_CANCEL_TIME:0 "ÁÀxÇNÇ ÂÄ³j¸ §Y$DATE$§W|ÇtÇ ÀÉ˜°tº Ä³)Ì`Õ ƒ¬…ÇÈ²ä²."
+ TRADE_SEND_MERCHANT:0 "4»íÅ ¬XÎ ÂÑÉDÇ ÇtÕ ÁÀxÇ Ó¬¬"
+ TRADE_SEND_MERCHANT_DESC:0 "4»íÅ ¬XÎ ÂÑÉNÇ ÂuÇDÇ tÇL°´Å´°0® ÇtÕ ù²àÂXÇ 4»íÅ%¸DÇ ¬À©Æ`Õ ƒ¬…ÇÈ²ä². ÂÄ³”² Æl­ˆ× 4»íÅ ¬XÎ|¹ ÂÑÉXÕpº ÁÀxÇDÇ Ó¬¬XÕtº 4»íÅ%¸tÇ ¥ÕÁÀ)´È²ä². ù²àÂNÇ ´Å² x±Ü´ÐÅÁà´ÀÉ 4»íÅ ¬XÎ|¹ ÂÑÉ`Õ Â ˆÇÀÉÌ¹ ø­Ì¹|Ð ÁÀxÇtÇ üÈ¬ÇXÕà¬ ˆÇDÇ LµÐÅÌ¹ ¬¥²iÕÈ²ä². ÁÀxÇtÇ ŒÁXÖ´ä²tº ø­ x±Ü´”² 4»íÅ ¬XÎ|¹ tÇ¡ÁXÕ0®Ì¹ `Õ ƒ¬…ÇÈ²ä²."
+ TRADE_MERCHANT_ARRIVAL_TIME:0 "$NAME$(NÇ)”² tÇó¬ÐÅ §Y$VAL$§W|ÇtÇ ÀÉ˜°tº Ä³)Ì`Õ ƒ¬…ÇÈ²ä²."
+ TRADE_ENROUTE:0 "ÁÀxÇtÇ tÇø» tÇ x±Ü´j¸ ¬”² É…ÇÈ²ä²."
+ TRADE_ENROUTE_STATUS:0 "¬”² É"
+ TRADE_MERCHANT_UNABLE:0 "ÁÀxÇ Ó¬¬ ˆ´¬¥²"
+ TRADE_TRANSIT_NODE:0 "4»íÅ ¬XÎ tÇ¡ÁDÇ ÇtÕ ÁÀxÇDÇ Ó¬¬"
+ TRADE_TRANSIT_NODE_DESC:0 "tÇ¡Á x±Ü´”² 'XÕX¹'j¸ X×ì·¬”² ®aÅDÇ ˜²¬¹0® ÇtÕ ù²àÂXÇ 4»íÅ%¸DÇ ¬À©Æ`Õ ƒ¬…ÇÈ²ä². tÇ¡Á x±Ü´”² ¶jÕ ù²àÂtÇ tÇø» tÇÈ x±Ü´ÐÅÁ ¬à¬ ˆÇÈÅX³ 4»íÅ%¸DÇ 2Æ˜· ¬à¬ ˆÇÈÅX³ Ì¹|Ð |ÇŽ´ 4»íÅ%¸DÇ ÁÀX¹j¸ ´Ì³´¹ ƒ¬…ÇÈ²ä²."
+ TRADE_TRANSIT_NODE_CAPITAL:0 "ÂÄ³ x±Ü´ÐÅÁ”² Æl­ˆ× 4»íÅ ¬XÎ¬ ÂÑÉ´pº ø­ x±Ü´j¸Ž´0Ñ”² 4»íÅ ¬XÎ|¹ tÇ¡Á`Õ Â ÆÅµÂÈ²ä²."
+ TRADE_LEADER_NAME_SORT_TOOLTIP:0 "4»íÅ%¸ .ÁP´ÐÅ 0µ|· È,¸"
+ TRADE_TRADER_SORT_TOOLTIP:0 "ÁÀxÇ üÈ¬Ç ìÅŽ´ÐÅ 0µ|· È,¸"
+ TRADE_TRADER_SORT_TOOLTIP_DELAYED:0 "üÈ¬ÇXÕ”² ÁÀxÇtÇ ˆÇä²tº °Æ¬¹XÇ Ö 4»íÅ%¸DÇ É¬ÜÂµÐÈ²ä². ÁÀxÇNÇ 4»íÅ ¬XÎ|¹ ÂÑÉXÕp¬˜° XÕX¹j¸ 4»íÅ ¬XÎ|¹ tÇ¡Á`Õ Â ˆÇµÂÈ²ä²."
+ TRADE_INCOME_SORT:0 "ÂuÇ Â<Çj¸ È,¸"
+ TRADE_INCOME_SORT_DELAYED:0 "ÂuÇNÇ 4»íÅ ¬XÎ ÂÑÉDÇ µÑtÕ ÁÉÈÈ<Çj¸ »Åp¬˜° 4»íÅ ¬XÎ tÇ¡ÁDÇ µÑtÕ XÕX¹j¸ ô¼¼°Â ˆÇµÂÈ²ä²."
+ TRADE_MISSION_SORT:0 "ÁÀxÇ „Ç4»ÐÅ 0µ|· È,¸"
+ TRADE_MISSION_SORT_DELAYED:0 "ÁÀxÇNÇ 4»íÅ¬XÎ|¹ ÂÑÉ`Õ Â ˆÇµÂÈ²ä². ¶jÕ XÕX¹ x±Ü´ÐÅ ÇXÎ`Õ Lµ”² 4»íÅ¬XÎ|¹ ^Å<Çj¸ ô¼´°à¬, ÁÀX¹ x±Ü´ÐÅ ÇXÎ`Õ Lµ”² 4»íÅ¬XÎ|¹ ²´j¸ ô¼¼° Â ˆÇä²."
+ TRADE_INCOME_MOD_SORT:0 "ÂuÇ À¼Ù³XÎÐÅ 0µ|· È,¸"
+ TRADE_INCOME_MOD_SORT_DELAYED:0 "m­¬¬ äÂÈj¸ »Åà¬ ˆÇ”² ÂuÇNÇ 0®.Â è²Ä¬˜° …º1Á ñ´ü¬ ¬NÇ ”ÆxÇÐÅ XÇtÕ ÂÈ)´È²ä²."
+ TRADE_CURRENT_POWER_SORT:0 "Ö¬Ç 4»íÅ%¸ 0®É È,¸"
+ TRADE_OUR_CURRENT_POWER_SORT:0 "°Æ¬¹XÇ Ö¬Ç 4»íÅ%¸ 0®É È,¸"
+ TRADE_TOTAL_POWER_SORT:0 "Í 4»íÅ%¸ 0®É È,¸"
+ TRADE_TOTAL_POWER_SORT_DELAYED:0 "tÇƒ¬NÇ  Ö¬Ç ¨ºà´ ˜°|·XÇ 4»íÅ%¸XÇ iÕ…ÇÈ²ä²."
+ TRADE_CURRENT_POWER_SORT_DELAYED:0 "Ö 4»íÅ%¸NÇ tÇ 4»íÅ x±Ü´ÐÅÁ Ë¬ÁÇÉxÇ ù²àÂXÇ Æ¥Õ%¸…ÇÈ²ä². ù²àÂXÇ Ö 4»íÅ%¸NÇ tÇ x±Ü´j¸ ÁÀxÇDÇ Ó¬¬`Õ Lµ äÎÈÉ ƒ¬…ÇÈ²ä²."
+ TRADE_CURRENT_VALUE_SORT:0 "¬XÎ Â<Çj¸ È,¸"
+ TRADE_MAX_POWER_SORT:0 "4»íÅ%¸ Â<Çj¸ È,¸"
+ TRADE_MAX_POWER_SORT_DELAYED:0 "4»íÅ%¸NÇ x±Ü´ÐÅ Æ¥Õ%¸tÇ ¼ÅÈ¹˜° lÐŒ¬ ø»`ÎÀÉ °¬ÈiÕÈ²ä². ’±NÇ ¬XÎ|¹ ¬ÀÉ”² ÀÉíÅDÇ ŒÁ.ÇXÕp¬˜° 4»íÅj¸|¹ ô¼8ÖXÕ”² hÕ³|¹ `´<Çj¸hÃ 4»íÅ%¸DÇ ’±|Ç Â ˆÇµÂÈ²ä²."
+ TRADE_SHIPS_SORT:0 "ŒÁÖ.Á ¼ ÁÀxÇÐÅ XÇjÕ 4»íÅ%¸ Â<Çj¸ È,¸"
+ TRADE_SHIPS_SORT_DELAYED:0 "ÁÀxÇDÇ x±Ü´ÐÅ 0¼XÎXÕp¬˜° .Á¼DÇ Â0ÌÜÂ´Ð<Çj¸hÃ ù²àÂXÇ 4»íÅ%¸DÇ É¬ÜÂ¬Ð Â ˆÇµÂÈ²ä². P´ ¨Öü¬”² É©Ì ¬¥²iÕÈ²ä²."
+ TRADE_PROVINCES_SORT:0 "ÀÉíÅ 4»íÅ%¸ Â<Çj¸ È,¸"
+ TRADE_PROVINCES_DELAYED:0 "ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ˆÇ<Çtº ù²àÂXÇ 4»íÅ%¸DÇ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä². ‡º‡º ÀÉíÅä´NÇ üÈ”ÆjÕ 4»íÅÉìÂÀÉtÇp¬˜° ¬XÇ XÕX¹ÐÅ xÇÈtÕˆÇ”² ñ´XÇ ”ÆxÇä´ÐÅ 0µ|· ˜ÌLÇŽ´0Ñ T³ pÐ ¬XÎ¬ ˆÇµÂÈ²ä². ÀÉíÅ 4»íÅ%¸NÇ t¬<»DÇ ÓÉ”² ƒ¬<Çj¸ ¥ÕÁÀÜÂ¬Ð Â ˆÇµÂÈ²ä²."
+ TRADE_MAX_POWER_MOD_SORT:0 "4»íÅ%¸ À¼Ù³XÎÐÅ 0µ|· È,¸"
+ TRADE_MAX_POWER_MOD_DELAYED:0 "ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ˆÇ<Çtº ù²àÂXÇ 4»íÅ%¸DÇ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä². ‡º‡º ÀÉíÅä´NÇ ˜ÌLÇŽ´0Ñ T³ pÐ ¬XÎ|¹ ¬à¬ ˆÇà¬ 0®ÀÐ ÀÉíÅä´NÇ ¥ÕÁÀÜÂ¬Ð Â ˆÇµÂÈ²ä²."
+ TRADE_ADDED_VALUE_COUNTRY:0 "§Y$WHO$§WtÇ(¬) É¬ÜÂ²Ð”² .ÇœÍÉxÇ ¬XÎ: §Y$VAL$§W%"
+ TRADE_POWER_UPSTREAM:0 "§Y$COUNTRY$§WNÇ(”²) §Y$VAL$§WXÇ ¬XÎ|¹ ø­ä´XÇ 4»íÅ%¸XÇ ÁÀX¹j¸ ô¼´°à¬ ˆÇµÂÈ²ä²."
+ TRADE_CURRENT_POWER:0 "Ö 4»íÅ%¸: §Y$VAL$§W."
+ STEER_NO_TRADER:0 "ù²àÂNÇ 4»íÅ ¬XÎ|¹ tÇ¡ÁXÕ0® ÇtÕ 4»íÅDÇ pÈÈXÕ2¸tº <ºÈ ÁÀxÇDÇ 0¼XÎtÕ|ÅiÕÈ²ä²."
+ TRANSFER_TRADE_POWER_TO:0 "§Y$OTHER$§!j¸ tÇ¡ÁÉxÇ 4»íÅ%¸: §R-$VAL$§!"
+ TRANSFER_TRADE_POWER_FROM:0 "§Y$OTHER$§!j¸Ž´0Ñ ¼à¬ˆÇ”² 4»íÅ%¸: §G+$VAL$§!"
+ TRADER_NOT_DISCOVERED:0 "4»íÅ x±Ü´¬ ¼¬¬´ÀÉ JÅXÅµÂÈ²ä²."
+ ADDED_VALUE_TRADE:0 "iÕX¹´ ¬XÎ: §Y$VAL$§!"
+ MERCHANT_DOWNSTREAM_BONUS:0 "XÕÇ x±Ü´ÐÅ ˆÇ”² ÁÀxÇXÇ tÇ¡Á: $VAL$"
+ TRADE_POWER_UPSTREAM_DESC:0 "m­¬”² 4»íÅ%¸DÇ tÇø» Æ¥Õ%¸DÇ ¬à¬ ˆÇ”² 4»íÅ x±Ü´ä´j¸ 4»íÅ%¸DÇ p¬¬Âì· tÇ¡Á`Õ Â ˆÇµÂÈ²ä²."
+ NO_TRADE_COMPANY_NO_REGION:0 "tÇ ÀÉíÅÐÅ 4»íÅ ŒÖ¬À|¹ 2ÁË¹`Õ Â”² ÆÅµÂÈ²ä²."
+ NO_TRADE_COMPANY_ON_OWN_CONTINENT:0 "Çm­tÇ ÇXÎjÕ ³Y¹ÐÅ”² 4»íÅŒÖ¬À|¹ 2ÁË¹`Õ Â ÆÅµÂÈ²ä²."
+ TRADE_COMPANY_ADD:1 "tÇ ÀÉíÅDÇ ù²àÂXÇ 4»íÅ ŒÖ¬ÀÐÅ 0¼ÁÜÂµÐÈ²ä². Èõ¬XÕ”² 8Á®ü¬ xÇ%¸tÇ É´Åä´ÀÉÌ¹ 4»íÅÐÅ ˆÇ´ÅÁXÇ ¬XÎ”² É¬iÕÈ²ä²."
+ TRADE_COMPANY_REMOVE:1 "tÇ ÀÉíÅDÇ ù²àÂXÇ $NAME|Y$(<Ç)j¸Ž´0Ñ ŒÖÂiÕÈ²ä²."
+ CONFIRM_JOIN_TRADE_COMPANY_TITLE:0 "4»íÅ ŒÖ¬ÀÐÅ ÀÉíÅ 0¼Á"
+ CONFIRM_JOIN_TRADE_COMPANY_DESC:0 "$PROVINCE|Y$XÇ µÑÈŒ­DÇ $COMPANY|Y$ÐÅ üÈtº 4»íÅ !ÎtºÐÅÁ”² tÇ ó¬XÇ ¬XÎ¬ lÐŒ¬ É³´ ¬ÀÉÌ¹, xÇ%¸tÇ˜° 8Á®XÇ ÐÆœÌ<Çj¸ÁXÇ ¬XÎ”² ¬ŒÁ.´ ƒ¬…ÇÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ É¹µÂÈ²ä²."
+ CONFIRM_JOIN_TRADE_COMPANY_DESC_NEW:0 "tÇ”² $REGION|Y$ 4»íÅ Œ­íÅÐÅ ÈÀj¸´Æ 4»íÅ ŒÖ¬À|¹ 2ÁË¹`Õ ƒ¬…ÇÈ²ä². $PROVINCE|Y$XÇ µÑÈŒ­DÇ ÈÀj¸´Æ 4»íÅ ŒÖ¬ÀÐÅ Ž´ìÅXÕtº 4»íÅ !ÎtºÐÅÁ”² tÇ ó¬XÇ ¬XÎ¬ lÐŒ¬ É³´ ¬ÀÉÌ¹, xÇ%¸tÇ˜° 8Á®XÇ ÐÆœÌ<Çj¸ÁXÇ ¬XÎ”² ¬ŒÁ.´ ƒ¬…ÇÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ É¹µÂÈ²ä²."
+ CONFIRM_LEAVE_TRADE_COMPANY_TITLE:0 "4»íÅ ŒÖ¬Àj¸Ž´0Ñ ÀÉíÅ ŒÖÂ"
+ CONFIRM_LEAVE_TRADE_COMPANY_DESC:1 "$COMPANY|Y$ !Î<Çj¸Ž´0Ñ $PROVINCE|Y$DÇ(|¹) ŒÖÂXÕìÅ ø­ ÀÉíÅXÇ ÇÐÆDÇ ÁÉÈ µÑÈiÕÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ ÈÕ©ÆXÕŒ¬ )´È²ä²."
+ CONFIRM_ALL_JOIN_TRADE_COMPANY_TITLE:1 "4»íÅ ŒÖ¬ÀÐÅ ÀÉíÅ 0¼Á"
+ CONFIRM_ALL_JOIN_TRADE_COMPANY_DESC:0 "ù²àÂtÇ $NODE|Y$ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅXÇ µÑÈŒ­DÇ $COMPANY|Y$ÐÅ Ž´ìÅXÕtº 4»íÅ !ÎtºÐÅÁ”² tÇ ó¬XÇ ¬XÎ¬ lÐŒ¬ É³´ ¬ÀÉÌ¹, xÇ%¸tÇ˜° 8Á®XÇ ÐÆœÌ<Çj¸ÁXÇ ¬XÎ”² ¬ŒÁ.´ ƒ¬…ÇÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ É¹µÂÈ²ä²."
+ CONFIRM_ALL_JOIN_TRADE_COMPANY_DESC_NEW:0 "tÇ”² $REGION|Y$ÐÅ ÈÀj¸´Æ 4»íÅ ŒÖ¬À|¹ 2ÁË¹`Õ ƒ¬…ÇÈ²ä². ù²àÂtÇ $NODE|Y$ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅXÇ µÑÈŒ­DÇ ÈÀj¸´Æ ŒÖ¬ÀÐÅ Ž´ìÅXÕtº 4»íÅ !ÎtºÐÅÁ”² tÇ ó¬XÇ ¬XÎ¬ lÐŒ¬ É³´ ¬ÀÉÌ¹, xÇ%¸tÇ˜° 8Á®XÇ ÐÆœÌ<Çj¸ÁXÇ ¬XÎ”² ¬ŒÁ.´ ƒ¬…ÇÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ É¹µÂÈ²ä²."
+ CONFIRM_ALL_LEAVE_TRADE_COMPANY_TITLE:0 "4»íÅ ŒÖ¬À ÐÓÄÁ"
+ CONFIRM_ALL_LEAVE_TRADE_COMPANY_DESC:0 "ù²àÂtÇ $NODE|Y$ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅXÇ µÑÈŒ­DÇ $COMPANY|Y$j¸Ž´0Ñ ŒÖÂXÕìÅ ø­ ÇÐÆä´DÇ ÁÉÈ µÑÈiÕÈ²ä².\ntÇ”² ¶jÕ ¨ºm­tÇ Â©ÆjÕ ÜÂ³­tÇ tÇ ÀÉíÅÐÅ ÇÙ³È<Çj¸ ÈÓ´”² ƒ¬DÇ ÈÕ©ÆXÕŒ¬ )´È²ä²."
+ IS_IN_TRADE_COMPANY:1 "$COMPANY|Y$tÇ(¬) $PROVINCE|Y$DÇ(|¹) ­`ÕXÕà¬ ˆÇµÂÈ²ä²"
+ MAY_BE_IN_TRADE_COMPANY:0 "$PROVINCE|Y$NÇ(”²) $REGION|Y$ 4»íÅ ŒÖ¬À Œ­íÅÐÅ ÁtÕ ˆÇµÂÈ²ä²."
+ SV_TRADE_COMPANY_NAME:0 "$NAME|Y$NÇ(”²) °Æ¬¹XÇ ÀÉ0¼XÕÐÅ ˆÇ”² 4»íÅ ŒÖ¬À…ÇÈ²ä²."
+ SV_TRADE_COMPANY_NAME_DESC:1 "tÇ 4»íÅ ŒÖ¬À”² $REGION|Y$ÐÅ ÇXÎXÕpº, $NODE|Y$ 4»íÅ x±Ü´ÐÅÁ Æ¥Õ%¸DÇ ¼×iÕÈ²ä².\n\n4»íÅ ŒÖ¬À”² <º EµÐÅ ˆÇ”² °Æ¬¹XÇ 4»íÅ Èm­DÇ ­¬¹iÕÈ²ä². 4»íÅ ŒÖ¬ÀÐÅ ÀÉíÅDÇ 0¼ÁÜÂ´Ð<Çj¸hÃ tÕù² ÀÉíÅtÇ Èõ¬XÕ”² 4»íÅ%¸ ¼ hÕ.Á ô¼.Ç ÈjÕDÇ ˜²´¹ Â ˆÇÀÉÌ¹ 8Á® Â…Çü¬ Èõ¬ Ñ¼%¸NÇ É´Åä´Œ¬ )´È²ä². 4»íÅ ŒÖ¬À¬ tÕù² ÀÉ)¼ÐÅÁ °Æ8Á|¹ ÈXÕtº ù²àÂNÇ ”Í¬ ÁÀxÇDÇ »ÅDÇ Â ˆÇµÂÈ²ä²."
+ SV_TRADE_COMPANY_INCOME:0 "4»íÅ ŒÖ¬À ÀÉíÅ<Çj¸Ž´0Ñ °ÀœÍ´”² ŒÁÝ´: $INCOME|Y$¤"
+ SV_TRADE_COMPANY_POWER:0 "4»íÅ ŒÖ¬À ÀÉíÅ<Çj¸Ž´0Ñ °ÀœÍ´”² 4»íÅ%¸: $POWER|Y$"
+ SV_TRADE_COMPANY_CONTROL:0 "4»íÅ ŒÖ¬À”² Ö¬Ç $REGIONNAME$ Œ­íÅÐÅÁ ÀÉíÅ 4»íÅ%¸XÇ $THEIR|Y$DÇ(|¹) È.ÇXÕà¬ ˆÇµÂÈ²ä². ÀÉíÅ 4»íÅ%¸XÇ ÍiÕNÇ $TOTAL|Y$…ÇÈ²ä²."
+ SV_TRADE_COMPANY_CONTROL_DESC:0 "tÕù² ÀÉ)¼ÐÅÁ °Æ8ÁjÕ 4»íÅ%¸DÇ ÀÉÈ²2¸tº $VAL|Y$% tÇÁÀXÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇ´Å|Å iÕÈ²ä². ù²àÂNÇ Ö¬Ç $MYVAL|Y$%DÇ(|¹) È.ÇXÕà¬ ˆÇµÂÈ²ä²."
+ SV_TRADE_COMPANY_FLEET:0 "°Æ¬¹XÇ 4»íÅ ŒÖ¬À ÀÉíÅNÇ $VAL|Y$XÇ ”Í¬ hÕ.Á ô¼.Ç ÈjÕDÇ Èõ¬XÕà¬ ˆÇµÂÈ²ä²."
+ SV_TRADE_DOMINANT_TRADER:0 "°Æ¬¹XÇ 4»íÅ ŒÖ¬À”² tÕù² ÀÉ)¼ 4»íÅÐÅÁ °Æ8Á|¹ ÈXÕà¬ ˆÇµÂÈ²ä²."
+ SV_TRADE_DOMINANT_TRADER_OTHER:0 "$NAME|Y$NÇ(”²) tÇ ÀÉ)¼ 4»íÅÐÅÁ °Æ8Á|¹ ÈXÕà¬ ˆÇµÂÈ²ä²."
+ SV_TRADE_NEW_DOMINANT:0 "ä²x¹ tÇä´tÇ 4»íÅ%¸DÇ T³ »ÅÀÉ JÅ”² jÕ, $DAY$|Ç ´°j¸ $NAME$NÇ(”²) tÇ ÀÉ)¼ 4»íÅÐÅÁ °Æ8Á|¹ ÈXÕŒ¬ .´ ƒ¬…ÇÈ²ä²."
+ SV_TRADE_COMPANY_STRONG:0 "$NAME|Y$”² tÇ ÀÉíÅÐÅÁ ä¹°Æ ¬jÕ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ SV_TRADE_COMPANY_NOT_STRONG:0 "$NAME|Y$NÇ(”²) DÅÁÉ tÇ ÀÉ)¼ 4»íÅÐÅÁ °Æ8Á|¹ È`Õ Ì¹|Ð ¬XÕÀÉ »ºiÕÈ²ä²."
+ trade_company_strong:0 "¬%¸jÕ 4»íÅ ŒÖ¬À"
+ NO_TRADE_COMPANY_GROUP:0 "ù²àÂXÇ 0®.ÂŒ­NÇ 4»íÅ ŒÖ¬À|¹ 2ÁË¹`Õ Â ÆÅµÂÈ²ä²."
+ NO_TRADE_COMPANY_OVERSEAS:0 "ù²àÂNÇ 2ÆÁÉ tÕxÆÐÅ 4»íÅŒÖ¬À|¹ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ TRADE_NAME_SORT_TOOLTIP:0 "m­¬ÐÅ 0µx¹ È,¸"
+ WHO_HAS_TRADE_COMPANY_IN:0 "$WHO|Y$ !ÎNÇ $REGION|Y$ Œ­íÅÐÅ 4»íÅ ŒÖ¬À|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ GOODS_PRODUCED_BONUS:1 "§YÝÀ°À É¬§!\ntÇ Œ­íÅXÇ 4»íÅ ŒÖ¬À”² 4»íÅ ŒÖ¬À¬ DÅÌ² ¨ºà´ ÀÉíÅä´XÇ ÁÀˆÔ ÝÀ°ÀDÇ $VAL|2+%$Ì¹|Ð É¬ÜÂ²Ðpº ø­ tÇ.Ç”² ä²LÇü¬ ¬µÂÈ²ä²:\n$WHY$"
+ TRADE_SHIPS_IN_NODE:0 "$COUNT|Y$™ÌXÇ ŒÁÖ hÕ.Á<Çj¸ tÇ 4»íÅ x±Ü´|¹ ô¼8ÖXÕ”² É…ÇÈ²ä².\nŒÁÖ hÕ.Áä´NÇ $TRADEPOWER|Y$ XÇ 4»íÅ%¸DÇ KÌœÍtÕ´°à¬ ˆÇµÂÈ²ä²."
+ PRIVATEERS_IN_NODE:0 "$PRIVATEERCOUNT|Y$ ™ÌXÇ hÕ.Áä´tÇ tÇ 4»íÅ x±Ü´|¹ ‹ÅÈÐ É…ÇÈ²ä².\n‹ÅÈÐ ÉxÇ hÕ.ÁNÇ  tÇ x±Ü´XÇ È´Ì 4»íÅ%¸ ¬´Æp³ $PRIVATEERTRADEPOWER|Y$XÇ 4»íÅ%¸DÇ (ÌÀÉXÕà¬ ˆÇµÂÈ²ä²."
+ aleppo:0 "Aleppo"
+ hormuz:0 "Hormuz"
+ goa:0 "Goa"
+ doab:0 "Doab"
+ siberia:0 "Siberia"
+ lhasa:0 "Lhasa"
+ girin:0 "Girin"
+ xian:0 "Xi'an"
+ chengdu:0 "Chengdu"
+ zambezi:0 "Zambezi"
+ african_great_lakes:0 "Great Lakes"
+ kongo:0 "Kongo"
+ TRADE_COMPANY_INDIA_British_trade_company_south_india:0 "[Root.GetAdjective] Bombay Presidency"
+ TRADE_COMPANY_INDIA_British_trade_company_coromandel:0 "[Root.GetAdjective] Madras Presidency"
+ TRADE_COMPANY_INDIA_British_East_India_Company:1 "[Root.GetAdjective] Bengal Presidency"
+ trade_company_south_india:0 "Konkan Charter"
+ trade_company_coromandel:0 "Coromandel Charter"
+ trade_company_north_india:0 "North Indian Charter"
+ trade_company_deccan:0 "Deccan Charter"
+ trade_company_burma:0 "Burma Charter"
+ TRADE_COMPANY_SOUTH_INDIA_India_Trade_Company:0 "Konkan Trade Company"
+ TRADE_COMPANY_DECCAN_India_Trade_Company:0 "Deccan Trade Company"
+ TRADE_COMPANY_BURMA_India_Trade_Company:0 "Burma Trade Company"
+ TRADE_COMPANY_NORTH_INDIA_India_Trade_Company:0 "North Indian Trade Company"
+ TRADE_COMPANY_COROMANDEL_India_Trade_Company:0 "Coromandel Trade Company"
+ TRADE_COMPANY_BURMA_Root_Culture_GetName:0 "[Root.Culture.GetName] Burma Company"
+ TRADE_COMPANY_SOUTH_INDIA_Root_Culture_GetName:0 "[Root.Culture.GetName] Konkan Company"
+ TRADE_COMPANY_DECCAN_Root_Culture_GetName:0 "[Root.Culture.GetName] Deccan Company"
+ TRADE_COMPANY_COROMANDEL_Root_Culture_GetName:0 "[Root.Culture.GetName] Coromandel Company"
+ TRADE_COMPANY_NORTH_INDIA_Root_Culture_GetName:0 "[Root.Culture.GetName] North India Company"

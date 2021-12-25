@@ -1,0 +1,372 @@
+cb_pte_lift_excommunication = {
+	valid_for_subject = no
+
+	prerequisites = {
+		ai = no
+		religion = catholic
+		is_excommunicated = yes
+		FROM = {
+			religion = catholic
+			is_papal_controller = yes
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_change_religion
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+		po_annul_treaties
+		po_change_government
+		po_revoke_elector
+		po_trade_power
+		po_humiliate
+		po_enforce_rebel_demands
+	}
+
+	war_goal = pte_lift_excommunication_war_goal
+}
+
+cb_pte_ban_slavery = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_modifier = the_abolish_slavery_act
+		NOT = { has_country_flag = was_forced_to_abolish_slavery }
+		FROM = {
+			NOT = { has_country_modifier = the_abolish_slavery_act }
+			is_free_or_tributary_trigger = yes
+			OR = {
+				slaves = 1
+				any_subject_country = {
+					is_colonial_nation = yes
+					is_subject_other_than_tributary_trigger = yes
+					NOT = { has_country_modifier = the_abolish_slavery_act }
+					slaves = 1
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_revoke_cores
+		po_release_vassals
+		po_release_annexed
+		po_change_religion
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+	}
+
+	war_goal = pte_ban_slavery_war_goal
+}
+
+cb_pte_protect_religious_bretheren = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_defender_of_faith = yes
+		religion_group = FROM
+		NOT = { religion = FROM }
+		OR = {
+			is_neighbor_of = FROM
+			NOT = {
+				border_distance = {
+					who = FROM
+					distance = 500
+				}
+			}
+		}
+		FROM = {
+			any_owned_province = {
+				has_owner_religion = no
+				religion = ROOT
+				is_city = yes
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+	}
+
+	war_goal = pte_protect_religious_bretheren_war_goal
+}
+
+cb_pte_liberation = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			AND = {
+				OR = {
+					has_dlc = "Rights of Man"
+					has_dlc = "Emperor"
+				}
+				total_development = 2000
+				FROM = {
+					total_development = 2000
+				}
+				OR = {
+					ai = no
+					AND = {
+						is_neighbor_of = FROM
+						OR = {
+							is_rival = FROM
+							is_enemy = FROM
+							AND = {
+								has_opinion_modifier = {
+									who = FROM
+									modifier = aggressive_expansion
+								}
+								NOT = {
+									has_opinion_modifier = {
+										who = FROM
+										modifier = aggressive_expansion
+										value = -20
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				has_opinion_modifier = {
+					who = FROM
+					modifier = aggressive_expansion
+				}
+				NOT = {
+					has_opinion_modifier = {
+						who = FROM
+						modifier = aggressive_expansion
+						value = -30
+					}
+				}
+				capital_scope = {
+					region_for_scope_province = {
+						is_capital_of = FROM
+					}
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_form_personal_union
+		po_become_vassal
+		po_subjugate_vassal
+	}
+
+	war_goal = pte_liberation_war_goal
+}
+
+cb_pte_cultural_hegemony = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_subject = no
+		NOT = { truce_with = FROM }
+		NOT = { has_country_modifier = pte_culture_group_hegemony_cooldown_modifier }
+		FROM = {
+			has_country_modifier = pte_culture_group_hegemony_modifier
+			NOT = { is_variable_equal = { which = pte_culture_group_hegemony_var value = 0 } }
+		}
+		culture_group = variable:From:pte_culture_group_hegemony_var
+		any_owned_province = {
+			culture_group = ROOT
+		}
+		OR = {
+			total_development = 50
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = our_dev
+					value = trigger_value:total_development
+				}
+				export_to_variable = {
+					which = their_dev
+					value = trigger_value:total_development
+					who = FROM
+				}
+				divide_variable = { which = their_dev value = 4 }
+				check_variable = { which = our_dev which = their_dev }
+			}
+		}
+	}
+
+	war_goal = pte_cultural_hegemony_war_goal
+}
+
+cb_pte_defend_rival_subject = {
+	valid_for_subject = no
+
+	prerequisites = {
+		is_subject = no
+		is_rival = FROM
+		FROM = {
+			is_subject = no
+		}
+		any_country = {
+			offensive_war_with = FROM
+			NOT = { war_with = ROOT }
+			OR = {
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = FROM
+					casus_belli = cb_independence_war
+				}
+				is_in_war = {
+					attacker_leader = THIS
+					defender_leader = FROM
+					casus_belli = cb_colonial_independance_war
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = pte_defend_rival_subject_war_goal
+}
+
+cb_pte_economic_hegemon = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_dlc = "Emperor"
+		pte_is_hegemon_of_type = { type = economic_hegemon }
+		hegemon_strength = 25
+		FROM = {
+			is_great_power = yes
+			monthly_income = 300
+			is_bankrupt = no
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = pte_economic_hegemon_war_goal
+}
+
+cb_pte_naval_hegemon = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_dlc = "Emperor"
+		pte_is_hegemon_of_type = { type = naval_hegemon }
+		hegemon_strength = 25
+		FROM = {
+			is_great_power = yes
+			navy_size = 1
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					which = their_num_of_heavy_ships
+					value = trigger_value:num_of_heavy_ship
+				}
+				export_to_variable = {
+					which = their_num_of_light_ships
+					value = trigger_value:num_of_light_ship
+				}
+				export_to_variable = {
+					which = their_num_of_galleys
+					value = trigger_value:num_of_galley
+				}
+				change_variable = { which = their_num_of_heavy_ships which = their_num_of_light_ships }
+				change_variable = { which = their_num_of_heavy_ships which = their_num_of_galleys }
+				check_variable = { which = their_num_of_heavy_ships value = 100 }
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = pte_naval_hegemon_war_goal
+}
+
+cb_pte_military_hegemon = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_dlc = "Emperor"
+		pte_is_hegemon_of_type = { type = military_hegemon }
+		hegemon_strength = 25
+		FROM = {
+			is_great_power = yes
+			army_size = 300
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_release_annexed
+		po_return_cores
+		po_become_vassal
+		po_subjugate_vassal
+		po_become_tributary_state
+		po_subjugate_tributary_state
+		po_form_personal_union
+		po_transfer_vassals
+	}
+
+	war_goal = pte_military_hegemon_war_goal
+}
+
+cb_pte_anti_coalition = {
+	valid_for_subject = no
+
+	ai_peace_desire = -30
+
+	prerequisites = {
+		is_in_coalition_war = no
+		FROM = {
+			coalition_target = ROOT
+			num_of_coalition_members = 3
+			is_revolutionary = no
+		}
+	}
+
+	war_goal = pte_anti_coalition_war_goal
+}

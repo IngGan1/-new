@@ -1,0 +1,72 @@
+﻿l_english:
+
+ cisem_events.1.t: "ÁÄÐ Â”Æ"
+ cisem_events.1.d: "The most important point when running steamship is the supply of coal. It is  difficult to keep steamship if there is a lack of coal. Because our country is suffering from the lack of coal, it is expensive to maintain our steamship."
+ cisem_events.1.a: "Okay."
+
+ cisem_events.2.t: "ÁÄÐ Â”ÆXÇ À¼TÖ"
+ cisem_events.2.d: "At present, the demand for coal is kept at a certain level."
+ cisem_events.2.a: "Okay."
+
+ CISTEM_1: "ÁÄÐ Ž´qÈ"
+ CISTEM_2: "ÁÄÐ Ž´qÈ"
+ CISTEM_3: "ÁÄÐ Ž´qÈ"
+ CISTEM_4: "ÁÄÐ Ž´qÈ"
+ CISTEM_5: "ÁÄÐ Ž´qÈ"
+ CISTEM_6: "ÁÄÐ Ž´qÈ"
+ CISTEM_7: "ÁÄÐ Ž´qÈ"
+ CISTEM_8: "ÁÄÐ Ž´qÈ"
+ CISTEM_9: "ÁÄÐ Ž´qÈ"
+ CISTEM_10: "ÁÄÐ Ž´qÈ"
+ desc_CISTEM_1: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_2: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_3: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_3: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_4: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_5: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_6: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_7: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_8: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_9: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+ desc_CISTEM_10: "We are restricted from producing steamship because we do not have enough coal. To solve this problem, we need to increase the number of §YCoal§! production provinces. We need 1 §YCoal§! per 100 development."
+
+ CISTEM_SUB_1: "ÔŽ´jÕ ÁÄÐ"
+ CISTEM_SUB_2: "ÔŽ´jÕ ÁÄÐ"
+ CISTEM_SUB_3: "ÔŽ´jÕ ÁÄÐ"
+ CISTEM_SUB_4: "ÔŽ´jÕ ÁÄÐ"
+ CISTEM_SUB_5: "ÔŽ´jÕ ÁÄÐ"
+ 
+ desc_CISTEM_SUB_1: "We can produce many steamships because we do have enough coal. We have more than 1 §YCoal§! per 100 development."
+ desc_CISTEM_SUB_2: "We can produce many steamships because we do have enough coal. We have more than 2 §YCoal§! per 100 development."
+ desc_CISTEM_SUB_3: "We can produce many steamships because we do have enough coal. We have more than 3 §YCoal§! per 100 development."
+ desc_CISTEM_SUB_4: "We can produce many steamships because we do have enough coal. We have more than 4 §YCoal§! per 100 development."
+ desc_CISTEM_SUB_5: "We can produce many steamships because we do have enough coal. We have more than 5 §YCoal§! per 100 development."
+
+ CISTEM_NOMAD_1: "…ÈÁm­<Çj¸Ž´0ÑXÇ ÁÄÐ"
+ CISTEM_NOMAD_2: "…ÈÁm­<Çj¸Ž´0ÑXÇ ÁÄÐ"
+ CISTEM_NOMAD_3: "…ÈÁm­<Çj¸Ž´0ÑXÇ ÁÄÐ"
+ CISTEM_NOMAD_4: "…ÈÁm­<Çj¸Ž´0ÑXÇ ÁÄÐ"
+ CISTEM_NOMAD_5: "…ÈÁm­<Çj¸Ž´0ÑXÇ ÁÄÐ"
+
+ desc_CISTEM_NOMAD_1: "We are receiving coal from vassal. Each country which is our subject and has §Y5%§! of our total development offers us 1 §YCoal§!. (up to 5)"
+ desc_CISTEM_NOMAD_2: "We are receiving coal from vassal. Each country which is our subject and has §Y5%§! of our total development offers us 1 §YCoal§!. (up to 5)"
+ desc_CISTEM_NOMAD_3: "We are receiving coal from vassal. Each country which is our subject and has §Y5%§! of our total development offers us 1 §YCoal§!. (up to 5)"
+ desc_CISTEM_NOMAD_4: "We are receiving coal from vassal. Each country which is our subject and has §Y5%§! of our total development offers us 1 §YCoal§!. (up to 5)"
+ desc_CISTEM_NOMAD_5: "We are receiving coal from vassal. Each country which is our subject and has §Y5%§! of our total development offers us 1 §YCoal§!. (up to 5)"
+
+ CISTEM_1_TOOLTIP: "§RWe lack §Y1§! Livestock production province.§!"
+ CISTEM_2_TOOLTIP: "§RWe lack §Y2§! Livestock production provinces.§!"
+ CISTEM_3_TOOLTIP: "§RWe lack §Y3§! Livestock production provinces.§!"
+ CISTEM_4_TOOLTIP: "§RWe lack §Y4§! Livestock production provinces.§!"
+ CISTEM_5_TOOLTIP: "§RWe lack §Y5§! Livestock production provinces.§!"
+ CISTEM_6_TOOLTIP: "§RWe lack §Y6§! Livestock production provinces.§!"
+ CISTEM_7_TOOLTIP: "§RWe lack §Y7§! Livestock production provinces.§!"
+ CISTEM_8_TOOLTIP: "§RWe lack §Y8§! Livestock production provinces.§!"
+ CISTEM_9_TOOLTIP: "§RWe lack §Y9§! Livestock production provinces.§!"
+ CISTEM_10_TOOLTIP: "§RWe lack more than §Y9§! Livestock production provinces.§!"
+
+ CISTEM_NOMAD_1_TOOLTIP: "We have §Y1§! nomadic subject which has 5% of our total development."
+ CISTEM_NOMAD_2_TOOLTIP: "We have §Y2§! nomadic subjects which have 5% of our total development."
+ CISTEM_NOMAD_3_TOOLTIP: "We have §Y3§! nomadic subjects which have 5% of our total development."
+ CISTEM_NOMAD_4_TOOLTIP: "We have §Y4§! nomadic subjects which have 5% of our total development."
+ CISTEM_NOMAD_5_TOOLTIP: "We have §Y5§! nomadic subjects which have 5% of our total development."

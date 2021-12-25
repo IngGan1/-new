@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = croatian
+government_rank = 1
+religion = catholic
+technology_group = eastern
+capital = 1767

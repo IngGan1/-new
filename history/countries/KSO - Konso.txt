@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = omotic
+religion = shamanism
+technology_group = east_african
+unit_type = sub_saharan
+capital = 4564 #Konso
+
+
+1444.11.11 = {
+      monarch = {
+           name = "Mora"
+           adm = 3
+           dip = 3
+           mil = 2
+           regent = yes
+      }
+} # Noble councils. 

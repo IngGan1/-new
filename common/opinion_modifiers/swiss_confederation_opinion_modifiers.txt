@@ -1,0 +1,11 @@
+switzerland_left_empire = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}
+
+switzerland_in_empire = {
+    opinion = 50
+    years = 25
+    yearly_decay = 2
+}

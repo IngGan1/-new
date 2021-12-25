@@ -1,0 +1,55 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = gascon
+religion = catholic
+technology_group = western
+capital = 3991 # Aix-en-Provence
+fixed_capital = 3991 # Cannot move capital away from this province & no power cost to move to it
+
+
+1341.1.1 = {
+	monarch = {
+		name = "Pierre Raymond II"
+		dynasty = "de Comminges"
+		DIP = 4
+		ADM = 2
+		MIL = 3
+	}
+}
+
+1363.1.1 = {
+	heir = {
+		name = "Marguerite"
+		monarch_name = "Marguerite"
+		dynasty = "de Comminges"
+		birth_date = 1363.1.1
+		death_date = 1443.1.1
+		claim = 95
+		DIP = 4
+		ADM = 3
+		MIL = 2
+	}
+}
+
+1376.1.1 = {
+	monarch = {
+		name = "Marguerite"
+		dynasty = "de Comminges"
+		DIP = 4
+		ADM = 3
+		MIL = 2
+	}
+}
+
+1443.1.1 = {
+	monarch = {
+		name = "Mathieu"
+		dynasty = "de Foix"
+		DIP = 4
+		ADM = 6
+		MIL = 3
+	}
+}
+
+1560.1.1 = { religion = reformed }

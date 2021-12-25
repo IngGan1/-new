@@ -1,0 +1,44 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Prague
+	id = jewish_estates_events.12
+	title = "jewish_estates_events.12.t"
+	desc = "jewish_estates_events.12.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.2
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 20
+				}
+			}
+		}
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1700
+			NOT = { is_year = 1800 }
+		}
+	}
+	 
+	option = {
+		name = "PRAGUE_J_E"
+		add_estate_influence_modifier = {
+   			estate = jewish_estate
+			desc = jewish_influence_modifier
+   			influence = 20
+   			duration = 3650
+		}
+		266 = { add_base_tax = 2 }
+	}
+}

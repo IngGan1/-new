@@ -1,0 +1,5 @@
+103 = "Piemont"
+1875 = "Cóuni"
+2981 = "Monfrà"
+3004 = "Salusse"
+5021 = "Ast"

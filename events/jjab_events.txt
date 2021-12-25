@@ -1,0 +1,1918 @@
+namespace = jjab_events
+
+province_event = {
+	id = jjab_events.1
+	title = synthetic_dawn.4.t
+	desc = synthetic_dawn.4.d
+	picture = SYNTHETICS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		owner = {
+			is_in_war = {
+				casus_belli = cb_chinese_unification
+			}
+		}
+		controller = {
+			is_in_war = {
+				casus_belli = cb_chinese_unification
+			}
+			war_with = PREV
+		}
+		superregion = china_superregion
+	}
+	immediate = {
+		cede_province = controller
+		add_territorial_core = controller
+	}
+	
+	option = {
+		name = "synthetic_dawn.4.a"
+		add_local_autonomy = 90
+	}
+}
+
+province_event = {
+	id = jjab_events.2
+	title = synthetic_dawn.4.t
+	desc = synthetic_dawn.4.d
+	picture = SYNTHETICS_eventPicture
+	
+	hidden = yes
+	trigger = {
+		owner = {
+			is_in_war = {
+				casus_belli = cb_chinese_unification
+			}
+		}
+		controller = {
+			is_in_war = {
+				casus_belli = cb_chinese_unification
+			}
+			war_with = PREV
+		}
+		not = { has_province_modifier = cb_waiting }
+		superregion = china_superregion
+	}
+	
+	immediate = {
+		add_province_modifier = { 
+			name = cb_waiting
+			duration = 735
+		}
+			
+	}
+	
+	option = {
+		name = "synthetic_dawn.4.a"
+		ROOT = {
+			province_event = {
+				id = jjab_events.1
+				days = 735
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.3
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		every_owned_province = { add_core = ROOT }
+		if = {
+			limit = {
+				is_nomad = yes
+				has_idea_group = aristocracy_ideas
+			}
+			remove_idea_group = aristocracy_ideas
+			add_idea_group = horde_gov_ideas
+			add_idea = horde_gov_ideas7
+		}
+		if = {
+			limit = {
+				government = republic
+				has_idea_group = plutocracy_ideas
+			}
+			remove_idea_group = plutocracy_ideas
+			add_idea_group = plutocracy_ideas
+			add_idea = republik7
+		}
+		if = {
+			limit = {
+				government = monarchy
+				has_idea_group = aristocracy_ideas
+			}
+			remove_idea_group = aristocracy_ideas
+			add_idea_group = aristocracy_ideas
+			add_idea = monarchie7
+		}
+		if = {
+			limit = {
+				government = theocracy
+				has_idea_group = aristocracy_ideas
+			}
+			remove_idea_group = aristocracy_ideas
+			add_idea_group = theocracy_gov_ideas
+			add_idea = aristo7
+		}
+		if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = catholic
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = katholisch0
+			add_idea = katholisch7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = protestant
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = protestant0
+			add_idea = protestant7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = reformed
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = reformiert0
+			add_idea = reformiert7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = orthodox
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = orthodox0
+			add_idea = orthodox7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = hussite
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = hussite0
+			add_idea = hussite7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = sunni
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = islam0
+			add_idea = islam7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = shiite
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = shia0
+			add_idea = shia7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = ibadi
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = ibadi0
+			add_idea = ibadi7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = tengri_pagan_reformed
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = tengri0
+			add_idea = tengri7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion_group = dharmic
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = hindu0
+			add_idea = hindu7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = confucianism
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = confuci0
+			add_idea = confuci7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				OR = {
+					religion = buddhism
+					religion = vajrayana
+					religion = mahayana
+				}
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = budda0
+			add_idea = budda7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = confucianism
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = confuci0
+			add_idea = confuci7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = shinto
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = shinto0
+			add_idea = shinto7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = coptic
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = coptic0
+			add_idea = coptic7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = animism
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = animist0
+			add_idea = animist7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				OR = {
+					religion = shamanism 
+					religion_group = african_pagan 
+				}
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = feti0
+			add_idea = feti7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = anglican
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = ancli0
+			add_idea = ancli7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = nahuatl
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = nahu0
+			add_idea = nahu7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = mesoamerican_religion
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = mesoam0
+			add_idea = mesoam7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = inti
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = inti0
+			add_idea = inti7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				religion = totemism
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = tote0
+			add_idea = tote7
+		}
+		else_if = {
+			limit = {
+				has_idea_group = religious_ideas
+				OR = {
+					religion = manichean
+					religion = manichaeism
+				}
+			}
+			remove_idea_group = religious_ideas
+			add_idea_group = mane0
+			add_idea = mane7
+		}
+		if = { limit = { is_year = 1480 not = { is_year = 1520 } }
+			change_innovativeness = 5
+			add_years_of_income = 0.1
+			add_yearly_manpower = 0.5
+			add_army_professionalism = 0.1
+			set_global_flag = jjab_hard_1480
+			if = { limit = { ai = no } change_innovativeness = 2 }
+			change_government_reform_progress = 150
+			every_owned_province = {
+				limit = { development = 8 }
+				add_building = infrastructure_lvl_1
+			}
+			every_owned_province = {
+				limit = { base_tax = 4 }
+				add_building = temple
+			}
+			every_owned_province = {
+				limit = { base_production = 4 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+				add_building = workshop
+			}
+			every_owned_province = {
+				limit = {
+					base_production = 6
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = minor_river_estuary_modifier
+					}
+				}
+				add_building = marketplace
+			}
+		}
+		else_if = { limit = { is_year = 1520 not = { is_year = 1600 } }
+			change_innovativeness = 10
+			add_years_of_income = 0.2
+			add_yearly_manpower = 1
+			set_global_flag = jjab_hard_1520
+			add_army_professionalism = 0.15
+			if = { limit = { ai = no } change_innovativeness = 5 }
+			change_government_reform_progress = 300
+			every_owned_province = {
+				limit = { development = 7 }
+				add_building = infrastructure_lvl_1
+			}
+			every_owned_province = {
+				limit = { base_tax = 2 }
+				add_building = temple
+			}
+			every_owned_province = {
+				limit = { base_production = 2 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+				add_building = workshop
+			}
+			every_owned_province = {
+				limit = {
+					base_production = 4
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = minor_river_estuary_modifier
+					}
+				}
+				add_building = marketplace
+			}
+		}
+		else_if = { limit = { is_year = 1600 not = { is_year = 1680 } }
+			change_innovativeness = 15
+			add_years_of_income = 0.4
+			add_yearly_manpower = 1.5
+			set_global_flag = jjab_hard_1600
+			add_army_professionalism = 0.2
+			if = { limit = { ai = no } change_innovativeness = 10 }
+			change_government_reform_progress = 600
+			every_province = { limit = { continent = europe }
+				add_institution_embracement = {
+					which = printing_press
+					value = 80
+				}
+			}
+			every_owned_province = {
+				limit = { development = 7 }
+				add_building = infrastructure_lvl_2
+			}
+			every_owned_province = {
+				limit = { base_tax = 2 }
+				add_building = taxation_lvl_2
+			}
+			every_owned_province = {
+				limit = { base_production = 2 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+				add_building = production_lvl_2
+			}
+			every_owned_province = {
+				limit = { base_manpower = 2 }
+				add_building = manpower_lvl_1
+			}
+			every_owned_province = {
+				limit = {
+					base_production = 4
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = minor_river_estuary_modifier
+					}
+				}
+				add_building = trade_lvl_2
+			}
+		}
+		else_if = { limit = { is_year = 1680 not = { is_year = 1760 } }
+			every_province = { limit = { continent = europe }
+				add_institution_embracement = {
+					which = printing_press
+					value = 100
+				}
+			}
+			change_innovativeness = 20
+			add_years_of_income = 0.6
+			add_yearly_manpower = 2
+			set_global_flag = jjab_hard_1680
+			add_army_professionalism = 0.25
+			if = { limit = { ai = no } change_innovativeness = 15 }
+			change_government_reform_progress = 900
+			set_hre_religion_treaty = yes
+			every_owned_province = {
+				limit = { development = 7 }
+				add_building = infrastructure_lvl_3
+			}
+			every_owned_province = {
+				limit = { base_tax = 2 }
+				add_building = cathedral
+			}
+			every_owned_province = {
+				limit = { base_production = 2 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+				add_building = production_lvl_3
+			}
+			every_owned_province = {
+				limit = { base_manpower = 2 }
+				add_building = barracks
+			}
+			every_owned_province = {
+				limit = { development = 30 continent = europe }
+				add_building = university
+			}
+			every_owned_province = {
+				limit = {
+					base_production = 4
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = minor_river_estuary_modifier
+					}
+				}
+				add_building = trade_depot
+			}
+		}
+		else_if = { limit = { is_year = 1760 }
+			change_innovativeness = 25
+			add_years_of_income = 0.8
+			add_yearly_manpower = 3
+			set_global_flag = jjab_hard_1760
+			add_army_professionalism = 0.3
+			if = { limit = { ai = no } change_innovativeness = 20 }
+			change_government_reform_progress = 1200
+			set_hre_religion_treaty = yes
+			every_province = { limit = { continent = europe }
+				add_institution_embracement = {
+					which = printing_press
+					value = 100
+				}
+			}
+			
+			every_owned_province = {
+				limit = { development = 7 }
+				add_building = infrastructure_lvl_4
+			}
+			every_owned_province = {
+				limit = { base_tax = 2 }
+				add_building = taxation_lvl_4
+			}
+			every_owned_province = {
+				limit = { base_production = 2 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+				add_building = counting_house
+			}
+			every_owned_province = {
+				limit = { base_manpower = 2 }
+				add_building = training_fields
+			}
+			every_owned_province = {
+				limit = { development = 20 continent = europe }
+				add_building = university
+			}
+			every_owned_province = {
+				limit = {
+					base_production = 4
+					OR = {
+						province_has_center_of_trade_of_level = 1
+						province_has_center_of_trade_of_level = 2
+						province_has_center_of_trade_of_level = 3
+						has_province_modifier = major_coastal_center_of_trade_modifier
+						has_province_modifier = major_inland_center_of_trade_modifier
+						has_province_modifier = major_river_estuary_modifier
+						has_province_modifier = minor_coastal_center_of_trade_modifier
+						has_province_modifier = minor_inland_center_of_trade_modifier
+						has_province_modifier = minor_river_estuary_modifier
+					}
+				}
+				add_building = stock_exchange
+			}
+			korea_region = { remove_core = QNG }
+			KOR = {
+				add_trust = {
+					who = MNG
+					value = -50
+					mutual = yes
+				}
+			}
+			SCO = {
+				add_opinion = {
+					who = ENG
+					modifier = ARM_mamluk_enmity
+				}
+			}
+			every_province = { limit = { continent = europe }
+				add_institution_embracement = {
+					which = global_trade
+					value = 100
+				}
+			}
+		}
+	}
+	option = { 
+	}
+}
+
+province_event = {
+	id = jjab_events.4
+	title = synthetic_dawn.4.t
+	desc = synthetic_dawn.4.d
+	picture = SYNTHETICS_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		owner = {
+			is_in_war = {
+				casus_belli = cb_world_war
+			}
+		}
+		controller = {
+			is_in_war = {
+				casus_belli = cb_world_war
+			}
+			war_with = PREV
+		}
+	}
+	
+	immediate = {
+		cede_province = controller
+		add_core = controller
+	}
+	
+	option = {
+		name = "synthetic_dawn.4.a"
+		tooltip = {
+			cede_province = controller
+			add_core = controller
+		}
+	}
+}
+
+province_event = {
+	id = jjab_events.5
+	title = synthetic_dawn.4.t
+	desc = synthetic_dawn.4.d
+	picture = SYNTHETICS_eventPicture
+	
+	hidden = yes
+	trigger = {
+		owner = {
+			is_in_war = {
+				casus_belli = cb_world_war
+			}
+		}
+		controller = {
+			is_in_war = {
+				casus_belli = cb_world_war
+			}
+			war_with = PREV
+		}
+		not = { has_province_modifier = cb_waiting }
+	}
+	
+	immediate = {
+		add_province_modifier = { 
+			name = cb_waiting
+			duration = 735
+		}
+			
+	}
+	
+	option = {
+		name = "synthetic_dawn.4.a"
+		ROOT = {
+			province_event = {
+				id = jjab_events.4
+				days = 735
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.6
+	title = elections.800.t
+	desc = elections.800.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = proletarian_dictatorship
+	}
+	
+	immediate = {
+		hidden_effect = {
+			define_exiled_ruler = {
+				exiled_as = lottery_candidate_a_@ROOT
+				min_age = 40
+				max_age = 55
+				adm = 3
+				dip = -1
+				mil = -1
+				option = 0
+			}
+			define_exiled_ruler = {
+				exiled_as = lottery_candidate_b_@ROOT
+				min_age = 40
+				max_age = 55
+				adm = -1
+				dip = 3
+				mil = -1
+				option = 1
+			}
+			define_exiled_ruler = {
+				exiled_as = lottery_candidate_c_@ROOT
+				min_age = 40
+				max_age = 55
+				adm = -1
+				dip = -1
+				mil = 3
+				option = 2
+			}
+			if = { limit = { republican_tradition = 10 NOT = { republican_tradition = 11 } } set_variable = { which = svu_rt value = 11 } }
+			if = { limit = { republican_tradition = 11 NOT = { republican_tradition = 12 } } set_variable = { which = svu_rt value = 12 } }
+			if = { limit = { republican_tradition = 12 NOT = { republican_tradition = 13 } } set_variable = { which = svu_rt value = 13 } }
+			if = { limit = { republican_tradition = 13 NOT = { republican_tradition = 14 } } set_variable = { which = svu_rt value = 14 } }
+			if = { limit = { republican_tradition = 14 NOT = { republican_tradition = 15 } } set_variable = { which = svu_rt value = 15 } }
+			if = { limit = { republican_tradition = 15 NOT = { republican_tradition = 16 } } set_variable = { which = svu_rt value = 16 } }
+			if = { limit = { republican_tradition = 16 NOT = { republican_tradition = 17 } } set_variable = { which = svu_rt value = 17 } }
+			if = { limit = { republican_tradition = 17 NOT = { republican_tradition = 18 } } set_variable = { which = svu_rt value = 18 } }
+			if = { limit = { republican_tradition = 18 NOT = { republican_tradition = 19 } } set_variable = { which = svu_rt value = 19 } }
+			if = { limit = { republican_tradition = 19 NOT = { republican_tradition = 20 } } set_variable = { which = svu_rt value = 20 } }
+			if = { limit = { republican_tradition = 20 NOT = { republican_tradition = 21 } } set_variable = { which = svu_rt value = 21 } }
+			if = { limit = { republican_tradition = 21 NOT = { republican_tradition = 22 } } set_variable = { which = svu_rt value = 22 } }
+			if = { limit = { republican_tradition = 22 NOT = { republican_tradition = 23 } } set_variable = { which = svu_rt value = 23 } }
+			if = { limit = { republican_tradition = 23 NOT = { republican_tradition = 24 } } set_variable = { which = svu_rt value = 24 } }
+			if = { limit = { republican_tradition = 24 NOT = { republican_tradition = 25 } } set_variable = { which = svu_rt value = 25 } }
+			if = { limit = { republican_tradition = 25 NOT = { republican_tradition = 26 } } set_variable = { which = svu_rt value = 26 } }
+			if = { limit = { republican_tradition = 26 NOT = { republican_tradition = 27 } } set_variable = { which = svu_rt value = 27 } }
+			if = { limit = { republican_tradition = 27 NOT = { republican_tradition = 28 } } set_variable = { which = svu_rt value = 28 } }
+			if = { limit = { republican_tradition = 28 NOT = { republican_tradition = 29 } } set_variable = { which = svu_rt value = 29 } }
+			if = { limit = { republican_tradition = 29 NOT = { republican_tradition = 30 } } set_variable = { which = svu_rt value = 30 } }
+			if = { limit = { republican_tradition = 30 NOT = { republican_tradition = 31 } } set_variable = { which = svu_rt value = 31 } }
+			if = { limit = { republican_tradition = 31 NOT = { republican_tradition = 32 } } set_variable = { which = svu_rt value = 32 } }
+			if = { limit = { republican_tradition = 32 NOT = { republican_tradition = 33 } } set_variable = { which = svu_rt value = 33 } }
+			if = { limit = { republican_tradition = 33 NOT = { republican_tradition = 34 } } set_variable = { which = svu_rt value = 34 } }
+			if = { limit = { republican_tradition = 34 NOT = { republican_tradition = 35 } } set_variable = { which = svu_rt value = 35 } }
+			if = { limit = { republican_tradition = 35 NOT = { republican_tradition = 36 } } set_variable = { which = svu_rt value = 36 } }
+			if = { limit = { republican_tradition = 36 NOT = { republican_tradition = 37 } } set_variable = { which = svu_rt value = 37 } }
+			if = { limit = { republican_tradition = 37 NOT = { republican_tradition = 38 } } set_variable = { which = svu_rt value = 38 } }
+			if = { limit = { republican_tradition = 38 NOT = { republican_tradition = 39 } } set_variable = { which = svu_rt value = 39 } }
+			if = { limit = { republican_tradition = 39 NOT = { republican_tradition = 40 } } set_variable = { which = svu_rt value = 40 } }
+			if = { limit = { republican_tradition = 40 NOT = { republican_tradition = 41 } } set_variable = { which = svu_rt value = 41 } }
+			if = { limit = { republican_tradition = 41 NOT = { republican_tradition = 42 } } set_variable = { which = svu_rt value = 42 } }
+			if = { limit = { republican_tradition = 42 NOT = { republican_tradition = 43 } } set_variable = { which = svu_rt value = 43 } }
+			if = { limit = { republican_tradition = 43 NOT = { republican_tradition = 44 } } set_variable = { which = svu_rt value = 44 } }
+			if = { limit = { republican_tradition = 44 NOT = { republican_tradition = 45 } } set_variable = { which = svu_rt value = 45 } }
+			if = { limit = { republican_tradition = 45 NOT = { republican_tradition = 46 } } set_variable = { which = svu_rt value = 46 } }
+			if = { limit = { republican_tradition = 46 NOT = { republican_tradition = 47 } } set_variable = { which = svu_rt value = 47 } }
+			if = { limit = { republican_tradition = 47 NOT = { republican_tradition = 48 } } set_variable = { which = svu_rt value = 48 } }
+			if = { limit = { republican_tradition = 48 NOT = { republican_tradition = 49 } } set_variable = { which = svu_rt value = 49 } }
+			if = { limit = { republican_tradition = 49 NOT = { republican_tradition = 50 } } set_variable = { which = svu_rt value = 50 } }
+			if = { limit = { republican_tradition = 51 NOT = { republican_tradition = 52 } } set_variable = { which = svu_rt value = 52 } }
+			if = { limit = { republican_tradition = 52 NOT = { republican_tradition = 53 } } set_variable = { which = svu_rt value = 53 } }
+			if = { limit = { republican_tradition = 53 NOT = { republican_tradition = 54 } } set_variable = { which = svu_rt value = 54 } }
+			if = { limit = { republican_tradition = 54 NOT = { republican_tradition = 55 } } set_variable = { which = svu_rt value = 55 } }
+			if = { limit = { republican_tradition = 55 NOT = { republican_tradition = 56 } } set_variable = { which = svu_rt value = 56 } }
+			if = { limit = { republican_tradition = 56 NOT = { republican_tradition = 57 } } set_variable = { which = svu_rt value = 57 } }
+			if = { limit = { republican_tradition = 57 NOT = { republican_tradition = 58 } } set_variable = { which = svu_rt value = 58 } }
+			if = { limit = { republican_tradition = 58 NOT = { republican_tradition = 59 } } set_variable = { which = svu_rt value = 59 } }
+			if = { limit = { republican_tradition = 59 NOT = { republican_tradition = 60 } } set_variable = { which = svu_rt value = 60 } }
+			if = { limit = { republican_tradition = 60 NOT = { republican_tradition = 61 } } set_variable = { which = svu_rt value = 61 } }
+			if = { limit = { republican_tradition = 61 NOT = { republican_tradition = 62 } } set_variable = { which = svu_rt value = 62 } }
+			if = { limit = { republican_tradition = 62 NOT = { republican_tradition = 63 } } set_variable = { which = svu_rt value = 63 } }
+			if = { limit = { republican_tradition = 63 NOT = { republican_tradition = 64 } } set_variable = { which = svu_rt value = 64 } }
+			if = { limit = { republican_tradition = 64 NOT = { republican_tradition = 65 } } set_variable = { which = svu_rt value = 65 } }
+			if = { limit = { republican_tradition = 65 NOT = { republican_tradition = 66 } } set_variable = { which = svu_rt value = 66 } }
+			if = { limit = { republican_tradition = 66 NOT = { republican_tradition = 67 } } set_variable = { which = svu_rt value = 67 } }
+			if = { limit = { republican_tradition = 67 NOT = { republican_tradition = 68 } } set_variable = { which = svu_rt value = 68 } }
+			if = { limit = { republican_tradition = 68 NOT = { republican_tradition = 69 } } set_variable = { which = svu_rt value = 69 } }
+			if = { limit = { republican_tradition = 69 NOT = { republican_tradition = 70 } } set_variable = { which = svu_rt value = 70 } }
+			if = { limit = { republican_tradition = 70 NOT = { republican_tradition = 71 } } set_variable = { which = svu_rt value = 71 } }
+			if = { limit = { republican_tradition = 71 NOT = { republican_tradition = 72 } } set_variable = { which = svu_rt value = 72 } }
+			if = { limit = { republican_tradition = 72 NOT = { republican_tradition = 73 } } set_variable = { which = svu_rt value = 73 } }
+			if = { limit = { republican_tradition = 73 NOT = { republican_tradition = 74 } } set_variable = { which = svu_rt value = 74 } }
+			if = { limit = { republican_tradition = 74 NOT = { republican_tradition = 75 } } set_variable = { which = svu_rt value = 75 } }
+			if = { limit = { republican_tradition = 75 NOT = { republican_tradition = 76 } } set_variable = { which = svu_rt value = 76 } }
+			if = { limit = { republican_tradition = 76 NOT = { republican_tradition = 77 } } set_variable = { which = svu_rt value = 77 } }
+			if = { limit = { republican_tradition = 77 NOT = { republican_tradition = 78 } } set_variable = { which = svu_rt value = 78 } }
+			if = { limit = { republican_tradition = 78 NOT = { republican_tradition = 79 } } set_variable = { which = svu_rt value = 79 } }
+			if = { limit = { republican_tradition = 79 NOT = { republican_tradition = 80 } } set_variable = { which = svu_rt value = 80 } }
+			if = { limit = { republican_tradition = 80 NOT = { republican_tradition = 81 } } set_variable = { which = svu_rt value = 81 } }
+			if = { limit = { republican_tradition = 81 NOT = { republican_tradition = 82 } } set_variable = { which = svu_rt value = 82 } }
+			if = { limit = { republican_tradition = 82 NOT = { republican_tradition = 83 } } set_variable = { which = svu_rt value = 83 } }
+			if = { limit = { republican_tradition = 83 NOT = { republican_tradition = 84 } } set_variable = { which = svu_rt value = 84 } }
+			if = { limit = { republican_tradition = 84 NOT = { republican_tradition = 85 } } set_variable = { which = svu_rt value = 85 } }
+			if = { limit = { republican_tradition = 85 NOT = { republican_tradition = 86 } } set_variable = { which = svu_rt value = 86 } }
+			if = { limit = { republican_tradition = 86 NOT = { republican_tradition = 87 } } set_variable = { which = svu_rt value = 87 } }
+			if = { limit = { republican_tradition = 87 NOT = { republican_tradition = 88 } } set_variable = { which = svu_rt value = 88 } }
+			if = { limit = { republican_tradition = 88 NOT = { republican_tradition = 89 } } set_variable = { which = svu_rt value = 89 } }
+			if = { limit = { republican_tradition = 89 NOT = { republican_tradition = 90 } } set_variable = { which = svu_rt value = 90 } }
+			if = { limit = { republican_tradition = 90 NOT = { republican_tradition = 91 } } set_variable = { which = svu_rt value = 91 } }
+			add_republican_tradition = 100
+			add_republican_tradition = -50
+		}
+	}
+	
+	after = {
+		clear_exiled_ruler = lottery_candidate_a_@ROOT
+		clear_exiled_ruler = lottery_candidate_b_@ROOT
+		clear_exiled_ruler = lottery_candidate_c_@ROOT
+		add_republican_tradition = -40
+		if = { limit = { check_variable  = { which = svu_rt value = 12 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 13 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 14 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 15 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 16 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 17 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 18 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 19 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 20 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 21 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 22 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 23 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 24 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 25 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 26 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 27 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 28 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 29 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 30 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 31 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 32 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 33 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 34 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 35 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 36 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 37 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 38 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 39 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 40 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 41 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 42 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 43 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 44 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 45 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 46 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 47 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 48 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 49 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 50 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 52 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 53 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 54 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 55 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 56 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 57 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 58 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 59 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 60 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 61 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 62 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 63 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 64 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 65 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 66 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 67 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 68 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 69 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 70 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 71 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 72 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 73 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 74 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 75 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 76 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 77 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 78 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 79 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 80 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 81 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 82 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 83 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 84 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 85 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 86 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 87 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 88 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 89 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 90 } } add_republican_tradition = 1 }
+		if = { limit = { check_variable  = { which = svu_rt value = 91 } } add_republican_tradition = 1 }
+	}
+	
+	option = {
+		name = elections.800.a
+		ai_chance = {
+			factor = 0
+		}
+		set_ruler = lottery_candidate_a_@ROOT
+		custom_tooltip = lottery_candidate_bonus_one
+	}
+	option = {
+		name = elections.800.b
+		ai_chance = {
+			factor = 0
+		}
+		set_ruler = lottery_candidate_b_@ROOT
+		custom_tooltip = lottery_candidate_bonus_one
+	}
+	option = {
+		name = elections.800.c
+		ai_chance = {
+			factor = 0
+		}
+		set_ruler = lottery_candidate_c_@ROOT
+		custom_tooltip = lottery_candidate_bonus_one
+	}
+}
+
+country_event = {
+	id = jjab_events.7
+	title = elections.800.t
+	desc = elections.800.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		every_country = { limit = { war_with = ROOT } white_peace = ROOT }
+	}
+}
+
+country_event = {
+	id = jjab_events.8
+	title = elections.800.t
+	desc = elections.800.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		define_heir = {
+			dynasty = ROOT
+			claim = 80
+			age = 15
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.9
+	title = jjab_events.9.t
+	desc = jjab_events.9.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		trigger = { government = monarchy }
+		name = jjab_events.9.a
+		create_subject = {
+			subject_type = personal_union
+			subject = IDA
+		}
+		IDA = {
+			change_primary_culture = ROOT
+			change_religion = ROOT
+			set_government_rank = 3
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = jjab_events.9.b
+		create_subject = {
+			subject_type = india_colony
+			subject = IDA
+		}
+		IDA = {
+			change_government = republic
+			add_government_reform = colonial_government
+			change_primary_culture = capital
+			change_religion = hinduism
+			define_ruler = {
+				culture = capital
+				religion = hinduism
+				age = 40
+			}
+		}
+		
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.10
+	title = jjab_events.10.t
+	desc = jjab_events.10.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jjab_events.10.m
+		trigger = {
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.30 }
+	}
+	option = {
+		if = { limit = { not = { or = { has_country_flag = auto_uni has_country_flag = auto_for has_country_flag = auto_man has_country_flag = auto_tra has_country_flag = auto_pro has_country_flag = auto_tax has_country_flag = auto_inf has_country_flag = auto_land has_country_flag = auto_manu } } } }
+		name = jjab_events.10.i
+		set_country_flag = auto_uni set_country_flag = auto_for set_country_flag = auto_man set_country_flag = auto_tra set_country_flag = auto_pro set_country_flag = auto_tax set_country_flag = auto_inf set_country_flag = auto_land set_country_flag = auto_manu country_event = { id = jjab_events.11 }
+	}
+	option = {
+		if = { limit = { or = { has_country_flag = auto_uni has_country_flag = auto_for has_country_flag = auto_man has_country_flag = auto_tra has_country_flag = auto_pro has_country_flag = auto_tax has_country_flag = auto_inf has_country_flag = auto_land has_country_flag = auto_manu } } }
+		name = jjab_events.10.i2
+		clr_country_flag = auto_uni clr_country_flag = auto_for clr_country_flag = auto_man clr_country_flag = auto_tra clr_country_flag = auto_pro clr_country_flag = auto_tax clr_country_flag = auto_inf clr_country_flag = auto_land clr_country_flag = auto_manu country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.j
+		trigger = {
+		}
+	}
+	option = {
+		name = jjab_events.10.a
+		trigger = {
+			not = { has_country_flag = auto_land }
+		}
+		set_country_flag = auto_land
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.a2
+		trigger = {
+			has_country_flag = auto_land
+		}
+		clr_country_flag = auto_land
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.b
+		trigger = {
+			not = { has_country_flag = auto_inf }
+		}
+		set_country_flag = auto_inf
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.b2
+		trigger = {
+			has_country_flag = auto_inf
+		}
+		clr_country_flag = auto_inf
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.c
+		trigger = {
+			not = { has_country_flag = auto_tax }
+		}
+		set_country_flag = auto_tax
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.c2
+		trigger = {
+			has_country_flag = auto_tax
+		}
+		clr_country_flag = auto_tax
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.d1
+		trigger = {
+			not = { has_country_flag = auto_pro }
+		}
+		set_country_flag = auto_pro
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.d2
+		trigger = {
+			has_country_flag = auto_pro
+		}
+		clr_country_flag = auto_pro
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.e
+		trigger = {
+			not = { has_country_flag = auto_tra }
+		}
+		set_country_flag = auto_tra
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.e2
+		trigger = {
+			has_country_flag = auto_tra
+		}
+		clr_country_flag = auto_tra
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.f
+		trigger = {
+			not = { has_country_flag = auto_man }
+		}
+		set_country_flag = auto_man
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.f2
+		trigger = {
+			has_country_flag = auto_man
+		}
+		clr_country_flag = auto_man
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.g
+		trigger = {
+			not = { has_country_flag = auto_for }
+		}
+		set_country_flag = auto_for
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.g2
+		trigger = {
+			has_country_flag = auto_for
+		}
+		clr_country_flag = auto_for
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.h
+		trigger = {
+			not = { has_country_flag = auto_uni }
+		}
+		set_country_flag = auto_uni
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.h2
+		trigger = {
+			has_country_flag = auto_uni
+		}
+		clr_country_flag = auto_uni
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.k
+		trigger = {
+			not = { has_country_flag = auto_manu }
+		}
+		set_country_flag = auto_manu
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.k2
+		trigger = {
+			has_country_flag = auto_manu
+		}
+		clr_country_flag = auto_manu
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.l
+		trigger = {
+			not = { has_country_flag = auto_dest }
+		}
+		set_country_flag = auto_dest
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.l2
+		trigger = {
+			has_country_flag = auto_dest
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.11 }
+	}
+	option = {
+		name = jjab_events.10.l2
+		trigger = {
+			has_country_flag = auto_dest
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.11 }
+	}
+}
+
+country_event = {
+	id = jjab_events.11
+	title = jjab_events.10.t
+	desc = jjab_events.10.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jjab_events.10.m
+		trigger = {
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.30 }
+	}
+	option = {
+		name = jjab_events.10.i
+		trigger = {
+			not = { has_country_flag = auto_uni has_country_flag = auto_for has_country_flag = auto_man has_country_flag = auto_tra has_country_flag = auto_pro has_country_flag = auto_tax has_country_flag = auto_inf has_country_flag = auto_land }
+		}
+		set_country_flag = auto_uni set_country_flag = auto_for set_country_flag = auto_man set_country_flag = auto_tra set_country_flag = auto_pro set_country_flag = auto_tax set_country_flag = auto_inf set_country_flag = auto_land country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.i2
+		trigger = {
+			or = { has_country_flag = auto_uni has_country_flag = auto_for has_country_flag = auto_man has_country_flag = auto_tra has_country_flag = auto_pro has_country_flag = auto_tax has_country_flag = auto_inf has_country_flag = auto_land }
+		}
+		clr_country_flag = auto_uni clr_country_flag = auto_for clr_country_flag = auto_man clr_country_flag = auto_tra clr_country_flag = auto_pro clr_country_flag = auto_tax clr_country_flag = auto_inf clr_country_flag = auto_land country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.j
+		trigger = {
+		}
+	}
+	option = {
+		name = jjab_events.10.a
+		trigger = {
+			not = { has_country_flag = auto_land }
+		}
+		set_country_flag = auto_land
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.a2
+		trigger = {
+			has_country_flag = auto_land
+		}
+		clr_country_flag = auto_land
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.b
+		trigger = {
+			not = { has_country_flag = auto_inf }
+		}
+		set_country_flag = auto_inf
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.b2
+		trigger = {
+			has_country_flag = auto_inf
+		}
+		clr_country_flag = auto_inf
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.c
+		trigger = {
+			not = { has_country_flag = auto_tax }
+		}
+		set_country_flag = auto_tax
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.c2
+		trigger = {
+			has_country_flag = auto_tax
+		}
+		clr_country_flag = auto_tax
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.d1
+		trigger = {
+			not = { has_country_flag = auto_pro }
+		}
+		set_country_flag = auto_pro
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.d2
+		trigger = {
+			has_country_flag = auto_pro
+		}
+		clr_country_flag = auto_pro
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.e
+		trigger = {
+			not = { has_country_flag = auto_tra }
+		}
+		set_country_flag = auto_tra
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.e2
+		trigger = {
+			has_country_flag = auto_tra
+		}
+		clr_country_flag = auto_tra
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.f
+		trigger = {
+			not = { has_country_flag = auto_man }
+		}
+		set_country_flag = auto_man
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.f2
+		trigger = {
+			has_country_flag = auto_man
+		}
+		clr_country_flag = auto_man
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.g
+		trigger = {
+			not = { has_country_flag = auto_for }
+		}
+		set_country_flag = auto_for
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.g2
+		trigger = {
+			has_country_flag = auto_for
+		}
+		clr_country_flag = auto_for
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.h
+		trigger = {
+			not = { has_country_flag = auto_uni }
+		}
+		set_country_flag = auto_uni
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.h2
+		trigger = {
+			has_country_flag = auto_uni
+		}
+		clr_country_flag = auto_uni
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.k
+		trigger = {
+			not = { has_country_flag = auto_manu }
+		}
+		set_country_flag = auto_manu
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.k2
+		trigger = {
+			has_country_flag = auto_manu
+		}
+		clr_country_flag = auto_manu
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.l
+		trigger = {
+			not = { has_country_flag = auto_dest }
+		}
+		set_country_flag = auto_dest
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.l2
+		trigger = {
+			has_country_flag = auto_dest
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.10.l2
+		trigger = {
+			has_country_flag = auto_dest
+		}
+		clr_country_flag = auto_dest
+		country_event = { id = jjab_events.10 }
+	}
+}
+
+country_event = {
+	id = jjab_events.12
+	title = jjab_events.12.t
+	desc = jjab_events.12.d
+	picture = SYNTHETICS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {#백년전쟁
+		name = jjab_events.12.0
+		trigger = {
+			not = { has_global_flag = no_ge19 }
+		}
+		set_global_flag = no_ge19
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#카스티야 아라곤 나폴리 자동퍼유 그라나다 합병
+		name = jjab_events.12.a
+		trigger = {
+			not = { has_global_flag = no_ge1 }
+		}
+		set_global_flag = no_ge1
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#무굴제국
+		name = jjab_events.12.b
+		trigger = {
+			not = { has_global_flag = no_ge12 }
+		}
+		set_global_flag = no_ge12
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#카라-아크-페르시아
+		name = jjab_events.12.c
+		trigger = {
+			not = { has_global_flag = no_ge69 }
+		}
+		set_global_flag = no_ge69
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#오스트리아 보헝퍼유
+		name = jjab_events.12.d2
+		trigger = {
+			not = { has_global_flag = no_ge14 }
+		}
+		set_global_flag = no_ge14
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#오스만이집트
+		name = jjab_events.12.e
+		trigger = {
+			not = { has_global_flag = no_ge77 }
+		}
+		set_global_flag = no_ge77
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#명 만주간섭
+		name = jjab_events.12.f
+		trigger = {
+			not = { has_global_flag = no_ge22 }
+		}
+		set_global_flag = no_ge22
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#파비아전투
+		name = jjab_events.12.g
+		trigger = {
+			not = { has_global_flag = no_ge53 }
+		}
+		set_global_flag = no_ge53
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#젠타전투
+		name = jjab_events.12.h
+		trigger = {
+			not = { has_global_flag = no_ge74 }
+		}
+		set_global_flag = no_ge74
+		country_event = { id = jjab_events.12 }
+	}
+	option = {#만주,청형성
+		name = jjab_events.12.i
+		trigger = {
+			not = { has_global_flag = no_ge16 }
+		}
+		set_global_flag = no_ge16
+		country_event = { id = jjab_events.12 }
+	}
+	option = {
+		name = jjab_events.10.j
+		trigger = {
+		}
+	}
+}
+
+# Ming appoints new Emperor
+country_event = {
+	id = jjab_events.13
+	title = flavor_oir.4.t
+	desc = flavor_oir.4.d2
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		tag = MNG
+		ai = yes
+		not = { dynasty = "Zhu" }
+		not = { war_with = OIR }
+		is_year = 1450
+		not = { is_year = 1550 }
+	}
+	
+	immediate = {
+		if = { limit = { not = { is_year = 1500 } }
+			hidden_effect = {
+				define_ruler = {
+				name = "Qiyu"
+				dynasty = "Zhu"
+				culture = capital
+				religion = capital
+				adm = 1
+				dip = 1
+				mil = 1
+				age = 45
+				}
+				define_heir = {
+					name = "Jianjun"
+					dynasty = "Zhu"
+					culture = capital
+					religion = capital
+					adm = 1
+					dip = 0
+					mil = 2
+					age = 20
+				}
+			}
+		}
+		else = {
+			define_ruler = {
+				dynasty = "Zhu"
+				culture = capital
+				religion = capital
+			}
+			define_heir = {
+				dynasty = "Zhu"
+				culture = capital
+				religion = capital
+			}
+		}
+		OIR = {
+			clr_country_flag = captured_mng_emperor
+		}
+		if = {
+			limit = {
+				not = { is_at_war = no }
+			}				
+			add_war_exhaustion = -10
+		}
+		clr_country_flag = mng_emperor_captured
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { # May he have better judgement than his predecessor
+		name = "flavor_oir.4.a"
+	}
+}
+
+
+
+country_event = {#portu colony conquest
+	id = jjab_events.22
+	title = jjab_events.9.t
+	desc = jjab_events.9.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = hab_colony_start
+		tag = ZAN
+		ai = yes
+		war_with = POR
+		POR = {
+			is_subject = no
+			ai = yes
+			colony = 1
+			is_in_war = {
+				attacker_leader = POR
+				defender = ROOT
+			}
+			war_score_against = {
+				who = ROOT
+				value = 70
+			}
+		}
+	}
+	option = {
+		name = jjab_events.9.a
+		every_owned_province = {
+			limit = { not = { has_province_modifier = african_disease_modifier } }
+			add_core = POR
+			cede_province = POR
+		}
+	}
+}
+
+country_event = {#clear idea
+	id = jjab_events.24
+	title = jjab_events.24.t
+	desc = jjab_events.24.d
+	picture = SYNTHETICS_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = jjab_events.24.a
+		remove_idea_group = aristocracy_ideas
+		remove_idea_group = plutocracy_ideas
+		remove_idea_group = innovativeness_ideas
+		remove_idea_group = religious_ideas
+		remove_idea_group = spy_ideas
+		remove_idea_group = diplomatic_ideas
+		remove_idea_group = influence_ideas
+		remove_idea_group = offensive_ideas
+		remove_idea_group = defensive_ideas
+		remove_idea_group = trade_ideas
+		remove_idea_group = economic_ideas
+		#remove_idea_group = exploration_ideas
+		remove_idea_group = maritime_ideas
+		remove_idea_group = quality_ideas
+		remove_idea_group = quantity_ideas
+		remove_idea_group = expansion_ideas
+		remove_idea_group = administrative_ideas
+		remove_idea_group = humanist_ideas
+		remove_idea_group = katholisch0
+		remove_idea_group = protestant0
+		remove_idea_group = reformiert0
+		remove_idea_group = orthodox0
+		remove_idea_group = islam0
+		remove_idea_group = tengri0
+		remove_idea_group = hindu0
+		remove_idea_group = confuci0
+		remove_idea_group = budda0
+		remove_idea_group = norse0
+		remove_idea_group = shinto0
+		remove_idea_group = cathar0
+		remove_idea_group = shia0
+		remove_idea_group = ibadi0
+		remove_idea_group = hussite0
+		remove_idea_group = coptic0
+		remove_idea_group = romuva0
+		remove_idea_group = suomi0
+		remove_idea_group = jew0
+		remove_idea_group = slav0
+		remove_idea_group = helle0
+		remove_idea_group = mane0
+		remove_idea_group = animist0
+		remove_idea_group = feti0
+		remove_idea_group = zoro0
+		remove_idea_group = ancli0
+		remove_idea_group = nahu0
+		remove_idea_group = mesoam0
+		remove_idea_group = inti0
+		remove_idea_group = tote0
+		remove_idea_group = justiz0
+		remove_idea_group = entwicklung0
+		remove_idea_group = gesundheit0
+		remove_idea_group = aristocracy_ideas
+		remove_idea_group = plutocracy_ideas
+		remove_idea_group = theocracy_gov_ideas
+		remove_idea_group = diktatur0
+		remove_idea_group = horde_gov_ideas
+		remove_idea_group = gross0
+		remove_idea_group = galle0
+		remove_idea_group = handel0
+		remove_idea_group = kolonialimperium0
+		remove_idea_group = assimilation0
+		remove_idea_group = gesellschaft0
+		remove_idea_group = propaganda0
+		remove_idea_group = flottenbasis0
+		remove_idea_group = nationalismus0
+		remove_idea_group = konigreich0
+		remove_idea_group = imperialismus0
+		remove_idea_group = generalstab0
+		remove_idea_group = stehendesheer0
+		remove_idea_group = soldnerheer0
+		remove_idea_group = wehrpflicht0
+		remove_idea_group = waffenqualitat0
+		remove_idea_group = festung0
+		remove_idea_group = kriegsproduktion0
+		remove_idea_group = staatsverwaltung0
+		remove_idea_group = zentra0
+		remove_idea_group = dezentra0
+		remove_idea_group = formation0
+		remove_idea_group = militarismus0
+		remove_idea_group = shock0
+		remove_idea_group = fire0
+		remove_idea_group = lineinfantry0
+		country_event = { id = jjab_events.25 days = 30}
+		add_country_modifier = {
+			name = 999_idea
+			duration = 63
+		}
+	}
+}
+country_event = {#restore idea
+	id = jjab_events.25
+	title = jjab_events.24.t
+	desc = jjab_events.24.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = jjab_events.9.a
+		add_idea = noble_resilience
+		add_idea = emancipation
+		add_idea = formalized_officer_corps
+		add_idea = inquisition
+		add_idea = audit_checks
+		add_idea = dynastie4
+		add_idea = marcher_lords
+		add_idea = napoleonic_warfare
+		add_idea = improved_foraging
+		add_idea = fast_negotiations
+		add_idea = smithian_economics
+		add_idea = global_empire
+		add_idea = naval_fighting_instruction
+		add_idea = massed_battery
+		add_idea = expanded_supply_trains
+		add_idea = expan7
+		add_idea = civil_servants
+		add_idea = humanist_tolerance
+		add_idea = katholisch7
+		add_idea = protestant7
+		add_idea = reformiert7
+		add_idea = orthodox7
+		add_idea = islam7
+		add_idea = tengri7
+		add_idea = hindu7
+		add_idea = confuci7
+		add_idea = budda7
+		add_idea = norse7
+		add_idea = shinto7
+		add_idea = cathar7
+		add_idea = shia7
+		add_idea = ibadi7
+		add_idea = hussite7
+		add_idea = coptic7
+		add_idea = romuva7
+		add_idea = suomi7
+		add_idea = jew7
+		add_idea = slav7
+		add_idea = helle7
+		add_idea = mane7
+		add_idea = animist7
+		add_idea = feti7
+		add_idea = zoro7
+		add_idea = ancli7
+		add_idea = nahu7
+		add_idea = mesoam7
+		add_idea = inti7
+		add_idea = tote7
+		add_idea = justiz7
+		add_idea = entwicklung7
+		add_idea = gesundheit7
+		add_idea = monarchie7
+		add_idea = republik7
+		add_idea = aristo7
+		add_idea = diktatur7
+		add_idea = horde7
+		add_idea = gross7
+		add_idea = galle7
+		add_idea = handel7
+		add_idea = kolonialimperium7
+		add_idea = assimilation7
+		add_idea = gesellschaft7
+		add_idea = propaganda7
+		add_idea = flottenbasis7
+		add_idea = nationalismus7
+		add_idea = konigreich7
+		add_idea = imperialismus7
+		add_idea = generalstab7
+		add_idea = stehendesheer7
+		add_idea = soldnerheer7
+		add_idea = wehrpflicht7
+		add_idea = waffenqualitat7
+		add_idea = festung7
+		add_idea = kriegsproduktion7
+		add_idea = staatsverwaltung7
+		add_idea = zentra7
+		add_idea = dezentra7
+		add_idea = formation7
+		add_idea = militarismus7
+		add_idea = shock7
+		add_idea = fire7
+		add_idea = lineinfantry7
+		if = {
+			limit = { not = { has_country_flag = restore_idea_done } }
+			country_event = { id = jjab_events.25 days = 30}
+			set_country_flag = restore_idea_done
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.28
+	title = "jjab_events.28.t"
+	desc = "jjab_events.28.d"
+	picture = TRAIN_eventPicture
+
+	trigger = {
+		adm_tech = 34
+		dip_tech = 34
+		not = { has_country_modifier = jjab_fast_travel }
+	}
+	
+	option = {
+		name = jjab_events.28.a
+		if = { limit = { or = { tag = SPA tag = BRZ tag = ILK tag = QOM tag = KON tag = KHA } }
+			add_country_modifier = {
+				name = jjab_fast_travel_spa
+				duration = -1
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = jjab_fast_travel
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = jjab_events.29
+	title = "jjab_events.29.t"
+	desc = "jjab_events.29.d"
+	picture = SYNTHETICS_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		started_in = 1490.1.1
+	}
+	
+	option = {
+		name = jjab_events.29.a
+	}
+}
+
+country_event = {
+	id = jjab_events.30
+	title = jjab_events.30.t
+	desc = jjab_events.30.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = jjab_events.30.a
+		clr_country_flag = auto_10000
+		clr_country_flag = auto_20000
+		clr_country_flag = auto_40000
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.30.b
+		clr_country_flag = auto_20000
+		clr_country_flag = auto_40000
+		set_country_flag = auto_10000
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.30.c
+		clr_country_flag = auto_10000
+		clr_country_flag = auto_40000
+		set_country_flag = auto_20000
+		country_event = { id = jjab_events.10 }
+	}
+	option = {
+		name = jjab_events.30.e
+		clr_country_flag = auto_10000
+		clr_country_flag = auto_20000
+		set_country_flag = auto_40000
+		country_event = { id = jjab_events.10 }
+	}
+}
+
+country_event = {
+	id = jjab_events.31
+	title = jjab_events.30.t
+	desc = jjab_events.30.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		151 = {	owned_by = BYZ	}
+		TUR = { ai = yes controls = 151 }
+	}
+	option = {
+		TUR = { country_event = { id = ME_Ottoman_Events.2 } }
+	}
+}

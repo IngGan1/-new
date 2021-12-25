@@ -1,0 +1,108 @@
+ottoman_civil_war = {
+	potential = {
+		tag = TOP
+		normal_or_historical_nations = yes
+		government = monarchy
+		has_reform = ottoman_government
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		NOT = {
+			has_global_flag = had_ottoman_civil_war
+			has_global_flag = cem_rebels
+			has_ruler_flag = cem_rebellion
+			exists = AMS
+		}
+		owns = 151
+		owns = 149
+		owns = 1846
+	}
+
+	can_start = {
+		has_any_disaster = no
+		has_regency = no
+		is_year = 1480
+		ruler_age = 40
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			has_regency = yes
+			NOT = {
+				ruler_age = 30
+			}
+		}
+	}
+
+	progress = {
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 95 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 70 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { ADM = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { DIP = 3 }
+		}		
+		modifier = {
+			factor = 0.5
+			NOT = { MIL = 3 }
+		}
+	}
+
+	can_end = {
+		legitimacy = 80
+		stability = 1
+		NOT = {
+			exists = AMS
+		}
+		NOT = {
+			exists = RME
+		}
+		NOT = {
+			exists = TEK
+		}
+		NOT = {
+			has_country_modifier = dishonorable_surrender
+		}
+	}
+	
+	modifier = {
+		global_unrest = 10
+		stability_cost_modifier = 0.5
+		land_forcelimit_modifier = 1
+	}	
+	
+	on_start = ottoman_civil_war.1
+	on_end = ottoman_civil_war.100
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			100 = ottoman_civil_war.18
+			100 = ottoman_civil_war.19
+			100 = ottoman_civil_war.20
+		}
+	}
+}

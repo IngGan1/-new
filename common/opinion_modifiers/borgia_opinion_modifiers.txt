@@ -1,0 +1,17 @@
+refused_to_join_pope = {
+    opinion = -200
+    years = 50
+    yearly_decay = 4
+}
+
+agreed_to_join_pope = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+supported_borgia_invasion = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}

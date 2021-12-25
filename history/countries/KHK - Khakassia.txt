@@ -1,0 +1,6 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = khakas
+religion = tengri_pagan_reformed
+technology_group = nomad_group
+capital = 2431

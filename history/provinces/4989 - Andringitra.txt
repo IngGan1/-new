@@ -1,0 +1,4 @@
+#4989 - Andringitra
+
+discovered_by = east_african
+1500.8.20 = { discovered_by = POR } #Diego Dias

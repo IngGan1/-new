@@ -1,0 +1,552 @@
+namespace = agriculture
+
+country_event = {
+	id = agriculture.1
+	title = "agriculture.1.t"
+	desc = "agriculture.1.d"
+	picture = PALAIS_MAZARIN_eventPicture
+	
+	is_triggered_only = yes
+	
+	hidden = yes
+
+	trigger = {
+		ai = no
+		NOT = {
+			has_global_flag = hab_ready
+		}
+	}
+	
+	immediate = {
+		set_global_flag = hab_ready
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						area = jiangsu_area
+						area = south_jiangsu_area
+						area = zhejiang_area
+						area = fujian_area
+						area = guangdong_area
+						area = zhusanjiao_area
+						area = hunan_area
+						area = huguang_area
+						area = henan_area
+						area = anhui_area
+						area = south_anhui_area
+						area = jiangxi_area
+						area = north_guangdong_area
+						area = hainan_area
+						area = west_guangdong_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "very_intensive_irrigated_rice_human_culture_little_property_modifier"
+					duration = -1
+				}
+				add_prosperity = 100
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						area = north_henan_area
+						area = shanxi_area
+						area = south_hebei_area
+						area = shandong_area
+						area = hebei_area
+						area = liaoning_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "very_intensive_wheat_barley_millet_human_culture_little_property_modifier"
+					duration = -1
+				}
+				add_prosperity = 100
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = japan_region
+						region = korea_region
+						AND = {
+							region = coromandel_region
+							NOT = {
+								area = indian_ocean_islands_area
+							}
+						}
+						region = deccan_region
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "intensive_irrigated_rice_human_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = malaya_region
+						region = moluccas_region
+						region = indonesia_region
+						region = indo_china_region
+						region = xinan_region
+						region = indo_china_region
+						region = burma_region
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "irrigated_rice_human_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = niger_region
+						region = guinea_region
+						AND = {
+							region = horn_of_africa_region
+							NOT = {
+								OR = {
+									area = south_sudan_area
+									area = begemder_area
+									area = central_ethiopia_area
+									area = shewa_area
+									area = arsi_area
+								}
+							}
+						}
+						AND = {
+							region = east_africa_region
+							NOT = {
+								area = mascarenes_area
+							}
+						}
+						region = central_africa_region
+						region = kongo_region
+						AND = {
+							region = south_africa_region
+							NOT = {
+								area = south_african_plateau_area
+							}
+						}
+						area = yemen_area
+						area = tihama_al_yemen_area
+						area = mecca_area
+						area = medina_area
+						area = tabuk_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "sorgho_millet_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = bengal_region
+						region = hindusthan_region
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "intensive_rainfed_rice_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = brazil_region
+						AND = {
+							region = la_plata_region
+							NOT = {
+								area = south_atlantic_islands_area
+							}
+						}
+						region = colombia_region
+						AND = {
+							region = canada_region
+							NOT = {
+								OR = {
+									area = labrador_area
+									area = newfoundland_area
+									area = cote_nord_area
+								}
+							}
+						}
+						region = great_lakes_region
+						region = northeast_america_region
+						region = southeast_america_region
+						region = mississippi_region
+						AND = {
+							region = great_plains_region
+							NOT = {
+								OR = {
+									area = high_plains_area
+									area = badlands_area
+									area = chihuahua_area
+									area = northeast_mexico_area
+									area = rio_grande_area
+									area = northeast_mexico_area
+									area = coastal_prarie_area
+									area = texas_area
+								}
+							}
+						}
+						region = california_region
+						region = carribeans_region
+						area = rio_grande_area
+						area = coastal_prarie_area
+						area = texas_area
+						area = oregon_area
+						area = salish_sea_area
+						area = columbia_river_area
+						area = snake_river_area
+						area = columbia_river_area
+						area = straits_of_georgia_area
+						area = athabasca_area
+						area = prairies_area
+						area = assiniboia_area
+						area = saskatchewan_area
+						area = red_river_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "maize_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							region = mexico_region
+							NOT = {
+								OR = {
+									area = durango_area
+									area = sonora_area
+									area = chihuahua_area
+									area = northeast_mexico_area
+									area = rio_grande_area
+									area = northeast_mexico_area
+									area = coastal_prarie_area
+									area = texas_area
+								}
+							}
+						}
+						region = central_america_region
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "intensive_maize_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						region = peru_region
+						region = upper_peru_region
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "first_potatoes_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							region = scandinavia_region
+							NOT = {
+								OR = {
+									area = western_norway
+									area = iceland_area
+									area = greenland_area
+									area = subarctic_islands_area
+									area = northern_norway
+									area = norrland_area
+									area = laponia_area
+									area = savolax_area
+									area = karelia_area
+								}
+							}
+						}
+						AND = {
+							region = russia_region
+							NOT = {
+								OR = {
+									area = north_karelia
+									area = pomor_area
+									area = arkhangelsk_area
+									area = perm_area
+									area = northern_norway
+									area = norrland_area
+									area = laponia_area
+									area = savolax_area
+									area = karelia_area
+								}
+							}
+						}
+						region = iberia_region
+						region = british_isles_region
+						region = baltic_region
+						region = poland_region
+						region = ruthenia_region
+						region = crimea_region
+						region = balkan_region
+						region = carpathia_region
+						region = west_india_region
+						area = cyrenaica_area
+						area = gharbia_area
+						area = gulf_of_arabia_area
+						area = said_area
+						area = lower_nubia_area
+						area = pyrenees_area
+						area = massif_central_area
+						area = corsica_area
+						area = corsica_sardinia_area
+						area = calabria_area
+						area = apulia_area
+						area = abruzzo_area
+						area = frisia_area
+						area = guelders_area
+						area = moravia_area
+						area = mecklenburg_area
+						area = vorpommern_area
+						area = hinter_pommern_area
+						area = neumark_area
+						area = lusatia_area
+						area = erzgebirge_area
+						area = mittelmark_area
+						area = switzerland_area
+						area = ostschweiz_area
+						area = tirol_area
+						area = carinthia_area
+						area = slovenia_area
+						area = inner_austria_area
+						area = austria_proper_area
+						area = begemder_area
+						area = central_ethiopia_area
+						area = shewa_area
+						area = arsi_area
+						AND = {
+							region = maghreb_region
+							NOT = {
+								OR = {
+									area = sus_area
+									area = tafilalt_area
+									area = hautes_plaines_area
+									area = ouled_nail_area
+									area = north_saharan_area
+									area = fezzan_area
+									area = macaronesia_area
+								}
+							}
+						}
+						AND = {
+							region = mashriq_region
+							NOT = {
+								OR = {
+									area = trans_jordan_area
+									area = syrian_desert_area
+									area = rakka_area
+								}
+							}
+						}
+						AND = {
+							region = anatolia_region
+							NOT = {
+								OR = {
+									area = north_kurdistan_area
+									area = erzurum_area
+									area = dulkadir_area
+								}
+							}
+						}
+						AND = {
+							region = persia_region
+							NOT = {
+								OR = {
+									area = persian_gulf_coast
+									area = farsistan_area
+									area = mogostan_area
+									area = kerman_area
+								}
+							}
+						}
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "wheat_barley_millet_rye_animal_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							region = france_region
+							NOT = {
+								OR = {
+									area = pyrenees_area
+									area = massif_central_area
+								}
+							}
+						}
+						AND = {
+							region = low_countries_region
+							NOT = {
+								OR = {
+									area = frisia_area
+									area = guelders_area
+								}
+							}
+						}
+						AND = {
+							region = north_german_region
+							NOT = {
+								OR = {
+									area = moravia_area
+									area = mecklenburg_area
+									area = vorpommern_area
+									area = hinter_pommern_area
+									area = neumark_area
+									area = lusatia_area
+									area = erzgebirge_area
+									area = mittelmark_area
+								}
+							}
+						}
+						AND = {
+							region = south_german_region
+							NOT = {
+								OR = {
+									area = switzerland_area
+									area = ostschweiz_area
+									area = tirol_area
+									area = carinthia_area
+									area = slovenia_area
+									area = inner_austria_area
+									area = austria_proper_area
+								}
+							}
+						}
+						AND = {
+							region = italy_region
+							NOT = {
+								OR = {
+									area = corsica_area
+									area = corsica_sardinia_area
+									area = calabria_area
+									area = apulia_area
+									area = abruzzo_area
+									area = malta_area
+								}
+							}
+						}
+						area = vostani_area
+						area = bahari_area
+						area = delta_area
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "intensive_wheat_barley_millet_rye_animal_culture_little_property_modifier"
+					duration = -1
+				}
+			}
+		}
+		every_province = {
+			if = {
+				limit = {
+					is_wasteland = no
+					NOT = {
+						OR = {
+							has_province_modifier = very_intensive_irrigated_rice_human_culture_little_property_modifier
+							has_province_modifier = intensive_irrigated_rice_human_culture_little_property_modifier
+							has_province_modifier = irrigated_rice_human_culture_little_property_modifier
+							has_province_modifier = very_intensive_rainfed_rice_culture_little_property_modifier
+							has_province_modifier = intensive_rainfed_rice_culture_little_property_modifier
+							has_province_modifier = rainfed_rice_culture_little_property_modifier
+							has_province_modifier = very_intensive_rainfed_rice_maize_culture_little_property_modifier
+							has_province_modifier = intensive_rainfed_rice_maize_culture_little_property_modifier
+							has_province_modifier = rainfed_rice_maize_culture_little_property_modifier
+							has_province_modifier = very_intensive_rainfed_rice_maize_potatoe_culture_little_property_modifier
+							has_province_modifier = intensive_rainfed_rice_maize_potatoe_culture_little_property_modifier
+							has_province_modifier = rainfed_rice_maize_potatoe_culture_little_property_modifier
+							has_province_modifier = very_intensive_rainfed_rice_potatoe_culture_little_property_modifier
+							has_province_modifier = intensive_rainfed_rice_potatoe_culture_little_property_modifier
+							has_province_modifier = rainfed_rice_potatoe_culture_little_property_modifier
+							has_province_modifier = very_intensive_maize_culture_little_property_modifier
+							has_province_modifier = intensive_maize_culture_little_property_modifier
+							has_province_modifier = maize_culture_little_property_modifier
+							has_province_modifier = very_intensive_potatoe_maize_culture_little_property_modifier
+							has_province_modifier = intensive_potatoe_maize_culture_little_property_modifier
+							has_province_modifier = potatoe_maize_culture_little_property_modifier
+							has_province_modifier = intensive_potatoes_culture_little_property_modifier
+							has_province_modifier = adapted_potatoes_culture_little_property_modifier
+							has_province_modifier = first_potatoes_culture_little_property_modifier
+							has_province_modifier = very_intensive_sorgho_millet_culture_little_property_modifier
+							has_province_modifier = intensive_sorgho_millet_culture_little_property_modifier
+							has_province_modifier = sorgho_millet_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_human_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_human_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_human_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_maize_human_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_maize_human_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_maize_human_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_maize_potatoe_human_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_maize_potatoe_human_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_maize_potatoe_human_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_potatoe_human_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_potatoe_human_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_potatoe_human_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_rye_animal_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_rye_animal_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_rye_animal_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_rye_maize_animal_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_rye_maize_animal_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_rye_maize_animal_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_rye_maize_potatoe_animal_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_rye_maize_potatoe_animal_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_rye_maize_potatoe_animal_culture_little_property_modifier
+							has_province_modifier = very_intensive_wheat_barley_millet_rye_potatoe_animal_culture_little_property_modifier
+							has_province_modifier = intensive_wheat_barley_millet_rye_potatoe_animal_culture_little_property_modifier
+							has_province_modifier = wheat_barley_millet_rye_potatoe_animal_culture_little_property_modifier
+						}
+					}
+				}
+				add_permanent_province_modifier = {
+					name = "self-subsistance_culture_modifier"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "agriculture.1.a"
+	}
+}

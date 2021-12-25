@@ -1,0 +1,5 @@
+siphoned_income = {
+	opinion = -10
+	yearly_decay = 2
+	min = -100
+}

@@ -1,0 +1,115 @@
+
+country_decisions = {
+        win_hundred_years_of_war = {
+		potential = {
+            tag = FRA
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = win_hundred_years_of_war }
+		}
+		allow = {
+			owns_core_province = 168
+			owns_core_province = 174
+			owns_core_province = 173
+			owns_core_province = 177
+			owns_core_province = 167
+		}
+		effect = {
+			set_country_flag = win_hundred_years_of_war
+			every_province = {
+				limit = {
+					region = france_region
+					NOT = {
+						area = lorraine_area
+						area = alsace_area
+						area = artois_area
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_historical_rival = BUR
+			BUR = {
+			  add_historical_rival = FRA
+			  add_historical_rival = CAS
+			} 
+		}
+		ai_will_do = {
+			factor = 1
+		}	
+	}
+}
+
+
+country_decisions = {
+	edict_of_moulins = {
+		potential = {
+			tag = FRA
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { has_country_flag = edict_of_moulins }
+		}
+		allow = {
+			current_age = age_of_reformation
+			stability = 2
+			legitimacy_equivalent = 100
+		}
+		effect = {
+            set_country_flag = edict_of_moulins
+			add_prestige = 10
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_country_modifier = {
+				name = "centralised_state"
+				duration = 7300
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}	
+}
+
+country_decisions = {
+	alleviate_corruption = {
+		major = yes
+		potential = {
+			adm_tech = 10
+			NOT = { has_country_flag = alleviate_corruption_flag }
+		}
+		allow =  {
+			stability = 2
+			adm_power = 200
+			dip_power = 200
+			mil_power = 200
+			is_at_war = no 
+			legitimacy_equivalent = 90
+		}
+		effect = {
+			set_country_flag = alleviate_corruption_flag
+			add_prestige = 10
+			add_adm_power = -200
+			add_dip_power = -200
+			add_mil_power = -200
+			add_country_modifier = {
+				name = "alleviate_corruption_act"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}

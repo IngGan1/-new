@@ -1,0 +1,415 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = togoku
+religion = shinto
+technology_group = chinese
+capital = 4977	# Iwaki
+
+1440.1.1 = {
+	monarch = {
+		name = "Takatane" 
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1476.1.1 = {
+	heir = {
+		name = "Moritane"
+		monarch_name = "Moritane"
+		dynasty = "Soma"
+		birth_date = 1476.1.1
+		death_date = 1521.7.23
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1492.7.5 = {
+	monarch = {
+		name = "Moritane" 
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1508.1.1 = {
+	heir = {
+		name = "Akitane"
+		monarch_name = "Akitane"
+		dynasty = "Soma"
+		birth_date = 1508.1.1
+		death_date = 1549.3.1
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1521.7.23 = {
+	monarch = {
+		name = "Akitane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}
+
+1529.1.1 = {
+	heir = {
+		name = "Moritane"
+		monarch_name = "Moritane"
+		dynasty = "Soma"
+		birth_date = 1529.1.1
+		death_date = 1601.11.10
+		claim = 90
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+	
+1549.3.1 = { 
+	monarch = {
+		name = "Moritane"
+		dynasty = "Soma"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1549.3.1 = {
+	heir = {
+		name = "Yoshitane"
+		monarch_name = "Yoshitane"
+		dynasty = "Soma"
+		birth_date = 1548.1.1
+		death_date = 1635.12.25
+		claim = 90
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+	
+1601.11.10 = { 
+	monarch = {
+		name = "Yoshitane"
+		dynasty = "Soma"
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}
+
+1601.11.10 = {
+	heir = {
+		name = "Toshitane"
+		monarch_name = "Toshitane"
+		dynasty = "Soma"
+		birth_date = 1581.1.1
+		death_date = 1625.10.11
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1615.1.1 = { 
+	monarch = {
+		name = "Toshitane"
+		dynasty = "Soma"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1619.1.1 = {
+	heir = {
+		name = "Yoshitane"
+		monarch_name = "Yoshitane"
+		dynasty = "Soma"
+		birth_date = 1619.1.1
+		death_date = 1651.4.24
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1625.10.11 = { 
+	monarch = {
+		name = "Yoshitane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1637.1.1 = {
+	heir = {
+		name = "Tadatane"
+		monarch_name = "Tadatane"
+		dynasty = "Soma"
+		birth_date = 1637.1.1
+		death_date = 1673.12.9
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1651.4.24 = { 
+	monarch = {
+		name = "Tadatane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1659.6.28 = {
+	heir = {
+		name = "Sadatane"
+		monarch_name = "Sadatane"
+		dynasty = "Soma"
+		birth_date = 1659.6.28
+		death_date = 1679.12.25
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1673.12.9 = { 
+	monarch = {
+		name = "Sadatane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1673.12.9 = {
+	heir = {
+		name = "Masatane"
+		monarch_name = "Masatane"
+		dynasty = "Soma"
+		birth_date = 1661.8.1
+		death_date = 1728.11.7
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1679.12.25 = { 
+	monarch = {
+		name = "Masatane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1679.12.25 = {
+	heir = {
+		name = "Nobutane"
+		monarch_name = "Nobutane"
+		dynasty = "Soma"
+		birth_date = 1677.5.5
+		death_date = 1711.6.6
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1700.1.1 = { 
+	monarch = {
+		name = "Nobutane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1700.1.1 = {
+	heir = {
+		name = "Takatane"
+		monarch_name = "Takatane"
+		dynasty = "Soma"
+		birth_date = 1697.4.10
+		death_date = 1772.5.6
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1711.6.6 = { 
+	monarch = {
+		name = "Takatane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1734.11.29 = {
+	heir = {
+		name = "Morotane"
+		monarch_name = "Morotane"
+		dynasty = "Soma"
+		birth_date = 1734.11.29
+		death_date = 1791.9.11
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1772.5.6 = { 
+	monarch = {
+		name = "Morotane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1772.5.6 = {
+	heir = {
+		name = "Yoshitane"
+		monarch_name = "Yoshitane"
+		dynasty = "Soma"
+		birth_date = 1765.7.20
+		death_date = 1791.9.11
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1791.9.11 = { 
+	monarch = {
+		name = "Yoshitane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1791.9.11 = {
+	heir = {
+		name = "Muratane"
+		monarch_name = "Muratane"
+		dynasty = "Soma"
+		birth_date = 1782.1.4
+		death_date = 1839.10.13
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1813.7.14 = { 
+	monarch = {
+		name = "Muratane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1813.7.14 = {
+	heir = {
+		name = "Masutane"
+		monarch_name = "Masutane"
+		dynasty = "Soma"
+		birth_date = 1796.2.18
+		death_date = 1845.7.15
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1839.10.13 = { 
+	monarch = {
+		name = "Masutane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1839.10.13 = {
+	heir = {
+		name = "Michitane"
+		monarch_name = "Michitane"
+		dynasty = "Soma"
+		birth_date = 1819.4.13
+		death_date = 1887.2.19
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1845.7.15 = { 
+	monarch = {
+		name = "Michitane"
+		dynasty = "Soma"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1852.9.18 = {
+	heir = {
+		name = "Tomotane"
+		monarch_name = "Tomotane"
+		dynasty = "Soma"
+		birth_date = 1819.4.13
+		death_date = 1892.2.22
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

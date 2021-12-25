@@ -1,0 +1,8 @@
+﻿l_english:
+ fcsp_events.1.t:0 "Placeholder Title FCSP"
+ fcsp_events.1.d:0 "If you read this, please consider posting a comment in the Bugreport discussion in the Steam Workshop."
+ fcsp_events.1.o:0 "OK?"
+ set_fcsp_behavior_title:0 "”ÆÈÀ üÈÀ¼ÀÉíÅ ÇÙ³È9¸ D°0®"
+ set_fcsp_behavior_desc:0 "”ÆÈÀ È9¸ ÜÂ tÕù²”ÆÈÀÌ¹ È9¸"
+ reset_fcsp_behavior_title:0 "”ÆÈÀ üÈÀ¼ÀÉíÅ ÇÙ³È9¸ Ï0®"
+ reset_fcsp_behavior_desc:0 "”ÆÈÀ È9¸ ÜÂ ä²x¹ ”ÆÈÀXÇ Æ¥ÕŒ­ÐÅ ˆÇÀÉ JÅNÇ ¨ºà´ üÈÀ¼ Õj¸H¾²ÂÄ³ ¬tÇ È9¸."

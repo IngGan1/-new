@@ -1,0 +1,134 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 41 81 138 }
+
+historical_idea_groups = {
+	entwicklung0
+	defensive_ideas
+	trade_ideas
+	diplomatic_ideas
+	economic_ideas
+	innovativeness_ideas
+	offensive_ideas
+	spy_ideas
+	generalstab0
+	staatsverwaltung0
+	justiz0
+	propaganda0
+	gesellschaft0
+	fire0
+	assimilation0
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	dutch_maurician
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	french_bluecoat
+	french_cuirassier
+	french_impulse
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Charles #2" = 40
+	"Louis #1" = 40
+	"Ren?#1" = 20
+	"Nicolas #0" = 10
+	"Jean #0" = 5
+	"Raymond Berengar #3" = 1
+	"Alphonse #2" = 1
+	"Robert #1" = 1
+	"Adh?ar #0" = 0
+	"Aymeric #0" = 0
+	"Bartomiu #0" = 0
+	"Benedit #0" = 0
+	"Bernat #0" = 0
+	"Bertran #0" = 0
+	"Dami? #0" = 0
+	"Emeric #0" = 0
+	"Enric #0" = 0
+	"Est?e #0" = 0
+	"Ferr? #0" = 0
+	"Folquet #0" = 0
+	"Frances #0" = 0
+	"Gast?#0" = 0
+	"Guilhem #0" = 0
+	"Huc #0" = 0
+	"Jacme #0" = 0
+	"Jaufre #0" = 0
+	"Jordan #0" = 0
+	"Loys #0" = 0
+	"Lucas #0" = 0
+	"Mart?#0" = 0
+	"Matheu #0" = 0
+	"Miqueu #0" = 0
+	"Per #0" = 0
+	"Pol #0" = 0
+	"Pons #0" = 0
+	"Sanc #0" = 0
+	"Thibaud #0" = 0
+	"Vicentz #0" = 0
+	"Victor #0" = 0
+	"Xavier #0" = 0
+	
+	"Nadine #0" = -1
+	"Osanne #0" = -1
+	"Yolande #0" = -1
+}
+
+leader_names = {
+	"d'Abeille" "d'Adh?ar" "d'Agoult" "d'Aiglun" "d'Aigui?es" "d'Allemagne" "d'Amalric" "d'Audiffredi"
+	"de Bagnols" "de Barberin" "de Barcillon" "de Baschi" "des Baux" "de Bermond" "de Bionneau" "de Brunet"
+	"de Cadenet" "de Cascaris-Castellet" "de Castaing" "de Castellane" "de Castillon" Coquerel "de Cordes" "de Cormis" "de Crillon"
+	"d'Entrecasteaux" "d'Espagnet" Esparron "d'Espinouze"
+	"de Fargis" "Fauque de Jonqui?es" "Ferr?de la Grange" 
+	"de Gassendi" "de G?audan" "de Gombert" "de Gordes" "de Grignan" Grimaldi "de Grimaud" "de Guast" "des Isnards" 
+	"de Lauris" "de Libertat" "de Lom?ie"
+	"de Monteil" "de Montpezat" 
+	"de Paule" "de Pena" "Pene de la Borde" "de la P?usse" "de Pontev?"
+	"de Raimondis" "de Revest" "de Riquetti"
+	"de Sabran" "de Sade" "de Saint Victoret" "de S?uiran" "de Simiane"
+	"de Valbelle"
+}
+
+ship_names = {
+	Achille Agr?ble "Aigle Volant" Alcyon Alouette
+	Altier Aquilon Ardente Assur?Avenant
+	Aventurier Baleine B?asse Bienvenu Bizarre
+	Bor? "Branche d'Olivier" Brillant Bucentaure Cach?
+	Caille Capable Centaure C?ar "Cheval Marin"
+	Coche "Commerce de Marseille" "Commerce de Montpellier" "Comte de Provence" Conqu?ant
+	Constant Content Croissant Dauphine Diamant
+	Dieppoise Dur Dromadaire Eclatant Eole
+	Esp?ance Fantasque Ferme Fid?e Fier
+	Florissant Formidable Fort Foudroyant Gaillard
+	Heureux H?os Jason Lion Mignon
+	Minerve Oc?n Orph? Parfait Ph?ix
+	Poli Pompeux Portefaix Protecteur Proven?l
+	Provence Prudent Puissant R?le Redoutable
+	Requin "Royal Louis" Sage Sagittaire "Royal Th??e"
+	"Saint Esprit" "Saint Joseph" "Saint Philippe" Sardine Sceptre
+	S?uisant Seine S?ieux Solide Souverain
+	Suffisant T??aire Terrible Tigre Tonnant
+	Toulon Toulouse Trident Triomphant Triton
+	Union Vaillant Vigilant Volontaire Z??
+}
+
+army_names = {
+	"Arm? de Marseille" "Arm? des Baux" "Arm? de Provence-Forcalquier" 
+	"Arm? d'Orange" "Arm? du Pays d'Arles" "Arm? des Alpes"
+	"Arm? du Rh?e" "Arm? de la Durance" "Arm? de Haute Provence"
+	"Arm? de Basse Provence" "Arm? du Vivarais"
+	"Arm? de $PROVINCE$"
+}

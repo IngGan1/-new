@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = norwegian
+religion = catholic
+technology_group = western
+historical_friend = NOR
+historical_friend = SCO
+capital = 369 #Orkney
+
+1434.1.1 = {
+	monarch = {
+		name = "William"
+		dynasty = "Sinclair"
+		birth_date = 1410.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

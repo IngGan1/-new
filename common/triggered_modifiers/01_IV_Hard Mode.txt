@@ -1,0 +1,1008 @@
+#######################################################
+### KI Boni / AI Boni
+#######################################################
+
+normal_mode_age1 = {
+	potential = {
+		not = { has_global_flag = hard_mode }
+		ai = yes	
+	}
+	trigger = {
+		is_year = 1500
+		not = { is_year = 1600 }
+	}
+	land_maintenance_modifier = -0.15
+	naval_maintenance_modifier = -0.05
+	fort_maintenance_modifier = -0.15
+}
+
+normal_mode_age2 = {
+	potential = {
+		not = { has_global_flag = hard_mode }
+		ai = yes	
+	}
+	trigger = {
+		is_year = 1600
+		not = { is_year = 1700 }
+	}
+	land_maintenance_modifier = -0.2
+	naval_maintenance_modifier = -0.1
+	fort_maintenance_modifier = -0.2
+}
+
+normal_mode_age3 = {
+	potential = {
+		not = { has_global_flag = hard_mode }
+		ai = yes	
+	}
+	trigger = {
+		is_year = 1700
+		not = { is_year = 1800 }
+	}
+	land_maintenance_modifier = -0.25
+	naval_maintenance_modifier = -0.15
+	fort_maintenance_modifier = -0.25
+}
+
+normal_mode_age4 = {
+	potential = {
+		not = { has_global_flag = hard_mode }
+		ai = yes	
+	}
+	trigger = {
+		is_year = 1800
+	}
+	land_maintenance_modifier = -0.3
+	naval_maintenance_modifier = -0.2
+	fort_maintenance_modifier = -0.3
+}
+
+hard_mode_age1 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				not = { is_year = 1500 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				not = { is_year = 1520 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				not = { is_year = 1550 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				not = { is_year = 1620 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				not = { is_year = 1690 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				not = { is_year = 1760 }
+			}
+		}
+	}
+	interest = -0.5
+	global_autonomy = -0.1
+	#land_maintenance_modifier = -0.15
+	#naval_maintenance_modifier = -0.1
+	manpower_recovery_speed = 0.1
+	build_cost = -0.3
+	free_policy = 1
+	fort_maintenance_modifier = -0.2
+	inflation_reduction = 0.025
+	development_cost = -0.1
+	merc_maintenance_modifier = -0.2
+}
+
+hard_mode_age2 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1500
+				not = { is_year = 1550 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1520
+				not = { is_year = 1565 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1550
+				not = { is_year = 1590 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1620
+				not = { is_year = 1655 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1690
+				not = { is_year = 1720 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1760
+				not = { is_year = 1785 }
+			}
+		}
+	}
+	interest = -0.5
+	global_autonomy = -0.1
+	global_manpower = 5.0
+	#land_maintenance_modifier = -0.15
+	#naval_maintenance_modifier = -0.1
+	global_sailors = 2000
+	infantry_power = 0.025
+	cavalry_power = 0.025
+	artillery_power = 0.025
+	build_cost = -0.3
+	free_policy = 1
+	monarch_admin_power = 1
+	fort_maintenance_modifier = -0.2
+	inflation_reduction = 0.05
+	development_cost = -0.1
+	merc_maintenance_modifier = -0.2
+}
+
+hard_mode_age3 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1550
+				not = { is_year = 1600 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1565
+				not = { is_year = 1610 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1590
+				not = { is_year = 1630 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1655
+				not = { is_year = 1690 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1720
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1785
+				not = { is_year = 1810 }
+			}
+		}
+	}
+	interest = -0.75
+	global_autonomy = -0.1
+	global_manpower = 10.0
+	#land_maintenance_modifier = -0.2
+	#naval_maintenance_modifier = -0.15
+	global_sailors = 3000
+	infantry_power = 0.05
+	cavalry_power = 0.05
+	artillery_power = 0.05
+	build_cost = -0.2
+	free_policy = 1
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	fort_maintenance_modifier = -0.25
+	inflation_reduction = 0.075
+	development_cost = -0.15
+	merc_maintenance_modifier = -0.25
+}
+
+hard_mode_age4 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1600
+				not = { is_year = 1650 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1610
+				not = { is_year = 1655 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1630
+				not = { is_year = 1670 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1690
+				not = { is_year = 1725 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1750
+				not = { is_year = 1780 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1810
+				not = { is_year = 1835 }
+			}
+		}
+	}
+	interest = -1
+	global_autonomy = -0.1
+	global_manpower = 15.0
+	#land_maintenance_modifier = -0.2
+	#naval_maintenance_modifier = -0.15
+	global_sailors = 4000
+	infantry_power = 0.1
+	cavalry_power = 0.1
+	artillery_power = 0.1
+	build_cost = -0.2
+	yearly_absolutism = 1.0
+	free_policy = 2
+	defensiveness = 0.05
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	fort_maintenance_modifier = -0.25
+	inflation_reduction = 0.1
+	development_cost = -0.2
+	merc_maintenance_modifier = -0.25
+}
+
+
+hard_mode_age5 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1650
+				not = { is_year = 1700 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1655
+				not = { is_year = 1700 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1670
+				not = { is_year = 1710 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1725
+				not = { is_year = 1760 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1780
+				not = { is_year = 1810 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1835
+				not = { is_year = 1860 }
+			}
+		}
+	}
+	interest = -1.25
+	global_autonomy = -0.1
+	global_manpower = 20.0
+	#land_maintenance_modifier = -0.25
+	#naval_maintenance_modifier = -0.2
+	global_sailors = 6000
+	infantry_power = 0.15
+	cavalry_power = 0.15
+	artillery_power = 0.15
+	build_cost = -0.2
+	yearly_absolutism = 1.0
+	free_policy = 2
+	defensiveness = 0.05
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	fort_maintenance_modifier = -0.3
+	inflation_reduction = 0.125
+	development_cost = -0.2
+	merc_maintenance_modifier = -0.3
+}
+
+hard_mode_age6 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1700
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1700
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1710
+				not = { is_year = 1755 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1760
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1810
+				not = { is_year = 1845 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1860
+				not = { is_year = 1890 }
+			}
+		}
+	}
+	interest = -1.5
+	global_autonomy = -0.1
+	global_manpower = 30.0
+	#land_maintenance_modifier = -0.25
+	#naval_maintenance_modifier = -0.2
+	global_sailors = 8000
+	infantry_power = 0.15
+	cavalry_power = 0.15
+	artillery_power = 0.15
+	build_cost = -0.1
+	yearly_absolutism = 1.0
+	free_policy = 2
+	defensiveness = 0.1
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	fort_maintenance_modifier = -0.3
+	inflation_reduction = 0.15
+	development_cost = -0.2
+	merc_maintenance_modifier = -0.3
+}
+
+hard_mode_age7 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1750
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1750
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1755
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1800
+				not = { is_year = 1840 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1845
+				not = { is_year = 1880 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1890
+				not = { is_year = 1920 }
+			}
+		}
+	}
+	interest = -1.75
+	global_autonomy = -0.1
+	global_manpower = 30.0
+	#land_maintenance_modifier = -0.3
+	#naval_maintenance_modifier = -0.25
+	global_sailors = 8000
+	infantry_power = 0.2
+	cavalry_power = 0.2
+	artillery_power = 0.2
+	build_cost = -0.1
+	yearly_absolutism = 1.0
+	free_policy = 2
+	defensiveness = 0.1
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	fort_maintenance_modifier = -0.35
+	inflation_reduction = 0.175
+	development_cost = -0.2
+	merc_maintenance_modifier = -0.35
+}
+
+hard_mode_age8 = {
+	potential = {
+		ai = yes
+		has_global_flag = hard_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1840
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1880
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1920
+			}
+		}
+	}
+	interest = -2
+	global_autonomy = -0.1
+	global_manpower = 30.0
+	#land_maintenance_modifier = -0.3
+	#naval_maintenance_modifier = -0.25
+	global_sailors = 8000
+	infantry_power = 0.2
+	cavalry_power = 0.2
+	artillery_power = 0.2
+	build_cost = -0.3
+	yearly_absolutism = 1.0
+	free_policy = 2
+	defensiveness = 0.1
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+	fort_maintenance_modifier = -0.35
+	inflation_reduction = 0.2
+	development_cost = -0.2
+	merc_maintenance_modifier = -0.35
+}
+
+#######################################################
+### Spieler Mali / Player Debuffs
+#######################################################
+hard2_mode_age1 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				not = { is_year = 1500 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				not = { is_year = 1520 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				not = { is_year = 1550 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				not = { is_year = 1620 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				not = { is_year = 1690 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				not = { is_year = 1760 }
+			}
+		}
+	}
+	interest = 0.5
+	ae_impact = 0.1
+	years_of_nationalism = 0.5
+	global_trade_power = -0.05
+	global_colonial_growth = -10
+	development_cost = 0.05
+	discipline = -0.01
+	diplomatic_reputation = -0.5
+}
+
+hard2_mode_age2 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1500
+				not = { is_year = 1550 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1520
+				not = { is_year = 1565 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1550
+				not = { is_year = 1590 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1620
+				not = { is_year = 1655 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1690
+				not = { is_year = 1720 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1760
+				not = { is_year = 1785 }
+			}
+		}
+	}
+	interest = 1
+	ae_impact = 0.15
+	land_maintenance_modifier = 0.1
+	naval_maintenance_modifier = 0.05
+	global_trade_power = -0.1
+	fort_maintenance_modifier = 0.1
+	years_of_nationalism = 1
+	global_colonial_growth = -15
+	development_cost = 0.1
+	land_morale = -0.025
+	discipline = -0.02
+	build_cost = 0.05
+	diplomatic_reputation = -1
+}
+
+hard2_mode_age3 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1550
+				not = { is_year = 1600 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1565
+				not = { is_year = 1610 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1590
+				not = { is_year = 1630 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1655
+				not = { is_year = 1690 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1720
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1785
+				not = { is_year = 1810 }
+			}
+		}
+	}
+	interest = 1.5
+	ae_impact = 0.2
+	land_maintenance_modifier = 0.15
+	naval_maintenance_modifier = 0.1
+	global_unrest = 0.5
+	global_trade_power = -0.15
+	fort_maintenance_modifier = 0.15
+	years_of_nationalism = 1.5
+	global_colonial_growth = -20
+	development_cost = 0.15
+	land_morale = -0.05
+	discipline = -0.03
+	build_cost = 0.1
+	diplomatic_reputation = -1.5
+}
+
+hard2_mode_age4 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1600
+				not = { is_year = 1650 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1610
+				not = { is_year = 1655 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1630
+				not = { is_year = 1670 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1690
+				not = { is_year = 1725 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1750
+				not = { is_year = 1780 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1810
+				not = { is_year = 1835 }
+			}
+		}
+	}
+	interest = 2
+	ae_impact = 0.25
+	land_maintenance_modifier = 0.2
+	naval_maintenance_modifier = 0.15
+	global_unrest = 1
+	global_trade_power = -0.2
+	fort_maintenance_modifier = 0.2
+	years_of_nationalism = 2
+	global_colonial_growth = -25
+	development_cost = 0.2
+	land_morale = -0.075
+	discipline = -0.04
+	build_cost = 0.2
+	diplomatic_reputation = -2
+}
+
+
+hard2_mode_age5 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1650
+				not = { is_year = 1700 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1655
+				not = { is_year = 1700 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1670
+				not = { is_year = 1710 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1725
+				not = { is_year = 1760 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1780
+				not = { is_year = 1810 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1835
+				not = { is_year = 1860 }
+			}
+		}
+	}
+	interest = 2.5
+	ae_impact = 0.3
+	land_maintenance_modifier = 0.25
+	naval_maintenance_modifier = 0.2
+	global_unrest = 1.5
+	global_trade_power = -0.25
+	fort_maintenance_modifier = 0.25
+	years_of_nationalism = 2.5
+	global_colonial_growth = -30
+	development_cost = 0.25
+	land_morale = -0.1
+	discipline = -0.05
+	build_cost = 0.3
+	diplomatic_reputation = -2.5
+}
+
+hard2_mode_age6 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1700
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1700
+				not = { is_year = 1750 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1710
+				not = { is_year = 1755 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1760
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1810
+				not = { is_year = 1845 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1860
+				not = { is_year = 1890 }
+			}
+		}
+	}
+	interest = 3
+	ae_impact = 0.35
+	land_maintenance_modifier = 0.3
+	naval_maintenance_modifier = 0.25
+	global_unrest = 2
+	global_trade_power = -0.3
+	fort_maintenance_modifier = 0.3
+	years_of_nationalism = 3
+	global_colonial_growth = -35
+	development_cost = 0.3
+	land_morale = -0.125
+	discipline = -0.06
+	build_cost = 0.4
+	diplomatic_reputation = -3
+}
+
+hard2_mode_age7 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1750
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1750
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1755
+				not = { is_year = 1800 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1800
+				not = { is_year = 1840 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1845
+				not = { is_year = 1880 }
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1890
+				not = { is_year = 1920 }
+			}
+		}
+	}
+	interest = 3.5
+	ae_impact = 0.4
+	land_maintenance_modifier = 0.35
+	naval_maintenance_modifier = 0.3
+	global_unrest = 2.5
+	global_trade_power = -0.35
+	fort_maintenance_modifier = 0.35
+	years_of_nationalism = 3.5
+	global_colonial_growth = -40
+	development_cost = 0.35
+	land_morale = -0.15
+	discipline = -0.08
+	build_cost = 0.5
+	diplomatic_reputation = -3.5
+}
+
+hard2_mode_age8 = {
+	potential = {
+		ai = no
+		has_global_flag = hard2_mode
+	}
+	trigger = {
+		or = {
+			and = {
+				not = { has_global_flag = jjab_hard_1480 }
+				not = { has_global_flag = jjab_hard_1520 }
+				not = { has_global_flag = jjab_hard_1600 }
+				not = { has_global_flag = jjab_hard_1680 }
+				not = { has_global_flag = jjab_hard_1760 }
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1480
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1520
+				is_year = 1800
+			}
+			and = {
+				has_global_flag = jjab_hard_1600
+				is_year = 1840
+			}
+			and = {
+				has_global_flag = jjab_hard_1680
+				is_year = 1880
+			}
+			and = {
+				has_global_flag = jjab_hard_1760
+				is_year = 1920
+			}
+		}
+	}
+	interest = 4
+	ae_impact = 0.45
+	land_maintenance_modifier = 0.4
+	naval_maintenance_modifier = 0.35
+	global_unrest = 3
+	global_trade_power = -0.4
+	fort_maintenance_modifier = 0.4
+	years_of_nationalism = 4
+	global_colonial_growth = -45
+	development_cost = 0.4
+	land_morale = -0.2
+	discipline = -0.1
+	build_cost = 0.6
+	diplomatic_reputation = -4
+}

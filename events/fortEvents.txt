@@ -1,0 +1,51 @@
+namespace = fortevent
+
+#14th remove
+country_event = {
+	id = fortevent.6
+	title = "fortevent.1.t"
+	desc = "fortevent.1.d"
+	hidden = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		is_year = 1700
+		any_province = { has_building = fort_14th }
+		mil_tech = 25
+	}
+
+	immediate = {
+		every_province = {
+			limit = { has_building = fort_14th }
+			remove_building = fort_14th
+		}
+	}
+
+	option = {
+		name = "fortevent.1.a"
+	}
+}
+
+province_event = {
+	id = fortevent.8
+	title = "fortevent.4.t"
+	desc = "fortevent.4.d"
+	hidden = yes
+
+	trigger = {
+		has_building = fort_14th
+		has_building = fort_15th
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_building = fort_14th
+		}
+	}
+
+	option = {
+		name = "fortevent.4.a"
+	}
+}

@@ -1,0 +1,648 @@
+#All scopes are country scope
+#All parameters are optional
+
+tax_jewish_privilege = {						
+	icon = privilege_give_money
+	loyalty = -0.10
+	is_valid = {								#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+		AND = {
+			has_estate = jewish_estate
+		}
+	}
+	can_select = {								#Conditions for whether the country is allowed to select the privilege (with conditions for why not displayed)
+		estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 20
+		}
+	}
+	on_granted = {								#Effects executed immediately upon the privilege being taken
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+	}
+	can_revoke = { 								#Conditions for whether the country can revoke the privilege
+		OR = {
+			estate_influence = {
+				estate = jewish_estate
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 50
+				}
+				estate_influence = {
+					estate = estate_burghers
+					influence = 50
+				}
+			}
+		}
+	}
+	on_revoked = {			 					#Effects executed upon the privilege being revoked by the country
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 25
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+	on_invalid = {			 					#Effects executed upon the privilege being removed due to invalidity (is_valid becomes false or the estate is removed)
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+	penalties = {			 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+		yearly_corruption = 0.02
+		global_trade_power = -0.04
+	}
+#	conditional_modifier = { 					#Modifier that are applied if the specified conditions are true.
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#		is_bad = yes/no							#Specifies whether the modifier should be listed as positive or negative in the tooltips.
+#	}
+#	modifier_by_land_ownership = { modifiers } 	#Multiplies the modifier by the % of land owned by the estate.
+	benefits = {								#Special mechanics the privilege enables	
+        global_tax_modifier = 0.2
+		improve_relation_modifier = 0.1
+	}
+	cooldown_years = 10 						#Time limit before which the privilege cannot be revoked
+#	on_cooldown_expires = { effects }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = {								#If above ESTATE_PRIVILEGE_GRANT_THRESHOLD define, AI will try to apply. If below ESTATE_PRIVILEGE_REVOKE_THRESHOLD, AI will try to revoke.
+        factor = 5
+        
+        modifier = {
+            factor = 2.5
+			OR = {
+				dominant_religion = catholic
+				dominant_religion = protestant
+				dominant_religion = reformed
+				dominant_religion = eastern
+				dominant_religion = sunni
+				dominant_religion = shiite
+				dominant_religion = ibadi
+			}
+		}
+		modifier = {
+            factor = 0
+			dominant_religion = jewish
+        }
+		modifier = {
+			factor = 5
+			estate_influence = {
+				estate = estate_burghers
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 0.5
+			estate_influence = {
+				estate = jewish_estate
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {total_base_tax = 20}
+		}
+		modifier = {
+			factor = 5
+			personality = greedy
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				tag = POL
+				tag = PLC
+				tag = ENG
+				tag = GBR
+				tag = DAN
+				tag = NED
+			}
+		}
+    }
+}
+
+autonomy_jewish_privilege = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.20
+	influence = 0.20
+	land_share = 5
+	is_valid = {
+		AND = {
+			has_estate = jewish_estate
+		}
+	}	
+	can_select = {
+		always = yes
+	}	
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+	}
+ 	can_revoke = {
+		NOT = {
+			estate_influence = {
+				estate = jewish_estate
+				influence = 80
+			}
+		}
+	} 					
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+        add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = -20
+			duration = 3653
+		}
+	} 					
+	on_invalid = {
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+        add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = -20
+			duration = 3653
+		}
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -20
+		}
+	} 					
+	penalties = {
+		global_unrest = 1
+	}
+	benefits = {
+		inflation_action_cost = -0.3
+	}
+ #	conditional_modifier = { 					
+ #		trigger = { triggers }
+ #		modifier = { modifiers }
+ #		is_bad = yes/no							
+ #	}
+ #	modifier_by_land_ownership = { modifiers } 	
+ #	mechanics = { mechanics } 					
+	cooldown_years = 20 						
+ #	on_cooldown_expires = { effects }			
+	ai_will_do = {
+        factor = 5
+        
+        modifier = {
+            factor = 0.75
+			OR = {
+				dominant_religion = catholic
+				dominant_religion = protestant
+				dominant_religion = reformed
+				dominant_religion = eastern
+			}
+		}
+		modifier = {
+            factor = 100
+			dominant_religion = jewish
+        }
+		modifier = {
+			factor = 2
+			NOT = {
+				estate_loyalty = {
+					estate = jewish_estate
+					loyalty = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			average_unrest = 3
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				personality = humane
+				personality = just
+			}
+		}
+		modifier = {
+			factor = 5
+			personality = tolerant
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				NOT = {
+					estate_influence = {
+						estate = jewish_estate
+						influence = 20
+					}
+				}
+			}
+			NOT = { has_estate_privilege = autonomy_jewish_privilege }
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = POL
+				tag = PLC
+				tag = ENG
+				tag = GBR
+				tag = DAN
+				tag = NED
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1580
+		}
+		modifier = {
+			factor = 1.2
+			OR = {
+				tag = POL
+				tag = DAN
+				tag = NED
+			}
+		}
+    }									
+}
+ 
+acuse_jewish_privilege = {
+	icon = privilege_tolerance_heathen
+	influence = -0.20
+	loyalty = -0.20
+	is_valid = {
+		AND = {
+			has_estate = jewish_estate
+		}
+	}	
+	can_select = {
+		always = yes
+	}	
+	on_granted = {
+		hidden_effect = { set_country_flag = acuse_flage_j_e }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+ 	can_revoke = {
+	} 					
+	on_revoked = {
+		hidden_effect = { clr_country_flag = acuse_flage_j_e }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+        add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+			duration = 3653
+		}
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 20
+		}
+	} 					
+	on_invalid = {
+		hidden_effect = { clr_country_flag = acuse_flage_j_e }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+        add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+			duration = 3653
+		}
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 5
+		}
+	} 		
+	benefits = {
+		tolerance_own = 1
+	}
+	penalties = {
+		inflation_action_cost = 0.1
+	} 					
+#	conditional_modifier = { 					
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#		is_bad = yes/no							
+#	}
+#	modifier_by_land_ownership = { modifiers } 	
+#	mechanics = { mechanics } 					
+	cooldown_years = 10 						
+#	on_cooldown_expires = { effects }			
+	ai_will_do = {
+        factor = 2
+        
+        modifier = {
+            factor = 2.5
+			OR = {
+				dominant_religion = catholic
+				dominant_religion = protestant
+				dominant_religion = reformed
+			}
+        }
+		modifier = {
+            factor = 0
+			dominant_religion = jewish
+        }
+		modifier = {
+			factor = 5
+			estate_influence = {
+				estate = estate_church
+				influence = 80
+			}
+		}
+		modifier = {
+			factor = 5
+			personality = greedy
+		}
+		modifier = {
+			factor = 1.5
+			personality = cruel
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				personality = humane
+				personality = just
+			}
+		}
+		modifier = {
+			factor = 0.15
+			personality = tolerant
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				tag = POL
+				tag = PLC
+				tag = ENG
+				tag = GBR
+				tag = BOH
+				tag = DAN
+				tag = NED
+			}
+		}
+		modifier = {
+			factor = 0.01
+			is_in_deficit = yes
+		}
+		modifier = {
+			factor = 0.5
+			jewish = 0
+		}
+    }
+}
+
+jewish_trade_exemptions = {
+	icon = privilege_comission_merchant_ships_for_war
+	loyalty = 0.15
+	influence = 0.1
+	max_absolutism = -5
+	is_valid = {
+		AND = {
+			has_estate = jewish_estate
+		}
+	}	
+	can_select = {
+		NOT = {
+			estate_influence = {
+				estate = estate_burghers
+				influence = 70
+			}
+		}
+	}	
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+ 	can_revoke = {
+		OR = {
+			estate_influence = {
+				estate = estate_burghers
+				influence = 50
+			}
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+		}
+	} 					
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 30
+		}
+	} 					
+	on_invalid = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+	} 					
+#	penalties = { yearly_corruption = 0.05 } 					
+#	conditional_modifier = { 					
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#		is_bad = yes/no							
+#	}
+#	modifier_by_land_ownership = { modifiers } 	
+	benefits = { global_trade_power = 0.15 } 					
+	cooldown_years = 20 						
+#	on_cooldown_expires = { effects }			
+	ai_will_do = {
+        factor = 5
+        
+        modifier = {
+            factor = 0.5
+			OR = {
+				dominant_religion = catholic
+				dominant_religion = protestant
+				dominant_religion = reformed
+				dominant_religion = eastern
+			}
+		}
+		modifier = {
+			factor = 0.5
+			estate_influence = {
+				estate = estate_burghers
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 20
+			dominant_religion = jewish
+        }
+		modifier = {
+            factor = 5
+			estate_influence = {
+				estate = jewish_estate
+				influence = 70
+			}
+        }
+		modifier = {
+            factor = 2
+			estate_influence = {
+				estate = estate_nobles
+				influence = 70
+			}
+        }
+		modifier = {
+			factor = 5
+			is_in_deficit = yes
+		}
+		modifier = {
+		factor = 1.2
+			NOT = {
+				years_of_income = 2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+    }
+}
+
+naturalization_rights = {
+	icon = privilege_recruit_minister
+	loyalty = 0.10
+	influence = 0.10
+	is_valid = {
+		is_year = 1670
+	}
+	can_select = {
+		colony = 1
+		is_year = 1670
+	}
+	on_granted = {
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+ 	can_revoke = {
+		NOT = {
+			estate_influence = {
+				estate = jewish_estate
+				influence = 70
+			}
+		}
+	}			
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	} 					
+	on_invalid = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -15
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	} 					
+	penalties = {
+		global_unrest = 1
+		expel_minorities_cost = 10
+	} 					
+#	conditional_modifier = { 					
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#		is_bad = yes/no							
+#	}
+#	modifier_by_land_ownership = { modifiers } 	
+	benefits = { global_colonial_growth = 10 } 					
+	cooldown_years = 30 						
+#	on_cooldown_expires = { effects }			
+	ai_will_do = {
+        factor = 5
+        
+        modifier = {
+            factor = 100
+            dominant_religion = jewish
+        }
+        modifier = {
+            factor = 0.1
+			average_unrest = 3
+        }
+		modifier = {
+            factor = 3
+			estate_influence = {
+				estate = jewish_estate
+				influence = 30
+			}
+        }
+		modifier = {
+			factor = 0.5
+			estate_influence = {
+				estate = estate_church
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 2
+			is_year = 1740
+		}
+		modifier = {
+			factor = 5
+			jewish = 0
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				OR = {
+					tag = ENG
+					tag = GBR
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				tag = ENG
+				tag = GBR
+				tag = NED
+			}
+		}
+    }
+}

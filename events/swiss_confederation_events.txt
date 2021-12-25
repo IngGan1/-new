@@ -1,0 +1,188 @@
+namespace = swiss_confederation
+normal_or_historical_nations = yes
+
+country_event = {
+	id = swiss_confederation.1
+	title = swiss_confederation.1.t
+	desc = swiss_confederation.1.d
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		NOT = {
+			tag = SWI
+		}
+		SWI = {
+			exists = yes
+			is_at_war = no
+			is_subject = no
+		}
+		is_neighbor_of = SWI
+		OR = {
+			primary_culture = swiss
+			tag = VLS
+		}
+		is_subject = no
+		is_at_war = no
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = swiss_confederation.1.a
+		every_owned_province = {
+			add_core = SWI
+			cede_province = SWI
+		}
+		SWI = {
+			country_event = {
+				id = swiss_confederation.2
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = swiss_confederation.2
+	title = swiss_confederation.2.t
+	desc = swiss_confederation.2.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = swiss_confederation.2.a
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = swiss_confederation.3
+	title = swiss_confederation.3.t
+	desc = swiss_confederation.3.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	
+	major = yes
+
+	trigger = {
+		tag = SWI
+		is_year = 1600
+		is_subject = no
+		is_at_war = no
+		is_part_of_hre = yes
+		will_back_next_reform = no
+		is_elector = no
+		is_emperor = no
+		has_global_flag = italy_out_of_HRE
+		emperor = {
+			NOT = {
+				alliance_with = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.5
+			emperor = {
+				is_rival = SWI
+			}
+		}
+	}
+
+	option = {
+		name = swiss_confederation.3.a
+		ai_chance = {
+			factor = 100
+		}
+		set_in_empire = no
+		add_prestige = 25
+		emperor = {
+			country_event = {
+				id = swiss_confederation.4
+				days = 1
+			}
+			add_opinion = {
+				who = SWI
+				modifier = switzerland_left_empire
+			}
+		}
+	}
+
+	option = {
+		name = swiss_confederation.3.b
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -25
+		emperor = {
+			country_event = {
+				id = swiss_confederation.5
+				days = 1
+			}
+			add_opinion = {
+				who = SWI
+				modifier = switzerland_in_empire
+			}
+		}
+	}
+}
+
+country_event = {
+	id = swiss_confederation.4
+	title = swiss_confederation.4.t
+	desc = swiss_confederation.4.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = swiss_confederation.4.a
+		add_imperial_influence = -5
+	}
+}
+
+country_event = {
+	id = swiss_confederation.5
+	title = swiss_confederation.5.t
+	desc = swiss_confederation.5.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = swiss_confederation.5.a
+		add_imperial_influence = 5
+	}
+}
+
+country_event = {
+	id = swiss_confederation.6
+	title = swiss_confederation.6.t
+	desc = swiss_confederation.6.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWI
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = swiss_confederation.6.a
+		add_country_modifier = {
+			name = swiss_prussia
+			duration = 25200
+		}
+	}
+}

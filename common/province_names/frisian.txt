@@ -1,0 +1,4 @@
+100 = "Fryslân"
+1931 = "Eastfryslân"
+3023 = "Grins"
+3218 = "Hüsem"

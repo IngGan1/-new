@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_great_project_seville_cathedral"
+		texturefile = "gfx//interface//great_projects//Viking//great_project_seville.dds"
+	}
+}

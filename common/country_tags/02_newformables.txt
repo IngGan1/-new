@@ -1,0 +1,33 @@
+##################
+##Western Europe##
+##################
+
+# New British Isles
+
+#New Italy
+RIT = "countries/RepublicOfItaly.txt"
+LVE = "countries/Lombardy-Venetia.txt"
+KIT = "countries/KingdomOfItaly.txt"
+
+#New France
+
+#New Burgundy
+#BEL = "countries/Belgium.txt"
+
+#New Franconia & Rheinland
+HNA = "countries/Hesse-Nassau.txt"
+
+##################
+##Eastern Europe##
+##################
+
+#New Balkans
+YUG = "countries/Yugoslavia.txt"
+
+#New Baltic
+PRS = "countries/Pruthenia.txt"
+
+###############
+##Middle East##
+###############
+IDA = "countries/India.txt"

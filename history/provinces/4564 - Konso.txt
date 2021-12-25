@@ -1,0 +1,16 @@
+#4564 - Konso
+
+owner = KSO
+controller = KSO
+add_core = KSO
+culture = oromic
+religion = shamanism
+capital = "Konso"
+is_city = yes
+base_manpower = 2
+trade_goods = cloth
+hre = no
+base_tax = 1
+base_production = 1
+discovered_by = east_african
+discovered_by = muslim

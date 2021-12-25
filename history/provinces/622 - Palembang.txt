@@ -1,0 +1,35 @@
+#622 - Palembang
+
+latent_trade_goods = {
+	oil
+}
+
+owner = PLB
+controller = PLB
+add_core = PLB
+is_city = yes
+culture = musi
+religion = hinduism
+capital = "Palembang"
+trade_goods = spices
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+native_size = 50
+native_ferocity = 9
+native_hostileness = 7
+center_of_trade = 1
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+add_permanent_province_modifier = {
+           name = minor_river_estuary_modifier
+           duration = -1
+}
+
+1405.1.1 = { discovered_by = MNG }
+1509.1.1 = { discovered_by = POR }

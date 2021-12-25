@@ -1,0 +1,87 @@
+# INSTRUCTIONS:
+#
+# condition				A diplomatic action can have any number of condition blocks, each with its own
+#						tooltip, potential and allow section
+#
+# 	tooltip					Sets a custom text string similar to the hardcoded limits
+# 							If no tooltip is scripted, the tooltip for the actual trigger will be shown
+#							Note that the custom tooltip is only shown if the allow trigger is NOT met
+#
+# 	potential				Determines if the trigger is applicable or not
+# 	disallow				Determines if the action is valid or not
+#
+# effect				A diplomatic action can only have one effect block
+
+# ROOT					actor
+# FROM					target
+
+# aiiliance
+allianceaction = {	
+	condition = {
+		potential = {
+			or = {
+				ROOT = {
+					has_country_modifier = boho_world
+				}
+				FROM = {
+					has_country_modifier = boho_world
+				}
+			}
+		}
+		allow = {
+		    always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_RIVAL
+		potential = {
+			is_subject_of_type = sister_republic
+			overlord = {
+				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_AS_OVERLORD_RIVAL
+		potential = {
+			FROM = {
+				is_subject_of_type = sister_republic
+				overlord = {
+					is_rival = ROOT
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_RIVAL
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = sister_republic
+				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_OF_SISTER_REPUBLIC_AS_RIVAL
+		potential = {
+			FROM = {
+				any_subject_country = {
+					is_subject_of_type = sister_republic
+					is_rival = ROOT
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}

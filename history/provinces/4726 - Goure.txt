@@ -1,0 +1,15 @@
+# No previous file for Goure
+
+owner = KBO
+controller = KBO
+add_core = KBO
+is_city = yes
+culture = kanuri
+religion = sunni
+capital = "Goure"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+discovered_by = sub_saharan

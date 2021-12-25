@@ -1,0 +1,16 @@
+# Special countries...
+
+# Patch 1.0 | Days of the Burning Sun #
+LML = "countries/LombardLeague.txt"
+LVN = "countries/LombardyVenetia.txt"
+
+# Patch 1.1 | Nights of the Sacred Moon #
+ANV = "countries/Angevin.txt"
+RRR = "countries/RussianRepublic.txt"
+NSE = "countries/NorthSeaEmpire.txt"
+BGM = "countries/Belgium.txt"
+AUB = "countries/AustriaBavaria.txt"
+
+# Path 1.2 | Tales at Dawn #
+ILY = "countries/Illyria.txt"
+LTE = "countries/LatinEmpire.txt"

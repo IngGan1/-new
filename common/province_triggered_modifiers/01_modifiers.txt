@@ -1,0 +1,36 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+
+###########################################
+# Just random test modifier
+###########################################
+heian_kyo = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			NOT = { tag = JAP }
+			NOT = { tag = RYU }
+			culture_group = japanese_g
+			government = monarchy
+		}
+	}
+
+	prestige = 1
+	advisor_pool = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

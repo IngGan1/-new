@@ -1,0 +1,5 @@
+government = monarchy
+capital = 735
+add_harmonized_religion = mahayana
+technology_group = chinese
+primary_culture = japanese

@@ -1,0 +1,10 @@
+# Barents Sea
+
+
+
+discovered_by = eastern
+discovered_by = SWE
+discovered_by = NOR
+discovered_by = DAN
+discovered_by = NOV
+

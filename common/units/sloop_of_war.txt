@@ -1,0 +1,12 @@
+#sloop-of-war
+type = transport
+
+hull_size = 48
+base_cannons = 16
+blockade = 5
+
+sail_speed = 10
+
+sailors = 120
+
+sprite_level = 5

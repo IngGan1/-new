@@ -1,0 +1,15 @@
+inspected_mines = {
+	development_cost = -0.1
+}
+
+uninspected_mines = {
+	development_cost = 0.1
+}
+
+catacombs_of_paris = {
+	prestige = 1
+}
+
+reformed_toll_system = {
+	global_tax_modifier = 0.05
+}

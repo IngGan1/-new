@@ -1,0 +1,19 @@
+#1166 - Loango
+
+owner = KAK
+controller = KAK
+add_core = KAK
+culture = kongolese
+religion = shamanism #Fetishism
+capital = "Loango"
+trade_goods = livestock
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african
+discovered_by = sub_saharan
+
+
+1481.1.1 = { discovered_by = POR } # Bartolomeu Dias

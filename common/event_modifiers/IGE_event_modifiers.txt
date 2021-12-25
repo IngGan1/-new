@@ -1,0 +1,29 @@
+IGE_Jihad = {
+	monthly_piety = -0.0025
+}
+IGE_Legalism = {
+	monthly_piety = 0.0025
+}
+Roman_Castrum = {
+	local_monthly_devastation = -0.10
+}
+benign_legislation_act = {
+	global_tax_modifier = 0.20
+}
+IGE_disarmament_modifier = {
+	land_forcelimit_modifier = -0.5
+	naval_forcelimit_modifier = -0.5
+	global_regiment_cost = 0.5
+	global_ship_cost = 0.5
+	drill_gain_modifier = -1
+	discipline = -0.10
+	mil_tech_cost_modifier = 0.50
+}
+IGE_Compromised_Logistics_modifier = {
+	global_supply_limit_modifier = -0.33
+	land_morale = -0.05
+	land_attrition = 0.25
+}
+IGE_efficient_bureaucracy = {
+	administrative_efficiency = 0.05
+}

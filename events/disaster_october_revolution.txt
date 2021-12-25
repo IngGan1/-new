@@ -1,0 +1,142 @@
+
+########################################
+# October Revolution                   #
+########################################
+
+namespace = october_revolution
+
+# The General Estates
+country_event = {
+	id = october_revolution.1
+	title = "october_revolution.1.t"
+	desc = "october_revolution.1.d"
+	picture = LIBERUM_VETO_eventPicture
+
+	is_triggered_only = yes	
+	major = yes
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		random_owned_province = { 
+			limit = {
+				fort_level = 1
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 5		
+				win = yes
+				unrest = 10
+			}
+		}
+		random_owned_province = { 
+			limit = {
+				fort_level = 1
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 5		
+				win = yes
+				unrest = 10
+			}
+		}
+		random_owned_province = { 
+			limit = {
+				fort_level = 1
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 5		
+				win = yes
+				unrest = 10
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = yes
+			}
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 8
+			}
+			
+		}
+		add_stability = -3
+		set_country_flag = had_revolution
+	}
+
+	option = {		# Dire times are ahead of us
+		name = "october_revolution.1.a"
+		add_prestige = -10
+	}
+}
+
+# The October Revolution
+country_event = {
+	id = october_revolution.2
+	title = "october_revolution.2.t"
+	desc = "october_revolution.2.d"
+	picture = REVOLUTION_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			capital_scope = {
+				controlled_by = REB
+			}
+			government = republic
+		}
+		NOT = { has_reform = revolutionary_republic }
+		NOT = { has_reform = revolutionary_empire }
+		OR = {
+			has_first_revolution_started = yes
+			has_dlc = "Art of War"
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				government = monarchy
+			}
+			set_country_flag = SVU_was_monarchy
+		}
+	}
+	
+	option = {		# A Revolution has struck us!
+		name = "october_revolution.2.a"
+		disband_rebels = revolutionary_rebels
+		add_stability_or_adm_power = yes
+		change_tag = SVU
+		define_ruler = {
+			name = "Vladimir"
+			dynasty = "Lenin"
+			adm = 5
+			dip = 5
+			mil = 5
+			age = 45
+			fixed = yes
+		}
+		set_government_rank = 3
+		change_government_to_republic = yes
+		add_government_reform = proletarian_dictatorship
+		swap_non_generic_missions = yes
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}	
+	}
+}

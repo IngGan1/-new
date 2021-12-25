@@ -1,0 +1,121 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Generic Riot
+	id = jewish_estates_events.33
+	title = "jewish_estates_events.33.t"
+	desc = "jewish_estates_events.33.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		AND = {
+			has_estate = jewish_estate
+			estate_influence = {
+				estate = estate_church
+				influence = 30
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6000
+	}
+	
+	option = {
+		name = "G_GRIOT_J_E"
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_treasury = -25
+	}
+	option = {
+		name = "G_BRIOT_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -20
+		}
+	}	
+}
+
+country_event = {	#Generic Good
+	id = jewish_estates_events.34
+	title = "jewish_estates_events.34.t"
+	desc = "jewish_estates_events.34.d"
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		AND = {
+			has_estate = jewish_estate
+			estate_influence = {
+				estate = jewish_estate
+				influence = 20
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = {
+		name = "G_GOOD_J_E"
+		random_core_province = { add_base_production = 1 }
+		hidden_effect = {
+			add_estate_influence_modifier = {
+				estate = jewish_estate
+				desc = jewish_influence_modifier
+				influence = 10
+				duration = 3643
+			}
+			change_estate_land_share = {
+				estate = jewish_estate
+				share = 5
+			}
+		}
+	}
+}
+
+country_event = {	#Let them back
+	id = jewish_estates_events.35
+	title = "jewish_estates_events.35.t"
+	desc = "jewish_estates_events.35.d"
+	picture = EUROPEAN_REFUGEES_eventPicture
+	
+	trigger = {
+		AND = {
+			has_estate = jewish_estate
+			has_country_flag = exile_jews_j_e
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+	}
+	
+	option = {
+		name = "G_REENTER_J_E"
+		change_estate_land_share = {
+			estate = jewish_estate
+			share = 5
+		}
+		clr_country_flag = exile_jews_j_e
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 20
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = {
+		name = "G_EXILE_J_E"
+		add_papal_influence = 5
+		add_adm_power = -50
+		ai_chance = { factor = 50 }
+	}
+}

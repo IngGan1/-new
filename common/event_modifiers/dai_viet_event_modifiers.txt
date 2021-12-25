@@ -1,0 +1,74 @@
+vietnamese_warlord_era = {
+	legitimacy = -1
+	war_exhaustion = 0.02
+}
+
+nam_tien_1 = {
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.02
+}
+
+nam_tien_2 = {
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.02
+}
+
+vietnamese_claim_to_mandate = {
+	core_creation = -0.25
+	ae_impact = -0.25
+}
+
+conquered_the_straits_of_malacca = {
+	trade_efficiency = 0.15
+}
+
+the_empress_dowager = {
+	legitimacy = -1
+	stability_cost_modifier = 0.50
+}
+
+zheng_he_repressed = {
+	naval_forcelimit_modifier = -0.50
+	heavy_ship_cost = 1
+	light_ship_cost = 1
+	galley_cost = 1
+	transport_cost = 1
+	navy_tradition = -1
+	trade_efficiency = -0.20
+	stability_cost_modifier = -0.25
+	diplomatic_reputation = -1
+	global_sailors_modifier = -0.50
+}
+
+zheng_he_legacy = {
+	naval_forcelimit_modifier = 0.50
+	navy_tradition = 1
+	naval_morale = 0.20
+	diplomatic_reputation = 1
+	stability_cost_modifier = 2
+	global_sailors_modifier = 0.50
+}
+
+zheng_he_balanced = {
+	naval_forcelimit_modifier = -0.25
+	heavy_ship_cost = 0.5
+	light_ship_cost = 0.5
+	galley_cost = 0.5
+	transport_cost = 0.5
+	navy_tradition = -0.5
+	trade_efficiency = -0.10
+}
+
+the_might_of_esen_choros = {
+	shock_damage = 0.1
+	land_morale = 0.2
+	reduced_liberty_desire = 100
+	manpower_recovery_speed = 0.25
+	land_maintenance_modifier = -0.2
+}
+
+the_new_khanate = {
+	diplomatic_annexation_cost = -0.5
+	diplomatic_reputation = 1
+	province_warscore_cost = -0.25
+}

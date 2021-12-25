@@ -1,0 +1,5 @@
+# Swiss Mercenaries
+swiss_prussia = {
+	discipline = 0.1
+	infantry_power = 0.2
+}

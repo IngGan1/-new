@@ -1,0 +1,870 @@
+FEUDAL_BAKUFU_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		NOT = { tag = JAP }
+	}
+	trigger = {
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		any_owned_province = { has_province_modifier = heian_kyo }
+		has_reform = shogunate
+	}
+}
+
+FEUDAL_BAKUFU_bakufuM2 = {
+	potential = {
+		OR = {
+			has_reform = shogunate
+			AND = {
+				has_country_modifier = bakufu_reform_6
+				tag = JAP
+			}
+		}
+	}
+	trigger = {
+		has_country_modifier = bakufu_reform_6
+		any_owned_province = { has_province_modifier = heian_kyo }
+		OR = {
+			has_reform = shogunate
+			tag = JAP
+		}
+	}
+	 	legitimacy = 0.5
+		prestige = 0.5
+		yearly_corruption = -0.1
+		administrative_efficiency = 0.1
+}
+
+
+no_war_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+	}
+	trigger = {
+		NOT = {
+			calc_true_if = {
+				all_province = {
+					region = japan_region
+					has_siege = yes
+				}
+				amount = 1
+			}
+		}
+	}
+	 	legitimacy = 1.2
+}
+
+shogunate_low_prestige_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+	}
+	trigger = {
+		NOT = { prestige = -10 }
+	}
+	 	legitimacy = -2.4
+}
+
+#passive_participation_bakufuM = {
+#	potential = {
+#		has_reform = daimyo
+#		any_country = {
+#			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+#			overlord_of = ROOT
+#		}
+#	}
+#	trigger = {
+#		any_country = {
+#			overlord_of = ROOT
+#			NOT = { legitimacy = 60 }
+#		}
+#		custom_trigger_tooltip = {
+#			tooltip = BakufuM_tooltip
+#			any_country = {
+#				has_country_modifier = FEUDAL_BAKUFU_bakufuM
+#				any_country = {
+#					has_country_flag = cb_punish_daimyo_target
+#					war_with = PREV
+#				}
+#			}
+#		}
+#		liberty_desire = 40
+#	}
+#	 	liberty_desire = 10
+#}
+
+
+indep._daimyo_bakufuM = {
+	potential = {
+		has_reform = daimyo
+		any_country = {
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			overlord_of = ROOT
+		}
+	}
+	trigger = { liberty_desire = 50 }
+
+	liberty_desire = 5
+	land_forcelimit = 3
+}
+
+
+BAKUFU_Authority_number_of_daimyos_1 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 6
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 5
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 6
+			}
+		}
+	}
+	legitimacy = 0.12
+}
+
+BAKUFU_Authority_number_of_daimyos_2 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 6
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 7
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 6
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 7
+			}
+		}
+	}
+	legitimacy = 0.24
+}
+
+BAKUFU_Authority_number_of_daimyos_3 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 7
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 8
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 7
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 8
+			}
+		}
+	}
+	legitimacy = 0.36
+}
+
+BAKUFU_Authority_number_of_daimyos_4 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 8
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 9
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 8
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 9
+			}
+		}
+	}
+	legitimacy = 0.48
+}
+
+BAKUFU_Authority_number_of_daimyos_5 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 9
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 10
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 9
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 10
+			}
+		}
+	}
+	legitimacy = 0.60
+}
+
+BAKUFU_Authority_number_of_daimyos_6 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 10
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 11
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 10
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 11
+			}
+		}
+	}
+	legitimacy = 0.72
+}
+
+BAKUFU_Authority_number_of_daimyos_7 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 11
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 12
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 11
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 12
+			}
+		}
+	}
+	legitimacy = 0.84
+}
+
+BAKUFU_Authority_number_of_daimyos_8 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 12
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 13
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 12
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 13
+			}
+		}
+	}
+	legitimacy = 0.96
+}
+
+BAKUFU_Authority_number_of_daimyos_9 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 13
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 14
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 13
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { is_subject_of = ROOT has_reform = daimyo }
+				amount = 14
+			}
+		}
+	}
+	legitimacy = 1.08
+}
+
+BAKUFU_Authority_number_of_daimyos_10 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 14
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { is_subject_of = ROOT has_reform = daimyo }
+			amount = 14
+		}
+	}
+	legitimacy = 1.20
+}
+
+
+
+
+
+
+
+
+
+
+BAKUFU_disloyal_daimyos_1 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 2
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 1
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 2
+			}
+		}
+	}
+	legitimacy = -0.12
+}
+
+BAKUFU_disloyal_daimyos_2 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 3
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 3
+			}
+		}
+	}
+	legitimacy = -0.24
+}
+
+BAKUFU_disloyal_daimyos_3 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 3
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 4
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 3
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 4
+			}
+		}
+	}
+	legitimacy = -0.36
+}
+
+BAKUFU_disloyal_daimyos_4 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 4
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 5
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 4
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 5
+			}
+		}
+	}
+	legitimacy = -0.48
+}
+
+BAKUFU_disloyal_daimyos_5 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 5
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 6
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 5
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 6
+			}
+		}
+	}
+	legitimacy = -0.60
+}
+
+BAKUFU_disloyal_daimyos_6 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 6
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 7
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 6
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 7
+			}
+		}
+	}
+	legitimacy = -0.72
+}
+
+BAKUFU_disloyal_daimyos_7 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 7
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 8
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 7
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 8
+			}
+		}
+	}
+	legitimacy = -0.84
+}
+
+BAKUFU_disloyal_daimyos_8 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 8
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 9
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 8
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 9
+			}
+		}
+	}
+	legitimacy = -0.96
+}
+
+BAKUFU_disloyal_daimyos_9 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 9
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 10
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 9
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+				amount = 10
+			}
+		}
+	}
+	legitimacy = -1.08
+}
+
+BAKUFU_disloyal_daimyos_10 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 10
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = daimyo is_subject_of = ROOT NOT = { ai_attitude = { who = ROOT attitude = attitude_loyal } } }
+			amount = 10
+		}
+	}
+	legitimacy = -1.20
+}
+
+
+
+
+
+BAKUFU_indep._daimyos_1 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 2
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 1
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 2
+			}
+		}
+	}
+	legitimacy = -0.18
+}
+
+BAKUFU_indep._daimyos_2 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 3
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 3
+			}
+		}
+	}
+	legitimacy = -0.36
+}
+
+BAKUFU_indep._daimyos_3 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 3
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 4
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 3
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 4
+			}
+		}
+	}
+	legitimacy = -0.54
+}
+
+BAKUFU_indep._daimyos_4 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 4
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 5
+			}
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 4
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+				amount = 5
+			}
+		}
+	}
+	legitimacy = -0.72
+}
+
+BAKUFU_indep._daimyos_5 = {
+	potential = {
+		has_reform = shogunate
+		has_country_modifier = FEUDAL_BAKUFU_bakufuM
+		NOT = { tag = JAP }
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 5
+		}
+	}
+	trigger = {
+		calc_true_if = {
+			all_country = { has_reform = indep_daimyo NOT = { is_subject_of = ROOT } capital_scope = { region = japan_region } }
+			amount = 5
+		}
+	}
+	legitimacy = -0.90
+}
+
+liberate_japanese_war_shogun = {
+
+	potential = {
+		is_subject = no
+		is_in_war = {
+			attackers = ROOT
+			casus_belli = cb_liberate_japanese
+		}
+	}
+	trigger = {
+		is_in_war = {
+			casus_belli = cb_liberate_japanese
+		}
+	}
+
+	vassal_income = -0.05
+}

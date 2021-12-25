@@ -1,0 +1,117 @@
+# INSTRUCTIONS:
+#
+# condition				A diplomatic action can have any number of condition blocks, each with its own
+#						tooltip, potential and allow section
+#
+# 	tooltip					Sets a custom text string similar to the hardcoded limits
+# 							If no tooltip is scripted, the tooltip for the actual trigger will be shown
+#							Note that the custom tooltip is only shown if the allow trigger is NOT met
+#
+# 	potential				Determines if the trigger is applicable or not
+# 	disallow				Determines if the action is valid or not
+#
+# effect				A diplomatic action can only have one effect block
+
+# ROOT					actor
+# FROM					target
+
+# aiiliance
+#allianceaction = {
+	condition = {
+		tooltip = HREPREWESTPHALIA
+		potential = {
+			OR = {
+				AND = {
+					FROM = {
+						is_part_of_hre = no
+						OR = {
+							NOT = { dynasty = ROOT }
+							government = theocracy
+						}
+					}
+					is_part_of_hre = yes
+				}
+				AND = {
+					FROM = {
+						is_part_of_hre = yes
+						OR = {
+							NOT = { dynasty = ROOT }
+							government = theocracy
+						}
+					}
+					is_part_of_hre = no
+				}
+			}
+		}
+		allow = {
+			OR = {
+				is_emperor = yes
+				FROM = { is_emperor = yes }
+				hre_religion_treaty = yes
+			}
+		}
+	}
+	condition = {
+		tooltip = HREPREWESTPHALIA
+		potential = {
+			OR = {
+				AND = {
+					FROM = {
+						is_emperor = yes
+					}
+					is_part_of_hre = yes
+					is_elector = no
+				}
+				AND = {
+					FROM = {
+						is_part_of_hre = yes
+						is_elector = no
+					}
+					is_emperor = yes
+				}
+			}
+		}
+		allow = {
+			hre_religion_treaty = yes
+		}
+	}
+	condition = {
+		tooltip = IMPERIALFREECITY
+		potential = {
+			has_reform = free_city
+		}
+		allow = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+	}
+	condition = {
+		tooltip = IMPERIALFREECITY
+		potential = {
+			FROM = {
+				has_reform = free_city
+			}
+		}
+		allow = {
+			has_reform = free_city
+		}
+	}
+}
+allianceaction = {	
+	condition = {
+		potential = {
+			or = {
+				ROOT = {
+					tag = BOO
+				}
+				FROM = {
+					tag = BOO
+				}
+			}
+		}
+		allow = {
+		    always = no
+		}
+	}
+}

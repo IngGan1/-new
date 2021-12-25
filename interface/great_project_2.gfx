@@ -1,0 +1,141 @@
+spriteTypes = {
+
+	spriteType = {#泰山
+		name = "GFX_great_project_Mount_tai"	
+		texturefile = "gfx//interface//great_projects//great_project_Mount_tai.dds"
+	}
+
+	spriteType = {#大雁塔
+	name = "GFX_great_project_Giant_Wild_Goose_Pagoda"	
+	texturefile = "gfx//interface//great_projects//great_project_Giant_Wild_Goose_Pagoda.dds"
+    }
+
+	spriteType = {#都江堰
+	name = "GFX_great_project_Dujiangyan_irrigation_system"	
+	texturefile = "gfx//interface//great_projects//great_project_Dujiangyan_irrigation_system.dds"
+    }
+
+	spriteType = {#南故宫
+	name = "GFX_great_project_The_Forbidden_City_of_Nanjing"	
+	texturefile = "gfx//interface//great_projects//great_project_The_Forbidden_City_of_Nanjing.dds"
+    }
+
+	spriteType = {#岳麓书院
+	name = "GFX_great_project_Yuelu_Academy"	
+	texturefile = "gfx//interface//great_projects//great_project_Yuelu_Academy.dds"
+    }
+
+	spriteType = {#景福宫
+	name = "GFX_great_project_Gyeongbokgung"	
+	texturefile = "gfx//interface//great_projects//great_project_Gyeongbokgung.dds"
+    }
+
+	spriteType = {#勃兰登堡门
+	name = "GFX_great_project_Brandenburg_Gate"	
+	texturefile = "gfx//interface//great_projects//great_project_Brandenburg_Gate.dds"
+    }
+
+	spriteType = {#布拉格城堡
+	name = "GFX_great_project_Prague_Castle"	
+	texturefile = "gfx//interface//great_projects//great_project_Prague_Castle.dds"
+    }
+
+	spriteType = {#康斯坦丁尼耶竞技场
+	name = "GFX_great_project_Hippodrome_of_Constantinople"	
+	texturefile = "gfx//interface//great_projects//great_project_Hippodrome_of_Constantinople.dds"
+    }
+
+	spriteType = {#狄奥多西
+	name = "GFX_great_project_Walls_of_Constantinople"	
+	texturefile = "gfx//interface//great_projects//great_project_Walls_of_Constantinople.dds"
+    }
+
+	spriteType = {#亚历山大灯塔
+	name = "GFX_great_project_Lighthouse_of_Alexandria"	
+	texturefile = "gfx//interface//great_projects//great_project_Lighthouse_of_Alexandria.dds"
+    }
+
+	spriteType = {#威尼斯总督宫
+	name = "GFX_great_project_Palazzo_Ducale"	
+	texturefile = "gfx//interface//great_projects//great_project_Palazzo_Ducale.dds"
+    }
+
+	spriteType = {#居鲁士之墓
+	name = "GFX_great_project_Cyrus_tomb"	
+	texturefile = "gfx//interface//great_projects//great_project_Cyrus_tomb.dds"
+    }
+
+	spriteType = {#智慧宫
+	name = "GFX_great_project_House_of_Wisdom"	
+	texturefile = "gfx//interface//great_projects//great_project_House_of_Wisdom.dds"
+    }
+	
+	spriteType = {#塞维利亚大教堂
+	name = "GFX_great_project_The_Cathedral_of_Seville"	
+	texturefile = "gfx//interface//great_projects//great_project_The_Cathedral_of_Seville.dds"
+    }
+	spriteType = {#米兰大教堂
+	name = "GFX_great_project_Churchof_Duomo"	
+	texturefile = "gfx//interface//great_projects//great_project_Churchof_Duomo.dds"
+    }
+	
+	spriteType = {#圣约翰教堂
+	name = "GFX_great_project_St_John_s_Church"	
+	texturefile = "gfx//interface//great_projects//great_project_St_John_s_Church.dds"
+    }
+
+	spriteType = {#圣十字圣殿
+	name = "GFX_great_project_Basilica_di_Santa_Croce"	
+	texturefile = "gfx//interface//great_projects//great_project_Basilica_di_Santa_Croce.dds"
+    }
+
+	spriteType = {#兀鲁伯天文台
+	name = "GFX_great_project_Ulugh_Beg_Observatory"	
+	texturefile = "gfx//interface//great_projects//great_project_Ulugh_Beg_Observatory.dds"
+    }
+	
+	spriteType = {#大报恩寺
+	name = "GFX_great_project_Porcelain_Tower_of_Nanjing"	
+	texturefile = "gfx//interface//great_projects//great_project_Porcelain_Tower_of_Nanjing.dds"
+    }
+
+	spriteType = {#潘诺恩哈尔姆修道院
+	name = "GFX_great_project_Pannonhalma_Abbey"	
+	texturefile = "gfx//interface//great_projects//great_project_Pannonhalma_Abbey.dds"
+    }
+
+	spriteType = {#桑科雷清真寺
+	name = "GFX_great_project_Sankore_mosque"	
+	texturefile = "gfx//interface//great_projects//great_project_Sankore_mosque.dds"
+    }
+
+	spriteType = {#格罗策城堡
+	name = "GFX_great_project_Grodziec_Castle"	
+	texturefile = "gfx//interface//great_projects//great_project_Grodziec_Castle.dds"
+    }
+
+	spriteType = {#乔伊尼克城堡
+	name = "GFX_great_project_Chojnik_Castle"	
+	texturefile = "gfx//interface//great_projects//great_project_Chojnik_Castle.dds"
+    }
+
+	spriteType = {#耶路撒冷
+	name = "GFX_great_project_Jerusalem"	
+	texturefile = "gfx//interface//great_projects//great_project_Jerusalem.dds"
+    }
+
+	spriteType = {#麦加
+	name = "GFX_great_project_Mekka"	
+	texturefile = "gfx//interface//great_projects//great_project_Mekka.dds"
+    }
+
+	
+
+	spriteType = {#讨厌的奇观限制
+		name = "NO_More_spectacular"
+		texturefile = "gfx/event_pictures/event_pictures_NO_More_spectacular/NO_More_spectacular.dds"
+		alwaystransparent = yes
+	}
+}
+
+

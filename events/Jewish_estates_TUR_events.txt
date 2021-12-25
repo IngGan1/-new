@@ -1,0 +1,30 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Shabbatai Zevi
+	id = jewish_estates_events.27
+	title = "jewish_estates_events.27.t"
+	desc = "jewish_estates_events.27.d"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		AND = {
+			tag = TUR
+			is_year = 1650
+			NOT = { is_year = 1680 }
+		}
+	}
+
+	option = {		# Leave
+		name = "MESSIAH_J_E"
+		define_advisor = {
+			type = treasurer
+			name = "Sabbatai Zevi"
+			skill = 1
+		}
+		add_prestige = 10
+	}
+}

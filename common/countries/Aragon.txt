@@ -1,0 +1,114 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 190  70  70  }
+
+revolutionary_colors = { 4  8  4 }
+
+historical_score = 400
+
+historical_idea_groups = {
+	entwicklung0
+	maritime_ideas
+	quantity_ideas
+	religious_ideas
+	trade_ideas
+	economic_ideas
+	gross0
+	offensive_ideas
+	generalstab0
+	staatsverwaltung0
+	justiz0
+	propaganda0
+	gesellschaft0
+	fire0
+	assimilation0
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	spanish_tercio
+	french_caracolle
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Ferran #0" = 40
+	"Alfons #4" = 20
+	"Joan #1" = 20
+	"Carles #0" = 10
+	"Pere #4" = 5
+	"Sanne#1" = 5
+	"Enric #0" = 5
+	"Jaume #2" = 5
+	"Marteo#0" = 20
+	"Andreu #0" = 0
+	"Antoni #0" = 0
+	"Arnau #0" = 0
+	"Ausion #0" = 0
+	"Bartomeu #0" = 0
+	"Bernat #0" = 0
+	"Caar #0" = 0
+	"Dominec #0" = 0
+	"Felip #0" = 0
+	"Francesc #0" = 0
+	"Frederic #0" = 0
+	"Gaspar #0" = 0
+	"Gil #0" = 0
+	"Gondol #0" = 0
+	"Guillem #0" = 0
+	"Hug #0" = 0
+	"Ignasi #0" = 0
+	"Ildefons #0" = 0
+	"Jeroni #0" = 0
+	"Jordi #0" = 0
+	"Josep #0" = 0
+	"Llorene #0" = 0
+	"Llupe #0" = 0
+	"Pere Llu #0" = 0
+	"Pondo #0" = 0
+	"Ramon #0" = 0
+	"Roderic #0" = 0
+	"Simeo #0" = 0
+	"Toma #0" = 0
+	"Danac #0" = 0
+	"Garcio #0" = 0
+	
+	"Alejandra #0" = -5
+	"Candela #0" = -5
+	"Estrella #0" = -5
+}
+
+leader_names = {
+	"de Alagon" Amic d'Aragon "Arbuo" d'estria "de Ayerbe"
+	Balaguer Barcelona "de Belchite" Berguedo Bielsa "de Borja" "de Cabrera" Cajal Colom
+	Domenec d'Empesies "Fernandez de Hijar" Ferrer "Folc de Cardona" Franco
+	Galindo "Gil de Biedma" Gisbert "de Guimer" "de Gotor" "de Gurrea" d'Ixer Loaisa "de Luna"
+	Martorell "de Montcada" Monteagudo "Muntaner" Oliva "Ordove d'Ors" Ped "Perez de Coloma" Piquer
+	"de Requesens" "de la Riba" Ripoll "de Ripperde" 
+	Sastre "d'Urgell Valla" Veldre "Vilamare" Villarroya "de Zaporta" 
+}
+
+ship_names = {
+	"Blanca Aurora" "Sant Jacob" Flama Lleona Falcon "La Bonaventura" "Sant Antoni" 
+	"Sant Miquel" "Sant Bernat" "Sant Francesc" "Santa Ágata" "Santa Eul?ia" 
+	"Sant Gabriel" "Sant Climent" "Sant Jordi" "La Reial" Trinitat "Santa Creu" 
+	"Santa Maria" "Santa Caterina" "Sant Joan Evangelista" "Santa B?bara" 
+	"Sant Pere de Roma" "La Gasela" "Santa Magdalena" "Sant Ventor" Magnana 
+	"Santa Ventura" "Santa Coloma" "Sant Ambroa" "La Garsa"  
+}
+
+army_names = {
+	"Ter?de $PROVINCE$"
+}

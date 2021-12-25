@@ -1,0 +1,9 @@
+#1788 - Arunachal
+
+
+
+
+discovered_by = indian
+discovered_by = chinese
+
+1721.1.1 = { discovered_by = SPA }

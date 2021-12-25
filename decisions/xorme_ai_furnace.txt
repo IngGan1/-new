@@ -1,0 +1,93 @@
+country_decisions = {
+#################
+##BUILD FURNACE##
+#################
+	xorme_ai_furnace = {
+		potential = {
+			ai = yes
+			has_institution = enlightenment
+		}
+
+		allow = {
+			any_owned_province = {
+				or = { trade_goods = coal trade_goods = rubber }
+				has_manufactory_trigger = yes
+				AND = {
+					enlightenment = 100
+					NOT = { has_building = furnace }
+				}
+				OR = {
+					development = 20
+					owner = { innovativeness = 20 }
+				}
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					AND = {
+						or = { trade_goods = coal trade_goods = rubber }
+						has_manufactory_trigger = yes
+						NOT = { has_building = furnace }
+					}
+				}
+				remove_building = tradecompany
+				remove_building = farm_estate
+				remove_building = plantations
+				remove_building = textile
+				remove_building = weapons
+				remove_building = wharf
+				remove_building = mills
+				add_building = furnace
+			}
+		}
+		ai_will_do = {
+			factor = 1.0
+		}
+	}
+	xorme_ai_furnace2 = {
+		potential = {
+			ai = yes
+			has_institution = enlightenment
+		}
+
+		allow = {
+			any_owned_province = {
+				trade_goods = oil
+				has_manufactory_trigger = yes
+				AND = {
+					enlightenment = 100
+					NOT = { has_building = furnace }
+				}
+				OR = {
+					development = 20
+					owner = { innovativeness = 20 }
+				}
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					AND = {
+						trade_goods = oil
+						has_manufactory_trigger = yes
+						NOT = { has_building = furnace }
+					}
+				}
+				remove_building = tradecompany
+				remove_building = farm_estate
+				remove_building = plantations
+				remove_building = textile
+				remove_building = weapons
+				remove_building = wharf
+				remove_building = mills
+				add_building = oil_well
+			}
+		}
+		ai_will_do = {
+			factor = 1.0
+		}
+	}
+}

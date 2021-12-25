@@ -1,0 +1,436 @@
+namespace = flavor_japjjab
+normal_or_historical_nations = yes
+
+#Main Title (when become shogunate)
+country_event = {
+	id = flavor_jap.62
+	
+	title = flavor_jap.62.t
+	desc = flavor_jap.62.d
+
+	picture = COURT_eventPicture
+	
+	trigger = {
+		has_reform = shogunate
+		NOT = { has_country_flag = g_shogun_flag }
+		NOT = { has_country_flag = g_kampaku_flag }
+		NOT = { has_country_flag = g_daijo_daijin_flag }
+		NOT = { has_country_flag = g_reject_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	# Shogun
+	option = { 
+		name = flavor_jap.62.a
+		trigger = {
+			NOT = { dynasty = "Toyotomi" }
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 1.5
+				dynasty = "Tokugawa"
+			}
+			modifier = {
+				factor = 1.5
+				tag = ASK
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = conqueror_personality
+			}
+		}
+		set_country_flag = g_shogun_flag
+		add_prestige = 10
+		add_mil_power = 50
+		if = {
+			limit = {
+				num_of_cities = 30
+				prestige = 90
+				legitimacy = 90
+			}
+			add_prestige = 20
+			add_mil_power = 100
+			add_adm_power = 50
+			add_dip_power = 50
+			add_estate_nobles_loyalty_effect = yes
+		}
+	}
+	
+	# Kampaku
+	option = { 
+		name = flavor_jap.62.b
+		trigger = {
+			OR = {
+				prestige = 20
+				dynasty = "Toyotomi"
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 6
+				dynasty = "Toyotomi"
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = conqueror_personality
+			}
+		}
+		set_country_flag = g_kampaku_flag
+		add_prestige = 10
+		add_dip_power = 50
+		if = {
+			limit = {
+				num_of_cities = 30
+				prestige = 90
+				legitimacy = 90
+				NOT = { dynasty = "Toyotomi" }
+			}
+			add_prestige = 20
+			add_dip_power = 100
+			add_adm_power = 50
+			add_mil_power = 50
+			add_estate_nobles_loyalty_effect = yes
+		}
+	}
+	
+	# Daijo Daijin
+	option = { 
+		name = flavor_jap.62.c
+		trigger = {
+			prestige = 20
+		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				ruler_has_personality = conqueror_personality
+			}
+		}
+		set_country_flag = g_daijo_daijin_flag
+		add_prestige = 10
+		add_adm_power = 50
+		if = {
+			limit = {
+				num_of_cities = 30
+				prestige = 90
+				legitimacy = 90
+				NOT = { dynasty = "Toyotomi" }
+			}
+			add_prestige = 20
+			add_adm_power = 100
+			add_dip_power = 50
+			add_mil_power = 50
+			add_estate_nobles_loyalty_effect = yes
+		}
+	}
+	
+	# Reject Title
+	option = { 
+		name = flavor_jap.62.e
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				NOT = { ruler_has_personality = conqueror_personality }
+			}
+			modifier = {
+				factor = 5
+				ruler_has_personality = conqueror_personality
+			}
+			modifier = {
+				factor = 5
+				dynasty = "Oda"
+			}
+		}
+		set_country_flag = g_reject_flag
+		add_prestige = 10
+	}
+	
+}
+
+#Taisei Hokan?
+country_event = {
+	id = flavor_jap.63
+	
+	title = flavor_jap.63.t
+	desc = flavor_jap.63.d
+
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	#Return the regime
+	option = { 
+		name = flavor_jap.63.a
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 1.5
+				NOT = { ruler_has_personality = conqueror_personality }
+			}
+			modifier = {
+				factor = 0
+				ruler_has_personality = conqueror_personality
+			}
+			modifier = {
+				factor = 0
+				dynasty = "Oda"
+			}
+		}
+		change_tag = JAP
+		set_country_flag = formed_japan_flag
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		remove_government_reform = shogunate
+		add_government_reform = autocracy_reform
+		set_legacy_government = despotic_monarchy
+		set_government_rank = 3
+		custom_tooltip = unite_japan_subject_tooltip
+		define_ruler = {
+			dynasty = "Yamato"
+			claim = 100
+		}
+		define_heir = {
+			dynasty = "Yamato"
+			claim = 100
+		}
+		add_core = 1020
+		set_capital = 1020
+		add_legitimacy = 100
+		add_prestige = 20
+		add_stability = 2
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = -100
+		hidden_effect = {
+			3890 = { 
+                                add_permanent_claim = JAP
+                        }
+			hokuriku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kanto_area = { 
+                                add_permanent_claim = JAP
+                        }
+			eastern_kanto_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kyushu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			northern_kyushu = { 
+                                add_permanent_claim = JAP
+                        }
+			shikoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			eastern_chubu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			chubu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kinai_area = { 
+                                add_permanent_claim = JAP
+                        }
+			thohoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			sanindo_area = { 
+                                add_permanent_claim = JAP
+                        }
+			saigoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+		}
+	}
+	
+	#Become Emperor
+	option = { 
+		name = flavor_jap.63.b
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 0
+				NOT = { ruler_has_personality = conqueror_personality }
+			}
+			modifier = {
+				factor = 1.5
+				ruler_has_personality = conqueror_personality
+			}
+			modifier = {
+				factor = 5
+				dynasty = "Oda"
+			}
+		}
+		change_tag = JAP
+		set_country_flag = formed_japan_flag
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		remove_government_reform = shogunate
+		add_government_reform = autocracy_reform
+		set_legacy_government = despotic_monarchy
+		set_government_rank = 3
+		custom_tooltip = unite_japan_subject_tooltip
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					has_reform = daimyo
+				}
+				ROOT = {
+					free_vassal = PREV
+				}
+				remove_government_reform = daimyo
+				set_legacy_government = despotic_monarchy
+				every_owned_province = {
+					remove_core = JAP
+				}
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = japanese_g
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = japanese_g
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = japanese_g
+					NOT = { num_of_cities = 30 }
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+			}
+			random_owned_province = {
+				limit = {
+					culture_group = japanese_g
+					NOT = { num_of_cities = 40 }
+				}
+				spawn_rebels = {
+					type = noble_rebels
+					size = 2
+				}
+			}
+		}
+		hidden_effect = {
+			3890 = { 
+                                add_permanent_claim = JAP
+                        }
+			hokuriku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kanto_area = { 
+                                add_permanent_claim = JAP
+                        }
+			eastern_kanto_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kyushu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			northern_kyushu = { 
+                                add_permanent_claim = JAP
+                        }
+			shikoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			eastern_chubu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			chubu_area = { 
+                                add_permanent_claim = JAP
+                        }
+			kinai_area = { 
+                                add_permanent_claim = JAP
+                        }
+			thohoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+			sanindo_area = { 
+                                add_permanent_claim = JAP
+                        }
+			saigoku_area = { 
+                                add_permanent_claim = JAP
+                        }
+		}
+		if = {
+			limit = {
+				has_country_flag = g_shogun_flag
+				has_country_flag = g_kampaku_flag
+				has_country_flag = g_daijo_daijin_flag
+			}
+			add_legitimacy = -60
+			add_prestige = -40
+			add_stability = -3
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = 100
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			set_dynasty = "Yamato"
+			reduce_estate_nobles_loyalty_effect = yes
+			hidden_effect = {
+				1020 = {
+					spawn_rebels = {
+						type = noble_rebels
+						size = 6
+					}
+				}
+				random_owned_province = {
+					limit = {
+						culture_group = japanese_g
+					}
+					spawn_rebels = {
+						type = noble_rebels
+						size = 2
+					}
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = g_regect_flag }
+			add_legitimacy = -40
+			add_prestige = -20
+			add_stability = -2
+			add_adm_power = -50
+			add_dip_power = -50
+			add_mil_power = 200
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			set_dynasty = "Yamato"
+			reduce_estate_nobles_loyalty_effect = yes
+			hidden_effect = {
+				1020 = {
+					spawn_rebels = {
+						type = noble_rebels
+						size = 6
+					}
+				}
+			}
+		}
+	}
+}

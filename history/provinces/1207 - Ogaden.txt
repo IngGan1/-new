@@ -1,0 +1,24 @@
+#1207 - Ogaden
+
+owner = OGA
+controller = OGA
+add_core = OGA
+culture = ogaden
+religion = sunni
+capital = "Sesabane"
+trade_goods = incense
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+
+
+1550.1.1 = { discovered_by = TUR }
+1650.1.1 = { owner = AJU controller = AJU }
+1730.1.1 = { owner = GLE controller = GLE }

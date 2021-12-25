@@ -1,0 +1,5 @@
+﻿l_english:
+ cb_conquest_tur: "Ottoman Expansion"
+ cb_conquest_tur_desc: "They hold provinces that should be ours by conquest."
+ cb_conquest_hyw: "Hundred Years War"
+ cb_conquest_hyw_desc: "They hold provinces that are rightfully ours."

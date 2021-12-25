@@ -1,0 +1,29 @@
+# Dummy
+dummy_1 = {
+	local_unrest = 5
+}
+
+# Angered Mamluks
+mamluks_rebels = {
+	local_unrest = 10
+}
+
+# Mamluk Influence
+mamluk_influence = {
+	local_autonomy = 0.05
+}
+
+# Fall of Novgorod
+novgorod_rebels = {
+	local_unrest = 10
+}
+
+# Qara Qoyunlu Upheaval
+qara_rebels = {
+	local_unrest = 5
+}
+
+# Aq Qoyunlu Upheaval
+aq_rebels = {
+	local_unrest = 5
+}

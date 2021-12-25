@@ -1,0 +1,38 @@
+#853 - Huastec
+
+owner = MAT
+controller = MAT
+add_core = MAT
+culture = matlatzinca
+religion = nahuatl
+capital = "Taximaroa"
+trade_goods = tobacco
+hre = no
+base_tax = 2
+base_production = 0
+base_manpower = 2
+is_city = yes
+
+
+
+discovered_by = AZT
+discovered_by = MAY
+discovered_by = ZAP
+discovered_by = mesoamerican
+
+
+1474.1.1 = {
+	owner = AZT
+	controller = AZT
+	add_core = AZT
+} #Axayacatl subjugate the Toluca valley
+1519.1.1 = { discovered_by = SPA }
+1521.8.13 = {
+           owner = SPA
+           controller = SPA
+           add_core = SPA
+           religion = catholic
+           culture = castillian
+} # The last Aztec emperor surrendered, end of the Aztec Empire
+1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence
+1812.8.10 = { controller = MEX } # Conquered by José María Morelos

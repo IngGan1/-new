@@ -1,0 +1,71 @@
+##########################################
+#### Idea Variation start settings
+##########################################
+
+namespace = idea_settings
+
+##########################################
+#### Vote Schwierigkeit / Difficulty
+##########################################
+
+country_event = {
+	id = idea_settings.2
+	title = "idea_settings.20"
+	desc = "idea_settings.21"
+	
+	
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "idea_settings.23"
+		clr_global_flag = hard_mode
+		clr_global_flag = hard2_mode
+		country_event = { id = idea_settings.3 }
+	}
+	
+	option = { 
+		name = "idea_settings.22"
+		clr_global_flag = hard2_mode
+		set_global_flag = hard_mode
+		country_event = { id = idea_settings.3 }
+	}
+	
+	option = { 
+		name = "idea_settings.62"
+		set_global_flag = hard_mode
+		set_global_flag = hard2_mode
+		country_event = { id = idea_settings.3 }
+	}
+	
+}
+
+##########################################
+#### Development Features
+##########################################
+
+country_event = {
+	id = idea_settings.3
+	title = "idea_settings.30"
+	desc = "idea_settings.31"
+	
+	picture = BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = "idea_settings.32"
+		clr_global_flag = setting_1
+		country_event = { id = idea_settings.7 }
+		
+	}
+
+	
+	option = { 
+		name = "idea_settings.33"
+		set_global_flag = setting_1
+		country_event = { id = idea_settings.7 }
+	}
+	
+}

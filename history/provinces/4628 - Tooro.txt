@@ -1,0 +1,15 @@
+#Tooro
+
+owner = TRO
+controller = TRO
+add_core = TRO
+culture = ganda
+religion = shamanism #Fetishism
+capital = "Tooro"
+trade_goods = grain
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african

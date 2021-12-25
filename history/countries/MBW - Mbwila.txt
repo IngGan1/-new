@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_federation
+primary_culture = kongolese
+religion = shamanism
+technology_group = central_african
+unlock_cult = mwari_cult
+unlock_cult = central_african_ancestor_cult
+unlock_cult = cwezi_cult
+
+unit_type = sub_saharan
+capital = 798 # 
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 0
+		mil = 0
+		dip = 0
+		regent = yes
+	}
+}

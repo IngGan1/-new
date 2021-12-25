@@ -1,0 +1,17 @@
+union_of_the_crowns = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+laid_claim_to_scotland = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}
+
+laid_claim_to_scotland_rm = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}

@@ -1,0 +1,37 @@
+country_decisions = {
+	mongol_yoke = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			has_country_modifier = mongol_masters
+			is_subject = no		
+		}
+		allow = {
+			is_at_war = no
+			total_development = 500
+			prestige = 0
+		}
+		effect = {
+			remove_country_modifier = mongol_masters
+			custom_tooltip = mongol_yoke_tooltip
+			every_known_country = {
+				limit = {
+					has_country_modifier = muscovite_tribute
+				}
+				remove_country_modifier = muscovite_tribute
+				country_event = {
+					id = ugra.5
+					days = 30
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 1
+				is_year = 1500
+			}
+		}
+	}
+}

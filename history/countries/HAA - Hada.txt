@@ -1,0 +1,16 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+primary_culture = manchu
+religion = tengri_pagan_reformed
+secondary_religion = confucianism
+capital = 2110
+add_opinion = {
+	who = MHX
+	modifier = opinion_good_relations
+}
+add_trust = {
+	who = MHX
+	value = 50
+	mutual = yes
+}

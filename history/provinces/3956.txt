@@ -1,0 +1,29 @@
+#562 - Koch Behar
+
+owner = LWA
+controller = LWA
+add_core = LWA
+add_core = SKK
+culture = kochi
+religion = hinduism
+capital = "Yuksom"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 3
+is_city = yes
+
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = chinese
+discovered_by = NPL
+
+1609.1.1 = {
+           owner = SKK
+           controller = SKK
+}
+1670.1.1 = { capital = "Rabdentse" }
+#1789 #Gorkha
+1690.1.1 = { discovered_by = ENG }
+1707.5.12 = { discovered_by = GBR }

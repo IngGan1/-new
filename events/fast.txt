@@ -1,0 +1,1092 @@
+namespace = fast
+
+country_event = {
+	id = fast.1
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_province = {
+			limit = {
+				is_empty = no
+				not = { continent = europe }
+				not = { region = maghreb_region }
+				not = { region = egypt_region }
+				not = { region = mashriq_region }
+				not = { region = anatolia_region }
+				not = { region = persia_region }
+				not = { region = caucasia_region }
+				not = { superregion = eastern_europe_superregion }
+				not = { owner = { technology_group = western } }
+				not = { trade_company_region = trade_company_west_africa }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 2
+				change_native_ferocity = 2
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+		}
+		every_province = {
+			limit = {
+				or = { area = qasim_area area = nafud_area }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+		}
+		set_global_flag = fast_end
+		set_global_flag = remove_province
+		set_global_flag = fast_idea
+	}
+	
+	option = { }
+}
+
+country_event = {
+	id = fast.2
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_province = {
+			limit = {
+				is_empty = no
+				not = { superregion = china_superregion }
+				not = { superregion = far_east_superregion }
+				not = { region = bengal_region }	
+				not = { superregion = east_indies_superregion }
+				not = { superregion = tartary_superregion }
+				not = { trade_company_region = trade_company_west_africa }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 2
+				change_native_ferocity = 2
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+		}
+		every_province = {
+			limit = {
+				or = { area = qasim_area area = nafud_area }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+		}
+		TRS = { inherit = TIM }
+		set_global_flag = fast_end
+		set_global_flag = fast_asia
+		set_global_flag = remove_province
+		set_global_flag = fast_idea
+	}
+	
+	option = { }
+}
+
+country_event = {
+	id = fast.3
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_province = {
+			limit = {
+				is_empty = no
+				not = { continent = europe }
+				not = { region = maghreb_region }
+				not = { region = egypt_region }
+				not = { region = mashriq_region }
+				not = { region = horn_of_africa_region }
+				not = { region = central_asia_region }
+				not = { superregion = persia_superregion }	
+				not = { superregion = near_east_superregion }
+				not = { superregion = india_superregion }		
+				not = { superregion = eastern_europe_superregion }
+				not = { owner = { technology_group = western } }
+				not = { trade_company_region = trade_company_west_africa }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 2
+				change_native_ferocity = 2
+			}
+		}
+		every_province = {
+			limit = {
+				or = { area = qasim_area area = nafud_area }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+		}
+		set_global_flag = fast_end
+		set_global_flag = remove_province
+		set_global_flag = fast_idea
+	}
+	
+	option = { }
+}
+
+country_event = {
+	id = fast.4
+	title = "Remove Asia"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					region = hindusthan_region
+				}
+				add_core = BOO
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					region = west_india_region
+				}
+				add_core = BO8
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					region = deccan_region
+				}
+				add_core = BO1
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = coromandel_region
+						region = bengal_region
+					}
+				}
+				add_core = BO9
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = moluccas_region
+						region = indo_china_region
+					}
+				}
+				add_core = BO2
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = malaya_region
+						region = indonesia_region
+					}
+				}
+				add_core = BO7
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = xinan_region
+						region = burma_region
+					}
+				}
+				add_core = BO3
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					region = north_china_region
+				}
+				add_core = BO4
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					region = south_china_region
+				}
+				add_core = BH1
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					superregion = far_east_superregion
+				}
+				add_core = BO5
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = west_siberia_region
+						region = mongolia_region
+					}
+				}
+				add_core = BO6
+			}
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					continent = asia
+					not = { region = central_asia_region }
+					not = { region = west_siberia_region }
+					not = { superregion = persia_superregion }	
+					not = { superregion = near_east_superregion }	
+					not = { superregion = eastern_europe_superregion }
+					not = { owner = { technology_group = western } }
+					not = { area = kamchatka_area }
+					not = { area = okhotsk_area }
+					not = { area = magadan_area }
+					or = {
+						region = central_asia_region
+						region = tibet_region
+						area = tarim_basin_area
+						area = shanshan_area
+						province_id = 2124
+					}
+				}
+				add_core = BH2
+			}
+			every_owned_province = {
+				limit = {
+					or = {
+						area = kashgaria_area
+						area = tarim_basin_area
+						area = shanshan_area
+					}
+				}
+				add_core = BH2
+			}
+			every_owned_province = {
+				limit = {
+					or = {
+						area = irkutsk_area
+						area = tunguska_area
+						region = east_siberia_region
+					}
+				}
+				cede_province = KKK
+			}
+		}
+		set_global_flag = asia_shield
+	}
+	
+	option = {
+		if = {
+			limit = { tag = NNI }
+			BO1 = { country_event = { id = fast.4000 days = 1 } }
+			BO2 = { country_event = { id = fast.4000 days = 1 } }
+			BO3 = { country_event = { id = fast.4000 days = 1 } }
+			BO4 = { country_event = { id = fast.4000 days = 1 } }
+			BOO = { country_event = { id = fast.4000 days = 1 } }
+			BO5 = { country_event = { id = fast.4000 days = 1 } }
+			BO6 = { country_event = { id = fast.4000 days = 1 } }
+			BO7 = { country_event = { id = fast.4000 days = 1 } }
+			BO8 = { country_event = { id = fast.4000 days = 1 } }
+			BO9 = { country_event = { id = fast.4000 days = 1 } }
+			BH1 = { country_event = { id = fast.4000 days = 1 } }
+			BH2 = { country_event = { id = fast.4000 days = 1 } }
+		}
+		if = {
+			limit = { or = { tag = MNG tag = QNG } }
+			release = BO4
+			BO4 = {
+				set_capital = 1816
+				set_emperor_of_china = BO4
+			}
+			release = BOO release = BO1 release = BO3 release = BO5 release = BO6 release = BO7 release = BO8 release = BO9 release = BH1 release = BH2
+		}
+		else = { release = BOO release = BO1 release = BO2 release = BO3 release = BO4 release = BO5 release = BO6 release = BO7 release = BO8 release = BO9 release = BH1 release = BH2 }
+	}
+}
+
+country_event = {
+	id = fast.4000
+	title = "Restore"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		or = { tag = BOO tag = BO1 tag = BO2 tag = BO3 tag = BO4 tag = BO5 tag = BO6 tag = BO7 tag = BO8 tag = BO9 tag = BH1 tag = BH2 }
+	}
+	option = {
+		define_ruler = {
+			name = "Keeper"
+			dynasty = "of Asia"
+			female = yes
+			age = 99
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+		add_ruler_personality = immortal_personality
+		change_government = monarchy
+		add_government_reform = feudalism_reform
+		BO4 = {
+			create_subject = { 
+				who = ROOT
+				subject_type = tributary_state
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fast.5
+	title = "Restore"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_province = {
+			limit = { development = 7 }
+			add_building = infrastructure_lvl_3
+		}
+		every_owned_province = {
+			limit = { base_tax = 3 }
+			add_building = cathedral
+		}
+		every_owned_province = {
+			limit = { base_production = 3 not = { trade_goods = wool trade_goods = fish trade_goods = gold trade_goods = livestock trade_goods = lumber trade_goods = silver } }
+			add_building = production_lvl_3
+		}
+		every_owned_province = {
+			limit = { base_manpower = 3 }
+			add_building = barracks
+		}
+		every_owned_province = {
+			limit = {
+				base_production = 5
+				OR = {
+					province_has_center_of_trade_of_level = 1
+					province_has_center_of_trade_of_level = 2
+					province_has_center_of_trade_of_level = 3
+					has_province_modifier = major_coastal_center_of_trade_modifier
+					has_province_modifier = major_inland_center_of_trade_modifier
+					has_province_modifier = major_river_estuary_modifier
+					has_province_modifier = minor_coastal_center_of_trade_modifier
+					has_province_modifier = minor_inland_center_of_trade_modifier
+					has_province_modifier = minor_river_estuary_modifier
+				}
+			}
+			add_building = trade_depot
+		}
+		release = MTR
+		release = BLM
+		release = MKS
+		release = KUT
+		release = BNJ
+		release = SUD
+		release = SUL
+		release = ANN
+		release = DAI
+		release = CHK
+		release = CHA
+		release = BAN
+		release = PGR
+		release = ATJ
+		release = SAK
+		release = BEI
+		release = AYU
+		release = KHM
+		release = PSA
+		release = DLI
+		release = PLB
+		release = BEU
+		release = LUW
+		release = SUN
+		release = MAJ
+		release = BLI
+		release = MGD
+		release = LNO
+		release = CRB
+		release = MYS
+		release = MAD
+		release = DGL
+		release = KAS
+		every_owned_province = {
+			limit = {
+				province_id = 2040
+			}
+			add_core = ASS
+		}
+		release = ASS
+		every_owned_province = {
+			limit = {
+				or = {
+					area = himalayan_hills_area
+					area = nepal_area
+					area = baisi_rajya_area
+				}
+			}
+			add_core = NPL
+		}
+		release = NPL
+		if = {
+			limit = { NED = { exists = yes } }
+			every_owned_province = {
+				limit = {
+					or = {
+						area = lanka_area
+						area = malabar_area
+						area = south_lanka_area
+						province_id = 4132
+					}
+				}
+				add_core = NED
+				cede_province = NED
+			}
+		}
+		else = {
+			release = CEY
+			release = KND
+			release = JFN
+		}
+		if = {
+			limit = { GBR = { exists = yes } }
+			every_owned_province = {
+				limit = {
+					or = {
+						province_id = 4139
+						province_id = 539
+						province_id = 3405
+						province_id = 3406
+					}
+				}
+				add_core = GBR
+				cede_province = GBR
+			}
+		}
+		every_owned_province = {
+			limit = {
+				or = {
+					area = ahmednagar_area
+					area = desh_area
+					area = konkan_area
+					area = maidan_area
+					area = khandesh_area
+					area = tapti_area
+					culture = marathi
+				}
+			}
+			add_core = MAR
+		}
+		release = MAR
+		release = VND
+		release = KOC
+		release = MAB
+		release = KND
+		release = CEY
+		release = JFN
+		every_owned_province = {
+			limit = {
+				region = bengal_region
+				not = { area = garjat_area }
+				not = { area = upper_mahanadi_area }
+			}
+			add_core = BNG
+			remove_core = MUG
+		}
+		release = BNG
+		every_owned_province = {
+			limit = {
+				culture_group = dravidian
+			}
+			add_core = DEC
+			remove_core = BOO
+		}
+		release = DEC
+		every_owned_province = {
+			limit = {
+				superregion = india_superregion
+			}
+			add_core = MUG
+			cede_province = MUG
+		}
+		every_owned_province = {
+			limit = {
+				region = malaya_region
+			}
+			add_core = MLC
+		}
+		release = MLC
+		every_owned_province = {
+			limit = {
+				or = {
+					region = japan_region
+					province_id = 1033
+				}
+			}
+			add_core = JAP
+		}
+		release = JAP
+		if = {
+			limit = { SPA = { exists = yes } }
+			every_owned_province = {
+				limit = {
+					trade_company_region = trade_company_philippines
+				}
+				add_core = SPA
+				cede_province = SPA
+			}
+		}
+		else_if = {
+			limit = { CAS = { exists = yes } }
+			every_owned_province = {
+				limit = {
+					trade_company_region = trade_company_philippines
+				}
+				add_core = CAS
+				cede_province = CAS
+			}
+		}
+		else = {
+			release = TDO
+			release = PGS
+			release = MNA
+			release = MAS
+			release = CEB
+			release = BTU
+			release = LNO
+			release = MGD
+		}
+		every_owned_province = {
+			limit = {
+				region = korea_region
+			}
+			add_core = KOR
+		}
+		release = KOR
+		every_owned_province = {
+			limit = {
+				or = {
+					superregion = china_superregion
+					region = manchuria_region
+					area = kham_area
+					area = amdo_area
+					region = mongolia_region
+				}
+				not = {
+					or = {
+						area = north_zungaria
+						area = zungaria_area
+					}
+				}
+			}
+			add_core = QNG
+		}
+		release = QNG
+		if = {
+			limit = { has_global_flag = empire_of_china_dismantled }
+			clr_global_flag = empire_of_china_dismantled
+		}
+		dismantle_empire_of_china = no
+		set_emperor_of_china = QNG
+		every_owned_province = {
+			limit = {
+				region = tibet_region
+			}
+			add_core = UTS
+		}
+		release = UTS
+		every_owned_province = {
+			limit = {
+				region = central_asia_region
+			}
+			add_core = RUS
+			cede_province = RUS
+		}
+		every_owned_province = {
+			limit = {
+				superregion = persia_superregion
+			}
+			add_core = PER
+			cede_province = PER
+		}
+		every_owned_province = {
+			limit = {
+				or = {
+					superregion = tartary_superregion
+					area = north_zungaria
+					area = zungaria_area
+				}
+			}
+			add_core = ZUN
+		}
+		release = ZUN
+		every_owned_province = {
+			limit = {
+				region = burma_region
+			}
+			add_core = TAU
+		}
+		release = TAU
+		every_owned_province = {
+			limit = {
+				region = indo_china_region
+			}
+			add_core = LXA
+		}
+		release = LXA
+		every_owned_province = {
+			limit = {
+				superregion = persia_superregion
+			}
+			add_core = PER
+			cede_province = PER
+		}
+		every_owned_province = {
+			cede_province = KKK
+		}
+		clr_global_flag = asia_shield
+	}
+	option = {
+		every_country = {
+			limit = {
+				ai = yes
+				capital_scope = { is_core = BOO }
+			}
+			country_event = { id = fast.6 }
+		}
+		MUG = {
+			change_government = monarchy
+			add_government_reform = indian_sultanate_reform
+			add_government_reform = mughal_government
+			define_ruler = {
+				name = "Muhammad Shah"
+				dynasty = "Timurid"
+				adm = 3
+				dip = 2
+				mil = 1
+				age = 20
+			}
+			define_heir = {
+				name = "Ahmad"
+				dynasty = "Timurid"
+				adm = 0
+				dip = 1
+				mil = 0
+				age = 0
+			}
+			every_owned_province = {
+				remove_core = BOO
+			}
+		}
+		JAP = {
+			change_government = monarchy
+			add_government_reform = empire_of_japan_reform
+			define_ruler = {
+				name = "Yoshimune"
+				dynasty = "Tokugawa"
+				adm = 4
+				dip = 3
+				mil = 3
+				age = 38
+			}
+			define_heir = {
+				name = "Ieshige"
+				dynasty = "Tokugawa"
+				adm = 2
+				dip = 2
+				mil = 1
+				age = 8
+			}
+		}
+		KOR = {
+			change_government = monarchy
+			add_government_reform = hermit_kingdom_reform
+			define_ruler = {
+				name = "Geum"
+				dynasty = "Yi"
+				adm = 4
+				dip = 2
+				mil = 2
+				age = 39
+			}
+			define_heir = {
+				name = "San"
+				dynasty = "Yi"
+				adm = 1
+				dip = 0
+				mil = 1
+				age = 12
+			}
+		}
+		QNG = {
+			change_government = monarchy
+			add_government_reform = celestial_empire
+			define_ruler = {
+				name = "In Jen"
+				dynasty = "Aisin Gioro"
+				adm = 5
+				dip = 5
+				mil = 4
+				age = 46
+			}
+			define_heir = {
+				name = "Hung Li"
+				dynasty = "Aisin Gioro"
+				adm = 4
+				dip = 4
+				mil = 5
+				age = 22
+			}
+			create_subject = { 
+				who = KOR
+				subject_type = tributary_state
+            }
+			create_subject = { 
+				who = DAI
+				subject_type = tributary_state
+            }
+			create_subject = { 
+				who = TAU
+				subject_type = tributary_state
+            }
+			create_subject = { 
+				who = LXA
+				subject_type = tributary_state
+            }
+			create_subject = { 
+				who = NPL
+				subject_type = tributary_state
+            }
+			create_subject = { 
+				who = UTS
+				subject_type = tributary_state
+            }
+			QNG = {
+				add_trust = {
+					who = KOR
+					value = 100
+					mutual = yes
+				}
+			}
+			QNG = {
+				add_trust = {
+					who = DAI
+					value = 100
+					mutual = yes
+				}
+			}
+			QNG = {
+				add_trust = {
+					who = TAU
+					value = 100
+					mutual = yes
+				}
+			}
+			QNG = {
+				add_trust = {
+					who = LXA
+					value = 100
+					mutual = yes
+				}
+			}
+			change_primary_culture = manchu_new
+			set_ruler_culture = manchu_new
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = manchu_new
+			}
+			every_province = {
+				limit = {
+					culture = manchu
+				}
+				change_culture = manchu_new
+			}
+			every_country = {
+				limit = {
+					primary_culture = manchu
+				}
+				change_primary_culture = manchu_new
+				set_ruler_culture = manchu_new
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = manchu_new
+				}
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = fast.6
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			is_core = BOO
+		}
+		not = { tag = MUG }
+	}
+	option = {
+		change_government = monarchy
+		add_army_professionalism = 0.5
+		change_innovativeness = 15
+		add_prestige = 50
+		add_legitimacy = 100
+		add_stability = 2
+		add_country_modifier = {
+			name = no_war
+			duration = 3650
+		}
+		every_owned_province = {
+			remove_core = BOO
+		}
+		country_event = { id = jjab_events.24 }
+		country_event = { id = fast.7 days = 32 }
+	}
+}
+
+country_event = {
+	id = fast.7
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	option = {
+		change_government = monarchy
+		add_years_of_income = 2
+		add_yearly_manpower = 3
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.1
+				artillery = 0.4
+			}
+		}
+		add_adm_power = 500
+		add_dip_power = 500
+		add_mil_power = 500
+	}
+}
+
+country_event = {
+	id = fast.8
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = boho_world
+		num_of_rebel_armies = 1
+	}
+	option = {
+		every_owned_province = { clear_rebels = yes }
+	}
+}
+
+country_event = {
+	id = fast.9
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	
+	trigger = {
+		always = no
+		has_global_flag = asia_shield
+		capital_scope = {
+			continent = asia
+			not = { region = central_asia_region }
+			not = { region = west_siberia_region }
+			not = { superregion = persia_superregion }	
+			not = { superregion = near_east_superregion }
+			not = { superregion = eastern_europe_superregion }
+		}
+		ai = yes
+		not = { tag = MUG }
+		not = { tag = TIM }
+		not = { tag = BOO }
+		not = { technology_group = western }
+		not = { technology_group = eastern }
+	}
+	option = {
+		every_owned_province = { cede_province = BOO }
+	}
+}
+
+country_event = {
+	id = fast.11
+	title = "Restore"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		hidden_effect = { every_owned_province = { add_core = BOO remove_core = ROOT } release = BOO }
+		if = {
+			limit = { not = { exists = BO1 exists = BO2 exists = BO3 exists = BO4 exists = BO5 exists = BO6 exists = BO7 exists = BO8 exists = BO9 exists = BH1 exists = BH2 } }
+			BOO = { country_event = { id = fast.5 } }
+		}
+	}
+}

@@ -1,0 +1,16 @@
+name = "Second Ottoman-Byzantine War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 151 # Thrace
+}
+
+1441.1.2 = {
+	add_attacker = HUN
+	add_defender = POL
+}
+
+1441.1.29 = {
+	rem_attacker = HUN
+	rem_defender = POL
+}

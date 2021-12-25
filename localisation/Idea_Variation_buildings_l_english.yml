@@ -1,0 +1,159 @@
+﻿l_english:
+ INFRASTRUCTURE: "0®¼ÜÂ2Á"
+ building_infrastructure_lvl_1:0 "Y× 8®"
+ building_infrastructure_lvl_2:0 "Ä³j¸"
+ building_infrastructure_lvl_3:0 "ìÓ¥Ç Ä³j¸"
+ building_infrastructure_lvl_4:0 "üÈ Ä³j¸"
+ building_infrastructure_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_infrastructure_lvl_2_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W"
+ building_infrastructure_lvl_3_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_infrastructure_lvl_4_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ GOVERNMENT: "ÈŽ´"
+ building_government_lvl_1:0 "•¼ÐÆ"
+ building_government_lvl_2:0 "È¹DÇ ŒÖ­"
+ building_government_lvl_3:0 "³•¼ÐÆ"
+ building_government_lvl_4:0 "ÈŽ´ ­Ì¬À"
+ building_government_lvl_5:0 "³YÕ"
+ building_terrain_land:0 "¬™Ì"
+ building_terrain_woodland:0 "¬¬"
+ building_terrain_desert:0 "xÇõ¬ ­¬"
+ building_terrain_hills:0 "Y×É¹tÇ Ë¼"
+ building_terrain_art:0 "ù­ÀÉ ÜÂ2Á"
+ building_terrain_swamp:0 "ª²ÀÉ 0¼Â"
+ building_terrain_jungle:0 "È® Èp¬"
+ building_terrain_coastal:0 "tÕHÅ ÜÂ2Á"
+ building_production_lvl_1:0 "‘ÇÅÅ¥Ç"
+ building_production_lvl_2:0 "³‘ÇÅÅ¥Ç"
+ building_production_lvl_3:0 "ŒÖÄ¬äÂ"
+ building_production_lvl_4:0 "ŒÁÖ ÈpÈŒÁ"
+ building_production_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_production_lvl_2_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W"
+ building_production_lvl_3_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_production_lvl_4_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_counting_house:0 "ŒÁÖ ÈpÈŒÁ"
+ building_taxation_lvl_1:0 "ÇXÎ 8Á4»Á"
+ building_taxation_lvl_2:0 "8Á4»Á"
+ building_taxation_lvl_3:0 "8Á­"
+ building_taxation_lvl_4:0 "üÈ 8Á­"
+ building_taxation_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_taxation_lvl_2_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W"
+ building_taxation_lvl_3_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_taxation_lvl_4_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_trade_lvl_1:0 "ÜÂ¥Ç"
+ building_trade_lvl_2:0 "³ÜÂ¥Ç"
+ building_trade_lvl_3:0 "4»íÅ KÌà¬"
+ building_trade_lvl_4:0 "ÉŒ­ p¬˜·ŒÁ"
+ building_trade_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_trade_lvl_2_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W"
+ building_trade_lvl_3_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_trade_lvl_4_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_manpower_lvl_1:0 "4»0®à¬"
+ building_manpower_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W"
+ building_manpower_lvl_2:0 "Ñ¼Æ"
+ building_manpower_lvl_3:0 "ÈÖ(¸ŒÁ"
+ building_forcelimit_lvl_1:0 "É³ 0®ÀÉ"
+ building_forcelimit_lvl_1_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W \n¬¼Ä³ 10ù² !Çp­ Ñ¼%¸ jÕÄ¬ §G+0.05§W"
+ building_forcelimit_lvl_2:0 "ðÅ³ 0®ÀÉ"
+ building_forcelimit_lvl_3:0 "0®Ù³ l­íÅ"
+ building_navymanpower_lvl_1:0 ".ÁKÌ"
+ building_navymanpower_lvl_2:0 "¬.Áp¬"
+ building_navymanpower_lvl_3:0 "tÕp­ Ñ¼0®à¬"
+ building_navyforcelimit_lvl_1:0 "pÈ.ÁŒÁ"
+ building_navyforcelimit_lvl_2:0 "³ pÈ.ÁŒÁ"
+ building_navyforcelimit_lvl_3:0 "p¬³ pÈ.ÁŒÁ"
+ building_navalbase_lvl_1:0 "tÕp­ 0®ÀÉ"
+ building_navalbase_lvl_1_desc:0 "§GtÕ‘Å0®ÀÉ tÇP± DÕ”Æ§W"
+ building_navalbase_lvl_2:0 "p¬³ tÕp­ 0®ÀÉ"
+ building_navalbase_lvl_2_desc:0 "§GtÕ‘Å0®ÀÉ tÇP± DÕ”Æ§W"
+ building_fortress_keep:0 "”ÆÈÀTÖ ´ 1Á"
+ building_fortress_barracks:0 "”ÆÈÀ Ñ¼Æ"
+ building_fortress_towers:0 "”Í¬ ÑÐ"
+ building_fortress_artillery:0 "ÂD¾©Æ ³ìÓ"
+ building_fortress_wall:0 "2(Ì ìÓè¸"
+ building_fortress_supply:0 "ÀÉXÕ ô¼	®KÌà¬"
+ building_fortress_keep_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_fortress_barracks_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_fortress_towers_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_fortress_artillery_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_fortress_wall_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_fortress_supply_desc:0 "§G”ÆÈÀ tÇP± DÕ”Æ§W"
+ building_navymanpower_lvl_3_desc:0 "§G2¬¬¹ ÉÈ tÇP± or ŒÁÖ.Á ÉÈ tÇP±§W DÕ”Æ"
+ building_navyforcelimit_lvl_3_desc:0 "§GÈhÕ ÉÈ tÇP±§W DÕ”Æ"
+ building_temple_desc: "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_cathedral_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_marketplace_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_trade_depot_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 37.5% É¬hÕ§W"
+ building_stock_exchange_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_workshop_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 12.5% É¬hÕ§W"
+ building_counting_house_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_shipyard_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_navyforcelimit_lvl_2_desc:0 "§GtÕ‘Å tÇP± ¶”² ÈhÕ ÉÈ tÇP±§W DÕ”Æ\n§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_grand_shipyard_desc:0 "§GÈhÕ ÉÈ tÇP±§W DÕ”Æ \n§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 100% É¬hÕ§W"
+ building_dock_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 25% É¬hÕ§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30 tÇÁÀtÇtº tÕp­ Ñ¼%¸ jÕÄ¬ §G+2.00§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30Ž´0Ñ ¬¼Ä³ 10ù² tÕp­ Ñ¼%¸ jÕÄ¬ §G+0.10%§W"
+ building_navymanpower_lvl_2_desc:0 "§GtÕ‘Å tÇP± ¶”² 2¬¬¹ ÉÈ tÇP± ¶”² ŒÁÖ.Á ÉÈ tÇP±§W DÕ”Æ \n§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30 tÇÁÀtÇtº tÕp­ Ñ¼%¸ jÕÄ¬ §G+4.00§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30Ž´0Ñ ¬¼Ä³ 10ù² tÕp­ Ñ¼%¸ jÕÄ¬ §G+0.20%§W"
+ building_drydock_desc:0 "§G2¬¬¹ ÉÈ tÇP± ¶”² ŒÁÖ.Á ÉÈ tÇP±§W DÕ”Æ \n§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30 tÇÁÀtÇtº tÕp­ Ñ¼%¸ jÕÄ¬ §G+8.00§W \n§G2¬¬¹ ÉÈ tÇP±:§W ¬¼Ä³ 30Ž´0Ñ ¬¼Ä³ 10ù² tÕp­ Ñ¼%¸ jÕÄ¬ §G+0.30%§W"
+ building_barracks_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ building_training_fields_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_regimental_camp_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 100% É¬hÕ§W \n¬¼Ä³ 30Ž´0Ñ ¬¼Ä³ 10ù² !Çp­ Ñ¼%¸ jÕÄ¬ §G+0.25%§W"
+ building_conscription_center_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RState Maintenance +150%§W \n¬¼Ä³ 30Ž´0Ñ ¬¼Ä³ 10ù² !Çp­ Ñ¼%¸ jÕÄ¬ §G+0.375%§W"
+ building_wharf_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_weapons_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_textile_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_plantations_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_tradecompany_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_farm_estate_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_mills_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_furnace_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 75% É¬hÕ§W"
+ building_university_desc:0 "§Yt¬<»tÇ ˆÇ”² ÀÉíÅNÇ:§W §RüÈ .ÇÀÉD¾¬ 50% É¬hÕ§W"
+ TERR: "ÀÉÖ"
+ SAILORSTE: "ŒÁÖ.Á"
+ FORTRESS: "”ÆÈÀ tÇP±"
+ TAXX: "8Á®"
+ FORCELIMIT:0 "Ñ¼%¸ jÕÄ¬"
+ FLEETBASE:0 "tÕp­ 0®ÀÉ"
+ NAVY2:0 "ÈhÕ"
+ infrastructure_lvl_1_mod:0 "Y× 8®"
+ infrastructure_lvl_2_mod:0 "Ä³j¸"
+ infrastructure_lvl_3_mod:0 "ìÓ¥ÇÄ³j¸"
+ infrastructure_lvl_4_mod:0 "üÈ Ä³j¸"
+ terrain_land_mod:0 "¬™Ì"
+ terrain_woodland_mod:0 "¬¬"
+ terrain_desert_mod:0 "xÇõ¬ ­¬"
+ terrain_hills_mod:0 "Y×É¹tÇ Ë¼"
+ terrain_art_mod:0 "ù­ÀÉ ÜÂ2Á"
+ terrain_swamp_mod:0 "ª²ÀÉ 0¼Â"
+ terrain_jungle_mod:0 "È® Èp¬"
+ terrain_coastal_mod:0 "tÕHÅ ÜÂ2Á"
+ production_lvl_1_mod:0 "‘ÇÅÅ¥Ç"
+ production_lvl_2_mod:0 "³‘ÇÅÅ¥Ç"
+ production_lvl_3_mod:0 "ŒÖÄ¬äÂ"
+ production_lvl_4_mod:0 "ŒÁÖ ÈpÈŒÁ"
+ taxation_lvl_1_mod:0 "ÇXÎ 8Á4»Á"
+ taxation_lvl_2_mod:0 "8Á4»Á"
+ taxation_lvl_3_mod:0 "8Á­"
+ taxation_lvl_4_mod:0 "üÈ 8Á­"
+ trade_lvl_1_mod:0 "ÜÂ¥Ç"
+ trade_lvl_2_mod:0 "³ÜÂ¥Ç"
+ trade_lvl_3_mod:0 "4»íÅ 0®ÀÉ"
+ trade_lvl_4_mod:0 "ÉŒ­ p¬˜·ŒÁ"
+ manpower_lvl_1_mod:0 "4»0®à¬"
+ manpower_lvl_2_mod:0 "Ñ¼Æ"
+ manpower_lvl_3_mod:0 "ÈÖ(¸ŒÁ"
+ forcelimit_lvl_1_mod:0 "É³ 0®ÀÉ"
+ forcelimit_lvl_2_mod:0 "ðÅ³ 0®ÀÉ"
+ forcelimit_lvl_3_mod:0 "0®Ù³ l­íÅ"
+ navymanpower_lvl_1_mod:0 ".ÁKÌ"
+ navymanpower_lvl_2_mod:0 "¬.Áp¬"
+ navymanpower_lvl_3_mod:0 "tÕp­ Ñ¼0®à¬"
+ navyforcelimit_lvl_1_mod:0 "pÈ.ÁŒÁ"
+ navyforcelimit_lvl_2_mod:0 "³ pÈ.ÁŒÁ"
+ navyforcelimit_lvl_3_mod:0 "p¬³ pÈ.ÁŒÁ"
+ navalbase_lvl_1_mod:0 "tÕp­ 0®ÀÉ"
+ navalbase_lvl_2_mod:0 "p¬³ tÕp­ 0®ÀÉ"
+ fortress_keep_mod:0 "”ÆÈÀTÖ ´ 1Á"
+ fortress_barracks_mod:0 "”ÆÈÀ Ñ¼Æ"
+ fortress_towers_mod:0 "”Í¬ ÑÐ"
+ fortress_artillery_mod:0 "ÂD¾©Æ ³ìÓ"
+ fortress_wall_mod:0 "2(Ì ìÓè¸"
+ fortress_supply_mod:0 "ÀÉXÕ ô¼	®KÌà¬"
+ manufactory_mod:0 "ÈpÈŒÁ"

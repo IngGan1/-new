@@ -1,0 +1,524 @@
+namespace = ugra
+normal_or_historical_nations = yes
+
+country_event = {
+	id = ugra.1
+	title = ugra.1.t
+	desc = ugra.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		MOS = {
+			has_country_modifier = mongol_masters
+			exists = yes
+			is_subject = no
+			NOT = {
+				is_subject_of_type = tributary_state
+				alliance_with = ROOT
+			}
+		}
+		OR = {
+			tag = GOL
+			tag = GLH
+		}
+		is_at_war = no
+		is_subject = no
+		NOT = {
+			truce_with = MOS
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.5
+			total_development = 200
+		}
+		modifier = {
+			factor = 0.5
+			MOS = {
+				NOT = {
+					total_development = 200
+				}
+			}
+		}
+	}
+
+	option = {
+		name = ugra.1.a
+		custom_tooltip = ugra.1.a.tooltip
+		ai_chance = {
+			factor = 100
+		}
+		MOS = {
+			country_event = {
+				id = ugra.2
+				days = 30
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = horde_demanded_tribute
+			}
+		}
+	}
+
+	option = {
+		name = ugra.1.b
+		ai_chance = {
+			factor = 0
+		}
+		add_horde_unity = -25
+		add_prestige = -25
+		remove_country_modifier = muscovite_tribute
+		MOS = {
+			country_event = {
+				id = ugra.3
+				days = 30
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = no_horde_demanded_tribute
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ugra.2
+	title = ugra.2.t
+	desc = ugra.2.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.2.a
+		ai_chance = {
+			factor = 67
+			modifier = {
+				factor = 75
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					NOT = {
+						total_development = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				is_year = 1500
+			}
+		}
+		custom_tooltip = ugra.2.a.tooltip
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = -25
+		add_truce_with = FROM
+		FROM = {
+			country_event = {
+				id = ugra.4
+				days = 30
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = gave_tribute
+			}
+		}
+	}
+	
+	option = {
+		name = ugra.2.b
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 25
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 100
+				FROM = {
+					NOT = {
+						total_development = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				is_year = 1500
+			}
+		}
+		custom_tooltip = ugra.2.b.tooltip
+		remove_country_modifier = mongol_masters
+		FROM = {
+			country_event = {
+				id = ugra.5
+				days = 30
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = refused_tribute
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ugra.3
+	title = ugra.3.t
+	desc = ugra.3.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.3.a
+		remove_country_modifier = mongol_masters
+		add_prestige = 25
+		add_legitimacy = 25
+	}
+}
+
+country_event = {
+	id = ugra.4
+	title = ugra.4.t
+	desc = ugra.4.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.4.a
+		add_horde_unity = 25
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_prestige = 25
+		add_truce_with = FROM
+	}
+}
+
+country_event = {
+	id = ugra.5
+	title = ugra.5.t
+	desc = ugra.5.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.5.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				MOS = {
+					NOT = {
+						total_development = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 75
+				MOS = {
+					is_at_war = yes
+				}
+			}
+		}
+		add_horde_unity = 25
+		capital_scope = {
+			add_unit_construction = {
+				type = cavalry
+				amount = 10
+				speed = 0.1
+				cost = 0
+			}
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_force_tributary
+		}
+		remove_country_modifier = muscovite_tribute
+		FROM = {
+			country_event = {
+				id = ugra.6
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = ugra.5.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				MOS = {
+					total_development = 500
+				}
+			}	
+			modifier = {
+				factor = 25
+				MOS = {
+					is_at_war = yes
+				}
+			}
+		}
+		add_horde_unity = -25
+		add_prestige = -25
+		remove_country_modifier = muscovite_tribute
+		FROM = {
+			country_event = {
+				id = ugra.3
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ugra.6
+	title = ugra.6.t
+	desc = ugra.6.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.6.a
+		add_government_power = {
+			government_mechanic = russian_mechanic
+			which = MIL
+			amount = 100
+		}
+	}
+}
+
+country_event = {
+	id = ugra.7
+	title = ugra.7.t
+	desc = ugra.7.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOS
+		war_with = GOL
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ugra.7.a
+		remove_country_modifier = mongol_masters
+		GOL = {
+			country_event = {
+				id = ugra.8
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ugra.8
+	title = ugra.8.t
+	desc = ugra.8.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ugra.8.a
+		remove_country_modifier = muscovite_tribute
+	}
+}
+
+country_event = {
+	id = ugra.9
+	title = ugra.9.t
+	desc = ugra.9.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		NOT = {
+			has_country_modifier = mongol_masters
+		}
+		any_owned_province = {
+			OR = {
+				culture = crimean
+				culture = mishary
+				culture = astrakhani
+				culture = mordvin
+				AND = {
+					province_id = 305
+					NOT = {
+						culture_group = east_slavic
+					}
+				}
+				AND = {
+					province_id = 1077
+					NOT = {
+						culture_group = east_slavic
+					}
+				}
+				AND = {
+					province_id = 1962
+					NOT = {
+						culture_group = east_slavic
+					}
+				}
+			}
+			controlled_by = ROOT
+			is_core = ROOT
+			NOT = {
+				province_id = 2408
+			}
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = ugra.9.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = crimean
+					culture = mishary
+					culture = astrakhani
+					culture = mordvin
+					AND = {
+						province_id = 305
+						NOT = {
+							culture_group = east_slavic
+						}
+					}
+					AND = {
+						province_id = 1077
+						NOT = {
+							culture_group = east_slavic
+						}
+					}
+					AND = {
+						province_id = 1962
+						NOT = {
+							culture_group = east_slavic
+						}
+					}
+				}
+				controlled_by = ROOT
+				is_core = ROOT
+				NOT = {
+					province_id = 2408
+				}
+			}
+			change_culture = russian
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = ugra.10
+	title = ugra.9.t
+	desc = ugra.9.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		NOT = {
+			has_country_modifier = mongol_masters
+		}
+		2408 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+			is_core = ROOT
+			NOT = {
+				culture_group = east_slavic
+			}
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = ugra.9.a
+		2408 = {
+			change_culture = ryazanian
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = ugra.11
+	title = ugra.11.t
+	desc = ugra.11.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		OR = {
+			tag = MOS
+			tag = RUS
+		}
+		ai = yes
+		is_subject = no
+		num_of_cities = 10
+		NOT = { war_with = RYA }
+		RYA = {
+			exists = yes
+			ai = yes
+			is_subject = no
+			is_neighbor_of = ROOT
+			is_at_war = no
+		}
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.9
+			luck = yes
+		}
+		modifier = {
+			factor = 0.5
+			RYA = {
+				has_heir = no
+			}
+		}
+		modifier = {
+			factor = 0.9
+			RYA = {
+				dynasty = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = ugra.11.a
+		inherit = RYA
+	}
+}

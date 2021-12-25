@@ -1,0 +1,166 @@
+country_decisions = {
+
+	lotharingia_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = lotharingia_formed_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = LOT }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				NOT = { exists = LOT }
+				ai = no
+			}
+			OR = {
+				primary_culture = wallonian
+				primary_culture = champenois
+				primary_culture = burgundian
+				primary_culture = rhenish
+				primary_culture = swabian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 75 #Strasbourg
+				province_id = 80 #Trier
+				province_id = 85 #Köln
+				province_id = 92 #Bruxelles
+				province_id = 93 #Liège
+				province_id = 98 #Utrecht
+				province_id = 188 #Metz
+				province_id = 189 #Nancy
+				province_id = 193 #Besançon
+				province_id = 1744 #Antwerp
+				province_id = 1760 #Koblenz
+				province_id = 1878 #Aachen
+				province_id = 5092 #Kaiserslautern
+			}
+		}
+		allow = {
+			NOT = { exists = LOT }
+			is_at_war = no	
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			owns_core_province = 75 #Memmingen
+			owns_core_province = 80 #Ravensburg
+			owns_core_province = 85 #Würtemberg
+			owns_core_province = 92 #Augsburg
+			owns_core_province = 93 #Ulm
+			owns_core_province = 98 #Memmingen
+			owns_core_province = 188 #Memmingen
+			owns_core_province = 189 #Memmingen
+			owns_core_province = 193 #Memmingen
+			owns_core_province = 1744 #Memmingen
+			owns_core_province = 1760 #Memmingen
+			owns_core_province = 1878 #Memmingen
+			owns_core_province = 5092 #Memmingen
+		}
+		effect = {
+			1878 = {
+				move_capital_effect = yes
+			}
+			change_tag = LOT
+			swap_non_generic_missions = yes
+			low_countries_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			switzerland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			lorraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			romandie_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			alsace_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			upper_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = LOT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_prestige = 50
+			set_country_flag = lotharingia_formed_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #
+	}
+}

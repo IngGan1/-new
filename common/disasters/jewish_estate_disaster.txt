@@ -1,0 +1,96 @@
+jewish_estate_disaster = {
+	potential = {
+		estate_influence = {
+			estate = jewish_estate
+			influence = 60
+		}
+		ai = no
+		NOT = { tag = PAP }
+		NOT = { religion = jewish }
+	}
+
+	can_start = {
+		has_estate = jewish_estate
+		estate_influence = {
+			estate = jewish_estate
+			influence = 80
+		}
+		OR = {
+			is_in_deficit = yes
+			is_bankrupt = yes
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 1
+			estate_influence = {
+				estate = jewish_estate
+				influence = 75
+			}
+		}
+		modifier = {
+			factor = 5
+			estate_influence = {
+				estate = jewish_estate
+				influence = 100
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_influence = {
+				estate = jewish_estate
+				influence = 90
+			}
+		}
+		modifier = {
+			factor = 5
+			is_bankrupt = yes
+		}
+	}
+	
+	can_end = {
+		or = {
+			religion = jewish
+			and = {
+				is_in_deficit = no
+				NOT = {
+					estate_influence = {
+						estate = jewish_estate
+						influence = 60
+					}
+				}
+			}
+		}
+	}
+	
+	modifier = {	
+		diplomatic_reputation = -3
+		administrative_efficiency = -0.2
+		institution_spread_from_true_faith = -0.1
+	}
+
+	on_start = jewish_estates_events.15
+	on_end = jewish_estates_events.16
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			200 = 0
+			5 = jewish_estates_events.20
+		}	
+	}
+}

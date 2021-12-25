@@ -1,0 +1,14 @@
+grateful_for_protection = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+resentful_of_interference = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+resisting_the_mac = {
+	opinion = 100
+	yearly_decay = 2
+}

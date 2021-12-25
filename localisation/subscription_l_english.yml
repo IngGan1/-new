@@ -1,0 +1,89 @@
+﻿l_english:
+ SUB_VIEW_PITCH:0 "- ¨ºà´ üÈ”Æ UÖ¥Ç)Ó!\n- ÈÀj¸´Æ .ÇÛ² ¨ºx³ä´DÇ ìÓhÕjÕ 40¬ tÇÁÀXÇ èÎPÑ.Î )Ó\n- ¼ä¹|ÇÐÅ ÈÀj¸´Æ DLC ¨ºP´ ¼j¸ ¬À©Æ ¬¥²\ntÇ l­Å³NÇ PCNÆ SteamÐÅÁÌ¹ ¬À©Æ¬¥²iÕÈ²ä²"
+ SUB_ACTIVE_NEED_DOWNLOAD:0 "ÔÆ¬ °¬È|¹ µÑtÕ ÀÉ®L®ÀÉ œÍÜÂ´ ¨ºà´ DLC|¹ ¬À©Æ`Õ Â ˆÇµÂÈ²ä².\n\n- ¨ºà´ üÈ”Æ UÖ¥Ç)Ó!\n-ÈÀj¸´Æ .ÇÛ² ¨ºx³ä´tÇ ìÓhÕ´ 40¬ tÇÁÀXÇ èÎPÑ.Î)Ó\n-¨ºà´ LÇEÅ)Ó\n-l­Å³ ô¼±²Âj¸ Èõ¬´”² ÈÀj¸´Æ .ÇÛ²¨ºx³"
+ SUB_ACTIVE_NEED_RESTART:0 "2ÁXÎ|¹ DÆÌ¸XÕ0® ÇtÕ Œ¬„ÇDÇ ä²ÜÂ ÜÂ‘ÇXÕíÂÜÂ2Æ."
+ SUB_ACTIVE_NORMAL:0 "¬À©Æ ¬¥²jÕ ¨ºà´ DLC¬ 2ÁXÎ´ÈÅµÂÈ²ä².\n|ÇŽ´ DLC¬ È³j¸ ‘ÇÙ³XÕÀÉ JÅ<Çtº, "UÖxÇ"DÇ ²ì· 2ÁXÎ|¹ UÖxÇ`Õ Â ˆÇµÂÈ²ä²."
+ SUB_ACTIVE_VERIFYING_DOWNLOAD:0 "UÖxÇtÇ ÄÉ‰Õ É…ÇÈ²ä²."
+ SUPPORT_TEXT:0 "°Æ¬¹XÇ ÀÉÐÆÓÐÅ 8»XÇXÕ2¸tº DÅ˜· „¼¼ÒDÇ ²t¹íÂÜÂ2Æ."
+ SUB_BANNER_PITCH:0 "¼õ¼ °¬È|¹ µÑtÕ ¨ºà´ DLC|¹ ¬À©ÆXÕíÂÜÂ2Æ."
+ SUB_BANNER_LICENSE_EXPIRED:0 "l­Å³tÇ Ì¹Ì¸´ÈÅµÂÈ²ä². l­Å³ ÆÅtÇ Œ¬„ÇDÇ ä²ÜÂ ÜÂ‘ÇXÕp¬˜°, l­Å³DÇ 1¬àÂXÕíÂÜÂ2Æ."
+ SUB_BANNER_WRONG_GAMEVERSION:0 "DLC „¼È($DLC_VERSION$)tÇ Œ¬„Ç „¼Èü¬ |ÇXÎXÕÀÉ JÅµÂÈ²ä²."
+ SUB_BANNER_PAYMENT_FAILURE:0 "°¬È¬ äÂ(ÓˆÕµÂÈ²ä², Steam Ä¬ÈDÇ UÖxÇXÕíÂÜÂ2Æ."
+ SUB_VIEW_HEADER_INACTIVE:0 "l­Å³DÇ µÑtÕ tÇÈL®ÀÉ œÍÜÂ´ ¨ºà´ DLC|¹ ¬À©ÆXÕíÂÜÂ2Æ"
+ SUB_VIEW_HEADER_ACTIVE:0 "l­Å³tÇ jÖ1ÁTÖ´´Å ˆÇµÂÈ²ä²!"
+ SUB_VIEW_PAYMENT_FAILURE:0 "l­Å³ 1¬àÂÐÅ äÂ(ÓˆÕµÂÈ²ä²."
+ SUB_VIEW_PREVIEW_EXPANSION:0 "UÖ¥Ç)Ó"
+ SUB_VIEW_PREVIEW_OVERVIEW:0 "¬”Æ"
+ SUB_VIEW_TYPE_HEADER:0 "l­Å³ 0®¬ .ÁÝÐ"
+ SUB_VIEW_TYPE_1_MONTH:0 "$PRICE$ / 1¬ÔÆ"
+ SUB_VIEW_TYPE_3_MONTHS:0 "$PRICE$ / 3¬ÔÆ"
+ SUB_VIEW_TYPE_6_MONTHS:0 "$PRICE$ / 6¬ÔÆ"
+ SUB_VIEW_TYPE_1_MONTH_NOPRICE:0 "1¬ÔÆ"
+ SUB_VIEW_TYPE_3_MONTHS_NOPRICE:0 "3¬ÔÆ"
+ SUB_VIEW_TYPE_6_MONTHS_NOPRICE:0 "6¬ÔÆ"
+ SUB_VIEW_SAVING:0 "$PERCENTAGE$% È‹Å"
+ SUB_VIEW_TERMS_AND_CONDITIONS_CLOSE:0 "èÍŒÁ"
+ SUB_VIEW_TERMS_AND_CONDITIONS_SHOW:0 "tÇ©Æ ‹Å­"
+ SUB_VIEW_TERMS_AND_CONDITIONS_CONFIRM:0 "Ù³XÇ"
+ SUB_VIEW_TERMS_AND_CONDITIONS_TEXT:0 "l­ä¹|¹ ÄÉ‰ÕXÕ2¸tº ù²¬ÀXÇ tÇ©Æ ‹Å­ÐÅ Ù³XÇtÕ|Å iÕÈ²ä²."
+ SUB_VIEW_TERMS_AND_CONDITIONS_TITLE:0 "tÇ©Æ ‹Å­"
+ SUB_VIEW_SURVEY_CLOSE:0 "èÍŒÁ"
+ SUB_VIEW_SURVEY_CONFIRM:0 "l­Å³ èÍŒÁ"
+ SUB_VIEW_SURVEY_TITLE:0 "EU4 DLC ¬À©ÆŒ­jÕÐÅ ³jÕ l­Å³ èÍŒÁ"
+ SUB_VIEW_SURVEY_TEXT:0 "tÇƒ¬<Çj¸ ù²àÂXÇ l­Å³NÇ èÍŒÁ´ÀÉÌ¹, 1¬àÂ  °ÜÉL®ÀÉ ¨ºà´ DLC|¹ Õ¸tÇ`Õ Â ˆÇµÂÈ²ä². ø­ ÄÖ È¥Ç´ Œ¬„Çä´NÇ DLC XÏPÑ.Îä´tÇ ²‹·)´È²ä².\n\nÀÉÁÈ<Çj¸ ø»˜·ÐÅ °Æ¬¹XÇ ÁD¾²Â|¹ ¬.ÁXÕ0® ÇtÕÁ, jÆ l­Å³DÇ èÍŒÁXÕ”²ÀÉ °Æ¬¹ÐÅŒ¬ LÅ2¸üÈäÂ Â ˆÇµÂÈ²L®?\n\nù²àÂÐÅŒ¬ È©Æ´”² .ÁÝÐÀÉ|¹ .ÁÝÐtÕüÈíÂÜÂ2Æ:"
+ SUB_VIEW_SURVEY_NOTUSE_TEXT:0 "tÇ ÁD¾²Â|¹ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²."
+ SUB_VIEW_SURVEY_NOTWANT_TEXT:0 "tÇ ÁD¾²Â|¹ T³ tÇÁÀ ¬À©ÆXÕà¬ öÂÀÉ JÅµÂÈ²ä²."
+ SUB_VIEW_SURVEY_EXPENSIVE_TEXT:0 "tÇ ÁD¾²Â”² ±4» D¾	ÃÈ²ä²."
+ SUB_VIEW_SURVEY_NOTENOUGH_TEXT:0 "T³ tÇÁÀ EU4|¹ Õ¸tÇXÕÀÉ JÅµÂÈ²ä²."
+ SUB_VIEW_SURVEY_NOWOWN_TEXT:0 "È”² Õ¸tÇXÕà¬Ç XÕ”² ¨ºà´ ¶”² ¹ÒÈ DLC|¹ l­…ÇˆÕµÂÈ²ä²."
+ SUB_VIEW_SURVEY_BREAK_TEXT:0 " ÇÜÂ l­Å³DÇ èÍŒÁXÕ2¸à¬ iÕÈ²ä²."
+ SUB_VIEW_SURVEY_OTHER_TEXT:0 "0®ÀÐ"
+ SUB_VIEW_UNSUB_CONFIRM_TITLE:0 "l­Å³ èÍŒÁ"
+ SUB_VIEW_UNSUB_CONFIRM_MSG:0 "l­Å³DÇ èÍŒÁXÕÜÂ ¬µÂÈ²L®?\n°Æ¬¹”² ù²àÂDÇ ø­¬¹ÌÆ`Õ ƒ¬…ÇÈ²ä²!"
+ SUB_VIEW_THIRD_PARTY:0 "¬À¼²Ñ LÇEÅ )ÓDÇ jÖ1ÁTÖiÕÈ²ä². ¸ÒÇXÎ ¶”² .Ç¬ÀjÕ Õ«·üÓÐÅÁ ²Â¸Ò¬¹¼`Õ Lµ tÇ 5ÆXÁDÇ ¬À©ÆXÕÀÉ JÅÄ³k¸ 2ÁÈiÕÈ²ä²(ä²ÜÂ ÜÂ‘Ç DÕ”Æ)"
+ SUBSCRIPTION_ERROR_DISK_WRITE:0 "µ²ÂlÐ ðÄ0® 2ÆX¹, ¬À©Æ ¬¥² õ¬¬DÇ UÖxÇiÕÈ²ä²."
+ SUBSCRIPTION_ERROR_DOWNLOAD_FAILED:0 "ä²´Æj¸Ü´`Õ Â ÆÅµÂÈ²ä², xÇ0Ñ7± ðÅ°¬DÇ UÖxÇXÕíÂÜÂ2Æ."
+ SUB_DLC_OWNED:0 "§Yl­Å³(´§!"
+ SUBSCRIPTION:0 "DLC l­Å³"
+ SUBSCRIBE:0 "l­Å³"
+ UNSUBSCRIBE:0 "l­Å³ èÍŒÁ"
+ SUBSCRIPTION_ERROR_MSG_TITLE:0 "l­Å³ 2ÆX¹"
+ SUBSCRIPTION_ERROR_UNABLE_TO_SEND:0 "”Æ­ÌDÇ ô¼¼° Â ÆÅµÂÈ²ä²."
+ SUBSCRIPTION_ERROR_OFFLINE:0 "Á„¼ÐÅ ³jÕ ðÅ°¬tÇ 2ÁÈ´ÀÉ JÅXÅµÂÈ²ä². xÇ0Ñ7± ðÅ°¬DÇ UÖxÇXÕà¬ ˜°ÉÐÅ ä²ÜÂ ÜÂÄ³XÕíÂÜÂ2Æ."
+ SUBSCRIPTION_ERROR_BUSY:0 "”Æ­ÌtÇ DÆÌ¸´0®|¹ 0®ä²¬¹”² É…ÇÈ²ä². ˜°ÉÐÅ ä²ÜÂ ÜÂÄ³XÕíÂÜÂ2Æ."
+ SUBSCRIPTION_ERROR_LOGIN_STEAM:0 "Steam Ä¬ÈÐÅ j¸ø­xÇtÕ|Å iÕÈ²ä²."
+ SUBSCRIPTION_ERROR_ACCOUNT_VALIDATION:0 "Steam j¸ø­xÇDÇ xÇÉXÕÀÉ »ºˆÕµÂÈ²ä²."
+ SUB_BANNER_ACTIVE:0 "l­Å³tÇ jÖ1ÁTÖ´´Å ˆÇµÂÈ²ä². ¨ºà´ DLC¬ 2ÁXÎ´´Å ˆÇ<Çpº ÁD¾²Â|¹ Èõ¬`Õ ÉD¾¬ ´ÈÅµÂÈ²ä²."
+ SUB_BANNER_NEED_DOWNLOAD:0 "l­Å³tÇ jÖ1ÁTÖ´´Å ˆÇÀÉÌ¹ DLC|¹ ä²´Æj¸Ü´tÕ|Å iÕÈ²ä²."
+ SUB_BANNER_DOWNLOAD_PROGRESS:0 "l­Å³tÇ jÖ1ÁTÖ´´Å ˆÇµÂÈ²ä².\nDLC ä²´Æj¸Ü´ É: $TOTAL$XÇ $PROGRESS$"
+ SUB_VIEW_DOWNLOAD_PROGRESS:0 "$TOTAL$XÇ $PROGRESS$ ä²´Æj¸Ü´ É"
+ SUB_VIEW_VERIFY_PROGRESS:0 "$TOTAL$XÇ $PROGRESS$ UÖxÇ É"
+ SUB_BANNER_RESTART_NEEDED:0 "l­Å³tÇ jÖ1ÁTÖ´ÈÅ<Çpº,  ¨ºà´ DLC|¹ jÖ1ÁTÖXÕ2¸tº Œ¬„ÇDÇ ä²ÜÂ ÜÂ‘ÇtÕ|Å iÕÈ²ä²."
+ SUB_VIEW_CONNECTION_REQUIRED:0 "l­Å³ Á„¼ÐÅ ðÅ°¬`Õ Â ÆÅµÂÈ²ä²."
+ CONFIRM_START_WITHOUT_SUB_TITLE:0 "DLC¬ 2ÁXÎ´ÀÉ JÅLÇ"
+ CONFIRM_START_WITHOUT_SUB_DESC:0 "l­Å³ DLC ÆÅtÇ Œ¬„ÇDÇ Õ¸tÇXÕÜÂ ¬µÂÈ²L®?\n l­Å³ DLC|¹ ¬À©ÆXÕ2¸tº l­Å³ KÌDÇ ôÅ´Å ä²´Æj¸Ü´jÕ ä²LÇ Œ¬„ÇDÇ ä²ÜÂ ÜÂ‘ÇXÕíÂÜÂ2Æ."
+ CONFIRM_QUIT_WHILE_SUB_DOWNLOAD_TITLE:0 "ä²´Æj¸Ü´XÕ”² Ù³HÅ …ÈÌ¸ UÖxÇ"
+ CONFIRM_QUIT_WHILE_SUB_DOWNLOAD_DESC:0 "l­Å³ DLC ä²´Æj¸Ü´¬ DÆÌ¸´0® ÈÐÅ …ÈÌ¸XÕÜÂ ¬µÂÈ²L®?"
+ SUB_VIEW_RECONNECT_BUTTON:0 "¬ÇÜÂÄ³"
+ SUB_VIEW_STEAM_REQUIRED:0 "Steam Ä¬È<Çj¸ j¸ø­xÇtÕ|Å iÕÈ²ä²."
+ SUB_DOWNLOAD:0 "ä²´Æj¸Ü´"
+ SUB_VERIFY_DOWNLOAD:0 "UÖxÇ"
+ SUB_VIEW_SUPPORT:0 "ÀÉÐÆ"
+ SUB_VIEW_RENEW_ON:0 "ä²LÇ °¬È  °ÜÉ”² $DATE$ …ÇÈ²ä²."
+ SUB_VIEW_VALID_TO:0 "l­Å³ èÍŒÁ(´, l­Å³NÇ $DATE$L®ÀÉ jÖ1ÁTÖ)´È²ä²."
+ SUB_VIEW_LOADING:0 "ˆ´ì·2Æ”²É"
+ SUB_VIEW_WAITING_ON_RESPONSE_TITLE:0 "QÇõ² ³0® É"
+ SUB_VIEW_WAITING_ON_RESPONSE_DESC:0 "Á„¼ QÇõ²DÇ 0®ä²¬¹”² É…ÇÈ²ä².\n 0®ä²¬¹íÂÜÂ2Æ..."
+ SUB_ACTIVE_UNSUBSCRIBED:0 "tÇ ÁD¾²ÂÐÅÁ l­Å³DÇ 1Áõ¬È<Çj¸ èÍŒÁˆÕµÂÈ²ä².\n\n"
+ SUB_ACTIVE_SUBSCRIBED_NEWLY:0 "•ÍXÕiÕÈ²ä², ù²àÂNÇ 1Áõ¬È<Çj¸ l­Å³ˆÕµÂÈ²ä²!\n\n"
+ RESTART:0 "ä²ÜÂ ÜÂ‘Ç"
+ PURCHASE:0 "l­ä¹"
+ GS_MESSAGE_OPEN_URL:0 "T³ ‹Ç0®"
+ SUB_VIEW_OVERLAY_DISABLED_TITLE:0 "²ÂÓ 2Æ„¼¸tÇ D¾jÖ1ÁTÖ"
+ SUB_VIEW_OVERLAY_DISABLED_DESC:0 "l­ä¹|¹ ÄÉ‰ÕXÕ2¸tº .Çj¸Ó .ÇÈ²„¼jÁ¬¹²Â IVÐÅ ³jÕ ²ÂÓ 2Æ„¼¸tÇ|¹ jÖ1ÁTÖtÕ|ÅiÕÈ²ä²."
+ SUB_MESSAGE_1_month_TITLE:0 "$PRICE$XÇ D¾©Æ<Çj¸ ¨ºà´ DLC ¬À©Æ!"
+ SUB_MESSAGE_1_month_DESC:0 "ä¹ÔÆ l­Å³Ì¸|¹ ÀÉˆ´XÕà¬ ÀÉ®L®ÀÉ œÍÜÂ´ ¨ºà´ Europa Universalis IVXÇ DLC|¹ ¬À©ÆXÕíÂÜÂ2Æ.\n\nl­Å³NÇ ¸ÅÈà´ÀÉ èÍŒÁ`Õ Â ˆÇµÂÈ²ä²."
+ SUB_MESSAGE_3_months_TITLE:0 "3¬ÔÆ Ù³HÅ $PRICE$XÇ D¾©Æ<Çj¸ ¨ºà´ DLC ¬À©Æ"
+ SUB_MESSAGE_3_months_DESC:0 "3¬ÔÆÙ³HÅ l­Å³Ì¸|¹ ÀÉˆ´XÕà¬ ÀÉ®L®ÀÉ œÍÜÂ´ ¨ºà´ Europa Universalis IVXÇ DLC|¹ ¬À©ÆXÕíÂÜÂ2Æ.\n\nl­Å³NÇ ¸ÅÈà´ÀÉ èÍŒÁ`Õ Â ˆÇµÂÈ²ä²."
+ SUB_MESSAGE_6_months_TITLE:0 "6¬ÔÆ Ù³HÅ $PRICE$XÇ D¾©Æ<Çj¸ ¨ºà´ DLC ¬À©Æ"
+ SUB_MESSAGE_6_months_DESC:0 "6¬ÔÆÙ³HÅ l­Å³Ì¸|¹ ÀÉˆ´XÕà¬ ÀÉ®L®ÀÉ œÍÜÂ´ ¨ºà´ Europa Universalis IVXÇ DLC|¹ ¬À©ÆXÕíÂÜÂ2Æ.\n\nl­Å³NÇ ¸ÅÈà´ÀÉ èÍŒÁ`Õ Â ˆÇµÂÈ²ä²."

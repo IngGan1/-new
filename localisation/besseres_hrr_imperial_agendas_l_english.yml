@@ -1,0 +1,170 @@
+﻿l_english:
+ imperial_agenda_add_province_x_to_hre: "§Y[add_province_x_to_hre_province.GetName]§! Èm­ ÆÀÉj¸ ”Í¬"
+ imperial_agenda_add_province_x_to_hre_desc: "[add_province_x_to_hre_province.GetName]”² àÂ1Áj¸È¹Èm­ ÆÐÅ ˆÇÀÉÌ¹ xÆÈü¬Ä³ ¬k®µÂÈ²ä². ä²x¹ ²p­¬ÐÅŒ¬ |¾WÅ0®0® ÈÐÅ àÂ1Áj¸È¹Èm­XÇ ô¼8Ö|¹ ¼DÅ|Å iÕÈ²ä²."
+ improve_x_elector_opinion: "§Y[improve_x_elector_opinion_country.GetName]§!XÇ ­Ä¬ ¥ÕÁÀ Ä³¨º"
+ improve_x_elector_opinion_desc: "[improve_x_elector_opinion_country.GetName]XÇ .ÁÈÄÖ”² °Æ¬¹|¹ ’±Œ¬ ÉÓ¬XÕà¬ ˆÇÀÉ JÅµÂÈ²ä². °Æ¬¹”² ¬Ç.Á ¬¥²1ÁDÇ ’±tÇ2¸tº tÇ .ÁÈÄÖNÆXÇ XÇ¬¬DÇ ¬.ÁtÕ|Å iÕÈ²ä²."
+ imperial_agenda_increase_hre_size: "§YàÂ1Á j¸È¹ Èm­§!XÇ UÖ¥Ç"
+ imperial_agenda_increase_hre_size_desc: "àÂ1Áj¸È¹Èm­NÇ l­1ÁÐÆtÇ Î¹DÇ LµÌ¹ ¬tÕÈÉ Â ˆÇµÂÈ²ä². °Æ¬¹”² Èm­XÇ Æ Ñ|¹ UÖ¥ÇXÕà¬ ÈÀj¸´Æ ŒÖÐÆDÇ ¨ºDÅÁ °Æ¬¹XÇ ˜×tÇ T³ äÎÈÉ Â ˆÇÄ³k¸ x±%¸tÕ|Å iÕÈ²ä²."
+ imperial_agenda_add_5_provs_to_hre: "Èm­ Æ Ñ UÖ¥Ç"
+ imperial_agenda_add_5_provs_to_hre_desc: "àÂ1Á j¸È¹ Èm­tÇ ÀÉ0¼XÕ”² EµtÇ Î¹DÇÂk¸ iÖÈ”² T³ ¬%¸tÕÑÉÈ²ä². ø­ì·À»j¸ àÂ1Áj¸È¹Èm­XÇ Æ Ñ|¹ UÖ¥ÇtÕ|Å iÕÈ²ä²."
+ imperial_agenda_have_7_electors: ".ÁÈÄÖm­ „Ç…º"
+ imperial_agenda_have_7_electors_desc: "àÂ1Á j¸È¹ Èm­tÇ È³j¸ ‘ÇÙ³XÕ2¸tº È´ÅÄ³ [Root.GetMaxNumberOfElectors]¬XÇ .ÁÈÄÖ¬ DÕ”ÆiÕÈ²ä². iÖäÂ .Áp¬¬ È³j¸ XÎì·ÈÉ Â ˆÇÄ³k¸ x±%¸tÕ|Å iÕÈ²ä²."
+ imperial_agenda_prove_imperial_legitimacy: "Èm­XÇ ÈµÑ1Á É…º"
+ imperial_agenda_prove_imperial_legitimacy_desc: ".ÁÈÄÖm­ä´NÇ °Æ¬¹|¹ ø­ä´XÇ [Root.Monarch.GetTitle]j¸ .ÁœÍˆÕÀÉÌ¹, tÇì·jÕ iÕ•¼1ÁÐÅÄ³ ˆ´l­XÕà¬ [Root.Monarch.GetName]”² Èù²jÕ àÂ1Á j¸È¹ [Root.Monarch.GetTitle]j¸ ±¬¹ ¼DÅ ä´ìÅÀÉÀÉ JÅà¬ ˆÇµÂÈ²ä². °Æ¬¹”² tÇƒ¬DÇ à¬ÐÌ|ÅiÕÈ²ä²."
+ imperial_agenda_convert_imperial_province: "§Y[convert_imperial_province_province.GetName]§!XÇ tÇP­Ä³ ¬…È"
+ imperial_agenda_convert_imperial_province_desc: "[convert_imperial_province_province.GetName]XÇ ÜÂü»NÇ Èm­XÇ àÂYÅDÇ ÿ»ÀÉ JÅµÂÈ²ä². °Æ¬¹”² tÇ tÇP­Ä³ä´DÇ ¬…ÈÜÂÏ|Å iÕÈ²ä²."
+ imperial_agenda_convert_imperial_country: "tÇP­ m­¬ §Y[convert_imperial_country_country.GetName]§!XÇ ¬…È"
+ imperial_agenda_convert_imperial_country_desc: "[convert_imperial_country_country.GetName]XÇ µÑXÎÇ”² Èm­ àÂYÅDÇ ÿ»ÀÉ JÅµÂÈ²ä². °Æ¬¹”² ø­ä´XÇ ÿ»LÇDÇ ŒÖõ¼ÜÂÏ|Å iÕÈ²ä²."
+ imperial_agenda_pass_imperial_reform: "Èm­ ¬Ö µÑü¬"
+ imperial_agenda_pass_imperial_reform_desc: "àÂ1Á j¸È¹ Èm­NÇ ÈÄÉÈxÇ ðÅiÕ ¬³m­DÇ .ÇÀÉXÕ0® ÇtÕ ¬ÖtÇ DÕ”ÆiÕÈ²ä². °Æ¬¹”² Èm­ ¬ÖDÇ ÈÈXÕ”² p³ ÑÉÉtÕ|Å iÕÈ²ä²."
+ imperial_agenda_restore_imperial_peace: "Èm­ ´°XÇ ÉÓTÖ"
+ imperial_agenda_restore_imperial_peace_desc: "àÂ1Áj¸È¹Èm­NÇ ´°È<Çj¸ ‹ÅTÖ.´ ìÅ.Ç¬ ÆÅµÂÈ²ä². °Æ¬¹”² ´°Ž´ õ¬©¬DÇ Éè²XÕà¬ ³àÂ xÆŽ´ ÈÐÅŒ¬ )¼¥ÕDÇ ÀÉÜÂtÕ|Å iÕÈ²ä²."
+ imperial_agenda_be_elected_by_5_electors: ".ÁÈÄÖm­XÇ ÀÉÀÉ"
+ imperial_agenda_be_elected_by_5_electors_desc: "¬Ç.ÁÐÅ 1Áõ¬XÕ2¸tº ä²x¹ ´Å²µ m­¬ô¼ä² T³ Î¹NÇ .ÁÈÄÖXÇ ,ÒjÔ¬ DÕ”ÆXÕÀÉÌ¹ jÍŒÁ 5…ºXÇ .ÁÈÄÖ<Çj¸Ž´0Ñ ÀÉÀÉ|¹ »ÅDÇ Â ˆÇä²tº °Æ¬¹XÇ …º1¼jÕ iÖÈÐÅ ³jÕ Œ­¬¹Ä³ …ÇÉ.´ ƒ¬…ÇÈ²ä²."
+ imperial_agenda_get_x_elector_vote: "§Y[get_x_elector_vote_country.GetName]§!XÇ ÀÉÀÉ"
+ imperial_agenda_get_x_elector_vote_desc: "ä²LÇ iÖÈ .Áp¬ ÈÐÅ T³ Î¹NÇ .ÁÈÄÖä´XÇ ÀÉÀÉ|¹ »ÅDÇ Â ˆÇDÇÂk¸ ‹ÈµÂÈ²ä². °Æ¬¹”² [get_x_elector_vote_country.GetName]XÇ ÀÉÀÉ|¹ »Å<Ç2¸à¬ x±%¸tÕ|Å iÕÈ²ä²."
+ imperial_agenda_destroy_hostile_reform_center: "§Y[destroy_hostile_reform_center_province.GetName]§!XÇ …ÈP­ ÉìÂÀÉ Èp¬"
+ imperial_agenda_destroy_hostile_reform_center_desc: "[destroy_hostile_reform_center_province.GetName]”² Èm­ ´°ÐÅ ÇØÕjÕ ¬ÀÁÀDÇ |Ó(·Ë¹È²ä². °Æ¬¹”² tÇ tÇè²XÇ ÉìÂÀÉ|¹ Ó4­tÕ|Å iÕÈ²ä²."
+ imperial_agenda_return_hre_core_internal: "§Y[return_hre_core_internal_country.GetAdjective]§!XÇ Èù²jÕ Æ Ñ §Y[return_hre_core_internal_province.GetName]§! ¼XÖ"
+ imperial_agenda_return_hre_core_internal_desc: "[return_hre_core_internal_province.GetName]”² [return_hre_core_internal_province.Owner.GetName]ÐÅ XÇtÕÁ Ž´ù²XÕŒ¬ |¾WÅ¼¬µÂÈ²ä². °Æ¬¹”² iÖÈj¸Á ÈXÇ|¹ ¼j¸¡Ç0® ÇtÕ Èù²jÕ ŒÁ.ÇÇxÇ [return_hre_core_internal_country.GetName]ÐÅŒ¬ Ì³2¸üÈ´Å|Å iÕÈ²ä²."
+ imperial_agenda_return_hre_core_external: "§YÈm­§!XÇ Èù²jÕ Æ Ñ §Y[return_hre_core_external_province.GetName] ÈÐXÖ§!"
+ imperial_agenda_return_hre_core_external_desc: "[return_hre_core_external_province.GetName]”² [return_hre_core_external_province.Owner.GetName]ÐÅ XÇtÕÁ Ž´ù²XÕŒ¬ |¾WÅ¼¬µÂÈ²ä². °Æ¬¹”² iÖÈj¸Á ÈXÇ|¹ ¼j¸¡Ç0® ÇtÕ Èù²jÕ ŒÁ.ÇÇxÇ [return_hre_core_external_country.GetName]ÐÅŒ¬ Ì³2¸üÈ´Å|Å iÕÈ²ä²."
+ imperial_agenda_release_hre_country: "§Y[release_hre_country_country.GetName]§!XÇ Å³Ë¹"
+ imperial_agenda_release_hre_country_desc: "[release_hre_country_country.GetName]”² [release_hre_country_province.Owner.GetName]ÐÅ XÇtÕ Ž´ù²XÕŒ¬ iÕÑ¼´ÈÅµÂÈ²ä². °Æ¬¹”² iÖÈj¸Á ÈXÇ|¹ ¼j¸¡Ç0® ÇtÕ ø­ä´DÇ tÕ)¼tÕ|Å iÕÈ²ä²."
+ imperial_agenda_free_hre_vassal_from_outsider: "§Y[free_hre_vassal_from_outsider_country.GetName]§!XÇ Å³Ë¹"
+ imperial_agenda_free_hre_vassal_from_outsider_desc: "[free_hre_vassal_from_outsider_country.GetName]”² [free_hre_vassal_from_outsider_country.Overlord.GetName]ÐÅ XÇtÕ …ÈÁ´ÈÅµÂÈ²ä². °Æ¬¹”² iÖÈj¸Á ä²x¹ xÆŽ´XÇ m­¬¬ Èm­ ´°Ž´XÇ m­¬|¹ …ÈÁÜÂ²Ð”² ƒ¬DÇ ©Æ©°`Õ Â ÆÅµÂÈ²ä²."
+ imperial_agenda_push_outsiders_out_of_hre: "§YÈm­XÇ È§! °ºDÅ´°0®"
+ imperial_agenda_push_outsiders_out_of_hre_desc: "Èm­XÇ È, àÂ1Á j¸È¹ Èm­XÇ |ÇŽ´¬ DÅÌ² m­¬¬ Èm­ Æ Ñ|¹ ŒÁ.ÇXÕà¬ ˆÇµÂÈ²ä². °Æ¬¹”² ø­ä´DÇ ¼´Å´°|Å iÕÈ²ä²."
+ imperial_agenda_liberate_imperial_elector: ".ÁÈÄÖm­ §Y[liberate_imperial_elector_country.GetName]§!XÇ Å³Ë¹"
+ imperial_agenda_liberate_imperial_elector_desc: ".ÁÈÄÖm­ [liberate_imperial_elector_country.GetName]¬ [liberate_imperial_elector_country.Overlord.GetName]ÐÅ XÇtÕ …ÈÁ´ÈÅµÂÈ²ä².  °Æ¬¹”² Ç.Çj¸´Æ .Áp¬|¹ ô¼¥ÇXÕ0® ÇtÕ ø­ä´DÇ tÕ)¼ÜÂÏ|Å iÕÈ²ä²."
+ imperial_agenda_develop_the_imperial_capital: "§YÈm­XÇ ÂÄ³§! ¬¼"
+ imperial_agenda_develop_the_imperial_capital_desc: "Èm­ ÂÄ³XÇ ¼ÈNÇ Èm­XÇ …º1ÁÐÅ ä¹°Æ É”ÆiÕÈ²ä². °Æ¬¹”² ø­ƒ¬DÇ ¼ÈÜÂ²Ð”² p³ ÑÉÉtÕ|Å iÕÈ²ä²."
+ imperial_agenda_fortify_the_imperial_border: "§YÈm­XÇ À¼Ë¬§! ”ÆÈÀTÖ"
+ imperial_agenda_fortify_the_imperial_border_desc: "[fortify_the_imperial_border_province.GetName]NÇ Èm­XÇ À¼Ë¬ÐÅ ˆÇ<Çpº È³ÈxÇ õ¬©¬ÐÅ èÍ‹ÅiÕÈ²ä². °Æ¬¹”² ÜÂü»ä´, ø­¬¹à¬ T³ É”ÆjÕ Èm­DÇ ô¼8ÖXÕ0® ÇtÕ ”ÆÈÀ|¹ ¬TÖtÕ|Å iÕÈ²ä²."
+ imperial_agenda_rival_imperial_enemy: "Èm­XÇ È §Y[rival_imperial_enemy_country.GetName]§!DÇ|·tÇŒ¼j¸ ÀÉÈ"
+ imperial_agenda_rival_imperial_enemy_desc: "[rival_imperial_enemy_country.GetName]NÇ àÂ1Á j¸È¹ Èm­XÇ ÇØÕjÕ tÇÃÆ…ÇÈ²ä². mÕÁÀ (Â´ÅÁ Èm­DÇ õ¬©¬`Õ 0®ŒÖ|¹ 0®ä²¬¹à¬ ˆÇµÂÈ²ä². °Æ¬¹”² ø­ä´DÇ õ¬¬È<Çj¸ |·tÇŒ¼j¸ .Á¸ÅXÕà¬ Èm­DÇ ô¼8ÖtÕ|Å iÕÈ²ä²."
+ imperial_agenda_marry_3_electors: ".ÁÈÄÖm­ü¬ <ÖxÇ ­Ä¬ .ÇÀÉ"
+ imperial_agenda_marry_3_electors_desc: "UÆäÂ °¬<ÖDÇ üÈ.ÁXÕìÅ jÍŒÁ 3…ºXÇ .ÁÈÄÖNÆXÇ ­Ä¬|¹ ¬TÖXÕtº ¬Ç.Á ¬¥²1ÁtÇ ’±DÅÑÉÈ²ä²."
+ imperial_agenda_reconquest_of_rome: "§Y1ÁŒÈ§! õ¼ÐÆ"
+ imperial_agenda_reconquest_of_rome_desc: "P­iÖXÇ Eµ [reconquest_of_rome_province.GetName]¬ |¾WÅ¼¬ÈÅµÂÈ²ä². °Æ¬¹”² 1ÁŒÈ|¹ õ¼ÐÆtÕ|Å iÕÈ²ä²."
+ imperial_agenda_conquest_of_rome: "§Y1ÁŒÈ§!XÇ Èm­TÖ"
+ imperial_agenda_conquest_of_rome_desc: "P­iÖXÇ EµxÇ [conquest_of_rome_province.GetName]”² iÖÈXÇ µÑÈ XÕÐÅ ˆÇ´Å|Å iÕÈ²ä². Á„ÇŒ­,ÒÁÇ tÇÄÖ P­iÖNÇ àÂ1Á j¸È¹ Èm­ HÅÐÅÁ ´Å µjÕ Œ­%¸Ä³ ¬ÀÉÀÉ »ºXÕÀÉÌ¹, ^Å<Çj¸Ä³ Œ­%¸DÇ ¬ÀÉÀÉ »ºtÕ|Å iÕÈ²ä². iÖÈ”² 8ÁÄ¬ÐÅÁ ¬¥Ç ¬%¸jÕ ¬¨Ñ­¹ àÂÇ…ÇÈ²ä²."
+ imperial_agenda_improve_opinion_with_all_electors: "¨ºà´ .ÁÈÄÖm­ü¬XÇ ­Ä¬ .ÇÀÉ"
+ imperial_agenda_improve_opinion_with_all_electors_desc: "°Æ¬¹¬ ¨ºà´ .ÁÈÄÖä´DÇ °Æ¬¹ 8Á%¸<Çj¸ ¨ºDÇ Â ˆÇä²tº, ø­ ´Å²µ Ë¬ÁÇÇÄ³ °Æ¬¹XÇ UÆ­DÇ ÔÖXÎ”² ƒ¬NÇ ˆ´¬¥²`Õ ƒ¬…ÇÈ²ä². °Æ¬¹”² .ÁÈÄÖä´ü¬XÇ ­Ä¬|¹ ¬.ÁXÕà¬ ø­ä´tÇ ä²LÇ Èm­ .Áp¬|¹ ÇtÕ °Æ¬¹|¹ ÀÉÀÉXÕÄ³k¸ tÕ|Å iÕÈ²ä²."
+ imperial_agenda_make_x_an_elector: "§Y[make_x_an_elector_country.GetName]§!|¹ .ÁÈÄÖj¸ ÀÉÈ"
+ imperial_agenda_make_x_an_elector_desc: "Èm­ .Áp¬XÇ 0®¥²DÇ õ¼ÐÆXÕ2¸tº .ÁÈÄÖ|¹ „Ç…ºtÕ|Å iÕÈ²ä². ø­ä´tÇ °Æ¬¹ÐÅŒ¬ ,ÒjÔ`Õ Â ˆÇÄ³k¸ [make_x_an_elector_country.GetName]|¹ „Ç…ºtÕ|Å iÕÈ²ä²."
+ imperial_agenda_make_x_a_free_city: "§Y[make_x_a_free_city_country.GetName]§!|¹ Ç.ÇÜÂj¸ ÀÉÈ"
+ imperial_agenda_make_x_a_free_city_desc: "Èm­ÐÅ Ç.ÇÜÂ¬ Î¹DÇÂk¸ °Æ¬¹ÐÅŒ¬ T³ ‹ÈµÂÈ²ä². [make_x_a_free_city_country.GetName]”² Ç.ÇÜÂ¬ .´ Ç©¬tÇ ˆÇà¬ XÇÀÉ¬ ˆÇ”² ³ÁÀxÇ ƒ¬ ¬µÂÈ²ä². 0µ|·Á °Æ¬¹”² ø­ä´ÐÅŒ¬ tÇ ÀÉÇ|¹ Ž´ìÅtÕ|Å iÕÈ²ä²."
+ IMPERIAL_AGENDAS_ARE_DISABLED_TT: "§YÈm­ HÅt¬§!NÇ D¾jÖ1ÁTÖ ´ÈÅä²..."
+ select_imperial_agenda_trigger_tt: "ä²LÇDÇ ©ÍqÈÜÂ²Ðtº DÆÌ¸(´:"
+ select_imperial_agenda_success_tt: "DÆÌ¸ ÜÂ ä²LÇXÇ ¨Öü¬¬ ¼ÝÀhÕ:"
+ select_imperial_agenda_fail_tt: "äÂ(Ó ÜÂ ä²LÇXÇ ¨Öü¬¬ ¼ÝÀhÕ:"
+ select_imperial_agenda_tt_add_province_x_to_hre: "§Y[imperial_agenda_add_province_x_to_hre]§! \n[imperial_agenda_add_province_x_to_hre_desc]"
+ select_imperial_agenda_trigger_tt_add_province_x_to_hre: "£no£ §Y[add_province_x_to_hre_province.GetName]§!”² Èm­XÇ Æ ÑtÇä²"
+ complete_imperial_agenda_add_province_x_to_hre_opinion_tt: "°Æ¬¹ÐÅ ³jÕ §Y[This.GetName]§!XÇ ÈÀj¸´Æ ŒÁ.ÇÇXÇ XÇ¬¬tÇ §G50§!Ì¹|Ð É¬ˆÕä²."
+ select_imperial_agenda_tt_improve_x_elector_opinion: "§Y[improve_x_elector_opinion]§! \n[improve_x_elector_opinion_desc]"
+ select_imperial_agenda_trigger_tt_improve_x_elector_opinion: "£no£ §Y[Root.GetName]§!ÐÅ ³jÕ §Y[improve_x_elector_opinion_country.GetName]§!XÇ ­Ä¬Ä³¬ jÍŒÁ §Y150§! tÇÁÀtÇ´Å|Å iÕÈ²ä²"
+ select_imperial_agenda_tt_increase_hre_size: "§Y[imperial_agenda_increase_hre_size]§! \n[imperial_agenda_increase_hre_size_desc]"
+ select_imperial_agenda_trigger_tt_increase_hre_size: "£no£ Èm­ ´° m­¬XÇ Â¬ §Y1§! É¬XÕÆä²"
+ imperial_agenda_completed_trigger_increase_hre_size_tt: "àÂ1Á j¸È¹ Èm­ ´°ÐÅ jÍŒÁjÕ §Y[Root.increase_hre_size_value.GetValue]§!¬XÇ m­¬¬ tÈ¬ÇjÕä²."
+ select_imperial_agenda_tt_add_5_provs_to_hre: "§Y[imperial_agenda_add_5_provs_to_hre]§! \n[imperial_agenda_add_5_provs_to_hre_desc]"
+ select_imperial_agenda_trigger_tt_add_5_provs_to_hre: "£no£ Èm­XÇ Æ Ñ¬ §Y5§! É¬XÕÆä²"
+ imperial_agenda_completed_trigger_add_5_provs_to_hre_tt: "àÂ1Á j¸È¹ Èm­ ´°ÐÅ jÍŒÁ §Y[Root.add_5_provs_to_hre_value.GetValue]§!¬XÇ Õj¸H¾²Â¬ tÈ¬ÇtÕ|Å iÕÈ²ä²"
+ select_imperial_agenda_tt_have_7_electors: "§Y[imperial_agenda_have_7_electors]§! \n[imperial_agenda_have_7_electors_desc]"
+ select_imperial_agenda_trigger_tt_have_7_electors: "£no£ jÍŒÁ §Y7§!XÇ .ÁÈÄÖm­tÇ tÈ¬ÇjÕä²"
+ complete_imperial_agenda_have_7_electors_tt: "XÇÈ|¹ DÌÝÐjÕ ÄÖ „Ç…º´ ¨ºà´ .ÁÈÄÖm­:\n§Y[Root.GetName]§!XÇ XÇ¬¬tÇ §G50§!Ì¹|Ð É¬iÕÈ²ä²."
+ select_imperial_agenda_tt_prove_imperial_legitimacy: "§Y[imperial_agenda_prove_imperial_legitimacy]§! \n[imperial_agenda_prove_imperial_legitimacy_desc]"
+ select_imperial_agenda_trigger_tt_prove_imperial_legitimacy: "£no£ ÈµÑ1ÁtÇ jÍŒÁjÕ §Y100§!tÇ´Å|Å iÕÈ²ä²"
+ select_imperial_agenda_tt_convert_imperial_province: "§Y[imperial_agenda_convert_imperial_province]§! \n[imperial_agenda_convert_imperial_province_desc]"
+ select_imperial_agenda_trigger_tt_convert_imperial_province: "£no£[convert_imperial_province_province.GetName]:\n  àÂ1Á j¸È¹ Èm­ÐÅ ÁtÕˆÇä²\n  §Y[Root.GetName]§!XÇ ŒÁ.Ç\n  §Y[Root.Religion.GetName]§!tÇä²"
+ select_imperial_agenda_tt_convert_imperial_country: "§Y[imperial_agenda_convert_imperial_country]§! \n[imperial_agenda_convert_imperial_country_desc]"
+ select_imperial_agenda_trigger_tt_convert_imperial_country: "£no£ [convert_imperial_country_country.GetName]: \n   §Y[convert_imperial_country_country.GetName]§! is §Y[Root.Religion.GetName]§!"
+ select_imperial_agenda_tt_pass_imperial_reform: "§Y[imperial_agenda_pass_imperial_reform]§! \n[imperial_agenda_pass_imperial_reform_desc]"
+ select_imperial_agenda_trigger_tt_pass_imperial_reform: "£no£ §Y1§!¬XÇ Èm­ ¬ÖDÇ ”Í¬j¸ µÑü¬ÜÂ0Ïä²"
+ imperial_agenda_completed_trigger_pass_imperial_reform_tt: "Í ÈÈ´ §YÈm­ ¬Ö§!XÇ Â¬ §Y[Root.pass_imperial_reform_value.GetValue]§!ä²"
+ select_imperial_agenda_tt_restore_imperial_peace: "§Y[imperial_agenda_restore_imperial_peace]§! \n[imperial_agenda_restore_imperial_peace_desc]"
+ select_imperial_agenda_trigger_tt_restore_imperial_peace: "[Root.GetImperialAgendaTriggerIconIsAtPeace] ÉÓTÖm¸ä² \n£no£ ¨ºà´ §YÈm­ ´° m­¬§!ä´tÇ Áj¸ ÉÓTÖ|¹ .ÇÀÉ ÉtÇä²."
+ imperial_agenda_completed_trigger_restore_imperial_peace_tt: "¨ºà´ §YÈm­ ´° m­¬§!ä´tÇ Áj¸ ÉÓTÖ|¹ .ÇÀÉ ÉtÇä²."
+ select_imperial_agenda_tt_be_elected_by_5_electors: "§Y[imperial_agenda_be_elected_by_5_electors]§! \n[imperial_agenda_be_elected_by_5_electors_desc]"
+ select_imperial_agenda_trigger_tt_be_elected_by_5_electors: "£no£ §Y[Root.GetName]§!|¹ ÀÉÀÉXÕ”² .ÁÈÄÖm­tÇ §Y5§!ó¬tÇä²"
+ complete_imperial_agenda_be_elected_by_5_electors_tt: "HÅt¬tÇ DÌÝÐ´0® ÈÐÅ (Ì0® iÖÈj¸Á °Æ¬¹|¹ ÀÉÀÉXÕÀÉ JÅXÅX³ ¨ºà´ .ÁÈÄÖä´:\n§Y[Root.GetName]§!XÇ ­Ä¬Ä³¬ §G75§! ÁÀ¹ÂjÕä²."
+ select_imperial_agenda_tt_get_x_elector_vote: "§Y[imperial_agenda_get_x_elector_vote]§! \n[imperial_agenda_get_x_elector_vote_desc]"
+ select_imperial_agenda_trigger_tt_get_x_elector_vote: "£no£ §Y[Root.GetName]§!¬ §Y[get_x_elector_vote_country.GetName]§!XÇ ÀÉÀÉ|¹ ¼”²ä²"
+ select_imperial_agenda_tt_destroy_hostile_reform_center: "§Y[imperial_agenda_destroy_hostile_reform_center]§! \n[imperial_agenda_destroy_hostile_reform_center_desc]"
+ select_imperial_agenda_trigger_tt_destroy_hostile_reform_center: "£no£ [destroy_hostile_reform_center_province.GetName]: \n   Èm­XÇ Æ ÑtÇä² \n   §Y[Root.Religion.GetName]§!tÇä² \n   ¬ÖXÇ ÉìÂÀÉ¬ DÅÈ²ä²"
+ select_imperial_agenda_tt_return_hre_core_internal: "§Y[imperial_agenda_return_hre_core_internal]§! \n[imperial_agenda_return_hre_core_internal_desc]"
+ select_imperial_agenda_trigger_tt_return_hre_core_internal: "£no£ [return_hre_core_internal_province.GetName]: \n   Èm­XÇ Æ ÑtÇä² \n   §Y[return_hre_core_internal_country.GetName]§!¬ ŒÁ.Ç ÉtÇä²"
+ select_imperial_agenda_tt_return_hre_core_external: "§Y[imperial_agenda_return_hre_core_external]§! \n[imperial_agenda_return_hre_core_external_desc]"
+ select_imperial_agenda_trigger_tt_return_hre_core_external: "£no£ [return_hre_core_external_province.GetName]: \n   §Y[return_hre_core_external_country.GetName]§!¬ ŒÁ.Ç ÉtÇä²"
+ select_imperial_agenda_tt_release_hre_country: "§Y[imperial_agenda_release_hre_country]§! \n[imperial_agenda_release_hre_country_desc]"
+ select_imperial_agenda_trigger_tt_release_hre_country: "£no£ §Y[release_hre_country_country.GetName]§!¬ tÈ¬ÇjÕä² \n£no£ [release_hre_country_province.GetName]: \n   §Y[release_hre_country_country.GetName]§!¬ ŒÁ.Ç ÉtÇä²"
+ select_imperial_agenda_tt_free_hre_vassal_from_outsider: "§Y[imperial_agenda_free_hre_vassal_from_outsider]§! \n[imperial_agenda_free_hre_vassal_from_outsider_desc]"
+ select_imperial_agenda_trigger_tt_free_hre_vassal_from_outsider: "£no£ §Y[free_hre_vassal_from_outsider_country.GetName]§!¬ …ÈÁm­tÇ DÅÈ²ä²"
+ select_imperial_agenda_tt_push_outsiders_out_of_hre: "§Y[imperial_agenda_push_outsiders_out_of_hre]§! \n[imperial_agenda_push_outsiders_out_of_hre_desc]"
+ select_imperial_agenda_trigger_tt_push_outsiders_out_of_hre: "£no£ ´Å²µ Æ ÑÄ³ Èm­ Æ Ñ¬ Èm­ xÆXÇ m­¬˜° ø­ …ÈÁm­XÇ ŒÁ.Ç¬ DÅÈ²ä²"
+ select_imperial_agenda_tt_liberate_imperial_elector: "§Y[imperial_agenda_liberate_imperial_elector]§! \n[imperial_agenda_liberate_imperial_elector_desc]"
+ select_imperial_agenda_trigger_tt_liberate_imperial_elector: "£no£ §Y[liberate_imperial_elector_country.GetName]§!¬ …ÈÁm­tÇ DÅÈ²ä²"
+ select_imperial_agenda_tt_develop_the_imperial_capital: "§Y[imperial_agenda_develop_the_imperial_capital]§! \n[imperial_agenda_develop_the_imperial_capital_desc]"
+ select_imperial_agenda_trigger_tt_develop_the_imperial_capital: "£no£ §Y[develop_the_imperial_capital_province.GetName]§!XÇ ¬¼Ä³¬ jÍŒÁ §Y[develop_the_imperial_capital_province.develop_the_imperial_capital_value.GetValue]§!¬ ´´Å|Å jÕä²"
+ imperial_agenda_completed_trigger_develop_the_imperial_capital_tt: "§Y[This.GetName]§!XÇ ¬¼Ä³¬ jÍŒÁ §Y[This.develop_the_imperial_capital_value.GetValue]§!¬ ´´Å|Å jÕä²"
+ select_imperial_agenda_tt_fortify_the_imperial_border: "§Y[imperial_agenda_fortify_the_imperial_border]§! \n[imperial_agenda_fortify_the_imperial_border_desc]"
+ select_imperial_agenda_trigger_tt_fortify_the_imperial_border: "£no£ [fortify_the_imperial_border_province.GetName]: \n   §Y[Root.GetName]§!¬ ŒÁ.Ç ÉtÇä² \n   ”ÆÈÀ ñ´	®tÇ §Y2§! tÇÁÀtÇä²"
+ select_imperial_agenda_tt_rival_imperial_enemy: "§Y[imperial_agenda_rival_imperial_enemy]§! \n[imperial_agenda_rival_imperial_enemy_desc]"
+ select_imperial_agenda_trigger_tt_rival_imperial_enemy: "£no£ [rival_imperial_enemy_country.GetName]: \n   §Y[Root.GetName]§!XÇ |·tÇŒ¼tÇä²\" \\n[Root.GetImperialAgendaTriggerIconHasWonWarAgainstRivalTarget]”² jÍü­ §Y10§!D± Ù³HÅ §Y[rival_imperial_enemy_country.GetName]§!NÆXÇ ÈÁÇÐÅÁ ¹Â¬¹jÕ ÈtÇ ˆÇµÂÈ²ä²."
+ imperial_agenda_completed_trigger_rival_imperial_enemy_trigger_tt: "jÍü­ §Y10D±§! Ù³HÅ §Y[rival_imperial_enemy_country.GetName]§!NÆXÇ ÈÁÇÐÅÁ ¹Â¬¹jÕ ÈtÇ ˆÇä²."
+ select_imperial_agenda_tt_marry_3_electors: "§Y[imperial_agenda_marry_3_electors]§! \n[imperial_agenda_marry_3_electors_desc]"
+ select_imperial_agenda_trigger_tt_marry_3_electors: "£no£ §Y3§! tÇÁÀXÇ .ÁÈÅÖm­tÇ §Y[Root.GetName]§!NÆ UÆäÂ °¬<ÖDÇ .ÇÀÉ ÉtÇä²"
+ complete_imperial_agenda_marry_3_electors_tt: "HÅt¬tÇ DÌÝÐ´0® ÈÐÅ”² °Æ¬¹NÆ UÆäÂ °¬<ÖDÇ XÕÀÉ JÅXÅÀÉÌ¹ ÀÉ®NÇ °¬<ÖjÕ ¨ºà´ .ÁÈÄÖ:\n  §Y[Root.GetName]§!XÇ ­Ä¬Ä³¬ §G50§!Ì¹|Ð ÁÀ¹ÂˆÕä²."
+ select_imperial_agenda_tt_reconquest_of_rome: "§Y[imperial_agenda_reconquest_of_rome]§! \n[imperial_agenda_reconquest_of_rome_desc]"
+ select_imperial_agenda_trigger_tt_reconquest_of_rome: "[Root.GetImperialAgendaTriggerIconIsCatholic]¬ §YœÌüÈP­§!tÇä² \n£no£ [reconquest_of_rome_province.GetName]: \n   §Y[PAP.GetName]§!¬ ŒÁ.Ç ÉtÇä²"
+ select_imperial_agenda_tt_conquest_of_rome: "§Y[imperial_agenda_conquest_of_rome]§! \n[imperial_agenda_conquest_of_rome_desc]"
+ select_imperial_agenda_trigger_tt_conquest_of_rome: "[Root.GetImperialAgendaTriggerIconIsCatholic]¬ §YœÌüÈP­§!tÇä² \n£no£ [conquest_of_rome_province.GetName]: \n   §Y[Root.GetName]§!¬ ŒÁ.Ç ÉtÇä²"
+ IMPERIAL_AGENDA_MODIFIER_ACTIVE_AS_LONG_AS_UNDER_CATHOLIC_EMPEROR_CONTROL: "§Y¬¨Ñ­¹§! iÖÈ¬ µÑXÎXÕ”² jÕ"
+ select_imperial_agenda_tt_improve_opinion_with_all_electors: "§Y[imperial_agenda_improve_opinion_with_all_electors]§! \n[imperial_agenda_improve_opinion_with_all_electors_desc]"
+ select_imperial_agenda_trigger_tt_improve_opinion_with_all_electors: "£no£ ¨ºà´ .ÁÈÄÖm­: \n   ä²LÇ É XÕ˜°¬ ¼Ü´ÜÂ 8ÌtÇ´Å|Å hÕ: \n      ä²LÇXÇ ¨ºà´ mÕ©ºtÇ 8ÌtÇ´Å|Å hÕ: \n         §Y[Root.GetName]§!tÇä² \n         §Y[Root.GetName]§!|¹ ä²LÇ iÖÈj¸ ÀÉÀÉjÕä² \n      ä²LÇXÇ ¨ºà´ mÕ©ºtÇ 8ÌtÇ´Å|Å hÕ: \n         §Y[Root.GetName]§! |¹ ä²LÇ iÖÈj¸ ÀÉÀÉjÕä² \n         §Y[Root.GetName]§!XÇ ­Ä¬¬ §Y125§!tÇÁÀtÇ´Å|Å jÕä² \n      §Y[Root.GetName]§!XÇ ­Ä¬¬ §Y200§!tÇÁÀtÇ´Å|Å jÕä²"
+ select_imperial_agenda_tt_make_x_an_elector: "§Y[imperial_agenda_make_x_an_elector]§! \n[imperial_agenda_make_x_an_elector_desc]"
+ select_imperial_agenda_trigger_tt_make_x_an_elector: "£no£ §Y[make_x_an_elector_country.GetName]§!:\n.ÁÈÄÖä²"
+ select_imperial_agenda_tt_make_x_a_free_city: "§Y[imperial_agenda_make_x_a_free_city]§! \n[imperial_agenda_make_x_a_free_city_desc]"
+ select_imperial_agenda_trigger_tt_make_x_a_free_city: "£no£ §Y[make_x_a_free_city_country.GetName]§!:\n  Ç.ÇÜÂä²"
+ besseres_hrr_imperial_agenda_events.EVTNAME1: "Èm­ HÅt¬"
+ besseres_hrr_imperial_agenda_events.EVTDESC1: "@[Root.GetTag] §Y[Root.GetName]§!XÇ ÈÀj¸´Æ [Root.Monarch.GetTitle], §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§!¬ UÆÇÐÅ ,Æ·ä². [Root.Monarch.GetSheHeCap]NÇ tÇÈ [Root.Monarch.GetHerHis] µÑXÎ Ù³HÅXÇ HÅt¬DÇ ÈtÕ|Å jÕä². \n[Root.Monarch.GetHerHis] ÈÇ0®¬ Ù³HÅ DÆÌ¸XÕÀÉ »ºXÕtº, Ž´ÈÈxÇ Æ¥ÕtÇ ÝÀ0®Œ¬ ´ä²."
+ besseres_hrr_imperial_agenda_events1.EVTOPT1: "Èm­ HÅt¬DÇ È`Õ DÕ”Æ ÆÅ´Å"
+ besseres_hrr_imperial_agenda_events1.EVTOPT2: "[imperial_agenda_add_province_x_to_hre]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT3: "[improve_x_elector_opinion]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT4: "[imperial_agenda_increase_hre_size]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT5: "[imperial_agenda_add_5_provs_to_hre]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT6: "[imperial_agenda_have_7_electors]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT7: "[imperial_agenda_prove_imperial_legitimacy]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT8: "[imperial_agenda_convert_imperial_province]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT9: "[imperial_agenda_convert_imperial_country]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT10: "[imperial_agenda_pass_imperial_reform]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT11: "[imperial_agenda_restore_imperial_peace]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT12: "[imperial_agenda_be_elected_by_5_electors]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT13: ""
+ besseres_hrr_imperial_agenda_events1.EVTOPT14: "[imperial_agenda_destroy_hostile_reform_center]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT15: "[imperial_agenda_return_hre_core_internal]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT16: "[imperial_agenda_return_hre_core_external]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT17: "[imperial_agenda_release_hre_country]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT18: "[imperial_agenda_free_hre_vassal_from_outsider]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT19: "[imperial_agenda_push_outsiders_out_of_hre]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT20: "[imperial_agenda_liberate_imperial_elector]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT21: "[imperial_agenda_develop_the_imperial_capital]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT22: "[imperial_agenda_fortify_the_imperial_border]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT23: "[imperial_agenda_rival_imperial_enemy]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT24: "[imperial_agenda_marry_3_electors]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT25: "[imperial_agenda_reconquest_of_rome]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT26: "[imperial_agenda_conquest_of_rome]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT27: "[imperial_agenda_improve_opinion_with_all_electors]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT28: "[imperial_agenda_make_x_an_elector]."
+ besseres_hrr_imperial_agenda_events1.EVTOPT29: "[imperial_agenda_make_x_a_free_city]."
+ besseres_hrr_imperial_agenda_events.EVTNAME3: "Èm­ HÅt¬tÇ DÆÌ¸´ä²"
+ besseres_hrr_imperial_agenda_events.EVTDESC3: "[Root.Monarch.GetTitle] [Root.Monarch.GetName]”² [Root.Monarch.GetHerHis]XÇ µÑXÎ¬ ÜÂ‘Ç.´Lµ [Root.Monarch.GetSheHe]¬ ÈjÕ Èm­ HÅt¬xÇ \"[Root.GetCurrentImperialAgenda]\"|¹ 1Áõ¬È<Çj¸ DÆÂˆÕµÂÈ²ä²."
+ besseres_hrr_imperial_agenda_events3.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_imperial_agenda_events.EVTNAME4: "Èm­ HÅt¬tÇ äÂ(ÓXÕä²"
+ besseres_hrr_imperial_agenda_events.EVTDESC4: "Èm­ HÅt¬NÇ 1Áõ¬È<Çj¸ DÆÌ¸´ÀÉ »ºˆÕà¬ Ž´‘Ç©ÆtÇ ˜°ÀÐ¬°µÂÈ²ä²."
+ besseres_hrr_imperial_agenda_events4.EVTOPT1: "Ž´D°ì·´Æ |ÇtÇp­."
+ besseres_hrr_imperial_agenda_events.EVTNAME7: "Èm­ ÈEÌXÇ À¼TÖ"
+ besseres_hrr_imperial_agenda_events.EVTDESC7: "À­qÈä´XÇ ¹ÒŒ­NÇ ÐÓÀÉ´ÈÅà¬, ¨ºà´ À­qÈä´NÇ tÇÈ iÖÈXÇ ÁÉÁ 	´àÂtÇ ´µÂÈ²ä². tÇ”² Èm­ ÈEÌ )¼ÝÂÐÅ Æ¥ÕDÇ üÈÈÅà¬, Èm­ HÅt¬NÇ øÄ¨ºÆÅ´ÅLÈµÂÈ²ä²."
+ besseres_hrr_imperial_agenda_events7.EVTOPT1: "e×ø»m¸p­."
+ imperial_agenda_decision_title: "IÈm­ HÅt¬: §Y[Root.GetCurrentImperialAgenda]§!"
+ imperial_agenda_decision_desc: "[Root.Monarch.GetTitle] §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§!”² Èm­XÇ iÖÈÐÅ 2Æt¹tºÁ ä²LÇXÇ Èm­ HÅt¬DÇ ÈXÕÆä² : \n\n§Y[Root.GetCurrentImperialAgenda]§! \n§g[Root.GetCurrentImperialAgendaDesc]§!"

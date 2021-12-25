@@ -1,0 +1,57 @@
+#######
+# All #
+#######
+
+Pentarchy_restored = {
+	potential = {
+		religion = catholic
+		118 = { religion = orthodox }
+		OR = {
+			exists = BYZ
+			exists = ROM
+		}
+		OR = {
+			BYZ = {
+				NOT = { religion = catholic }
+				has_country_flag = Pentarchy_flag
+			}
+			ROM = {
+				NOT = { religion = catholic }
+				has_country_flag = Pentarchy_flag
+			}
+		}
+	}
+	trigger = {
+		118 = { religion = orthodox }
+		118 = { NOT = { religion = catholic } }
+		religion = catholic
+	}
+	land_morale = -0.10
+	prestige = -0.5
+	tolerance_own = -2
+	legitimacy = -0.5
+	devotion = -3
+	imperial_authority_value = -0.05
+}
+
+rome_exists = {
+	potential = {
+		is_emperor = yes
+		exists = ROM
+		ROM = {
+			has_country_flag = restored_rome_flag
+			primary_culture = roman
+		}
+		NOT = { tag = ROM }
+		NOT = { owns = 118 }
+		118 = { is_part_of_hre = no }
+	}
+	trigger = {
+		religion = catholic
+		exists = ROM
+	}
+	land_morale = -0.05
+	prestige = -0.5
+	legitimacy = -1
+	imperial_authority_value = -0.1
+}

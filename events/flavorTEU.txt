@@ -1,0 +1,984 @@
+# Flavour events for Teutonic Order - The Prussian Confederation
+# By Daniel Tolman
+
+namespace = flavor_teu
+normal_or_historical_nations = yes
+
+# Prussian Confederation rises up
+country_event = {
+	id = flavor_teu.1
+	title = "flavor_teu.EVTNAME1"
+	desc = "flavor_teu.EVTDESC1"
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1460
+		NOT = { is_year = 1500 }
+		tag = TEU
+		NOT = { has_country_flag = pru_confederation_curtailed }
+		NOT = { has_estate_privilege = estate_burghers_prussian_confederation }
+		has_country_flag = pru_confederation_flag
+		is_subject = no
+		exists = POL
+		is_neighbor_of = POL
+		is_at_war = no
+		NOT = { alliance_with = POL }
+		POL = { is_subject = no }
+		POL = { num_of_cities = 10 }
+		num_of_cities = 5
+		OR = {
+			NOT = { exists = DNZ }
+			DNZ = {
+				is_subject_of = ROOT
+			}
+		}
+		OR = {
+			AND = {
+				owns = 43
+				controls = 43
+			}
+			DNZ = { owns = 43 controls = 43 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.1
+			is_year = 1466
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = pru_confederation_happened
+			# add cores to DNZ based on burgher land share
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 40
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 60
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 70
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 80
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = DNZ
+					}
+				}
+				release = DNZ
+				DNZ = {
+					change_government = republic
+					add_government_reform = oligarchy_reform
+					adopt_reform_progress = ROOT
+				}
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						is_core = DNZ
+					}
+					cede_province = DNZ
+				}
+			}
+			DNZ = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.6
+						cavalry = 0.3
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					build_to_forcelimit = {
+						galley = 0.3
+						light_ship = 0.3
+						transport = 0.2
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # Go to war
+		name = "flavor_teu.1.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+			
+		}
+		declare_war_with_cb = {
+			who = DNZ
+			casus_belli = cb_core
+			war_goal_province = 43
+		}
+		custom_tooltip = flavor_teu.1.tooltip
+		hidden_effect = {
+			POL = {
+				country_event = { id = flavor_teu.2 }
+			}
+			POL = {
+				create_guarantee = DNZ
+			}
+		}
+	}
+	option = { # Let them go
+		name = "flavor_teu.1.b"
+		ai_chance = { 
+			factor = 100 
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = no
+					NOT = { war_exhaustion = 10 }
+				}
+			}
+		}
+		add_stability = -1
+		add_prestige = -20
+	}
+}
+
+# Prussian Confederation seeks Polish support
+country_event = {
+	id = flavor_teu.2
+	title = "flavor_teu.EVTNAME2"
+	desc = "flavor_teu.EVTDESC2"
+	picture = BATTLE_VISTULA_LAGOON_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	major = yes
+	
+	option = {
+		name = "flavor_teu.2.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+		}
+		set_country_flag = supported_prussian_confederation_flag
+		POL = {
+			declare_war_with_cb = {
+				who = TEU
+				casus_belli = cb_prussian_confederation
+			}
+		}
+		add_opinion = {
+			who = DNZ
+			modifier = supported_prussian_confederation
+		}
+		DNZ = {
+			add_opinion = {
+				who = ROOT
+				modifier = supported_prussian_confederation
+			}
+		}
+		create_alliance = DNZ
+	}
+	option = { # stay out of this
+		name = "flavor_teu.2.b"
+		ai_chance = { 
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = no
+					NOT = { war_exhaustion = 10 }
+				}
+			}
+		}
+		add_prestige = -10
+	}
+}
+
+# Prussian Confederation accepts Polish rule
+country_event = {
+	id = flavor_teu.3
+	title = "flavor_teu.EVTNAME3"
+	desc = "flavor_teu.EVTDESC3"
+	picture = SEJM_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "flavor_teu.3.a"
+		vassalize = DNZ
+		if = {
+			limit = {
+				1859 = {
+					owned_by = DNZ
+					culture = polish
+				}
+			}
+			1859 = {
+				cede_province = ROOT
+				add_core = ROOT
+				remove_core = DNZ
+			}
+		}
+		west_prussia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT	}
+				NOT = { is_permanent_claim = DNZ }
+				NOT = { is_core = DNZ }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+# The Prussian Confederation
+country_event = {
+	id = flavor_teu.4
+	title = "flavor_teu.EVTNAME4"
+	desc = "flavor_teu.EVTDESC4"
+	picture = SEJM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TEU
+		NOT = {
+			is_year = 1450
+		}
+		NOT = { has_country_flag = pru_confederation_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "flavor_teu.4.a"
+		set_country_flag = pru_confederation_flag
+		custom_tooltip = dnz_decision_available_tooltip
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_PRUSSIAN_CONFEDERATION
+			influence = 10
+			duration = 7300
+		}
+		give_estate_land_share_gigantic = { estate = estate_burghers }
+	}
+}
+	
+# The Secularization of the Teutonic Order
+country_event = {
+	id = flavor_teu.5
+	title = flavor_teu.5.t
+	desc = flavor_teu.5.d
+	picture = SEJM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		PRU = {
+			has_country_flag = teutons_formed_prussia
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = flavor_teu.5.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				2958 = {
+					owned_by = ROOT
+				}
+			}
+			2958 = {
+				add_core = PRU
+				remove_core = ROOT
+				remove_core = TEU
+				cede_province = PRU
+			}
+		}
+		if = {
+			limit = {
+				767 = {
+					owned_by = ROOT
+				}
+			}
+			767 = {
+				add_core = PRU
+				remove_core = ROOT
+				remove_core = TEU
+				cede_province = PRU
+			}
+		}
+		if = {
+			limit = {
+				40 = {
+					owned_by = ROOT
+				}
+			}
+			40 = {
+				add_core = PRU
+				remove_core = ROOT
+				remove_core = TEU
+				cede_province = PRU
+			}
+		}
+		if = {
+			limit = {
+				41 = {
+					owned_by = ROOT
+				}
+			}
+			41 = {
+				add_core = PRU
+				remove_core = ROOT
+				remove_core = TEU
+				cede_province = PRU
+			}
+		}
+		PRU = {
+			add_opinion = {
+				who = ROOT
+				modifier = prussian_homage
+			}
+			country_event = {
+				id = flavor_teu.6
+				days = 1
+			}
+		}
+		create_alliance = PRU
+	}
+
+	option = {
+		name = flavor_teu.5.b
+		ai_chance = {
+			factor = 0
+		}
+		PRU = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_prussian_homage
+			}
+			country_event = {
+				id = flavor_teu.7
+				days = 1
+			}
+		}
+	}
+}
+
+# The Secularization of the Teutonic Order
+country_event = {
+	id = flavor_teu.6
+	title = flavor_teu.6.t
+	desc = flavor_teu.6.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_teu.6.a
+		add_prestige = 25
+	}
+}
+
+# The Secularization of the Teutonic Order
+country_event = {
+	id = flavor_teu.7
+	title = flavor_teu.7.t
+	desc = flavor_teu.7.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_teu.7.a
+		add_prestige = -5
+	}
+}
+
+# Protestantism in the Lands of Prussia
+country_event = {
+	id = flavor_teu.8
+	title = flavor_teu.8.t
+	desc = flavor_teu.8.d
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = TEU
+		is_religion_enabled = protestant
+		religion = catholic
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 4
+		modifier = {
+			factor = 0.5
+			has_friendly_reformation_center = yes
+		}
+		modifier = {
+			factor = 0.5
+			41 = {
+				religion = protestant
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+		name = flavor_teu.8.a
+		change_religion = protestant
+		set_ruler_religion = protestant
+		capital_scope = {
+			change_religion = protestant
+		}
+		add_church_power = 10
+		add_prestige = 25
+		PAP = {
+			add_opinion = {
+				who = TEU
+				modifier = protestant_prussia
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 0
+		}
+		name = flavor_teu.8.b
+		add_papal_influence = 25
+		PAP = {
+			add_opinion = {
+				who = TEU
+				modifier = no_protestant_prussia
+			}
+		}
+	}
+}
+
+# The Inheritance of Prussia
+country_event = {
+	id = flavor_teu.9
+	title = flavor_teu.9.t
+	desc = flavor_teu.9.d
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		BRA = {
+			exists = yes
+			has_country_flag = teutons_formed_prussia
+			government = monarchy
+			religion_group = christian
+			is_lesser_in_union = no
+			ai = yes
+		}
+		is_part_of_hre = yes
+		government = monarchy
+		if = {
+			limit = {
+				PRU = {
+					religion = protestant
+				}
+			}
+			religion = protestant
+		}
+		if = {
+			limit = {
+				PRU = {
+					religion = reformed
+				}
+			}
+			religion = reformed
+		}
+		if = {
+			limit = {
+				PRU = {
+					religion = catholic
+				}
+			}
+			religion = catholic
+		}
+		if = {
+			limit = {
+				PRU = {
+					religion = orthodox
+				}
+			}
+			religion = orthodox
+		}
+		if = {
+			limit = {
+				PRU = {
+					religion = anglican
+				}
+			}
+			religion = anglican
+		}
+		if = {
+			limit = {
+				PRU = {
+					religion = coptic
+				}
+			}
+			religion = coptic
+		}
+		culture_group = germanic
+		is_subject = no
+		total_development = 60
+		prestige = 0
+	}
+
+	mean_time_to_happen = {
+		months = 1200
+		modifier = {
+			factor = 0.9
+			PRU = {
+				has_heir = no
+			}
+		}
+		modifier = {
+			factor = 0.9
+			prestige = PRU
+		}
+		modifier = {
+			factor = 0.9
+			legitimacy = PRU
+		}
+		modifier = {
+			factor = 0.1
+			tag = BRA
+		}
+		modifier = {
+			factor = 0.9
+			culture = saxon
+		}
+		modifier = {
+			factor = 0.9
+			culture = pommeranian
+		}
+		modifier = {
+			factor = 0.5
+			culture = prussian
+		}
+		modifier = {
+			factor = 0.5
+			dynasty = PRU
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1600
+		}
+	}
+
+	option = {
+		name = flavor_teu.9.a
+		create_union = PRU
+		set_country_flag = union_over_prussia
+		PRU = {
+			add_liberty_desire = -25
+			country_event = {
+				id = flavor_teu.10
+				days = 1
+			}
+		}
+		add_prestige = 25
+	}
+}
+
+# The Inheritance of Prussia
+country_event = {
+	id = flavor_teu.10
+	title = flavor_teu.10.t
+	desc = flavor_teu.10.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_teu.10.a
+	}
+}
+
+# The Lands of Prussia
+country_event = {
+	id = flavor_teu.11
+	title = flavor_teu.11.t
+	desc = flavor_teu.11.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		is_at_war = no
+		is_subject = no
+		num_of_provinces_in_states = 8
+		TEU = {
+			exists = no
+		}
+		PRU = {
+			exists = no
+		}
+		767 = {
+			owned_by = POL
+			is_capital = no
+		}
+		41 = {
+			owned_by = POL
+			is_capital = no
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		2958 = {
+			owned_by = POL
+			is_capital = no
+		}
+		NOT = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+			primary_culture = prussian
+		}
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = flavor_teu.11.a
+		ai_chance = {
+			factor = 100
+		}
+		40 = {
+			add_core = PRU
+		}
+		767 = {
+			add_core = PRU
+		}
+		41 = {
+			add_core = PRU
+		}
+		2958 = {
+			add_core = PRU
+		}
+		4411 = {
+			add_core = PRU
+		}
+		3231 = {
+			add_core = PRU
+		}
+		release = PRU
+		create_alliance = PRU
+		add_historical_friend = PRU
+		PRU = {
+			add_historical_friend = POL
+		}
+		hidden_effect = {
+			PRU = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+						light_ship = 0.3
+						galley = 0.3
+						transport = 0.3
+					}
+				}
+				change_government = monarchy
+				add_government_reform = prussian_monarchy
+				adopt_reform_progress = ROOT
+				if = {
+					limit = {
+						41 = {
+							religion = protestant
+						}
+					}
+					change_religion = protestant
+				}
+				if = {
+					limit = {
+						41 = {
+							religion = reformed
+						}
+					}
+					change_religion = reformed
+				}
+				define_ruler = {
+					adm = 3
+					dip = 3
+					mil = 3
+					dynasty = "von Hohenzollern"
+					age = 35
+				}
+				every_owned_province = {
+					remove_core = POL
+				}
+			}
+		}
+		add_stability_or_adm_power = yes
+		add_prestige = 25
+	}
+
+	option = {
+		name = flavor_teu.11.b
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -5
+	}
+}
+
+# The Reunification of the Teutonic Order
+country_event = {
+	id = flavor_teu.12
+	title = flavor_teu.12.t
+	desc = flavor_teu.12.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = TEU
+		is_at_war = no
+		or = {
+			owns = 271
+			owns = 5008
+			owns = 4391
+		
+		}
+		num_of_cities = LIV
+		has_country_flag = pru_confederation_happened
+		government = theocracy
+		has_reform = monastic_order_reform
+		religion = catholic
+		LIV = {
+			exists = yes
+			ai = yes
+			is_subject = no
+			is_neighbor_of = TEU
+			alliance_with = TEU
+			is_at_war = no
+			government = theocracy
+			has_reform = monastic_order_reform
+			religion = catholic
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = flavor_teu.12.a
+		ai_chance = {
+			factor = 100
+		}
+		inherit = LIV
+		add_historical_friend = RIG
+		RIG = {
+			add_historical_friend = TEU
+		}
+		add_historical_friend = OSW
+		OSW = {
+			add_historical_friend = TEU
+		}
+		add_historical_friend = DRP
+		DRP = {
+			add_historical_friend = TEU
+		}
+		add_historical_friend = KUR
+		KUR = {
+			add_historical_friend = TEU
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 3
+		add_prestige = 25
+		livonia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		curonia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+		estonia_ingria_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT	}
+				NOT = { is_core = ROOT	}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+
+	option = {
+		name = flavor_teu.12.b
+		ai_chance = {
+			factor = 0
+		}
+		add_papal_influence = 25
+	}
+}

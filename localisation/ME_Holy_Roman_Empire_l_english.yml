@@ -1,0 +1,246 @@
+﻿l_english:
+ tooltip.HRE_italia_tooltip: "tÇÈÐ¬¹DÅ ø»XÁ DÆÌ¸"
+ tooltip.HRE_drafting_tooltip: "6¬ 4»‘ÇÇ ÀÉíÅÐÅÁ xÇ%¸tÇ 1 É¬`Õ ƒ¬…ÇÈ²ä²."
+ tooltip.HRE_trading_tooltip: "6¬ 4»‘ÇÇ ÀÉíÅÐÅÁ ÝÀ°ÀÉ·tÇ É¬`Õ ƒ¬…ÇÈ²ä²."
+ tooltip.HRE_production_tooltip: "6¬ 4»‘ÇÇ ÀÉíÅÐÅÁ ÝÀ°ÀtÇ 1 É¬`Õ ƒ¬…ÇÈ²ä²."
+ tooltip.HRE_taxation_tooltip: "6¬ 4»‘ÇÇ ÀÉíÅÐÅÁ 8Á®tÇ 1 É¬`Õ ƒ¬…ÇÈ²ä²."
+ HRE_holy_roman: "àÂ1Á"
+ HRE_roman_empire: "j¸È¹"
+ HRE_empire_holy: "Èm­"
+ HRE_Council: "Ç³jÕ ¬ÀÁÀ¬ä´XÇ Ç8»ŒÖ"
+ HRE_Constitution: "ÌÕ•¼ ¬Ç‘Ç1Á"
+ HRE_Laws: "ÈÀj¸´Æ •¼"
+ HRE_Taxation_Policy: "ü¬8Á ÈEÌ"
+ HRE_Production_Policy: "ÝÀ°À ÈEÌ"
+ HRE_Trading_Policy: "4»íÅ ÈEÌ"
+ HRE_Drafting_Policy: "¨ºÑ¼ ÈEÌ"
+ HRE_production: "ÝÀ°À1Á É³"
+ HRE_Plan: "¬¼ Ä¬Ö"
+ Hre_peace: "ˆ´Ì¹ ‹ÅTÖ"
+ HRE_booming_production: "ÝÀ°À1Á É¬"
+ Hre_Otto: "2Æ Ñ 38ÁXÇ È¯tÇ tÇè¸´ÅÀÉä²"
+ HRE_imperial_army_reformed: "Èm­ p­³ ¬Ö"
+ HRE_Imperial_Administration: "Èm­ ‰ÕÈ ¬Ö"
+ HRE_colonist_rush: "¬™Ì­ ÜÂ³"
+ HRE_Holy_title: "àÂ1Á"
+ HRE_Holy_desc: "°Æ¬¹”² tÇ Èm­tÇ àÂ1ÁXÕä²”² ƒ¬DÇ tÇ 8ÁÁÀÐÅ É…ºtÕ|Å iÕÈ²ä²."
+ HRE_Roman_title: "j¸È¹"
+ HRE_Roman_desc: "¬ÀŒ·ä´NÇ °Æ¬¹|¹ àÂ1ÁXÕÀÉÄ³, j¸È¹Ä³, Èm­Ä³ DÅÈ²|· D¾ÃÆµÂÈ²ä². °Æ¬¹”² ø­ä´ÐÅŒ¬ tÇ Èm­tÇ ÄÉÈ àÂ1ÁXÕä²”² ƒ¬DÇ É…ºˆÕà¬, tÇÈ ø­ä´ÐÅŒ¬ j¸È¹XÇ ÄÖÄ¬Ç„ÇDÇ É…ºtÕ|Å `Õ Lµ…ÇÈ²ä²."
+ HRE_Empire_title: "Èm­"
+ HRE_Empire_desc: "°¬m­ ¬ÀŒ·ä´NÇ °Æ¬¹|¹ Èm­tÇ DÅÈ²|· D¾ÃÆÀÉÌ¹, tÇÈ”² °Æ¬¹¬ ÈÐ¹ àÂ1Á. j¸È¹. Èm­„ÇDÇ ¨ºP´ÐÅŒ¬ ô¼ìÅÉ Lµ…ÇÈ²ä²."
+ HRE_Council_of_Great_Minds_title: "Ç³jÕ ¬ÀÁÀ¬ ŒÁÑÉ"
+ HRE_Council_of_Great_Minds_desc: "Ç³jÕ pÈ¸ÅÇ|¹ ¬ÄÉ µÑXÎÇ”² Ç³jÕ µÑXÎÇ…ÇÈ²ä². Ç³jÕ ¬ÀÁÀ¬ä´j¸ l­1Á´ Ç8»ŒÖ|¹ pÈÁÉXÕà¬ ø­ä´tÇ °Æ¬¹ÐÅŒ¬ XÕà¬ öÂ´ÅXÕ”² ©Íà¬|¹ ä´´Å|Å iÕÈ²ä²."
+ HRE_Rewrite_The_Constitution_title: "ÌÕ•¼ ¬Ç‘Ç1Á"
+ HRE_Rewrite_The_Constitution_desc: "If we want to create a stable and well administrated empire, first we need Lex Cardinalis."
+ HRE_Introduce_new_laws_title: "ÈÀj¸´Æ •¼ ŒÁ¬"
+ HRE_Introduce_new_laws_desc: "Writing new, fair laws will make the population of our country be more bonded to our Government."
+ HRE_taxation_policy_title: "ÈÀj¸´Æ ü¬8Á•¼"
+ HRE_taxation_policy_desc: "With a great Treasurer we can write new taxation law which will make sure our coffers will be filled with money!"
+ HRE_production_policy_title: "ÝÀ°À ÈEÌ"
+ HRE_production_policy_desc: "By writing new laws regarding production in our empire, we can drain more money from our fellow working citizens."
+ HRE_trading_policy_title: "4»íÅ ÈEÌ"
+ HRE_trading_policy_desc: "Trading Policy will hopefully encourage many people to trade and produce more goods giving us more money from trade taxes."
+ HRE_drafting_policy_title: "¨ºÑ¼ ¬.Á"
+ HRE_drafting_policy_desc: "ÈÀj¸´Æ ¨ºÑ¼•¼NÇ °Æ¬¹ xÇ%¸ÐÅ ©ÍÐÆ´”² xÇÐÆDÇ ˜²´¹ ƒ¬…ÇÈ²ä²."
+ HRE_Jutland_title: ".ÇÀÒŽ·¸Ò ÈŒ¼"
+ HRE_Jutland_desc: "Jutland peninsula is required for us to cross the Danish straits and conquer the north germanic scandinavians."
+ HRE_Blockade_title: "hÕ³ ÉD¾"
+ HRE_Blockade_desc: "We should prepare our fleet to blockade the sound."
+ HRE_Sound_title: "¬À´ÆÜ´ tÕÖ È9¸"
+ HRE_Sound_desc: "The time has time to conquer the Sound and control the trade flow in and out the Baltic Sea"
+ HRE_South_title: "²ÂèÆt³ ¨°Ž´ Èõ¼"
+ HRE_South_desc: "Southern Sweden holds many rich cities that should be conquered on our road to great empire."
+ HRE_Continue_title: "²ÂxÎµ˜°D¾DÅ ÄÉœÍ"
+ HRE_Continue_desc: "We need to conquer Central Scandinavia if we want to have united europe on our hands."
+ HRE_North_title: "²ÂxÎµ˜°D¾DÅXÇ ¨º<Õ"
+ HRE_North_desc: "We need to conquer where a lot of the fur in europe is being taken from, it's time to conquer Norrland and Trondelag."
+ HRE_North_Forests_title: "´Ž´ ²ÂxÎµ˜°D¾DÅXÇ 2Â"
+ HRE_North_Forests_desc: "Forests of Northern Scandinavia can be effectively chopped and turned into paper and many other useful supplies."
+ HRE_Canada_title: "Î˜°ä²XÇ 2Â"
+ HRE_Canada_desc: "We should bring civilization to the natives of Canada and put our population there."
+ HRE_Westward_title: "Á)¼<Çj¸!"
+ HRE_Westward_desc: "West lies many riches ahead, we need to explore and settle that land."
+ HRE_First_presence_title: "«Ìˆ¼øÉ È)ÌÀÉ"
+ HRE_First_presence_desc: "°Æ¬¹”² DÅTº¬¹tÎÐÅ È)ÌÀÉ|¹ 2ÁË¹tÕ|ÅiÕÈ²ä²."
+ HRE_Hudson_title: "ÈÕÜ´¨Â Ì¹ È)Ì"
+ HRE_Hudson_desc: "ÈÕÜ´¨Â  ¼tÇ”² ‹ÈNÇ 4»íÅ  Ç¬Ç%¸<Çj¸ LÅ2¸8È ˆÇ<Çpº, ø­¸0®ÐÅ °Æ¬¹¬ È)ÌtÕ|Å iÕÈ²ä²."
+ HRE_Central_Canada_title: "ÉYÅ Î˜°ä²"
+ HRE_Central_Canada_desc: "Cold Plains of Central Canada may be unforgiving terrain, but it won't stop the HRE colonization machine!"
+ HRE_North_Plains_title: "´Ž´ ÉÓÐÆ"
+ HRE_North_Plains_desc: "Northern Plains border the Central Canada plains, it's next step to colonize these."
+ HRE_Alaska_title: "LÅ˜·²ÂtÎXÇ ®"
+ HRE_Alaska_desc: "Alaska is truly harsh and unforgiving land, but it holds many riches, we have to colonize it."
+ HRE_Coal_title: "àÂ1Áj¸È¹ ÁÄÐ"
+ HRE_Coal_desc: "We need Coal to properly industrialize, we should make sure every province that can, produces coal."
+ HRE_Netherland_Textile_title: "2±j³Ž·Ü´ ÁÉ<»"
+ HRE_Netherland_Textile_desc: "The Netherlands region is known for it's famous Textiles, we should exploit this fame, and sell more textiles with more profit."
+ HRE_Iron_title: "ÉYÅ .Çý·  Ì"
+ HRE_Iron_desc: "We need to increase our Iron production to produce more guns to fuel our needs."
+ HRE_Rein_Lowlands_title: "ÈÀÉ³ µÑÈ"
+ HRE_Rein_Lowlands_desc: "Time to clean up the Netherlands region and make sure our fellow holy roman brothers are under our banner."
+ HRE_Naples_title: "˜°ôÓ¬¹ ÁÀÁ"
+ HRE_Naples_desc: "One of our Dukes has claim on the Neapolitan throne, we should push his claim and claim the crown of Naples for the HRE."
+ HRE_Sicily_title: "ÜÂ`Î¬¹DÅXÇ ´Æ…º"
+ HRE_Sicily_desc: "Sicily has been part of Aragonese crown for too long, time to force their ruler to transfer Sicily to Holy Roman Emperor."
+ HRE_Italia_title: "tÇÈÐ¬¹DÅ"
+ HRE_Italia_desc: "With Italia subjugated we are one step closer to completing Otto III's dream."
+ HRE_Champagne_title: "ôÀ˜ÓxÇXÇ ôÀ˜ÓxÇ"
+ HRE_Champagne_desc: "ôÀ˜ÓxÇNÇ Ô”Æm¸à¬ 8»TÖÈxÇ ÀÉíÅ<Çj¸ LÅ2¸8È ˆÇ”²p³, °Æ¬¹”² ø­ó¬ÐÅÁ ¬¬¹DÅ Èõ¼DÇ ÜÂ‘ÇtÕ|Å iÕÈ²ä²."
+ HRE_Languedoc_desc: "‘·ø­Å³NÇ ¬¬¹DÅ ¨°Ž´ÐÅ ˆÇ”² Eµ<Çj¸ j¸È¹p­tÇ Î¹tÇ œÍÈˆÕ<Çpº, °Æ¬¹”² ø­ EµDÇ Èõ¼XÕà¬ ²Â˜ÓxÇ<Çj¸ ¬”² 8®DÇ UÖô¼tÕ|Å iÕÈ²ä²."
+ HRE_Languedoc_title: "‘·ø­Å³XÇ ¸ÅU³"
+ HRE_Guyenne_title: "0®ÆXÇ Ž´"
+ HRE_Guyenne_desc: "To fully conquer Gallia we must also include Guyenne, and it's riches alongside it!"
+ HRE_Land_Norfolk_title: "x±‹Ó ÁÀY¹"
+ HRE_Land_Norfolk_desc: "¾¬¹ÀÐÈ²DÅÐÅÁ °Æ¬¹¬ hÎµ·tÕ|Å `Õ ó¬ É XÕ˜°”² x±‹Ó…ÇÈ²ä². x±‹ÓNÇ uÅ®¬¹DÅ|¹ Èõ¼`Õ Â ˆÇ”² ‹ÈNÇ 8®DÇ ôÅ´ÅÉ ƒ¬…ÇÈ²ä²."
+ HRE_West_Midlands_title: "èÆ²Â¸Ò ø»ä´œ·Ü´"
+ HRE_West_Midlands_desc: "èÆ²Â¸Ò ø»ä´œ·Ü´¬ èÆ|Ç²ÂNÆ x±,Á¾¬¹DÅj¸ ¬”² 8®DÇ É¹à¬ ˆÇµÂÈ²ä². ø­ EµÐÅ ÄÉ©¬tÕÁ È9¸tÕ|Å XÕpº, Ù³ÜÂÐÅ °Æ¬¹ Æ Ñj¸ ¸Ó…ÇÜÂÏ|Å iÕÈ²ä²."
+ HRE_Wales_title: "èÆ|ÇˆÉXÇ xÔx¹ ¸ÅU³"
+ HRE_Wales_desc: "Wales is truly special land home to very special culture, we should make it's protected by the HRE Banner."
+ HRE_Irish_title: "DÅ|Çœ·Ü´ hÎõ¬"
+ HRE_Irish_desc: "Green Rolling Hills of Ireland are required to preserve the celtic culture."
+ HRE_Ireland_title: "DÅ|Çœ·Ü´ µÑiÕ"
+ HRE_Ireland_desc: "With Ireland Consolidated we can turn our eyes to idea of fully controlled Brittania and colonial dreams."
+ HRE_Colonial_Fleet_title: "ÝÂü»ÀÉ hÕ³"
+ HRE_Colonial_Fleet_desc: "Time to prepare a colonial fleet which will allow us to effectively colonize the North American Continent."
+ HRE_Dominium_Maris_Baltici_title: "¼¸ÒtÕ ÀÉ0¼"
+ HRE_Dominium_Maris_Baltici_desc: "If we Dominate Mare Balticum, we can call it Mare Nostrum, wouldn't that be great?"
+ HRE_New_Nuremberg_title: "t² X²x¹ ¼t¹lÐ"
+ HRE_New_Nuremberg_desc: "We should set up a colony of New Nuremberg in America!"
+ HRE_The_Coast_title: "tÕHÅ ÝÂü»TÖ"
+ HRE_The_Coast_desc: "We should go further down the coast to search for riches in the coastal lands of america."
+ HRE_Appalachia_title: "`ÅÓ˜·XÎDÅ"
+ HRE_Appalachia_desc: "Hills and Mountains often hold great resources, maybe the American Appalachian mountains hold too?"
+ HRE_Louisiana_title: "è¸tÇÀÉ`Å˜°XÇ µÂÀÉ"
+ HRE_Louisiana_desc: "Louisiana is the land where the Missisipi river flows, it's rich and can provide many fertile lands, our colonists should seek to establish cities there."
+ HRE_Plains_title: "DÅTº¬¹tÎXÇ ÉÓ|Å"
+ HRE_Plains_desc: "Plains of America hold many exotic animals, we should domesticate them and exploit their abilities."
+ HRE_California_title: "˜Î¬¹ìÓÈ²DÅ tÕHÅ"
+ HRE_California_desc: "Coast of California is very rich by it's geographical nature, being right on the west american coastline."
+ HRE_Wine_title: "¨°Å³|Ç NÆxÇ"
+ HRE_Wine_desc: "South Germany is known for it's plantations used to make Wine, we need to increase their production."
+ HRE_Salt_title: "´Å³|Ç ŒÁ®"
+ HRE_Salt_desc: "While South Germany is known for it's wine, North Germany is known for it's salt, and the salty trade must flow!"
+ HRE_Saxon_Textiles_title: "‘Ç<Á ÁÉ<»"
+ HRE_Saxon_Textiles_desc: "ÉÀ¨Â ÁÉ<»NÇ 2±j³Ž·Ü´ ÁÉ<»ü¬ p¬XÇ Ù³ñ´XÕpº, tÇ ÁÉ<»ä´Ä³ 8ÁÄ¬ ÜÂ¥ÇÐÅ œÍÜÂ´´Å|Å iÕÈ²ä²."
+ HRE_Reform_Imperial_Army_title: "Èm­p­ ¬Ö"
+ HRE_Reform_Imperial_Army_desc: "After the renovatio imperii, now we need to reform the disunited imperial army."
+ HRE_Rein_Northern_Italy_title: "´ tÇÈÐ¬¹DÅ µÑÈ"
+ HRE_Rein_Northern_Italy_desc: "°Æ¬¹”² tÇÈÐ¬¹DÅ ÀÉíÅDÇ ­ÌŒÁtÕ|Å iÕÈ²ä²."
+ HRE_Reform_The_Imperial_Administration_title: "Èm­ ‰ÕÈŽ´ ¬Ö"
+ HRE_Reform_The_Imperial_Administration_desc: "The Imperial Administration definitely needs reforming after renovation imperii."
+ HRE_Lost_Sheep_title: "ƒÇ´Å„¼°¹ ‘Å"
+ HRE_Lost_Sheep_desc: "°Æ¬¹”² ƒÇ´Å„¼°¹ ‘ÅDÇ Èm­ÐÅ Ì³2¸ô¼´°|Å iÕÈ²ä². ø­ƒ¬tÇ °Æ¬¹XÇ „Ç4»tÇ0® Lµ8»…ÇÈ²ä²."
+ HRE_Burgundy_title: "Ž´t¹à¬t² õ¬m­9¸"
+ HRE_Burgundy_desc: "Ž´t¹à¬t² õ¬m­9¸NÇ  àÂ1Áj¸È¹Èm­XÇ m­Ë¬ ÀÉ³ÆX³ Â8Á0® Ù³HÅ É”ÆjÕ ÀÉíÅtÇÈÅ<Çpº, °Æ¬¹”² ø­ƒ¬DÇ µÑiÕXÕà¬ m­Ë¬DÇ T³±Æ ±Ö|Å iÕÈ²ä²."
+ HRE_Massif_Central_title: "È¹ÜÂÕ ÁÀ¸Ò„·(ÉYÅ °ÀÀÉ)"
+ HRE_Massif_Central_desc: "È¹ÜÂÕ ÁÀ¸Ò„·XÇ ¸ÅU³ü¬ °Àä´NÇ ø­ä´XÇ Èµ·È ÉìÂÀÉj¸hÃ LÅ2¸8È ˆÇ<Çpº, °Æ¬¹XÇ …º„´DÇ Èù²TÖXÕìÅ ¬¬¹DÅ Èõ¼ÐÅ tÇ©ÆtÕ|Å iÕÈ²ä²."
+ HRE_Loire_title: "è¸DÅt¹"
+ HRE_Loire_desc: "è¸DÅt¹ÐÅ ˆÇ”² Ä³ÜÂä´NÇ Ž´.ÇXÕ0®ÐÅ Èõ¼tÕ|Å iÕÈ²ä²."
+ HRE_Poitou_title: "xÔDÅ,Ò ÉÓ|Å"
+ HRE_Poitou_desc: "Plains of Poitou hold many great cities, people and riches, it is our duty to bring holy roman peace to them via war."
+ HRE_Gascony_title: "¬²ÂTÏt² tÕHÅ"
+ HRE_Gascony_desc: "¬²ÂTÏt² tÕHÅÐÅÁ ˆ×²ÂÓÈ²DÅ|¹ µÂ©¬XÕà¬ Á)¼<Çj¸ mÕtÕ`Õ ƒ¬…ÇÈ²ä²."
+ HRE_Gallia_title: "¬¬¹DÅ"
+ HRE_Gallia_desc: "¬¬¹DÅ, 2Æ Ñ 38Á¬ È¯¸¯X³ Eµ É XÕ˜°¬ ÀÉ® °Æ¬¹ ÁÐÅ ˆÇµÂÈ²ä²."
+ HRE_Invasion_title: "hÎõ¬ ÉD¾"
+ HRE_Invasion_desc: "We shall prepare the invasion of Brittania. One of the things we should do is definitely building up our navy."
+ HRE_Land_Kent_title: "Ï¸Ò ÁÀY¹"
+ HRE_Land_Kent_desc: "Kent is one of the many places we can land it, but this one is very strategic and somewhere here Caesar landed with his troops."
+ HRE_Conquer_South_title: "¨°Ž´ ¾¬¹ÀÐÈ²DÅ Èõ¼"
+ HRE_Conquer_South_desc: "Southern Brittania, home of the Angles should become a province of our realm as we are the successor to rome."
+ HRE_Mann_title: "è¹ ,Áü¬ ,ÁÀÉ³"
+ HRE_Mann_desc: "Mann and the Isles are lovely places and can be used as a base to Invade Ireland."
+ HRE_Britannia_subjugated_title: "¾¬¹ÀÐÈ²DÅ"
+ HRE_Britannia_subjugated_desc: "Brittania subjugated is a great achievment for our Empire, we should celebrate it!"
+ HRE_Finland_Full_title: "NÕqÈXÇ Eµ"
+ HRE_Finland_Full_desc: "If we can fully control the Land of Finns we can then turn our eyes on the Rus people in the east."
+ HRE_Novgorod_title: "´ x±¾à¬t¹Ü´"
+ HRE_Novgorod_desc: "Northern Novgorod ain't rich, but it holds many roads to the inner Russia."
+ HRE_Novgorod_2_title: "¨° x±¾à¬t¹Ü´"
+ HRE_Novgorod_2_desc: "Southern Novgorod is richer than the northern, and also holds many roads to inner Russia, it's very important to us to seize the opportunity."
+ HRE_Muscovy_title: "¨º²ÂlÐ¼ ÁÀÁ"
+ HRE_Muscovy_desc: "We should become the successor to the Muscovites and Russians!"
+ HRE_Florida_title: "Õj¸¬¹ä²j¸"
+ HRE_Florida_desc: "Florida is beatiful and rich, we should colonize that land!"
+ HRE_Cuba_title: "àÏ¼XÇ Ž´"
+ HRE_Cuba_desc: "Cuba as an Island is rich with new kinds of plants and gold, we should establish new cities and assimilate the natives."
+ HRE_Caribbean_title: "Îì·D¾HÅXÇ ,Áä´"
+ HRE_Caribbean_desc: "Islands of the Caribbean hold many riches, time to find these riches and bring them to our Emperor!"
+ HRE_Westphalian_Plan_title: " ¼²Â¸ÒÓ¸ Ä¬Ö"
+ HRE_Westphalian_Plan_desc: "Westphalian Plan will help us modernize the underdeveloped provinces of Westphalia."
+ HRE_Rhenish_Plan_title: "|·xÇ Ä¬Ö"
+ HRE_Rhenish_Plan_desc: "Rhenish plan will help us make sure that the Rhenish region is operating at it's best extent."
+ HRE_Rein_France_title: "Õ‘·²Â µÑÈ"
+ HRE_Rein_France_desc: "Time has come to clean up, and it's time to do the clean up in France."
+ HRE_Fate_Of_Flanders_title: "Õœ·T³²ÂXÇ ´Æ…º"
+ HRE_Fate_Of_Flanders_desc: "The fate of Flanders is to be part of our country, naturally we need to do that by war."
+ HRE_Picardie_title: "<ÕtÎt¹µXÇ ±Ë¬ÀÉ"
+ HRE_Picardie_desc: "Farmlands of Picardie are rich and are important for our country, we need to secure them."
+ HRE_France_title: "|Ç Ü´ Õ‘·²Â"
+ HRE_France_desc: "Ile-de-France holds the great city of Paris, we must take it for the glory of Holy Roman Empire!"
+ HRE_Normandy_title: "x±t¹Ý¹µXÇ Ž´"
+ HRE_Normandy_desc: "Normandy is a very strategic region where William the Conqueror was born, the invader of England himself, if we wanna invade England, we need to conquer that land."
+ HRE_Brittany_title: "¾¬¹ÀÐÈ² tÕHÅ"
+ HRE_Brittany_desc: "Brittany is the last gaulian bastion in the Gallian region, we should preserve gaulian culture there!"
+ HRE_Germania_title: "Œ¬t¹È¹È²DÅ"
+ HRE_Germania_desc: "With all Germans under our banner, we are one step closer to completing Otto III's Dreams!"
+ HRE_Dream_title: "2Æ Ñ 38ÁXÇ È¯"
+ HRE_Dream_desc: "Otto III dreamed of united europe under his holy roman banner, He wanted 4 Nations to be part of his realm - Sleavica, Gallia, Germania, Italia, but his dream also included Hungary for example, it is our divine duty to complete his dream."
+ HRE_Land_Cornwall_title: "XÏÔÆ ÁÀY¹"
+ HRE_Land_Cornwall_desc: "Cornwall is one of many places we can land, and this land here has it's own distinct culture so they will welcome us as liberators."
+ HRE_East_Midlands_title: "tÇ²Â¸Ò ø»ä´œ·Ü´ È9¸"
+ HRE_East_Midlands_desc: "Beatiful Green Shires of East Midlands are blocking our way into Northumbria and Scotia, we must defeat the english there!"
+ HRE_Yorkshire_title: "”ÆlÐTÁXÇ Æm­xÇ"
+ HRE_Yorkshire_desc: "The English in Yorkshire shall tremble, as our troops will move in and bring true civilization!"
+ HRE_Scots_title: "²ÂTÏÀÒœ·Ü´ ÈÀÉ³"
+ HRE_Scots_desc: "Scottish Lowlands hold a culture that is distinct from English - Scottish culture."
+ HRE_Highlands_title: "²ÂTÏÀÒœ·Ü´ à¬ÀÉ³"
+ HRE_Highlands_desc: "Scottish Highlands hold a culture more distinct that english than even Welsh, Scottish Gaelic is the reminder of Celts that live here."
+ HRE_Ukraine_title: "°ÆlÐ|·tÇ˜°XÇ ²ÂkÑÀÉ³"
+ HRE_Ukraine_desc: "Cossacks of Ukraine shall tremble as the holy roman banners march into their Land!"
+ HRE_Ryazan_title: "|·ÌÇXÇ ÉÓ|Å"
+ HRE_Ryazan_desc: "Plains of Ryazan hold many rich cities, it is our duty to make sure people live under our holy Emperor! "
+ HRE_South_Slavs_title: "¨° ¬Â|·¾qÈ"
+ HRE_South_Slavs_desc: "South Slavs in the Balkan Peninsula have bordered Holy Roman Empire for ages, but they still haven't joined the empire, we shall force them to."
+ HRE_Prepare_the_Plan_title: "¼È Ä¬Ö ÉD¾"
+ HRE_Prepare_the_Plan_desc: "With Great Advisors we can set up the Entwicklung Plan."
+ HRE_Swabian_Plan_title: "ˆÂ¼²¼ Ä¬Ö"
+ HRE_Swabian_Plan_desc: "One of the Parts of Our empire affected by it will be Swabia, whose provinces are sometimes underdeveloped."
+ HRE_Franconian_Plan_title: "Õ‘·TÏÈ²HÅ Ä¬Ö"
+ HRE_Franconian_Plan_desc: "Next up is Franconia, with Ansbach and few other cities being underdeveloped and needing support."
+ HRE_Rein_Germany_title: "Å³|Ç µÑÈ"
+ HRE_Rein_Germany_desc: "We need to make sure all German lands are under Holy Roman Banner."
+ HRE_Prussia_title: "Õè¸LÑÈ²DÅ"
+ HRE_Prussia_desc: "German settlement in Pruthenia dates as long as few centuries back, and is now considered german, we should put that land under our holy roman banner!"
+ HRE_Riga_title: "¬¹¬XÇ Å³|ÇxÇä´"
+ HRE_Riga_desc: "City of Riga was founded by Germanic Law and many Germans have settled there, we should conquer that city."
+ HRE_Poland_title: "ôÓj¸È²DÅ Æ Ñ"
+ HRE_Poland_desc: "Polonia is a truly rich land, full of farmlands and rich renaissance cities, we must conquer that land to enrich our empire."
+ HRE_Slovakia_title: "²Âj¸¼²ÐDÅXÇ ¸ÅU³"
+ HRE_Slovakia_desc: "Hills of Slovakia hold many riches, for example gold, Iron and Copper, we need to seize that wealth and exploit it."
+ HRE_Hungaria_title: "ÝÕ¬¬¹ ÉÓÐÆ"
+ HRE_Hungaria_desc: "We must seize the prospering cities of Carpathian Valley."
+ HRE_Lithuanians_title: "¬¹,ÒDÅÈ²DÅ ÇÖ"
+ HRE_Lithuanians_desc: "The Fate of Lithuanians is to be part of the European Holy Roman Empire."
+ HRE_Latvians_title: "|·¸ÒD¾DÅ Èõ¼"
+ HRE_Latvians_desc: "Latvians have been already conquered by the german Livonian Order, now they should be transfered to us!"
+ HRE_Estonians_title: "ÐÅ²Â ÑÈ²DÅ Èõ¼"
+ HRE_Estonians_desc: "Estonian lands have been controlled by germans in the past, time to make that happen again!"
+ HRE_Occupy_Nyland_title: "Ð²Ž·Ü´ ÁÀY¹"
+ HRE_Occupy_Nyland_desc: "°Æ¬¹”² .Çý·XÇ È¯DÇ tÇè¸0® ÇtÕ Ð²Ž·Ü´ÐÅ ÁÀY¹XÕà¬ NÕŽ·Ü´|¹ Èõ¼tÕ|Å iÕÈ²ä²!"
+ HRE_Finland_title: "NÕŽ·Ü´ Èõ¼"
+ HRE_Finland_desc: "We will Manifest our Destiny in Finland that it's our destiny to rule Europe!"
+ HRE_Belarus_title: "¨¼|·è¸²ÂXÇ 2Â"
+ HRE_Belarus_desc: "The time has come for Belarus to join our empire!"
+ HRE_Podolia_title: "ìÓÌ³¬¹DÅ - ü¼ˆ×È²DÅ"
+ HRE_Podolia_desc: "Podolian land is very important if we want to have clear supply lines into the east."
+ HRE_Romania_title: "è¸È¹È²DÅXÇ j¸È¹xÇä´"
+ HRE_Romania_desc: "Wallachia and Moldavia are lands of the romanians, we must seek to seize that land for ourselves."
+ HRE_Bulgaria_title: "ˆ´¬t¹xÇXÇ Eµ"
+ HRE_Bulgaria_desc: "The Bulgars are constantly raiding our land, we must put a stop to this treachery!"
+ HRE_Greece_title: "Á)¼ 8»…ºXÇ ¼ÁÀÀÉ"
+ HRE_Greece_desc: "The beatiful coast of Greece is the Birthplace of Western Civilization, we should peacefully take that land."
+ HRE_Pomeranian_Plan_title: "ìÓTº|·È²HÅ Ä¬Ö"
+ HRE_Pomeranian_Plan_desc: "Pomeranian Plan will make the german baltic coastline very rich and prosperous."
+ HRE_Saxon_Plan_title: "‘Ç<Á Ä¬Ö"
+ HRE_Saxon_Plan_desc: "Saxon Plan will help ensure that the saxon people will be as developed as rest of the country."

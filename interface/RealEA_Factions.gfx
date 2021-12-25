@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_faction_bg_geunwang_faction"	
+		texturefile = "gfx//interface//faction_blue_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_bg_sarim_faction"	
+		texturefile = "gfx//interface//faction_purple_frame.tga"
+		transparencecheck = yes
+	}	
+	spriteType = {
+		name = "GFX_faction_bg_hungu_faction"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_bg_cheoksin_faction"	
+		texturefile = "gfx//interface//faction_red_frame.tga"
+		transparencecheck = yes
+	}
+
+
+	spriteType = {
+		name = "GFX_faction_geunwang_faction"	
+		texturefile = "gfx//interface//geunwang_faction.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_sarim_faction"	
+		texturefile = "gfx//interface//sarim_faction.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_hungu_faction"	
+		texturefile = "gfx//interface//hungu_faction.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_faction_cheoksin_faction"	
+		texturefile = "gfx//interface//cheoksin_faction.dds"
+		transparencecheck = yes
+	}
+}

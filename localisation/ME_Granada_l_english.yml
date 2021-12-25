@@ -1,0 +1,122 @@
+﻿l_english:
+ gra_resistance_title: "¸iÏ²Ð²ÂÀÐ ÈmÕ"
+ gra_resistance_desc: "tÇ ¼¬¹DÅXÇ UÆm­ä´NÇ jÕLµ Ç‘·²Âì·àÆX³ °Æ¬¹˜°|·|¹ tÇ ¼¬¹DÅ ¼Ä³ ¼<Çj¸ °ºDÅ´°à¬ ˆÇµÂÈ²ä². °Æ¬¹”² ´Å²µ l×ÝÀDÇ XÎt¹T³|·Ä³ ø­ƒ¬ÐÅ ÈmÕtÕ|Å iÕÈ²ä²."
+ gra_reconquest_title: "0®Å³P­xÇ °ºDÅ´°0®"
+ gra_reconquest_desc: "tÇ ¼¬¹DÅXÇ p­üÈä´NÇ jÍü­ °Æ¬¹XÇ 1ÁÀÉ|¹ Èõ¼XÕ0® ÇjÕ ÈÁÇÐÅÁ ‹ÅjÕ ¨ºµÂDÇ ô¼ÆµÂÈ²ä². tÇ 0®ŒÖ|¹ ÈÒÀÐ tÇ 0®Å³P­xÇä´ÐÅŒ¬ ¼©¬tÕ|Å iÕÈ²ä²!"
+ gra_portugal_conquest_title: "ìÓt¹,Ò¬ ²­xº"
+ gra_portugal_conquest_desc: "ìÓt¹,Ò¬NÇ tÇ ¼¬¹DÅ p­üÈä´XÇ Ù³ù¹ ´ÌÄ¬ÐÅÁ ¬¥Ç ‹ÅjÕ à¬¬¹ÐÅ ˆÇµÂÈ²ä². ø­¸0®ÐÅ ø­ä´tÇ DÅ4»¬¹ xÆP­ jÖÙ³DÇ DÕ¬ÀÈ<Çj¸ `ÕÀÉ|·Ä³, °Æ¬¹XÇ |ÎÐÅÁ ´ÀDÅ¨°ÀÉ »º`Õ ƒ¬…ÇÈ²ä²."
+ gra_old_frontier_title: "Æ tÇ ¼¬¹DÅ m­Ë¬"
+ gra_old_frontier_desc: "Our once mighty Dynasty had the spanish bushed back to the mountains of Galicia and now, that we have shown them our military might the time is ripe to put these crumbling crowns into the dirt."
+ gra_riches_of_valencia_title: "Exploit Valencia"
+ gra_riches_of_valencia_desc: "Valencia has been an important center of commerce in the iberian peninsula. Let us boost economy and gain a foothold in the intricate trading web of the mediterranean sea."
+ gra_conquer_egypt_title: "˜°|Ç ¬XÇ Ë¬ÁÇÇ"
+ gra_conquer_egypt_desc: "The Egyptian sultans have always supported our enemies and left us to die against the Christian advances, but the tides have turned and they shall bare the full wrath of Andalusian anger."
+ gra_arabian_empire_title: "$DYNASTY$pÈ |Î¬¹Õm­"
+ gra_arabian_empire_desc: "Our rightful Sultan did the ancestors of the $DYNASTY$ Dynasty proud, emerging as a descendant of the Umayyads and our last step is to pierce our swords right into the heart of Arabia."
+ gra_economic_reforms_title: "[Root.Monarch.GetName]XÇ Ë¬È ¬Ö"
+ gra_economic_reforms_desc: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] always had a golden thumb, when it came to wheeling and dealing. And now he has set his sight on the Granadan economy, proposing and pushing through reform after reform to renovate our stagnating economy."
+ gra_library_title: "ø­|·˜°ä² Ä³Á­"
+ gra_library_desc: "ø­|·˜°ä² Ä³Á­NÇ t¹2±ÁÀ²Â tÇÈXÇ .Çý· ³Y¹ÐÅÁ ¬¥Ç p¬³jÕ Ä³Á­ É XÕ˜°ÆÀÉÌ¹, tÇÈÐ¬¹DÅXÇ Ä³Á­ä´ÐÅ ¼2¸ àÁôÑtÕTÆµÂÈ²ä². tÇÈ À¼TÖ`Õ ÜÂ¬…ÇÈ²ä²! °Æ¬¹XÇ Ä³Á­NÇ ä²ÜÂ jÕˆ¼ È 8ÁÄ¬XÇ ÈÉ,Ò|¹ ¼Œ¬ .´ ƒ¬…ÇÈ²ä²!"
+ gra_gold_title: "tÇ ¼¬¹DÅXÇ ®"
+ gra_gold_desc: "The mine of La Mancha was first sighted by the Romans one and a half centuries ago and since then has been the largest gold reserve in all of Ibera, but its production has been out of our hands for too long."
+ gra_trade_domination_title: "4»íÅ ÀÉ0¼"
+ gra_trade_domination_desc: "Iberia is vital, when it comes to controling the flow of goods from the colonies of Africa and America, he who controls it is destined to bathe in an ocean of pure gold and silver."
+ gra_toleration_title: "Toleration of Beliefs"
+ gra_toleration_desc: "The spanish Kings were never tolerant about any religion other than thier own and have done a number of crimes against our people. Unlike them, we are more civilized and tolerant and grant them thier places of worship."
+ gra_religious_tax_title: "ÀÉˆÉ|Å Ä³…Ç"
+ gra_religious_tax_desc: "The Jizya Tax is a tax that Non-Muslims have to pay, it is an encouragement to join Allah and still allows every citizen to practice thier religion, just as it is a great source of income for us."
+ gra_al_andulus_title: "LÅ HÅì²è¸²ÂXÇ õ¼ÐÆ"
+ gra_al_andulus_desc: "Allahs plan has led us to glory and the great emirate of Andulusia stands once more as a testiment to our superiority."
+ gra_organisation_reforms_title: "Infantry reforms of [Root.Monarch.GetName]"
+ gra_organisation_reforms_desc: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] is unsatisfied with stretched supply lines and unorganized recurting. From now on every soldier shall have a record, with an intricate web of supply buildings for the army to always be ready should war arise."
+ gra_cav_reforms_title: "Cavalry Reforms of [Root.Monarch.GetName]"
+ gra_cav_reforms_desc: "The Rashidun and Umayyad Caliphate had the strongest cavalry, thier steeds feared, making the known world tremble in fear. Their tactics, though, are outdated and [Root.Monarch.GetTitle] [Root.Monarch.GetName] has found new ways strike once more strike fear into every enemy we shall face."
+ gra_siege_reforms_title: "Artillery Reforms of [Root.Monarch.GetName]"
+ gra_siege_reforms_desc: "The medival era has ended with the first cannon shot. Artillery has seen great effectiveness against the castles of old. [Root.Monarch.GetTitle] [Root.Monarch.GetName] has seen this coming, writing an intricate guide on the siege warfare of modern times."
+ gra_leadership_reforms_title: "Ñ¼•¼"
+ gra_leadership_reforms_desc: "An army of lions led by a sheep is an army of sheeps. Our leaders have been lacking foresight and the tactical knowledge that [Root.Monarch.GetTitle] [Root.Monarch.GetName] has set as a precedent and had layed out a plan to reform tactical education."
+ gra_allies_title: " ¼t¹ ¼t¹ Ù³ù¹"
+ gra_allies_desc: " ¼t¹ ¼t¹ Ž´qÈä´NÇ °Æ¬¹NÆ È¹,Ì¬ÀÉj¸ °Æ¬¹XÇ tÇ ¼¬¹DÅ Èä´ÐÅ ³jÕ ù¹,¸jÕ É2Æ|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä². tÇ ¬ÀäÂDÇ tÇ©ÆtÕ ø­ä´ü¬ hÕØ® I»ÐÌ|Å iÕÈ²ä²... Ö¬Ç”² Ð¹tÇàÈ."
+ gra_integration_title: "È¹ø­¸¾ Èõ¼"
+ gra_integration_desc: "È¹ø­¸¾ Å³Ë¹XÇ ÜÂ³”² k°¬°µÂÈ²ä²! ø­ä´NÇ °Æ¬¹XÇ Èù²jÕ Èõ¼ÐÅ t­õ¼`Õ ƒ¬…ÇÈ²ä². ø­|·˜°ä²”² Ç³tÕÈÉ ƒ¬…ÇÈ²ä²!"
+ gra_integration_tun_title: "ŽÒÈ²ÀÉ µÑiÕ"
+ gra_integration_tun_desc: "ŽÒÈ²ÀÉ”² °Æ¬¹Ì¹|Ð ˜×tÇ ÆÅµÂÈ²ä². ø­ä´NÇ °Æ¬¹ÐÅŒ¬ õ¼…ÈXÕÀÉ JÅ<Çtº ýÈDÇ ƒ¬…ÇÈ²ä²"
+ gra_integration_tlc_title: "ÀÒ¸<Á µÑiÕ"
+ gra_integration_tlc_desc: "ÀÒ¸<ÁNÇ °Æ¬¹Ì¹|Ð ˜×tÇ ÆÅµÂÈ²ä². ø­ä´NÇ °Æ¬¹ÐÅŒ¬ õ¼…ÈXÕÀÉ JÅ<Çtº ýÈDÇ ƒ¬…ÇÈ²ä²"
+ gra_fortify_alhambra_title:1 "LÅhÕ¾|· É•Í"
+ gra_fortify_alhambra_desc:1 "LÅhÕ¾|· ­ÈNÇ Â1¼ D± Ù³HÅ )¼´Å|¹ ©ºÈ<Çj¸ É•Í´ ÈtÇ ÆÅµÂÈ²ä². tÇÈ °Æ¬¹¬ tÇƒ¬DÇ É•Í`Õ ÜÂ¬…ÇÈ²ä²."
+ gra_make_alhambra_impenetrable_title:1 "LÅhÕ¾|· ”ÆÈÀTÖ"
+ gra_make_alhambra_impenetrable_desc:1 "jÍàÂXÇ )¼´Å 0®.ÂtÇ Ä³…Ç(´ÐÅ 0µ|· °Æ¬¹”² LÅhÕ¾|·|¹ ìÓÇXÕ”² ƒ¬DÇ p¬XÇ ˆ´¬¥²XÕŒ¬ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ gra_restore_cordoba_title:1 "TÏt¹Ä³¼ Âõ¼"
+ gra_restore_cordoba_desc:1 "We have reconquered Cordoba from the Christians, but they turned it into a shadow of its former self. We must restore Cordoba to its former greatness."
+ gra_make_cordoba_a_modern_city_title:1 "TÏt¹Ä³¼ Ö³TÖ"
+ gra_make_cordoba_a_modern_city_desc:1 "°Æ¬¹”² TÏt¹Ä³¼|¹ õ¼ÐÆˆÕÀÉÌ¹, Ä³ÜÂXÇ Î¹NÇ ÜÂ2ÁNÇ ìÅÈˆ× ¡°NÇ ÁÀÜÐj¸ ¨°DÅˆÇµÂÈ²ä². tÇÈ, Ä³ÜÂ|¹ Ö³TÖ`Õ ÜÂ¬…ÇÈ²ä²."
+ gra_great_mosque_of_cordoba_title:1 "TÏt¹Ä³¼XÇ ³ ¨º²ÂlÐ"
+ gra_great_mosque_of_cordoba_desc:1 "TÏt¹Ä³¼XÇ ³¨º²ÂlÐ”² tÇP­Ä³ä´ÐÅ XÇtÕ Ó4­´ÈÅµÂÈ²ä². °Æ¬¹”² tÇ|¹ tÇÈô¼ä² T³ ÅÆ¥ÇXÕŒ¬ ä²ÜÂ t¬2ÁtÕ|Å iÕÈ²ä²!"
+ gra_university_of_cordoba_title:1 "TÏt¹Ä³¼ ³YÕ"
+ gra_university_of_cordoba_desc:1 "TÏt¹Ä³¼”² ü¬p¬ ÖàÂXÇ ÉìÂÀÉj¸ .Ç…ºˆÕµÂÈ²ä². ä²ÜÂ jÕˆ¼ ø­ ÉÓÓDÇ ŒÖõ¼`Õ ÜÂ¬…ÇÈ²ä²."
+ gra_second_golden_age_of_cordoba_title:1 "2nd Cordobian Golden Age"
+ gra_second_golden_age_of_cordoba_desc:1 "We have restored the city of Cordoba to the heights it once reached. Now we are ushering in a new golden age for the city."
+ gra_conquer_portugal_title:1 "ìÓt¹,Ò¬ Èõ¼"
+ gra_conquer_portugal_desc:1 "As a christian nation in Iberia, Portugal's very existence is a threat to us."
+ gra_convert_portugal_title:1 "ìÓt¹,Ò¬ ¬…È"
+ gra_convert_portugal_desc:1 "We should convert our new lands so that they follow the one true faith."
+ gra_gain_strong_muslim_allies_title:1 "Gain a Strong Ally"
+ gra_gain_strong_muslim_allies_desc:1 "Our very existence is at stake. We must gain allies if we do not wish to be wiped out"
+ gra_reconquer_lower_andalusia_title:1 "Reconquer L. Andalusia"
+ gra_reconquer_lower_andalusia_desc:1 "We need to start reconquering lands that have been taken from us in the reconquista. The rest of Andalusia is a good place to start."
+ gra_convert_lower_andalusia_title:1 "Convert L. Andalusia"
+ gra_convert_lower_andalusia_desc:1 "\"We should convert our new lands so that they follow the one true faith.\""
+ gra_convert_southern_castille_title:1 "Convert S. Castille"
+ gra_convert_southern_castille_desc:1 "\"We should convert our new lands so that they follow the one true faith.\""
+ gra_convert_northern_castille_title:1 "Convert N. Castille"
+ gra_convert_northern_castille_desc:1 "\"We should convert our new lands so that they follow the one true faith.\""
+ gra_islamic_control_of_iberia_title:1 "tÇ ¼¬¹DÅ µÑÈ"
+ gra_islamic_control_of_iberia_desc:1 "Conquering Iberia has always been our destiny. It is time for that destiny to come to fruition."
+ gra_conquer_southern_castille_title:1 "Conquer S. Castille"
+ gra_conquer_southern_castille_desc:1 "Castille is the largest crusader state in the region, and thus the most dangerous. We should strike at them by taking the southern portion of their country."
+ gra_conquer_northern_castille_title:1 "Conquer N. Castille"
+ gra_conquer_northern_castille_desc:1 "We should finish what we've started, and wipe Castille from the map!"
+ gra_conquer_aragon_title:1 "DÅ|·ä¬ Èõ¼"
+ gra_conquer_aragon_desc:1 "As a christian nation in Iberia, Aragon's very existence is a threat to us."
+ gra_convert_aragon_title:1 "DÅ|·ä¬ ¬…È"
+ gra_convert_aragon_desc:1 "We should convert our new lands so that they follow the one true faith."
+ gra_conquer_micronesia_title:1 "ø»lÐj¸2±ÜÂDÅ Èõ¼"
+ gra_conquer_micronesia_desc:1 "Conquering Micronesia would give us a gateway towards the new world."
+ gra_discover_caribbean_title:1 "tÎ¬¹¾tÕ ¼¬¬"
+ gra_discover_caribbean_desc:1 "The caribbean islands are rumored to be filled with wealth. We must discover them."
+ gra_colonize_mexico_title:1 "UºÜÂTÏ ÝÂü»TÖ"
+ gra_colonize_mexico_desc:1 "The Mexican region has great wealth. We must establish a colony there."
+ gra_colonize_caribbean_title:1 "tÎ¬¹¾tÕ ÝÂü»TÖ"
+ gra_colonize_caribbean_desc:1 "The Caribbean islands are filled with valuable goods. We must establish a colony there."
+ gra_colonize_colombia_title:1 "jÏl¸D¾DÅ ÝÂü»TÖ"
+ gra_colonize_colombia_desc:1 "Establishing a colony in Colombia is a natural step after establishing colonies in the Caribbean."
+ gra_colonize_eastern_america_title:1 "DÅTº¬¹tÎ Ù³Ž´ tÕHÅ ÝÂü»TÖ"
+ gra_colonize_eastern_america_desc:1 "Establishing a colony in Eastern America is a natural step after establishing colonies in the caribbean."
+ gra_become_a_colonial_power_title:1 "Become a Colonial Power"
+ gra_become_a_colonial_power_desc:1 "Becoming a true colonial powerhouse would bring great wealth to our nation."
+ ME_Granada_Events.1.t: "A Child enlightened by Allah"
+ ME_Granada_Events.1.d: "[Root.Monarch.GetTitle] [Root.Monarch.GetName]'s son is considered to be touched by Allah himself by many of our scholars. Having outdone his tutors one by one in every subject or scenario. Not only highly intelligent and forward thinking, he has also displayed extraordinary skill in leadership and tactical finesse."
+ ME_Granada_Events.1.a: "He is the one true heir to al-Andalus"
+ ME_Granada_Events.1.b: "He will lead our prospering realm into chaos and dismay if he ever becomes [Root.Monarch.GetTitle]!"
+ ME_Granada_Events.2.t: "Granada demands submission"
+ ME_Granada_Events.2.d: "Granada, the 'Caliphate of al-Andulus', has sent an ultimatung, demanding us to bend our knee to thier Sultan."
+ ME_Granada_Events.2.a: "We lack thier power"
+ ME_Granada_Events.2.b: "We laugh at such incompetent demands."
+ Iberian_trade_domination: "tÇ ¼¬¹DÅ 4»íÅ ÀÉ0¼"
+ muslim_zeal: "…ÈP­È ôÅÈ"
+ granada_library: "ø­|·˜°ä² Ä³Á­"
+ Jizya_tax: "ÀÉˆÉ|Å"
+ granada_trading_port: ".Çý·<Çj¸ ¬”² ­8»"
+ organization_reforms: "Organisation Reformed"
+ cav_reforms: "Cavalry Reformed"
+ siege_reforms: "Siege Reformed"
+ al_andulus: "LÅ HÅì²è¸²Â"
+ GRA_maghreb_bonus: "È¹ø­¸¾ Èõ¼"
+ arabian_empire: "|Î¬¹Õm­"
+ leadership_reforms: "Leadership Reformed"
+ cordoba_restored:1 "TÏt¹Ä³¼ Âõ¼"
+ cordoba_modern_city:1 "Ö³TÖ´ TÏt¹Ä³¼"
+ great_mosque_of_cordoba:1 "TÏt¹Ä³¼XÇ ³¨º²ÂlÐ"
+ cordoba_center_of_innovation:1 "ÖàÂXÇ ÉìÂÀÉ"
+ cordoba_capital_of_the_caliphate:1 "|Î¬¹Õm­XÇ ÂÄ³"

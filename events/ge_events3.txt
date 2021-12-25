@@ -1,0 +1,86 @@
+namespace = ge_events
+# First Coalition Against Revolutionary France
+country_event = { 
+	id = ge_events.11
+	title = "ge_events.11.t"
+	desc = "ge_events.11.d"
+	picture = REVOLUTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1750
+		current_age = age_of_revolutions
+		is_revolutionary = yes       
+		HAB = {
+			ai = yes
+			was_player = no
+		}    
+		GBR = {
+			ai = yes
+			was_player = no
+		}    
+		SPA = {
+			ai = yes
+			was_player = no
+		}    
+		RUS = {
+			ai = yes
+			was_player = no
+		}    
+		TUR = {
+			ai = yes
+			was_player = no
+		}    
+    }
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {
+		name = ge_events.11.a  
+		ai_chance = { factor = 100 }
+		HAB = {
+			every_ally = {
+				form_coalition_against = FRA
+			}
+			form_coalition_against = FRA
+		}
+		GBR = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+				every_ally = {
+					form_coalition_against = FRA
+				}
+		}
+		SPA = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+				every_ally = {
+					form_coalition_against = FRA
+				}
+		}
+		TUR = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+				every_ally = {
+					form_coalition_against = FRA
+				}
+		}
+		RUS = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+				every_ally = {
+					form_coalition_against = FRA
+				}
+		}
+		HAB = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_change_government
+			}
+		}
+	} 
+} 

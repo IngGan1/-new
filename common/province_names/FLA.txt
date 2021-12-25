@@ -1,0 +1,3 @@
+90 = "West-Vloandern"
+3050 = "Wieze"
+3053 = "Doornikse"

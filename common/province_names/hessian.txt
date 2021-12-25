@@ -1,0 +1,5 @@
+80 = "Tréier"
+85 = "Kölle"
+1876 = "Franckfurth"
+4023 = "Ziegenhahn"
+4510 = "Speier"

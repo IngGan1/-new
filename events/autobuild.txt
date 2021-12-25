@@ -1,0 +1,856 @@
+namespace = auto_events
+
+province_event = {
+	id = auto_events.1
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+
+	trigger = {
+		always = no
+		is_year = 1500
+		owner = { total_development = 600 is_at_war = no ai = yes NOT = { num_of_loans = 10 }}
+		not = { fort_level = 2 }
+		controlled_by = owner
+		not = {
+			any_neighbor_province = {
+				or = {
+					fort_level = 2
+					controlled_by = owner
+					any_neighbor_province = {
+						fort_level = 2
+						controlled_by = owner
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 100
+		modifier = {
+			factor = 2
+			or = {
+				has_terrain = grasslands
+				has_terrain = steppe
+				has_terrain = farmlands
+				has_terrain = coastline
+				has_terrain = drylands
+			}
+		}
+		modifier = {
+			factor = 0.5
+			or = {
+				has_terrain = hills
+				has_terrain = jungle
+				has_terrain = woods
+				has_terrain = forest
+				has_terrain = mountain
+				has_terrain = highlands
+				has_terrain = desert_mountain
+				has_terrain = glacier
+				has_terrain = marsh
+			}
+		}
+		modifier = {
+			factor = 0.5
+			development = 15
+		}
+		modifier = {
+			factor = 2
+			not = { development = 5 }
+		}
+		modifier = {
+			factor = 5
+			owner = {
+				or = {
+					is_tribal = yes
+					primitives = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "fcsp_events.1.o"
+		add_building = fort_15th
+		remove_building = fort_14th
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.2
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+
+	trigger = {
+		is_year = 1500
+		not = { is_year = 1502 }
+		owner = { ai = yes primitives = no }
+		not = {
+			or = {
+				has_building = terrain_land
+				has_building = terrain_woodland
+				has_building = terrain_desert
+				has_building = terrain_hills
+				has_building = terrain_jungle
+				has_building = terrain_special
+				has_building = terrain_swamp
+				has_building = terrain_coastal
+				has_building = terrain_art
+			}
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	mean_time_to_happen = {
+		years = 12
+		modifier = {
+			factor = 0.25
+			development = 15
+		}
+		modifier = {
+			factor = 5
+			owner = { is_tribal = yes }
+		}
+		modifier = {
+			factor = 0.25
+			can_build = terrain_special
+		}
+	}
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				can_build = terrain_land
+			}
+			add_building = terrain_land
+		}
+		if = {
+			limit = {
+				can_build = terrain_woodland
+			}
+			add_building = terrain_woodland
+		}
+		if = {
+			limit = {
+				can_build = terrain_desert
+			}
+			add_building = terrain_desert
+		}
+		if = {
+			limit = {
+				can_build = terrain_hills
+			}
+			add_building = terrain_hills
+		}
+		if = {
+			limit = {
+				can_build = terrain_art
+			}
+			add_building = terrain_art
+		}
+		if = {
+			limit = {
+				can_build = terrain_jungle
+			}
+			add_building = terrain_jungle
+		}
+		if = {
+			limit = {
+				can_build = terrain_swamp
+			}
+			add_building = terrain_swamp
+		}
+		if = {
+			limit = {
+				can_build = terrain_coastal
+			}
+			add_building = terrain_coastal
+		}
+		if = {
+			limit = {
+				can_build = terrain_special
+			}
+			add_building = terrain_special
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.3
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_land adm_tech = 5 or = { and = { not = { total_development = 2000 } treasury = 5000 } and = { not = { total_development = 4000 } treasury = 10000 } treasury = 20000 } }
+		controlled_by = owner
+		owned_by = owner
+		or = {
+			can_build = terrain_special
+			can_build = terrain_land
+			can_build = terrain_woodland
+			can_build = terrain_desert
+			can_build = terrain_hills
+			can_build = terrain_art
+			can_build = terrain_jungle
+			can_build = terrain_swamp
+			can_build = terrain_coastal
+		}
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				can_build = terrain_land
+			}
+			add_building = terrain_land
+			owner = { add_treasury = -150 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_woodland
+			}
+			add_building = terrain_woodland
+			owner = { add_treasury = -200 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_desert
+			}
+			add_building = terrain_desert
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_hills
+			}
+			add_building = terrain_hills
+			owner = { add_treasury = -300 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_art
+			}
+			add_building = terrain_art
+			owner = { add_treasury = -350 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_jungle
+			}
+			add_building = terrain_jungle
+			owner = { add_treasury = -300 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_swamp
+			}
+			add_building = terrain_swamp
+			owner = { add_treasury = -300 }
+		}
+		else_if = {
+			limit = {
+				can_build = terrain_coastal
+			}
+			add_building = terrain_coastal
+			owner = { add_treasury = -250 }
+		}
+		else = {
+			limit = {
+				can_build = terrain_special
+			}
+			add_building = terrain_special
+			owner = { add_treasury = -300 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.4
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_inf or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = railroad
+			can_build = infrastructure_lvl_4
+			can_build = infrastructure_lvl_3
+			can_build = infrastructure_lvl_2
+			can_build = infrastructure_lvl_1
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = infrastructure_lvl_4
+				can_build = railroad
+			}
+			add_building = railroad
+			remove_building = infrastructure_lvl_4
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = infrastructure_lvl_3
+				owner = { adm_tech = 23 }
+			}
+			add_building = infrastructure_lvl_4
+			remove_building = infrastructure_lvl_3
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = infrastructure_lvl_2
+				owner = { adm_tech = 15 }
+			}
+			add_building = infrastructure_lvl_3
+			remove_building = infrastructure_lvl_2
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = infrastructure_lvl_1
+				owner = { adm_tech = 9 }
+			}
+			add_building = infrastructure_lvl_2
+			remove_building = infrastructure_lvl_1
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { adm_tech = 3 }
+				not = { has_building = infrastructure_lvl_1 }
+				not = { has_building = infrastructure_lvl_2 }
+				not = { has_building = infrastructure_lvl_3 }
+				not = { has_building = infrastructure_lvl_4 }
+			}
+			add_building = infrastructure_lvl_1
+			owner = { add_treasury = -100 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.5
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_pro or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = steam_factory
+			can_build = counting_house
+			can_build = production_lvl_3
+			can_build = production_lvl_2
+			can_build = workshop
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = counting_house
+				owner = {
+					adm_tech = 28
+					any_owned_province = {	
+						trade_goods = steam_engine
+					}
+				}
+			}
+			add_building = steam_factory
+			remove_building = counting_house
+			owner = { add_treasury = -400 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = production_lvl_3
+				owner = { adm_tech = 22 }
+			}
+			add_building = counting_house
+			remove_building = production_lvl_3
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = production_lvl_2
+				owner = { adm_tech = 17 }
+			}
+			add_building = production_lvl_3
+			remove_building = production_lvl_2
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = workshop
+				owner = { adm_tech = 10 }
+			}
+			add_building = production_lvl_2
+			remove_building = workshop
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { adm_tech = 6 }
+				not = { has_building = workshop }
+				not = { has_building = production_lvl_2 }
+				not = { has_building = counting_house }
+				not = { has_building = production_lvl_3 }
+			}
+			add_building = workshop
+			owner = { add_treasury = -100 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.6
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_tax or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = taxation_lvl_4
+			can_build = cathedral
+			can_build = taxation_lvl_2
+			can_build = temple
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = cathedral
+				owner = { adm_tech = 19 }
+			}
+			add_building = taxation_lvl_4
+			remove_building = cathedral
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = taxation_lvl_2
+				owner = { adm_tech = 14 }
+			}
+			add_building = cathedral
+			remove_building = taxation_lvl_2
+			owner = { add_treasury = -150 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = temple
+				owner = { adm_tech = 8 }
+			}
+			add_building = taxation_lvl_2
+			remove_building = temple
+			owner = { add_treasury = -150 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { adm_tech = 4 }
+				not = { has_building = temple }
+				not = { has_building = taxation_lvl_2 }
+				not = { has_building = cathedral }
+			}
+			add_building = temple
+			owner = { add_treasury = -100 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.7
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_tra or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = stock_exchange
+			can_build = trade_depot
+			can_build = trade_lvl_2
+			can_build = marketplace
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = trade_depot
+				owner = { dip_tech = 22 }
+			}
+			add_building = stock_exchange
+			remove_building = trade_depot
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = trade_lvl_2
+				owner = { dip_tech = 17 }
+			}
+			add_building = trade_depot
+			remove_building = trade_lvl_2
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = marketplace
+				owner = { dip_tech = 8 }
+			}
+			add_building = trade_lvl_2
+			remove_building = marketplace
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { dip_tech = 4}
+				not = { has_building = marketplace }
+				not = { has_building = trade_lvl_2 }
+				not = { has_building = trade_depot }
+			}
+			add_building = marketplace
+			owner = { add_treasury = -100 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.8
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_man or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = training_fields
+			can_build = barracks
+			can_build = manpower_lvl_1
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = barracks
+				owner = { mil_tech = 16 }
+			}
+			add_building = training_fields
+			remove_building = barracks
+			owner = { add_treasury = -150 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = manpower_lvl_1
+				owner = { mil_tech = 12 }
+			}
+			add_building = barracks
+			remove_building = manpower_lvl_1
+			owner = { add_treasury = -150 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { mil_tech = 6 }
+				not = { has_building = manpower_lvl_1 }
+				not = { has_building = barracks }
+			}
+			add_building = manpower_lvl_1
+			owner = { add_treasury = -100 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.9
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_for or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		OR = {
+			can_build = conscription_center
+			can_build = regimental_camp
+			can_build = forcelimit_lvl_1
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				has_building = regimental_camp
+				owner = { mil_tech = 20 }
+			}
+			add_building = conscription_center
+			remove_building = regimental_camp
+			owner = { add_treasury = -200 }
+			
+		}
+		else_if = {
+			limit = {
+				has_building = forcelimit_lvl_1
+				owner = { mil_tech = 15 }
+			}
+			add_building = regimental_camp
+			remove_building = forcelimit_lvl_1
+			owner = { add_treasury = -100 }
+			
+		}
+		else_if = {
+			limit = {
+				num_free_building_slots = 1
+				owner = { mil_tech = 8 }
+				not = { has_building = forcelimit_lvl_1 }
+				not = { has_building = regimental_camp }
+			}
+			add_building = forcelimit_lvl_1
+			owner = { add_treasury = -200 }
+			
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.10
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		can_build = university
+		owner = { ai = no adm_tech = 7 has_country_flag = auto_uni or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	option = {
+		name = "fcsp_events.1.o"
+		add_building = university
+		owner = { add_treasury = -600 }
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.11
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no adm_tech = 7 has_country_flag = auto_manu or = { and = { not = { or = { has_country_flag = auto_10000 has_country_flag = auto_20000 has_country_flag = auto_40000 } } treasury = 5000 } and = { has_country_flag = auto_10000 treasury = 10000 } and = { has_country_flag = auto_20000 treasury = 20000 } and = { has_country_flag = auto_40000 treasury = 40000 } } }
+		num_free_building_slots = 1
+		OR = {
+			can_build = wharf
+			can_build = weapons
+			can_build = textile
+			can_build = tradecompany
+			can_build = farm_estate
+			can_build = mills
+			can_build = furnace
+			can_build = oil_well
+			can_build = plantations
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+
+	
+	
+	option = {
+		name = "fcsp_events.1.o"
+		if = {
+			limit = {
+				can_build = wharf
+			}
+			add_building = wharf
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = weapons
+			}
+			add_building = weapons
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = textile
+			}
+			add_building = textile
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = tradecompany
+			}
+			add_building = tradecompany
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = farm_estate
+			}
+			add_building = farm_estate
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = mills
+			}
+			add_building = mills
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = furnace
+			}
+			add_building = furnace
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = oil_well
+			}
+			add_building = oil_well
+			owner = { add_treasury = -500 }
+		}
+		else_if = {
+			limit = {
+				can_build = plantations
+			}
+			add_building = plantations
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+province_event = {
+	id = auto_events.12
+	title = "fcsp_events.1.t"
+	desc = "fcsp_events.1.d"
+	picture = SIEGE_eventPicture
+	hidden = yes
+	trigger = {
+		owner = { ai = no has_country_flag = auto_dest }
+		or = {
+			has_building = state_house
+			has_building = impressment_offices
+			has_building = soldier_households
+			has_building = ramparts
+		}
+		controlled_by = owner
+		owned_by = owner
+	}
+	
+	option = {
+		name = "fcsp_events.1.o"
+		remove_building = state_house
+		remove_building = impressment_offices
+		remove_building = soldier_households
+		remove_building = ramparts
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

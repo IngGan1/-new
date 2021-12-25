@@ -1,0 +1,123 @@
+namespace = flavourNED
+
+
+#Bruges to Anvers
+
+country_event = {
+	id = flavourNED.1
+	title = "flavourNED.1.t"
+	desc = "flavourNED.1.d"
+	picture = PLAGUE_eventPicture
+	fire_only_once = yes
+	
+	immediate = {
+		90 = {
+			add_base_tax = -5
+			add_base_production = -4
+			add_base_manpower = -3
+			add_center_of_trade_level = -1
+		}
+	}
+	trigger = {
+		owns = 90
+		is_year = 1460
+		90 = {
+			base_tax = 5
+			base_production = 4
+			base_manpower = 3
+		}
+	}
+	mean_time_to_happen = {	years = 20 }
+	option = {
+		name = "flavourNED.1.a"
+		ai_chance = { factor = 100 }
+		if = { limit = { not = { has_country_flag = ned1 } }
+			set_country_flag = ned1
+			1744 = {
+				add_base_tax = 5
+				add_base_production = 4
+				add_base_manpower = 3
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+	option = {
+		name = "flavourNED.1.b"
+		ai_chance = { factor = 0 }
+		if = { limit = { not = { has_country_flag = ned1 } }
+			owner = { add_treasury = -1000 }
+			set_country_flag = ned1
+			random = { 
+    			chance = 50
+			90 = {
+				add_base_tax = 5
+				add_base_production = 4
+				add_base_manpower = 3
+				add_center_of_trade_level = 1	
+			}	
+			}
+		}
+	}
+}
+
+
+
+#Anvers to Amsterdam
+
+country_event = {
+	id = flavourNED.2
+	title = "flavourNED.2.t"
+	desc = "flavourNED.2.d"
+	picture = PLAGUE_eventPicture
+	fire_only_once = yes
+	
+	immediate = {
+		1744 = {
+			add_base_tax = -5
+			add_base_production = -4
+			add_base_manpower = -3
+			add_center_of_trade_level = -1
+		}
+	}
+	trigger = {
+		owns = 1744
+		is_year = 1550
+		1744 = {
+			base_tax = 5
+			base_production = 4
+			base_manpower = 3
+		}
+	}
+	mean_time_to_happen = {	years = 25 }
+	option = {
+		name = "flavourNED.2.a"
+		ai_chance = { factor = 100 }
+		if = { limit = { not = { has_country_flag = ned2 } }
+		set_country_flag = ned2
+		97 = {
+			add_base_tax = 7
+			add_base_production = 7
+			add_base_manpower = 7
+			add_center_of_trade_level = 1
+			change_trade_goods = cloth
+		}
+		}
+	}
+	option = {
+		name = "flavourNED.2.b"
+		ai_chance = { factor = 0 }
+		if = { limit = { not = { has_country_flag = ned2 } }
+		set_country_flag = ned2
+		owner = { add_treasury = -2000 }
+		random = { 
+    			chance = 50
+			1744 = {
+				add_base_tax = 5
+				add_base_production = 4
+				add_base_manpower = 3
+				add_center_of_trade_level = 1		
+			}		
+		}
+		}
+	}
+}

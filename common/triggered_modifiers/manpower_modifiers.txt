@@ -1,0 +1,175 @@
+
+# Former Economy TrigMods
+manpower_full = {
+	potential = {
+		manpower_percentage = 0.8
+	}
+	trigger = {
+	}
+	global_tax_modifier = 0.20
+	production_efficiency = 0.20
+	war_exhaustion = -0.02
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.1
+	development_cost = -0.1
+	stability_cost_modifier = -0.1
+}
+
+manpower_sufficient = {
+	potential = {
+		manpower_percentage = 0.6
+		NOT = {
+		manpower_percentage = 0.8
+		}
+	}
+	trigger = {
+	}
+	global_tax_modifier = 0.10
+	production_efficiency = 0.10
+	war_exhaustion = -0.01
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.05
+	development_cost = -0.05
+	stability_cost_modifier = -0.05
+}
+
+manpower_medium = {
+	potential = {
+		manpower_percentage = 0.4
+		NOT = {
+		manpower_percentage = 0.6
+		}
+	}
+	trigger = {
+	}
+	global_tax_modifier = 0.05
+	production_efficiency = 0.05
+	global_colonial_growth = 10
+}
+
+manpower_insufficient = {
+	potential = {
+		manpower_percentage = 0.2
+		NOT = {
+		manpower_percentage = 0.4
+		}
+	}
+	trigger = {
+	}
+	global_tax_modifier = -0.10
+	production_efficiency = -0.10
+	war_exhaustion = 0.01
+	colonist_placement_chance = -0.5
+	development_cost = 0.1
+	stability_cost_modifier = 0.1
+}
+
+manpower_empty = {
+	potential = {
+		NOT = { manpower_percentage = 0.2 }
+	}
+	trigger = {
+	}
+	global_tax_modifier = -0.20
+	production_efficiency = -0.20
+	trade_efficiency = -0.20
+	war_exhaustion = 0.02
+	colonist_placement_chance = -2
+	development_cost = 0.2
+	stability_cost_modifier = 0.2
+}
+
+firearmed_army1 = { 
+	potential = {
+		mil_tech = 10
+		NOT = { mil_tech = 14 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.1
+    land_maintenance_modifier = 0.1
+	siege_ability = 0.05
+}
+
+firearmed_army2 = { 
+	potential = {
+		mil_tech = 14
+		NOT = { mil_tech = 18 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.15
+    land_maintenance_modifier = 0.15
+	siege_ability = 0.075
+}
+
+firearmed_army3 = { 
+	potential = {
+		mil_tech = 18
+		NOT = { mil_tech = 22 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.2
+    land_maintenance_modifier = 0.2
+	siege_ability = 0.1
+}
+
+firearmed_army4 = { 
+	potential = {
+		mil_tech = 22
+		NOT = { mil_tech = 24 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.25
+    land_maintenance_modifier = 0.25
+	siege_ability = 0.125
+}
+
+firearmed_army5 = { 
+	potential = {
+		mil_tech = 24
+		NOT = { mil_tech = 26 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.3
+    land_maintenance_modifier = 0.3
+	siege_ability = 0.15
+}
+
+firearmed_army6 = { 
+	potential = {
+		mil_tech = 26
+		NOT = { mil_tech = 28 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.35
+    land_maintenance_modifier = 0.35
+	siege_ability = 0.175
+}
+
+firearmed_army7 = { 
+	potential = {
+		mil_tech = 28
+		NOT = { mil_tech = 30 }
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.4
+    land_maintenance_modifier = 0.4
+	siege_ability = 0.2
+}
+
+firearmed_army8 = { 
+	potential = {
+		mil_tech = 30
+	}
+	trigger = {
+	}
+	merc_maintenance_modifier = 0.45
+    land_maintenance_modifier = 0.45
+	siege_ability = 0.25
+}

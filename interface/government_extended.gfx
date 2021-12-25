@@ -1,0 +1,31 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_confucian_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//confucian_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_spanish_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//spanish_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_habsburg_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//habsburg_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_principality"
+		texturefile = "gfx//interface//government_reform_icons//french_principality.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_feudal_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//french_feudal_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_french_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//french_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_qing_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//qing_monarchy.dds"
+	}
+
+

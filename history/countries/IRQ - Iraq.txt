@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = al_iraqiya_arabic
+religion = shiite
+technology_group = muslim
+capital = 410	# Bagdad
+religious_school = ismaili_school
+
+1433.1.1 = {
+    monarch = {
+        name = "Ispend bin Yusuf"
+        dynasty = "Qara Qoyunlu"
+        culture = azerbaijani
+        birth_date = 1390.1.1
+        adm = 3
+        dip = 4
+        mil = 4
+    }
+}

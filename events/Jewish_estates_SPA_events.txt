@@ -1,0 +1,57 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Expelled from Spanish colonies
+	id = jewish_estates_events.29
+	title = "jewish_estates_events.29.t"
+	desc = "jewish_estates_events.29.d"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = CAS
+				tag = ARA
+				tag = SPA
+				tag = POR
+			}
+			is_year = 1620
+			religion = catholic
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				colonial_region = colonial_brazil
+			}
+			NED = { 
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_brazil
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	immediate = { hidden_effect = { NED = {set_country_flag = sh_colonial_inq_j_e } } }
+
+	option = {		# Leave
+		name = "COLONIAL_INQ_J_E"
+		add_estate_loyalty = {
+			estate = jewish_Estate 
+			loyalty = -30
+		}
+		every_subject_country = [
+			limit = {
+				AND = {
+					colonial_region = colonial_brazil
+					has_colonial_parent = ROOT
+				}
+			}
+			add_tariff_value = -0.1
+		}
+	}
+}

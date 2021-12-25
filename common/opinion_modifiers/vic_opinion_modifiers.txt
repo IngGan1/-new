@@ -1,0 +1,8 @@
+
+##### ENG Flavor Events #####
+
+queen_victoria = {
+	opinion = -100
+	years = 20
+	yearly_decay = 2
+}

@@ -1,0 +1,108 @@
+muscovite_civil_war = {
+	potential = {
+		tag = MOS
+        government = monarchy
+		1778 = {
+			owned_by = MOS
+		}
+		NOT = { has_country_flag = had_muscovite_civil_war }
+		is_free_or_tributary_trigger = yes
+        NOT = { is_year = 1450 }
+		NOT = { exists = RUS }
+		KAZ = {
+			exists = yes
+			is_subject = no
+		}
+		normal_or_historical_nations = yes
+		uses_doom = no
+	}
+	
+
+	can_start = {
+		current_age = age_of_discovery
+		is_at_war = no
+		has_any_disaster = no
+		is_lesser_in_union = no
+	}
+
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			is_lesser_in_union = yes
+			NOT = { government = monarchy }
+		}
+	}
+
+
+
+
+	progress = {
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 90 }
+		}
+        modifier = {
+			factor = 1
+			NOT = { legitimacy = 80 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 2.5
+			NOT = { ADM = 2 }
+		}		
+		modifier = {
+			factor = 2.5
+			NOT = { DIP = 2 }
+		}		
+		modifier = {
+			factor = 2.5
+			NOT = { MIL = 2 }
+		}
+		modifier = {
+			factor = -5
+			stability = 3
+		}
+	}	
+
+
+
+
+
+	can_end = {
+		stability = 1
+        OR = {
+            AND = {
+                NOT = { num_of_rebel_controlled_provinces = 1 }
+		        NOT = {
+			        has_spawned_rebels = pretender_rebels
+		        }
+                NOT = {
+                    has_ruler_modifier = mos_civil_war_troubles
+                }
+            }
+            dynasty = "Shemyaka"
+        }
+	}
+
+
+	modifier = {
+		discipline = -0.05
+		land_forcelimit_modifier = -0.3
+	}	
+
+
+	on_start = MOS_civil_war.1
+	on_end = MOS_civil_war.100
+
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			2000 = 0
+			50 = MOS_civil_war.19 #Civil War Spreads to Province
+		}
+	}
+}			

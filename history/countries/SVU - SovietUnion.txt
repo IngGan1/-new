@@ -1,0 +1,8 @@
+add_government_reform = proletarian_dictatorship
+government_rank = 3
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 295 # Moskva
+
+national_focus = MIL

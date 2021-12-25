@@ -1,0 +1,40 @@
+﻿l_english:
+ two_sicilies_nation_title: "‘ÅÜÂ`Î¬¹DÅUÆm­ Ö1Á"
+ two_sicilies_nation_desc: "Form the kingdom of the Two Sicilies."
+ kurdistan_nation_title: "àÏt¹µ²ÂÄÐ Ö1Á"
+ kurdistan_nation_desc: "Form the Kurdish nation."
+ silesia_nation_title: "äÂ¸ÜÂDÅ Ö1Á"
+ silesia_nation_desc: "Form the duchy of Silesia."
+ franconia_nation_title: "Õ‘·TÏÈ²DÅ ¬Ç°¬iÕ"
+ franconia_nation_desc: "The duchy of Franconia was one of the five Germanice stem duchies, erected during the Xth century and dissolved during the XIIIth century, as its territorial entity was moving eastward."
+ hesse_nassau_nation_title: "Unify Hesse and Nassau"
+ hesse_nassau_nation_desc: "Hesse and Nassau were united in a single province within the kingdom of Prussia."
+ swabia_nation_title: "²ÂNÆD¾DÅ Ž´jÖ"
+ swabia_nation_desc: "The duchy of Swabia was one of the five Germanice stem duchies, and was the domain of the Hohenstaufen dynasty until their extinction in 1268. It was dissolved at this point."
+ lotharingia_nation_title: "j¸ÀÐÁ¹0®DÅ Ž´jÖ"
+ lotharingia_nation_desc: "Lotharingia was the kingdom of Lothaire II, great-grandson of Charlemagne, created in 855. Although it did not last long, it kept its prestige throughout the centuries from its proximity to the Emperor; and there were numerous ambitious lords that dreamt to use its name to legitimate their ambitions."
+ RecalculateCE_title: "µÑàÂ¨Ö(Ç ¬ÇÄ¬°À"
+ RecalculateCE_desc: "µÑàÂ¨Ö(ÇNÇ 2D±ÐÅ jÕˆ¼ ¶”² Æ ÑÐÅ À¼TÖ¬ ˆÇDÇLµ Ä¬°ÀXÕÀ»j¸ mÕl­t¬<»DÇ ÓÉ”² ñ´ CEÀ¼TÖ|¹ È©ÆÜÂ²Ðà¬ öÂDÇ Lµ .ÁÝÐXÕ8Á”Æ"
+ Difficulty_Setting_title: "œ°tÇÄ³ 2ÁÈ"
+ Difficulty_Setting_desc: "2ÁÈ HÅXÕtº ´Å2¸ÀÆ œ°tÇÄ³j¸ Þ¹°Í8È ˆÇLÇ"
+ ShowCE_title: "µÑàÂ ¨Ö(Ç ô¼0®"
+ ShowCE_desc: "XÕè¸ Ù³HÅ µÑàÂ¨Ö(Ç jÔÜÂ"
+ No_hab_CE_title: "µÑàÂ ¨Ö(Ç 0®¥² Èp¬"
+ tanos_title: "4»XÇø»jÕ m­¬ Èp¬ ¸¨¼1"
+ tanos_desc: "ÉYÅDÅTº¬¹tÎ, ˜Óè¸ËÊDÇ ÈxÆjÕ DÅTº¬¹tÎÀÉíÅü¬ DÅÕ¬¹tÎ HÅËÊ ÀÉíÅXÇ m­¬|¹ Èp¬tÕÁ 	¸DÇ É„Ç"
+ tanos2_title: "4»XÇø»jÕ m­¬ Èp¬ ¸¨¼2"
+ tanos2_desc: "1ÐÅ T³tÕ T³ Î¹NÇ DÅÕ¬¹tÎ HÅËÊ ÀÉíÅü¬ DÅ·¼Ä³ HÅËÊ ÀÉíÅ, ˆ×Ð¹|·|Å°Àå¹ Ž´ü­ ŒÁm­¼ÑÉÀÉíÅXÇ m­¬|¹ Èp¬tÕÁ 	¸DÇ É„Ç"
+ tanos3_title: "4»XÇø»jÕ m­¬ Èp¬ ¸¨¼3"
+ tanos3_desc: "2ÐÅ T³tÕ DÅTº¬¹tÎ È ÀÉíÅü¬ ´DÅÕ¬¹tÎ|¹ ÈxÆjÕ DÅÕ¬¹tÎ È ÀÉíÅ, DÅ·¼Ä³, °ºè¸tÎÈÄ³, ðÒ³¼ ÀÉíÅXÇ m­¬|¹ Èp¬tÕÁ 	¸DÇ É„Ç "
+ tanos5_title: "4»XÇø»jÕ m­¬ Èp¬-DÅTº¬¹tÎÌ¹"
+ tanos5_desc: "ÉYÅDÅTº¬¹tÎ, ˜Óè¸ËÊDÇ ÈxÆjÕ DÅTº¬¹tÎÀÉíÅXÇ m­¬|¹ Èp¬tÕÁ 	¸DÇ É„Ç(DÅÕ¬¹tÎ m­¬ Õ¸tÇ©Æ)"
+ adopt_prussian_system_title: "Õì·ÜÂDÅ ÈŽ´´ÌÈ Ä³…Ç"
+ adopt_prussian_system_desc: "p­m­üÈXÇ 0®¥²DÇ ¬À©Æ ¬¥²XÕŒ¬ XÕpº 4è²Ä¬ ÈŽ´¬ÖDÇ ³´ÌhÕ. 0®tÈ ÈŽ´0®¥²tÇ ˆÇ”² Ë¬°Æ ¹¬ÐÌÁ 0®tÈ ÈŽ´0®¥² „¼¼ÒXÇ tÐ­¹tÇ ˜×ä´ Â ˆÇ<Ç˜° ÇËÊ õ¬¬ È¹°Æ²Â ˜Ç ³ô¼tº tÐ­¹ ¬¥²hÕ"
+ declare_onin_war_title: "2ÆÌ²XÇœ° .Á¸Å"
+ declare_onin_war_desc: "ø¼˜· Èm­ÜÂ³¬ ÜÂ‘ÇXÕ”² 1467D±ÐÅÁ UÅù²¨¬ <ºÈ 2ÆÌ²XÇœ° .Á¸Å. ÈÁÇtÇ ¬¥²tÕÀÉ˜° üÁp­XÇ ˆ´àÂDÇ ¬ÀŒ¬ ´ä²."
+ byz_help: "Ù³ù¹ l­XÕ0®"
+ byz_help_title: "(XÎ¸Ò)Ù³ù¹ l­XÕ0®"
+ byz_help_desc: "Œ¬„Ç ÜÂ‘Ç ÄÖ 7|ÇÙ³HÅÌ¹ äÂ‰Õ ¬¥². jÕì²¬ xÆP­ÉÓÓDÇ lÐŒ¬ ’±ìÅÁ üÈÀ¼m­¬NÆ Ù³ù¹DÇ ‹ÂŒ¬ tÕÉ. XÕà¬ öÂNÇ m­¬¬ ˆÇ”²p³ ´ÀDÅ¨°DÇ ÇàÂtÇ ÆÅDÇ Ë¬°ÆÐÅ ¬À©Æ"
+ enter_kingdom_title: "…ÈÁm­ àÂ1Áj¸È¹Èm­ ¬…Ç"
+ enter_kingdom_desc: "¨ºà´ …ÈÁm­ä´DÇ Èm­ÐÅ ¬…ÇÜÂ¨Ðä²"
+ 

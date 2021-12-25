@@ -1,0 +1,23 @@
+#2781 - Gedo
+
+owner = BOA
+controller = BOA
+add_core = BOA
+culture = rahaweyn
+religion = shamanism
+capital = "Luuq"
+trade_goods = wool
+is_city = yes
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+center_of_trade = 2
+
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+
+1550.1.1 = { discovered_by = TUR }

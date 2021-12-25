@@ -1,0 +1,97 @@
+namespace = new_dutch
+
+country_event = {
+    id = new_dutch.1
+    title = new_dutch.1.t
+    desc = new_dutch.1.d
+    picture = CITY_VIEW_eventPicture
+
+    fire_only_once = yes
+
+    trigger = {
+        tag = NED
+        99 = {
+            owned_by = NED
+            controlled_by = NED
+            is_core = NED
+        }
+        5066 = {
+            owned_by = NED
+            controlled_by = NED
+            is_core = NED
+        }
+        5067 = {
+            owned_by = NED
+            controlled_by = NED
+            is_core = NED
+        }
+		3022 = {
+            owned_by = NED
+            controlled_by = NED
+            is_core = NED
+        }
+        OR = {
+            99 = {
+                culture = westphalian
+            }
+            5066 = {
+                culture = westphalian
+            }
+            5067 = {
+                culture = westphalian
+            }
+			3022 = {
+                culture = westphalian
+            }
+        }
+        is_at_war = no
+    }
+
+    mean_time_to_happen = {
+        months = 240
+    }
+
+    option = {
+        name = new_dutch.1.a
+        if = {
+            limit = {
+                99 = {
+                    culture = westphalian
+                }
+            }
+            99 = {
+                change_culture = dutch
+            }
+        }
+        if = {
+            limit = {
+                5066 = {
+                    culture = westphalian
+                }
+            }
+            5066 = {
+               change_culture = dutch
+            }
+        }
+        if = {
+            limit = {
+                5067 = {
+                    culture = westphalian
+                }
+            }
+            5067 = {
+                change_culture = dutch
+            }
+        }
+		if = {
+            limit = {
+                3022 = {
+                    culture = westphalian
+                }
+            }
+            3022 = {
+                change_culture = dutch
+            }
+        }
+    }
+}

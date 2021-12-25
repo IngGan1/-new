@@ -1,0 +1,16 @@
+#4623 - Lodwar
+
+owner = MII
+controller = MII
+add_core = MII
+culture = masaba
+religion = shamanism #Fetishism
+trade_goods = livestock
+is_city = yes
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+discovered_by = central_african
+capital = "Lodwar"

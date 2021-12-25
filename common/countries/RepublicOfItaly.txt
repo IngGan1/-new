@@ -1,0 +1,122 @@
+graphical_culture = westerngfx
+
+color = { 125  171  84 }
+
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	naval_ideas
+	offensive_ideas
+	generalstab0
+	staatsverwaltung0
+	justiz0
+	propaganda0
+	gesellschaft0
+	fire0
+	assimilation0
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Cosimo #0" = 40
+	"Ferdinando #0" = 40
+	"Francesco #0" = 40
+	"Lodovico #0" = 40
+	"Alessandre #0" = 20
+	"Galeazzo Maria #0" = 20
+	"Gian Galeazzo #0" = 20
+	"Gian Gastone #0" = 20
+	"Massimiliano #0" = 20
+	"Napoleone #0" = 20
+	"Vittorio Amedeo #0" = 20
+	"Carlo #0" = 10
+	"Antonio #0" = 10
+	"Eugenio #0" = 10
+	"Filippo #0" = 10
+	"Gian Carlo #0" = 10
+	"Giovanni #0" = 10
+	"Pietro #0" = 10
+	"Alberto #1" = 5
+	"Rodolfo #1" = 5
+	"Ascanio Maria #0" = 5
+	"Augusto #0" = 5
+	"Benedetto #0" = 5
+	"Giuseppe #0" = 5
+	"Leopoldo #0" = 5
+	"Matteo #0" = 5
+	"Maurizio #0" = 5
+	"Ottaviano #0" = 5
+	"Raniero #0" = 5
+	"Agostino #0" = 0
+	"Constanzo #0" = 0
+	"Demetrio #0" = 0
+	"Fabio #0" = 0
+	"Giordano #0" = 0
+	"Isidoro #0" = 0
+	"Niccolò #0" = 0
+	"Paolo #0" = 0
+	"Romeo #0" = 0
+	"Severino #0" = 0
+	"Vittorio #0" = 0
+	
+	"Viola #0" = -1
+	"Zaira #0" = -1
+	"Angelica #0" = -1
+}
+
+leader_names = {
+	"di Savoia" "di Saluzzo" "del Vasto" "del Carreto" "di Cavour" "di Campofregoso" "d'Este" Sforza Visconti Malaspina Gonzaga Grimaldi Spinola Doria Cybo Melzi Bentivoglio #Lombards
+	Corner Contarini Dandolo "della Scala" Emo Falier Giustiniani Gradenigo Loredan Madruzzo Memmo Priuli Querini Renier Sanudo Tiepolo Zorzi Ziani #Venetians
+	"de' Medici" "degli Albizzi" Appiani Antelminelli Castracani Chigi Frescobaldi Gambacorta Gentileschi Giunigi Giucciardini Ghirlandari "della Gherardesca" Landucci Petrucci #Tuscans
+	"della Rovere" Borghese Borgia Caetani Colonna Farnese Graziani Lanci Malatesta Montefeltro Pietromarchi Paradisi Pallavicini Serlupi Tuccimei Orsini #Umbrians
+	Carafa Ludovisi Malato Pignatelli Sersale Ventimiglia #Neapolitans
+	Alliata Asmundo Chiaramonte Lanza Lentini Lombardo Melfi Miossi Samonà Zacco #Sicilians
+	"d'Arborea" "d'Oristano" "di Gallura" Buonaparte #Sardinians
+}
+
+ship_names = {
+	Achille Agamennone Baccho Cadmo Enea Ercole Ettore Giasone Menelao Perseo Remo Ulisse #12 Ancient Heroes (male)
+	Andromeda Antigone Arianna Atalanta Cassandra Electra Elena Lavinia Medea Niobe Penelope Pentesileia #12 Ancient Heroes (female)
+	Apollo Cerere Diana Giove Giunone Marte Mercurio Minerva Nettuno Venere Vesta Vulcano #12 Roman Gods
+	Augusto "Costantino il Grande" Diocleziano "Giulio Cesare" "Marco Aurelio" "Pompeo Magno" "Scipione l'Africano" "Settimio Severo" Trajano Tiberio Tito Vespasiano #12 Roman Rulers
+	Catullo Catone Cicerone Lucrezio Orazio Ovidio Plinio Seneca Tacito "Tito Livio" Varrone Virgilio #12 Roman Great Men
+	"Abramo Patriarca" "Isacco Patriarca" "Giaccobe Patriarca" "Giuseppe Patriarca" "Mosè Profeta" "Samule Profeta" "Davide Profeta" "Daniele Profeta" "Salomone Profeta"
+	"Elia Profeta" "Isaia Profeta" "Geremia Profeta" #12 Biblical Prophets
+	"San Pietro" "San Paolo" "Sant'Andrea" "San Giovanni" "San Giacomo Maggiore" "San Filippo" "San Tommaso" "San Giacomo Minore" "San Matteo Evangelista" "San Mattia" 
+	"San Bartolomeo" "San Taddeo" #12 Christian Apostles
+	"San Marco Evangelista" "San Giovanni Evangelista" "San Luca Evangelista" "San Francesco" "Santa Caterina" "San Antonio" "San Domenico"
+	"San Lazzaro" "Santo Stefano" "San Maurizio" "San Giovanni Battista" "Santa Lucia" #12 Christian Saints
+	"Re Ascanio" "Re Romolo" "Re Teoderico" "Re Alboino" "Regina Teodolinda" "Re Desiderio" "Imperatore Carlo Magno" "Re Lotario" "Re Berengario" "Re Ottone" "Grancontessa Matilde" 
+	"Duca Gian Galeazzo" #12 Italian "Kings"
+	"Dante Alighieri" "Ludovico Ariosto" "Sandro Botticelli" "Giovanni Boccaccio" "Francesco Petrarca" "Leonardo da Vinci" "Niccolò Machiavelli" "Christofero Colombo" "Marco Polo" 
+	"Tiziano Vecellio" "Pico della Mirandola" "Claudio Monteverdi" #12 Italian Great Men
+	"Arcangelo Michele" "Arcangelo Gabriele" "Arcangelo Raffaele" "Madonna Madre di Dio" #4 Archangels and Mary
+}
+
+army_names = {
+	"Legione I Lazio" "Legione II Puglia" "Legione III Lucania" "Legione IV Campania" "Legione V Marche" "Legione VI Umbria" "Legione VII Toscana" "Legione VIII Emilia" "Legione IX Liguria"
+	"Legione X Veneto" "Legione XI Lombardia" "Legione XII Piemonte" "Legione XIII Sicilia" "Legione XIV Sardegna" "Legione di $PROVINCE$"
+}
+
+fleet_names = {
+	"Flottiglia Federale" "Flottiglia Veneziania" "Flottiglia Genovese" "Flottiglia Pisana" "Flottiglia Amalfitana" "Flottiglia Rossa" "Flottiglia Bianca" "Flottiglia Verde" "Flottiglia Azurra" "Flottiglia Gialla" "Flottiglia Nera"
+}

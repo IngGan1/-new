@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = romagnan
+religion = catholic
+technology_group = western
+capital = 4456 # Rimini
+fixed_capital = 4456
+
+
+1432.1.1 = {
+	monarch = {
+		name = "Sigismondo Pandolfo I"
+        	dynasty = "Malatesta"
+		adm = 4
+		dip = 2
+		mil = 6
+	}
+}
+1440.1.1 = {
+	heir = {
+		name = "Roberto"
+		monarch_name = "Roberto I"
+		dynasty = "Malatesta"
+		birth_date = 1440.1.1
+		death_date = 1482.9.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

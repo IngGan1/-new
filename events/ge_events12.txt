@@ -1,0 +1,2037 @@
+namespace = ge_events
+# Battle of Pavia
+country_event = {
+	id = ge_events.53
+	title = "ge_events.53.t"
+	desc = "ge_events.53.d"
+	picture = BATTLE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	trigger = {
+        tag = FRA
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge53 }
+        is_year = 1530
+		NOT = {
+			is_year = 1550
+		}
+		FRA = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_at_war = no
+			is_subject = no
+		}
+		SPA = {
+			ai = yes
+			was_player = no
+			is_subject = no
+		}
+		CAS = {
+			ai = yes
+			was_player = no
+			is_subject = no
+		}
+		BUR = {
+			ai = yes
+			was_player = no
+			is_at_war = no
+		}
+	}
+ 
+	option = {
+		name = ge_events.53.a  
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			if = { limit = { TUR = { ai = yes } HAB = { ai = yes or = { alliance_with = SPA alliance_with = CAS is_subject_of = SPA } } }
+				create_alliance = TUR
+				add_historical_friend = TUR
+				TUR = { add_historical_friend = FRA }
+			}
+			every_owned_province = {
+				limit = { is_core = NAP }
+				cede_province = NAP
+				remove_core = FRA
+			}
+			if = {
+				limit = { MLO = { is_subject_of = FRA } }
+				MLO = { grant_independence = yes }
+			}
+			87 = { 
+				if = { limit = { 87 = { or = { owned_by = BUR owned_by = FRA } } }
+				remove_core = BUR
+				remove_core = FRA
+				cede_province = ENG
+				add_core = ENG
+				}
+			}
+			piedmont_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = SAV
+				add_core = SAV
+			}
+			romandie_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = SWI
+				add_core = SWI
+			}
+			iberia_region = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = SPA
+				add_core = SPA
+			}
+			if = { limit = { has_global_flag = low_countries_given_spa }
+				artois_area = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = SPA
+					add_core = SPA
+				}
+				low_countries_region = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = SPA
+					add_core = SPA
+				}
+			}
+			if = { limit = { has_global_flag = low_countries_given_cas not = { SPA = { exists = yes } } }
+				artois_area = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = CAS
+					add_core = CAS
+				}
+				low_countries_region = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = CAS
+					add_core = CAS
+				}
+			}
+			
+			if = { limit = { has_global_flag = low_countries_given_cas SPA = { exists = yes } }
+				artois_area = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = SPA
+					add_core = SPA
+				}
+				low_countries_region = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = SPA
+					add_core = SPA
+				}
+			}
+			
+			if = { limit = { not = { has_global_flag = low_countries_given_cas has_global_flag = low_countries_given_spa } }
+				artois_area = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = HAB
+					add_core = HAB
+				}
+				low_countries_region = { 
+					limit = { owned_by = FRA }
+					remove_core = FRA
+					cede_province = HAB
+					add_core = HAB
+				}
+			}
+			palatinate_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = PAL
+				add_core = PAL
+			}
+			liguria_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = GEN
+				add_core = GEN
+			}
+			lorraine_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = LOR
+				add_core = LOR
+			}
+			switzerland_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = SWI
+				add_core = SWI
+			}
+			upper_rhineland_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = BAD
+				add_core = BAD
+			}
+			alsace_area = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = FST
+				add_core = FST
+			}
+			ile_de_france_area = { 
+				limit = { owned_by = BUR }
+				remove_core = BUR
+				cede_province = FRA
+				add_core = FRA
+			}
+			champagne_area = { 
+				limit = { owned_by = BUR }
+				remove_core = BUR
+				cede_province = FRA
+				add_core = FRA
+			}
+			france_region = {
+				limit = { or = { owned_by = CAS owned_by = SPA } }
+				remove_core = SPA
+				remove_core = CAS
+				cede_province = FRA
+				add_core = FRA
+			}
+			if = { limit = { ENG = { ai = yes } }
+				france_region = {
+					limit = { owned_by = ENG }
+					remove_core = ENG
+					cede_province = FRA
+					add_core = FRA
+				}
+			}
+			if = { limit = { HAB = { ai = yes } }
+				france_region = {
+					limit = { owned_by = HAB }
+					remove_core = HAB
+					cede_province = FRA
+					add_core = FRA
+				}
+			}
+			if = { limit = { BRI = { is_subject_of = FRA } }
+				FRA = { inherit = BRI }
+			}
+			italy_region = { 
+				limit = { owned_by = FRA not = { area = provence_area } }
+				remove_core = FRA
+				cede_province = previous_owner
+				add_core = previous_owner
+			}
+			every_country = {
+				limit = { ai = yes or = { is_subject = no is_subject_of = SPA is_subject_of = HAB is_subject_of = FRA } }
+				every_owned_province = {
+					limit = { or = { region = france_region area = provence_area } }
+						cede_province = FRA
+						add_core = FRA
+				}
+			}
+			inherit = ABT
+			if = {
+				limit = {
+					HAB = { alliance_with = SPA }
+				}
+				add_adm_power = 600
+				add_dip_power = 600
+				add_mil_power = 600
+				add_prestige = 50
+				add_manpower = 200
+				add_stability = 3
+			}
+			every_province = {
+				limit = { or = { region = france_region area = provence_area } owner = { ai = yes } }
+				remove_core = TOU
+				remove_core = FOI
+				remove_core = CMN
+				remove_core = ABT
+				remove_core = GUY
+				remove_core = AUV
+				remove_core = BOU
+				remove_core = BRI
+				remove_core = POI
+				remove_core = ORL
+				remove_core = ANJ
+				remove_core = PRO
+				remove_core = DAU
+				remove_core = BER
+				remove_core = ALE
+				remove_core = NRM
+				remove_core = NEV
+				remove_core = CHP
+			}
+			FRA = {
+				remove_casus_belli = {
+					target = MLO
+					type = cb_restore_personal_union
+				}
+			}
+		}
+	}
+}
+
+# Russian Expansion into Siberia
+country_event = {
+	id = ge_events.54
+	title = "ge_events.54.t"
+	desc = "ge_events.54.d"
+	picture = BATTLE_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		always = no
+		tag = RUS
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1592
+		NOT = {
+			is_year = 1612
+		}
+		RUS = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		KHY = {
+			ai = yes
+			was_player = no
+		}
+		RMI = {
+			ai = yes
+			was_player = no
+		}
+		PRM = {
+			ai = yes
+			was_player = no
+		}
+		KAZ = {
+			 ai = yes
+			 was_player = no
+		}
+	}
+
+	option = {
+		name = ge_events.54.a  
+		ai_chance = { factor = 100 }
+		inherit = PRM 
+		kazan_area = { 
+				  limit = { owner = { ai = yes } }
+				  cede_province = RUS
+				  add_core = RUS
+		}
+		kama_area = { 
+				  limit = { owner = { ai = yes } }
+				  cede_province = RUS
+				  add_core = RUS
+		}
+		ural_area = { 
+				  limit = { owner = { ai = yes } }
+				  cede_province = RUS
+				  add_core = RUS
+		}
+	}
+} 
+
+country_event = {
+	id = ge_events.55
+	title = "ge_events.55.t"
+	desc = "ge_events.55.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = RUS
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1626
+		NOT = {
+			is_year = 1646
+		}
+		RUS = {
+			 exists = yes
+			 ai = yes
+			 was_player = no
+		}
+		SHY = {
+			 ai = yes
+			 was_player = no
+		}
+		NOG = {
+			 ai = yes
+			 was_player = no
+		}
+		BUK = {
+			 ai = yes
+			 was_player = no
+		}
+	}
+
+	option = {
+		name = ge_events.55.a  
+		ai_chance = { factor = 100 }
+		ishim_area = { 
+				limit = { owner = { ai = yes } }
+				add_core = RUS
+		}
+		yrtesh_area = { 
+				limit = { owner = { ai = yes } }
+				add_core = RUS
+		} 
+		aqmola_area = { 
+				limit = { owner = { ai = yes } }
+				add_core = RUS
+		}
+	}
+} 
+
+country_event = {
+	id = ge_events.56
+	title = "ge_events.56.t"
+	desc = "ge_events.56.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = RUS
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1637
+		NOT = {
+			is_year = 1657
+		}
+		RUS = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		SHY = {
+			 ai = yes
+			 was_player = no
+		}
+		NOG = {
+			 ai = yes
+			 was_player = no
+		}
+		BUK = {
+			 ai = yes
+			 was_player = no
+		}
+	}
+
+	option = {
+		name = ge_events.56.a  
+		ai_chance = { factor = 100 }
+		ob_area = { 
+				  limit = { owner = { ai = yes } }
+				  add_core = RUS
+		}
+		central_siberia_area = { 
+				  limit = { owner = { ai = yes } }
+				  add_core = RUS
+		}
+		tunguska_area = { 
+				  limit = { owner = { ai = yes } }
+				  add_core = RUS
+		}
+	}
+}
+
+country_event = { #위트레흐트 조약
+	id = ge_events.57
+	title = "ge_events.57.t"
+	desc = "ge_events.57.d"
+	picture = BATTLE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	trigger = {
+		tag = SPA
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1715
+		NOT = {
+			is_year = 1730
+		}
+		SPA = {
+			ai = yes
+			is_at_war = no
+			exists = yes
+			is_subject = no
+		}
+		FRA = {
+			ai = yes
+			exists = yes
+			is_subject = no
+		}
+		HAB = {
+			ai = yes
+			exists = yes
+			is_subject = no
+		}
+	}
+
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			iberia_region = { 
+				limit = { owned_by = FRA }
+				remove_core = FRA
+				cede_province = SPA
+				add_core = SPA
+			}
+			france_region = {
+				limit = { or = { owned_by = HAB owned_by = SPA } }
+				remove_core = SPA
+				remove_core = HAB
+				cede_province = FRA
+				add_core = FRA
+			}
+			if = {
+				limit = { SAV = { ai = yes is_subject = no } SPI = { exists = no } }
+				every_country = {
+					limit = { ai = yes or = { is_subject = no is_subject_of = SPA is_subject_of = HAB is_subject_of = FRA } }
+					every_owned_province = {
+						limit = { or = { area = piedmont_area area = lombardy_area area = po_valley_area area = corsica_sardinia_area } }
+							cede_province = SAV
+							add_core = SAV
+					}
+				}
+				if = { limit = { MLO = { ai = yes or = { is_subject = no is_subject_of = FRA } } }
+					SAV = { inherit = MLO }
+				}
+				SAV = {
+					change_tag = SPI
+					swap_non_generic_missions = yes			
+					country_event = { id = ideagroups.1 } #Swap Ideas
+				}
+			}
+			SPA = {
+				every_owned_province = {
+					limit = { region = italy_region or = { culture = neapolitan culture = umbrian culture = sicilian } }
+					add_core = NAP
+					cede_province = NAP
+					remove_core = SPA
+				}
+				remove_historical_rival = FRA
+			}
+			HAB = {
+				every_owned_province = {
+					limit = { region = italy_region or = { culture = neapolitan culture = umbrian culture = sicilian } }
+					add_core = NAP
+					cede_province = NAP
+					remove_core = HAB
+				}
+			}
+			every_owned_province = {
+				limit = { region = low_countries_region }
+				cede_province = HAB
+				add_core = HAB
+				remove_core = SPA
+			}
+			FRA = {
+				if = { limit = { NED = { ai = yes is_subject = no } }
+					every_owned_province = {
+						limit = { region = low_countries_region is_core = NED }
+						cede_province = NED
+						remove_core = FRA
+					}
+				}
+				if = { limit = { not = { dynasty = "de Bourbon" } }
+					define_ruler = {
+						name = "Louis XV"
+						dynasty = "de Bourbon"
+						adm = 2
+						dip = 2
+						mil = 3
+						age = 15
+					}
+					define_heir = {
+						dynasty = "de Bourbon"
+						age = 0
+					}
+				}
+				remove_historical_rival = SPA
+			}
+			if = {
+				limit = { GBR = { ai = yes is_subject = no } SPA = { owns = 226 } }
+				226 = {
+					cede_province = GBR
+					add_core = GBR
+					remove_core = SPA
+				}
+			}
+			if = {
+				limit = { POR = { exists = no } }
+				release = POR
+			}
+			if = {
+				limit = { POR = { is_subject_of = SPA } }
+				POR = { grant_independence = yes }
+			}
+			if = {
+				limit = { POR = { ai = yes } }
+				every_owned_province = {
+					limit = { is_core = POR region = iberia_region }
+					cede_core = POR
+					remove_core = SPA
+				}
+			}
+			SPA = {
+				every_owned_province = {
+					limit = { region = italy_region }
+					cede_province = previous_owner
+					add_core = previous_owner
+					remove_core = SPA
+				}
+				define_ruler = {
+					name = "Felipe V"
+					dynasty = "de Bourbon"
+					culture = cosmopolitan_french
+					adm = 3
+					dip = 1
+					mil = 3
+					age = 37
+				}
+				define_heir = {
+					name = "Luis I"
+					dynasty = "de Bourbon"
+					adm = 1
+					dip = 1
+					mil = 1
+					age = 13
+				}
+				declare_war = HAB
+				white_peace = HAB
+			}
+			if = { limit = { NAP = { ai = yes is_subject_of = SPA } }
+				NAP = { grant_independence = yes }
+			}
+			if = { limit = { TUR = { ai = yes alliance_with = FRA } }
+				FRA = {
+					declare_war = TUR
+					white_peace = TUR
+					remove_historical_friend = TUR
+				}
+				TUR = { remove_historical_friend = FRA }
+			}
+		}
+	}
+}
+
+# The Deluge
+country_event = { 
+	id = ge_events.59
+	title = "ge_events.59.t"
+	desc = "ge_events.59.d"
+	picture = BATTLE_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	trigger = {
+		is_year = 1648
+		NOT = {
+			is_year = 1668
+		}
+        tag = PLC
+		is_at_war = no
+        has_global_flag = governments_extended_historical_yes
+    }  
+
+	immediate = {
+		hidden_effect = {
+            west_dniepr_area = { 
+                limit = { 
+                owned_by = PLC
+				}
+                add_core = ZAZ
+            }
+            east_dniepr_area = { 
+                limit = { 
+                owned_by = PLC
+				}
+                add_core = ZAZ
+            }
+            sloboda_ukraine_area = { 
+                 limit = { 
+                owned_by = PLC
+				}
+                add_core = ZAZ
+            }
+            oka_area = { 
+                limit = { 
+                owned_by = PLC
+				}
+                add_core = ZAZ
+            }
+		    release = ZAZ
+			ZAZ = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+				random_owned_province = {
+					build_to_forcelimit = {
+						infantry = 1
+						cavalry = 0.3
+						artillery = 1
+					}
+				}
+				add_manpower = 50
+				add_treasury = 2000
+			}
+		    every_owned_province = {
+			    limit = {
+				    region = ruthenia_region
+			    }
+			add_claim = ZAZ
+		    }
+		}
+	}
+
+	option = {
+		name = ge_events.59.a  
+		ai_chance = { factor = 100 }
+		add_stability = -3
+         add_country_modifier = {
+			name = "the_deluge_poland"
+			duration = 7300
+		}
+        ZAZ = { country_event = { id = ge_events.60 } } 
+	}
+}
+
+country_event = {
+	id = ge_events.60
+	title = "ge_events.60.t"
+	desc = "ge_events.60.d"
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.60.a  
+		ai_chance = { factor = 50 }
+		define_ruler = {
+			name = "Bohdan"
+			dynasty = "Khmelnytsky"
+			adm = 3
+			dip = 4
+			mil = 5
+            fixed = yes
+			age = 53
+		}
+        declare_war_with_cb = { 
+            who = PLC
+            casus_belli = cb_independence_war
+        }
+        add_prestige = 50
+		add_army_tradition = 100
+		define_ruler_to_general = {
+			fire = 6
+			shock = 6
+			manuever = 4
+			siege = 4
+		}
+	}
+}
+
+country_event = { 
+	id = ge_events.61
+	title = "ge_events.61.t"
+	desc = "ge_events.61.d"
+	picture = BATTLE_eventPicture
+	major = yes
+	fire_only_once = yes
+        
+	trigger = {
+        tag = PLC
+		is_at_war = no
+        has_global_flag = governments_extended_historical_yes
+		is_year = 1654
+		NOT = {
+			is_year = 1674
+		}
+        RUS = { 
+            exists = yes
+            ai = yes
+            was_player = no
+			is_at_war = no
+        }
+    }
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.61.a  
+		ai_chance = { factor = 100 }
+		RUS = { country_event = { id = ge_events.62 } }
+	}
+}
+
+country_event = { 
+	id = ge_events.62
+	title = "ge_events.62.t"
+	desc = "ge_events.62.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.62.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 20
+		declare_war_with_cb = {
+			who = PLC
+			casus_belli = cb_border_war
+		}
+	}
+}
+
+
+country_event = { 
+	id = ge_events.63
+	title = "ge_events.63.t"
+	desc = "ge_events.63.d"
+	picture = COLONIZATION_eventPicture
+         
+    major = yes
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+        ai = no
+        has_global_flag = governments_extended_historical_yes
+        is_year = 1620
+		NOT = {
+			is_year = 1640
+		}
+        ENG = { 
+            exists = yes
+            ai = yes
+            was_player = no
+        }
+        NOT = {
+			colonial_eastern_america = {
+				country_or_vassal_holds = ROOT
+			}
+		}
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+            hudson_valley_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            chesapeake_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            carolinas_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            1098 = {
+                cede_province = ENG 
+            }
+            2561 = { 
+                cede_province = ENG 
+            }
+            481 = { 
+                cede_province = ENG 
+            }
+	}
+}
+
+country_event = { 
+	id = ge_events.64
+	title = "ge_events.64.t"
+	desc = "ge_events.64.d"
+	picture = COLONIZATION_eventPicture
+    
+	hidden = yes
+    major = yes
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+        has_global_flag = governments_extended_historical_yes
+        is_year = 1635
+		NOT = {
+			is_year = 1655
+		}
+        ENG = { 
+            exists = yes
+            ai = yes
+            was_player = no
+        }
+		NOT = {
+			colonial_eastern_america = {
+				country_or_vassal_holds = ROOT
+			}
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+            massachusetts_bay_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+		            change_culture = american
+                    change_religion = anglican
+            }
+            connecticut_valley_area = {
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            great_woods_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+		            change_culture = american
+                    change_religion = anglican
+            }
+            delaware_valley_area = { 
+                    limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            maryland_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+                    change_religion = anglican
+            }
+            maine_area = { 
+                limit = { not = { owner = { ai = no } } }
+                    cede_province = ENG
+                    add_core = ENG
+					change_culture = american
+					change_religion = anglican
+			}
+	}
+}
+
+country_event = {
+	id = ge_events.91
+	title = "ge_events.91.t"
+	desc = "ge_events.91.d"
+	picture = USA_COLONIZATION_eventPicture
+    
+    major = yes
+	fire_only_once = yes
+
+	trigger = {
+        tag = GBR
+		exists = yes
+        has_global_flag = governments_extended_historical_yes
+        is_year = 1735
+		NOT = {
+			is_year = 1755
+		}
+        ai = yes
+		any_country = { ai = no }
+		NOT = {
+			colonial_eastern_america = {
+				country_or_vassal_holds = ROOT
+			}
+		}
+		USA = { exists = no }
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			colonial_eastern_america = { 
+				limit = { not = { country_or_vassal_holds = GBR } }
+				cede_province = GBR
+				add_core = GBR
+				change_culture = american
+				change_religion = protestant
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			colonial_eastern_america = { 
+				limit = { country_or_vassal_holds = GBR }
+				change_culture = american
+				change_religion = protestant
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ge_events.57.a
+	}
+}
+
+# Louis XIV de Bourbon
+country_event = {
+	id = ge_events.65
+	title = "ge_events.65.t"
+	desc = "ge_events.65.d"
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+        tag = FRA
+		is_year = 1638
+		NOT = {
+			is_year = 1658
+		}
+		dynasty = "de Bourbon"
+		NOT = {
+			has_country_flag = louisxiv_bourbon_flag
+		}
+		is_lesser_in_union = no
+    }
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = louisxiv_bourbon_flag
+		}
+	}
+
+	option = {
+		name = ge_events.65.a  
+		ai_chance = { factor = 100 }
+		define_heir = {
+			name = "Louis"
+			dynasty = "de Bourbon"
+			adm = 5
+			dip = 2
+			mil = 4
+			age = 0
+		}
+	}
+	option = {
+		name = albania.1.b  
+		ai_chance = { factor = 0 }
+	}
+}
+
+#Revoke of Edict of Nantes
+country_event = { 
+	id = ge_events.66
+	title = "ge_events.66.t"
+	desc = "ge_events.66.d"
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		has_country_modifier = edict_de_nantes
+		tag = FRA
+		is_year = 1685
+		NOT = {
+			is_year = 1705
+		}
+		dynasty = "de Bourbon"
+		has_country_flag = louisxiv_bourbon_flag
+		is_lesser_in_union = no
+		NOT = {
+			has_country_flag = revoked_the_edict_of_nantes
+		}
+        }
+
+	option = {
+		name = ge_events.66.a  
+		remove_country_modifier = edict_de_nantes
+		set_country_flag = revoked_the_edict_of_nantes
+		add_prestige = 10
+                add_country_modifier = {
+	                   name = "revoke_edict_de_nantes"
+			   duration = 7300
+		}
+	}
+}
+
+# Ivan IV
+country_event = {
+	id = ge_events.72
+	title = "ge_events.72.t"
+	desc = "ge_events.72.d"
+	picture = NEW_HEIR_eventPicture
+           
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		OR = {
+		  tag = MOS
+		  tag = RUS
+		}
+		is_year = 1545	
+		NOT = {
+			is_year = 1565
+		}				
+		is_lesser_in_union = no
+        }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.72.a  
+		ai_chance = { factor = 100 }
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300
+		every_province = {
+			limit = {
+				region = russia_region
+			}
+			add_permanent_claim = ROOT
+		}
+		add_meritocracy_effect = yes
+        add_prestige = 50
+		define_ruler = {
+			name = "Ivan IV"
+			dynasty = "Rurikovich"
+			adm = 6
+			dip = 5
+			mil = 6
+			age = 15
+            fixed = yes
+		}
+		if = { limit = { not = { or = { RUS = { ai = no } MOS = { ai = no } } } }
+			add_ruler_modifier = { name = ivan_the_great }
+		}
+		295 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+		308 = {
+				add_base_tax = 1 
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+		294 = {
+				add_base_tax = 1 
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+		307 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+		306 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+		301 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+		}
+	}
+}
+
+# Onin War
+country_event = {
+	id = ge_events.73
+	title = "ge_events.73.t"
+	desc = "ge_events.73.d"
+	picture = BATTLE_eventPicture
+           
+    major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+        tag = ASK
+        is_year = 1466
+		not = { is_year = 1600 }
+		not = { has_global_flag = onin_war_flag }
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = onin_war_flag
+		}
+	}
+
+	option = {
+		name = ge_events.73.a  
+		ai_chance = { factor = 100 }
+        add_prestige = -20
+		add_stability = -1
+        add_country_modifier = {
+			name = "sengoku_daimyo"
+			duration = -1
+		}
+	}
+}
+
+#The Battle of Zenta
+country_event = {
+	id = ge_events.74
+	title = "ge_events.74.t"
+	desc = "ge_events.74.d"
+	picture = BATTLE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 9
+	}
+
+	trigger = {
+		tag = HAB
+		is_year = 1697
+		NOT = {
+			is_year = 1727
+		}
+		has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge74 }
+		HAB = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		HUN = {
+			ai = yes
+			was_player = no
+			or = { is_subject = no is_subject_of = HAB }
+		}
+		TUR = {
+			exists = yes
+			ai = yes
+			was_player = no
+			has_country_flag = relocated_capital_constantinople
+			owns = 151
+			is_at_war = no
+			is_subject = no
+		}
+		BOH = {
+			ai = yes
+			was_player = no
+			or = { is_subject = no is_subject_of = HAB }
+		}
+		CRO = {
+			ai = yes
+			was_player = no
+		}
+		CLI = {
+			ai = yes
+			was_player = no
+		}
+		SLV = {
+			ai = yes
+			was_player = no
+		}
+		TRA = {
+			ai = yes
+			was_player = no
+		}
+		SLO = {
+			ai = yes
+			was_player = no
+		}
+		MVA = {
+			ai = yes
+			was_player = no
+		}
+		DAL = {
+			ai = yes
+			was_player = no
+		}
+    }
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = zenta_battle_flag
+		}
+	}
+
+	option = {
+		name = ge_events.74.a  
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+			TUR = {
+				every_owned_province = {
+					limit = { is_core = NAP }
+					cede_province = NAP
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { is_core = SPA }
+					cede_province = SPA
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { is_core = POL }
+					cede_province = POL
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { is_core = PLC }
+					cede_province = PLC
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { LIT = { exists = yes } is_core = LIT }
+					cede_province = LIT
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { LIT = { exists = no } is_core = LIT }
+					cede_province = POL
+					add_core = POL
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { MOL = { exists = yes } is_core = MOL }
+					cede_province = MOL
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { MOL = { exists = no } is_core = MOL }
+					cede_province = POL
+					add_core = POL
+					remove_core = TUR
+				}
+				every_owned_province = {
+					limit = { is_core = HUN }
+					cede_province = HUN
+					remove_core = TUR
+				}
+			}
+			if = { 
+				limit = { POL = { ai = yes } PLC = { ai = yes } }
+				ruthenia_region = { 
+					limit = { owned_by = HUN }
+					remove_core = HUN
+					cede_province = POL
+					add_core = POL
+				}
+				poland_region = { 
+					limit = { owned_by = HUN }
+					remove_core = HUN
+					cede_province = POL
+					add_core = POL
+				}
+			}
+			moldavia_area = { 
+					  limit = { owned_by = HUN }
+					  remove_core = HUN
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			bessarabia_area = { 
+					  limit = { owned_by = HUN }
+					  remove_core = HUN
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			wallachia_area = { 
+					  limit = { owned_by = HUN }
+					  remove_core = HUN
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			oltenia_area = { 
+					  limit = { owned_by = HUN }
+					  remove_core = HUN
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			if = {
+				limit = {
+					HUN = { exists = yes }
+				}
+				inherit = HUN
+			}
+			if = {
+				limit = {
+					MVA = { exists = yes }
+				}
+				inherit = MVA
+			}
+			inherit = STY
+			inherit = SLO
+			south_german_region = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			italy_region = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			slovakia_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			transdanubia_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			kassa_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			alfold_area= { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			balaton_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			partium_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			transylvania_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			southern_transylvania_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			slavonia_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			syrmia_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			croatia_area = { 
+					  limit = { owned_by = TUR }
+					  remove_core = TUR
+					  cede_province = HAB
+					  add_core = HAB
+			}
+			south_saxony_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = SAX
+					  add_core = SAX
+			}
+			upper_bavaria_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = BAV
+					  add_core = BAV
+			}
+			lower_bavaria_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = BAV
+					  add_core = BAV
+			}
+			bosnia_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			rascia_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			montenegro_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			serbia_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			raska_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			rascia_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			albania_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			vidin_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			macedonia_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			bulgaria_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			silistria_area = { 
+					  limit = { owned_by = HAB }
+					  remove_core = HAB
+					  cede_province = TUR
+					  add_core = TUR
+			}
+			if = {
+				limit = {
+					PLC = { exists = yes } POL = { exists = yes } 
+				}
+				PLC = { inherit = POL }
+			}
+			if = { limit = { RUS = { ai = yes } PLC = { ai = yes } }
+				balkan_region = { 
+					limit = { or = { owned_by = PLC owned_by = RUS } }
+					remove_core = RUS
+					remove_core = PLC
+					cede_province = TUR
+					add_core = TUR
+				}
+				anatolia_region = { 
+					limit = { or = { owned_by = PLC owned_by = RUS } }
+					remove_core = RUS
+					remove_core = PLC
+					cede_province = TUR
+					add_core = TUR
+				}
+				egypt_region = { 
+					limit = { or = { owned_by = PLC owned_by = RUS } }
+					remove_core = RUS
+					remove_core = PLC
+					cede_province = TUR
+					add_core = TUR
+				}
+			}
+			if = { limit = { SPA = { ai = yes } }
+				balkan_region = { 
+					limit = { owned_by = SPA }
+					remove_core = SPA
+					cede_province = TUR
+					add_core = TUR
+				}
+				anatolia_region = { 
+					limit = { owned_by = SPA }
+					remove_core = SPA
+					cede_province = TUR
+					add_core = TUR
+				}
+				egypt_region = { 
+					limit = { owned_by = SPA }
+					remove_core = SPA
+					cede_province = TUR
+					add_core = TUR
+				}
+			}
+		}
+	}
+}
+
+
+# Hojo Soun
+country_event = {
+	id = ge_events.75
+	title = "ge_events.75.t"
+	desc = "ge_events.75.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			superregion = far_east_superregion
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		tag = ASK
+		is_year = 1495
+		NOT = {
+			is_year = 1515
+		}
+		ASK = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		3689 = {
+			owned_by = ASK
+		}
+	}
+
+	option = {
+		name = ge_events.75.a  
+		ai_chance = { factor = 100 }
+		3689 = {
+            cede_province = HJO
+		}
+		vassalize = HJO
+		HJO = {
+		  define_ruler = {
+			name = "Soun"
+			dynasty = "Hojo"
+			adm = 6
+			dip = 5
+			mil = 5
+			age = 39
+            fixed = yes
+		  }
+	   	  add_adm_power = 900
+		  add_dip_power = 900
+		  add_mil_power = 900
+		}
+	}
+} 
+
+# Ottoman-Mamluk War
+country_event = {
+	id = ge_events.77
+	title = "ge_events.77.t"
+	desc = "ge_events.77.d"
+	picture = BATTLE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		is_year = 1500
+			NOT = {
+				is_year = 1600
+		}
+        tag = TUR
+		not = { has_global_flag = no_ge77 }
+        has_global_flag = governments_extended_historical_yes
+        TUR = {
+            exists = yes
+            ai = yes
+            was_player = no
+			is_subject = no
+        }
+        owns = 151
+        has_country_flag = relocated_capital_constantinople
+        MAM = {
+            exists = yes
+            ai = yes
+            was_player = no
+            is_subject = no
+			or = {
+				and = { is_year = 1560 is_at_war = no }
+				capital_scope = {
+					controlled_by = TUR
+				}
+			}
+        }
+        TLC = {
+            ai = yes
+            was_player = no
+        } 
+        TUN = {
+            ai = yes
+            was_player = no
+        } 
+    }
+
+	option = {
+		name = ge_events.77.a  
+		ai_chance = { factor = 100 }
+		MAM = {
+            every_owned_province = {
+				add_local_autonomy = 50
+				limit = {
+					AND = {
+						is_core = MAM
+                    	culture = al_misr_arabic
+					}
+				}
+				cede_province = TUR
+                add_province_modifier = {
+					name = mamluks_rebels
+					duration = 7300
+		        }
+				add_province_modifier = {
+					name = mamluk_influence
+					duration = 7300
+		        }
+				add_core = TUR
+			}
+            every_owned_province = {
+				limit = {
+					AND = {
+						is_core = MAM
+                		NOT = { culture = al_misr_arabic }
+					}
+				}
+				cede_province = TUR
+                		add_core = TUR
+			}
+            every_owned_province = {
+				limit = {
+					NOT = { is_core = MAM }
+				}
+				cede_province = TUR
+	      	}
+		}
+		if = {
+			limit = { TLC = { is_subject = no } }
+			create_subject = {
+				subject_type = march
+				subject = TLC
+			}
+			TLC = { change_tag = ALG change_primary_culture = algerian country_event = { id = ideagroups.1 } }
+		}
+		if = {
+			limit = { TUN = { is_subject = no } }
+			create_subject = {
+				subject_type = march
+				subject = TUN
+			}
+		}
+		add_prestige = 10
+	}
+} 
+
+#The Fourth Muscovite-Lithuanian war
+country_event = {
+	id = ge_events.78
+	title = "ge_events.78.t"
+	desc = "ge_events.78.d"
+	picture = BATTLE_eventPicture
+           
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOS
+		is_year = 1514	
+				NOT = {
+			is_year = 1534
+		}
+                        has_global_flag = governments_extended_historical_yes	
+		LIT = {
+		    exists = yes
+		    ai = yes
+		    was_player = no
+			or = {
+				is_subject = no
+				is_subject_of = POL
+			}
+		}
+		POL = {
+		    exists = yes
+		    ai = yes
+		    was_player = no
+		    is_subject = no
+		}
+		MOS = {
+		    exists = yes
+		    ai = yes
+		    was_player = no
+		    is_subject = no
+		    is_lesser_in_union = no
+		}
+		NOT = {
+			has_global_flag = lithuanian_defeat_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = lithuanian_defeat_flag
+		}
+	}
+
+	option = {
+		name = ge_events.78.a  
+		ai_chance = { factor = 100 }
+		russia_region = { 
+			limit = { or = { owned_by = LIT owned_by = POL } }
+			remove_core = LIT
+			remove_core = POL
+			cede_province = MOS
+			add_core = MOS
+		}
+		smolensk_area = { 
+			limit = { or = { owned_by = LIT owned_by = POL } }
+			remove_core = LIT
+			remove_core = POL
+			cede_province = MOS
+			add_core = MOS
+		}
+		oka_area = { 
+			limit = { or = { owned_by = LIT owned_by = POL } }
+			remove_core = LIT
+			remove_core = POL
+			cede_province = MOS
+			add_core = MOS
+		}
+		sloboda_ukraine_area = { 
+			limit = { or = { owned_by = LIT owned_by = POL } }
+			remove_core = LIT
+			remove_core = POL
+			cede_province = MOS
+			add_core = MOS
+		}
+		crimea_region = { 
+			limit = { or = { owned_by = LIT owned_by = POL } }
+			remove_core = LIT
+			remove_core = POL
+			cede_province = CRI
+			add_core = CRI
+		}
+		if = { limit = { LIT = { is_subject = no } }
+			POL = {
+				create_union = LIT
+			}
+		}
+	}
+}
+
+#The End of the Ahikaga rule
+country_event = {
+	id = ge_events.79
+	title = "ge_events.79.t"
+	desc = "ge_events.79.d"
+	picture = BATTLE_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		tag = ODA
+		or = { is_subject = no is_subject_of = ASK }
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1573
+		NOT = {
+			is_year = 1593
+		}
+		ASK = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_at_war = no
+			is_subject = no
+		}
+		ODA = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		HSK = {
+			ai = yes
+			was_player = no
+		}
+		HTK = {
+			ai = yes
+			was_player = no
+		}
+		YMN = {
+			ai = yes
+			was_player = no
+		}
+		SBA = {
+			ai = yes
+			was_player = no
+		}
+	}
+
+	option = {
+		name = ge_events.79.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 20
+		inherit = ASK
+		manchuria_region = { 
+			limit = { owned_by = ODA }
+			remove_core = ODA
+			cede_province = MJZ
+			add_core = MJZ
+		}
+	}
+} 
+
+# Peter the great
+country_event = {
+	id = ge_events.80
+	title = "ge_events.80.t"
+	desc = "ge_events.80.d"
+	picture = COURT_eventPicture
+
+    major = yes
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+        tag = RUS
+        is_year = 1687
+		NOT = {
+			is_year = 1707
+		}
+		is_lesser_in_union = no
+	}
+
+	option = {
+		name = ge_events.80.a  
+		ai_chance = { factor = 100 }
+        define_ruler = {
+			name = "Pyotr I Veliky"
+			dynasty = "Romanov"
+			adm = 6
+			dip = 6
+			mil = 5
+			age = 15
+            fixed = yes
+		}
+	    add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		if = { limit = { RUS = { ai = yes } }
+			add_ruler_modifier = { name = historically_strong_king }
+		}
+	}
+}

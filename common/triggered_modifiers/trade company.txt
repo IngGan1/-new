@@ -1,0 +1,138 @@
+non_trade_focus = {
+	potential = {
+		always = no
+		ai = yes
+		OR = {
+			NOT = { full_idea_group = exploration_ideas }
+		}
+	}	
+	trigger = {
+		ai = yes
+		OR = {
+			NOT = { full_idea_group = exploration_ideas }
+		}
+	}
+	range = -0.50
+}
+
+colony_1_penalty = {
+	potential = {
+		colony = 1
+		NOT = { colony = 2 }
+	}
+	trigger = {
+		colony = 1
+		NOT = { colony = 2 }
+		
+	}
+	global_colonial_growth = -5
+}
+
+colony_2_penalty = {
+	potential = {
+		colony = 2
+		NOT = { colony = 3 }
+	}
+	trigger = {
+		colony = 2
+		NOT = { colony = 3 }
+		
+	}
+	global_colonial_growth = -10
+	colonist_placement_chance = -0.05
+}
+
+colony_3_penalty = {
+	potential = {
+		colony = 3
+		NOT = { colony = 4 }
+	}
+	trigger = {
+		colony = 3
+		NOT = { colony = 4 }
+		
+	}
+	global_colonial_growth = -20
+	colonist_placement_chance = -0.10
+}
+
+colony_4_penalty = {
+	potential = {
+		colony = 5
+		NOT = { colony = 6 }
+	}
+	trigger = {
+		colony = 5
+		NOT = { colony = 6 }
+		
+	}
+	global_colonial_growth = -30
+	colonist_placement_chance = -0.15
+}
+
+colony_5_penalty = {
+	potential = {
+		colony = 6
+		NOT = { colony = 7 }
+	}
+	trigger = {
+		colony = 6
+		NOT = { colony = 7 }
+		
+	}
+	global_colonial_growth = -40
+	colonist_placement_chance = -0.20
+}
+
+colony_6_penalty = {
+	potential = {
+		colony = 7
+		NOT = { colony = 8 }
+	}
+	trigger = {
+		colony = 7
+		NOT = { colony = 8 }
+		
+	}
+	global_colonial_growth = -50
+	colonist_placement_chance = -0.25
+}
+
+colony_7_penalty = {
+	potential = {
+		colony = 8
+		NOT = { colony = 9 }
+	}
+	trigger = {
+		colony = 8
+		NOT = { colony = 9 }
+		
+	}
+	global_colonial_growth = -60
+	colonist_placement_chance = -0.30
+}
+
+colony_8_penalty = {
+	potential = {
+		colony = 9
+		NOT = { colony = 10 }
+	}
+	trigger = {
+		colony = 9
+		NOT = { colony = 10 }
+		
+	}
+	global_colonial_growth = -70
+	colonist_placement_chance = -0.35
+}
+
+colony_9_penalty = {
+	potential = {
+		colony = 10
+	}
+	trigger = {
+		colony = 10	
+	}
+	global_colonial_growth = -80
+	colonist_placement_chance = -0.40
+}

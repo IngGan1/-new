@@ -1,0 +1,5 @@
+opinion_cu_steal_money = {
+    opinion = -40
+	yearly_decay = 1
+	min = -200
+}						  

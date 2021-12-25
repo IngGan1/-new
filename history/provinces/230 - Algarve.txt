@@ -1,0 +1,34 @@
+#230 - Algarve
+
+owner = POR
+controller = POR
+add_core = AGV
+add_core = POR
+culture = portugese
+religion = catholic
+capital = "Faro"
+trade_goods = seafood
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 4
+is_city = yes
+
+
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+set_province_flag = starting_fort
+
+1200.1.1 = { 
+	add_building = fort_14th
+}
+
+
+1640.1.1 = { unrest = 8 } # Revolt headed by John of Bragan?
+1640.12.1 = { unrest = 0 }
+1807.11.30 = { controller = FRA } # Occupied by troops led by Manuel Godoy
+1808.6.18 = { controller = POR } # Revolt in Olh?

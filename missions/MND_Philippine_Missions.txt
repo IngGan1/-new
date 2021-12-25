@@ -1,0 +1,289 @@
+filipino_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		primary_culture = filipino
+	}	
+	has_country_shield = yes 
+	
+	filipino_conquer_luzon = {
+		icon = mission_invade_island
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2698
+				province_id = 2697
+				province_id = 3351
+				province_id = 656
+				province_id = 3352
+			}
+		}
+		trigger = {
+			2698 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2697 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3351 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			656 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3352 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "filipino_conquer_luzon"
+				duration = 7300 
+			}
+		}
+	}
+
+	filipino_conquer_the_north = {
+		icon = mission_reclaim_lost_territory
+		position = 2
+		required_missions = { filipino_conquer_luzon }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 657
+				province_id = 658
+				province_id = 3350
+				province_id = 2699
+			}
+		}
+		
+		trigger = { 
+			657 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+			658 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+			3350 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+			2699 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+		}
+			
+		effect = { 
+			if = {
+				limit = {
+					657 = {
+						is_empty = yes
+					}
+				}
+				657 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					658 = {
+						is_empty = yes
+					}
+				}
+				658 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					3350 = {
+						is_empty = yes
+					}
+				}
+				3350 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2699 = {
+						is_empty = yes
+					}
+				}
+				2699 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	
+	filipino_conquer_visayas = {
+		icon = mission_invade_island
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2700
+				province_id = 3747
+				province_id = 3353
+			}
+		}
+		trigger = {
+			2700 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3747 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			3353 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "filipino_conquer_visayas"
+				duration = 7300 
+			}
+		}
+	}
+	
+	filipino_conquer_the_center = {
+		icon = mission_reclaim_lost_territory
+		position = 4  
+		required_missions = { filipino_conquer_visayas }
+		provinces_to_highlight = {
+			province_id = 654
+		}
+		
+		trigger = {
+			654 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+		}
+		
+		effect = { 
+			if = {
+				limit = {
+					654 = {
+						is_empty = yes
+					}
+				}
+				654 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	
+	filipino_conquer_mindanao = {
+		icon = mission_invade_island
+		position = 5
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 653
+				province_id = 652
+				province_id = 2702
+			}
+		}
+		trigger = {
+			653 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			652 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2702 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "filipino_conquer_mindanao"
+				duration = 7300
+			}
+		}
+	}
+	
+	filipino_conquer_the_south = {
+		icon = mission_reclaim_lost_territory
+		position = 6
+		required_missions = { filipino_conquer_mindanao }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4040
+				province_id = 4355
+				province_id = 2701
+			}
+		}
+		
+		trigger = {
+			4040 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+			2701 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 2
+				}
+				NOT = { native_size = 1 }
+			}
+		}
+		
+		effect = { 
+			if = {
+				limit = {
+					4040 = {
+						is_empty = yes
+					}
+				}
+				4040 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2701 = {
+						is_empty = yes
+					}
+				}
+				2701 = {
+					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+		}
+	}
+}

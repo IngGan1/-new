@@ -1,0 +1,49 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Cyprus Plunder
+	id = jewish_estates_events.25
+	title = "jewish_estates_events.25.t"
+	desc = "jewish_estates_events.25.d"
+	picture = BARBARY_PIRATES_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				AND = {
+					tag = VEN
+					NOT = { is_year = 1600 }
+				}
+				AND = {
+					tag = GEN
+					NOT = { is_year = 1463 }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {		# Plunder!
+		name = "THEPLUNDERER_J_E"
+		add_treasury = 10
+		 hidden_effect = {
+		 	CYP = {
+				country_event = {
+					id = jewish_estates_events.24
+					days = 1
+				}
+			}
+		}
+		ROOT = {
+			reverse_add_opinion = {
+				who = CYP
+				modifier = pirated_us
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = pommeranian
+religion = catholic
+technology_group = western
+capital = 2995	# Stolp
+
+# Pommern-Stolp
+
+1394.1.1 = {
+	monarch = {
+		name = "Boguslaw IX"
+		dynasty = "Gryf"
+		birth_date = 1418.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

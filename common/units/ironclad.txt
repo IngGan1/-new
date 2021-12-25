@@ -1,0 +1,12 @@
+#Ironclad
+type = heavy_ship
+
+hull_size = 110
+base_cannons = 180
+blockade = 5
+
+sail_speed = 9
+
+sailors = 1300
+
+sprite_level = 6

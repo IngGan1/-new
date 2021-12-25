@@ -1,0 +1,7 @@
+price_revolution = {
+	inflation_reduction = -0.05
+}
+
+new_world_crops = {
+	development_cost = -0.1
+}

@@ -1,0 +1,6 @@
+government = republic
+set_legacy_government = constitutional_republic
+technology_group = western
+religion = catholic
+primary_culture = lombard
+capital = 118		# Roma

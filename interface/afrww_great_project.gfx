@@ -1,0 +1,102 @@
+spriteTypes = {
+
+		spriteType = {
+		name = "GFX_great_project_pharos"	
+		texturefile = "gfx//interface//great_projects//great_project_pharos.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_axum_obelisk"	
+		texturefile = "gfx//interface//great_projects//great_project_axum_obelisk.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_jebel_barkal"	
+		texturefile = "gfx//interface//great_projects//great_project_jebel_barkal.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_mosque_djenne"	
+		texturefile = "gfx//interface//great_projects//great_project_mosque_djenne.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_walls_benin"	
+		texturefile = "gfx//interface//great_projects//great_project_walls_benin.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_cothon_carthage"	
+		texturefile = "gfx//interface//great_projects//great_project_cothon_carthage.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_kilwa_kisiwani"	
+		texturefile = "gfx//interface//great_projects//great_project_kilwa_kisiwani.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_sankore_madrasah"	
+		texturefile = "gfx//interface//great_projects//great_project_sankore_madrasah.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_mbanza_kongo"	
+		texturefile = "gfx//interface//great_projects//great_project_mbanza_kongo.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_loropeni"	
+		texturefile = "gfx//interface//great_projects//great_project_loropeni.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_senegambian_circles"	
+		texturefile = "gfx//interface//great_projects//great_project_senegambian_circles.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_ghadames"	
+		texturefile = "gfx//interface//great_projects//great_project_ghadames.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_ambohimanga"	
+		texturefile = "gfx//interface//great_projects//great_project_ambohimanga.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_table_mountain"	
+		texturefile = "gfx//interface//great_projects//great_project_table_mountain.dds"
+	}
+		
+		spriteType = {
+		name = "GFX_great_project_victoria_buganda"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_victoria_busoga"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_victoria_karagwe"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_victoria_buzinza"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_victoria_shaga"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_victoria_kuria"	
+		texturefile = "gfx//interface//great_projects//great_project_lake_victoria.dds"
+	}
+}

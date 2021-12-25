@@ -1,0 +1,8 @@
+# No previous file for Mossi
+
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = yorumba
+religion = shamanism #Fetishism
+technology_group = sub_saharan
+capital = 3716

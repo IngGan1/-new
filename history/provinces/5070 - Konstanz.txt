@@ -1,0 +1,40 @@
+owner = KNZ
+controller = KNZ
+culture = swabian
+religion = catholic
+hre = yes
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Neukonstanz"
+is_city = yes
+add_core = KNZ
+discovered_by = eastern
+discovered_by = ottoman
+discovered_by = western
+discovered_by = muslim
+extra_cost = 10
+
+center_of_trade = 1
+set_province_flag = starting_fort
+
+1200.1.1 = { 
+	add_building = fort_14th
+}
+
+1803.2.25 = {
+           owner = BAD
+           controller = BAD
+           add_core = BAD
+           remove_core = KNZ
+}
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1871.1.18 = {
+           owner = GER
+           controller = GER
+           add_core = GER
+           base_tax = 2
+           base_production = 1
+           base_manpower = 1
+}

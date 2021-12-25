@@ -1,0 +1,374 @@
+namespace = albania
+
+# Treaty of Gaeta (Aragonese Consideration)
+country_event = {
+    id = albania.1
+    title = albania.1.t
+    desc = albania.1.d
+    picture = DIPLOMACY_eventPicture
+	
+    fire_only_once = yes
+
+    trigger = {
+        OR = {
+            tag = ARA
+            tag = NAP
+        }
+        is_subject = no
+        if = {
+            limit = {
+                tag = ARA
+            }
+            OR = {
+                senior_union_with = NAP
+                121 = {
+                    owned_by = ARA
+                }
+            }
+        }
+        ALB = {
+            exists = yes
+            is_subject = no
+        }
+        NOT = { is_year = 1500 }
+        OR = {
+            3103 = {
+                owned_by = TUR
+            }
+            4437 = {
+                owned_by = TUR
+            }
+            143 = {
+                owned_by = TUR
+            }
+        }
+		or = { ARA = { ai = no } NAP = { ai = no } ALB = { ai = no } }
+    }
+
+    mean_time_to_happen = {
+		months = 12
+	}
+
+    option = {
+        name = albania.1.a
+        ai_chance = {
+            factor = 1
+            modifier = {
+                factor = 100
+                OR = {
+                    is_rival = TUR
+                    historical_rival_with = TUR
+                }
+            }
+        }
+        ALB = {
+            country_event = {
+                id = albania.2
+                days = 30
+            }
+        }
+    }
+
+    option = {
+        name = albania.1.b
+        ai_chance = {
+            factor = 100
+        }
+        add_prestige = -5
+    }
+}
+
+# Treaty of Gaeta (Albanian Consideration)
+country_event = {
+    id = albania.2
+    title = albania.2.t
+    desc = albania.2.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+	major = yes
+	
+    option = {
+        name = albania.2.a
+        ai_chance = {
+            factor = 90
+            modifier = {
+                factor = 100
+                war_with = TUR
+            }
+        }
+        create_alliance = FROM
+        add_country_modifier = {
+            name = treaty_of_gaeta
+            duration = 7300
+        }
+        FROM = {
+			add_opinion = {
+				who = ALB
+				modifier = accepted_treaty_of_gaeta
+			}
+            country_event = {
+                id = albania.3
+                days = 1
+            }
+        }
+    }
+
+    option = {
+        name = albania.2.b
+        ai_chance = {
+            factor = 10
+            modifier = {
+                factor = 0
+                war_with = TUR
+            }
+        }
+        FROM = {
+			add_opinion = {
+				who = ALB
+				modifier = refused_treaty_of_gaeta
+			}
+            country_event = {
+                id = albania.4
+                days = 1
+            }	
+		}
+    }
+}
+
+# Treaty of Gaeta (Albania Accepts)
+country_event = {
+    id = albania.3
+    title = albania.3.t
+    desc = albania.3.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = albania.3.a
+        add_prestige = 10
+        set_country_flag = treaty_of_gaeta_successful
+    }
+}
+
+# Treaty of Gaeta (Albania Refuses)
+country_event = {
+    id = albania.4
+    title = albania.4.t
+    desc = albania.4.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = albania.4.a
+        add_prestige = -10
+    }
+}
+
+# Treaty of Gaeta (Second Albanian Consideration)
+country_event = {
+    id = albania.5
+    title = albania.5.t
+    desc = albania.5.d
+    picture = DIPLOMACY_eventPicture
+
+    fire_only_once = yes
+
+    major = yes
+
+    trigger = {
+        tag = ALB
+        is_subject = no
+		is_year = 1460
+        NOT = {
+            war_with = TUR
+        }
+        3102 = {
+            owned_by = ALB
+            NOT = {
+                controlled_by = TUR
+            }
+        }
+        OR = {
+            ARA = {
+                has_country_flag = treaty_of_gaeta_successful
+                is_subject = no
+            }
+            NAP = {
+                has_country_flag = treaty_of_gaeta_successful
+                is_subject = no
+            }
+        }
+    }
+
+    mean_time_to_happen = {
+		days = 30
+	}
+
+    option = {
+        name = albania.5.a
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 70
+                alliance_with = ARA
+                ARA = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            modifier = {
+                factor = 70
+                alliance_with = NAP
+                NAP = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+        }
+
+        if = {
+            limit = {
+                ARA = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            ARA = {
+                create_march = ALB
+                add_opinion = {
+				    who = ALB
+				    modifier = honored_treaty_of_gaeta
+			    }
+                country_event = {
+                    id = albania.6
+                    days = 1
+                }
+            }
+        }
+        if = {
+            limit = {
+                NAP = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            NAP = {
+                create_march = ALB
+                add_opinion = {
+				    who = ALB
+				    modifier = honored_treaty_of_gaeta
+			    }
+                country_event = {
+                    id = albania.6
+                    days = 1
+                }
+            }
+        }
+    }
+
+    option = {
+        name = albania.5.b
+        ai_chance = {
+            factor = 50
+            modifier = {
+                factor = 30
+                alliance_with = ARA
+                ARA = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            modifier = {
+                factor = 30
+                alliance_with = NAP
+                NAP = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+        }
+
+        remove_country_modifier = treaty_of_gaeta
+        add_country_modifier = {
+            name = broke_treaty_of_gaeta
+            duration = 3650
+        }
+        if = {
+            limit = {
+                ARA = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            ARA = {
+                add_opinion = {
+				    who = ALB
+				    modifier = dishonored_treaty_of_gaeta
+			    }
+                remove_opinion = {
+                    who = ALB
+                    modifier = accepted_treaty_of_gaeta
+                }
+                country_event = {
+                    id = albania.7
+                    days = 1
+                }	
+            }
+        }
+        if = {
+            limit = {
+                NAP = {
+                    has_country_flag = treaty_of_gaeta_successful
+                }
+            }
+            NAP = {
+                add_opinion = {
+				    who = ALB
+				    modifier = dishonored_treaty_of_gaeta
+			    }
+                remove_opinion = {
+                    who = ALB
+                    modifier = accepted_treaty_of_gaeta
+                }
+                country_event = {
+                    id = albania.7
+                    days = 1
+                }	
+            }
+        }
+    }
+}
+
+# Treaty of Gaeta Honored
+country_event = {
+    id = albania.6
+    title = albania.6.t
+    desc = albania.6.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = albania.6.a
+        add_prestige = 25
+        clr_country_flag = treaty_of_gaeta_successful
+    }
+}
+
+# Treaty of Gaeta Dishonored
+country_event = {
+    id = albania.7
+    title = albania.7.t
+    desc = albania.7.d
+    picture = DIPLOMACY_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = albania.7.a
+        add_prestige = -25
+        add_casus_belli = {
+            target = ALB
+            type = cb_vassalize_mission
+            months = 120
+        }
+        clr_country_flag = treaty_of_gaeta_successful
+    }
+}

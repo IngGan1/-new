@@ -1,0 +1,405 @@
+namespace = ge_events
+
+#bohemia under habsburg
+country_event = {
+    id = ge_events.14
+	title = "ge_events.14.t"
+	desc = "ge_events.14.d"
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+        tag = HAB
+		not = { has_global_flag = no_ge14 }
+        has_global_flag = governments_extended_historical_yes
+		is_subject = no
+		religion = catholic
+		is_year = 1526
+		NOT = {
+			is_year = 1540
+		}
+        HAB = {
+            exists = yes
+            ai = yes
+            was_player = no
+			is_at_war = no
+        }
+        BOH = {
+            exists = yes
+            ai = yes
+            was_player = no
+			is_subject = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.14.a  
+		ai_chance = { factor = 100 }
+        create_union = BOH
+		hidden_effect = {
+			south_saxony_area = {
+				limit = {
+						owned_by = BOH
+						}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = SAX
+				cede_province = SAX
+			}
+			mittelmark_area = {
+				limit =  { owner = { ai = yes } }
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BRA
+				cede_province = BRA
+			}
+			neumark_area = {
+				limit =  { owner = { ai = yes } }
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BRA
+				cede_province = BRA
+			}
+			northern_saxony_area = {
+				limit = { owned_by = BOH }
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BRA
+				cede_province = BRA
+			}
+			lower_saxony_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = LUN
+				cede_province = LUN
+			}
+			hinter_pommern_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BRA
+				cede_province = BRA
+			}
+			thuringia_area = {
+				limit = {
+					owned_by = BOH
+				 }
+				remove_core = BOH
+				remove_core = HAB
+				add_core = SAX
+				cede_province = SAX
+			}
+			vorpommern_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = POM
+				cede_province = POM
+			}
+			mecklenburg_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = MKL
+				cede_province = MKL
+			}
+			lower_bavaria_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BAV
+				cede_province = BAV
+			}
+			upper_bavaria_area= {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = BAV
+				cede_province = BAV
+			}
+			franconia_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = WBG
+				cede_province = WBG
+			}
+			palatinate_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = PAL
+				cede_province = PAL
+			}
+			lower_swabia_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = ANS
+				cede_province = ANS
+			}
+			hesse_area = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = HES
+				cede_province = HES
+			}
+			silesia_area = {
+				limit = {
+					owned_by = POL
+				}
+				remove_core = POL
+				add_core = BOH
+				cede_province = BOH
+			}
+			baltic_region = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				remove_core = HAB
+				add_core = POL
+				cede_province = POL
+			}
+			south_german_region = {
+				limit = {
+					owned_by = BOH
+				}
+				remove_core = BOH
+				add_core = HAB
+				cede_province = HAB
+			}
+			erzgebirge_area = {
+				limit = {
+					owned_by = HAB
+				}
+				remove_core = HAB
+				add_core = BOH
+				cede_province = BOH
+			}
+			bohemia_area = {
+				limit = {
+					owned_by = HAB
+				}
+				remove_core = HAB
+				add_core = BOH
+				cede_province = BOH
+			}
+			lusatia_area = {
+				limit = {
+					owned_by = HAB
+				}
+				remove_core = HAB
+				add_core = BOH
+				cede_province = BOH
+			}
+			silesia_area = {
+				limit = {
+					owned_by = HAB
+				}
+				remove_core = HAB
+				add_core = BOH
+				cede_province = BOH
+			}
+			if = { limit = { HUN = { or = { is_subject = no is_subject_of = BOH } ai = yes } }
+				create_union = HUN
+				add_historical_friend = HUN
+				HUN = {
+					add_historical_friend = HAB
+				}
+				carpathia_region = {
+					limit = {
+						owned_by = HAB
+					}
+					remove_core = BOH
+					remove_core = HAB
+					add_core = HUN
+					cede_province = HUN
+				}
+				south_german_region = {
+					limit = {
+						owned_by = HUN
+					}
+					remove_core = BOH
+					remove_core = HUN
+					add_core = HAB
+					cede_province = HAB
+				}
+			}
+		}
+		if = {
+			limit = {
+				PLC = { exists = yes } 
+			}
+			PLC = { inherit = POL }
+		}
+	  	BOH = {
+			add_historical_friend = HAB
+	  	}
+	  	add_historical_friend = BOH
+	}
+}
+
+country_event = {
+    id = ge_events.15
+	title = "ge_events.15.t"
+	desc = "ge_events.15.d"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+	  	tag = POL
+		ai = yes
+        has_global_flag = governments_extended_historical_yes
+		is_lesser_in_union = no
+		religion = catholic
+		is_year = 1466
+		NOT = {
+			is_year = 1486
+		}
+		TEU = {
+		    exists = yes
+ 		    ai = yes
+		    was_player = no
+		    is_at_war = no
+		}
+		BRA = {
+		    ai = yes
+		    was_player = no
+		}
+		DNZ = {
+		    ai = yes
+		    was_player = no
+		}
+		STE = {
+		    ai = yes
+		    was_player = no
+		}
+		STP = {
+		    ai = yes
+		    was_player = no
+		}
+		POM = {
+		    ai = yes
+		    was_player = no
+		}
+		WRM = {
+		    ai = yes
+		    was_player = no
+		}
+		KMM = {
+		    ai = yes
+		    was_player = no
+		}
+		WOL = {
+		    ai = yes
+		    was_player = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.15.a  
+		ai_chance = { factor = 100 }
+	  	mittelmark_area = {
+	  		limit = {
+				owned_by = TEU
+	  		}
+	  		remove_core = TEU
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+	  	mittelmark_area = {
+	  		limit = {
+				owned_by = POL
+	  		}
+	  		remove_core = POL
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+	  	hinter_pommern_area = {
+	  		limit = {
+				owned_by = TEU
+	  		}
+	  		remove_core = TEU
+	  		remove_core = POL
+	  		add_core = POM
+	  		cede_province = POM
+	  	}
+	  	vorpommern_area = {
+	  		limit = {
+				owned_by = TEU
+	  		}
+	  		remove_core = TEU
+	  		remove_core = POL
+	  		add_core = POM
+	  		cede_province = POM
+	  	}
+	  	west_prussia_area = {
+			limit = {
+				owned_by = TEU
+	  		}
+	  		remove_core = TEU
+	  		add_core = POL
+	  		cede_province = POL
+	  	}
+	  	east_prussia_area = {
+	  		limit = { owner = { ai = yes } }
+	  		add_core = TEU
+	  		cede_province = TEU
+	  	}
+		create_march = TEU
+			remove_historical_rival = TEU
+			inherit = DNZ
+			inherit = WRM
+			TEU = { remove_historical_rival = POL }
+		if = {
+			limit = {
+				POL = {
+					ai = yes
+					is_lesser_in_union = no
+				}
+				LIT = {
+					ai = yes
+					is_subject = no
+				}
+			}
+			POL = {
+				create_union = LIT
+			}
+		}
+	}
+}

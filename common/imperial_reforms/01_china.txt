@@ -1,0 +1,71 @@
+establish_gaituguiliu_decision = {
+	empire = celestial_empire
+	emperor = {
+		meritocracy = 0.5
+		imperial_mandate = -0.01
+	}
+}
+
+seaban_decision = {
+	empire = celestial_empire
+	emperor = {
+		diplomats = 1
+		trade_efficiency = 0.05
+		imperial_mandate = -0.01
+	}
+}
+
+reform_land_tax_decision = {
+	empire = celestial_empire
+	emperor = {
+		global_autonomy = -0.05
+		imperial_mandate = -0.01
+	}
+}
+
+military_governors_decision = {
+	empire = celestial_empire
+	emperor = {
+		core_creation = -0.1
+		imperial_mandate = -0.01
+	}
+}
+
+centralizing_top_government_decision = {
+	empire = celestial_empire
+	emperor = {
+		monarch_admin_power = 1
+		imperial_mandate = -0.01
+	}
+}
+
+enforce_peace_decision = {
+	empire = celestial_empire
+	emperor = {
+	    diplomatic_reputation = 1
+		#Removes Foreign Ignorance Modifier	
+		imperial_mandate = -0.01		
+	}
+	on_effect = {
+	    set_global_flag = celestial_peace_enforced
+	}
+    	off_effect = {
+		clr_global_flag = celestial_peace_enforced
+	}	
+}
+
+the_greater_harmony_decision = {
+	empire = celestial_empire
+	emperor = {
+		diplomatic_annexation_cost = -0.10
+		num_accepted_cultures = 2
+		harmonization_speed = 0.1
+		#Unlock the decision to form Chinese Federation		
+	}
+	on_effect = {
+	    set_global_flag = harmony_achieved
+	}
+    	off_effect = {
+		clr_global_flag = harmony_achieved
+	}	
+}

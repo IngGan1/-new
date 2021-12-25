@@ -1,0 +1,72 @@
+country_decisions = {
+
+	found_hall_of_worthies = {
+		potential = { #Removed as actually set up in 1420 and later disbanded in 1456.
+			always = no
+#			tag = KOR
+#			normal_or_historical_nations = yes
+#			is_playing_custom_nation = no
+#			NOT = { has_country_modifier = hall_of_worthies }
+		}
+		allow = {
+			always = no
+#			OR = {
+#				advisor = philosopher
+#				advisor = natural_scientist
+#				advisor = theologian
+#				adm = 4
+#			}
+#			treasury = 50
+#			adm_power = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hall_of_worthies"
+				duration = -1
+			}
+			add_treasury = -50
+			add_adm_power = -30
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+	kor_agrarianism_reform = {
+		potential = {
+			or = { has_reform = confucian_monarchy has_reform = hermit_kingdom_reform }
+			NOT = { has_country_flag = kor_reform_tax }
+		}
+		allow = {
+			OR = {
+				AND = {
+					advisor = master_of_mint
+					adm = 5
+				}
+				adm = 6
+			}
+			full_idea_group = economic_ideas
+			NOT = { has_idea_group = confuci0 }
+			treasury = 300
+			adm_power = 100
+			legitimacy = 90
+			stability = 3
+		}
+		effect = {
+			set_country_flag = kor_reform_tax
+			add_treasury = -300
+			add_adm_power = -100
+			add_legitimacy = -30
+			add_harmony = -40
+			add_stability = -2
+			add_estate_burghers_loyalty_effect = yes
+			reduce_estate_nobles_loyalty_effect = yes
+			reduce_estate_church_loyalty_effect = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+} #End of country decisions

@@ -1,0 +1,86 @@
+kha_internal_conflict_disaster = {
+	potential = {
+		tag = KHA
+		NOT = { has_global_flag = kha_conflict_disater }
+		NOT = { is_year = 1500 }
+		is_nomad = yes
+	}
+
+
+
+	can_start = {
+		has_any_disaster = no
+		is_at_war = no
+		OR = {
+			is_subject = no
+			is_subject_of_type = tributary_state
+		}
+		NOT = { legitimacy_equivalent = 90 }
+		NOT = { stability = 3 }
+	}
+	
+	can_stop = { 
+			legitimacy_equivalent = 90
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	
+	progress = {
+		modifier = {
+			factor = 5
+			is_at_war = no
+			NOT = { legitimacy_equivalent = 90 }
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			is_at_war = no
+			NOT = { prestige = 0 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { dynasty = "Borjigin" }
+		}
+	}
+
+
+
+
+	
+	can_end = {
+		OR = {
+			is_nomad = no
+			horde_unity = 90
+		}
+	}
+	
+
+
+
+	modifier = {
+		global_unrest = 2
+		global_manpower_modifier = 0.50
+		global_regiment_recruit_speed = -0.25
+		stability_cost_modifier = 0.25
+	}
+	
+	
+	on_start = rea_events.117
+	on_end = rea_events.118
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = { 
+			1000 = 0
+			#None
+		}
+	}
+}

@@ -1,0 +1,7 @@
+70 = "Wirtemberg"
+75 = "Strossburi"
+1868 = "Augschburg"
+1880 = "Sundgow"
+4481 = "Furstenberge"
+4511 = "Hawenau"
+5073 = "Déllingen"

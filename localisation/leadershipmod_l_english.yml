@@ -1,0 +1,25 @@
+﻿l_english:
+ 
+ adm_very_bad:0 "Ö¸ÓÆÅ”² ‰ÕÈ ¥²%¸"
+ adm_bad:0 "ôÅñ´jÕ ‰ÕÈ ¥²%¸"
+ adm_little_bad:0 "˜°jÀ ‰ÕÈ ¥²%¸"
+ adm_very_good:0 "DÆË¼jÕ ‰ÕÈ ¥²%¸"
+ adm_good:0 "ð¶´Åœ° ‰ÕÈ ¥²%¸"
+ adm_little_good:0 "‹ÈNÇ ‰ÕÈ ¥²%¸"
+ adm_normal:0 "|Ç¼ÈxÇ ‰ÕÈ ¥²%¸"
+ 
+ dip_very_bad:0 "Ö¸ÓÆÅ”² xÆP­ ¥²%¸"
+ dip_bad:0 "ôÅñ´jÕ xÆP­ ¥²%¸"
+ dip_little_bad:0 "˜°jÀ xÆP­ ¥²%¸"
+ dip_very_good:0 "DÆË¼jÕ xÆP­ ¥²%¸"
+ dip_good:0 "ð¶´Åœ° xÆP­ ¥²%¸"
+ dip_little_good:0 "‹ÈNÇ xÆP­ ¥²%¸"
+ dip_normal:0 "|Ç¼ÈxÇ xÆP­ ¥²%¸"
+ 
+ mil_very_bad:0 "Ö¸ÓÆÅ”² p­¬À ¥²%¸"
+ mil_bad:0 "ôÅñ´jÕ p­¬À ¥²%¸"
+ mil_little_bad:0 "˜°jÀ p­¬À ¥²%¸"
+ mil_very_good:0 "DÆË¼jÕ p­¬À ¥²%¸"
+ mil_good:0 "ð¶´Åœ° p­¬À ¥²%¸"
+ mil_little_good:0 "‹ÈNÇ p­¬À ¥²%¸"
+ mil_normal:0 "|Ç¼ÈxÇ p­¬À ¥²%¸"

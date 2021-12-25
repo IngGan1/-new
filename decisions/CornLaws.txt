@@ -1,0 +1,40 @@
+country_decisions = {
+	
+	corn_laws = {
+		potential = {
+			adm_tech = 33
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			NOT = { has_country_flag = corn_laws }
+		}
+		effect = {
+			country_event = { id = vic_flavor_eng.11 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	repeal_corn_laws = {
+		potential = {
+			has_country_flag = corn_laws
+			NOT = { has_country_flag = repealed_corn_laws }
+		}
+		effect = {
+			remove_country_modifier = corn_laws_nobles
+			remove_country_modifier = corn_laws_nobles_eng
+			remove_country_modifier = corn_laws_burghers
+			set_country_flag = repealed_corn_laws
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { is_year = 1846}
+			}
+		}
+	} 
+	
+}

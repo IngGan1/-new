@@ -1,0 +1,64 @@
+country_decisions = {
+	tanos = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = remove_province }
+		}
+		allow = { }
+		effect = {
+			hidden_effect = {
+				country_event = { id = tanos.1 }
+			}
+		}
+	}
+}
+
+country_decisions = {
+	tanos2 = {
+		major = yes
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = remove_province2 }
+		}
+		allow = { }
+		effect = {
+			hidden_effect = {
+				country_event = { id = tanos.2 }
+			}
+		}
+	}
+}
+
+country_decisions = {
+	tanos3 = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = remove_province3 }
+		}
+		allow = { }
+		effect = {
+			hidden_effect = {
+				country_event = { id = tanos.3 }
+			}
+		}
+	}
+}
+
+country_decisions = {
+	tanos5 = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = remove_province5 }
+		}
+		allow = { }
+		effect = {
+			hidden_effect = {
+				country_event = { id = tanos.5 }
+			}
+		}
+	}
+}

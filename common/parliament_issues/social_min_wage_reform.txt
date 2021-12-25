@@ -1,0 +1,69 @@
+social_min_wage_reform = {
+
+	category = 5
+
+	allow = {
+		has_country_flag = social_reforms_activated
+		NOT = {
+			check_variable = {
+				which = social_min_wage
+				value = 3
+			}
+		}
+	}
+	
+	effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = social_min_wage
+					value = 2
+				}
+			}
+			add_country_modifier = {
+				name = social_min_wage_l3
+				duration = -1
+			}
+			remove_country_modifier = social_min_wage_l2
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = social_min_wage
+					value = 1
+				}
+			}
+			add_country_modifier = {
+				name = social_min_wage_l2
+				duration = -1
+			}	
+			remove_country_modifier = social_min_wage_l1
+		}
+		else = {
+			add_country_modifier = {
+				name = social_min_wage_l1
+				duration = -1
+			}
+		}
+		change_variable = {
+			which = social_min_wage
+			value = 1
+		}
+	}
+	
+	chance = {
+		factor = 2
+	}
+
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 3
+			not = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			num_of_loans = 5
+		}	
+	}	
+}

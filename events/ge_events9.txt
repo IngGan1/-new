@@ -1,0 +1,233 @@
+namespace = ge_events
+country_event = {
+    id = ge_events.27
+	title = "ge_events.27.t"
+	desc = "ge_events.27.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1669
+		NOT = {
+			is_year = 1681
+		}
+	}               
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.27.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+		add_country_modifier = {
+			name = "keller_cannon"
+			duration = -1
+		}
+		define_advisor = {
+			type = army_organiser
+			skill = 3
+			discount = yes
+			name = "Jean-Jacques Keller"
+		} 
+	}
+}
+
+country_event = {
+	id = ge_events.28
+	title = "ge_events.28.t"
+	desc = "ge_events.28.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1732
+		NOT = {
+			is_year = 1752
+		}
+	}               
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.28.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+		remove_country_modifier = keller_cannon
+		add_country_modifier = {
+			name = "jean_florent_de_valliere"
+			duration = -1
+		}
+		define_advisor = {
+		   type = army_organiser
+		   skill = 3
+		   discount = yes
+		   name = "Jean-Florent de Valliere"
+		}  
+	}
+}
+
+country_event = {
+	id = ge_events.29
+	title = "ge_events.29.t"
+	desc = "ge_events.29.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1776
+		NOT = {
+			is_year = 1796
+		}
+	}               
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.29.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+		remove_country_modifier = jean_florent_de_valliere
+		add_country_modifier = {
+			name = "gribeauval_system"
+			duration = -1
+		}
+		define_advisor = {
+		   type = commandant
+		   skill = 3
+		   discount = yes
+		   name = "Jean-Baptiste Vaquette de Gribeauva"
+		}   
+	}
+}
+
+country_event = {
+	id = ge_events.30
+	title = "ge_events.30.t"
+	desc = "ge_events.30.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1803
+		NOT = {
+			is_year = 1823
+		}
+	}               
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.30.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+		remove_country_modifier = gribeauval_system
+		add_country_modifier = {
+			name = "year_xi_system"
+			duration = -1
+		} 
+	}
+}
+
+country_event = {
+	id = ge_events.31
+	title = "ge_events.31.t"
+	desc = "ge_events.31.d"
+	picture = NAVAL_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GBR
+		is_year = 1769
+		NOT = {
+			is_year = 1789
+		}
+	}       
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.31.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+		add_country_modifier = {
+			name = "carronade_artillery"
+			duration = -1
+		} 
+	}
+}
+
+country_event = {
+	id = ge_events.33
+	title = "ge_events.33.t"
+	desc = "ge_events.33.d"
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+        tag = MOS
+		has_global_flag = governments_extended_historical_yes
+        is_year = 1478
+		NOT = {
+			is_year = 1518
+		}
+        NOV = {
+			exists = yes
+			ai = yes
+			is_at_war = no
+			was_player = no
+			is_subject = no
+		}
+        MOS = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_subject = no
+		}
+        RYA = {
+			ai = yes
+			was_player = no
+			or = { is_subject = no is_subject_of_type = tributary_state }
+		}              
+    }
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.33.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10   
+        inherit = NOV
+        inherit = RYA
+		if = {
+			limit = {
+				YAR = { ai = yes or = { is_subject = no is_subject_of = MOS } }
+				RSO = { ai = yes or = { is_subject = no is_subject_of = MOS } }
+			}
+			inherit = YAR
+			inherit = RSO
+		}
+    }
+}

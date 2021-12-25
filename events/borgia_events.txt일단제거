@@ -1,0 +1,658 @@
+namespace = borgia
+normal_or_historical_nations = yes
+
+country_event = {
+	id = borgia.1
+	title = borgia.1.t
+	desc = borgia.1.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+	
+	trigger = {
+		tag = PAP
+		is_subject = no
+		is_year = 1490
+		RMG = {
+			exists = yes
+			is_subject = no
+		}
+		NOT = {
+			war_with = RMG
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = sinner_personality
+		}
+	}
+	
+	option = {
+		name = borgia.1.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				ruler_has_personality = sinner_personality
+			}
+		}
+		custom_tooltip = borgia.1.a.tooltip
+		RMG = {
+			country_event = {
+				id = borgia.2
+				days = 1
+			}
+			capital_scope = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					leader = "Cesare Borgia"
+				}
+			}
+			add_opinion = {
+				who = PAP
+				modifier = supported_borgia_invasion
+			}
+			set_country_flag = borgia_invasion
+		}
+		add_manpower = -5
+		add_years_of_income = -0.5
+		add_reform_desire = 0.01
+		set_ruler_flag = papal_conquest
+	}
+	option = {
+		name = borgia.1.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				ruler_has_personality = sinner_personality
+			}
+		}
+		define_advisor = {
+			type = army_reformer
+			name = "Cesare Borgia"
+			skill = 3
+			culture = umbrian
+			religion = catholic
+			discount = yes
+		}
+	}
+}
+
+country_event = {
+	id = borgia.2
+	title = borgia.2.t
+	desc = borgia.2.d
+	picture = SIEGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = borgia.2.a
+		add_ruler_modifier = {
+			name = fighting_borgia
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = borgia.3
+	title = borgia.3.t
+	desc = borgia.3.d
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = PAP
+		RMG = {
+			exists = yes
+			has_country_flag = borgia_invasion
+			has_ruler = "Cesare I"
+			dynasty = "Borgia"
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = borgia.3.a
+		add_historical_friend = RMG
+		create_guarantee = RMG
+		RMG = {
+			if = {
+				limit = {
+					NOT = {
+						religion = catholic
+					}
+				}
+				change_religion = catholic
+			}
+			add_historical_friend = PAP
+			remove_opinion = {
+				who = PAP
+				modifier = supported_borgia_invasion
+			}
+			clr_country_flag = borgia_invasion
+			set_country_flag = borgia_takeover
+			hidden_effect = {
+				kill_leader = {
+					type = "Cesare Borgia"
+				}
+			}
+		}
+		if = {
+			limit = {
+				2976 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			2976 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				119 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			119 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				2977 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			2977 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				114 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			114 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				113 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			113 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				106 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			106 = {
+				add_core = RMG
+			}
+		}
+		if = {
+			limit = {
+				105 = {
+					NOT = {
+						owned_by = PAP
+					}
+				}
+			}
+			105 = {
+				add_core = RMG
+			}
+		}
+	}
+}
+
+country_event = {
+	id = borgia.4
+	title = borgia.4.t
+	desc = borgia.4.d
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = RMG
+		has_country_flag = borgia_takeover
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = borgia.4.a
+		add_ruler_modifier = {
+			name = pope_supports_borgia
+			duration = -1
+		}
+		change_adm = 3
+		change_dip = 3
+		change_mil = 6
+		define_ruler_to_general = {
+			fire = 3
+			shock = 3
+			manuever = 3
+			siege = 6
+		}
+		add_ruler_personality = bold_fighter_personality
+		add_papal_influence = 50
+		hidden_effect = {
+			set_ai_personality = {
+				personality = ai_militarist
+				locked = no
+			}
+		}
+	}
+}
+
+country_event = {
+	id = borgia.5
+	title = borgia.5.t
+	desc = borgia.5.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = PAP
+		NOT = {
+			war_with = RMG
+		}
+		RMG = {
+			exists = yes
+			NOT = {
+				has_ruler = "Cesare I"
+				dynasty = "Borgia"
+				has_country_flag = borgia_invasion
+			}
+			has_country_flag = borgia_takeover
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = borgia.5.a
+		ai_chance = {
+			factor = 90
+		}
+		RMG = {
+			country_event = {
+				id = borgia.6
+				days = 30
+			}
+		}
+		add_reform_desire = 0.01
+	}
+
+	option = {
+		name = borgia.5.b
+		ai_chance = {
+			factor = 10
+		}
+		RMG = {
+			country_event = {
+				id = borgia.7
+				days = 30
+			}
+		}
+		add_devotion = 10
+	}
+}
+
+country_event = {
+	id = borgia.6
+	title = borgia.6.t
+	desc = borgia.6.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.6.a
+		ai_chance = {
+			factor = 90
+		}
+		clr_country_flag = borgia_takeover
+		PAP = {
+			inherit = ROOT
+			country_event = {
+				id = borgia.13
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = borgia.6.b
+		ai_chance = {
+			factor = 10
+		}
+		remove_historical_friend = PAP
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = refused_to_join_pope
+			}
+			remove_historical_friend = RMG
+			country_event = {
+				id = borgia.8
+				days = 1
+			}
+		}
+		every_owned_province = {
+			add_core = PAP
+		}
+		clr_country_flag = borgia_takeover
+	}
+}
+
+country_event = {
+	id = borgia.7
+	title = borgia.7.t
+	desc = borgia.7.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.7.a
+		add_legitimacy = 25
+	}
+}
+
+country_event = {
+	id = borgia.8
+	title = borgia.8.t
+	desc = borgia.8.d
+	picture = LAND_MIITARY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.8.a
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = borgia.9
+	title = borgia.9.t
+	desc = borgia.9.d
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PAP
+		NOT = {
+			has_ruler_flag = papal_conquest
+		}
+		RMG = {
+			exists = yes
+			has_ruler = "Cesare I"
+			dynasty = "Borgia"
+			has_country_flag = borgia_takeover
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = borgia.9.a
+		ai_chance = {
+			factor = 70
+		}
+		custom_tooltip = borgia.9.a.tooltip
+		RMG = {
+			country_event = {
+				id = borgia.12
+				days = 30
+			}
+		}
+		add_reform_desire = 0.01
+	}
+
+	option = {
+		name = borgia.9.b
+		ai_chance = {
+			factor = 5
+		}
+		custom_tooltip = borgia.9.b.tooltip
+		RMG = {
+			country_event = {
+				id = borgia.11
+				days = 30
+			}
+		}
+		add_devotion = 10
+	}
+
+	option = {
+		name = borgia.9.c
+		ai_chance = {
+			factor = 25
+		}
+		custom_tooltip = borgia.9.c.tooltip
+		RMG = {
+			country_event = {
+				id = borgia.10
+				days = 30
+			}
+		}
+		add_reform_desire = 0.005
+	}
+}
+
+country_event = {
+	id = borgia.10
+	title = borgia.10.t
+	desc = borgia.10.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.10.a
+		ai_chance = {
+			factor = 90
+		}
+		PAP = {
+			create_subject = {
+				subject_type = march
+				subject = RMG
+			}
+			add_opinion = {
+				who = RMG
+				modifier = agreed_to_join_pope
+			}
+			country_event = {
+				id = borgia.14
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = borgia.10.b
+		ai_chance = {
+			factor = 10
+		}
+		kill_ruler = yes
+		remove_historical_friend = PAP
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = refused_to_join_pope
+			}
+			remove_historical_friend = RMG
+			country_event = {
+				id = borgia.8
+				days = 1
+			}
+		}
+		every_owned_province = {
+			add_core = PAP
+		}
+		clr_country_flag = borgia_takeover
+	}
+}
+
+country_event = {
+	id = borgia.11
+	title = borgia.11.t
+	desc = borgia.11.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.11.a
+		add_prestige = 25
+	}
+}
+
+country_event = {
+	id = borgia.12
+	title = borgia.12.t
+	desc = borgia.12.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.12.a
+		ai_chance = {
+			factor = 90
+		}
+		PAP = {
+			inherit = ROOT
+			country_event = {
+				id = borgia.13
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = borgia.12.b
+		ai_chance = {
+			factor = 10
+		}
+		kill_ruler = yes
+		remove_historical_friend = PAP
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = refused_to_join_pope
+			}
+			remove_historical_friend = RMG
+			country_event = {
+				id = borgia.8
+				days = 1
+			}
+		}
+		every_owned_province = {
+			add_core = PAP
+		}
+		clr_country_flag = borgia_takeover
+	}
+}
+
+country_event = {
+	id = borgia.13
+	title = borgia.13.t
+	desc = borgia.13.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.13.a
+		add_prestige = 25
+	}
+}
+
+country_event = {
+	id = borgia.14
+	title = borgia.14.t
+	desc = borgia.14.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = borgia.14.a
+		add_prestige = 25
+	}
+}
+
+country_event = {
+	id = borgia.15
+	title = borgia.15.t
+	desc = borgia.15.d
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		culture_group = latin
+		NOT = {
+			has_country_modifier = italian_condottieri
+			is_year = 1490
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = borgia.15.a
+		add_country_modifier = {
+			name = italian_condottieri
+			duration = 18250
+		}
+	}
+}

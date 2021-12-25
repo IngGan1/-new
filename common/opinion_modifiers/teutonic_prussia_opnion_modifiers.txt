@@ -1,0 +1,29 @@
+secularized_teutonic_order = {
+    opinion = 200
+    years = 50
+    yearly_decay = 4
+}
+
+prussian_homage = {
+    opinion = 200
+    years = 50
+    yearly_decay = 4
+}
+
+rejected_prussian_homage = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}
+
+protestant_prussia = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+no_protestant_prussia = {
+    opinion = 25
+    years = 25
+    yearly_decay = 1
+}

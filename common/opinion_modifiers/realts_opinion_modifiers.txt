@@ -1,0 +1,17 @@
+made_us_as_a_coalition_target = {
+	opinion = -100
+	years = 10
+	yearly_decay = 10
+}
+
+forced_us_to_give_independence_to_a_country = {
+	opinion = -50
+	years = 20
+	yearly_decay = 2.5
+}
+
+demanded_us_our_unlawful_territories = {
+	opinion = -50
+	years = 20
+	yearly_decay = 2.5
+}

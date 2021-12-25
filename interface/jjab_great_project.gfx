@@ -1,0 +1,28 @@
+spriteTypes = {
+	spriteType = {
+	name = "GFX_great_project_Gyeongbokgung"	
+	texturefile = "gfx//interface//great_projects//great_project_Gyeongbokgung.dds"
+    }
+	spriteType = {
+	name = "GFX_great_project_suwon_hwaseong"	
+	texturefile = "gfx//interface//great_projects//great_project_suwon_hwaseong.dds"
+    }
+	spriteType = {
+	name = "GFX_great_project_monument_jongmyo"	
+	texturefile = "gfx//interface//great_projects//great_project_monument_jongmyo.dds"
+    }
+	spriteType = {
+	name = "GFX_great_project_Palmandaejangkyung"	
+	texturefile = "gfx//interface//great_projects//great_project_Palmandaejangkyung.dds"
+    }
+	spriteType = {
+	name = "GFX_great_project_great_library"	
+	texturefile = "gfx//interface//great_projects//great_project_great_library.dds"
+    }
+	spriteType = {
+	name = "GFX_great_project_colossus_of_rhodes"	
+	texturefile = "gfx//interface//great_projects//great_project_colossus_of_rhodes.dds"
+    }
+}
+
+

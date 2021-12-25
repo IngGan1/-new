@@ -1,0 +1,23 @@
+#4051 - Kanchanaburi
+
+owner = AYU
+controller = AYU
+culture = karen
+religion = buddhism
+capital = "Kanchanaburi"
+trade_goods = tropical_wood
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = AYU
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1535.1.1 = { discovered_by = POR }

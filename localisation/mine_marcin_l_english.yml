@@ -1,0 +1,34 @@
+﻿l_english:
+ mine_marcin.2.t: "[Root.GetName]ÐÅÁXÇ DÌt­ ‘ÇÅÅ ÜÂ‘Ç"
+ mine_marcin.2.d: "                                                £geo£ÀÉÈÉYÕÇ\n\n£science_skill£ü¬YÕ1Á:\n  -ü¬YÕNÇ ¹ÒÈ ÀÉÈÉYÕÇä´XÇ TÅÁÐÅ ³jÕ ÀÉÝÂDÇ ˜°ÀÐÅ°È²ä². tÇ ¥²%¸NÇ ­<»DÇ »ÅDÇ 0®ŒÖNÆ ´Å²µ ­<»DÇ »ÅDÇ Â ˆÇ”²ÀÉÐÅ Æ¥ÕDÇ ø»iÎÈ²ä².\n\n£manoeuver_skill£õ¬‘Ç1Á:\n  -õ¬‘ÇNÇ ÀÉÈÉYÕÇ¬ ÐÐ¬À|¹ ¼ÅÈ¹˜° ˜Ç tÇL° Â ˆÇ”²ÀÉ|¹ ˜°ÀÐÅ°È²ä². tÇ ¥²%¸NÇ ÀÉÖü¬ 0®ÄÖÐÅ 0®¼jÕ ÐÐ¬À|¹ µÑtÕ ˜°jÀ °¬ü¬NÆ ‹ÈNÇ °¬ü¬|¹ »ÅDÇ Â ˆÇ”² UÖ`¹ÐÅ Æ¥ÕDÇ ø»iÎÈ²ä².\n\n£strict_skill£ÄÅ©¬1Á:\n  -ÄÅ©¬hÕNÇ ù²àÂXÇ ÀÉÈÉYÕÇ¬ 1Áõ¬DÇ ì²1ÁXÕ0® ÇtÕ ¼ÅÈ¹˜° ÌÕàÂXÕ”²ÀÉ|¹ ˜°ÀÐÅ°È²ä². tÇ 0®.ÂNÇ ù²àÂXÇ 1Áõ¬ UÖ`¹ü¬ xÇ%¸ ­¬¹ ¥²%¸ÐÅ Æ¥ÕDÇ ø»iÎÈ²ä²." 
+ mine_marcin.2.d: "£geo£[Root.GetGeoName]: £science_skill£[Root.Science.GetValue]  £manoeuver_skill£[Root.Manoeuver.GetValue]  £strict_skill£[Root.Strict.GetValue]\n\nÐÐ¬À xÇ%¸:£icon_manpower£[Root.manpower_exp.GetValue]\n\n"
+ mine_marcin.2.t: "£banner_green_mine£\n\n\n\n\n\nDÌt­"
+ MINE_GEO_tooltip: "£geo£[Root.GetGeoName]: £science_skill£[Root.Science.GetValue]  £manoeuver_skill£[Root.Manoeuver.GetValue]  £strict_skill£[Root.Strict.GetValue]" 
+ MINE_GEO_TWO_tooltip: "£geo£[Root.GetGeoName_TWO]: £science_skill£[Root.Science_2.GetValue]  £manoeuver_skill£[Root.Manoeuver_2.GetValue]  £strict_skill£[Root.Strict_2.GetValue]"
+ 
+ mine_marcin.2.a: "Ç2±|¹ ÿ»2±, ¬ÄÉ ­<»DÇ >ÌDÅüÈŒ¬."
+ mine_marcin.2.b: "Ç2±¬  ° 2ÁÝ´ˆÕ<ÇÈ², Ç2±ÐÅŒ¬ ÐÐ¬À³XÇ ³¥Ç Ç¬¹|¹ üÈ ¬2±"
+
+ string_GeoNameTGE_1: "James Hutton"
+ string_GeoNameTGE_2: "Dwayne Johnson"
+ string_GeoNameTGE_3: "Jay Stiopa"
+ string_GeoNameTGE_4: "Rocky Balboa"
+ string_GeoNameTGE_5: "James Boulder"
+ string_GeoNameTGE_6: "Po Mice"
+ string_GeoNameTGE_7: "Pome Granite"
+ 
+ string_GeoNameTGE_1_two: "James Hutton"
+ string_GeoNameTGE_2_two: "Dwayne Johnson"
+ string_GeoNameTGE_3_two: "Jay Stiopa"
+ string_GeoNameTGE_4_two: "Rocky Balboa"
+ string_GeoNameTGE_5_two: "James Boulder"
+ 
+ 
+ MINEs_tooltip: "äÂ(Ó ¬¥²1Á: §Y30.00%§!\n1Áõ¬ ¬¥²1Á: §Y70.00%§!"
+ mine_marcin.1.t: "[Root.GetName]ÐÅÁ DÌt­ ‘ÇÅÅtÇ ÜÂ‘Ç´ä²"
+ mine_marcin.1.d: "1Áõ¬ ÜÂ:\n -l­¬¹: §O30.00%§!\n -üÈÁ/DÅðÅ: §O25.00%§!\n - Ì: §O15.00%§!\n -©°: §O10.00%§!\n -®/NÇ: §O5.00%§!" 
+ mine_marcin.1.a: "T»¬ ¬XÎˆÇ”² ­<»DÇ >ÌDÅô¼Çà¬."
+ mine_fail: "DÌt­ ‘ÇÅÅtÇ äÂ(ÓXÕä²"
+ desc_mine_fail: "Ö¬ÇXÇ 0®.Âj¸”² DÅ4»ƒ¬Ä³ >ÌÀÉ »ºˆÕµÂÈ²ä². 10D± ²´ÐÅ ä²ÜÂ ÜÂÄ³`Õ Â ˆÇDÇÀÉÄ³ ¨º…¹È²ä²."
+ mine_marcin.1.b: "tÇ l­¬¹|¹ >ÌDÅô¼Ç"  
+ mine_marcin.1.c: "l­¬¹Ä³ ­.ÌÀÉÌ¹ °Æ¬¹ÐÅ¬ ä²x¹ 8»È¬ ˆÇä²"

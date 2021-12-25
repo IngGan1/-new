@@ -1,0 +1,2090 @@
+namespace = annexation
+
+# Muscovite Conquest of Novgorod
+country_event = {
+	id = annexation.2
+	title = "novgorod_fall.title"
+	desc = "novgorod_fall.desc"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = MOS
+		or = { MOS = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = NOV
+		is_neighbor_of = NOV
+        controls = 310
+        NOV = {
+			ai = yes
+			was_player = no
+			is_subject = no
+			owns_core_province = 310
+		}
+        NOT = { has_country_flag = novgorod_accepted }
+    	NOT = { has_country_flag = novgorod_refused }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "novgorod.a" 
+		set_country_flag = novgorod_accepted
+		add_adm_power = -200
+		add_dip_power = -100
+		add_mil_power = -100
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = NOV
+				}
+			}
+			white_peace = NOV
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = NOV
+					defender_leader = ROOT
+				}
+			}
+			white_peace = NOV
+		}
+		NOV = {
+            every_owned_province = {
+				limit = {
+					AND = {
+					is_core = NOV
+                    culture = novgorodian
+					}
+				}
+				cede_province = MOS
+                add_core = MOS
+                add_province_modifier = {
+					name = novgorod_rebels
+					duration = 7300
+				}
+				add_local_autonomy = 50
+			}
+            every_owned_province = {
+				limit = {
+					AND = {
+					is_core = NOV
+                	NOT = { culture = novgorodian }
+					}
+				}
+				cede_province = MOS
+                add_core = MOS
+				add_province_modifier = {
+					name = novgorod_rebels
+					duration = 7300
+		        	}
+				add_local_autonomy = 50
+			}
+            every_owned_province = {
+				limit = {
+					NOT = { is_core = NOV }
+				}
+				cede_province = MOS
+				add_local_autonomy = 50
+			}
+		}
+        ai_chance = {
+			factor = 80
+	    }
+	}
+	
+	option	= {  
+		name = "novgorod.b"
+        set_country_flag = novgorod_refused
+        add_stability_or_adm_power = yes
+        ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_rival = NOV
+			}
+		}
+	}
+}
+
+# Aq Qoyunlu Conquest of Qara Qoyunlu
+country_event = {
+    id = annexation.3
+	title = "qara.title"
+	desc = "qara.desc"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+        tag = AKK
+		or = { AKK = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = QAR
+		is_neighbor_of = QAR
+        controls = 416 
+		war_score_against = {
+			who = QAR
+			value = 75
+		}
+        QAR = {
+			ai = yes
+			is_subject = no
+			owns_core_province = 416
+			num_of_owned_provinces_with = {
+			value = 7
+			controlled_by = AKK
+        	}
+		}	
+		NOT = { has_country_flag = qara_accepted }
+        NOT = { has_country_flag = qara_refused }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "qara.a" 
+		set_country_flag = qara_accepted
+		add_adm_power = -200
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 25
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = QAR
+				}
+			}
+			white_peace = QAR
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = QAR
+					defender_leader = ROOT
+				}
+			}
+			white_peace = QAR
+		}
+		QAR = {
+            every_owned_province = {
+				limit = {
+					AND = {
+					is_core = QAR
+                    			culture = azerbaijani
+					}
+				}
+				cede_province = AKK
+                add_core = AKK
+                add_province_modifier = {
+					name = qara_rebels
+					duration = 7300
+		        }
+				add_local_autonomy = 75
+			}
+                	every_owned_province = {
+				limit = {
+					AND = {
+					is_core = QAR
+                			NOT = { culture = azerbaijani }
+					}
+				}
+				cede_province = AKK
+                add_core = AKK
+				add_province_modifier = {
+					name = qara_rebels
+					duration = 7300
+		        }
+				add_local_autonomy = 50
+			}
+                	every_owned_province = {
+				limit = {
+					NOT = { is_core = QAR }
+				}
+				cede_province = AKK
+				add_province_modifier = {
+					name = qara_rebels
+					duration = 7300
+		        	}
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		persia_region = {
+			limit = {
+				NOT = {
+					is_core = ROOT
+				}
+				NOT = {
+					is_permanent_claim = ROOT
+				}
+			}
+			add_permanent_claim = ROOT
+		}
+		ai_chance = {
+			factor = 80
+		}
+	}
+	
+	option	= {  
+		name = "qara.b"
+                set_country_flag = qara_refused
+                add_stability_or_adm_power = yes
+                ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				is_rival = QAR
+			}
+		}
+	}
+}
+
+# Safavid Conquest of Qara Qoyunlu
+country_event = {
+	id = annexation.4
+	title = "qara_2.title"
+	desc = "qara_2.desc"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = QAR
+		is_neighbor_of = QAR
+		war_score_against = {
+			who = QAR
+			value = 75
+		}
+        QAR = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}		
+        NOT = { has_country_flag = qara_accepted_2 }
+    	NOT = { has_country_flag = qara_refused_2 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "qara_2.a"
+        ai_chance = {
+			factor = 100
+	    }
+		set_country_flag = qara_accepted_2
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 25
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = QAR
+				}
+			}
+			white_peace = QAR
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = QAR
+					defender_leader = ROOT
+				}
+			}
+			white_peace = QAR
+		}
+		QAR = {
+            every_owned_province = {
+				limit = {
+					is_core = QAR
+				}
+				cede_province = ARL
+                add_core = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = QAR
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		if = {
+			limit = {
+				owns = 416
+			}
+			set_capital = 416
+		}
+	}
+	
+	option	= {  
+		name = "qara_2.b"
+        ai_chance = {
+			factor = 0
+		}
+        set_country_flag = qara_refused_2
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Aq Qoyunlu
+country_event = {
+	id = annexation.5
+	title = "aq.title"
+	desc = "aq.desc"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = AKK
+		is_neighbor_of = AKK
+		war_score_against = {
+			who = AKK
+			value = 75
+		}
+        AKK = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+		NOT = { has_country_flag = aq_accepted }
+       	NOT = { has_country_flag = aq_refused }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "aq.a" 
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = aq_accepted
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 25
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = AKK
+				}
+			}
+			white_peace = AKK
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = AKK
+					defender_leader = ROOT
+				}
+			}
+			white_peace = AKK
+		}
+		AKK = {
+            every_owned_province = {
+				limit = {
+					is_core = AKK
+				}
+				cede_province = ARL
+            	add_core = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = AKK
+					}
+				}
+				cede_province = ARL
+				add_province_modifier = {
+					name = aq_rebels
+					duration = 7300
+		        }
+		    }
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		if = {
+			limit = {
+				owns = 416
+			}
+			set_capital = 416
+		}
+	}
+
+	option	= {  
+		name = "aq.b"
+        ai_chance = {
+			factor = 0
+		}
+        set_country_flag = aq_refused
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Aq Qoyunlu Conquest of Qara Qoyunlu - Qara Qoyunlu Leader Dies
+country_event = {
+    id = annexation.6
+	title = "qara_dies.title"
+	desc = "qara_dies.desc"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = AKK
+		or = { AKK = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = QAR
+		is_neighbor_of = QAR
+		war_score_against = {
+			who = QAR
+			value = 75
+		}
+        QAR = {
+			ai = yes
+			is_subject = no
+		}
+		NOT = { has_country_flag = qara_accepted }
+        NOT = { has_country_flag = qara_refused }
+	}
+
+	mean_time_to_happen = {
+		months = 250
+		modifier = {
+			factor = 0.75
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.75
+			is_monarch_leader = yes
+		}
+		modifier = {
+			factor = 0.75
+			is_heir_leader = yes
+		}
+		modifier = {
+			factor = 0.85
+			NOT = { war_score = 0 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -25 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { war_score = -50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { war_score = -75 }
+		}
+	}
+
+	option = {
+		name = "qara_dies.a" 
+        set_country_flag = qara_accepted
+		add_prestige = 25
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = QAR
+				}
+			}
+			white_peace = QAR
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = QAR
+					defender_leader = ROOT
+				}
+			}
+			white_peace = QAR
+		}
+		QAR = {
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				kill_heir = {}
+			}
+			tooltip = {
+				kill_ruler = yes
+			}
+			hidden_effect = {
+				define_ruler = {
+					regency = yes
+				}
+			}
+            every_owned_province = {
+				limit = {
+					is_core = QAR
+				}
+				cede_province = AKK
+                add_core = AKK
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = QAR
+					}
+				}
+				cede_province = AKK
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		persia_region = {
+			limit = {
+				NOT = {
+					is_core = ROOT
+				}
+				NOT = {
+					is_permanent_claim = ROOT
+				}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+# Safavid Conquest of Ajam
+country_event = {
+	id = annexation.7
+	title = annexation.7.t
+	desc = annexation.7.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = QOM
+		is_neighbor_of = QOM
+		war_score_against = {
+			who = QOM
+			value = 75
+		}
+        QOM = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.7.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 25
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = QOM
+				}
+			}
+			white_peace = QOM
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = QOM
+					defender_leader = ROOT
+				}
+			}
+			white_peace = QOM
+		}
+		QOM = {
+            every_owned_province = {
+				limit = {
+					is_core = ARL
+				}
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = ARL
+					}
+					is_core = QOM
+				}
+				add_core = ARL
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = QOM
+						is_core = ARL
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.7.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Afghan Conquest of Multan
+country_event = {
+	id = annexation.8
+	title = annexation.8.t
+	desc = annexation.8.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = AFG
+		or = { AFG = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = MUL
+		is_neighbor_of = MUL
+		war_score_against = {
+			who = MUL
+			value = 75
+		}
+        MUL = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = AFG
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.8.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = MUL
+				}
+			}
+			white_peace = MUL
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = MUL
+					defender_leader = ROOT
+				}
+			}
+			white_peace = MUL
+		}
+		MUL = {
+            every_owned_province = {
+				limit = {
+					is_core = AFG
+				}
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = AFG
+					}
+					is_core = MUL
+				}
+				add_core = AFG
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = MUL
+						is_core = AFG
+					}
+				}
+				cede_province = AFG
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.8.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Afghan Conquest of Sirhind
+country_event = {
+	id = annexation.9
+	title = annexation.9.t
+	desc = annexation.9.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = AFG
+		or = { AFG = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = SRH
+		is_neighbor_of = SRH
+		war_score_against = {
+			who = SRH
+			value = 75
+		}
+        SRH = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = AFG
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.9.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = SRH
+				}
+			}
+			white_peace = SRH
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = SRH
+					defender_leader = ROOT
+				}
+			}
+			white_peace = SRH
+		}
+		SRH = {
+            every_owned_province = {
+				limit = {
+					is_core = AFG
+				}
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = AFG
+					}
+					is_core = SRH
+				}
+				add_core = AFG
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = SRH
+						is_core = AFG
+					}
+				}
+				cede_province = AFG
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.9.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Afghan Conquest of Delhi
+country_event = {
+	id = annexation.10
+	title = annexation.10.t
+	desc = annexation.10.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = AFG
+		or = { AFG = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = DLH
+		is_neighbor_of = DLH
+		war_score_against = {
+			who = DLH
+			value = 75
+		}
+        DLH = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = AFG
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.10.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = DLH
+				}
+			}
+			white_peace = DLH
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = DLH
+					defender_leader = ROOT
+				}
+			}
+			white_peace = DLH
+		}
+		DLH = {
+            every_owned_province = {
+				limit = {
+					is_core = AFG
+				}
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = AFG
+					}
+					is_core = DLH
+				}
+				add_core = AFG
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = DLH
+						is_core = AFG
+					}
+				}
+				cede_province = AFG
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.10.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Afghan Conquest of Jaunpur
+country_event = {
+	id = annexation.11
+	title = annexation.11.t
+	desc = annexation.11.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = AFG
+		or = { AFG = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = JNP
+		is_neighbor_of = JNP
+		war_score_against = {
+			who = JNP
+			value = 75
+		}
+        JNP = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = AFG
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.11.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = JNP
+				}
+			}
+			white_peace = JNP
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = JNP
+					defender_leader = ROOT
+				}
+			}
+			white_peace = JNP
+		}
+		JNP = {
+            every_owned_province = {
+				limit = {
+					is_core = AFG
+				}
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = AFG
+					}
+					is_core = JNP
+				}
+				add_core = AFG
+				cede_province = AFG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = JNP
+						is_core = AFG
+					}
+				}
+				cede_province = AFG
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.11.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Mughal Conquest of Jaunpur
+country_event = {
+	id = annexation.12
+	title = annexation.11.t
+	desc = annexation.11.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = MUG
+		or = { MUG = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = JNP
+		is_neighbor_of = JNP
+		war_score_against = {
+			who = JNP
+			value = 75
+		}
+        JNP = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = MUG
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.11.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -200
+		add_dip_power = -200
+		add_mil_power = -200
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = JNP
+				}
+			}
+			white_peace = JNP
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = JNP
+					defender_leader = ROOT
+				}
+			}
+			white_peace = JNP
+		}
+		JNP = {
+            every_owned_province = {
+				limit = {
+					is_core = MUG
+				}
+				cede_province = MUG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = MUG
+					}
+					is_core = JNP
+				}
+				add_core = MUG
+				cede_province = MUG
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = JNP
+						is_core = MUG
+					}
+				}
+				cede_province = MUG
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+	}
+
+	option	= {  
+		name = "annexation.11.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Fars
+country_event = {
+	id = annexation.13
+	title = annexation.13.t
+	desc = annexation.13.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = FRS
+		is_neighbor_of = FRS
+		war_score_against = {
+			who = FRS
+			value = 75
+		}
+        FRS = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.13.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = FRS
+				}
+			}
+			white_peace = FRS
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = FRS
+					defender_leader = ROOT
+				}
+			}
+			white_peace = FRS
+		}
+		FRS = {
+            every_owned_province = {
+				limit = {
+					is_core = ARL
+				}
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = ARL
+					}
+					is_core = FRS
+				}
+				add_core = ARL
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = FRS
+						is_core = ARL
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.13.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Fars
+country_event = {
+	id = annexation.14
+	title = annexation.13.t
+	desc = annexation.13.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = PER
+		or = { PER = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = FRS
+		is_neighbor_of = FRS
+		war_score_against = {
+			who = FRS
+			value = 75
+		}
+        FRS = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = PER
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.13.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = FRS
+				}
+			}
+			white_peace = FRS
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = FRS
+					defender_leader = ROOT
+				}
+			}
+			white_peace = FRS
+		}
+		FRS = {
+            every_owned_province = {
+				limit = {
+					is_core = PER
+				}
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = PER
+					}
+					is_core = FRS
+				}
+				add_core = PER
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = FRS
+						is_core = PER
+					}
+				}
+				cede_province = PER
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.13.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Mushasha
+country_event = {
+	id = annexation.15
+	title = annexation.15.t
+	desc = annexation.15.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = MSY
+		is_neighbor_of = MSY
+		war_score_against = {
+			who = MSY
+			value = 75
+		}
+        MSY = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.15.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = MSY
+				}
+			}
+			white_peace = MSY
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = MSY
+					defender_leader = ROOT
+				}
+			}
+			white_peace = MSY
+		}
+		MSY = {
+            every_owned_province = {
+				limit = {
+					is_core = ARL
+				}
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = ARL
+					}
+					is_core = MSY
+				}
+				add_core = ARL
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = MSY
+						is_core = ARL
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.15.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Mushasha
+country_event = {
+	id = annexation.16
+	title = annexation.15.t
+	desc = annexation.15.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = PER
+		or = { PER = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = MSY
+		is_neighbor_of = MSY
+		war_score_against = {
+			who = MSY
+			value = 75
+		}
+        MSY = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = PER
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.15.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = MSY
+				}
+			}
+			white_peace = MSY
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = MSY
+					defender_leader = ROOT
+				}
+			}
+			white_peace = MSY
+		}
+		MSY = {
+            every_owned_province = {
+				limit = {
+					is_core = PER
+				}
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = PER
+					}
+					is_core = MSY
+				}
+				add_core = PER
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = MSY
+						is_core = PER
+					}
+				}
+				cede_province = PER
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.15.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Fall of Granada
+country_event = {
+	id = annexation.17
+	title = annexation.17.t
+	desc = annexation.17.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = CAS
+		or = { CAS = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = GRA
+		is_neighbor_of = GRA
+		war_score_against = {
+			who = GRA
+			value = 75
+		}
+        GRA = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = CAS
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.17.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = GRA
+				}
+			}
+			white_peace = GRA
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = GRA
+					defender_leader = ROOT
+				}
+			}
+			white_peace = GRA
+		}
+		GRA = {
+            every_owned_province = {
+				cede_province = CAS
+			}
+		}
+	}
+
+	option	= {  
+		name = "annexation.17.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Iraq
+country_event = {
+	id = annexation.18
+	title = annexation.18.t
+	desc = annexation.18.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = IRQ
+		is_neighbor_of = IRQ
+		war_score_against = {
+			who = IRQ
+			value = 75
+		}
+        IRQ = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.18.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = IRQ
+				}
+			}
+			white_peace = IRQ
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = IRQ
+					defender_leader = ROOT
+				}
+			}
+			white_peace = IRQ
+		}
+		IRQ = {
+            every_owned_province = {
+				limit = {
+					is_core = ARL
+				}
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = ARL
+					}
+					is_core = IRQ
+				}
+				add_core = ARL
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = IRQ
+						is_core = ARL
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.18.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Safavid Conquest of Iraq
+country_event = {
+	id = annexation.19
+	title = annexation.18.t
+	desc = annexation.18.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = PER
+		or = { PER = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = IRQ
+		is_neighbor_of = IRQ
+		war_score_against = {
+			who = IRQ
+			value = 75
+		}
+        IRQ = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = PER
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.18.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = IRQ
+				}
+			}
+			white_peace = IRQ
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = IRQ
+					defender_leader = ROOT
+				}
+			}
+			white_peace = IRQ
+		}
+		IRQ = {
+            every_owned_province = {
+				limit = {
+					is_core = PER
+				}
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = PER
+					}
+					is_core = IRQ
+				}
+				add_core = PER
+				cede_province = PER
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = IRQ
+						is_core = PER
+					}
+				}
+				cede_province = PER
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.18.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}
+
+# Lodi Conquest of Delhi
+country_event = {
+	id = annexation.20
+	title = annexation.20.t
+	desc = annexation.20.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = SRH
+		or = { SRH = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = DLH
+		is_neighbor_of = DLH
+		war_score_against = {
+			who = DLH
+			value = 75
+		}
+        DLH = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = SRH
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.20.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = DLH
+				}
+			}
+			white_peace = DLH
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = DLH
+					defender_leader = ROOT
+				}
+			}
+			white_peace = DLH
+		}
+		DLH = {
+            every_owned_province = {
+				limit = {
+					is_core = SRH
+				}
+				cede_province = SRH
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = SRH
+					}
+					is_core = DLH
+				}
+				add_core = SRH
+				cede_province = SRH
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = SRH
+						is_core = DLH
+					}
+				}
+				cede_province = SRH
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+}
+
+# Safavid Conquest of Shirvan
+country_event = {
+	id = annexation.21
+	title = annexation.21.t
+	desc = annexation.21.d
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_global_flag = disable_annexation }
+        tag = ARL
+		or = { ARL = { ai = yes } not = { has_global_flag = hard_mode } }
+		is_subject = no
+		war_with = SRV
+		is_neighbor_of = SRV
+		war_score_against = {
+			who = SRV
+			value = 75
+		}
+        SRV = {
+			ai = yes
+			is_subject = no
+			capital_scope = {
+				controlled_by = ARL
+			}
+		}	
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "annexation.21.a" 
+		ai_chance = {
+			factor = 100
+		}
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_prestige = 10
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = ROOT
+					defender_leader = SRV
+				}
+			}
+			white_peace = SRV
+		}
+		if = {
+			limit = {
+				is_in_war = {
+					attacker_leader = SRV
+					defender_leader = ROOT
+				}
+			}
+			white_peace = SRV
+		}
+		SRV = {
+            every_owned_province = {
+				limit = {
+					is_core = ARL
+				}
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = ARL
+					}
+					is_core = SRV
+				}
+				add_core = ARL
+				cede_province = ARL
+			}
+            every_owned_province = {
+				limit = {
+					NOT = {
+						is_core = SRV
+						is_core = ARL
+					}
+				}
+				cede_province = ARL
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = -50
+		}
+		add_yearly_manpower = 5
+	}
+
+	option	= {  
+		name = "annexation.21.b"
+        ai_chance = {
+			factor = 0
+		}
+        add_stability_or_adm_power = yes
+	}
+}

@@ -1,0 +1,18 @@
+limit_development = {
+	potential = {
+		always = no
+		development = 25
+		owner = { ai = yes }
+		not = { owner = { total_development = 200 } }
+	}
+	trigger = {
+		development = 25
+		owner = { ai = yes }
+		not = { owner = { total_development = 200 } }
+	}
+	local_development_cost = 999
+	
+	on_activation = {}
+	
+	on_deactivation = {}
+}

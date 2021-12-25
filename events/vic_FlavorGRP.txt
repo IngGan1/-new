@@ -1,0 +1,326 @@
+namespace = vic_flavor_grp
+normal_or_historical_nations = yes
+
+# PROVINCENAME Revolts!
+province_event = {
+	id = vic_flavor_grp.1
+	title = "vic_flavor_grp.1.t"
+	desc = "vic_flavor_grp.1.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		GRP = { exists = yes }
+		is_core = GRP
+		NOT = { has_global_flag = german_revolt }
+		owner = { ai = no }
+		owner = {
+			NOT = { tag = GRP }
+			NOT = { tag = GER }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.75
+			owner = { is_at_war = yes }
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				NOT = { culture_group = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { primary_culture = ROOT }
+				NOT = { accepted_culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = { war_with = GRP }
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 3
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 5
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 7
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 9
+		}
+	}
+
+	immediate = {
+		set_global_flag = german_revolt
+	}
+	
+	option = {
+		name = "vic_flavor_grp.1.a"
+		set_province_flag = german_revolt
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+			friend = GRP
+		}
+	}
+	option = {
+		name = "vic_flavor_grp.1.b"
+		set_province_flag = no_german_revolt
+		add_local_autonomy = 100
+	}
+}
+
+# PROVINCENAME Revolts!
+province_event = {
+	id = vic_flavor_grp.2
+	title = "vic_flavor_grp.2.t"
+	desc = "vic_flavor_grp.2.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	trigger = {
+		GRP = { exists = yes }
+		is_core = GRP
+		owner = { ai = no }
+		has_global_flag = german_revolt
+		NOT = { has_province_flag = german_revolt }
+		NOT = { has_province_flag = no_german_revolt }
+		NOT = { has_global_flag = end_march_revolution }
+		owner = {
+			NOT = { tag = GRP }
+			NOT = { tag = GER }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.5
+			any_neighbor_province = {
+				has_province_flag = german_revolt
+			}
+		}
+		modifier = {
+			factor = 0.25
+			owner = {
+				NOT = { culture_group = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { primary_culture = ROOT }
+				NOT = { accepted_culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = { war_with = GRP }
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 3
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 5
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 7
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 9
+		}
+	}
+
+	option = {
+		name = "vic_flavor_grp.2.a"
+		set_province_flag = german_revolt
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 2
+			friend = GRP
+		}
+	}
+	option = {
+		name = "vic_flavor_grp.2.b"
+		set_province_flag = no_german_revolt
+		add_local_autonomy = 100
+	}
+}
+
+# German state joins the German Republic
+country_event = {
+	id = vic_flavor_grp.3
+	title = "vic_flavor_grp.3.t"
+	desc = "vic_flavor_grp.3.d"
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	
+	trigger = {
+		ai = yes
+		NOT = { tag = GRP }
+		GRP = {
+			exists = yes
+		}
+		is_subject = no
+		culture_group = germanic
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		NOT = { num_of_cities = 5 }
+		NOT = {
+			has_country_flag = state_joined_germany
+		}
+		NOT = { has_global_flag = end_march_revolution }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "vic_flavor_grp.3.a"
+		GRP = {
+			country_event = { id = vic_flavor_grp.4 days = 1 }
+		}
+		set_country_flag = state_joined_germany
+	}
+}
+
+# Incorporated into the German Republic
+country_event = {
+	id = vic_flavor_grp.4
+	title = "vic_flavor_grp.4.t"
+	desc = "vic_flavor_grp.4.d"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "vic_flavor_grp.4.a"
+		FROM = {
+			every_owned_province = {
+				add_core = GRP
+			}
+		}
+		inherit = FROM
+	}
+}
+
+# PROVINCENAME Revolts!
+province_event = {
+	id = vic_flavor_grp.5
+	title = "vic_flavor_grp.5.t"
+	desc = "vic_flavor_grp.5.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	major = yes
+
+	trigger = {
+		GRP = {
+			exists = yes
+		}
+		owner = {
+			NOT = { tag = GRP }
+		}
+		is_core = GRP
+		OR = {
+			NOT = { has_province_flag = german_revolt }
+			had_province_flag = { flag = german_revolt days = 1825 }
+		}
+		NOT = { has_global_flag = end_march_revolution }
+	}
+
+	mean_time_to_happen = {
+		months = 150
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				owned_by = GRP
+			}
+		}
+		modifier = {
+			factor = 0.75
+			any_neighbor_province = {
+				has_province_flag = german_revolt
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = {
+				NOT = { culture_group = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.75
+			owner = {
+				NOT = { primary_culture = ROOT }
+				NOT = { accepted_culture = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			owner = { war_with = GRP }
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 3
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 5
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 7
+		}
+		modifier = {
+			factor = 0.75
+			unrest = 9
+		}
+	}
+
+	option = {
+		name = "vic_flavor_grp.5.a"
+		ai_chance = {
+			factor = 0	# NATIONALIST REBELS "friend = GRP" NOT WORKING
+			modifier = {
+				factor = 0
+				owner = {
+					NOT = { num_of_cities = 5 }
+				}
+			}
+		}
+		set_province_flag = german_revolt
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 2
+			friend = GRP
+		}
+	}
+	option = {
+		name = "flavor_bur.EVTOPTB18"
+		ai_chance = {
+			factor = 50
+		#	modifier = {
+		#		factor = 0
+		#		owner = {
+		#			num_of_cities = 5
+		#		}
+		#	}
+		}
+		cede_province = GRP
+	}
+}

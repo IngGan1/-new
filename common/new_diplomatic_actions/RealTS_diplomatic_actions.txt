@@ -1,0 +1,5135 @@
+#ENFORCE_TO_JOIN_A_WAR
+enforce_to_join_a_war = {
+	category = alliance
+
+	alert_index = 10
+	alert_tooltip = enforce_to_join_a_war_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		ai = no #AI can't handle this. instead use events for ai countries.
+		overlord_of = FROM
+		FROM = { is_subject_of_type = tributary_state }
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 80
+			}
+		}
+		FROM = {
+			ai_attitude = {
+				who = ROOT
+				attitude = attitude_loyal
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = TS_agreement_flag_TOOLTIP
+			FROM = { NOT = { has_country_modifier = ts_agreement } }
+		}
+
+	}
+	on_accept = {
+		#create_subject = {
+		#	subject_type = tributary_state_join_war
+		#	subject = FROM
+		#}
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -50
+				}
+			}
+		}
+		FROM = {
+			add_liberty_desire = 20
+			#country_event = { id = realts_events.9 }
+			#set_country_flag = ts_agreement_flag
+			add_country_modifier = {
+				name = ts_agreement
+				duration = 365
+				hidden = yes
+			}
+		}
+	}
+
+	on_decline = {
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -30
+				}
+			}
+		}
+		add_trust = {
+			who = FROM
+			value = -25
+		}
+	}
+	
+	ai_acceptance = {
+
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = TS_WAR_EXHAUSTION
+			export_to_variable = {
+				variable_name = ai_value
+				value = war_exhaustion
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_NUM_REBEL
+			export_to_variable = {
+				variable_name = ai_value
+				value = num_of_rebel_controlled_provinces
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -100
+			}
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+	}
+
+	ai_will_do = {
+		ai = no
+	}
+}
+
+
+
+declare_as_a_coalition_target_dummy1 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+
+	is_visible = {
+		ai = no #this is dummy. for ai countries there is no needs.
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 0
+				}
+			}
+		}
+		NOT = {
+			hidden_trigger = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_dummy1
+			always = no
+		}
+	}
+	on_accept = {
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = { ai = no}
+
+}
+
+declare_as_a_coalition_target_dummy2 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+
+	is_visible = {
+		ai = no #this is dummy. for ai countries there is no needs.
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 1
+				}
+			}
+		}
+		NOT = {
+			hidden_trigger = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 2
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_dummy2
+			always = no
+		}
+	}
+	on_accept = {
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = { ai = no}
+
+}
+
+declare_as_a_coalition_target_dummy3 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+
+	is_visible = {
+		ai = no #this is dummy. for ai countries there is no needs.
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 2
+				}
+			}
+		}
+		NOT = {
+			hidden_trigger = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 3
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_dummy3
+			always = no
+		}
+	}
+	on_accept = {
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = { ai = no}
+
+}
+
+
+declare_as_a_coalition_target_dummy4 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+
+	is_visible = {
+		ai = no #this is dummy. for ai countries there is no needs.
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 3
+				}
+			}
+		}
+		NOT = {
+			hidden_trigger = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 4
+						}
+					}
+				}
+			}
+		}
+	}
+
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_dummy4
+			always = no
+		}
+	}
+	on_accept = {
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = { ai = no}
+
+}
+
+
+
+
+
+#DECLARE AS COALITION TARGET(4)
+declare_as_a_coalition_target = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		OR = {
+			ai = yes
+			AND = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 4
+						}
+					}
+				}
+				NOT = {
+					hidden_trigger = {
+						variable_arithmetic_trigger = {
+							custom_tooltip = ts_coalition
+							FROM = {
+								calc_true_if = {
+									all_country = {
+										is_subject_of = ROOT
+										OR = {
+											is_subject_of_type = tributary_state
+											is_subject_of_type = tributary_state_join_war
+										}
+										trust = { who = ROOT value = 50 }
+										ai_attitude = { who = ROOT attitude = attitude_loyal }
+										has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+										NOT = { has_opinion = { who = PREV value = 0 } }
+										OR = {
+											is_neighbor_of = PREV
+											NOT = { border_distance = { who = PREV distance = 300 } }
+										}
+									}
+									amount = 5
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 4
+				}
+			}
+		}
+
+	}
+	on_accept = {
+		ROOT = { save_global_event_target_as = ts_coalition_ROOT }
+		add_dip_power = -50
+		if = {
+			limit = { ai = yes }
+			add_dip_power = 25
+		}
+		FROM = {
+			save_global_event_target_as = ts_coalition_FROM
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					trust = { who = ROOT value = 50 }
+					ai_attitude = { who = ROOT attitude = attitude_loyal }
+					has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+					NOT = { has_opinion = { who = PREV value = 0 } }
+					OR = {
+						is_neighbor_of = PREV
+						NOT = { border_distance = { who = PREV distance = 300 } }
+					}
+				}
+
+				if = {
+					limit = { NOT = { is_rival = PREV } }
+					set_ai_attitude = {
+						who = PREV
+						attitude = attitude_outraged
+					}
+				}
+
+				set_country_flag = ts_coalition_tributary
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+			}
+
+			add_opinion = {
+				who = ROOT
+				modifier = made_us_as_a_coalition_target
+			}
+			if = {
+				limit = { is_subject_of = ROOT }
+				add_liberty_desire = 30
+			}
+		}
+
+		event_target:ts_coalition_ROOT = { country_event = { id = realts_events.16 } }
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		FROM = {
+			any_owned_province = {
+				NOT = { is_core = PREV }
+				any_core_country = { is_subject_of = ROOT }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -25 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+				NOT = { has_opinion_modifier = { who = FROM modifier = enemy_of_my_enemy } }
+			}
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -50 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+			}
+			FROM = {
+				is_subject_of = ROOT
+				overextension_percentage = 0.3
+			}
+			FROM = {
+				overextension_percentage = 0.01
+				OR = {
+					ai_attitude = { who = ROOT attitude = attitude_disloyal }
+					ai_attitude = { who = ROOT attitude = attitude_rebellious }
+				}
+			}
+			calc_true_if = {
+				all_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					ai_attitude = { who = FROM attitude = attitude_outraged }
+				}
+				amount = 4
+			}
+			ai_attitude = { who = FROM attitude = attitude_hostile }
+			ai_attitude = { who = FROM attitude = attitude_outraged }
+			ai_attitude = { who = FROM attitude = atittude_rivalry }
+			ai_attitude = { who = ROOT attitude = attitude_rebellious }
+		}
+	}
+}
+
+
+
+
+
+
+#DECLARE AS COALITION TARGET(5)
+declare_as_a_coalition_target5 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		ai = no
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 5
+				}
+			}
+		}
+		NOT = {
+			hidden_trigger = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = ts_coalition
+					FROM = {
+						calc_true_if = {
+							all_country = {
+								is_subject_of = ROOT
+								OR = {
+									is_subject_of_type = tributary_state
+									is_subject_of_type = tributary_state_join_war
+								}
+								trust = { who = ROOT value = 50 }
+								ai_attitude = { who = ROOT attitude = attitude_loyal }
+								has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+								NOT = { has_opinion = { who = PREV value = 0 } }
+								OR = {
+									is_neighbor_of = PREV
+									NOT = { border_distance = { who = PREV distance = 300 } }
+								}
+							}
+							amount = 6
+						}
+					}
+				}
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_5
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 4
+				}
+			}
+		}
+
+	}
+	on_accept = {
+		ROOT = { save_global_event_target_as = ts_coalition_ROOT }
+		add_dip_power = -50
+		if = {
+			limit = { ai = yes }
+			add_dip_power = 25
+		}
+		FROM = {
+			save_global_event_target_as = ts_coalition_FROM
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					trust = { who = ROOT value = 50 }
+					ai_attitude = { who = ROOT attitude = attitude_loyal }
+					has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+					NOT = { has_opinion = { who = PREV value = 0 } }
+					OR = {
+						is_neighbor_of = PREV
+						NOT = { border_distance = { who = PREV distance = 300 } }
+					}
+				}
+
+				if = {
+					limit = { NOT = { is_rival = PREV } }
+					set_ai_attitude = {
+						who = PREV
+						attitude = attitude_outraged
+					}
+				}
+
+				set_country_flag = ts_coalition_tributary
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+			}
+
+			add_opinion = {
+				who = ROOT
+				modifier = made_us_as_a_coalition_target
+			}
+			if = {
+				limit = { is_subject_of = ROOT }
+				add_liberty_desire = 30
+			}
+		}
+
+		event_target:ts_coalition_ROOT = { country_event = { id = realts_events.16 } }
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		FROM = {
+			any_owned_province = {
+				NOT = { is_core = PREV }
+				any_core_country = { is_subject_of = ROOT }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -25 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+				NOT = { has_opinion_modifier = { who = FROM modifier = enemy_of_my_enemy } }
+			}
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -50 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+			}
+			FROM = {
+				is_subject_of = ROOT
+				overextension_percentage = 0.3
+			}
+			FROM = {
+				overextension_percentage = 0.01
+				OR = {
+					ai_attitude = { who = ROOT attitude = attitude_disloyal }
+					ai_attitude = { who = ROOT attitude = attitude_rebellious }
+				}
+			}
+			calc_true_if = {
+				all_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					ai_attitude = { who = FROM attitude = attitude_outraged }
+				}
+				amount = 4
+			}
+			ai_attitude = { who = FROM attitude = attitude_hostile }
+			ai_attitude = { who = FROM attitude = attitude_outraged }
+			ai_attitude = { who = FROM attitude = atittude_rivalry }
+			ai_attitude = { who = ROOT attitude = attitude_rebellious }
+		}
+	}
+}
+
+
+#DECLARE AS COALITION TARGET(6)
+declare_as_a_coalition_target6 = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		ai = no
+		calc_true_if = {
+			all_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+			}
+			amount = 4
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 6
+				}
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				hidden_trigger = { is_subject_of_type = tributary_state_join_war }
+				is_subject_of_type = independent_vassal
+				is_subject = no
+			}
+		}
+		NOT = { truce_with = FROM }
+		dip_power = -50
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = made_us_as_a_coalition_target
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = ts_coalition_6
+			FROM = {
+				calc_true_if = {
+					all_country = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = tributary_state
+							is_subject_of_type = tributary_state_join_war
+						}
+						trust = { who = ROOT value = 50 }
+						ai_attitude = { who = ROOT attitude = attitude_loyal }
+						has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+						NOT = { has_opinion = { who = PREV value = 0 } }
+						OR = {
+							is_neighbor_of = PREV
+							NOT = { border_distance = { who = PREV distance = 300 } }
+						}
+					}
+					amount = 4
+				}
+			}
+		}
+
+	}
+	on_accept = {
+		ROOT = { save_global_event_target_as = ts_coalition_ROOT }
+		add_dip_power = -50
+		if = {
+			limit = { ai = yes }
+			add_dip_power = 25
+		}
+		FROM = {
+			save_global_event_target_as = ts_coalition_FROM
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					trust = { who = ROOT value = 50 }
+					ai_attitude = { who = ROOT attitude = attitude_loyal }
+					has_opinion_modifier = { who = PREV modifier = aggressive_expansion }
+					NOT = { has_opinion = { who = PREV value = 0 } }
+					OR = {
+						is_neighbor_of = PREV
+						NOT = { border_distance = { who = PREV distance = 300 } }
+					}
+				}
+
+				if = {
+					limit = { NOT = { is_rival = PREV } }
+					set_ai_attitude = {
+						who = PREV
+						attitude = attitude_outraged
+					}
+				}
+
+				set_country_flag = ts_coalition_tributary
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+				add_opinion = { who = PREV modifier = aggressive_expansion }
+			}
+
+			add_opinion = {
+				who = ROOT
+				modifier = made_us_as_a_coalition_target
+			}
+			if = {
+				limit = { is_subject_of = ROOT }
+				add_liberty_desire = 30
+			}
+		}
+
+		event_target:ts_coalition_ROOT = { country_event = { id = realts_events.16 } }
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		FROM = {
+			any_owned_province = {
+				NOT = { is_core = PREV }
+				any_core_country = { is_subject_of = ROOT }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -25 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+				NOT = { has_opinion_modifier = { who = FROM modifier = enemy_of_my_enemy } }
+			}
+			AND = {
+				NOT = { has_opinion = { who = FROM value = -50 } }
+				NOT = { border_distance = { who = FROM distance = 200 } }
+			}
+			FROM = {
+				is_subject_of = ROOT
+				overextension_percentage = 0.3
+			}
+			FROM = {
+				overextension_percentage = 0.01
+				OR = {
+					ai_attitude = { who = ROOT attitude = attitude_disloyal }
+					ai_attitude = { who = ROOT attitude = attitude_rebellious }
+				}
+			}
+			calc_true_if = {
+				all_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					ai_attitude = { who = FROM attitude = attitude_outraged }
+				}
+				amount = 4
+			}
+			ai_attitude = { who = FROM attitude = attitude_hostile }
+			ai_attitude = { who = FROM attitude = attitude_outraged }
+			ai_attitude = { who = FROM attitude = atittude_rivalry }
+			ai_attitude = { who = ROOT attitude = attitude_rebellious }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ENFORCE_AN_ARMISTICE
+enforce_an_armistice = {
+
+	category = influence
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+
+	alert_index = 20
+	alert_tooltip = enforce_an_armistice_alert_tooltip
+	
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+		OR = {
+			ai = no
+			AND = { #This condition is written to advance game speed and experience.
+				FROM = {
+					#ai_attitude = { who = ROOT attitude = attitude_loyal }
+					is_in_war =  { attacker_leader = THIS }
+				}
+				ai = yes
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		dip_power = -75
+		#FROM = {
+		#	ai_attitude = {
+		#		who = ROOT
+		#		attitude = attitude_loyal
+		#	}
+		#}
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 60
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = armistice_tooltip
+			any_country = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+				is_in_war = {
+					attacker_leader = FROM
+					defender_leader= THIS
+				}
+			}
+		}
+	}
+
+	on_accept = {
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -40
+				}
+			}
+		}
+		ROOT= {
+			add_trust = {
+				who = FROM
+				value = 5
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = tributary_state
+					is_subject_of_type = tributary_state_join_war
+				}
+				is_in_war = {
+					attacker_leader = FROM
+					defender_leader= THIS
+				}
+			}
+			#country_event = { id = realts_events.14 }
+			white_peace = FROM
+		}
+		add_dip_power = -25
+		if = {
+			limit = { ai = yes }
+			add_dip_power = 75
+		}
+	}
+
+	on_decline = {
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -40
+				}
+			}
+		}
+		add_trust = {
+			who = FROM
+			value = -30
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 7.5 }
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.05
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_ONE_YEAR_GONE
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					defensive_war_with = FROM
+					FROM = {
+						offensive_war_with = PREV
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader= PREV
+							duration = 365
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_WINNING_IN_THE_WAR
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					defensive_war_with = FROM
+					FROM = {
+						offensive_war_with = PREV
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader= PREV
+							war_score = 20
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_WINNING_IN_THE_WAR_FROM
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					defensive_war_with = FROM
+					FROM = {
+						offensive_war_with = PREV
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader= PREV
+							war_score = -20
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+	}
+
+	ai_will_do = {
+		dip_power = -25
+		OR = {
+			any_country = {
+				capital_scope = { has_province_modifier = TS_recon_province }
+				is_subject_of = ROOT
+				defensive_war_with = FROM
+			}
+			#AND = {
+			#	FROM = {
+			#		is_in_coalition_war = no
+			#		total_development = 100
+			#	}
+			#	OR = {
+			#		NOT = {
+			#			has_opinion = {
+			#				who = FROM
+			#				value = -25
+			#			}
+			#		}
+			#		FROM = {
+			#			ai = no
+			#			ROOT = {
+			#				NOT = {
+			#					has_opinion = {
+			#						who = PREV
+			#						value = 50
+			#					}
+			#				}
+			#			}
+			#		}
+			#		FROM = {
+			#			ai = no
+			#			liberty_desire = 100
+			#		}
+			#		ai_attitude = { who = FROM attitude = attitude_hostile }
+			#		ai_attitude = { who = FROM attitude = attitude_outraged }
+			#	}
+			#}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+			}
+		}
+	}
+}
+
+
+
+
+#IMPEACH_THE_LEGITIMACY
+impeach_the_legitimacy = {
+	category = emperor
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		FROM = {
+			NOT = {
+				has_ruler_modifier = TS_legitimacy
+			}
+		}
+		FROM = { NOT = { government = republic } }
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 60
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = { id = realts_events.3 }
+			add_legitimacy = -25
+			if = {
+				limit = { FROM = { is_nomad = yes } }
+				add_horde_unity = -25
+			}
+			add_heir_claim = -25
+			add_liberty_desire = 10
+			add_ruler_modifier = {
+				name = TS_legitimacy
+				duration = -1
+			}
+		}
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -40
+				}
+			}
+		}
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		OR = {
+			AND = {
+				imperial_mandate = 20
+				has_dlc = "Mandate of Heaven"
+			}
+			AND = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				always = yes
+			}
+		}
+		FROM = { legitimacy = 30 }
+		OR = {
+			FROM = {
+				overextension_percentage = 0.2
+				any_owned_province = {
+					NOT = { is_core = PREV }
+					any_core_country = { is_subject_of = ROOT }
+				}
+				NOT = { liberty_desire = 30 }
+				ROOT = {
+					NOT = {
+						has_opinion = {
+							who = PREV
+							value = 50
+						}
+					}
+				}
+			}
+			FROM = {
+				NOT = { liberty_desire = 30 }
+				any_owned_province = {
+					NOT = { is_core = PREV }
+					any_core_country = { is_subject_of = ROOT }
+				}
+				personality = ai_militarist
+				overextension_percentage = 0.01
+			}
+			FROM = { overextension_percentage = 0.3 }
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+#TAKE_AN_ISSUE_TRADE
+take_an_issue_with_the_trade = {
+	category = economy
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		FROM = { NOT = { has_country_modifier = TS_issue_with_trade } }
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 60
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = { id = realts_events.4 }
+			add_liberty_desire = 20
+			every_active_trade_node = {
+				limit = { has_most_province_trade_power = ROOT }
+				add_trade_modifier = {
+					who = FROM
+					duration = 3650
+					power = -100
+					key = TS_issue_trade_key
+				}
+			}
+			add_country_modifier = {
+				name = TS_issue_with_trade
+				duration = 3650
+				hidden = yes
+			}
+		}
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -40
+				}
+			}
+		}
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		OR = {
+			AND = {
+				imperial_mandate = 20
+				has_dlc = "Mandate of Heaven"
+			}
+			AND = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				always = yes
+			}
+		}
+		OR = {
+			AND = {
+				FROM = {
+					NOT = { liberty_desire = 30 }
+					trust = {
+						who = ROOT
+						value = 75
+					}
+				}
+				personality = ai_capitalist
+				any_trade_node = {
+					has_trader = FROM
+					has_most_province_trade_power = ROOT
+				}
+			}
+			AND = {
+				FROM = {
+					overextension_percentage = 0.3
+					any_owned_province = {
+						NOT = { is_core = PREV }
+						any_core_country = { is_subject_of = ROOT }
+					}
+				}
+				any_trade_node = {
+					has_most_province_trade_power = ROOT
+					has_trader = FROM
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+
+#TAKE_AN_ISSUE_DIPLOMACY
+take_an_issue_with_the_diplomacy = {
+	category = influence
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		FROM = { NOT = { has_country_modifier = TS_issue_with_diplomacy } }
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 60
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = { id = realts_events.5 }
+			add_liberty_desire = 20
+			add_country_modifier = {
+				name = TS_issue_with_diplomacy
+				duration = 1825
+			}
+		}
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -40
+				}
+			}
+		}
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		OR = {
+			AND = {
+				imperial_mandate = 20
+				has_dlc = "Mandate of Heaven"
+			}
+			AND = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				always = yes
+			}
+		}
+		OR = {
+			FROM = { overextension_percentage = 0.35 }
+			FROM = {
+				any_country = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					is_subject_of = ROOT
+					is_in_war = {
+						attacker_leader = PREV
+						defender_leader = THIS
+						war_score = 50
+					}
+				}
+				ROOT = {
+					NOT = {
+						has_opinion = {
+							who = PREV
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+
+
+#CONDEMN_PUBLICLY
+ts_condemn_publicly = {
+	category = emperor
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		NOT = { truce_with = FROM }
+		FROM = { NOT = { has_country_modifier = TS_condemn } }
+		FROM = {
+			trust = {
+				who = ROOT
+				value = 30
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = { id = realts_events.6 }
+			add_liberty_desire = 15
+			add_country_modifier = {
+				name = TS_condemn
+				duration = 1825
+			}
+		}
+		ROOT= {
+			FROM = {
+				add_trust = {
+					who = PREV
+					value = -20
+				}
+			}
+		}
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		OR = {
+			AND = {
+				imperial_mandate = 20
+				has_dlc = "Mandate of Heaven"
+			}
+			AND = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				always = yes
+			}
+		}
+		OR = {
+			FROM = {
+				overextension_percentage = 0.35
+				any_owned_province = {
+					NOT = { is_core = PREV }
+					any_core_country = { is_subject_of = ROOT }
+				}
+			} 
+			FROM = {
+				NOT = { liberty_desire = 30 }
+				overextension_percentage = 0.2
+				any_owned_province = {
+					NOT = { is_core = PREV }
+					any_core_country = { is_subject_of = ROOT }
+				}
+			}
+			FROM = {
+				OR = {
+					total_development = 100
+					development_of_overlord_fraction = 0.1
+				}
+				any_country = {
+					OR = {
+						is_subject_of_type = tributary_state
+						is_subject_of_type = tributary_state_join_war
+					}
+					is_subject_of = ROOT
+					is_in_war = {
+						attacker_leader = PREV
+						defender_leader = THIS
+						war_score = 50
+					}
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+##Demand Ruchao
+#rts_ruchao_action = {
+#	category = emperor
+#
+#	require_acceptance = no # Whether the recipient gets an option to decline
+#	
+#	is_visible = {
+#		always = no	# temporaliy disabled feature
+#		overlord_of = FROM
+#		is_emperor_of_china = yes
+#		FROM = {
+#			OR = {
+#				is_subject_of_type = tributary_state
+#				is_subject_of_type = tributary_state_join_war
+#			}
+#		}
+#	}
+#	is_allowed = {
+#		is_at_war = no
+#		prestige = 0
+#		FROM = {
+#			trust = {
+#				who = ROOT
+#				value = 15
+#			}
+#		}
+#		#variable_arithmetic_trigger = {
+#		#	custom_tooltip = journey_for_ruchao_tooltip
+#			FROM = { NOT = { has_country_modifier = journey_for_ruchao } }
+#		#}
+#		variable_arithmetic_trigger = {
+#			custom_tooltip = ruchao_10_years_tooltip
+#			FROM = { NOT = { has_country_modifier = ruchao_10_years } }
+#		}
+#		variable_arithmetic_trigger = {
+#			custom_tooltip = TS_ruchao_tooltip
+#			FROM = { NOT = { has_ruler_modifier = TS_ruchao } }
+#		}
+#		FROM = { has_regency = no }
+#		FROM = { total_development = 50 }
+#	}
+#	on_accept = {
+#		FROM = {
+#			country_event = { id = realts_events.100 days = 3 }
+#			add_ruler_modifier = {
+#				name = TS_ruchao
+#				duration = -1
+#				hidden = yes
+#			}
+#			add_country_modifier = {
+#				name = ruchao_10_years
+#				duration = 3650
+#				hidden = yes
+#			}
+#			add_prestige = -5
+#			ROOT= {
+#				FROM = {
+#					add_trust = {
+#						who = PREV
+#						value = -15
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	#on_decline = {
+#	#}
+#	
+#	#ai_acceptance = {
+#	#}
+#
+#	ai_will_do = {
+#		OR = {
+#			AND = {
+#				NOT = { imperial_mandate = 50 }
+#				NOT = { has_dlc = "Mandate of Heaven" }
+#			}
+#			FROM = { overextension_percentage = 0.33 } 
+#			FROM = { liberty_desire = 30 }
+#			FROM = {
+#				has_opinion = {
+#					who = ROOT
+#					value = -50
+#				}
+#			}
+#			ROOT = {
+#				has_opinion = {
+#					who = FROM
+#					value = -50
+#				}
+#			}
+#		}
+#	}
+#}
+
+
+
+
+
+
+
+
+
+
+
+#Demand unlawful territory
+demand_unlawful_territory_action_ts = {
+	category = emperor
+
+	alert_index = 22
+	alert_tooltip = demand_unlawful_territory_action_ts_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		variable_arithmetic_trigger = {
+			custom_tooltip = demand_unlawful_territory_action_ts_allow_tooltip
+			any_country = {
+				is_subject_of = ROOT
+				any_province = {
+					is_core = PREV
+					owned_by = FROM
+					NOT = { is_core = FROM }
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = demand_unlawful_territory_action_ts_allow_tooltip2
+			any_country = {
+				is_subject_of = ROOT
+				is_at_war = no
+				any_province = {
+					is_core = PREV
+					owned_by = FROM
+					NOT = { is_core = FROM }
+				}
+			}
+		}
+		NOT = { truce_with = FROM }
+		FROM = { is_at_war = no }
+		FROM = { trust = { who = ROOT value = 1 } }
+		dip_power = 0
+	}
+	on_accept = {
+		add_dip_power = -50
+		FROM = {
+			add_liberty_desire = 30
+			add_opinion = {
+				who = ROOT
+				modifier = demanded_us_our_unlawful_territories
+			}
+		}
+		add_truce_with = FROM
+		set_variable = {
+			which = the_unlawful_territory_development_total
+			value = 0
+		}
+		set_variable = {
+			which = while_break_variable
+			value = 0 #0 is off / 10 is on
+		}
+		export_to_variable = {
+			variable_name = from_trust_ai_ts
+			value = trust
+			who = FROM
+		}
+		multiply_variable = {            
+			which = from_trust_ai_ts
+			value = 3
+		}
+		while = {
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				FROM = { trust = { who = ROOT value = 1 } }
+				NOT = {
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						value = 100
+					}
+					check_variable = {
+						which = while_break_variable
+						value = 10
+					}
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						which = from_trust_ai_ts
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				save_event_target_as = the_lawful_owner_ts
+			}
+			FROM = {
+				random_owned_province = {
+					limit = {
+						NOT = { is_core = FROM }
+						is_core = event_target:the_lawful_owner_ts
+						any_neighbor_province = { owned_by = event_target:the_lawful_owner_ts }
+					}
+					export_to_variable = {
+						variable_name = an_unlawful_territory_development
+						value = development
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = an_unlawful_territory_development
+								value = 1
+							}
+						}
+						change_variable = {
+							which = an_unlawful_territory_development
+							value = -1
+						}
+						ROOT = {
+							change_variable = {
+								which = the_unlawful_territory_development_total
+								value = 1
+							}
+						}
+					}
+					cede_province = event_target:the_lawful_owner_ts
+				}
+			}
+			if = {
+				limit = {
+					FROM = {			
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									NOT = { is_core = FROM }
+									is_core = event_target:the_lawful_owner_ts
+									any_neighbor_province = { owned_by = event_target:the_lawful_owner_ts }
+								}
+								amount = 1
+							}
+						}
+					}
+				}
+				set_variable = {
+					which = while_break_variable
+					value = 10 #0 is off / 10 is on
+				}
+			}
+		}
+		while = {
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				FROM = { trust = { who = ROOT value = 1 } }
+				NOT = {
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						value = 100
+					}
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						which = from_trust_ai_ts
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				save_event_target_as = the_lawful_owner_ts
+			}
+			FROM = {
+				random_owned_province = {
+					limit = {
+						NOT = { is_core = FROM }
+						is_core = event_target:the_lawful_owner_ts
+					}
+					export_to_variable = {
+						variable_name = an_unlawful_territory_development
+						value = development
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = an_unlawful_territory_development
+								value = 1
+							}
+						}
+						change_variable = {
+							which = an_unlawful_territory_development
+							value = -1
+						}
+						ROOT = {
+							change_variable = {
+								which = the_unlawful_territory_development_total
+								value = 1
+							}
+						}
+					}
+					cede_province = event_target:the_lawful_owner_ts
+				}
+			}
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = the_unlawful_territory_development_total
+					value = 3
+				}
+			}
+			change_variable = {
+				which = the_unlawful_territory_development_total
+				value = -3
+			}
+			FROM = { add_trust = { who = ROOT value = -1 } }
+		}
+	}
+
+	on_decline = {
+		add_dip_power = -50
+		FROM = { grant_independence = yes }
+		add_casus_belli = {
+			target = FROM
+			type = cb_unlawful_ts
+			months = 12
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_unlawful_ts
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { ai = no } }
+			name = TS_AI_YESMAN
+			export_to_variable = {
+				variable_name = ai_value
+				value = 100
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 5
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_5
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 5
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 6
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_6
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 6
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 7
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_7
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 7
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 8
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 35
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_8
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 8
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 9
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 40
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_9
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 9
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 10
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 45
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_10
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 10
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = TS_LOYAL_ATTITUDE
+			limit = {
+				FROM = { ai_attitude = { who = ROOT attitude = attitude_loyal } }
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_ALREADY_DEMANDED
+			limit = { FROM = { has_opinion_modifier = { who = ROOT modifier = demanded_us_our_unlawful_territories } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 150
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+	}
+
+	ai_will_do = {
+		variable_arithmetic_trigger = {
+			custom_tooltip = demand_unlawful_territory_action_ts_allow_tooltip2 #celestial empire doesn't give territory to a country forced to our tributary state recently
+			any_country = {
+				is_subject_of = ROOT
+				NOT = { truce_with = ROOT }
+				any_province = {
+					is_core = PREV
+					owned_by = FROM
+					NOT = { is_core = FROM }
+				}
+			}
+		}
+		OR = {
+			AND = {
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 150
+					}
+				}
+				military_strength = {
+					who = FROM
+					value = 1.5
+				}
+				FROM = {
+					ai = yes
+					all_ally = {
+						ai = yes
+						NOT = {
+							military_strength = {
+								who = ROOT
+								value = 1.0
+							}
+						}
+					}
+				}
+			}
+			AND = {
+				FROM = { ai = no not = { total_development = 600 } }
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 150
+					}
+				}
+				military_strength = {
+					who = FROM
+					value = 2.5
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+#Demand unlawful territory
+demand_unlawful_territory_action_ts_ai = {
+	category = emperor
+
+	alert_index = 22
+	alert_tooltip = demand_unlawful_territory_action_ts_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		ai = yes
+		FROM = { ai = yes }
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = demand_unlawful_territory_action_ts_allow_tooltip
+			any_country = {
+				is_subject_of = ROOT
+				any_province = {
+					is_core = PREV
+					owned_by = FROM
+					NOT = { is_core = FROM }
+				}
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = demand_unlawful_territory_action_ts_allow_tooltip2
+			any_country = {
+				is_subject_of = ROOT
+				is_at_war = no
+				any_province = {
+					is_core = PREV
+					owned_by = FROM
+					NOT = { is_core = FROM }
+				}
+			}
+		}
+		NOT = { truce_with = FROM }
+		FROM = { is_at_war = no }
+		FROM = { trust = { who = ROOT value = 1 } }
+		dip_power = 0
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		add_dip_power = -50
+		FROM = { grant_independence = yes }
+		add_casus_belli = {
+			target = FROM
+			type = cb_unlawful_ts
+			months = 12
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_unlawful_ts
+		}
+	}
+
+	on_decline = {
+		add_dip_power = -50
+		FROM = {
+			add_liberty_desire = 30
+			add_opinion = {
+				who = ROOT
+				modifier = demanded_us_our_unlawful_territories
+			}
+		}
+		add_truce_with = FROM
+		set_variable = {
+			which = the_unlawful_territory_development_total
+			value = 0
+		}
+		set_variable = {
+			which = while_break_variable
+			value = 0 #0 is off / 10 is on
+		}
+		export_to_variable = {
+			variable_name = from_trust_ai_ts
+			value = trust
+			who = FROM
+		}
+		multiply_variable = {            
+			which = from_trust_ai_ts
+			value = 3
+		}
+		while = {
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				FROM = { trust = { who = ROOT value = 1 } }
+				NOT = {
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						value = 100
+					}
+					check_variable = {
+						which = while_break_variable
+						value = 10
+					}
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						which = from_trust_ai_ts
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				save_event_target_as = the_lawful_owner_ts
+			}
+			FROM = {
+				random_owned_province = {
+					limit = {
+						NOT = { is_core = FROM }
+						is_core = event_target:the_lawful_owner_ts
+						any_neighbor_province = { owned_by = event_target:the_lawful_owner_ts }
+					}
+					export_to_variable = {
+						variable_name = an_unlawful_territory_development
+						value = development
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = an_unlawful_territory_development
+								value = 1
+							}
+						}
+						change_variable = {
+							which = an_unlawful_territory_development
+							value = -1
+						}
+						ROOT = {
+							change_variable = {
+								which = the_unlawful_territory_development_total
+								value = 1
+							}
+						}
+					}
+					cede_province = event_target:the_lawful_owner_ts
+				}
+			}
+			if = {
+				limit = {
+					FROM = {			
+						NOT = {
+							calc_true_if = {
+								all_owned_province = {
+									NOT = { is_core = FROM }
+									is_core = event_target:the_lawful_owner_ts
+									any_neighbor_province = { owned_by = event_target:the_lawful_owner_ts }
+								}
+								amount = 1
+							}
+						}
+					}
+				}
+				set_variable = {
+					which = while_break_variable
+					value = 10 #0 is off / 10 is on
+				}
+			}
+		}
+		while = {
+			limit = {
+				any_country = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				FROM = { trust = { who = ROOT value = 1 } }
+				NOT = {
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						value = 100
+					}
+					check_variable = {
+						which = the_unlawful_territory_development_total
+						which = from_trust_ai_ts
+					}
+				}
+			}
+			random_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_at_war = no
+					any_province = {
+						is_core = PREV
+						owned_by = FROM
+						NOT = { is_core = FROM }
+					}
+				}
+				save_event_target_as = the_lawful_owner_ts
+			}
+			FROM = {
+				random_owned_province = {
+					limit = {
+						NOT = { is_core = FROM }
+						is_core = event_target:the_lawful_owner_ts
+					}
+					export_to_variable = {
+						variable_name = an_unlawful_territory_development
+						value = development
+					}
+					while = {
+						limit = {
+							check_variable = {
+								which = an_unlawful_territory_development
+								value = 1
+							}
+						}
+						change_variable = {
+							which = an_unlawful_territory_development
+							value = -1
+						}
+						ROOT = {
+							change_variable = {
+								which = the_unlawful_territory_development_total
+								value = 1
+							}
+						}
+					}
+					cede_province = event_target:the_lawful_owner_ts
+				}
+			}
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = the_unlawful_territory_development_total
+					value = 3
+				}
+			}
+			change_variable = {
+				which = the_unlawful_territory_development_total
+				value = -3
+			}
+			FROM = { add_trust = { who = ROOT value = -1 } }
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -3
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 5
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_5
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 5
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 6
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 25
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_6
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 6
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 7
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_7
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 7
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 8
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 35
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_8
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 8
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 9
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 40
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_9
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 9
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 10
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 45
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_10
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 10
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_LOYAL_ATTITUDE
+			limit = {
+				FROM = { ai_attitude = { who = ROOT attitude = attitude_loyal } }
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_ALREADY_DEMANDED
+			limit = { FROM = { has_opinion_modifier = { who = ROOT modifier = demanded_us_our_unlawful_territories } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 150
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+	}
+
+	ai_will_do = {
+		is_at_war = no
+		NOT = { trust = { who = FROM value = 30 } }
+		FROM = { is_neighbor_of = ROOT }
+		OR = {
+			FROM = {
+				ai = no
+				total_development = 600
+				NOT = {
+					military_strength = {
+						who = ROOT
+						value = 0.33
+					}
+				}
+			}
+			AND = {
+				military_strength = {
+					who = FROM
+					value = 5.0
+				}
+				FROM = {
+					NOT = {
+						total_development = 600
+						calc_true_if = {
+							all_ally = {
+								military_strength = {
+									who = ROOT
+									value = 1.0
+								}
+							}
+							amount = 1
+						}
+					}
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+#Force to Reconstruct a Nation
+force_to_recon._nation_ts = {
+	category = emperor
+
+	alert_index = 22
+	alert_tooltip = force_to_recon._nation_ts_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+	}
+	is_allowed = {
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = { is_at_war = no }
+		#NOT = { truce_with = FROM }
+		variable_arithmetic_trigger = {
+			custom_tooltip = force_to_recon._nation_custom_tooltip_ts
+			any_province = {
+				owner = { tag = FROM }
+				likely_rebels = nationalist_rebels
+				#unrest = 0.001
+				any_core_country = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+			}
+		}
+	}
+	on_accept = {
+		add_dip_power = -25
+		FROM = { save_global_event_target_as = FROM_target_RTS }
+		ROOT = { save_global_event_target_as = ROOT_CHINA_target_RTS }
+		FROM = {
+			add_liberty_desire = 15
+			add_trust = {
+			    who = ROOT
+			    value = -20
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = forced_us_to_give_independence_to_a_country
+			}
+		}
+		random_province = {
+			limit = {
+				owner = { tag = FROM }
+				likely_rebels = nationalist_rebels
+				any_core_country = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+				#unrest = 0.001
+			}
+			add_permanent_province_modifier = { 
+				name = TS_recon_province
+				duration = 7300
+			}
+			random_core_country = {
+				limit = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+				random_province = {
+					limit = {
+						is_core = PREV
+						owner = { tag = FROM }
+						likely_rebels = nationalist_rebels
+					}
+					cede_province = PREV
+					remove_core = FROM
+				}
+				ROOT = {
+					create_subject = {
+						subject_type = tributary_state
+						subject = PREV
+					}
+				}
+				country_event = { id = realts_events.25 }
+			}
+		}
+	}
+
+	on_decline = {
+		FROM = {
+			add_trust = {
+			    who = ROOT
+			    value = -20
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = forced_us_to_give_independence_to_a_country
+			}
+		}
+		add_trust = {
+			who = FROM
+			value = -30
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { ai = no } }
+			name = TS_AI_YESMAN
+			export_to_variable = {
+				variable_name = ai_value
+				value = 100
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 5
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_5
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 5
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 6
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_6
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 6
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 7
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_7
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 7
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 8
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 35
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_8
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 8
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 9
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 40
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_9
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 9
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 10
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 45
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_10
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 10
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = TS_LOYAL_ATTITUDE
+			limit = {
+				FROM = { ai_attitude = { who = ROOT attitude = attitude_loyal } }
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_ALREADY_DEMANDED
+			limit = { FROM = { has_opinion_modifier = { who = ROOT modifier = forced_us_to_give_independence_to_a_country } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 150
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+	}
+
+	ai_will_do = {
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
+	}
+}
+
+
+
+
+#Force to Reconstruct a Nation for ai
+force_to_recon._nation_ts_ai = {
+	category = emperor
+
+	alert_index = 22
+	alert_tooltip = force_to_recon._nation_ts_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		ai = yes
+		#custom_trigger_tooltip = { tooltip = THEY_MUST_NOT_BE_DESIGNATED FROM = { NOT = { has_country_flag = designated_as_tributary } } }
+		FROM = { ai = yes }
+		overlord_of = FROM
+		FROM = {
+			OR = {
+				is_subject_of_type = tributary_state
+				is_subject_of_type = tributary_state_join_war
+			}
+		}
+		FROM = { is_at_war = no }
+		#NOT = { truce_with = FROM }
+		variable_arithmetic_trigger = {
+			custom_tooltip = force_to_recon._nation_custom_tooltip_ts
+			any_province = {
+				owner = { tag = FROM }
+				likely_rebels = nationalist_rebels
+				#unrest = 0.001
+				any_core_country = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+			}
+		}
+	}
+	is_allowed = {
+		always = yes
+	}
+	on_accept = {
+		FROM = {
+			add_trust = {
+			    who = ROOT
+			    value = -20
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = forced_us_to_give_independence_to_a_country
+			}
+		}
+		add_trust = {
+			who = FROM
+			value = -30
+		}
+	}
+
+	on_decline = {
+		add_dip_power = -25
+		FROM = { save_global_event_target_as = FROM_target_RTS }
+		ROOT = { save_global_event_target_as = ROOT_CHINA_target_RTS }
+		FROM = {
+			add_liberty_desire = 15
+			add_trust = {
+			    who = ROOT
+			    value = -20
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = forced_us_to_give_independence_to_a_country
+			}
+		}
+		random_province = {
+			limit = {
+				owner = { tag = FROM }
+				likely_rebels = nationalist_rebels
+				any_core_country = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+				#unrest = 0.001
+			}
+			add_permanent_province_modifier = { 
+				name = TS_recon_province
+				duration = 7300
+			}
+			random_core_country = {
+				limit = {
+					exists = no
+					has_country_flag = tributary_of_china_ts
+				}
+				random_province = {
+					limit = {
+						is_core = PREV
+						owner = { tag = FROM }
+						likely_rebels = nationalist_rebels
+					}
+					cede_province = PREV
+					remove_core = FROM
+				}
+				ROOT = {
+					create_subject = {
+						subject_type = tributary_state
+						subject = PREV
+					}
+				}
+				country_event = { id = realts_events.25 }
+			}
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			limit = { FROM = { is_great_power = yes } }
+			name = TS_GREAT_POWER
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			name = TS_TRUST
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 0.1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -5
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 5
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_5
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 5
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 6
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 25
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_6
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 6
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 7
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_7
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 7
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 8
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 35
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_8
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 8
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 9
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 40
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_9
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 9
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 10
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 45
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_10
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 10
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_LOYAL_ATTITUDE
+			limit = {
+				FROM = { ai_attitude = { who = ROOT attitude = attitude_loyal } }
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_ALREADY_DEMANDED
+			limit = { FROM = { has_opinion_modifier = { who = ROOT modifier = forced_us_to_give_independence_to_a_country } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 150
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 1
+			}
+		}
+	}
+
+	ai_will_do = {
+		imperial_mandate = 20
+		OR = {
+			FROM  = { ai = no }
+			trust = { who = FROM value = 80 }
+			FROM = {
+				is_neighbor_of = ROOT
+				ROOT = { trust = { who = FROM value = 60 } }
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = forced_us_to_give_independence_to_a_country
+					}
+				}
+			}
+			FROM = {
+				ROOT = { trust = { who = PREV value = 70 } }
+				NOT = { is_neighbor_of = ROOT }
+				NOT = {
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = forced_us_to_give_independence_to_a_country
+					}
+				}
+			}
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
+	}
+}
+
+
+
+
+#Designate Tributary
+Designate_Tributary_ts = {
+	category = influence
+
+	alert_index = 40
+	alert_tooltip = Designate_Tributary_ts_alert_tooltip
+
+	require_acceptance = yes # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		FROM = { is_subject = no }
+	}
+	is_allowed = {
+		custom_trigger_tooltip = { tooltip = TS_DESIGN._TRIBUTARY_UNVALID NOT = { is_neighbor_of = FROM } }
+		prestige = 20
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = { is_great_power = no }
+		FROM = { NOT = { truce_with = ROOT } }
+		FROM = { NOT = { has_country_modifier = TS_issue_with_trade } }
+		FROM = { any_active_trade_node = { has_most_province_trade_power = ROOT } }
+
+	}
+	on_accept = {
+		add_prestige = -20
+		ROOT = {
+			create_subject = {
+				subject_type = tributary_state
+				subject = FROM
+			}
+		}
+		FROM = { set_country_flag = designated_as_tributary }
+	}
+
+	on_decline = {
+		add_prestige = -20
+		FROM = {
+			every_active_trade_node = {
+				limit = { has_most_province_trade_power = ROOT }
+				add_trade_modifier = {
+					who = FROM
+					duration = 7300
+					power = -100
+					key = TS_issue_trade_key
+				}
+			}
+			add_country_modifier = {
+				name = TS_issue_with_trade
+				duration = 7300
+				hidden = yes
+			}
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = TS_BASE_VALUE
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		#add_entry = {
+		#	limit = { FROM = { ai = no } }
+		#	name = TS_AI_YESMAN
+		#	export_to_variable = {
+		#		variable_name = ai_value
+		#		value = 100
+		#	}
+		#}
+		add_entry = {
+			name = TS_TRUST
+			limit = { FROM = { trust = { who = ROOT value = 30 } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+		}
+		add_entry = {
+			name = TS_BAD_OPINION
+			limit = { FROM = { NOT = { trust = { who = ROOT value = 30 } } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_OPINION
+			limit = { FROM = { has_opinion = { who = ROOT value = 0 } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = TS_OPINION
+			limit = { FROM = { NOT = { has_opinion = { who = ROOT value = 0 } } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 3 }
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = TS_BORDER_DISTANCE
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.25
+			}
+		}
+		add_entry = {
+			name = TS_TOTAL_DEVELOPMENT
+			export_to_variable = {
+				variable_name = ai_value
+				value = total_development
+				who = FROM
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -0.75
+			}
+		}
+		add_entry = {
+			name = TS_OWNED_VASSAL
+			limit = { any_country = { is_subject_of = FROM } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 1000
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_DIP_TECH_DIFF
+			export_to_variable = {
+				variable_name = ai_value
+				value = dip_tech
+				who = ROOT
+			}
+			export_to_variable = {
+				variable_name = from_varia
+				value = dip_tech
+				who = FROM
+			}
+			multiply_variable = {
+				which = from_varia
+				value = -1
+			}
+			change_variable = {            
+				which = ai_value
+				which = from_varia
+			}
+			multiply_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_1
+			limit = {
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 1.25
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_2
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 2
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 3
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_3
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 3
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 4
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_4
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 4
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 5
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_5
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 5
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 6
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_6
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 6
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 7
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_7
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 7
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 8
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 35
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_8
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 8
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 9
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 40
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_9
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 9
+				}
+				NOT = {
+					military_strength = {
+						who = FROM
+						value = 10
+					}
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 45
+			}
+		}
+		add_entry = {
+			name = TS_MILITARY_STRENGTH_10
+			limit = {
+				military_strength = {
+					who = FROM
+					value = 10
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = TS_UNFRIENDLY_ATTITUDE
+			limit = {
+				OR = {
+					FROM = { ai_attitude = { who = ROOT attitude = atittude_rivalry } }
+					FROM = { ai_attitude = { who = ROOT attitude = attitude_hostile } }
+					FROM = { ai_attitude = { who = ROOT attitude = attitude_outraged } }
+				}
+			}
+			export_to_variable = {
+				variable_name = ai_value
+				value = 1000
+			}
+			multiply_variable = {
+				which = ai_value
+				value = -1
+			}
+		}
+		add_entry = {
+			name = TS_FRIENDLY_ATTITUDE
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+			export_to_variable = {
+				variable_name = ai_value
+				value = 15
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = yes
+	}
+}
+
+
+
+
+#TAKE_AN_ISSUE_TRADE for NON-TRIBUTARY
+take_an_issue_with_the_trade_for_non_tributary = {
+	category = economy
+
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_emperor_of_china = yes
+		FROM = { is_subject = no }
+	}
+	is_allowed = {
+		prestige = 20
+		is_at_war = no
+		FROM = { NOT = { truce_with = ROOT } }
+		FROM = { NOT = { has_country_modifier = TS_issue_with_trade } }
+		FROM = { any_active_trade_node = { has_most_province_trade_power = ROOT } }
+
+	}
+	on_accept = {
+		add_prestige = -20
+		#ROOT = { save_global_event_target_as = CHINESE_EMPIRE_TRADE_ISSUE }
+		FROM = {
+			country_event = { id = realts_events.41 }
+			every_active_trade_node = {
+				limit = { has_most_province_trade_power = ROOT }
+				add_trade_modifier = {
+					who = FROM
+					duration = 7300
+					power = -100
+					key = TS_issue_trade_key
+				}
+			}
+			add_country_modifier = {
+				name = TS_issue_with_trade
+				duration = 7300
+				hidden = yes
+			}
+		}
+	}
+
+	#on_decline = {
+	#}
+	
+	#ai_acceptance = {
+	#}
+
+	ai_will_do = {
+		OR = {
+			ai_attitude = {	who = FROM attitude = attitude_hostile }
+			ai_attitude = {	who = FROM attitude = attitude_outraged }	
+		}
+		ROOT = {
+			not = {
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+			}
+		}
+	}
+}

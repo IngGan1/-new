@@ -1,0 +1,30 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Forced Exile
+	id = jewish_estates_events.8
+	title = "jewish_estates_events.8.t"
+	desc = "jewish_estates_events.8.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	trigger = { 
+		is_year = 1679
+		tag = YEM
+	}
+	 
+	option = {
+		name = "YEM_EXILE_J_E"
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = -30
+		}
+	}
+}

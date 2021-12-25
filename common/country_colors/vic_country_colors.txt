@@ -1,0 +1,49 @@
+# Country unit colors.
+
+# example_tag_template = {
+    # color1= { 205 32 26  } #60% of character
+    # color2= { 255 255 255  } #30% of character
+    # color3= { 70 50 40  } #Up to 10% -> try map color here
+# }
+
+# Soviet Union
+SVU = {
+    color1= { 63 63 68 }
+    color2= { 196 9 9 }
+    color3= { 127 16 16 }
+}
+
+# North German Confederation
+NGC = {
+	color1= { 255 255 255 }
+    color2= { 27 27 30 }
+    color3= { 203 16 16 }
+}
+
+# German Empire
+GER = {
+	color1= { 255 255 255 }
+    color2= { 27 27 30 }
+    color3= { 203 16 16 }
+}
+
+# German Republic
+GRP = {
+    color1= { 200 0 0 }
+    color2= { 27 27 30 }
+    color3= { 234 219 7 }
+}
+
+# Austrian Empire
+#AUE = {
+#    color1= { 255 255 255  }
+#    color2= { 255 255 255  }
+#    color3= { 255 255 255  }
+#}
+
+# Austria-Hungary
+AHE = {
+    color1= { 212 127 130 }
+    color2= { 255 255 255 }
+    color3= { 173 153 126 }
+}

@@ -1,0 +1,644 @@
+namespace = ge_events
+# Nurhaci Aisin Gioro
+country_event = { 
+	id = ge_events.34
+	title = "ge_events.34.t"
+	desc = "ge_events.34.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+        tag = MCH
+		ai = no
+		is_year = 1616
+		NOT = {
+			is_year = 1636
+		}
+		not = { has_global_flag = no_ge16 }
+        MNG = {
+		exists = yes
+		ai = yes
+		was_player = no
+		is_subject = no
+		}
+    }
+
+	option = {
+		name = ge_events.34.a  
+		ai_chance = { factor = 100 }
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300
+        add_stability = 1
+		add_meritocracy_effect = yes
+        add_prestige = 50
+		add_treasury = 1000
+		add_manpower = 100
+		define_ruler = {
+			name = "Nurhaci"
+			dynasty = "Aisin Gioro"
+			adm = 6
+			dip = 4
+			mil = 6
+            fixed = yes
+			age = 47
+		}
+		define_heir = {
+			name = "Hong Taiji"
+			dynasty = "Aisin Gioro"
+			adm = 5
+			dip = 5
+			mil = 5
+			age = 14
+		}
+	}
+}
+
+# Yeonsangun Yi Yung
+country_event = { 
+	id = ge_events.35
+	title = "ge_events.35.t"
+	desc = "ge_events.35.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		OR = {
+		tag = KOR
+		tag = JOS
+		}
+		has_country_flag = KOR_Sarim_Hungu
+		is_year = 1494
+		NOT = { is_year = 1506 }
+		has_regency = no
+    }
+
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = yeonsangun_flag
+		}
+	}
+
+	option = {
+		name = ge_events.35.a  
+		ai_chance = { factor = 100 }
+		add_meritocracy_effect = yes
+		define_ruler = {
+			name = "Yung"
+			dynasty = "Yi"
+			adm = 3
+			dip = 3
+			mil = 3
+            fixed = yes
+			age = 18
+		}
+		hidden_effect = {
+			add_ruler_personality = malevolent_personality
+			add_ruler_personality = greedy_personality
+			set_ruler_flag = yeonsangun_flag
+		}
+	}
+}
+
+# Tyrannical misrule of Yeonsangun
+country_event = { 
+	id = ge_events.36
+	title = "ge_events.36.t"
+	desc = "ge_events.36.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	trigger = {
+        OR = {
+		tag = KOR
+		tag = JOS
+		}
+		is_year = 1504
+		NOT = {
+			is_year = 1524
+		}
+		has_country_flag = kor_second_literati_purge
+		has_ruler_flag = yeonsangun_flag
+		OR = {
+			ruler_has_personality = malevolent_personality
+			ruler_has_personality = cruel_personality
+		} 
+	}
+
+	option = {
+		name = ge_events.36.a  
+		ai_chance = { factor = 100 }
+		add_harmony = -10
+		change_adm = -3
+		change_dip = -3
+		add_ruler_modifier = { name = yeonsangun_tyranny }
+	}
+}
+
+# Jungjong coup
+country_event = { 
+	id = ge_events.37
+	title = "ge_events.37.t"
+	desc = "ge_events.37.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = {
+        OR = {
+			tag = KOR
+			tag = JOS
+		}
+		is_year = 1506
+		has_ruler_flag = yeonsangun_flag
+		NOT = { has_country_flag = jungjong_coup_flag }
+		NOT = { is_year = 1534 }
+		has_ruler_modifier = yeonsangun_tyranny
+    }
+
+	option = {
+		name = ge_events.37.a  
+		ai_chance = { factor = 100 }
+		add_stability = 2
+		add_corruption = 20
+		add_legitimacy = -20
+		define_ruler = {
+			name = "Yeok"
+			dynasty = "Yi"
+			adm = 4
+			dip = 3
+			mil = 4
+            fixed = yes
+			age = 20
+		}
+		define_heir = {
+			name = "Ho"
+			dynasty = "Yi"
+			adm = 3
+			dip = 2
+			mil = 2
+			age = 1
+		}
+		clr_country_flag = yeonsangun_korea_flag
+		set_country_flag = jungjong_coup_flag
+		set_ruler_flag = jungjong_flag
+	}
+}
+
+# Accept report directly or through council
+country_event = {
+	id = ge_events.38
+	title = "ge_events.38.t"
+	desc = "ge_events.38.d"
+	picture = COURT_eventPicture
+
+	trigger = {
+        OR = {
+			has_reform = confucian_monarchy	
+			has_reform = hermit_kingdom_reform
+		}
+		NOT = { has_country_modifier = accept_report_directly }
+		NOT = { has_country_modifier = accept_report_indirectly } 
+		has_regency = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.38.a  
+		trigger = {
+			NOT = { has_reform = parliamentary_reform }
+			legitimacy = 70
+			NOT = {
+				estate_influence = {
+					estate = estate_church
+					influence = 80
+				}
+			}
+			NOT = {
+				estate_influence = {
+					estate = estate_nobles
+					influence = 80
+				}
+			}
+		}
+		ai_chance = { factor = 50 }
+		add_ruler_modifier = { 
+			name = "accept_report_directly" 
+		}
+		add_prestige = 10
+		add_adm_power = -50
+	}
+
+	option = {
+		name = ge_events.38.b  
+		ai_chance = { factor = 50 }
+		add_ruler_modifier = { 
+			name = "accept_report_indirectly" 
+		}
+		if = {
+			limit = { NOT = { has_reform = parliamentary_reform } }
+			add_prestige = -10
+			add_adm_power = 50
+		}
+	}
+}
+         
+# The revolt of the three feudatories
+country_event = {
+	id = ge_events.39
+	title = ge_events.39.t
+	desc = ge_events.39.d
+	picture = ANGRY_MOB_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = QNG
+		is_year = 1673
+		NOT = {
+			is_year = 1693
+		}
+		has_global_flag = governments_extended_historical_yes
+		NOT = { exists = MNG }
+		NOT = { has_country_flag = wu_sangui_revolt_flag } 
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+  
+	immediate = {
+		hidden_effect = {
+			yun_gui_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = CZH
+			}
+			giuzhou_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = CZH
+			}
+			sichuan_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = CZH
+			}
+			release = CZH
+			CZH = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+			}
+			set_country_flag = wu_sangui_revolt_flag
+		}
+	}
+
+	option = { 
+		 name = ge_events.39.a
+		 ai_chance = { factor = 100 }
+		 CZH = {
+			declare_war_with_cb = { 
+				 who = ROOT
+				 casus_belli = cb_take_mandate
+			}
+			define_ruler = {
+				name = "Sangui"
+				dynasty = "Wu"
+				adm = 1
+				dip = 2
+				mil = 2
+				fixed = yes
+				age = 61
+			}
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 3
+					cavalry = 1
+					artillery = 2
+				}
+			}
+			add_manpower = 100
+			add_treasury = 2000
+		}
+	}
+}         
+ 
+country_event = {
+        id = ge_events.40
+        title = ge_events.40.t
+        desc = ge_events.40.d
+        picture = ANGRY_MOB_eventPicture
+
+        fire_only_once = yes
+
+        trigger = { 
+			tag = QNG
+			is_year = 1674
+			NOT = {
+				is_year = 1694
+			}
+			has_global_flag = governments_extended_historical_yes
+			NOT = { exists = MNG }
+			has_country_flag = wu_sangui_revolt_flag
+        }
+  
+        mean_time_to_happen = {
+                months = 3
+        }
+  
+	immediate = {
+		hidden_effect = {
+			fujian_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = WUU
+			}
+			zhejiang_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = WUU
+			}
+			release = WUU
+			WUU = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+			}
+		}
+	}
+
+	option = { 
+		name = ge_events.40.a
+		ai_chance = { factor = 100 }
+		WUU = {
+			declare_war_with_cb = { 
+				who = ROOT
+				casus_belli = cb_take_mandate
+			}
+			define_ruler = {
+				name = "Jingzhong"
+				dynasty = "Geng"
+				adm = 3
+				dip = 1
+				mil = 2
+				fixed = yes
+				age = 30
+			}
+			create_alliance = CZH
+			create_alliance = YUE
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 3
+					cavalry = 1
+					artillery = 2
+				}
+			}
+			add_manpower = 100
+			add_treasury = 2000
+		}
+	}
+}
+
+country_event = {
+        id = ge_events.41
+        title = ge_events.41.t
+        desc = ge_events.41.d
+        picture = ANGRY_MOB_eventPicture
+
+        fire_only_once = yes
+
+        trigger = {
+			tag = QNG
+			is_year = 1676
+			NOT = {
+				is_year = 1696
+			}
+			has_global_flag = governments_extended_historical_yes
+            NOT = { exists = MNG }
+            has_country_flag = wu_sangui_revolt_flag
+        }
+  
+        mean_time_to_happen = {
+			months = 1
+        }
+  
+	immediate = {
+		hidden_effect = {
+			guangdong_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = YUE
+			}
+			west_guangdong_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = YUE
+			}
+			zhusanjiao_area = { 
+				limit = { 
+					 owned_by = QNG
+				}
+				add_core = YUE
+			}
+			release = YUE
+			YUE = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+			}
+		}
+	}
+
+	option = { 
+		name = ge_events.41.a
+		ai_chance = { factor = 100 }
+		YUE = {
+			declare_war_with_cb = { 
+				who = ROOT
+				casus_belli = cb_take_mandate
+			}
+			define_ruler = {
+				name = "Zhixin"
+				dynasty = "Shang"
+				adm = 2
+				dip = 2
+				mil = 3
+				fixed = yes
+				age = 39
+			}
+			create_alliance = CZH
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 1
+					cavalry = 0.5
+					artillery = 0.5
+				}
+			}
+			add_manpower = 100
+			add_treasury = 2000
+		}
+	}
+} 
+
+country_event = {
+	id = ge_events.42
+	title = ge_events.42.t
+	desc = ge_events.42.d
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = { 
+		tag = CZH
+		is_year = 1674
+		NOT = {
+			is_year = 1694
+		}
+		has_global_flag = governments_extended_historical_yes
+		NOT = { exists = MNG }
+		has_country_flag = wu_sangui_revolt_flag
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = { 
+		name = ge_events.42.a
+		ai_chance = { factor = 100 }
+		QNG = { country_event = { id = ge_events.43 } } 
+		add_prestige = 20
+	}
+}             
+
+country_event = {
+	id = ge_events.43
+	title = ge_events.43.t
+	desc = ge_events.43.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.43.a  
+		ai_chance = { factor = 100 }
+		guangxi_area = { 
+			limit = { owned_by = ROOT }
+			cede_province = CZH
+			add_core = CZH
+		}
+		chongqing_area = { 
+			limit = { owned_by = ROOT }
+			cede_province = CZH
+			add_core = CZH
+		}
+	}
+} 
+
+country_event = {
+	id = ge_events.44
+	title = "ge_events.44.t"
+	desc = "ge_events.44.d"
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		or = { tag = CZH tag = WUU tag = YUE }
+        has_global_flag = governments_extended_historical_yes
+		is_year = 1696
+		not = { is_year = 1716 }
+        NOT = { war_with = QNG }
+		QNG = { ai = yes exists = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {		
+		name = "ge_events.44.a"
+		ai_chance = { factor = 100 }
+		QNG = { country_event = { id = ge_events.46 } }
+		add_prestige = -20
+	}
+
+	option = {		
+		name = "ge_events.44.b"
+		ai_chance = { factor = 0 }
+		QNG = { country_event = { id = ge_events.45 } }
+		add_prestige = 20
+	}
+}
+
+country_event = {
+	id = ge_events.45
+	title = ge_events.45.t
+	desc = ge_events.45.d
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.45.a  
+		ai_chance = { factor = 100 }
+		declare_war_with_cb = {
+			who = CZH
+			casus_belli = cb_core
+		}
+		declare_war_with_cb = {
+		    who = WUU
+			casus_belli = cb_core
+		}
+		declare_war_with_cb = {
+		    who = YUE
+			casus_belli = cb_core
+		}
+    }
+} 
+
+country_event = {
+        id = ge_events.46
+        title = ge_events.46.t
+        desc = ge_events.46.d
+        picture = SIEGE_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.46.a  
+		ai_chance = { factor = 100 }
+                inherit = CZH
+                inherit = YUE
+                inherit = WUU
+        }
+} 

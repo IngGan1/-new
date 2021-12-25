@@ -1,0 +1,90 @@
+﻿l_english:
+ ChinE_events.1.t: "œÌÇ Èm­(Celestial Empire)!"
+ ChinE_events.1.d: "°Æ¬¹ Èm­NÇ •Íõ¼¼XÅµÂÈ²ä². Ç³XÕàÂ œÌÈXÇ tÇ„¹<Çj¸ °Æ¬¹XÇ Æ Ñ”² XÕ˜°¬ ´´Å|Å iÕÈ²ä²!"
+ ChinE_events.1.a: "LÅ ¬ä²."
+ ChinE_events.2.t: "Èm­XÇ ÆíÅ À¼TÖ"
+ ChinE_events.2.d: "°Æ¬¹ Èm­NÇ ÝÀ…º´ÌNÆ ¬µÂÈ²ä². °Æ¬¹ Èm­XÇ ÆíÅÐÅ ‹Å¬XÇ À¼TÖ¬ ˆÇÈÅµÂÈ²ä²."
+ ChinE_events.2.a: "LÅ ¬ä²."
+ ChinE_events.3.t: "tÇ„¹Ð¿xÇ iÖÈ"
+ ChinE_events.3.d: "°Æ¬¹ ˜°|·”² iÖÈXÇ ÀÉÇ|¹ ƒÇÈÅµÂÈ²ä²."
+ ChinE_events.3.a: "LÅ ¬ä²."
+ ChinE_events.4.t: "œÌÇ Èm­XÇ UÆ"
+ ChinE_events.4.d: "°Æ¬¹ ˜°|·”² œÌÇ Èm­XÇ |ÇÐÆtÇ .´ Ç©¬tÇ ˆÇµÂÈ²ä²."
+ ChinE_events.4.a: "LÅ ¬ä²."
+ ChinE_events.5.t: "Ç©¬ ƒÇNÇ UÆ"
+ ChinE_events.5.d: "°Æ¬¹”² T³ tÇÁÀ œÌÇ Èm­XÇ |ÇŽ´¬ DÅÙ²È²ä²."
+ ChinE_events.5.a: "LÅ ¬ä²."
+ ChinE_events.6.t: "Èm­ µÑÈ"
+ ChinE_events.6.d: "°Æ¬¹ Èm­DÇ ŽÈ T³ Ç8Áˆ× ´À´Ó´È²ä². DÅ˜·|¹ UÖxÇXÕíÂÜÂ2Æ.\n°Æ¬¹ Èm­XÇ Æ Ñ: [Root.ChinE_imperial_provinces_value.GetValue]\n°Æ¬¹¬ ŒÁ.ÇjÕ °Æ¬¹ Èm­XÇ Æ Ñ: [Root.ChinE_imperial_provinces_value_owned.GetValue]\nD¾(Ç: [Root.ChinE_imperial_provinces_percent.GetValue]"
+ ChinE_events.6.a: "LÅ ¬ä²."
+ ChinE_events.7.t: "Èm­XÇ °º‹·"
+ ChinE_events.7.d: "Èm­NÇ °º‹·ˆÕä²."
+ ChinE_events.7.a: "LÅ ¬ä²."
+ ChinE_events.8.t: "[Root.GetName]XÇ µÑ|Ç YÎ9¸ ¼jÔ!"
+ ChinE_events.8.d: "[Root.Monarch.GetTitle]NÇ ÉTÖ Èm­XÇ „´ôÅDÇ T³ tÇÁÀ ©ÆxÇXÕÀÉ JÅDÇ ƒ¬tÇ|·à¬ .Á¸ÅˆÕµÂÈ²ä²! [Root.Monarch.GetSheHeCap]NÇ Èm­ YÎ9¸XÇ ´°©ÆDÇ Â‰ÕXÕ0® ÇtÕ ÈÁÇDÇ ÜÂ‘ÇiÕÈ²ä²."
+ ChinE_events.8.a: "e×ø»m¸p­."
+ ChinE_events.9.t: "œÌÇ Èm­ÐÅÁXÇ àÏp³ÀÐ"
+ ChinE_events.9.d: "[Root.Monarch.GetTitle]NÇ Èm­XÇ µÑ|Ç YÎ9¸DÇ ´°x¬à¬ °Æ¬¹˜°|·|¹ ÈÁÇ „´Ç0®j¸ Ì¹ä´ÈÅÀÉÌ¹ Èm­NÇ ìÅÈˆ× „´è²´´Å ˆÇµÂÈ²ä². <»¬¬ XÎŸÁà¬ ¬ÀŒ·ä´XÇ ¶ÀtÇ ´Å2¸ÌÆLÈDÇ Ð¿…ÇÈ²ä². [Root.Monarch.GetHerHis]XÇ 4»¥²ÐÅ ÀÉjÎ ÜÂü»ä´ü¬ À­qÈä´tÇ ø­|¹ ÓÊDÅÈ°µÂÈ²ä²."
+ ChinE_events.9.a: "LÅ ¬ä²."
+ ChinE_events.10.t: "µÑiÕ"
+ ChinE_events.10.d: "Èm­NÇ „´`Õ´ ÆíÅDÇ È(ÌÈ<Çj¸ µÑiÕˆÕà¬ °¬m­ ´Å² ÈÄ³ ì²1ÁˆÕµÂÈ²ä². DÆË¼XÕÀÉ”² JÅÀÉÌ¹ Ž´qÈXÕÀÉÄ³ JÅµÂÈ²ä²."
+ ChinE_events.10.a: "LÅ ¬ä²."
+ ChinE_events.11.t: "œÌÇ Èm­ü¬XÇ ÈÁÇ"
+ ChinE_events.11.d: "°Æ¬¹”² œÌÇ Èm­ÐÅ ÁjÕ m­¬NÆ ÈÁÇ É…ÇÈ²ä². ÈÁÇXÇ °¬ü¬”² œÌÇ Èm­ ´°XÇ ¨ºà´ m­¬ÐÅ Æ¥ÕDÇ ø»`Î ƒ¬…ÇÈ²ä²."
+ ChinE_events.11.a: "LÅ ¬ä²."
+ ChinE_events.12.t: "œÌÇ Èm­ü¬XÇ ÈÁÇ"
+ ChinE_events.12.d: "ÈÁÇtÇ k°¬°µÂÈ²ä². ÈÁÇXÇ °¬ü¬”² œÌÇ Èm­XÇ ¨ºà´ m­¬ÐÅ Æ¥ÕDÇ ø»`Î ƒ¬…ÇÈ²ä²."
+ ChinE_events.12.a: "LÅ ¬ä²."
+ ChinE_events.13.t: "œÌÇ Èm­ü¬XÇ ÈÁÇ"
+ ChinE_events.13.d: "4»XÇø»jÕ ÈÁÇtÇÈÅµÂÈ²ä²."
+ ChinE_events.13.a: "LÅ ¬ä²."
+ ChinE_events.14.t: "°Æ¬¹XÇ …Ç¥Ç"
+ ChinE_events.14.d: "°Æ¬¹ ˜°|·”² œÌpÈm­XÇ |ÇŽ´ÆÀÉÌ¹ tÇÈ °Æ¬¹”² ø­ |ÇŽ´¬ .´ Œ­¬¹|¹ ƒÇÈÅµÂÈ²ä². ø­ì·˜° °Æ¬¹”² Ö¬Ç 8Á³L®ÀÉ ìÅÈˆ× ø­ Œ­¬¹|¹ üÈ¥Ç`Õ Â ˆÇµÂÈ²ä². tÇ|¹ üÈ¥ÇXÕÜÂ ¬µÂÈ²L®?"
+ ChinE_events.14.a: "˜°”² œÌÇ Èm­XÇ UÆtÇä²."
+ ChinE_events.14.b: "tÇÈ tÇ 4»XÇø»jÕ Á¼DÇ Èp¬XÕÇ!"
+ ChinE_events.15.t: "¥ÇÇÈ"
+ ChinE_events.15.d: "ù²àÂNÇ [Root.Monarch.GetTitle]…ÇÈ²ä²."
+ ChinE_events.15.a: "LÅ ¬ä²."
+ ChinE_events.16.t: "È"
+ ChinE_events.16.d: "ø­ä´NÇ °Æ¬¹ EµDÇ (ÌÀÉˆÕµÂÈ²ä². °Æ¬¹”² ø­ä´DÇ <»¬¹ÐÌ|Å iÕÈ²ä²!"
+ ChinE_events.16.a: "LÅ ¬ä²."
+ ChinE_events.8.tooltip: "Èm­ µÑ|Ç YÎ9¸NÇ §Y50§!D±¬ .ÇÀÉ)´È²ä². YÎ9¸tÇ jÖ1ÁTÖ ´”² Ù³HÅ  [Root.GetAdjective] œÌ…ºNÇ §Y50§! ­Ì¸È”² §Y80§!ÈÄ³|¹ .ÇÀÉ`Õ ƒ¬…ÇÈ²ä²."
+ ChinE_events.9.tooltip: "The imperial edict of unification has been removed."
+ ChinE_events.10.tooltip: "The imperial edict of unification has been removed."
+ ChinE_events.14.tooltip.1: "We will not lose the status of lord in the Celestial Empire before [Root.Monarch.GetName] is die."
+ ChinE_events.14.tooltip.2: "We will lose the status of lord in the Celestial Empire."
+ ChinE_emperor_modifier: "Overlord of the Celestial Empire"
+ desc_ChinE_emperor_modifier: "[Root.Monarch.GetName] is the [Root.Monarch.GetTitle] of the Celestial Empire.\n\nProvinces in the Celestial Empire: §Y[Root.ChinE_imperial_provinces_value.GetValue]§!\nProvinces Owned by Us in the Celestial Empire: §Y[Root.ChinE_imperial_provinces_value_owned.GetValue]§!"
+ ChinE_lord_modifier: "Lord of the Celestial Empire"
+ desc_ChinE_lord_modifier: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] is the lord of the Celestial Empire.\n\nProvinces in the Celestial Empire: §Y[Root.ChinE_imperial_provinces_value.GetValue]§!\nProvinces Owned by Us in the Celestial Empire: §Y[Root.ChinE_imperial_provinces_value_owned.GetValue]§!"
+ ChinE_war_emperor_modifier: "War for Unification"
+ desc_ChinE_war_emperor_modifier: "We are fighting in the war for the unification of the Celestial Empire."
+ ChinE_emperor_unification_mandate_modifier1: "Edict of Unification"
+ desc_ChinE_emperor_unification_mandate_modifier1: "With the effect of this edict, our mandate is maintained at about §Y50§!."
+ ChinE_emperor_unification_mandate_modifier2: "Edict of Unification"
+ desc_ChinE_emperor_unification_mandate_modifier2: "With the effect of this edict, our mandate is maintained at about §Y50§!."
+ ChinE_emperor_unification_meritocracy_modifier1: "Edict of Unification"
+ desc_ChinE_emperor_unification_meritocracy_modifier1: "With the effect of this edict, our meritocracy is maintained at about §Y80§!."
+ ChinE_emperor_unification_meritocracy_modifier2: "Edict of Unification"
+ desc_ChinE_emperor_unification_meritocracy_modifier2: "With the effect of this edict, our meritocracy is maintained at about §Y80§!."
+ ChinE_vassal_modifier: "Foreign Domination"
+ desc_ChinE_vassal_modifier: "We are ruled by foreign powers, but we will resist it."
+ celestial_empire_provinces: "Realm of Celestial Empire"
+ desc_celestial_empire_provinces: "This province is in the realm of the Celestial Empire."
+ ChinE_failed_unification_modifier: "Coup!"
+ desc_ChinE_failed_unification_modifier: "We are having a hard time because of the coup."
+ ChinE_ruler_is_lord: "Ruler is the Lord Yet"
+ desc_ChinE_ruler_is_lord: "The position will be maintained."
+ cb_ChinE_war: "Unify the Celestial Empire"
+ cb_ChinE_war_desc: "The country's provinces are a part of the Celestial Empire."
+ war_goal_ChinE_unification: "Take the capital"
+ war_goal_ChinE_unification_desc: "War goal is to take the capital."
+ ChinE_WAR_NAME: "$ORDER$$FIRST$ war for unification of the Celestial Empire"
+ issue_edict_of_unification_decision_title: "Issue Edict of Unification"
+ issue_edict_of_unification_decision_desc: "If our country continues to be divided, we will eventually be destroyed. We need to improve this situation."
+ issue_edict_of_unification_decision_tooltip: "The imperial edict of unification lasts up to §Y50§! years. While the edict is in effect, [Root.GetAdjective] mandate will remain at about §Y50§! and its meritocracy will remain at about §Y80§!."
+ ChinE_ai_decision_title: "For Unification!"
+ ChinE_ai_decision_desc: "AI Only"
+ ChinE_coup_disaster: "Coup!"
+ ChinE_imperial_provinces_percent: "Percentage of Provinces Owned by Us in the Celestial Empire"
+ ChinE_coup_diaster_tooltip: "§YThe Edict of Unification§! is issued and in effect now"

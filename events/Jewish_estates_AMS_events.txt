@@ -1,0 +1,268 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Crypto-jews
+	id = jewish_estates_events.21
+	title = "jewish_estates_events.21.t"
+	desc = "jewish_estates_events.21.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			is_year = 1570
+			owns = 97
+			OR = { 
+				CAS = { has_country_flag = amsterdam_flag_j_e }
+				POR = { has_country_flag = amsterdam_flag_j_e }
+				TAG = NED
+			}
+			NOT = {
+				OR = {
+					CAS = { owns = 97 }
+					POR = { owns = 97 }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		CAS = { clr_country_flag = amsterdam_flag_j_e }
+		POR = { clr_country_flag = amsterdam_flag_j_e }
+	}
+	
+	option = {		# Jews bring Money
+		name = "AMSTERDAM_MONEY_J_E"
+		ai_chance = { 
+			factor = 60
+			modifier = {
+				factor = 2
+				tag = NED
+			}
+		}
+		add_treasury = 250
+		add_mercantilism = 2
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 20
+		}
+		add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+			duration = 7295
+		}
+		set_country_flag = marketplace_j_e
+		set_country_flag = jewish_haven_j_e
+	}
+	option = {		# Reject
+		name = "AMSTERDAM_REJECT_J_E"
+		ai_chance = { factor = 30 }
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {	#Crypto-jews
+	id = jewish_estates_events.22
+	title = "jewish_estates_events.22.t"
+	desc = "jewish_estates_events.22.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			is_year = 1600
+			NOT = { 97 = { has_building = marketplace } }
+			owns = 97
+			estate_influence = {
+				estate = jewish_estate
+				influence = 30
+			}
+			has_country_flag  = marketplace_j_e
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	immediate = { 
+		clr_country_flag = marketplace_j_e
+		set_country_flag = jewish_haven_j_e
+	}
+	
+	option = {		# Jews bring Money
+		name = "TRADE_BUILDING_J_E"
+		97 = { add_building = marketplace }
+	}
+}
+
+country_event = {	#Migration
+	id = jewish_estates_events.23
+	title = "jewish_estates_events.23.t"
+	desc = "jewish_estates_events.23.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			is_year = 1580
+			owns = 97
+			has_country_flag = jewish_haven_j_e
+			OR = {
+				POL = { num_of_rebel_armies = 3 }
+				PLC = { num_of_rebel_armies = 3 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	option = {		# Jews bring Money
+		name = "SAFE_HAVEN_J_E"
+		97 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		add_estate_loyalty_modifier = {
+			estate = jewish_estate
+			loyalty = 10
+			duration = 3643
+		}
+		add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+			duration = 3643
+		}
+	}
+}
+
+country_event = {	#Asser Levy
+	id = jewish_estates_events.28
+	title = "jewish_estates_events.28.t"
+	desc = "jewish_estates_events.28.d"
+	picture = COLONIZATION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		AND = {
+			exists = BRZ
+			is_year = 1650
+			is_colonial_nation_of = NED
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {		# Rights in colonies
+		name = "ASSER_LEVY_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 30
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+	}
+}
+
+country_event = {	#Expelled from Spanish colonies
+	id = jewish_estates_events.30
+	title = "jewish_estates_events.30.t"
+	desc = "jewish_estates_events.30.d"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		AND = {
+			NED = { has_country_flag = sh_colonial_inq_j_e }
+			tag =  NED
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = { hidden_effect = { clr_country_flag = sh_colonial_inq_j_e } }
+
+	option = {		# Leave
+		name = "SF_COLONIAL_INQ_J_E"
+		every_subject_country = {
+			limit = {
+				has_colonial_parent = NED
+			}
+			add_tariff_value = 0.2
+		}
+		add_country_modifier = {
+			name = colonial_policy
+			duration = 4380
+			desc = GLOBAL_SETTLER_MODIFIER_J_E
+		}
+		every_subject_country = [
+			limit = {
+				AND = {
+					colonial_region = colonial_brazil
+					has_colonial_parent = NED
+				}
+			}
+			add_country_modifier = {
+				name = restricted_colonial_expansion
+				duration = 4380
+				desc = BAD_GLOBAL_SETTLER_MODIFIER_J_E
+			}
+		}
+	}
+}
+
+country_event = {	#Gems in Amsterdam
+	id = jewish_estates_events.31
+	title = "jewish_estates_events.31.t"
+	desc = "jewish_estates_events.31.d"
+	picture = ECONOMY_eventPicture
+
+	trigger = {
+		AND = {
+			is_year = 1595
+			owns = 97
+			estate_influence = {
+				estate = jewish_estate
+				influence = 65
+			}
+			NED = { has_country_flag = jewish_haven_j_e }
+			tag = NED
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {		# Gems
+		name = "GEMS_J_E"
+		97 = { change_trade_goods = gems }
+		add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+		}
+	}
+}

@@ -1,0 +1,216 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Religion
+	id = jewish_estates_events.14
+	title = "jewish_estates_events.14.t"
+	desc = "jewish_estates_events.14.d"
+	picture = CORRUPTION_eventPicture
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	trigger = {
+		AND = {
+			has_estate = jewish_estate
+			estate_influence = {
+				estate = jewish_estate
+				influence = 80
+			}
+			OR = {
+				is_in_deficit = yes
+				is_bankrupt = yes
+				num_of_loans = 5
+			}
+		}
+	}
+	 
+	option = {
+		name = "EXPANSION_J_E"
+		random_owned_province = {
+			change_religion = jewish
+			add_unrest = 10
+			add_local_autonomy = 90
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 25
+		}
+		add_stability = -1
+		ai_chance = { factor = 10 }
+	}
+	option = {
+		name = "REFUSALTOSELL_J_E"
+		add_stability = 1
+		add_loan = {
+			interest_modifier = 8
+			duration = 60
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+
+country_event = {	#Disaster Start
+	id = jewish_estates_events.15
+	title = "jewish_estates_events.15.t"
+	desc = "jewish_estates_events.15.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	 
+	option = {
+		name = "DISASTERSTART_J_E"
+	}
+}
+
+country_event = {	#Disaster END
+	id = jewish_estates_events.16
+	title = "jewish_estates_events.16.t"
+	desc = "jewish_estates_events.16.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = { change_religion = jewish }
+	 
+	option = {
+		name = "DISASTEREND_J_E"
+		add_inflation = -10
+		add_years_of_owned_provinces_production_income = {
+			years = 50
+		}
+	}
+}
+
+country_event = {	#TEST FOR DISASTER
+	id = jewish_estates_events.17
+	title = "jewish_estates_events.17.t"
+	desc = "jewish_estates_events.17.d"
+	picture = BANKRUPTCY_eventPicture
+	
+	is_triggered_only = yes
+	 
+	option = {
+		name = "DISASTEREND_J_E"
+		add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 100
+			duration = -1
+		}
+	}
+}
+
+country_event = {	#Jewish Leader
+	id = jewish_estates_events.18
+	title = "jewish_estates_events.18.t"
+	desc = "jewish_estates_events.18.d"
+	picture = ADVISOR_eventPicture
+	
+	mean_time_to_happen = {
+		months = 12000
+		modifier = {
+			factor = 0.05
+			estate_influence = {
+				estate = jewish_estate
+				influence = 75
+			}
+		}
+	}
+	
+	trigger = { has_estate = jewish_estate }
+	
+	immediate = {
+		hidden_effect = {
+			remove_advisor_by_category = ADM
+			kill_heir = {}
+		}
+	}
+	
+	after  = {
+		add_corruption = 3
+	}
+
+	option = {
+		name = "INFILTRATION_J_E"
+		random = {
+			chance = 9
+			define_heir = {
+				dynasty = ROOT
+				religion = jewish
+				claim = 50
+			}
+		}
+		random = {
+			chance = 1
+			define_heir = {
+				dynasty = ROOT
+				religion = jewish
+				culture = hebrew
+				claim = 50		
+			}
+			random_owned_province = { 
+				change_religion = jewish
+				add_unrest = 10
+				add_local_autonomy = 90
+			}
+		}
+		random= {
+			chance = 90
+			set_country_flag = jewish_advisor
+			ROOT = {
+				define_advisor = {
+					type = treasurer
+					name = "Ben Shapiro"
+					skill = 3
+					culture = hebrew
+					religion = jewish
+				}
+			}	
+		}
+	}
+}
+
+country_event = {	#Acuse
+	id = jewish_estates_events.19
+	title = "jewish_estates_events.19.t"
+	desc = "jewish_estates_events.19.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	mean_time_to_happen = {
+		months = 360
+	}
+	
+	trigger = {
+		has_country_flag = acuse_flage_j_e
+	}
+	 
+	option = {
+		name = "ACUSE_FLAG_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -15
+		}
+	}
+}
+
+country_event = {	#Disaster revolt
+	id = jewish_estates_events.20
+	title = "jewish_estates_events.15.t"
+	desc = "jewish_estates_events.15.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	 
+	option = {
+		random_owned_province = {
+			spawn_rebels = {
+				type = jewish_rebels
+				size = 2
+			}
+		}
+	}
+}

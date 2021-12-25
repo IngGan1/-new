@@ -1,0 +1,169 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+primary_culture = wallonian
+religion = catholic
+technology_group = western
+capital = 3053
+fixed_capital = 3053
+
+1333.1.1 = {
+	monarch = {
+		name = "Thiébaut"
+		dynasty = "de Saussoire"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1334.1.1 = {
+	monarch = {
+		name = "André"
+		dynasty = "Ghini"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1342.1.1 = {
+	monarch = {
+		name = "Jean IV"
+		dynasty = "des Prés"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1349.1.1 = {
+	monarch = {
+		name = "Pierre I"
+		dynasty = "de Forest"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1350.1.1 = {
+	monarch = {
+		name = "Pierre II"
+		dynasty = "d'Arbois"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1377.1.1 = {
+	monarch = {
+		name = "Pierre III"
+		dynasty = "d'Auxy"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1388.1.1 = {
+	monarch = {
+		name = "Louis I"
+		dynasty = "de la Trémouille"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1410.1.1 = {
+	monarch = {
+		name = "Jean V"
+		dynasty = "de Thoisy"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1433.1.1 = {
+	monarch = {
+		name = "Jean VI"
+		dynasty = "d'Harcourt"
+		culture = normand
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1436.11.5 = {
+	monarch = {
+		name = "Jean VII"
+		dynasty = "Chevrot"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}
+1460.1.1 = {
+	monarch = {
+		name = "Guillaume II"
+		dynasty = "Filastre"
+		birth_date = 1400.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}
+1473.1.1 = {
+	monarch = {
+		name = "Ferry I"
+		dynasty = "de Clugny"
+		birth_date = 1430.1.1
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+1483.10.7 = {
+	monarch = {
+		name = "(Vacant)"
+		regent = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+1505.1.1 = {
+	monarch = {
+		name = "Charles I"
+		dynasty = "de Hautbois"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+1513.9.23 = {
+	monarch = {
+		name = "Thomas"
+		dynasty = "Wolsey"
+		birth_date = 1473.3.1
+		culture = english
+		adm = 3
+		dip = 5
+		mil = 5
+	}
+}
+1518.10.4 = {
+	monarch = {
+		name = "Josse"
+		dynasty = "van Clichtove"
+		culture = wallonian
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}
+1524.1.1 = {
+	monarch = {
+		name = "Charles II"
+		dynasty = "de Cröy"
+		birth_date = 1506.1.1
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}

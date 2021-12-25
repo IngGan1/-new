@@ -1,0 +1,1192 @@
+can_have_colonial_nations = {
+	condition = {
+		potential = {
+			FROM = {
+				OR = {
+					has_country_flag = no_colonial_nations
+					has_global_flag = no_colonial_nations_global
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_claim_defender_of_faith = {
+	condition = {
+		potential = {
+			ai = yes is_great_power = yes
+		}
+		allow = {
+			not = { total_development = 1000 } 
+			not = { tag = HAB or = { BOH = { is_subject_of = HAB } HUN = { is_subject_of = HAB } } }
+		}
+	}
+}
+
+can_make_state = {
+	condition = {
+		tooltip = "AI_STATE_LIMITS"
+		potential = {
+			FROM = { ai = yes }
+			# Don't state overseas
+			is_overseas = yes
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_add_seat_in_parliament = {
+	condition = {
+		tooltip = "hab_seat_tooltip"
+		potential = {
+		}
+		allow = {
+			FROM = { not = { current_size_of_parliament = 30 } }
+		}
+	}
+}
+
+can_colonize_province = {
+	condition = {
+		tooltip = aaa_col_limit_tt
+		potential = {
+			has_global_flag = aaa_col_limit_flag
+		}
+		allow = {
+			OR = {
+				FROM = { ai = no } ## Player free
+				#NOT = { has_global_flag = aaa_col_limit_flag } ## ai player both (for debug : 1. this restrict 2. is_year -> is_year 3. debug)
+				AND = {
+					is_year = 1800 # Auto cancle
+					FROM = { is_colonial_nation = no } # But except colonial vassal
+				}
+				FROM = { # Colonial vassal can only colonize in their colonial region
+					is_colonial_nation = yes
+					capital_scope = { colonial_region = ROOT }
+				}
+				FROM = { # Independence Colony can only colonize in their colonial region untill 1800
+					is_former_colonial_nation = yes
+					NOT = { is_year = 1800 }
+					NOT = { tag = USA tag = BRZ tag = CAN tag = MEX } # Except (Multiple region)
+					capital_scope = { colonial_region = ROOT }
+				}
+				# Free for all
+					area = sakhalin_area
+					region = tibet_region
+					region = arabia_region
+					area = taiwan_area
+				AND = { # Early West Africa, Guinea
+					FROM = { NOT = { tag = CAS tag = SPA tag = ARA } } # Tordesillas
+					is_year = 1500 #1500 
+					OR = {
+						province_id = 3317 # Nuwaksut
+						province_id = 4752 # Dakar
+						province_id = 4749 # Banjul
+						province_id = 4741 # Bissau
+						province_id = 2241 # Free Town
+						province_id = 1126 # Ivory Coast
+						province_id = 2258 # Abidjan
+						province_id = 1165 # Princess Town
+						province_id = 1164 # Cape Coast
+						province_id = 3712 # Elmina
+						province_id = 1139 # Gold Coast (Accra)
+						province_id = 1097 # Fernando Port
+						province_id = 1306 # San Tome Principe
+					}
+				}
+				AND = { # Later West Africa, Guinea , Angola
+					FROM = { NOT = { tag = CAS tag = SPA tag = ARA } } # Tordesillas
+					is_year = 1600 #1585
+					OR = {
+						province_id = 1112 # Saint-Louis
+						province_id = 4740 # Guinea-Bissau 1
+						province_id = 1114 # Guinea-Bissau 2
+						province_id = 1118 # Sherbro
+						province_id = 4737
+						province_id = 2242 # Pepper Coast
+						province_id = 1119 # Grain Coast
+						province_id = 4736 # San Pedro
+						province_id = 4699 # Lagos
+						province_id = 4697 # Brass
+						province_id = 1151 # Port Harcourt
+						province_id = 1163 # Calabar
+						area = gulf_of_guinea_area # Libreville
+						province_id = 1166 # Pointe-Noire
+						province_id = 3519 # Kasanze
+						province_id = 1167 # Luanda
+						province_id = 1172 # Benguela
+						province_id = 1174 # Walvis Bay
+					}
+				}
+				AND = { # Cape of Good Hope
+					FROM = {
+						NOT= { # Treaty of Tordesillas # ENG NED first (1444)
+							tag = CAS tag = SPA tag = ARA tag = ENG tag = GBR tag = NED tag = HOL
+						}
+					}
+					is_year = 1660 # 1653
+					area = cape_of_good_hope_area
+				}
+				AND = { # East Africa coastline
+					FROM = { NOT = {tag = CAS tag = SPA tag = ARA tag = POR} } # Tordesillas # POR first (1630)
+					is_year = 1640 #1640
+					OR = {
+						area = limpopo_area
+						area = quelimane_area
+						area = mozambique_area
+						area = central_swahili_coast_area
+						area = mombasa_area
+						area = northern_swahili_coast_area
+						area = mogadishu_area
+					}
+				}
+				AND = { # Ethiopia
+					is_year = 1650 #1650
+					OR = {
+						area = ogaden_area
+						area = dongola_area
+						area = upper_nubia_area
+						area = sennar_area
+						area = red_sea_coast_area
+						area = tigray_area
+						area = ifat_area
+						area = southern_ethiopia_area
+						area = hadiya_area
+						area = central_ethiopia_area
+						area = damot_area
+						area = aussa_area
+						area = shewa_area
+						area = south_sudan_area
+						area = begemder_area
+						area = ennarea_area
+						area = kaffa_area
+						area = bale_area
+						area = arsi_area
+						area = harar_area
+						province_id = 1209 # Somaliland
+						province_id = 2789
+						province_id = 2792
+						province_id = 2790
+						province_id = 3973
+						province_id = 4592
+					}
+				}
+				AND = { # Spain
+					FROM = { OR = { tag = CAS tag = SPA tag = ARA } }
+					OR = {
+					# First Colonization
+						province_id = 3884 # Terenife 
+						province_id = 3316 # Buihdor
+						province_id = 3315 # Dakhla
+					# Bahama 1492
+						province_id = 482 # Bahama
+						province_id = 483 # Caicos
+					# Cuba, Hispaniola, Puerto Rico, Greater Antilles 1492
+						province_id = 484 # Havana
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 484}
+								is_year = 1600
+							}
+							OR = {
+								area = cuba_area
+								area = east_cuba_area
+								area = hispaniola_area # + Puerto Rico
+								area = dominica_area
+								area = greater_antilles_area # Jamaica, small Colombia coast islands
+							}
+						}
+					# Colombia coastline first 1508
+						area = venezuela_area
+						area = maracaibo_area
+						area = coquivacoa_area
+						area = popayan_area # pacific
+						area = quito_area # pacific
+						area = panama_area
+						AND = { # Colombia	
+							is_year = 1532 #1532
+							colonial_region = colonial_colombia
+						}
+					# Florida 1513
+						area = florida_area
+						area = north_florida_area
+					# Mexico 1517
+						colonial_region = colonial_mexico
+					# Magellan go to Philippine	1519
+						province_id = 2002 # Galapagos
+						area = northern_polynesia_area
+						area = eastern_polynesia_area
+						area = polynesia_area
+						area = micronesia_area
+						area = west_micronesia_area
+					# Inca #1532
+						province_id = 809 # Lima
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 809}
+								is_year = 1600
+							}
+							colonial_region = colonial_peru
+						}
+					# La Plata 1526
+						province_id = 778 # Buenos Aires
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 778}
+								is_year = 1600
+							}
+							colonial_region = colonial_la_plata
+						}
+					# Philippine 1565
+						area = visayas_area
+						area = palawan_area
+						area = luzon_area
+					# California 1769
+						province_id = 2021 # San Francisco 3879:Los Angeles,2476:San Diego
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 2021}
+								is_year = 1700
+							}
+							colonial_region = colonial_california
+						}
+					}
+				}
+				AND = { # Portugal
+					FROM = { tag = POR }
+					OR = {
+					# First Colonization
+						province_id = 1111 # Nouadhibou
+						province_id = 1096 # Cape Verde
+					# Brazil 1500
+						province_id = 763 # Rio de Janeiro
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 763}
+								is_year = 1600
+							}
+							colonial_region = colonial_brazil
+						}
+						AND = { # East Africa coastline # POR first (1630)
+							is_year = 1630 #1640
+							OR = {
+								area = limpopo_area
+								area = quelimane_area
+								area = mozambique_area
+								area = central_swahili_coast_area
+								area = mombasa_area
+								area = northern_swahili_coast_area
+								area = mogadishu_area
+							}
+						}
+						AND = { # Southeast Africa island
+							is_year = 1580 #1660 POR NED first (1580)
+							OR = {
+								province_id = 3602
+								area = mascarenes_area
+							}
+						}
+						AND = { # SouthEast Asia
+							is_year = 1600 # 1700 POR NED first (1600)
+							OR = {
+								area = indian_ocean_islands_area
+								area = west_sumatra_area
+								province_id = 4263
+								province_id = 4245
+								province_id = 2679
+								region = indonesia_region
+								area = sulawesi_area # except Philippine
+								area = south_sulawesi_area
+								area = east_sulawesi_area
+								area = makassar_area
+								area = timor_area
+								area = molluca_area
+								area = ceram_area
+								area = spice_islands_area
+								area = vogelkop_area
+							}
+						}
+					}
+				}
+				AND = { # England
+					FROM = { OR = { tag = ENG tag = GBR } }
+					OR = {
+					# Canada except Quebec 1583
+						region = hudson_bay_region
+						province_id = 2003
+						area = interior_plateau_area
+						area = straits_of_georgia_area
+						area = hecate_strait_area
+						area = laurentian_area
+						area = upper_acadia_area
+						area = lower_acadia_area
+						area = newfoundland_area
+						area = labrador_area
+						AND = { # Quebec 1763
+							is_year = 1720
+							OR = {
+								area = notre_dame_mountains_area
+								area = lower_canada_area
+								area = cote_nord_area
+							}
+						}
+					# USA 1607
+						province_id = 953 # Washington
+						province_id = 956 # Philadelphia
+						province_id = 965 # New York
+						province_id = 968 # Boston
+						AND = {
+							FROM = {
+								OR = {
+									owns_or_subject_of = 953
+									owns_or_subject_of = 956
+									owns_or_subject_of = 965
+									owns_or_subject_of = 968
+									is_year = 1600
+								}
+							}
+							colonial_region = colonial_eastern_america
+						}
+					# Saint Helena
+						province_id = 1098 # Saint Helena
+					# Bermuda
+						province_id = 481 # Bermuda
+					# Falkland
+						province_id = 1095 # Falkland
+					# Austria
+						province_id = 1090 # Sydney
+						province_id = 1087 # Melbourne
+						AND = {
+							FROM = {
+								OR = {
+									owns_or_subject_of = 1090
+									owns_or_subject_of = 1087
+									is_year = 1700
+								}
+							}
+							colonial_region = colonial_australia
+						}
+					# Gaiana(743 744 2931)
+						colonial_region = colonial_guyana
+					# Cape of Good Hope 1653
+						area = cape_of_good_hope_area
+					# Small Carribean Islands 1604
+						area = leeward_islands_area
+						area = windward_islands_area
+						
+						AND = { # Jamaica
+							is_year = 1600 
+							OR = {
+								province_id = 4813
+								province_id = 487
+							}
+						}
+						AND = { # Southeast Africa island
+							is_year = 1630 #1660 POR NED first (1580)
+							OR = {
+								province_id = 3602
+								area = mascarenes_area
+							}
+						}
+						AND = { # SouthEast Asia
+							is_year = 1650 # 1700 POR NED first (1600)
+							OR = {
+								area = indian_ocean_islands_area
+								area = west_sumatra_area
+								province_id = 4263
+								province_id = 4245
+								province_id = 2679
+								region = indonesia_region
+								area = sulawesi_area # except Philippine
+								area = south_sulawesi_area
+								area = east_sulawesi_area
+								area = makassar_area
+								area = timor_area
+								area = molluca_area
+								area = ceram_area
+								area = spice_islands_area
+								area = vogelkop_area
+							}
+						}
+					}
+				}
+				AND = { # Netherlands
+					FROM = { OR = { tag = HOL tag = NED } }
+					OR = {
+					# USA 1623
+						province_id = 965 # New York
+						province_id = 968 # Boston
+						AND = {
+							FROM = {
+								OR = {
+									owns_or_subject_of = 965
+									owns_or_subject_of = 968
+									is_year = 1600
+								}
+							}
+							colonial_region = colonial_eastern_america
+						}
+					# Surinam 1628
+						colonial_region = colonial_guyana
+					# Small Carribean Islands 1604
+						area = leeward_islands_area
+						area = windward_islands_area
+					# Cape of Good Hope	1653
+						area = cape_of_good_hope_area
+
+						AND = { # Southeast Africa island
+							is_year = 1580 #1660 POR NED first (1580)
+							OR = {
+								province_id = 3602
+								area = mascarenes_area
+							}
+						}
+						AND = { # SouthEast Asia
+							is_year = 1600 # 1700 POR NED first (1600)
+							OR = {
+								area = indian_ocean_islands_area
+								area = west_sumatra_area
+								province_id = 4263
+								province_id = 4245
+								province_id = 2679
+								region = indonesia_region
+								area = sulawesi_area # except Philippine
+								area = south_sulawesi_area
+								area = east_sulawesi_area
+								area = makassar_area
+								area = timor_area
+								area = molluca_area
+								area = ceram_area
+								area = spice_islands_area
+								area = vogelkop_area
+							}
+						}
+					}
+				}
+				AND = { # France
+					FROM = { tag = FRA }
+					OR = {
+					# Quebec #1534
+						province_id = 994 # Quebec
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 994}
+								is_year = 1600
+							}
+							OR = {
+								area = notre_dame_mountains_area
+								area = lower_canada_area
+								area = cote_nord_area
+								area = labrador_area
+								area = laurentian_area
+								area = upper_canada_area
+								area = huronia_area
+								area = upper_ontario_area
+							}
+						}
+					#Louisiana
+						province_id = 893 # New Orleans
+						AND = {
+							OR = {
+								FROM = {owns_or_subject_of = 893}
+								is_year = 1600
+							}
+							colonial_region = colonial_louisiana
+						}
+					# Guiana(746 3410) 1635	
+						colonial_region = colonial_guyana
+					# Small Carribean Islands 1604
+						area = leeward_islands_area
+						area = windward_islands_area	
+						
+						AND = { # Haiti
+							is_year = 1550 
+							OR = {
+								province_id = 489
+								province_id = 4811
+								province_id = 4812
+								province_id = 488
+							}
+						}
+						AND = { # Southeast Africa island
+							is_year = 1630 #1660 POR NED first (1580)
+							OR = {
+								province_id = 3602
+								area = mascarenes_area
+							}
+						}
+						AND = { # SouthEast Asia
+							is_year = 1650 # 1700 POR NED first (1600)
+							OR = {
+								area = indian_ocean_islands_area
+								area = west_sumatra_area
+								province_id = 4263
+								province_id = 4245
+								province_id = 2679
+								region = indonesia_region
+								area = sulawesi_area # except Philippine
+								area = south_sulawesi_area
+								area = east_sulawesi_area
+								area = makassar_area
+								area = timor_area
+								area = molluca_area
+								area = ceram_area
+								area = spice_islands_area
+								area = vogelkop_area
+							}
+						}
+					}
+				}
+				AND = { # Russia
+					FROM = { OR = { tag = MOS tag = RUS tag = SVU } }
+					OR = {
+					# Russia 1558
+						province_id = 3198
+						province_id = 2425
+					# Siberia 1579
+						region = west_siberia_region
+						region = east_siberia_region
+					# Mongol
+						area = tannu_uriankhai_area
+
+						AND = { # Alaska
+							is_year = 1700 # 1750 RUS CAN first (1700)
+							OR = {
+								area = alaska_area
+								area = east_alaska_area
+							}
+						}	
+					}
+				}
+				AND = { # USA
+					FROM = { tag = USA }
+					OR = {
+						area = florida_area
+						area = north_florida_area
+						region = mississippi_region
+						region = great_lakes_region
+						region = great_plains_region
+						region = california_region
+						region = rio_grande_region
+						area = oregon_area # Seattle region
+						area = snake_river_area
+						area = salish_sea_area
+						province_id = 2487
+						province_id = 2486
+						province_id = 2488
+						province_id = 2511
+						province_id = 2016
+						area = hawaii_area
+						colonial_region = colonial_eastern_america
+
+						AND = { # Alaska
+							is_year = 1750 # 1750 RUS CAN first (1700)
+							OR = {
+								area = alaska_area
+								area = east_alaska_area
+							}
+						}
+					}
+				}
+				AND = { # Brazil
+					FROM = { tag = BRZ }
+					OR = {
+						colonial_region = colonial_brazil
+						colonial_region = colonial_guyana
+					}
+				}
+				AND = { # Canada
+					FROM = { tag = CAN }
+					OR = {
+						province_id = 2003
+						area = interior_plateau_area
+						area = straits_of_georgia_area
+						area = hecate_strait_area
+						area = laurentian_area
+						area = upper_acadia_area
+						area = lower_acadia_area
+						area = newfoundland_area
+						area = labrador_area
+						area = notre_dame_mountains_area # Quebec
+						area = lower_canada_area
+						area = cote_nord_area
+
+						AND = {
+							region = hudson_bay_region
+							NOT = {province_id = 2511}
+							NOT = {province_id = 2016}
+						}
+						AND = { # Alaska
+							is_year = 1700 # 1750 RUS CAN first (1700)
+							OR = {
+								area = alaska_area
+								area = east_alaska_area
+							}
+						}
+					}
+				}
+				AND = { # Mexico
+					FROM = { tag = MEX }
+					OR = {
+						colonial_region = colonial_mexico
+						colonial_region = colonial_california
+					}
+				}
+				AND = { # Sweden Norway Denmark Iceland
+					FROM = { OR = { tag = SWE tag = NOR tag = DAN tag = ICE } }
+					OR = { # Vinland
+						area = greenland_area
+						region = canada_region
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = "hab_colony_tooltip"
+		potential = {
+			has_global_flag = hab_colony_start
+		}
+		allow = {
+			not = { has_global_flag = fast_idea }
+			OR = {
+				FROM = { ai = no }
+				FROM = {
+					is_colonial_nation = yes
+					capital_scope = { colonial_region = ROOT }
+				}
+				AND = {
+					is_island = yes
+					or = {
+						trade_company_region = trade_company_gulf_of_aden
+						trade_company_region = trade_company_ethiopia
+						trade_company_region = trade_company_alexandria
+					}
+					is_year = 1550
+				}
+				AND = {
+					FROM = {
+						OR = {
+							or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							}
+						}
+					}
+					colonial_region = colonial_the_carribean
+				}
+				AND = {
+					colonial_region = colonial_the_carribean
+					is_year = 1600
+				}
+				AND = {
+					CAS = { exists = no } SPA = { exists = no }
+					colonial_region = colonial_the_carribean
+					#is_year = 1490
+				}
+				AND = {
+					or = { POR = { exists = no } is_year = 1800 }
+					or = { colonial_region = colonial_brazil }
+				}
+				AND = {
+					FROM = {
+						or = { tag = POR colonial_parent = { tag = POR }
+							AND = {
+								capital_scope = {
+									continent = south_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_brazil
+					}
+				AND = {
+					FROM = { tag = POR }
+					is_island = no
+					or = { 
+						trade_company_region = trade_company_east_africa
+						trade_company_region = trade_company_hormuz
+					}
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					or = { POR = { exists = no } is_year = 1800 }
+					is_island = no
+					or = { 
+						trade_company_region = trade_company_east_africa
+						trade_company_region = trade_company_hormuz
+					}
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					FROM = { tag = POR }
+					or = { 
+						area = papua_area
+						area = vogelkop_area
+					}
+				}
+				AND = {
+					or = { POR = { exists = no } is_year = 1800 }
+					or = { 
+						area = papua_area
+						area = vogelkop_area
+					}
+				}
+				AND = {
+					FROM = { tag = FRA }
+					trade_company_region = trade_company_east_africa
+					is_island = yes
+					#is_year = 1650
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					#or = { FRA = { exists = no } is_year = 1850 }
+					is_year = 1500
+					is_island = yes
+					trade_company_region = trade_company_east_africa
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					FROM = { tag = FRA }
+					trade_company_region = trade_company_indochina
+					is_year = 1600
+				}
+				AND = {
+					or = { FRA = { exists = no } is_year = 1750 }
+					trade_company_region = trade_company_indochina
+				}
+				AND = {
+					FROM = { tag = NED }
+					trade_company_region = trade_company_south_africa
+					#is_year = 1500
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					is_year = 1650
+					or = { NED = { exists = no } is_year = 1800 }
+					trade_company_region = trade_company_south_africa
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					FROM = { 
+						or = { tag = FRA colonial_parent = { tag = FRA } tag = NED colonial_parent = { tag = NED }
+							AND = {
+								capital_scope = {
+									continent = south_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_guyana
+					#is_year = 1650
+				}
+				AND = {
+					or = { and = { FRA = { exists = no } NED = { exists = no } }  is_year = 1800 }
+					colonial_region = colonial_guyana
+				}
+				AND = {
+					FROM = {
+						or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							AND = {
+								capital_scope = {
+									continent = south_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_la_plata
+					is_year = 1550
+				}
+				AND = {
+					or = { and = { CAS = { exists = no } SPA = { exists = no } } is_year = 1800 }
+					colonial_region = colonial_la_plata
+				}
+				AND = {
+					FROM = { 
+						or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							AND = {
+								capital_scope = {
+									continent = south_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_peru
+					#is_year = 1500
+				}
+				AND = {
+					or = { and = { CAS = { exists = no } SPA = { exists = no } } is_year = 1700 }
+					colonial_region = colonial_peru
+				}
+				AND = {
+					FROM = { 
+						or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							AND = {
+								capital_scope = {
+									continent = south_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_colombia
+					is_year = 1500
+				}
+				AND = {
+					or = { and = { CAS = { exists = no } SPA = { exists = no } } is_year = 1800 }
+					colonial_region = colonial_colombia
+				}
+				AND = {
+					FROM = { 
+						or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_california
+					is_year = 1600
+				}
+				AND = {
+					FROM = { 
+						or = { tag = CAS tag = SPA colonial_parent = { tag = CAS } colonial_parent = { tag = SPA }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_mexico
+				}
+				AND = {
+					or = { and = { CAS = { exists = no } SPA = { exists = no } } is_year = 1800 }
+					or = { colonial_region = colonial_mexico colonial_region = colonial_california }
+				}
+				AND = {
+					FROM = { 
+						or = { tag = FRA colonial_parent = { tag = FRA }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_louisiana
+					OR = {
+						has_global_flag = louisiana_claimed
+						is_year = 1500
+					}
+				}
+				AND = {
+					or = { FRA = { exists = no } is_year = 1800 }
+					colonial_region = colonial_louisiana
+				}
+				AND = {
+					FROM = { 
+						or = { tag = ENG tag = GBR colonial_parent = { tag = ENG } colonial_parent = { tag = GBR } tag = FRA colonial_parent = { tag = FRA }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_canada
+				}
+				AND = {
+					or = { and = { ENG = { exists = no } GBR = { exists = no } FRA = { exists = no } } is_year = 1800 }
+					colonial_region = colonial_canada
+				}
+				AND = {
+					FROM = { 
+						or = { tag = ENG tag = GBR colonial_parent = { tag = ENG } colonial_parent = { tag = GBR }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_eastern_america
+					#is_year = 1520
+				}
+				AND = {
+					or = { and = { ENG = { exists = no } GBR = { exists = no } } is_year = 1800 }
+					colonial_region = colonial_eastern_america
+				}
+				AND = {
+					FROM = { 
+						or = { tag = RUS colonial_parent = { tag = RUS }
+							AND = {
+								capital_scope = {
+									continent = north_america
+								}
+								is_colonial_nation = no
+							}
+						}
+					}
+					colonial_region = colonial_alaska
+					is_year = 1700
+				}
+				AND = {
+					or = { RUS = { exists = no } is_year = 1800 }
+					colonial_region = colonial_alaska
+				}
+				AND = {
+					FROM = { 
+						or = { tag = ENG tag = GBR colonial_parent = { tag = ENG } colonial_parent = { tag = GBR } }
+					}
+					colonial_region = colonial_australia
+					is_year = 1600
+				}
+				AND = {
+					or = { and = { ENG = { exists = no } GBR = { exists = no } } is_year = 1750 }
+					colonial_region = colonial_australia
+				}
+				AND = {
+					FROM = { or = { tag = NED colonial_parent = { tag = NED } } }
+					trade_company_region = trade_company_moluccas
+					is_year = 1550
+				}
+				AND = {
+					or = { and = { NED = { exists = no } is_year = 1650 } is_year = 1700 }
+					trade_company_region = trade_company_moluccas
+				}
+				AND = {
+					FROM = { or = { tag = ENG tag = GBR colonial_parent = { tag = ENG } colonial_parent = { tag = GBR } } }
+					trade_company_region = trade_company_indonesia
+					is_year = 1550
+				}
+				AND = {
+					or = { and = { ENG = { exists = no } GBR = { exists = no } } is_year = 1700 }
+					trade_company_region = trade_company_indonesia
+				}
+				AND = {
+					FROM = { or = { tag = SPA colonial_parent = { tag = SPA } } }
+					trade_company_region = trade_company_philippines
+					is_year = 1550
+				}
+				AND = {
+					or = { and = { SPA = { exists = no } } is_year = 1700 }
+					trade_company_region = trade_company_philippines
+				}
+				AND = {
+					FROM = { capital_scope = { region = scandinavia_region } }
+					area = greenland_area
+				}
+				AND = {
+					is_year = 1700
+					area = greenland_area
+				}
+				AND = {
+					continent = africa
+					not = { trade_company_region = trade_company_west_africa }
+					not = { trade_company_region = trade_company_east_africa }
+					not = { trade_company_region = trade_company_south_africa }
+					not = { trade_company_region = trade_company_hormuz }
+					not = { has_province_modifier = african_disease_modifier }
+				}
+				AND = {
+					trade_company_region = trade_company_west_africa
+					#not = {
+						#or = {
+							#province_id = 3317
+							#province_id = 3319
+							#province_id = 3320
+							#province_id = 3321
+							#area = jolof_area
+							#area = cap_verde_area
+							#area = futa_jallon_area
+							#area = coastal_kongo
+						#}
+					#}
+					not = { has_province_modifier = african_disease_modifier }
+					#FROM = {
+						#not = {
+							#num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								#value = 10
+								#trade_company_region = trade_company_west_africa
+							#}
+						#}
+					#}
+				}
+				#AND = {
+					#or = {
+						#province_id = 3317
+						#province_id = 3319
+						#province_id = 3320
+						#province_id = 3321
+						#area = jolof_area
+						#area = cap_verde_area
+						#area = futa_jallon_area
+						#area = coastal_kongo
+					#}
+					#not = { has_province_modifier = african_disease_modifier }
+					#or = { FROM = { capital_scope = { continent = africa } } is_year = 1800 }
+				#}
+				AND = {
+					area = taiwan_area
+					or = { FROM = { capital_scope = { continent = asia } } is_year = 1800 }
+				}
+				AND = {
+					superregion = india_superregion
+					or = { FROM = { capital_scope = { superregion = india_superregion } } AND = { FROM = { tag = GBR } is_year = 1700 } is_year = 1850 }
+				}
+				AND = {
+					continent = FROM FROM = { is_colonial_nation = no }
+				}
+				AND = {
+					continent = oceania
+					NOT = { colonial_region = colonial_australia }
+					is_year = 1750
+				}
+				trade_company_region = trade_company_caribbean
+				AND = { is_year = 1800 has_global_flag = malaria_cure }
+			}
+		}
+	}
+	condition = {
+		potential = {
+			has_province_modifier = african_disease_modifier
+		}
+		allow = {	
+			or = { FROM = { ai = no } FROM = { capital_scope = { continent = africa } } }
+		}
+	}
+}
+
+can_colonize_province_siberian_frontier = {
+	condition = {
+		tooltip = NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE
+		potential = {
+			FROM = {
+				is_subject_of_type = native_reserve
+			}
+		}
+		allow = {
+			culture = FROM
+		}
+	}
+	condition = {
+		tooltip = "hab_colony_tooltip"
+		potential = {
+			has_global_flag = fast_end
+			FROM = { tag = RUS }
+		}
+		allow = {	
+			or = {
+				superregion = eastern_europe_superregion
+				region = east_siberia_region
+				region = west_siberia_region
+				region = crimea_region
+			}
+		}
+	}
+}
+
+can_improve_tax = {
+	condition = {
+		potential = {
+			development = 25
+			owner = { ai = yes not = { total_development = 200 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 35
+			owner = { ai = yes not = { total_development = 500 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 50
+			owner = { ai = yes not = { total_development = 2000 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_improve_production = {
+	condition = {
+		potential = {
+			development = 25
+			owner = { ai = yes not = { total_development = 200 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 35
+			owner = { ai = yes not = { total_development = 500 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 50
+			owner = { ai = yes not = { total_development = 2000 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+can_improve_manpower = {
+	condition = {
+		potential = {
+			development = 25
+			owner = { ai = yes not = { total_development = 200 } }
+			not = { has_province_modifier = limit_development }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 35
+			owner = { ai = yes not = { total_development = 500 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
+			development = 50
+			owner = { ai = yes not = { total_development = 2000 } }
+		}
+		allow = {
+			always = no
+		}
+	}
+}

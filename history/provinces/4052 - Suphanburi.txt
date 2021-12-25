@@ -1,0 +1,30 @@
+#4052 - Suphanburi
+
+owner = AYU
+controller = AYU
+culture = central_thai
+religion = buddhism
+capital = "Suphanburi"
+trade_goods = tropical_wood
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 1
+is_city = yes
+fort_15th = yes
+add_core = AYU
+center_of_trade = 2
+
+
+
+discovered_by = chinese
+discovered_by = indian
+
+
+
+
+1535.1.1 = { discovered_by = POR }
+
+1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
+1768.1.1 = { capital = "Thonburi" }
+1774.1.1 = { unrest = 0 }

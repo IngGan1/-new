@@ -1,0 +1,39 @@
+holy_roman_emperor = {
+	potential = {
+        OR = {
+            tag = HAB
+            tag = STY
+        }
+		ai = yes
+	}
+	trigger = {
+        religion = catholic
+	}
+    diplomatic_reputation = 1
+    diplomatic_upkeep = 2
+	heir_chance = 2
+}
+
+ge_great_power_luck = {
+    potential = {
+                OR = {
+                    tag = HAB
+                    tag = STY
+                    tag = FRA
+                    tag = BRA
+                    tag = MOS
+                    tag = ENG
+                    tag = CAS
+                    tag = POR
+                    tag = HOL
+                    tag = POL
+					tag = PER
+                }
+	}
+	trigger = {
+                current_age = age_of_discovery
+				NOT = { is_year = 1550 }
+	}
+    global_institution_spread = 1
+	technology_cost = -0.05
+}

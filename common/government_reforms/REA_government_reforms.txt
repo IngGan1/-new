@@ -1,0 +1,89 @@
+
+#hungu, sarim
+confucian_government_1 = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = { religion = confucianism }
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = no
+	basic_reform = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		#locked_government_type = yes
+	}
+
+	factions = {
+		hungu_faction
+		sarim_faction
+	}
+}
+
+
+#geunwang, sarim
+confucian_government_2 = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = { religion = confucianism }
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = no
+	basic_reform = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		#locked_government_type = yes
+	}
+
+
+	factions = {
+		sarim_faction
+		geunwang_faction
+	}
+}
+
+
+
+#geunwang, sarim, cheoksin
+confucian_government_3 = {
+	icon = "celestial_empire"
+	allow_normal_conversion = no
+	potential = { religion = confucianism }
+	legacy_equivalent = despotic_monarchy
+	valid_for_nation_designer = no
+	basic_reform = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+
+	}
+	
+	ai = {
+		factor = 1000 # should always be picked if available
+	}
+
+	custom_attributes = {
+		#locked_government_type = yes
+	}
+
+	factions = {
+		sarim_faction
+		geunwang_faction
+		cheoksin_faction
+	}
+}

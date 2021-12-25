@@ -1,0 +1,13 @@
+owner = DAH #Early kingdom of Allada/Ardra
+controller = DAH
+add_core = DAH
+is_city = yes
+culture = fon
+religion = shamanism
+capital = "Atakpam?
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = sub_saharan

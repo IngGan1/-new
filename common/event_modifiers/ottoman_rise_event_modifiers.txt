@@ -1,0 +1,15 @@
+fear_in_the_ranks = {
+	discipline = 0.05
+}
+
+dishonorable_surrender = {
+	land_morale = -0.20
+	discipline = -0.10
+	manpower_recovery_speed = -0.25
+}
+
+janissary_support = {
+	land_morale = 0.10
+	discipline = 0.05
+	manpower_recovery_speed = 0.10
+}

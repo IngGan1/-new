@@ -1,0 +1,142 @@
+ge_sengoku_jidai = {
+	potential = {
+		OR = {
+			 has_reform = daimyo
+			 has_reform = indep_daimyo
+		}  
+	}
+	trigger = {
+		has_global_flag = onin_war_flag
+		OR = {
+			overlord = {
+				has_reform = shogunate
+				NOT = { num_of_cities = 20 }
+			}
+			AND = {
+				has_reform = indep_daimyo
+				is_subject = no
+			}
+		}
+		
+	}
+	land_forcelimit_modifier = 0.25
+	global_manpower_modifier = 0.25
+	reinforce_speed = 0.30
+	manpower_recovery_speed = 0.3
+	monarch_military_power = 2
+	global_unrest = 2
+	ae_impact = 0.5
+}
+
+sengoku_period = {
+	potential = {
+    has_reform = daimyo
+	always = no
+	}
+	trigger = {
+	is_year = 1444
+    NOT = { has_global_flag = onin_war_flag }
+	}
+    liberty_desire = 50
+}
+
+ge_sengoku_luck = {
+	potential = {
+		ai = yes
+		has_reform = daimyo
+		OR = {
+		  tag = TKD
+		  tag = MRI
+		  tag = ODA
+		  tag = TKG
+		  tag = HJO
+		}
+	}
+	trigger = {
+		is_year = 1467
+		has_global_flag = onin_war_flag
+		NOT = { is_year = 1616 }
+	}
+	all_power_cost = -0.15
+	ae_impact = -0.5
+	advisor_pool = 1
+}
+
+ai_chinese_balance = {
+	potential = {
+		ai = yes
+		OR = {
+			  tag = MNG
+		}
+	}
+	trigger = {
+		is_year = 1444
+        NOT = { is_year = 1500 }
+	}
+	mercenary_manpower = -1
+	build_cost = 1
+	global_institution_spread = -0.5
+	range = -1
+}
+ai_chinese_balance2 = {
+	potential = {
+		ai = yes
+		OR = {
+			tag = MNG
+		}
+	}
+	trigger = {
+		is_year = 1500
+		NOT = { is_year = 1600 }
+	}
+	build_cost = 1
+	global_institution_spread = -0.5
+	range = -1
+	monarch_admin_power = -1
+	monarch_diplomatic_power = -1
+	monarch_military_power = -1
+}
+ai_chinese_balance3 = {
+	potential = {
+		ai = yes
+		OR = {
+			tag = MNG
+		}
+	}
+	trigger = {
+		is_year = 1600
+	}
+	build_cost = 1
+	global_institution_spread = -0.5
+	range = -1
+	monarch_admin_power = -2
+	monarch_diplomatic_power = -2
+	monarch_military_power = -2
+}
+
+
+
+ge_pyotr_luck = {
+	potential = {
+		ai = yes
+		OR = {
+		  tag = RUS
+		  tag = MOS
+		}
+	}
+	trigger = {
+		is_year = 1682
+        NOT = { total_development = 1000 }
+	}
+	manpower_recovery_speed = 0.3
+	cavalry_flanking = 0.5
+	yearly_corruption = -1
+	all_power_cost = -0.1
+	advisor_pool = 3
+	global_tax_modifier = 1
+	production_efficiency = 1
+	global_unrest = -1
+	land_morale = 0.1
+	discipline = 0.05
+	build_cost = -0.15
+}

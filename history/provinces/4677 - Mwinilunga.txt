@@ -1,0 +1,15 @@
+owner = KIK
+controller = KIK
+add_core = KIK
+culture = chokwe
+religion = shamanism #Fetishism
+capital = "Mwinilunga"
+trade_goods = ivory
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african
+
+1700.1.1 = { owner = LUB controller = LUB add_core = LUB }

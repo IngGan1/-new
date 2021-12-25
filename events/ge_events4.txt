@@ -1,0 +1,1389 @@
+namespace = ge_events
+# Mughal Invasion against India
+country_event = { 
+	id = ge_events.12
+	title = "ge_events.12.t"
+	desc = "ge_events.12.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+            major = yes
+
+	trigger = {
+        tag = TIM
+		BOO = { exists = no }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge12 }
+		is_year = 1526
+		NOT = {
+			is_year = 1536
+		}
+		TIM = {
+				   exists = yes
+				   ai = yes
+				   was_player = no
+				   is_subject = no
+				   is_at_war = no
+		}
+		DLH = {
+				   ai = yes
+				   was_player = no
+		}
+		SHY = {
+				   ai = yes
+				   was_player = no
+		}
+		JNP = {
+				   ai = yes
+				   was_player = no
+		}
+		MUL = {
+				   ai = yes
+				   was_player = no
+		}
+		JAN = {
+				   ai = yes
+				   was_player = no
+		}
+		MEW = {
+				   ai = yes
+				   was_player = no
+		}
+		DHU = {
+				   ai = yes
+				   was_player = no
+		}
+		GWA = {
+				   ai = yes
+				   was_player = no
+		}
+		BNG = {
+				   ai = yes
+				   was_player = no
+		}
+		ORI = {
+				   ai = yes
+				   was_player = no
+		}
+		SRH = {
+				   ai = yes
+				   was_player = no
+		}
+		KSH = {
+				   ai = yes
+				   was_player = no
+		}
+		MUG = {
+				   exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.12.a
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+		add_adm_power = 900
+		add_dip_power = 900
+		add_mil_power = 900
+        add_prestige = 50
+		add_manpower = 100
+		add_stability = 6
+		add_corruption = -5
+		add_treasury = 3000
+		add_meritocracy_effect = yes
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+        define_ruler = {
+			name = "Babur"
+			dynasty = "Timurid"
+			adm = 5
+			dip = 5
+			mil = 5
+                                    fixed = yes
+			age = 43
+		}
+		add_ruler_modifier = { name = historically_strong_king }
+        define_heir = {
+			name = "Humayun"
+			dynasty = "Timurid"
+			adm = 4
+			dip = 5
+			mil = 4
+			age = 18
+		}
+		inherit = AFG
+		#inherit = DLH
+		inherit = MUL
+		inherit = JAN
+		inherit = MEW
+		inherit = DHU
+		inherit = SRH
+		inherit = MUG
+		central_asia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		west_siberia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		crimea_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = NOG
+				   add_core = NOG
+		}
+		russia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = MOS
+				   add_core = MOS
+		}
+		makran_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = BAL
+				   add_core = BAL
+		}
+		sistan_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SIS
+				   add_core = SIS
+		}
+		kalat_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = BAL
+				   add_core = BAL
+		}
+		herat_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		merv_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		sirhind_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		upper_doab_area = { 
+				  limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		central_doab_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		katehar_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		lahore_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		sind_sagar_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		kabulistan_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		jaipur_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		jangladesh_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		multan_area = { 
+				   limit = { or = { owned_by = DLH owned_by = JNP } }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		if = {
+			limit = { PER = { ai = yes } }
+			birjand_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = PER
+				add_core = PER
+			}
+			mashhad_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = PER
+				add_core = PER
+			}
+			persia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = PER
+				   add_core = PER
+			}
+			4216 = { if = { limit = { not = { fort_level = 2 } } }
+			add_building = fort_15th
+			}
+		}
+		if = {
+			limit = { PER = { ai = no } }
+			birjand_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = KHO
+				add_core = KHO
+			}
+			mashhad_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = KHO
+				add_core = KHO
+			}
+		}
+		every_province = {
+			limit = {
+				region = hindusthan_region
+			}
+			add_permanent_claim = TIM
+		}
+		TUR = {
+			add_trust = {
+				who = TIM
+				value = -100
+				mutual = yes
+			}
+		}
+		SHY = {
+			if = {
+				limit = { is_subject = no }
+				every_owned_province = {
+					limit = {
+						region = west_siberia_region
+					}
+					add_core = SIB
+					cede_province = SIB
+				}
+				release = KZH
+			}
+		}
+		}
+	} 
+}
+
+# Mughal Invasion against India
+country_event = { 
+	id = ge_events.13
+	title = "ge_events.12.t"
+	desc = "ge_events.12.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+            major = yes
+
+	trigger = {
+        tag = TIM
+		BOO = { exists = yes }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge12 }
+		is_year = 1526
+		NOT = {
+			is_year = 1536
+		}
+		TIM = {
+				   exists = yes
+				   ai = yes
+				   was_player = no
+				   is_subject = no
+		}
+		DLH = {
+				   ai = yes
+				   was_player = no
+		}
+		SHY = {
+				   ai = yes
+				   was_player = no
+		}
+		JNP = {
+				   ai = yes
+				   was_player = no
+		}
+		MUL = {
+				   ai = yes
+				   was_player = no
+		}
+		JAN = {
+				   ai = yes
+				   was_player = no
+		}
+		MEW = {
+				   ai = yes
+				   was_player = no
+		}
+		DHU = {
+				   ai = yes
+				   was_player = no
+		}
+		GWA = {
+				   ai = yes
+				   was_player = no
+		}
+		BNG = {
+				   ai = yes
+				   was_player = no
+		}
+		ORI = {
+				   ai = yes
+				   was_player = no
+		}
+		SRH = {
+				   ai = yes
+				   was_player = no
+		}
+		KSH = {
+				   ai = yes
+				   was_player = no
+		}
+		MUG = {
+				   exists = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.12.a  
+		ai_chance = { factor = 100 }
+		hidden_effect = {
+		add_adm_power = 900
+		add_dip_power = 900
+		add_mil_power = 900
+        add_prestige = 50
+		add_manpower = 100
+		add_stability = 6
+		add_corruption = -5
+		add_treasury = 2000
+		add_meritocracy_effect = yes
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+        define_ruler = {
+			name = "Babur"
+			dynasty = "Timurid"
+			adm = 5
+			dip = 5
+			mil = 5
+                                    fixed = yes
+			age = 43
+		}
+		add_ruler_modifier = { name = historically_strong_king }
+        define_heir = {
+			name = "Humayun"
+			dynasty = "Timurid"
+			adm = 4
+			dip = 5
+			mil = 4
+			age = 18
+		}
+		central_asia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		west_siberia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		crimea_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = NOG
+				   add_core = NOG
+		}
+		russia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = MOS
+				   add_core = MOS
+		}
+		makran_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = BAL
+				   add_core = BAL
+		}
+		sistan_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SIS
+				   add_core = SIS
+		}
+		kalat_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = BAL
+				   add_core = BAL
+		}
+		herat_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		merv_area = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = SHY
+				   add_core = SHY
+		}
+		sirhind_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		upper_doab_area = { 
+				  limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		central_doab_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		katehar_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		lahore_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		sind_sagar_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		kabulistan_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		east_oudh_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		east_oudh_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		oudh_area = { 
+				   limit = { owned_by = BOO }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		jaipur_area = { 
+				   limit = { owned_by = BO8 }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		jangladesh_area = { 
+				   limit = { owned_by = BO8 }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		multan_area = { 
+				   limit = { owned_by = BOO  }
+				   cede_province = TIM
+				   add_core = TIM
+				   remove_core = DLH
+				   remove_core = JNP
+		}
+		if = {
+			limit = { PER = { ai = yes } }
+			birjand_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = PER
+				add_core = PER
+			}
+			mashhad_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = PER
+				add_core = PER
+			}
+			persia_region = { 
+				   limit = { owned_by = TIM }
+				   remove_core = TIM
+				   cede_province = PER
+				   add_core = PER
+			}
+			4216 = { if = { limit = { not = { fort_level = 2 } } }
+			add_building = fort_15th
+			}
+		}
+		if = {
+			limit = { PER = { ai = no } }
+			birjand_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = KHO
+				add_core = KHO
+			}
+			mashhad_area = { 
+				limit = { owned_by = TIM }
+				remove_core = TIM
+				cede_province = KHO
+				add_core = KHO
+			}
+		}
+		TUR = {
+			add_trust = {
+				who = TIM
+				value = -100
+				mutual = yes
+			}
+		}
+		SHY = {
+			every_owned_province = {
+				limit = {
+					region = west_siberia_region
+				}
+				add_core = SIB
+				cede_province = SIB
+			}
+			release = KZH
+		}
+		every_owned_province = {
+			remove_core = BOO
+		}
+		}
+	} 
+}
+
+country_event = { 
+	id = ge_events.103
+	title = "ge_events.12.t"
+	desc = "ge_events.12.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = MUG
+		ai = yes
+		BOO = { exists = yes }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge12 }
+		is_year = 1556
+		NOT = {
+			is_year = 1576
+		}
+	}
+	option = {
+		name = ge_events.12.a
+		hindusthan_region = { 
+			limit = { owned_by = BOO }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		every_owned_province = {
+			remove_core = BOO
+		}
+	}
+}
+
+country_event = { 
+	id = ge_events.104
+	title = "ge_events.12.t"
+	desc = "ge_events.12.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+        tag = MUG
+		ai = yes
+		BO8 = { exists = yes }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge12 }
+		is_year = 1596
+		NOT = {
+			is_year = 1616
+		}
+	}
+	option = {
+		name = ge_events.12.a
+		sindh_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		northern_sindh_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		marwar_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		mewar_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		ahmedabad_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		patan_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		saurashtra_area = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		every_owned_province = {
+			remove_core = BO8
+		}
+	}
+}
+
+country_event = { 
+	id = ge_events.105
+	title = "ge_events.12.t"
+	desc = "ge_events.12.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+        tag = MUG
+		ai = yes
+		BO8 = { exists = yes }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge12 }
+		is_year = 1636
+		NOT = {
+			is_year = 1646
+		}
+	}
+	option = {
+		name = ge_events.12.a
+		west_india_region = { 
+			limit = { owned_by = BO8 }
+			cede_province = MUG
+			add_core = MUG
+			remove_core = DLH
+			remove_core = JNP
+		}
+		every_owned_province = {
+			remove_core = BO8
+		}
+	}
+}
+	
+# Death of Shah Rukh
+country_event = { 
+	id = ge_events.67
+	title = "ge_events.67.t"
+	desc = "ge_events.67.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+    major = yes
+
+	trigger = {
+        tag = QAR
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge69 }
+		is_year = 1447
+		NOT = {
+		is_year = 1467
+		}
+        QAR = {
+            exists = yes
+            ai = yes
+			was_player = no
+			is_subject = no
+        }
+        TIM = {
+            exists = yes
+            ai = yes
+			was_player = no
+			is_subject = no
+        }
+                        ARD = {
+                                    ai = yes
+			was_player = no
+                        }
+                        QOM = {
+                                    ai = yes
+			was_player = no
+                        }
+                        LRI = {
+                                    ai = yes
+			was_player = no
+                        }
+                        MSY = {
+                                    ai = yes
+			was_player = no
+                        }
+                        FRS = {
+                                    ai = yes
+			was_player = no
+                        }
+                        KHO = {
+                                    ai = yes
+			was_player = no
+                        }
+                        ARL = {
+                                    ai = yes
+			was_player = no
+                        }
+                        TAB = {
+                                    ai = yes
+			was_player = no
+                        }
+                        KRY = {
+                                    ai = yes
+			was_player = no
+                        }
+                        BPI = {
+                                    ai = yes
+			was_player = no
+                        }
+                        MLK = {
+                                    ai = yes
+			was_player = no
+                        }
+                        BTL = {
+                                    ai = yes
+			was_player = no
+                        }
+                        AKK = {
+                                    ai = yes
+			was_player = no
+                        }
+                        HSN = {
+                                    ai = yes
+			was_player = no
+                        }
+                        TRS = {
+                                    ai = yes
+			was_player = no
+                        }
+                        SIS = {
+                                    ai = yes
+			was_player = no
+                        }
+                        AFG = {
+                                    ai = yes
+			was_player = no
+                        }
+            }
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.67.a  
+		ai_chance = { factor = 100 }
+                        add_prestige = 10
+		add_stability = 1
+                        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+		inherit = ARD
+		inherit = LRI
+		inherit = QOM
+		inherit = MSY
+		inherit = FRS
+		TIM = { 
+			  inherit = AFG
+			  inherit = TRS
+			  inherit = SIS
+			  inherit = KHO
+		}
+	} 
+}  
+
+# Fall of the Qara Qoyunlu
+country_event = { 
+	id = ge_events.68
+	title = "ge_events.68.t"
+	desc = "ge_events.68.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+    major = yes
+
+	trigger = {
+		tag = AKK
+		is_subject = no
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge69 }
+		is_year = 1468  
+		NOT = {
+			is_year = 1488
+		}		
+        AKK = {
+            exists = yes
+            ai = yes
+			was_player = no                        
+        }                        
+        QAR = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_subject = no
+        }
+        TIM = {
+            ai = yes
+			was_player = no
+        }
+        ARD = {
+            ai = yes
+			was_player = no
+        }
+        QOM = {
+            ai = yes
+			was_player = no
+        }
+        LRI = {
+            ai = yes
+			was_player = no
+         }
+        MSY = {
+            ai = yes
+			was_player = no
+        }
+        FRS = {
+            ai = yes
+			was_player = no
+        }
+        KHO = {
+            ai = yes
+			was_player = no
+        }
+        ARL = {
+            ai = yes
+			was_player = no
+        }
+        TAB = {
+            ai = yes
+			was_player = no
+        }
+        KRY = {
+            ai = yes
+			was_player = no
+        }
+        BPI = {
+            ai = yes
+			was_player = no
+        }
+        MLK = {
+            ai = yes
+			was_player = no
+        }
+        BTL = {
+            ai = yes
+			was_player = no
+        }
+        HSN = {
+            ai = yes
+			was_player = no
+        }
+        TRS = {
+            ai = yes
+			was_player = no
+        }
+        SIS = {
+            ai = yes
+			was_player = no
+        }
+        AFG = {
+            ai = yes
+			was_player = no
+        }
+    }
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ge_events.68.a  
+		ai_chance = { factor = 100 }
+                        add_prestige = 10
+		add_stability = 1
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+        inherit = TAB
+        inherit = BPI
+        inherit = BTL
+        inherit = KRY
+        inherit = ARL
+        inherit = QAR
+        inherit = KHO
+        inherit = HSN
+		every_owned_province = { remove_core = QAR remove_core = QOM }
+		add_accepted_culture = persian
+		khorasan_region = { 
+			limit = { 
+				owned_by = AKK
+			}
+			remove_core = AKK cede_province = TIM add_core = TIM
+		}
+	} 
+}  
+
+# Rise of the Safavid
+country_event = { 
+	id = ge_events.69
+	title = "ge_events.69.t"
+	desc = "ge_events.69.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+    major = yes
+
+	trigger = {
+		is_year = 1500
+		NOT = {	is_year = 1520 }
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge69 }
+        or = { tag = AKK and = { AKK = { exists = no } or = { tag = QAR tag = TRK } } }
+		AKK = { is_subject = no }
+		QAR = { is_subject = no }
+		ARL = { or = { exists = no ai = yes } }
+		ai = yes
+    }
+
+	immediate = {
+		hidden_effect = {
+			shirvan_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 cede_province = SRV
+			}
+			armenia_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 add_core = PER
+			}
+			azerbaijan_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 add_core = PER
+			}
+			tabriz_area = { 
+				 limit = { 
+					   or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 add_core = PER
+			}
+			tabarestan_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 add_core = PER
+			}
+			iraq_e_ajam_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				 }
+				 add_core = PER
+			}
+			shahrizor_area = { 
+				 limit = { 
+					  or = { owned_by = AKK owned_by = QAR owned_by = TRK }
+				  }
+				 add_core = PER
+			}
+			release = PER
+		    PER = {
+				change_government = monarchy
+				add_government_reform = feudal_theocracy
+				every_owned_province = { remove_core = AKK remove_core = QAR remove_core = QOM remove_core = TRK }
+				if = { limit = { ARL = { ai = yes is_subject = no } }
+				inherit = ARL
+				}
+				every_owned_province = {
+					limit = {
+						region = persia_region
+					}
+					add_permanent_claim = PER
+				}
+			}
+		}
+    }
+
+	option = {
+		name = ge_events.69.a  
+		ai_chance = { factor = 100 }
+        PER = { country_event = { id = ge_events.70 days = 3 } } 
+        add_country_modifier = {
+			name = "decline_akk"
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+        id = ge_events.70
+        title = ge_events.70.t
+        desc = ge_events.70.d
+        picture = BATTLE_eventPicture
+
+        is_triggered_only = yes
+  
+        option = { 
+        name = ge_events.70.a
+        ai_chance = { factor = 100 }
+        add_prestige = 10
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_yearly_manpower = 10
+		add_years_of_income = 10
+		add_meritocracy_effect = yes
+        add_country_modifier = {
+		 	name = "centralised_state"
+	 		duration = 7300
+	    } 
+        define_ruler = {
+			name = "Ismail"
+			dynasty = "Safavid"
+			adm = 5
+			dip = 5
+			mil = 5
+            fixed = yes
+			age = 15
+		}
+		if = { limit = { PER = { ai = yes } }
+			add_adm_power = 1900
+			add_dip_power = 1900
+			add_mil_power = 1900
+			add_stability = 6
+			add_corruption = -100
+			add_yearly_manpower = 100
+			add_treasury = 2000
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 2
+					cavalry = 1
+					artillery = 1
+				}
+			}
+			AKK = {
+				declare_war_with_cb = { 
+					who = PER
+					casus_belli = cb_annex
+				}
+			}
+			QAR = {
+				declare_war_with_cb = { 
+					who = PER
+					casus_belli = cb_annex
+				}
+			}
+		}
+    }
+}
+       
+country_event = { 
+	id = ge_events.71
+	title = "ge_events.71.t"
+	desc = "ge_events.71.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+    major = yes
+
+	trigger = {
+        tag = PER
+		ai = yes
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge69 }
+		is_year = 1501
+		NOT = {
+			is_year = 1521
+		}
+		
+        AKK = {
+            exists = yes
+            ai = yes
+			was_player = no
+			is_subject = no
+        }
+		TIM = {
+		ai = yes
+		was_player = no
+		}
+		ARD = {
+		ai = yes
+		was_player = no
+		}
+		QOM = {
+		ai = yes
+		was_player = no
+		}
+		LRI = {
+		ai = yes
+		was_player = no
+		}
+		MSY = {
+		ai = yes
+		was_player = no
+		}
+		FRS = {
+		ai = yes
+		was_player = no
+		}
+		KHO = {
+		ai = yes
+		was_player = no
+		}
+		ARL = {
+		ai = yes
+		was_player = no
+		}
+		TAB = {
+		ai = yes
+		was_player = no
+		}
+		KRY = {
+		ai = yes
+		was_player = no
+		}
+		BPI = {
+		ai = yes
+		was_player = no
+		}
+		MLK = {
+		ai = yes
+		was_player = no
+		}
+		BTL = {
+		ai = yes
+		was_player = no
+		}
+		AKK = {
+		ai = yes
+		was_player = no
+		}
+		HSN = {
+		ai = yes
+		was_player = no
+		}
+		TRS = {
+		ai = yes
+		was_player = no
+		}
+		SIS = {
+		ai = yes
+		was_player = no
+		}
+		AFG = {
+		ai = yes
+		was_player = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = ge_events.71.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 10
+		add_stability = 1
+		add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+        if = {
+			limit = { PER = { ai = yes } }
+			inherit = AKK
+			inherit = QAR
+			inherit = TRK
+			persia_region = { 
+				limit = { owner = { ai = yes } }
+				cede_province = PER
+				add_core = PER
+			}
+			mashhad_area = { 
+				limit = { owner = { ai = yes } }
+				cede_province = PER
+				add_core = PER
+			}
+			every_owned_province = { 
+				remove_core = AKK
+				remove_core = QAR
+				remove_core = TRK
+			}
+		}
+		4234 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+			remove_building = fort_14th
+		}
+		3445 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		2223 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		2234 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+			remove_building = fort_14th
+		}
+		3116 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		435 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		436 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		4215 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		3115 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		3745 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		3814 = { if = { limit = { owned_by = PER not = { fort_level = 2 } } }
+			add_building = fort_15th
+		}
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.5
+				cavalry = 0.2
+				artillery = 0.3
+			}
+		}
+	} 
+}  

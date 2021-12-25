@@ -1,0 +1,30 @@
+mos_civil_war_troubles = {
+	global_unrest = 10
+	stability_cost_modifier = 0.2
+}
+
+denied_qasim_khan = {
+	local_unrest = 5
+	local_tax_modifier = -0.25
+	local_autonomy = -0.03
+}
+
+vasily_dmitry_shares_power = {
+	legitimacy = -1
+	diplomatic_reputation = -2
+}
+
+MOS_civil_war_ravaged = {
+	local_tax_modifier = -0.10
+	local_manpower_modifier = -0.25
+	province_trade_power_modifier = -0.10
+}
+
+MOS_inefficient_spies = {
+	global_spy_defence = -0.2
+	spy_offence = -0.25
+}
+
+mos_civil_war_vasily_ii_captured = {
+	land_morale = -0.20
+}

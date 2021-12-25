@@ -1,0 +1,506 @@
+﻿l_english:
+ power_projection_idea_groups_expanded: "8Á%¸ ,Ò¬À tÇP±"
+ power_projection_idea_groups_expanded_bonus: "8Á%¸ ,Ò¬À tÇP± ô¼±²Â"
+ long_echo: "4® TºDÅ¬¹" 
+ long_echo_desc: "m­È 4»³ÐÅÁ °Æ¬¹XÇ tÈ¬Ç”² °¬TÏ ¬¼¼tÇ ìÅ¨¬ÀÉÀÉ JÅµÂÈ²ä². Ë¬ÁÇm­XÇ ÀÉÄ³Çä´NÇ °Æ¬¹XÇ xÆP­­ä´DÇ ô¼tº ¼Åt­tÇ =Ì1¼tÕÀÉà¬, Èµ· LÑtÇ¾ÐÅÁ °Æ¬¹XÇ ÇXÎ”² ¬%¸XÕà¬ ÀÉ0¼ÈxÇ …ÇÀÉj¸ ìÅ¨¬ÑÉÈ²ä²."
+ soft_power: "ðÅ1ÁŒ­%¸"
+ soft_power_desc: "œÓtÇ |Îô¼ä² ¬XÕä²”² Ð¹tÇ ˆÇµÂÈ²ä². °Æ¬¹XÇ xÆP­ Ö¥ÇÐÅÁ”² UÖäÂˆ× ø­ì·iÕÈ²ä². DÅ4»¬¹ ©ºtÇ ã¾ã¾jÕ ÀÉÄ³Ç|·Ä³ °Æ¬¹ ­ÈXÇ xÇ¥Ç ^ÅÐÅÁ”² t­õ¼XÕà¬ Ù¹È²ä²."
+ foreign_influence: "³xÆ Æ¥Õ%¸"
+ foreign_influence_desc: "°Æ¬¹XÇ ³¬À­NÇ D¾¼²Âý·Œ¬ Èô¼|¹ P­XÖ`Õ Â ˆÇ”² Ç¬¹…ÇÈ²ä². tÇó¬NÇ °Æ¬¹XÇ tÇÃÆä´ÐÅŒ¬ Æ¥ÕDÇ |°XÎà¬ °Æ¬¹XÇ …ÇÛ¹³j¸ ø­ä´DÇ tÇ©ÆXÕ2¸”² ÜÂÄ³¬ tÇè¸´ÅÀÉ”² ŒÁt­…ÇÈ²ä²."
+ global_navy: "m­ÈÈxÇ tÕp­"
+ global_navy_desc: "°Æ¬¹Ì¹jÕ Ü­¨ºNÆ ìÓ­ÈxÇ tÈ¬Ç¬DÇ ¬ÄÉ ˜°|·”² °Æ¬¹NÆ Ù³ù¹m­XÇ tÇuÇDÇ ÀÉÏÉ ÉD¾¬ ´ mÕl­ÈtÇà¬ ÖàÂÈxÇ tÕp­%¸DÇ ô¼.ÇtÕ|Å iÕÈ²ä². ¬%¸jÕ tÕp­DÇ =Ì2ÁXÕà¬ Ç®DÇ ÀÉÐÆXÕ”² ƒ¬NÇ 8ÁÄ¬ÐÅÁ °Æ¬¹¬ ¬ÄÉ …ÇÀÉ|¹ ’±ìÅÉ ƒ¬…ÇÈ²ä²."
+ shock_marines: "ÈÆ tÕÑ¼³"
+ shock_marines_desc: "Í0® Ö³ 8ÁÄ¬XÇ ¹ÒÂŽ´³j¸ ÈÌŒ× ÈÆ tÕÑ¼³”² Ž±|·¸Æ ÈÄ³XÇ ÈÖ(¸DÇ ¼XÅ<Çpº, !ÇÀÉNÆ ¼ä²ÐÅÁ ø­ä´XÇ íÅ`ÕDÇ ä²ˆÕµÂÈ²ä². Èä´XÇ tÕÀ¼ÐÅ ÁÀY¹XÕp¬˜° DÕ”ÆjÕ È¥ÇÐÅ 0¼Á.´ LµÐÅ °Æ¬¹XÇ tÕÑ¼³¬ tÕ´°ÀÉ »º`Õ |ÇNÇ ÆÅµÂÈ²ä²."
+ influencial_traders: "Æ¥Õ%¸ ˆÇ”² ÁÀxÇ"
+ influencial_traders_desc: "°Æ¬¹XÇ ÁÀxÇä´NÇ …ºÝ¹tÇ ˆÇ<Çpº, Î¹NÇ ¬ÀŒ·ä´XÇ Ž´„¹DÇ ¼µÂÈ²ä². ø­ä´ü¬ p¬˜·XÕ”² ƒ¬NÇ ¬¥Ç Ž´.ÇXÕà¬ ð¶´Åœ° ¬ÀŒ·ä´XÇ ´Åh®|¹ üÈ4»t¹”² ƒ¬ü¬Ä³ ¬µÂÈ²ä². tÇ tÇø»ÀÉNÆ ÂuÇDÇ .ÇÀÉiÕÜÂä²."
+ far_and_wide: "T³ Nº¬¹, T³ ±Œ¬"
+ far_and_wide_desc: "°Æ¬¹XÇ ÁÀ.Á tÕp­NÇ ÀÉl­XÇ ¼³¸ÓL®ÀÉ ä²ä²|¹ ƒ¬…ÇÈ²ä². °Æ¬¹XÇ ÈN¸ ÆÅ”² ÁÀÅÅÈ Èü­ U³„´ÐÅ, ÈÀj¸´Æ ÁÀˆÔü¬ ø¼ È ÆÅ”² ¬ÇÌ¸ä´tÇ °Æ¬¹XÇ ÜÂ¥ÇÐÅ ˜°ÀÐ˜°Œ¬ ´ÈÅµÂÈ²ä²."
+ 
+ #V1.4
+ piracy_idea_groups_expanded: "tÕÈ tÇP±"
+ piracy_idea_groups_expanded_bonus: "‹ÅÈÐÇä´XÇ õ¬TÖm­"
+ loot_for_all: "¨ºP´|¹ ÇjÕ ‹ÅÈÐ!"
+ loot_for_all_desc: "DÅ4»¬¹ ÇtÈìÂ ¬jÕ tÕÈtÇ|·Ä³, TÖ2¸XÕà¬ ÔŽ´jÕ ‹ÅÈÐDÇ ‹ÅÁXÕÀÉ JÅ”²ä²tº °Æ¬¹XÇ ³XÇÐÅ 0µt¹ÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ veteran_seadogs: " ¼LÑ‘· <»¬ä´"
+ veteran_seadogs_desc: "¼ä²ÐÅÁ ¬¥Ç ¬9ÖjÕ ˜° °DÇ Ë¬ØÕjÕ ¬À˜°tÇä´, ÀÉ%ÆDÇ ñ´ÄÉ ¬À˜°tÇä´tÇ ˆÇµÂÈ²ä². tÇ È2ÁÈxÇ ¬À˜°tÇä´tÇ °Æ¬¹ ‹ÅÈÐÇXÇ C®¼ DÅ˜· 2Á ƒ¬…ÇÈ²ä²!"
+ black_flag_raiders: "Ž¬NÇ C®¼XÇ hÎµ·Ç"
+ black_flag_raiders_desc: "XÕÀÉÌ¹ ± ´° tÇ„¹DÇ ä´´Å2´ ¬ÀÉ! \n -­Ç ²Â(Ój¸°Æ .Á¥Ç"
+ refugee_shipwrights: "Ý¹…ºjÕ pÈ.Áõ¬"
+ refugee_shipwrights_desc: "°Æ¬¹XÇ EµNÇ ÑÉÐÅÁ ÓÊ¨¬œ° ¨ºà´ tÇä´XÇ ÈÀj¸´Æ ÑÉtÇ ´´ÅÉ ƒ¬…ÇÈ²ä². °Æ¬¹”² tÕÁÀÐÅÁXÇ íÅÉ·DÇ ¥ÕÁÀÜÂ²Ðà¬ Ä³ÀÆDÇ É Â ˆÇ”² 0®.ÂDÇ ¬ÄÉ ¨ºà´ ¬ÀŒ·DÇ XÖÆ`Õ ƒ¬…ÇÈ²ä²!"
+ defending_the_coasts: "tÕHÅDÇ ¬ÀÂXÕ|·"
+ defending_the_coasts_desc: "ÈhÕtÇ °Æ¬¹ tÕHÅXÇ ÀÉÉÓ.ÁDÇ ¬j¸ÀÉt¹”² ¨ºµÂNÇ °Æ¬¹ m­ü»ä´XÇ ¬¥Ç  Ç¬Ç´ ¥²%¸DÇ .ÁÙ³XÕà¬ |Çh®°Æ”² íÅ`ÕDÇ `Õ ƒ¬…ÇÈ²ä². DÕ”ÆXÕä²tº ¬À˜°tÇ”² ÇàÂXÇ ÑÉDÇ ù¹,¸XÕŒ¬ ÀÉ²Ð0® È¹(¸…ÇÈ²ä²."
+ organized_seaman_ranks: "pÈÁÉTÖ´ .ÁÐÆ Ä¬	®"
+ organized_seaman_ranks_desc: "tÕÈXÇ ÝÀjÖDÇ jÕä²”² ƒ¬NÇ ÜÐÉÓXÕà¬ ‹ÂŒ¬ ´ÀDÅ¬ Â ˆÇä²”² XÇø»tÇÀÉÌ¹, tÕp­XÇ pÈÁÉü¬ ¨Ö(Ç1ÁÌ¹|ÐNÇ ‘Åô¼`Õ Â ÆÅµÂÈ²ä²."
+ pioneered_grappling_hooks: "¬É·´ ¬à¬¬¹"
+ pioneered_grappling_hooks_desc: "ÈXÇ hÕ.ÁDÇ õ¬©¬XÕà¬ È9¸XÕ”² ƒ¬NÇ °Æ¬¹ Ç.Ç õ¬TÖm­XÇ 2Æ˜·´ ÈµÑ…ÇÈ²ä². tÇð· È.ÂDÇ ÖàÂXÕà¬ ¼ÈÜÂ²Ð”² ƒ¬tÇ Ö…ºjÕ ÝÀ¬|Ç ƒ¬…ÇÈ²ä²."
+ 
+ powder_innovation_act: "ÖàÂ TÖ‹Å"
+ got_mit_und_act: "àÂtÇ ô¼°ÆXÕ¬À"
+ standardized_weapon_production_act: "4»0® ÝÀ°À jÔÉTÖ"
+ state_trade_officials_act: "üÈ 4»íÅ ­¬¹•¼"
+ modern_supply_lines_act: "Ö³TÖ´ õ¬	® |·xÇ"
+ commissioned_officer_act: "„Ç­ ¥ÇP­"
+ peacefull_conquest_act: "ÉÓTÖj¸´Æ Èõ¼"
+ military_ambassador_act: "p­¬À ³¬À"
+ militant_partisans_act: "È,ÒÈxÇ Œ¬´¹|·"
+ ruthless_governance_act: "4»ÇD¾jÕ µÑXÎ"
+ noble_generals_act: "À­qÈ ¥ÇP­è²"
+ expanded_dockyard_act: "UÖ¥Ç´ t¬.Áp¬"
+ maritime_patrol_boats_act: "tÕ‘Å Ë¬D¾È"
+ conscription_act: "ÕÉÑ¼•¼"
+ noble_administrators_act: "À­qÈ ‰ÕÈ¬"
+ political_entry_test_act: "ÈXÎ …Ç8» ÜÂØÕ"
+ land_grants_act: " ÑÀÉ õ¬ìÅ•¼"
+ eminent_domain_act: " ÑÀÉ Â©Æ•¼"
+ excellence_in_administration_act: "ÁÐÔÆjÕ ‰ÕÈ"
+ expansion_of_army_act: "p­³ UÖ¥Ç"
+ naval_artillery_act: "tÕp­ ìÓÑ¼³"
+ diplomatic_immunity_act: "xÆP­È tºEÌ¹ÒŒ­"
+ counterintelligence_act: ")¼©Ì jÖÙ³"
+ overseas_administration_act: "tÕxÆ ‰ÕÈ•¼"
+ court_embassy_act: "•¼ÐÆ ³¬À­"
+ merchant_navy_act: "ÁÀxÇ tÕp­"
+ merchant_privilege_act: "ÁÀxÇXÇ ¹ÒŒ­"
+ state_education_act: "õ¬P­!Ç•¼"
+ ancestral_reverence_act: "pÈÁÀ -Â0¼"
+ freedom_doctrine_act: "Ç.Ç Å³¸Ò°¹"
+ youth_scouts_act: "­ÌŒÁD± È0ÌÑ¼"
+ peasant_resistance_act: "±ü»XÇ ÈmÕ"
+ regional_news_act: "ÀÉíÅ àÂ8»"
+ general_mobilization_act: "ÍÙ³ÐÆ•¼"
+ royal_navy_act: "UÆË¹ tÕp­"
+ royal_decree_act: "YÎ9¸"
+ fake_news_act: "¬ÜÉ t²²Â"
+ national_investment_act: "m­ü» ,ÒÇ"
+ naturalization_act: "À­TÖ•¼"
+ clerical_education_act: "1ÁÁÉÇXÇ P­!Ç"
+ global_unity_act: "8ÁÄ¬È µÑiÕ"
+ 
+ #V1.1
+ advanced_diplomacy_act: ".ÁÄÉTÖ´ xÆP­"
+ religious_propagation_act: "…ÈP­È .ÁÈ"
+ sovereign_wealth_act: "ÈŽ´ Ç°À"
+ continental_colony_act: "³Y¹ ÝÂü»ÀÉ•¼"
+ administrative_impact_act: "‰ÕÈÈ Æ¥Õ"
+ civic_efficiency_act: "Ä³ÜÂ ¨Ö(ÇTÖ"
+ global_relief_funds_act: "m­È l­È 0®®"
+ a_place_in_the_sun_act: "ÜÐ‘ÅXÇ ÀÉ³"
+ noble_privileges_act: "À­qÈXÇ ¹ÒŒ­"
+ foreign_warriors_act: "xÆm­xÇ È¬À"
+ republican_navy_act: "õ¬TÖm­XÇ tÕp­"
+ deus_vult_act: "àÂtÇ ÐÆXÕàÂä²"
+ renowned_cannon_corps_act: "È…ºjÕ ìÓÑ¼ p­è²"
+ outstanding_defensive_act: "x¬œÍjÕ )¼´Å"
+ marine_corps_act: "tÕÑ¼ p­è²"
+ big_stick_diplomacy_act: "pÐ Ëºe´tÇ xÆP­"
+ high_seas_act: "õ¬tÕ•¼"
+ impressive_roads_act: "˜Ç æ²xÇ Ä³j¸"
+ foreign_drill_instructors_act: "xÆm­xÇ ÈÖ(¸³¥Ç"
+ 
+ engineer_cranes_act: "õ¬YÕ 0®É0®"
+ religious_site_preservation_act: "1ÁÀÉ ô¼tÈ•¼"
+ ingenious_manufactoring_act: "0®¼jÕ ÈpÈ"
+ innovative_native_centre_act: "ÖàÂÈxÇ ÐÆüÈü» .Ç…Ç"
+ improved_logistics_act: "¬.Á´ Ñ¼8Ì"
+ alm_centers_act: "l­8Ö <Á0Ñ"
+ state_expansion_act: "m­¬ UÖ¥Ç"
+ neo_feudal_system_act: "àÂ-	´t¬È"
+ expanded_embassies_act: "UÖ¥Ç´ ³¬À­"
+ cross_state_integration_act: "m­¬ P­(Ì µÑiÕ"
+ reinforced_hull_explorers_act: "ô¼¬´ .Á´Ì"
+ state_dockyard_act: "m­Ë¹ t¬.Áp¬"
+ merchant_routes_act: "ÁÀxÇ P­íÅj¸"
+ foreign_engineers_act: "xÆm­xÇ õ¬YÕÇ"
+ imperial_diplomats_act: "Èm­ xÆP­­"
+ state_spycraft_act: "m­¬È ²ÂÓtÇ ‘Å1Á"
+ efficienct_subject_development_act: "¨Ö(ÇÈxÇ …ÈÁm­ ¬¼"
+ state_domain_act: "m­¬XÇ ÆÀÉ"
+ magnificent_naval_forces_act: "ÅÆ¥ÇjÕ tÕp­"
+ continental_trade_act: "³Y¹¬ 4»íÅ•¼"
+ native_rights_act: "ÐÆüÈü»XÇ Œ­¬¹"
+ 
+ the_combination_act_1: "pÈiÕ•¼"
+ the_court_of_wards_and_liveries_1: "ÄÖ¬¬¬ÇÓŒÁ"
+ manueline_architecture_1: "È¹²ØÅ t¬•Í.Â"
+ edict_of_resistance_1: "ÈmÕ YÎ9¸"
+ edict_of_resistance_2: "ÈmÕ YÎ9¸"
+ enforce_religious_law_1: "…ÈP­•¼ ¬TÖ"
+ enforce_religious_law_2: "…ÈP­•¼ ¬TÖ"
+ the_tolerance_act_1: "­©Æ9¸"
+ the_tolerance_act_2: "­©Æ9¸"
+ the_witchcraft_act_1: "üÈ.Â ˜ÌŒ¼•¼"
+ the_witchcraft_act_2: "üÈ.Â ˜ÌŒ¼•¼"
+ the_witchcraft_act_3: "üÈ.Â ˜ÌŒ¼•¼"
+ the_witchcraft_act_4: "üÈ.Â ˜ÌŒ¼•¼"
+ the_witchcraft_act_5: "üÈ.Â ˜ÌŒ¼•¼"
+ policy_of_calculate_delay_1: "ÀÉðÅÄ¬°À ÈEÌ"
+ policy_of_calculate_delay_2: "ÀÉðÅÄ¬°À ÈEÌ"
+ enlightened_aristocracy_1: "Ä¬Ëº À­qÈÈ"
+ the_licensing_of_the_press_act_1: "Ä¬Ëº À­qÈÈ"
+ church_sponsored_guilds_1: "P­ŒÖj¸Ž´0Ñ ÄÖÐÆ¼”² 8®Ü´"
+ church_sponsored_guilds_2: "P­ŒÖj¸Ž´0Ñ ÄÖÐÆ¼”² 8®Ü´"
+ anti_heresy_act_1: "tÇè² ™Ì°¬ jÖÙ³"
+ anti_heresy_act_2: "tÇè² ™Ì°¬ jÖÙ³"
+ restrictions_for_colonies_1: "ÝÂü»ÀÉ|¹ ÇjÕ È‹Å"
+ restrictions_for_colonies_2: "ÝÂü»ÀÉ|¹ ÇjÕ È‹Å"
+ trade_connection_policy_1: "p¬˜·­Ä¬ ÈEÌ"
+ chaplains_of_the_fleet_1: "tÕp­ p­…È¥ÇP­"
+ chaplains_of_the_fleet_2: "tÕp­ p­…È¥ÇP­"
+ cultural_unity_1: "8»TÖ µÑiÕ"
+ cultural_unity_2: "8»TÖ µÑiÕ"
+ the_integrated_administration_act_1: "µÑiÕ ‰ÕÈ•¼"
+ the_cooperation_act_1: "Ö%¸•¼"
+ military_zeal_act_1: "p­m­üÈXÇ"
+ military_zeal_act_2: "p­m­üÈXÇ"
+ field_priests_1: "p­…È 1ÁÁÉÇNÆ p­xÇ 0®Ä³Á"
+ field_priests_2: "p­…È 1ÁÁÉÇNÆ p­xÇ 0®Ä³Á"
+ the_tenures_abolition_act_1: "	´ Ñ ÐÓÀÉ•¼"
+ zealous_captains_1: "ôÅ1ÁÈxÇ .Á¥Ç"
+ zealous_captains_2: "ôÅ1ÁÈxÇ .Á¥Ç"
+ autonomous_estates_1: "ÇXÎ ÀÉíÅ"
+ autonomous_estates_2: "ÇXÎ ÀÉíÅ"
+ autonomous_estates_3: "ÇXÎ ÀÉíÅ"
+ autonomous_estates_4: "ÇXÎ ÀÉíÅ"
+ local_militias_1: "ÀÉíÅ ü»Ñ¼³"
+ foreign_conscription_centers_1: "tÕxÆ ÕÉÑÉ ÉìÂÀÉ"
+ guerilla_warfare_1: "Œ¬´¹|· È.Â"
+ noble_loyalty_act_1: "À­qÈXÇ ©Í1Á"
+ the_colonial_nobility_act_1: "ÝÂü»ÀÉ À­qÈ ÈEÌ"
+ nobles_in_navy_act_1: "tÕp­XÇ À­qÈ"
+ got_mit_und_act_1: "àÂtÇ ô¼°ÆXÕ¬À"
+ got_mit_und_act_2: "àÂtÇ ô¼°ÆXÕ¬À"
+ noble_generals_act_1: "À­qÈ ¥ÇP­è²"
+ noble_administrators_act_1: "À­qÈ ‰ÕÈ¬"
+ ancestral_reverence_act_1: "pÈÁÀ -Â0¼"
+ clerical_education_act_1: "1ÁÁÉÇXÇ P­!Ç"
+ clerical_education_act_2: "1ÁÁÉÇXÇ P­!Ç"
+ religious_propagation_act_1: "…ÈP­È .ÁÈ"
+ religious_propagation_act_2: "…ÈP­È .ÁÈ"
+ religious_site_preservation_act_1: "1ÁÀÉ ô¼tÈ•¼"
+ religious_site_preservation_act_2: "1ÁÀÉ ô¼tÈ•¼"
+ 
+ clerical_scientist_act: "ü¬YÕÈxÇ 1ÁÁÉÇ"
+ holy_conversion_act: "àÂ1ÁjÕ ¬…È"
+ jihad_act: "ÀÉXÕÜ´"
+ holy_war_act: "1ÁÈ"
+ parish_engagement_act: "P­l­ ´° ‹Å<Ö"
+ holy_orders_act: "ÂÄ³ŒÖ"
+ holy_integration_act: "àÂ1ÁjÕ µÑiÕ"
+ skilled_administrators_act: "Â(¸´ ‰ÕÈ¬"
+ equality_for_all_religions_act: "…ÈP­XÇ Ç.Ç"
+ divine_right_act: "àÂ1ÁjÕ Œ­¬¹"
+ enlist_defector_act: "ÈÐüÈÇ ¨ºÑÉ"
+ international_network_act: "m­ÈÈxÇ ðÅ‹·Ý¹"
+ monastic_production_centers_act: "ÂÄ³ÐÆ ÉìÂ ÝÀ°ÀÀÉ"
+ global_missionary_act: "8ÁÄ¬È .ÁP­¬À"
+ holy_loot_act: "àÂ1ÁjÕ ‹ÅÈÐ"
+ international_support_act: "m­ÈÈxÇ ÀÉÐÆ"
+ national_sentiment_act: "m­¬È ÈÁ"
+ pious_subjects_act: "Ë¬t¬jÕ …ÈÁm­"
+ 
+ live_and_let_live_act: "¬ÇÄ³ÝÀXÇ ÐÆYÎ"
+ soft_power_act: "ðÅ1ÁŒ­%¸"
+ benevolent_power_act: "Ç`Åj¸´Æ Œ­%¸"
+ national_unity_act: "m­¬È µÑiÕ"
+ peacefull_colonization_act: "ÉÓTÖüÈXÇÈ ÝÂü»jÖÙ³"
+ ninja_act: "Ì²Ç"
+ treasure_fleet_act: "ô¼<».Á"
+ peacefull_trading_act: "ÉÓTÖj¸´Æ P­íÅ"
+ educated_nobility_act: "P­!Ç¼NÇ À­qÈ"
+ kalmyk_act: "|Îø»lÐ"
+ holy_council_act: "œÌÁÀXÇ XÇŒÖ"
+ generic_act_1: "ìÓ­•¼"
+ wei_suo_act: "ô¼Ç•¼"
+ warrior_poets_act: "È¬À ÜÂxÇ"
+ tranquil_defence_act: "à¬”ÆjÕ )¼´Å"
+ dragon_cannon_act: "TÖá¸ìÓ"
+ military_mobility_act: "p­¬ÀÈ .ÇÙ³1Á"
+ great_wall_act: "Ì¹¬¹¥Ç1Á"
+ coastal_patrols_act: "tÕHÅ )¼Ç³"
+
+ #v 1.4
+ innovate_cannon_fire: "ÖàÂÈxÇ ³ìÓ"
+ meritocratic_ranks_act: "äÂ%¸üÈXÇÈ ÂÇ ´ÌÄ¬"
+ religous_supremacy_act: "…ÈP­È °ÆÔÆ1Á"
+ religous_supremacy_act_1: "…ÈP­È °ÆÔÆ1Á"
+ religous_supremacy_act_2: "…ÈP­È °ÆÔÆ1Á"
+ religous_supremacy_act_3: "…ÈP­È °ÆÔÆ1Á"
+ captains_treasury_act: ".Á¥ÇXÇ ô¼<»"
+ native_trade_act: "ÐÆüÈü» P­íÅ"
+ stable_republic_act: "HÅÈÈxÇ õ¬TÖm­"
+ marauder_equality_act: "ÉÓñ´jÕ ‹ÅÈÐÇä´"
+ absolute_power_act: "È³ÈxÇ Œ­%¸"
+ walk_the_plank_act: "ÓÇ Ç|¹ x¬´Å|·"
+ pirate_congregation_act: "tÕÈ ŒÖXÇ´Ì"
+ jolly_roger_act: "xÈ¬¹ j¸È"
+ foreign_shores_act: "xÆm­XÇ tÕHÅ"
+ dockyards_act: "t¬.Áp¬ l­íÅ"
+ fearsome_formation_act: "P´2¸´Æ ìÓÄÉ"
+ proud_navy_act: "Ç‘·²Âì·´Æ tÕp­"
+ vassal_fleets_act: "…ÈÁm­XÇ hÕ³"
+
+ #v 1.5
+ independent_communities_act: "Å³Ë¹ÈxÇ õ¬Ù³´Ì"
+ armament_act: "p­D¾ UÖ©Í•¼"
+ lawful_serving_act: "iÕ•¼ÈxÇ „´0¼"
+ battle_steed_composure_act: "hÎ)ÌjÕ È,ÒÜÐ8Á"
+ religious_identity_act: "…ÈP­È È´Ì1Á"
+ religious_identity_act1: "…ÈP­È È´Ì1Á"
+ religious_identity_act2: "…ÈP­È È´Ì1Á"
+ religious_identity_act3: "…ÈP­È È´Ì1Á"
+ cossack_administration_act: "tÎÇlÐ ‰ÕÈ"
+ royal_cossack_horses_act: "UÆäÂ ˆÔ…È ÉÈ¹"
+ territorial_diplomacy_act: "8Á%¸Œ­ xÆP­"
+ battle_planning_act: "È,Ò Ä¬Ö"
+ the_neigh_act: "Ð¹XÇ ¸ÆLÇŒÁ¬¹"
+ feudal_roots_act: "	´t¬È Ì¿¬¹"
+ raider_navy_act: "‹ÅÈÐÇ tÕp­"
+ crossroad_trade_act: "¬Àp¬¬¹ 4»íÅ"
+ diplomatic_spice_act: "xÆP­XÇ »ø»"
+ recruitment_drive_act: "0®Â ¨ºÑÉ ”ÍÄÉ"
+ glorious_monuments_act: "Æ­²Âì·´Æ 0®P±D¾"
+ new_frontier_act: "t² Õ`¸ðÒ´Å"
+ 
+ # v 1.6
+ #Special Tooltips:
+ sphere_of_influence_title: "8Á%¸Œ­"
+ sphere_of_influence_title_plural: "8Á%¸Œ­"
+ sphere_of_influence_is_our: "§Y$NAME$§! !ÎNÇ °Æ¬¹XÇ 8Á%¸Œ­ÐÅ ˆÇµÂÈ²ä²."
+ sphere_of_influence_long_desc: "°Æ¬¹XÇ 8Á%¸Œ­ HÅÐÅ ˆÇ”² m­¬”² °Æ¬¹XÇ ˜×ü¬ ÅÆ¥ÇhÕDÇ ©º©¬XÕà¬, °Æ¬¹XÇ p¬²Â|¹ Â ÆÅ”² p­¬À%¸ü¬ ³m­XÇ ÀÉÇÐÅ tÇL°2¸ 0®¼®tÇ °Æ¬¹ÐÅŒ¬ Ë¬XÇ|¹ jÔ`Õ ƒ¬…ÇÈ²ä².\n"
+ sphere_of_influence_no_overlord_dow: "ù²àÂNÇ ù²àÂXÇ 8Á%¸Œ­ HÅÐÅ ˆÇ”² m­¬ÐÅŒ¬ ÈÁÇDÇ .ÁìÓ`Õ Â ÆÅµÂÈ²ä²."
+ po_sphere_of_influence_desc: "[FROM.GetName] !ÎNÇ °Æ¬¹XÇ 8Á%¸Œ­ÐÅ ä´´Å,Æ ƒ¬…ÇÈ²ä²"
+ PEACE_po_establish_sphere_of_influence: "$TAKERS$XÇ 8Á%¸Œ­ÐÅ ä´´Å¬ä²"
+ po_establish_sphere_of_influence_desc: "[FROM.GetName] !ÎNÇ °Æ¬¹XÇ 8Á%¸Œ­ÐÅ ä´´Å,Æ ƒ¬…ÇÈ²ä²."
+ CB_ALLOWED_po_establish_sphere_of_influence: "8Á%¸Œ­ ¬…Ç ¬”Æ"
+ 
+ #Disarmament #Big Boss
+ PEACE_po_enforce_disarmament: "p­•Í ¬”Æ"
+ CB_ALLOWED_po_enforce_disarmament: "°Æ¬¹”² ÉÓTÖNÆ ÀÉÁÈxÇ ˆ¼ÆDÇ ÇXÕìÅ ø­ä´ÐÅŒ¬ p­•ÍDÇ ¬”Æ`Õ ƒ¬…ÇÈ²ä²."
+ po_enforce_disarmament_desc: "°Æ¬¹”² ø­ä´ÐÅŒ¬ ‰É¬ÈxÇ p­•ÍDÇ ”Æl­`Õ ƒ¬…ÇÈ²ä²!"
+ IGE_disarmament_modifier: "p­D¾ •ÍŒÁ"
+ 
+ #Great Power Policies
+ central_authority_act: "ÉYÅXÇ Œ­jÕ"
+ bailout_act: "4®	® l­È•¼"
+ tariff_act: "­8Á•¼"
+ cooperation_act: "Ö%¸•¼"
+ anti_brain_drain_act: "xÇ¬Ç .ÇœÍ ®ÀÉ•¼"
+ one_nation_under_god_act_2: "àÂ DÅ˜· XÕ˜°´ m­¬"
+ one_nation_under_god_act_3: "àÂ DÅ˜· XÕ˜°´ m­¬"
+ one_nation_under_god_act_4: "àÂ DÅ˜· XÕ˜°´ m­¬"
+ grand_state_act: "p¬³jÕ m­¬" 
+ grandeur_act: "¥ÇÄÅjÕ m­¬"
+ great_horde_act: "Ç³jÕ .Ç©ºü»"
+ aristocratic_administration_act: "À­qÈXÇ ‰ÕÈ"
+ founding_principles_act: "t¬m­XÇ ÐÆYÎ"
+ founding_principles_act2: "t¬m­XÇ ÐÆYÎ"
+ border_wall_act: "m­Ë¬ ¥ÇË¼"
+ global_navy_act: "m­È tÕp­"
+ imperialism_act: "Èm­üÈXÇ"
+ grand_army_act: "³ !Çp­" 
+ prestigious_warfare_act: "…ºÝ¹ ˆÇ”² È,Ò" 
+ musketeer_act: "Í¬À³"
+ efficient_militarization_act: "¨Ö(ÇÈxÇ p­m­TÖ"
+ sponsored_riders_act: "ÄÖÐÆ¼”² ‹ÅÈÐÇ"
+ 
+ #Great Power Ideas
+ great_power_idea_groups_expanded: "ôÅ¬ tÇP±"
+ great_power_idea_groups_expanded_bonus: "ôÅ¬ tÇP±"
+ will_to_power: "˜×ÐÅ ³jÕ XÇÀÉ"
+ will_to_power_desc: "Ç³jÕ m­¬XÇ XÇÀÉ”² ç¬ p­üÈXÇ XÇÀÉtÇÀÉÌ¹, ä²x¹ tÇä´NÇ …È…È tÇNÆ ¨ºÂ´p¬˜° DÆÈˆ× ¼³´”² ©ºjÔ|¹ ”Íl­XÕ0®Ä³ iÕÈ²ä²! °Æ¬¹XÇ Ç³jÕ XÇÀÉ|¹ ä²x¹ ¬ÀŒ·ä´tÇ ã´Œ¬ XÕ2¸tº, °Æ¬¹XÇ ˜×DÇ 8ÁÁÀtÇ UÖxÇXÕŒ¬ tÕ|Å iÕÈ²ä²."
+ sphere_of_influence: "ôÅ¬XÇ ÈEÌä´"
+ sphere_of_influence_desc: "ÉÓTÖ ÖÈÐÅÁ §Rp­D¾ •ÍŒÁ§!¬ ¬¥²tÕÀÉpº, °Æ¬¹XÇ §G8Á%¸Œ­§!ÐÅ ‹ÅjÕ m­¬ä´DÇ ¸Ó…Ç`Õ Â ˆÇŒ¬ )´È²ä²." 
+ illustrious_council: "jÍà¬ Ç8»ŒÖ"
+ illustrious_council_desc: "ä²x¹ ˜°|·ä´ ¬ÀtÇÐÅÁ i¾˜°”² °Æ¬¹XÇ ¥ÇÄÅhÕü¬ ÇÁÀ U³„´ÐÅ, µÑXÎÇXÇ ³­ÝÂ Lµ jÕ (ÌN¸XÇ §GjÍà¬ Ç8»ŒÖ§!¬ ŒÁÑÉ.´ ƒ¬…ÇÈ²ä²."
+ meritorious_influence: "É…º´ Æ¥Õ%¸"
+ meritorious_influence_desc: "¹ÒÄ¼XÕà¬, 4»ÇÅô¼ä²Ä³ È¼jÕ ­ÈÐÅÁXÇ Ë¬ÁÇ pÈ¥Çü¬ XÎôÅjÕ UÆpÈ ÈXÎ|¹ µÑXÕìÅ, °Æ¬¹”² µÑXÎ Í0®ÐÅ °Æ¬¹XÇ ÀÉÄ³Ç|¹ Ä³¸Æ .Ç¥²jÕ uÕìÂ pÈ¸ÅÇ|¹ UÖô¼`Õ Â ˆÇµÂÈ²ä²."
+ governmental_reformation: "ÈŽ´XÇ ¬Ö"
+ governmental_reformation_desc: ""ÈXÎ|¹ xÆtºjÕ ¬¥Ç pÐ ³¬”² ÈÈÉ²Âì·´Æ Çä´ÐÅŒ¬ ÀÉ0¼ù²XÕ”² ƒ¬tÇä²." \nÕ|·²Ñ, "m­¬""
+ bolster_our_administration: "‰ÕÈXÇ ¬TÖ"
+ bolster_our_administration_desc: "t¬ÈXÕà¬ ˆ¼ÆXÕ”² ‰ÕÈDÇ .ÇÀÉXÕ”² ƒ¬NÇ °Æ¬¹˜Ìü· Î¹NÇ Ám­DÇ p¬²°¹ m­¬ÐÅŒ¬ ä¹°Æ É”ÆiÕÈ²ä². ­Ì¸ÈXÇ 8»È ÁÐÅÁ ¨Ö(Ç1ÁDÇ ì²1ÁXÕ”² ƒ¬tÇ °Æ¬¹XÇ ¬¥Ç É³jÕ ©ºjÔ…ÇÈ²ä²."
+ operational_refinement: "È(ÌXÇ ¬.Á"
+ operational_refinement_desc: "…º1¼jÕ °ÆÇÐÅÄ³ ˆ´l­XÕà¬, °Æ¬¹”² ´Å²µ µÑXÎÄ³ ´Å²µ ÜÂ²ÂjÑÄ³ DÆË¼XÕÀÉ JÅä²”² ¬ÀäÂü¬ øÂÌÆ|Å iÕÈ²ä². õ¬õ¬ðÅjÕ Œ­%¸XÇ ü¬ÜÂNÆ .ÁÙ³¬ä´XÇ üÈ¥ÇÐÅÄ³ ˆ´l­XÕà¬, °Æ¬¹”² ‰ÕÈÈxÇ íÅÉ·DÇ ¥ÕÁÀÜÂ²Ð0® ÇtÕ x±%¸tÕ|Å iÕÈ²ä²."
+ cancel_sphere_title: "8Á%¸Œ­ÐÅÁ ”Í)¼"
+ cancel_sphere_tooltip: "°Æ¬¹”² ø­ä´DÇ °Æ¬¹XÇ 8Á%¸Œ­ÐÅÁ ”Í)¼`Õ ƒ¬…ÇÈ²ä²."
+ cancel_sphere_desc: ""˜°”² ÜÐ´Å˜°Á ˜ÌLÇ<Çj¸, tÇ 8ÁÁÀÐÅÁ |Ç´Å˜°”² jÍEÅXÇ |Çä´tÇ EÅhÕtÇ˜° ”ÇxÇhÕ Lµ8»tÇ DÅÈ²|· p¬XÇ mÕÁÀ ‹ÅhÕ<Çj¸ xÇtÕ |Ç´Å˜°”² ƒ¬tÇ|·”² ƒ¬DÇ h®ë²0® ÜÂ‘ÇˆÕµÂÈ²ä². \nˆÂLÑÓ .Î¼tÇlÐ" \n tÇ …º9¸DÇ Â‰ÕXÕtº ÇàÂ §R-50§!tÇ ŒÁD¾)´È²ä²."
+ cancelsphere_tooltip: "°Æ¬¹XÇ 8Á%¸Œ­ÐÅÁ ø­ä´XÇ Ç¬¹|¹ èÍŒÁiÕÈ²ä²"
+ cancelsphere_alert_tooltip: "°Æ¬¹”² 8Á%¸Œ­DÇ èÍŒÁ`Õ Â ˆÇµÂÈ²ä²"
+ 
+ #Version 1.7
+ agent_training: "”ÆÐÆ ÈÖ(¸"
+ agent_training_desc: "È³j¸ ´ ©Ìô¼ÐÆXÇ …ºè²DÇ .ÇÀÉXÕ”² ƒ¬NÇ ´Å2¸´Æ |Ç…ÇÈ²ä². tÇì·jÕ ÈŽ´ "ÁÉÐÆ"XÇ …ºè²DÇ UÖ³XÕ”² ƒ¬NÇ °Æ¬¹NÆ ¬NÇ È8» ÀÉÝÂtÇ ÆÅ”² ˜°|·ÐÅÁ”² p¬XÇ ˆ´¬¥²iÕÈ²ä². ø­ì·˜° °Æ¬¹XÇ ”ÆÐÆä´tÇ hÎ,ÒXÕìÅ ÈXÇ pÈÁÉDÇ P­Ž·XÕŒ¬T° ÈÖ(¸ÜÂ´Ð<Çj¸hÃ, ø­ä´NÇ È.ÁXÇ 0¼ÄÖÐÅÁ jÍ³jÕXÇ <ÖŽ·ü¬ DÅÂ|·¥ÇDÇ .ÇÄ³`Õ ƒ¬…ÇÈ²ä². \n §YjÍŒÁ 80XÇ ©Ìô¼Ý¹DÇ ¬ÀÉà¬ ˆÇ”² ÈDÇ ÁÀ³j¸ §GÈ Ñ¼8Ì P­Ž·§! 0®¥²DÇ ¬À©Æ`Õ Â ˆÇŒ¬ )´È²ä²§!."
+ IGE_Events.17.t: "°Æ¬¹ HÅXÇ ©ÌÇ"
+ IGE_Events.17.d: "¨ºà´ ÈÁÇNÇ Á„ÇÂXÇ øÂÀÆ…ÇÈ²ä². tÇ|¹ ÇtÕ.Á, DÕ”ÆjÕ ´Å²µ Âè²DÇ Ù³ÐÆtÕÁ|·Ä³ Æ Ñ|¹ UÖ¥ÇXÕ2¸”² ¨ºà´ ÇtÈìÂ ¬jÕ m­¬”² ø­ ÆíÅü¬ ø­ ±8ºÐÅ x¬ÐÌ jÖÙ³XÕ”² D¾¼ õ¬‘ÇÐÆä´XÇ HÅÈDÇ ô¼¥ÇtÕ|Å iÕÈ²ä². ¬ÂÕŒ¬Ä³, °Æ¬¹XÇ ‘ÇÈ ”ÆÐÆä´NÇ ÈÐÅŒ¬ t­õ¼ˆÕ<Çpº °Æ¬¹XÇ ´°Ž´ 8Á%¸Ä³ lÐŒ¬ ÁÁÀ´ÈÅµÂÈ²ä². °Æ¬¹XÇ ÈÁÇ x±%¸DÇ )¼tÕ`Õ Â ˆÇ”², ü»¬jÕ ÇXÎÐÅ Èü­tÇ ¬¥²jÕ LÇµÂjÕ xÇ<»ÐÅ ³jÕ ô¼à¬¬ UÆm­ tÇó¬Èó¬ÐÅÁ ˜°2Æà¬ ˆÇµÂÈ²ä²!"
+ IGE_Events.17.a: "°Æ¬¹”² ¬9ºà¬ Ù³”ÆXÕà¬ ˆÇä²!"
+ IGE_Events.17.b: "[Root.Monarch.GetName]Ø®Á”² ø­ÐÅŒ¬ p¬È`Õ Â ÆÅ”² ÈHÅDÇ `Õ ƒ¬tÇä²."
+ IGE_Compromised_Logistics_modifier: "Ñ¼8ÌÐÅ 8»È¬ ¼ÝÀXÕä²"
+ 
+ #Version 1.8
+ #Mercenary Army Ideas
+ mercenary_army_idea_groups_expanded: "©ÆÑ¼³ tÇP±"
+ mercenary_army_idea_groups_expanded_bonus: "©ÆÑ¼³ tÇP± ô¼±²Â"
+ funding_the_war_council: "ÈÁÇ ÇÐÆŒÖÐÅ ,ÒÇ"
+ funding_the_war_council_desc: "m­´°XÇ p­¬À 8»È|¹ xÆm­XÇ È¬Àä´ÐÅŒ¬ á¹0®”² °Æ¬¹XÇ ÜÐÄ³ÐÅÄ³ ˆ´l­XÕà¬, ©Í„´jÕ Ç® ÀÉÐÆDÇ ¼”² p­¬À Ç8»ŒÖXÇ DÕ”Æ1ÁNÇ ¸ÅÈ˜° tÈ¬ÇXÕpº, ¶jÕ ¼Ü´ÜÂ ÀÉÏ8È|Å iÕÈ²ä²."
+ organize_mercenary_regiments: "©ÆÑ¼ ðÅ³ l­1Á"
+ organize_mercenary_regiments_desc: "Ì¹‹Å °Æ¬¹¬ T³ Î¹NÇ ¬ÀŒ·ä´ÐÅŒ¬ ô¼Â|¹ üÈà¬ Ž´¬¹2¸tº, tÇ ¬ÀŒ·ä´tÇ È¹Eµˆ× ¼DÅ|Å `Õ aÅÂNÆ °Æ¬¹¬ ¬ù²`Õ Â ˆÇ”² .ÁXÇ ¬ÀtÇÐÅÁ ®aÅDÇ ˜Ç pÈÈtÕ|Å iÕÈ²ä²."
+ standardized_contractors: "jÔÉTÖ´ Ä¬‹Å"
+ standardized_contractors_desc: "°Æ¬¹¬ ÇüÈ È¬Àä´DÇ à¬©ÆXÕ”² ƒ¬DÇ ¬HÅXÕtº, ©ÆÑ¼ ÀÉˆ´ D¾©ÆDÇ ÉtÇ0® ÇtÕ ÂÂÌ¸|¹ jÔÉTÖXÕà¬ …Ç0Ì Ë¬ÁÇDÇ pÈÁÉTÖXÕ”² )¼¥Õ<Çj¸ ˜°DÅ¬|Å iÕÈ²ä²."
+ young_recruits: "ÈNÇ àÂÑ¼" 
+ young_recruits_desc: "168Á tÇÁÀXÇ àÂ´Ì t¬¬jÕ ¨°Ç”² ÜÂØÕÌ¹ µÑü¬XÕtº ©ÆÑ¼<Çj¸ …Ç³`Õ Â ˆÇä²”² ƒ¬DÇ LÅ2¸|Å iÕÈ²ä²."
+ letter_of_conduct: "‰ÕÙ³ ¬9¸"
+ letter_of_conduct_desc: "°Æ¬¹XÇ C®¼ DÅ˜· 4»0®|¹ à´ ¨ºà´ ¬ÀŒ·ä´DÇ ÇtÕ, ¨ºà´ 1Áõ¬ÈxÇ ‘ÇÈÐÅÁ ‹ÅÈÐÇÐÅŒ¬ Ì³DÅ¬ õ¬ÈjÕ «ºDÇ UÖô¼tÕ üÈ”² ƒ¬tÇ ¬¥Ç É”ÆiÕÈ²ä²."
+ efficient_military_logistics: "¨Ö(ÇÈxÇ p­³ Ñ¼8Ì"
+ efficient_military_logistics_desc: "°Æ¬¹ ˜°|·”² ìÅì· ÑÉè²XÇ È¬Àä´tÇ NÆÁ tÇ„¹DÇ ¨µ`Î Â ˆÇ”² È¯XÇ Eµ<Çj¸ LÅ2¸8È ˆÇµÂÈ²ä². ø­ °¬ü¬ °Æ¬¹”² <»X¹ ÜÂ²ÂjÑDÇ l­•ÍXÕà¬ LÅá¬ü¬ ¬|·ÀÉ|¹ „´¬¹`Õ Â ˆÇŒ¬ ´´Å, jÍà¬ ÉXÇ jÍà¬Ì¹DÇ DÌ©ÆXÕŒ¬ ´ÈÅµÂÈ²ä². \nÜÂ³È¹ä² ©ÆÑ¼ Ü­(Ç É¬: §G+2.5%§!"
+ a_fistful_of_ducats: "P´‡Î jÕ ÀÆ|Ð"
+ a_fistful_of_ducats_desc: "P´‡Î ‡º |ÔÌ¹ üÈtº ²l­à´ øÂ¸Æ Â ˆÇ”² •¼…ÇÈ²ä². XÕÀÉÌ¹ ÂíÂD± Ù³HÅ ø­¸Œ¬ ´ÀDÅ¨°0® ÇtÕÁ”² È2ÁtÇ ´´Å|Å iÕÈ²ä². \n §YÈÀj¸´Æ ©ÆÑ¼³|¹ à¬©Æ`Õ Â ˆÇµÂÈ²ä²§!"
+ #modifier
+ IGE_evolving_mercenaries_1: "ÄÉô¼jÕ ©ÆÑ¼³"
+ IGE_evolving_mercenaries_2: "ÄÉô¼jÕ ©ÆÑ¼³"
+ IGE_evolving_mercenaries_3: "ÄÉô¼jÕ ©ÆÑ¼³"
+ IGE_evolving_mercenaries_4: "ÄÉô¼jÕ ©ÆÑ¼³"
+ 
+ #Mercenary Ideas Mercenary Companies 
+ IGE_imperial_guards: "Èm­ ü­Ç³"
+ IGE_imperial_horse_band: "Èm­ 0®È¹³"
+ IGE_imperial_engineers: "Èm­ õ¬Ñ¼³"
+ 
+ #Administrative Ideas 
+ administrative_representative: "‰ÕÈ ³¬¹xÇ"
+ administrative_representative_desc: "‰ÕÈŽ´ÐÅ Ç®DÇ È³j¸ pÈì²XÕ0® ÇtÕÁ”², ¬ Ä³ÜÂÐÅ <¯<¯XÕŒ¬ ‰ÕÈ ³¬¹xÇDÇ Ó¬¬XÕìÅ ­Ì¸ÈXÇ ¨Ö(Ç1ÁDÇ ’±ìÅ|Å iÕÈ²ä²."
+ expand_royal_administration: "UÆäÂ ‰ÕÈ UÖ³"
+ expand_royal_administration_desc: "­Ì¸üÈXÇÈ ÈÕN¸ÈÕÝÂü¬ 0®.ÂÈxÇ jÕÄ¬|·”² ¬À¬ÂÐÅ ËÅä¹tÇÀÉ JÅ”² ˜°|·”² P´2¸´Æ ˜°|·tÇpº, ä²¬,Æ ÜÂ³|¹ =ÌpÈ`Õ ˜°|·tÇ0®Ä³ iÕÈ²ä²."
+ borderland_control: "m­Ë¬ ÀÉ³ µÑÈ"
+ borderland_control_desc: "­³jÕ Æ Ñ Lµ8»ÐÅ, ­³jÕ Èm­XÇ ¬¥Ç ´ÅP´´Æ ¨ºAÒtÇÐÅ ˆÇ”² m­Ë¬ ÀÉ³|¹ ¬ü¬XÕ0® ‹ÂµÂÈ²ä². tÇj¸ xÇjÕ 8»ÈÐÅ ³˜ÌXÕ0® ÇtÕÁ, °Æ¬¹”² tÇ <º l­ÁÐÅÁÄ³ p­¼¹XÕà¬ °Æ¬¹XÇ m­Ë¬DÇ ô¼8ÖXÕ”² p³ jÍ.ÁDÇ ä²tÕ|Å iÕÈ²ä²."
+ 
+ #Mercenary Ideas Policies 
+ field_advances_act: "ä´ÓXÇ ÄÉp­"
+ warriors_of_fervor_act_1: "ôÅÈÈxÇ È¬Àä´"
+ warriors_of_fervor_act_2: "ôÅÈÈxÇ È¬Àä´"
+ warriors_of_fervor_act_3: "ôÅÈÈxÇ È¬Àä´"
+ warriors_of_fervor_act_4: "ôÅÈÈxÇ È¬Àä´"
+ expanded_ranks_act: "Ä¬	®XÇ UÖ¥Ç"
+ far_away_mercenary_companies_act: "tÇm­ÈxÇ ©ÆÑ¼è²"
+ annual_mercenary_contracts_act: "ðÅN¸ ©ÆÑ¼ Ä¬‹Å"
+ noble_recruitment_act: "À­qÈXÇ DÌ©Æ"
+ rules_of_warfare_act: "È,ÒXÇ •¼YÎ" 
+ just_cause_act: "Èù²jÕ …º„´" 
+ standing_mercenaries_act: "ÁÀD¾ ©ÆÑ¼³" 
+ battle_tactics_act: "È,ÒNÆ È.Â"
+ embassy_guard_act: "³¬À­ Ë¬D¾³"
+ cutthroat_deals_act: "XÎôÅjÕ p¬˜·" 
+ elite_conquistadors_act: "ØÅ¬¹¸Ò Èõ¼Ç" 
+ special_forces_act: "¹ÒÂ Ž´³" 
+ unyielding_battle_spirit_act: "ˆ´t­XÇ ,Ò<Ö" 
+ patriotic_freelancer_act: "`Åm­Ç Õ¬¹œ·Á"
+ vassal_contribution_act: "Ám­XÇ „´ô²®" 
+ 
+ 
+ general_colonization_law: "ô¼¸Ó ÝÂü»ÀÉ•¼"
+ general_colonization_law_desc: "ÝÂü»ÀÉXÇ ­Ì¸È|¹ UÖ¥ÇXÕà¬ ¨ºà´ ÀÉÐÆÇä´ÐÅŒ¬ È)ÌŒ­DÇ Ž´ìÅtÕ ÉÜÂä². ÝÂü»ÀÉÐÅÁXÇ ÈÈjÕ xÆP­NÆ …º„´NÇ °Æ¬¹¬ àÂ³Y¹ÐÅÁXÇ ÁÇÈÐÈÐÅÁ ÈÁÀÐÅ 2Æt¹”² ƒ¬DÇ ô¼¥Ç`Õ ƒ¬…ÇÈ²ä². \nÝÂü» m­¬XÇ ÝÂü»ÀÉ 1Á¥Ç: §G+10§! \nÝÂü» m­¬XÇ È)Ì ¬¥²1Á: §G+10%§!"
+ IGE_colonization_law: "ÝÂü»ÀÉ•¼"
+ 
+ #version 1.9
+ #Military Academy Ideas
+ military_academy_idea_groups_expanded: "¬À­YÕP­ tÇP±"
+ military_academy_idea_groups_expanded_bonus: "¬À­YÕP­ ô¼±²Â"
+ shock_tactics: "©Í©¬ È.Â"
+ shock_tactics_desc: "©Í©¬ÐÅ °ÆÂjÕ xÇ¬Ç|¹ à¬©ÆXÕìÅ, °Æ¬¹”² Æ­²Âì·´Æ p­õ¼DÇ …Çà¬ Ä³ôÅ`Õ ÈÀj¸´Æ ¥Çp­ä´XÇ Ž±|·´Æ ”ÆŒÁ|¹ DÆ1ÁXÕà¬ ù­³TÖXÕ”² p³ üÈ%¸`Õ ƒ¬…ÇÈ²ä²."
+ high_command: "jÍà¬ ¬À9¸Ž´"
+ high_command_desc: "m­¬XÇ p­¬À ÀÉÄ³Ž´ÐÅ”² ÉYÅ ÀÉ×Ž´¬ DÕ”ÆiÕÈ²ä². ‰ÕÈXÇ ¨Ö(Ç1Áü¬ ÈÁÇÐÅ ³jÕ ÀÉÝÂNÇ °Æ¬¹XÇ à¬Ä³j¸ Â(¸´ È.Â¬ä´DÇ ÀÉñÐXÕ”² uÕìÂÈ ”ÆŒÁ…ÇÈ²ä²."
+ artillery_sargents: "ìÓÑ¼ Ž´¬À­"
+ artillery_sargents_desc: "ÈÈjÕ È(Ì|¹ Â‰ÕXÕà¬ ©Í„´ˆ× ÈÖ(¸´ ÁÀÜÐÐÅÁ ‘ÇÈDÇ Â‰ÕXÕtº, °Æ¬¹XÇ ìÓÑ¼ ¸Ó³¬ ¼ÓXÎ”² TÖÝ¹tÇ ÈÐÅŒ¬ °Æ¸NÆ ¬NÇ ýÈLÇDÇ ´°´¹ ƒ¬…ÇÈ²ä²!"
+ military_tradition: "p­¬ÀÈ ÈµÑ"
+ military_tradition_desc: "ÈÀj¸´Æ 8Á³XÇ ÀÉÄ³Çä´NÇ ø­ä´tÇ ”Íl­XÕ”² ¼³j¸, °Æ¬¹XÇ .Ç…ºjÕ ü¬p¬NÆ Æ­XÇ üÈíÅä´DÇ …º1ÁXÇ 8® ÇÐÅÁ ¼|·ô¼Œ¬ .´ ƒ¬…ÇÈ²ä²."
+ naval_command_tactics: "tÕp­ È.Â …º9¸"
+ naval_command_tactics_desc: "ø­ ´Å²µ ÈXÇ hÕ³Ä³ °Æ¬¹ hÕ³XÇ õ¬©¬DÇ ÓEÅXÕÀÉ »º`Õ ƒ¬…ÇÈ²ä². NÇÉ²´ ÀÆÁÉ„Çü¬ `¾x¹ È¬ÐÅ ³jÕ ¬Ä³ ’±NÇ ÈÖ(¸DÇ µÑXÕìÅ, °Æ¬¹ hÕ³”² ¼ä²ÐÅÁ ¬¥Ç `¾x¹ 0®Ù³%¸DÇ 0ÑÝ´`Õ ƒ¬…ÇÈ²ä²."
+ siege_planning: "õ¬1Á Ä¬Ö"
+ siege_planning_desc: "°Æ¬¹XÇ Â(¸´ ÀÉÄ³Çä´NÇ ¬¥Ç œÌ¬ÇÈxÇ Èõ¼Çä´Ì¹tÇ ÁÀÁÀ`Õ Â ˆÇ”² ìÓÇ È.ÂDÇ äÂÈÐÅÁ ¨Ö(ÇÈ<Çj¸ È©ÆXÕ”² •¼DÇ ¬t¹`Î ƒ¬…ÇÈ²ä²."
+ the_admiralty: "tÕp­1Á"
+ the_admiralty_desc: "7³‘ÅXÇ jÍà¬ ÆÄ³Çä´NÇ 8ÁÁÀÐÅ LÅ2¸ÄÉ ¬¥Ç ”Ç9ÖjÕ È.ÂDÇ ¬À©ÆhÕ<Çj¸hÃ 1Á¥ÇXÕ”² °Æ¬¹XÇ tÕp­%¸DÇ ÇXÕìÅ ø­ä´XÇ ¶ÀDÇ ´°2¸“±DÇ ƒ¬…ÇÈ²ä²."
+ 
+ #New Offensive Ideas 
+ mobile_warfare: ".ÇÙ³ÈxÇ È.Â"
+ mobile_warfare_desc: "¹Â¬¹”² ø­ƒ¬DÇ ”Íl­XÕ”² ÇÐÅŒ¬ 5ÆÈ²ä². °Æ¬¹XÇ `¾x¹ Ñ¼8Ìü¬ .ÇÙ³ÈxÇ Ž´³|¹ jÖ©ÆXÕìÅ Èä´tÇ ¼QÇXÕ0®Ä³ ÈÐÅ UÅÄ³tÕ|Å iÕÈ²ä²."
+ nation_at_war: "ÈÁÇÐÅ ˜ÌjÕ m­¬"
+ nation_at_war_desc: "°Æ¬¹ ˜°|· ÈíÅXÇ m­ü»ü¬ À­qÈä´XÇ È¹LÇDÇ ÈÖ(¸ÜÂ¬Ð DÕ”Æ¬ ˆÇµÂÈ²ä². ÈÁÇDÇ <ÕXÕÀÉÄ³ JÅà¬, ÈÁÇ ¬NÇ ÖäÂDÇ ø»jÎ ï´tÇ ²Í”Ípº P´ Ó Œ¼2¸ L°´ÅHÅDÇ Â ˆÇŒ¬ Ð¹tÇàÈ. ø­¸Œ¬ è²(¸´ ¬ÀŒ·ä´NÇ tÇð· È³ÈtÇà¬ ©¬À¼XÕ”² ÜÂ³ÐÅÄ³ ¬¬µ Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ constant_war: "J°„ÇÆÅ”² ÈÁÇ"
+ constant_war_desc: "°Æ¬¹ ˜°|·ÐÅ ³jÕ xÆŽ´XÇ J°„ÇÆÅ”² ÇÖü¬, ÀÉÄ³Çä´XÇ =Ó=ÌüÈXÇÈ Ë¬¥ÕNÇ °Æ¬¹|¹ tÇÃÆ ˜°|·ä´˜Ìü· ÈÁÇü¬ 0®ü­ÐÅÄ³ ¬ÈÐÅÁ˜° ÈÁÇ0ÑÐÅÁ˜° ‹ÂŒ¬ 4»±ÀÉÀÉ JÅ”² ˜°|·j¸ À¼¨ºÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ 
+ #Policies for Military Academy 
+ battlefield_innovation_act: "È¥ÇXÇ ÖàÂ"
+ religious_ceremonies_act: "…ÈP­ÈxÇ XÇÝÂ"
+ religious_ceremonies_act_1: "…ÈP­ÈxÇ XÇÝÂ"
+ religious_ceremonies_act_2: "…ÈP­ÈxÇ XÇÝÂ"
+ religious_ceremonies_act_3: "…ÈP­ÈxÇ XÇÝÂ"
+ general_governors_act: "ÍÅ³ ÈÄ³"
+ native_exploitation_act: "ÐÆüÈü» )ÌèÍ"
+ general_commisary_act: "Ñ¼8Ì Í¬"
+ border_administration_act: "m­Ë¬ ­¬¹m­"
+ all_men_can_serve_act: "Ì¹xÇ ¬Ñ¼È"
+ imperial_generals_act: "UÆ¬XÇ ÀÉÄ³%¸"
+ great_power_pawns_act: "ôÅ¬XÇ ´Ì²ÂÐ¹"
+ efialtes_act: "ÐÅ<ÕLÅLÑ²Â"
+ military_diplomacy_act: "p­¬À%¸DÇ µÑjÕ xÆP­"
+ powerful_merchants_act: "ÁÀxÇXÇ ¬%¸jÕ tÈ¬Ç¬"
+ elite_explorers_act: "ØÅ¬¹¸Ò ÐÐØÕ¬"
+ orchestrated_merchant_fleet_act: "pÈÁÉTÖ´ ÁÀ.Á³"
+ global_power_act: "m­ÈÈ Æ¥Õ%¸"
+ general_draft_act: "³Ü­¨º .Á¼"
+ soft_influence_act: "Ž´Ü´ì·´Æ Æ¥Õ%¸"
+ 
+ #Minor Patch, Late August 2020 
+ #IGE_efficient_bureaucracy: "High Court Examination"
+ #IGE_Tampon: "Sand"
+ #IGE_Events.26.t: "A Night with Pataly Nortman"
+ #IGE_Events.26.d: "Natalie Portman is the reason I work out. I have this fantasy where we start talking at the Vanity Fair Oscars party bar. We exchange a few pleasantries. She asks what I do. I say I loved her in New Girl. She laughs. I get my drink. \n"Well, see ya," I say and walk away. \nI've got her attention now. How many guys voluntarily leave a conversation with Natalie Portman? She touches her neck as she watches me leave. \nLater, as the night's dragged on and the coterie of gorgeous narcissists grows increasingly loose, she finds me on the balcony, my bowtie undone, smoking a cigarette. \n"Got a spare?" she asks. \n"What's in it for me?" I say as I hand her one of my little white ladies. She smiles. \n"Conversation with me, duh." I laugh. \n"What's so funny?" she protests. \n"Nothing, nothing... It's just... don't you grow tired of the egos?" \n"You get used to it," she says, lighting her cigarette and handing me back the lighter. \n"What would you do if you weren't an•¼ress?" I ask. \n"Teaching, I think." \n"And if I was your student, what would I be learning?" \n"Discipline," she says quickly, looking up into my eyes, before changing the subject. \n"Where are you from?" \n"Bermuda," I say. \n"Oh wow. That's lovely." \n"It's ok," I admit. \n"Not everything is to my liking." \n"What could possibly be not to your liking in Bermuda?" she inquires. \n"I don't like sand," I tell her. \n"It's coarse and rough and irritating and it gets everywhere."
+ #IGE_Events.26.a: "I know words, i have the best words"
+ 
+ #Even More Minor Patch, Early October 2020
+ sovereign_state_act: "ÇüÈÈxÇ m­¬"
+ 
+ #Major Patch 11th of October 2020, "I can do whatever the fuck i want ;)" 
+ absolutism_idea_groups_expanded: "È³üÈXÇ tÇP±" 
+ absolutism_idea_groups_expanded_bonus: "È³üÈXÇ tÇP± ô¼±²Â"
+ absolute_state: "È³ÈxÇ m­¬"
+ absolute_state_desc: "ÐÉtÇ ç¬ m­¬ä²!"
+ efficient_government: "¨Ö(ÇÈxÇ ÈŽ´" 
+ efficient_government_desc: "UÖ³´ ÈŽ´XÇ ÐÆjÖjÕ ´ÆÆNÇ ¬¥Ç ¨Ö(ÇÈxÇ ­Ì¸ä´ÐÅ XÇtÕÁÌ¹ ˆ¼Æü¬ 0®¥²tÇ ô¼¥Ç.´ ƒ¬…ÇÈ²ä²." 
+ regulate_factions_and_estates: "Ä¬5Îü¬ ÓŒ¼XÇ ­¬¹" 
+ regulate_factions_and_estates_desc: "À­qÈü¬ ­È ÓŒ¼XÇ ÜÂ³”² ÀÉ¬°µÂÈ²ä². °Æ¬¹ ÈŽ´ÐÅ ˆÇ”² µÑÈˆ´¥²XÇ ”ÆŒÁ|¹ ÀÉ0¼XÕà¬ ÑÉŒ­ÇXÇ ÁÐÅ Œ­%¸DÇ ÑÉÉÜÂÏ ÉÜÂä²." 
+ state_police: "m­¬ Ë¬0Ì" 
+ state_police_desc: "m­ü»DÇ ÇjÕ ÈŽ´|·”² jÔtºÈxÇ .ÁÈü¬ Ä¼¬j¸, m­¬XÇ ÂÌ±Ž´ÐÅ ³jÕ  Ç¬ÇÈ ÇØÕü¬ ¼Ž·DÇ „´ÄÁXÕ0® ÇjÕ D¾¼Ë¬0ÌXÇ DÕ”Æ1ÁNÇ XÇìÂXÇ ìÅÀÉ¬ ÆÅµÂÈ²ä²." 
+ enforced_centralization: "ÉYÅ ÑÉŒ­TÖ ÜÂ‰Õ" 
+ enforced_centralization_desc: "m­¬|¹ T³±Æ ¼ÈÜÂ²Ð0® ÇjÕ jÍ³jÕXÇ íÅÉ·DÇ ¼×`Õ DÕ”Æ¬ ˆÇµÂÈ²ä²!" 
+ carrot_and_stick_policy: "ù²ü­ü¬ DÌÌ ÈEÌ" 
+ carrot_and_stick_policy_desc: "àÂXÕNÆ …ÈÁm­ÐÅ ³jÕ È³üÈXÇÈ µÑXÎ”² Ž´Ü´ì·´Æ Âè²DÇ ¼×`Õ ìÅÀÉ|¹ ¨°¨¬.Á HÅ )´È²ä². ø­ä´NÇ °Æ¬¹XÇ Œ­%¸ÐÅ ù²ðÅˆ× õ¼…ÈtÕ|Å jÕä²”² ¬ÀäÂDÇ tÇtÕtÕ|Å iÕÈ²ä²." 
+ legitimate_rule: "È•¼jÕ ÀÉ0¼" 
+ legitimate_rule_desc: "ÈµÑ1ÁNÇ ¼Ò¼ÒjÕ  Ñ³, t¬ÈjÕ ÈŽ´NÆ ÁÉ°¬´´Å ˆÇµÂÈ²ä². tÇ EµXÇ iÕ•¼ÈxÇ µÑXÎÇj¸ xÇÈ¼0® ÇtÕ x±%¸XÕ”² ƒ¬tÇ °Æ¬¹XÇ à¬À­jÕ ©ºjÔ…ÇÈ²ä²."
+ 
+ #Absolutism Policies
+ imperial_ambitions_act: "Èm­XÇ |ÅÝ¹" 
+ harsh_espionage_act: "É°9ÖjÕ ©Ìô¼" 
+ ruthless_negotiating_act: "4»ÇD¾jÕ ©Ìô¼"
+ competitive_advantage_act: "Ë¬ÁÇXÇ tÇÈ" 
+ trade_company_act: "4»íÅ ŒÖ¬À" 
+ maritime_hegemony_act: "tÕÁÀ (ÓŒ­" 
+ supreme_state_act: "jÍà¬XÇ m­¬" 
+ law_and_order_act: "•¼ü¬ ÈÉÁ" 
+ subject_development_act: "…ÈÁm­ ¬¼" 
+ absolute_horde_authority_act: ".Ç©ºü»XÇ È³È Œ­Ç" 
+ noble_land_rights_act: "À­qÈXÇ ÆÀÉŒ­" 
+ thunder_warfare_act: "È©¬ È.Â" 
+ relentless_defensive_tactics_act: "H°ÈÉ4® )¼´Å" 
+ modernized_army_corps_act: "jÍàÂÝÂ p­³" 
+ army_expanded_act: "p­³ UÖ¥Ç" 
+ coordinated_barrage_act: "|ÇÈ ¬À©¬" 
+ state_army_act: "m­p­ =Ì2Á" 
+ elite_mercenaries_act: "ØÅ¬¹¸Ò ©ÆÑ¼³" 
+ modernized_engineer_corps: "jÍàÂÝÂ õ¬Ñ¼³" 
+ pride_of_the_fleet_act: "hÕ³XÇ ÇŽ´ìÂ" 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

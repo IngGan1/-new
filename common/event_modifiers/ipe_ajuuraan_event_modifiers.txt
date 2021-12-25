@@ -1,0 +1,22 @@
+hee_mogadishu_currency = {
+	trade_efficiency = 0.05
+	interest = -0.5
+}
+
+hee_mogadishu_administration = {
+	local_unrest = -1
+	local_autonomy = 0.03
+}
+
+hee_toob_menadir = {
+	local_production_efficiency = 0.2
+}
+
+hee_AJU_army = {
+	global_manpower_modifier = 0.1
+}
+
+hee_AJU_mercenary = {
+	mercenary_cost = -0.1
+	merc_maintenance_modifier = -0.1
+}

@@ -1,0 +1,1035 @@
+﻿l_english:
+ urban_heide: "Heide"
+ urban_heide_desc: ""
+ 
+ urban_bremervoerde: "Bremervörde"
+ urban_bremervoerde_desc: ""
+ 
+ urban_oldenburg: "Oldenburg"
+ urban_oldenburg_desc: ""
+ 
+ urban_emden: "Emden"
+ urban_emden_desc: ""
+ 
+ urban_slesvig: "Slesvig"
+ urban_slesvig_desc: ""
+ 
+ urban_kiel: "Kiel"
+ urban_kiel_desc: ""
+ 
+ urban_wittenberg: "Wittenberg"
+ urban_wittenberg_desc: ""
+ 
+ urban_lauenburg: "Lauenbourg"
+ urban_lauenburg_desc: ""
+ 
+ urban_prenzlau: "Prenzlau"
+ urban_prenzlau_desc: ""
+ 
+ urban_sternberg: "Sternberg"
+ urban_sternberg_desc: ""
+ 
+ urban_osnabrueck: "Osnabrück"
+ urban_osnabrueck_desc: ""
+ 
+ urban_lueneburg: "Lüneburg"
+ urban_lueneburg_desc: ""
+ 
+ urban_neuruppin: "Neuruppin"
+ urban_neuruppin_desc: ""
+ 
+ urban_avignon: "Avignon"
+ urban_avignon_desc: ""
+ 
+ urban: "Urban Terrain"
+ urban_desc: "This region is characterized by the large city in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_mediteran: "Mediterranean Harbor City"
+ urban_mediteran_desc: ""
+ 
+ urban_paris: "Paris"
+ urban_paris_desc: "This region is characterized by Paris in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_rome: "Rome"
+ urban_rome_desc: "This region is characterized by the city of Rome in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_venice: "Venice"
+ urban_venice_desc: "This region is characterized by the port city of Venice in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_constantinople: "Constantinople"
+ urban_constantinople_desc: "This region is characterized by the great port city of Constantinople ('Instanbul' called by the Turkish) in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_jerusalem: "Jerusalem"
+ urban_jerusalem_desc: "This region is characterized by the city of Jerusalem in its center and the surrounding cultivation of farms and smaller villages."
+ 
+ urban_arabic: "Gibraltar"
+ urban_arabic_desc: ""
+ 
+ urban_arabic_2: "Arabic City"
+ urban_arabic_2_desc: ""
+ 
+ urban_hanseatic: "Hanseatic City"
+ urban_hanseatic_desc: "This region is characterized by the large port city in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_mecca: "Mecca"
+ urban_mecca_desc: "This region is characterized by the Religious Pilgrimage Mecca in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_firenze: "Florence"
+ urban_firenze_desc: "This region is characterized by the great city of Florence in its center and the surrounding cultivation of farms and smaller villages." 
+   
+ urban_tenochtitlan: "Tenochtitlan"
+ urban_tenochtitlan_desc: "This region is characterized by the great Aztec town of Tenochtitlan in its center and the surrounding cultivation of farms and small villages"
+  
+ urban_hamburg: "Hamburg"
+ urban_hamburg_desc: "This region is characterized by the great city of Hamburg in its center and the surrounding cultivation of farms and smaller villages." 
+ 
+ urban_genoa: "Ligurian coastscape"
+ urban_genoa_desc: "This region is characterized by the great city of Genoa in its center and the surrounding cultivation of farms and small villages."
+ 
+ pyramids: "Pyramids of Giza"
+ pyramids_desc: "This region is characterized by desert, the cities of Tanta and Giza and the ancient pyramids."
+
+ coast_baltic_sea: "Baltic sea coastal landscape"
+ coast_baltic_sea_desc: "This region is characterized by the Baltic sea coast and several fishing villages and smaller port cities."
+ 
+ urban_london: "London"
+ urban_london_desc: "This region is characterized by the great city of London in its center and the surrounding cultivation of farms and smaller villages."
+  
+ arctic_ice: "Arctic Ice landscape"
+ arctic_ice_desc: "Diese Region ist durch Kälte und unfruchtbare Eislandschaften geprägt."
+ 
+ urban_naples: "Naples"
+ urban_naples_desc: "This region is characterized by the great city of Naples in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_sevilla: "Sevilla"
+ urban_sevilla_desc: "This region is characterized by the great city of Seville in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_vienna: "Vienna"
+ urban_vienna_desc: "This region is characterized by the large city of Vienna in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_toledo: "Toledo"
+ urban_toledo_desc: "This region is characterized by the great city of Toledo in its center and the surrounding cultivation of farms and small villages."
+
+ coast_north_sea: "Atlantic coastal landscape"
+ coast_north_sea_desc: "This region is characterized by the Atlantic and its coastal landscape with smaller port towns and fishing villages."
+ 
+ urban_dresden: "Dresden"
+ urban_dresden_desc: "This region is characterized by the large city of Dresden in its center and the surrounding cultivation of farms and small villages."
+ 
+ urban_breslau: "Wrocław"
+ urban_breslau_desc: "This region is characterized by the large city of Wrocław in its center and the surrounding cultivation of farms and small villages."
+ 
+ terrain_brandenburg: "Brandenburg"
+ terrain_brandenburg_desc: ""
+ 
+ very_drylands: "Harsh Dryland"
+ very_drylands_desc: ""
+
+ urban_athens: "Attica"
+ urban_athens_desc: ""
+ 
+ urban_kilwa: "Kilwa"
+ urban_kilwa_desc: ""
+ 
+ urban_cracow: "Cracow"
+ urban_cracow_desc: ""
+ 
+ urban_oxford: "Oxford"
+ urban_oxford_desc: ""
+ 
+ urban_edinborough: "Edinburgh"
+ urban_edinborough_desc: ""
+ 
+ urban_danzig: "Danzig"
+ urban_danzig_desc: ""
+ 
+ urban_siena: "Siena"
+ urban_siena_desc: ""
+ 
+ urban_brugge: "Bruges"
+ urban_brugge_desc: ""
+ 
+ urban_carcassonne: "Carcasonne"
+ urban_carcassonne_desc: ""
+ 
+ urban_praga: "Prague"
+ urban_praga_desc: ""
+ 
+ urban_york: "York"
+ urban_york_desc: ""
+ 
+ urban_lincoln: "Lincoln"
+ urban_lincoln_desc: ""
+ 
+ urban_berlin: "Berlin"
+ urban_berlin_desc: ""
+ 
+ urban_newcastle: "Newcastle"
+ urban_newcastle_desc: ""
+ 
+ urban_moscow: "Moscow"
+ urban_moscow_desc: ""
+  
+ urban_nottingham: "Nottingham"
+ urban_nottingham_desc: ""
+ 
+ urban_thessaloniki: "Thessaloniki"
+ urban_thessaloniki_desc: ""
+ 
+ urban_milano: "Milan"
+ urban_milano_desc: ""
+ 
+ urban_mantua: "Mantua"
+ urban_mantua_desc: ""
+ 
+ urban_copenhagen: "Copenhagen"
+ urban_copenhagen_desc: ""
+ 
+ lombardy_lake: "Lombardische Seen"
+ lombardy_lake_desc: "This region is characterized by its large lakes in lombardy."
+ 
+ urban_stockholm: "Stockholm"
+ urban_stockholm_desc: ""
+ 
+ urban_antwerp: "Antwerp"
+ urban_antwerp_desc: ""
+ 
+ urban_vilna: "Vilnius"
+ urban_vilna_desc: ""
+ 
+ urban_kent: "Canterbury"
+ urban_kent_desc: ""
+ 
+ urban_trakai: "Trakai"
+ urban_trakai_desc: ""
+ 
+ urban_amsterdam: "Amsterdam"
+ urban_amsterdam_desc: ""
+ 
+ urban_denbosch: "Den Bosch"
+ urban_denbosch_desc: ""
+ 
+ urban_gelre: "Geldern"
+ urban_gelre_desc: ""
+ 
+ urban_warsaw: "Warsaw"
+ urban_warsaw_desc: ""
+ 
+ urban_lyon: "Lyon"
+ urban_lyon_desc: ""
+ 
+ urban_marienburg: "Marienburg"
+ urban_marienburg_desc: ""
+ 
+ urban_gondar: "Gondar"
+ urban_gondar_desc: ""
+ 
+ urban_theodoro: "Theodoro"
+ urban_theodoro_desc: ""
+ 
+ urban_utrecht: "Utrecht"
+ urban_utrecht_desc: ""
+ 
+ urban_ani: "unused"
+ urban_ani_desc: ""
+ 
+ urban_kars: "Kars"
+ urban_kars_desc: ""
+ 
+ terrain_orderland: "Trento"
+ terrain_orderland_desc: ""
+ 
+ urban_smyrna: "Smyrna"
+ urban_smyrna_desc: ""
+ 
+ coast_america: "American Atlantic coastline"
+ coast_america_desc: ""
+ 
+ urban_munich: "Munich"
+ urban_munich_desc: ""
+ 
+ urban_lisboa: "Lisbon"
+ urban_lisboa_desc: ""
+ 
+ urban_havanna: "Havana"
+ urban_havanna_desc: ""
+ 
+ urban_nassau: "Nassau"
+ urban_nassau_desc: ""
+ 
+ urban_new_orleans: "New Orleans"
+ urban_new_orleans_desc: ""
+ 
+ urban_akkon: "Acre and Nabblus"
+ urban_akkon_desc: ""
+ 
+ mountains_himalaya: "Himalayas"
+ mountains_himalaya_desc: "In the Himalayas there are ten of the fourteen mountains of the earth, whose peaks are more than 8000 meters high, including Mount Everest, the highest mountain on earth."
+ 
+ urban_new_york: "New York"
+ urban_new_york_desc: ""
+   
+ urban_boston: "Boston"
+ urban_boston_desc: ""
+ 
+ urban_lhasa: "Lhasa"
+ urban_lhasa_desc: ""
+ 
+ generic_isle: "Caribbean Islands"
+ generic_isle_desc: ""
+ 
+ generic_isle2: "Caribbean Islands"
+ generic_isle2_desc: ""
+ 
+ mountains_rocky_mountains: "Rocky Mountains"
+ mountains_rocky_mountains_desc: ""
+ 
+ mountains_appalachian: "Appalachian Mountains"
+ mountains_appalachian_desc: "Mountains"
+ 
+ mountains_appalachian_hills: "Appalachian Mountains"
+ mountains_appalachian_hills_desc: "Hills"
+ 
+ urban_koenigsberg: "Königsberg"
+ urban_koenigsberg_desc: ""
+ 
+ urban_salzburg: "Salzburg"
+ urban_salzburg_desc: ""
+ 
+ urban_ragusa: "Ragusa"
+ urban_ragusa_desc: ""
+ 
+ urban_nicosia: "Nicosia"
+ urban_nicosia_desc: ""
+ 
+ urban_rhodos: "Rhodos"
+ urban_rhodos_desc: ""
+ 
+ urban_cairo: "Cairo"
+ urban_cairo_desc: ""
+ 
+ urban_dublin: "Dublin"
+ urban_dublin_desc: ""
+ 
+ urban_kyoto: "Kyoto"
+ urban_kyoto_desc: ""
+ 
+ mount_fuji: "Mount Fuji"
+ mount_fuji_desc: ""
+ 
+ easter_egg: "Easter Egg"
+ easter_egg_desc: "smile!"
+ 
+ japanese_hills: "Japanese hill landscape"
+ japanese_hills_desc: ""
+ 
+ japanese_farmland: "Japanese farmlands"
+ japanese_farmland_desc: ""
+  
+ urban_bursa: "Bursa"
+ urban_bursa_desc: ""
+ 
+ urban_cadiz: "Cádiz"
+ urban_cadiz_desc: ""
+ 
+ urban_granada: "Granada"
+ urban_granada_desc: ""
+ 
+ urban_trebizond: "Trebizond"
+ urban_trebizond_desc: ""
+ 
+ urban_madrid: "Madrid"
+ urban_madrid_desc: ""
+ 
+ urban_budapest: "Budapest"
+ urban_budapest_desc: ""
+   
+ urban_nice: "Nice"
+ urban_nice_desc: ""
+ 
+ mountains_ural: "Ural mountains"
+ mountains_ural_desc: ""
+ 
+ urban_heidelberg: "Heidelberg"
+ urban_heidelberg_desc: ""
+ 
+ urban_vladimir: "Vladimir"
+ urban_vladimir_desc: ""
+ 
+ urban_novgorod: "Novgorod"
+ urban_novgorod_desc: ""
+ 
+ urban_mozhaisk: "Mozhaisk"
+ urban_mozhaisk_desc: ""
+ 
+ urban_rostov: "Rostov"
+ urban_rostov_desc: ""
+ 
+ urban_suzdal: "Suzdal"
+ urban_suzdal_desc: ""
+ 
+ urban_tver: "Tver"
+ urban_tver_desc: ""
+ 
+ urban_nizhny_novgorod: "Nizhny Novgorod"
+ urban_nizhny_novgorod_desc: ""
+ 
+ urban_kazan: "Kazan"
+ urban_kazan_desc: ""
+ 
+ urban_yaroslavl: "Yaroslavl"
+ urban_yaroslavl_desc: ""
+ 
+ urban_rzhev: "Rzhev"
+ urban_rzhev_desc: ""
+ 
+ urban_grodno: "Grodno"
+ urban_grodno_desc: ""
+ 
+ urban_kiev: "Kiev"
+ urban_kiev_desc: ""
+ 
+ urban_kolomna: "Kolomna"
+ urban_kolomna_desc: ""
+ 
+ urban_kostroma: "Kostroma"
+ urban_kostroma_desc: ""
+ 
+ urban_tula: "Tula"
+ urban_tula_desc: ""
+ 
+ urban_vitebsk: "Vitebsk"
+ urban_vitebsk_desc: ""
+ 
+ urban_kasimov: "Kasimov"
+ urban_kasimov_desc: ""
+ 
+ urban_ustjug: "Ustjug"
+ urban_ustjug_desc: ""
+ 
+ urban_minsk: "Minsk"
+ urban_minsk_desc: ""
+ 
+ urban_smolensk: "Smolensk"
+ urban_smolensk_desc: ""
+ 
+ urban_polotsk: "Polotsk"
+ urban_polotsk_desc: ""
+ 
+ urban_lwow: "Lviv"
+ urban_lwow_desc: ""
+ 
+ urban_kursk: "Kursk"
+ urban_kursk_desc: ""
+ 
+ urban_vologda: "Vologda"
+ urban_vologda_desc: ""
+ 
+ urban_galich: "Galich"
+ urban_galich_desc: ""
+ 
+ urban_ryasan: "Ryasan"
+ urban_ryasan_desc: ""
+ 
+ urban_saint_petersburg: "Saint Petersburg"
+ urban_saint_petersburg_desc: ""
+ 
+ urban_pleskau: "Pskov"
+ urban_pleskau_desc: ""
+ 
+ urban_baloozero: "Beloozero"
+ urban_baloozero_desc: ""
+ 
+ urban_cherdyn: "Cherdyn"
+ urban_cherdyn_desc: ""
+ 
+ urban_marseille: "Marseille"
+ urban_marseille_desc: ""
+ 
+ urban_tunis: "Tunis"
+ urban_tunis_desc: ""
+ 
+ urban_lublin: "Lublin"
+ urban_lublin_desc: ""
+ 
+ urban_beijing: "Beijing"
+ urban_beijing_desc: ""
+ 
+ urban_nanjing: "Nanjing"
+ urban_nanjing_desc: ""
+ 
+ urban_canton: "Canton"
+ urban_canton_desc: "also known as Guangzhou"
+ 
+ urban_valencia: "Valencia"
+ urban_valencia_desc: ""
+ 
+ urban_palermo: "Palermo"
+ urban_palermo_desc: ""
+ 
+ urban_verona: "Verona"
+ urban_verona_desc: "" 
+ 
+ urban_hajitarkhan: "Astrakhan"
+ urban_hajitarkhan_desc: ""
+ 
+ urban_alexandria: "Alexandria"
+ urban_alexandria_desc: ""
+ 
+ urban_angkor_wat: "Angkor Wat"
+ urban_angkor_wat_desc: ""
+ 
+ urban_pyeongyang: "Pyeongyang"
+ urban_pyeongyang_desc: ""
+ 
+ urban_hangzhou: "Hangzhou"
+ urban_hangzhou_desc: ""
+  
+ urban_yangzhou: "Yangzhou"
+ urban_yangzhou_desc: ""
+ 
+ urban_chengdu: "Chengdu"
+ urban_chengdu_desc: ""
+ 
+ chinese_mountains: "Chinese Mountains"
+ chinese_mountains_desc: ""
+ 
+ urban_cotbus: "Cottbus"
+ urban_cotbus_desc: ""
+ 
+ bohemian_forest: "Bohemian landscape"
+ bohemian_forest_desc: ""
+ 
+ bohemian_highlands: "Bohemian Highlands"
+ bohemian_highlands_desc: ""
+ 
+ bohemian_grasland: "Moravian Grassland"
+ bohemian_grasland_desc: ""
+ 
+ thuringian_woods: "Thuringian Forest"
+ thuringian_woods_desc: ""
+ 
+ bohemian_mountains: "Ore Mountains"
+ bohemian_mountains_desc: ""
+ 
+ urban_barcelona: "Barcelona"
+ urban_barcelona_desc: ""
+ 
+ urban_litomerice: "Litoměřice"
+ urban_litomerice_desc: ""
+ 
+ urban_pilsen: "Pilsen"
+ urban_pilsen_desc: ""
+ 
+ urban_budweis: "Budweis"
+ urban_budweis_desc: ""
+ 
+ urban_tiflis: "T'bilisi"
+ urban_tiflis_desc: "Due to its location on the crossroads between Europe and Asia, throughout history T'bilisi has been a stragetic asset between empires."
+ 
+ urban_amberg: "Amberg"
+ urban_amberg_desc: ""
+ 
+ urban_bamberg: "Bamberg"
+ urban_bamberg_desc: ""
+ 
+ urban_augsburg: "Augsburg"
+ urban_augsburg_desc: ""
+ 
+ urban_baden: "Baden"
+ urban_baden_desc: ""
+ 
+ urban_freiburg: "Freiburg im Breisgau"
+ urban_freiburg_desc: ""
+  
+ urban_ravensburg: "Ravensburg"
+ urban_ravensburg_desc: ""
+ 
+ urban_regensburg: "Regensburg"
+ urban_regensburg_desc: ""
+  
+ urban_landshut: "Landshut"
+ urban_landshut_desc: ""
+ 
+ urban_mainz: "Mainz"
+ urban_mainz_desc: ""
+ 
+ urban_swabian_hall: "Hall"
+ urban_swabian_hall_desc: ""
+ 
+ urban_ingolstadt: "Ingolstadt"
+ urban_ingolstadt_desc: ""
+ 
+ urban_nuernberg: "Nuremberg"
+ urban_nuernberg_desc: ""
+ 
+ urban_wuerzburg: "Würzburg"
+ urban_wuerzburg_desc: ""
+ 
+ urban_straubing: "Straubing"
+ urban_straubing_desc: ""
+ 
+ urban_worms: "Worms"
+ urban_worms_desc: ""
+ 
+ urban_stuttgart: "Stuttgart"
+ urban_stuttgart_desc: ""
+ 
+ urban_samarkand: "Samarkand"
+ urban_samarkand_desc: ""
+  
+ chinese_wall: "Chinese Wall"
+ chinese_wall_desc: ""
+ 
+ urban_datong: "Datong"
+ urban_datong_desc: ""
+ 
+ urban_hanseong: "Hanseong"
+ urban_hanseong_desc: "Also known as Namgyeong and as Seoul"
+ 
+ urban_girin: "Girin"
+ urban_girin_desc: ""
+ 
+ urban_gyeongju: "Gyeongju"
+ urban_gyeongju_desc: ""
+ 
+ urban_mogilyov: "Mogiljow"
+ urban_mogilyov_desc: ""
+ 
+ urban_shenyang: "Shenyang"
+ urban_shenyang_desc: ""
+ 
+ urban_wuchang: "Wuchang"
+ urban_wuchang_desc: ""
+ 
+ mountain_paektusan: "Paektusan"
+ mountain_paektusan_desc: "kor. 'Whitehead Mountain'"
+ 
+ urban_yunnan: "Yunnan"
+ urban_yunnan_desc: ""
+ 
+ urban_yumen: "Yumen"
+ urban_yumen_desc: ""
+ 
+ urban_luoyang: "Luoyang"
+ urban_luoyang_desc: ""
+  
+ urban_xiangyang: "Xiangyang"
+ urban_xiangyang_desc: ""
+ 
+ urban_braganca: "Bragança"
+ urban_braganca_desc: ""
+ 
+ urban_porto: "Porto"
+ urban_porto_desc: ""
+ 
+ urban_coimbra: "Coimbra"
+ urban_coimbra_desc: ""
+ 
+ urban_viseu: "Viseu"
+ urban_viseu_desc: "" 
+ 
+ urban_strassburg: "Straßburg"
+ urban_strassburg_desc: ""
+ 
+ urban_memmingen: "Memmingen"
+ urban_memmingen_desc: ""
+ 
+ urban_schwerin: "Schwerin"
+ urban_schwerin_desc: ""
+
+ urban_trondheim: "Trondheim"
+ urban_trondheim_desc: ""
+ urban_bergen: "Bergen"
+ urban_bergen_desc: ""
+ urban_christiania: "Christiania"
+ urban_christiania_desc: "Also known as Oslo"
+ 
+ urban_aachen: "Aachen"
+ urban_aachen_desc: ""
+ urban_brunswik: "Braunschweig"
+ urban_brunswik_desc: ""
+ urban_dessau: "Dessau"
+ urban_dessau_desc: ""
+ urban_duesseldorf: "Düsseldorf"
+ urban_duesseldorf_desc: ""
+ urban_greifswald: "Greifswald"
+ urban_greifswald_desc: ""
+ urban_hannover: "Hannover"
+ urban_hannover_desc: ""
+ urban_hoya: "Hoya"
+ urban_hoya_desc: ""
+ urban_kassel: "Kassel"
+ urban_kassel_desc: ""
+ urban_kleve: "Kleve"
+ urban_kleve_desc: ""
+ urban_koblenz: "Koblenz"
+ urban_koblenz_desc: ""
+ urban_kolberg: "Kolberg"
+ urban_kolberg_desc: ""
+ urban_leipzig: "Leipzig"
+ urban_leipzig_desc: ""
+ urban_marburg: "Marburg"
+ urban_marburg_desc: ""
+ urban_meppen: "Meppen"
+ urban_meppen_desc: ""
+ urban_muenster: "Münster"
+ urban_muenster_desc: ""
+ urban_potsdam: "Potsdam"
+ urban_potsdam_desc: ""
+ urban_rostock: "Rostock"
+ urban_rostock_desc: ""
+ urban_stetin: "Stetin"
+ urban_stetin_desc: ""
+ urban_stolp: "Stolp"
+ urban_stolp_desc: ""
+ urban_stralsund: "Stralsund"
+ urban_stralsund_desc: ""
+ urban_trier: "Trier"
+ urban_trier_desc: ""
+ urban_wiesbaden: "Wiesbaden"
+ urban_wiesbaden_desc: ""
+ urban_wismar: "Wismar"
+ urban_wismar_desc: ""
+ urban_paderborn: "Paderborn"
+ urban_paderborn_desc: ""
+ urban_arnsberg: "Arnsberg"
+ urban_arnsberg_desc: ""
+ urban_magdeburg: "Magdeburg"
+ urban_magdeburg_desc: ""
+ urban_bremen: "Bremen"
+ urban_bremen_desc: ""
+ urban_frankfurt: "Frankfurt"
+ urban_frankfurt_desc: ""
+ urban_koeln: "Cologne"
+ urban_koeln_desc: ""
+ urban_luxemburg: "Luxemburg"
+ urban_luxemburg_desc: ""
+ urban_ulm: "Ulm"
+ urban_ulm_desc: ""
+ urban_luebeck: "Lübeck"
+ urban_luebeck_desc: ""
+ 
+ urban_pisa: "Pisa"
+ urban_pisa_desc: ""
+ urban_sogn: "Sogn"
+ urban_sogn_desc: ""
+ urban_agder: "Stavanger"
+ urban_agder_desc: ""
+ urban_besancon: "Besancon"
+ urban_besancon_desc: ""
+ urban_halogaland: "Helgeland"
+ urban_halogaland_desc: ""
+ easter_island: "Easter Island"
+ easter_island_desc: ""
+ urban_bangkok: "Bangkok"
+ urban_bangkok_desc: ""
+ urban_medina: "Medina"
+ urban_medina_desc: ""
+ 
+ urban_iverness: "Iverness"
+ urban_iverness_desc: ""
+ scottish_highlands: "Scottish_Highlands"
+ scottish_highlands_desc: ""
+ urban_hebrids: "Hebrids"
+ urban_hebrids_desc: ""
+ urban_fife: "Fife"
+ urban_fife_desc: ""
+ urban_orkney: "Orkney"
+ urban_orkney_desc: ""
+ urban_ayr_glasgow: "Ayshire"
+ urban_ayr_glasgow_desc: ""
+ urban_fyn: "Fyn"
+ urban_fyn_desc: ""
+ urban_ostjylland: "Aarhus"
+ urban_ostjylland_desc: ""
+ urban_vestjylland: "Westjylland"
+ urban_vestjylland_desc: ""
+ urban_nordjylland: "Northjylland"
+ urban_nordjylland_desc: ""
+ urban_kolding: "Kolding"
+ urban_kolding_desc: ""
+ urban_hordaland: "Hordaland"
+ urban_hordaland_desc: "" 
+ urban_bornholm: "Bornholm"
+ urban_bornholm_desc: ""
+ urban_kulm: "Kulm"
+ urban_kulm_desc: ""
+ urban_memel: "Memel"
+ urban_memel_desc: ""
+ urban_tirol: "Tirol"
+ urban_tirol_desc: ""
+ urban_linz: "Linz"
+ urban_linz_desc: ""
+ urban_steiermark: "Styria"
+ urban_steiermark_desc: ""
+ urban_bern: "Bern"
+ urban_bern_desc: ""
+ urban_carlisle: "Carlisle"
+ urban_carlisle_desc: ""
+ urban_bristol: "Bristol"
+ urban_bristol_desc: ""
+ urban_salisbury: "Salisbury"
+ urban_salisbury_desc: ""
+ urban_chester: "Chester"
+ urban_chester_desc: ""
+ urban_exeter: "Exeter"
+ urban_exeter_desc: ""
+ urban_coventry: "Coventry"
+ urban_coventry_desc: ""
+ urban_kalmar: "Kalmar"
+ urban_kalmar_desc: ""
+ urban_oesel: "Oesel"
+ urban_oesel_desc: ""
+ urban_reval: "Reval"
+ urban_reval_desc: ""
+ urban_bilbao: "Bilbao"
+ urban_bilbao_desc: ""
+ urban_malta: "Malta"
+ urban_malta_desc: ""
+ urban_corfu: "Corfu"
+ urban_corfu_desc: ""
+ urban_larissa: "Larissa"
+ urban_larissa_desc: ""
+ urban_nafplio: "Nafplio"
+ urban_nafplio_desc: ""
+ urban_stendal: "Stendal"
+ urban_stendal_desc: ""
+ urban_wittenberg: "Wittenberg"
+ urban_wittenberg_desc: ""
+ urban_landsberg: "Landsberg an der Warthe"
+ urban_landsberg_desc: ""
+ urban_prenzlau: "Prenzlau"
+ urban_prenzlau_desc: ""
+ 
+ 
+ urban_brussel: "Brussels"
+ urban_brussel_desc: ""
+ urban_den_haag: "Den Haag"
+ urban_den_haag_desc: ""
+ urban_groeningen: "Groningen"
+ urban_groeningen_desc: ""
+ urban_bordeaux: "Bordeaux"
+ urban_bordeaux_desc: ""
+ urban_toulouse: "Toulouse"
+ urban_toulouse_desc: ""
+ urban_loire: "Châteaux of the Loire"
+ urban_loire_desc: ""
+ urban_reims: "Reims"
+ urban_reims_desc: ""
+ urban_lille: "Lille"
+ urban_lille_desc: ""
+ urban_nantes: "Nantes"
+ urban_nantes_desc: ""
+ urban_gent: "Ghent"
+ urban_gent_desc: ""
+ urban_gotland: "Gotland"
+ urban_gotland_desc: ""
+ finnmark_forest: "Finnmark"
+ finnmark_forest_desc: ""
+ 
+ sweden_forest: "Swedish Landscape"
+ sweden_forest_desc: ""
+ 
+ urban_ceuta:0 "Ceuta"
+ urban_ceuta_desc:0 "This province is characterized by the port of Ceuta and its surrounding fortifications."
+ 
+ urban_constantine:0 "Constantine"
+ urban_constantine_desc:0 "This province is home to the city of Constantine, surrounded by highlands."
+ 
+ urban_damietta:0 "Damietta"
+ urban_damietta_desc:0 "This fertile province is characterized by the harbour city of Damietta and the fertile plains along the Nile Delta."
+ 
+ urban_fez:0 "Fez"
+ urban_fez_desc:0 "In this mountainous province one of the great cities of Morocco lies in defensible terrain and protected by its city walls."
+ 
+ urban_hautesplaines:0 "High Plains of Algeria"
+ urban_hautesplaines_desc:0 "This province is part of a larger plateau, characterized by its infertility and scorching heat."
+ 
+ urban_kef: "Kef"
+ urban_kef_desc:0 "This province centers around the city of Kef, a strategically important fortress defending the wealthy port of Tunis from assaults inland."
+ 
+ urban_mitija-algiers:0 "Algiers"
+ urban_mitija-algiers_desc:0 "This province situated on the Barbary Coast, contains the strategic port of Algiers and its immediate hilly countryside, which constitutes a natural defense from inland invasion and raiders."
+ 
+ urban_mombasa:0 "Mombasa"
+ urban_mombasa_desc:0 "This province is home to the natural harbour of Mombasa, protected by its fortress."
+ 
+ urban_mountsinai:0 "Mount Sinai"
+ urban_mountsinai_desc:0 "This province on the Sinai Peninsula is characterized not only by its hostile desert landscape, but the Mount Sinai, where Moses received the Ten Commandments."
+ 
+ urban_nilefayyum:0 "Nile River Banks"
+ urban_nilefayyum_desc:0 "This province is characterized by the fertility of the sediments brought by the Niler River."
+ 
+ urban_ourzazate:0 "Ouarzazate"
+ urban_ourzazate_desc:0 "The heart of this province is the city of Ouarzazate, which is situated on a plateau a thousand metres above sealevel with desert to its south and the Southern Atlas Mountains to its north."
+ 
+ urban_rifmountains:0 "Rif Mountains"
+ urban_rifmountains_desc:0 "The Rif Mountain Range cut through this province, which otherwise is situated significantly above sealevel."
+ 
+ urban_sousse:0 "Sousse"
+ urban_sousse_desc:0 "Sousse"
+ 
+ urban_suakin:0 "Suakin Island"
+ urban_suakin_desc:0 "This province is home to the ancient city of corals, Suakin or known by Ptolemy as Port of Good Hope, a port situated on a circular island at the end of a long inlet."
+ 
+ urban_tangiers:0 "Tangiers"
+ urban_tangiers_desc:0 "This province is characterized by the port of Tangiers at the entry of the Gibraltar Strait."
+ 
+ urban_tetouan:0 "Tetouan"
+ urban_tetouan_desc:0 "This province is characterized by Tetouan, called Granada's daughter due to a significant Andalusian heritage, and its surroundings."
+ 
+ urban_timbuktu:0 "Timbuktu"
+ urban_timbuktu_desc:0 "Timbuktu"
+ 
+ urban_tripolitania:0 "Tripoli"
+ urban_tripolitania_desc:0 "This coastal province is characterized by the port of Tripoli, also known as Tripoli of the West to differentiate from its Levantine namesake, and wellknown for its whitewashed buildings and the turqoise waters of the littoral waters."
+ 
+ urban_zanzibar:0 "Zanzibar"
+ urban_zanzibar_desc:0 "This province consists the Zanzibar Archipelago with the main island of Zanzibar, otherwise known as Unguja, as its population and economic centre."
+ 
+ urban_aden:0 "Aden"
+ urban_aden_desc:0 "This province is characterized by the port of Aden and its mountainous environment, which constitutes a natural defense for any invader, especially inland."
+ 
+ urban_aleppo:0 "Aleppo"
+ urban_aleppo_desc:0 "This dryland province is home to the trading hub of Aleppo and its famous citadel towering above the city and its outskirts."
+ 
+ urban_antioch:0 "Antakya"
+ urban_antioch_desc:0 "This province is characterized by the town of Antakya, also known as Antioch and its outskirts."
+ 
+ urban_aqabah:0 "Aqaba"
+ urban_aqabah_desc:0 "This province is characterized by the rugged, dry terrain along the Gulf of Aqaba."
+ 
+ urban_baghdad:0 "Baghdad"
+ urban_baghdad_desc:0 "This province is home to the city of Baghdad and is otherwise characterized by fertile farmlands along the river banks of the Tigris River."
+ 
+ urban_basra:0 "Basra"
+ urban_basra_desc:0 "This province is characterized by the Mesopotamian Marshes, the Shatt-Al-Arab and the port of Basra, an outlet to the Persian Gulf."
+ 
+ urban_tyre:0 "Sayda and Tyre"
+ urban_tyre:0 "This province is characterized by the Anti-Lebanon Mountains and the coastal cities of Sayda, otherwise known as Sidon, and Tyre."
+ 
+ urban_damascus:0 "Damascus"
+ urban_damascus:0 "This province is characterized by the ancient city of Damascus, in which the river of Barada flows, and the fertile land along the river bank."
+ 
+ urban_gaza:0 "Gaza"
+ urban_gaza_desc:0 "This province is characterized by the port of Gaza and the Negev or Naqab desert."
+ 
+ urban_hama:0 "Hama"
+ urban_hama_desc:0 "This dryland province is characterized by the city of Hama and the Orontes river, which unlike other rivers in the region, flows from south towards the north, and reflected in its native name, Asi."
+ 
+ urban_homs:0 "Homs"
+ urban_homs_desc:0 "This province is characterized by the city of Homs, through which the Orontes river snakes, and its dryland surroundings."
+ 
+ urban_kerak:0 "Al Karak"
+ urban_kerak_desc:0 "This province is known the old citadel of Kerak and characterized by its otherwise mountainous terrain."
+ 
+ urban_mosul:0 "Mosul"
+ urban_mosul_desc:0 "This province is characterized by the city of Mosul and the Tigris river, which provide the province with just enough fertility to be more than a desert."
+ 
+ urban_muscat:0 "Muscat"
+ urban_muscat_desc:0 "This province is characterized by the port of Muscat and its surrounding villages."
+ 
+ urban_najaf:0 "Najaf"
+ urban_najaf_desc:0 "This desert province is home to the religious center of Najaf, a holy place for Shiite Muslims."
+ 
+ urban_palmyra:0 "Palmyra"
+ urban_palmyra_desc:0 "This desert province is home to the remains of the ancient city of Palmyra, and the town surrounding it."
+ 
+ urban_sanaa:0 "Sanaa"
+ urban_sanaa_desc:0 "This province is characterized by the Haraz Mountains, which are located close to the city of Sanaa, and separates it from the coastal plain of Tihama."
+ 
+ urban_shatt:0 "Mesopotamian Marshes"
+ urban_shatt_desc:0 "This province is encompassed by the Mesopotamian Marshes, the largest wetland ecosystem of the Levant."
+ 
+ urban_socotra:0 "Socotra"
+ urban_socotra_desc:0 "This province is characterized by the isolated island of Socotra, shrouded by mystery of its peculiar landscape, unseen anywhere else in the world as we know it."
+ 
+ urban_suwayda:0 "Suwayda"
+ urban_suwayda_desc:0 "This province is characterized by its dry landscape and partly the mountains to the south, such as the Druze Mountain."
+ 
+ urban_tikrit:0 "Iraqi landscape"
+ urban_tikrit:0 "This province is characterized by fertile farmlands and palm tree woods, where a staple of the region, dates, are extracted."
+ 
+ urban_trablussham:0 "Levantine Tripoli"
+ urban_trablussham:0 "This province is characterized by Tripoli, also known as Tripoli of the Levant to differentiate from its namesake in Tripolitania, and its hilly surroundings."
+ 
+ urban_alborz:0 "Alborz"
+ urban_alborz_desc:0 "Alborz"
+ 
+ urban_delhi:0 "Delhi"
+ urban_delhi_desc:0 "This province is characterized by the city of Delhi and its Red Fort, besides the fertile river plain surrounding the city."
+ 
+ urban_dhaka:0 "Dhaka"
+ urban_dhaka_desc:0 "This province is characterized by the port of Dhaka, a gate to the Bay of Bengal, and its surrounding villages and forests."
+ 
+ urban_gingee:0 "Gingee"
+ urban_gingee_desc:0 "This province is characterized by the fort in Gingee and its mountainous surroundings."
+ 
+ urban_gird:0 "Gwalior"
+ urban_gird_desc:0 "This province is characterized by the fort of Gwalior and generally hilly terrain."
+ 
+ urban_goa:0 "Goa"
+ urban_goa_desc:0 "This province is characterized by the port of Goa, situated at the foot of the mountain range named the Western Ghats."
+ 
+ urban_golconda:0 "Golconda"
+ urban_golconda:0 "This highland province is characterized by the fort of Golconda, and said to be the home of the most famous diamonds in the world."
+ 
+ urban_isfahan:0 "Isfahan"
+ urban_isfahan_desc:0 "This mountainous province is characterized by the city of Isfahan and among other things, its distinctive mosques."
+ 
+ urban_jaunpur:0 "Jaunpur"
+ urban_jaunpur_desc:0 "This province is characterized by the city of Jaunpur and its fertile surroundings."
+ 
+ urban_kabul:0 "Kabul"
+ urban_kabul_desc:0 "This province is home to the city of Kabul and otherwise covered by mountains."
+ 
+ urban_kashmir:0 "Kashmir"
+ urban_kashmir_desc:0 "This province is characterized by the mountainous terrain close to the Himalayas, and the more populous Kashmir Valley."
+ 
+ urban_kermanshah:0 "Kermanshah"
+ urban_kermanshah_desc:0 "Kermanshah"
+ 
+ urban_kumari:0 "Cape Comorin"
+ urban_kumari_desc:0 "This province is characterized by the being the end of the Western Ghats, and not least the Comorin Cape, the very southern tip of the Indian subcontinent."
+ 
+ urban_qom:0 "Qom"
+ urban_qom_desc:0 "Qom"
+ 
+ urban_lahore:0 "Lahore"
+ urban_lahore_desc:0 "This province is characterized by ertile farmlands and the trade centre of Lahore."
+ 
+ urban_lucknow:0 "Lucknow"
+ urban_lucknow_desc:0 "This province is characterized by one of the significant cities of the Indo-Gangeatic plain."
+ 
+ urban_malacca:0 "Malacca"
+ urban_malacca_desc:0 "Malacca"
+ 
+ urban_multan:0 "Multan"
+ urban_multan_desc:0 "Multan"
+ 
+ urban_shiraz:0 "Shiraz"
+ urban_shiraz_desc:0 "Shiraz"
+ 
+ urban_malacca:0 "Malacca"
+ urban_malacca_desc:0 "Malacca"
+ 
+ urban_westernghats:0 "Western Ghats"
+ urban_westernghats_desc:0 "This province is characterized by the Western Ghats, a mountain range marking the western border of the Deccan plateau."
+ 
+ urban_westernghats2:0 "Western Ghats"
+ urban_westernghats2_desc:0 "This province is characterized by the higher peaks of the Western Ghats, which acts as a barrier between the Deccan Plateau and the Malabar Coast."
+ 
+ urban_ternate:0 "Ternate"
+ urban_ternate_desc:0 "This province is characterized by the city of Ternate and its surroundings consisting of jungle and volatile volcanoes."
+ 
+ urban_edirne:0 "Edirne"
+ urban_edirne_desc:0 "This province is characterized by the city of Edirne, or Adrianople, and the Evros river flowing the grasslands."
+
+ urban_creta:0 "Creta"
+ urban_creta_desc:0 "This province consists entirely of the strategic island of Crete, characterized by its elevated interior."
+ 
+ urban_iskodra:0 "Lezhe"
+ urban_iskodra_desc:0 "This province is home to the city of Lezhe, located close to a nearby mountain range."
+ keine_zuordnung: "NO Attribution"
+ keine_zuordnung_desc: "Please contact the Mod maker of BETTER URBAN TERRAIN PICTURES and report this bug"

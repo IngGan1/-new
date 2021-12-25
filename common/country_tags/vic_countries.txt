@@ -1,0 +1,6 @@
+# Albert countries
+SVU = "countries/SovietUnion.txt"
+NGC = "countries/NorthGermanConfederation.txt"
+GRP = "countries/GermanRepublic.txt"
+AUE = "countries/AustrianEmpire.txt"
+AHE = "countries/AustriaHungary.txt"

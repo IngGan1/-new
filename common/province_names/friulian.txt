@@ -1,0 +1,3 @@
+111 = "Friûl"
+1769 = "Gurize"
+3044 = "Tisane"

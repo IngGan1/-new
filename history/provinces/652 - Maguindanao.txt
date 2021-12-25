@@ -1,0 +1,22 @@
+#652 - Maguindanao
+
+owner = MGD
+controller = MGD
+add_core = MGD
+is_city = yes
+culture = maguindanao
+religion = animism
+capital = "Maguindanao"
+trade_goods = nutmeg
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+native_size = 60
+native_ferocity = 4
+native_hostileness = 7
+
+discovered_by = chinese
+
+1450.1.1 = { religion = sunni }
+1527.1.1 = { discovered_by = SPA }

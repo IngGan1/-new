@@ -1,0 +1,114 @@
+country_decisions = {
+	fast = {
+		potential = {
+			ai = no
+			not = { has_global_flag = fast_end }
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			country_event = { id = fast.1 }
+			SPA = { swap_free_idea_group = yes }
+		}
+	}
+
+	fast_asia = {
+		potential = {
+			ai = no
+			not = { has_global_flag = fast_end }
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			country_event = { id = fast.2 }
+		}
+	}
+	fast_ej = {
+		potential = {
+			ai = no
+			not = { has_global_flag = fast_end }
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			country_event = { id = fast.3 }
+			SPA = { swap_free_idea_group = yes }
+		}
+	}
+	fast_blackasia = {
+		major = yes
+		potential = {
+			ai = no
+			not = { has_global_flag = fast_end }
+			not = { has_global_flag = black_asia }
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			KAS = { country_event = { id = fast.4 } }
+			every_country = {
+				limit = {
+					capital_scope = {
+						continent = asia
+						not = { region = central_asia_region }
+						not = { region = west_siberia_region }
+						not = { superregion = persia_superregion }	
+						not = { superregion = near_east_superregion }
+					}
+				}
+				country_event = { id = fast.4 }
+			}
+			set_global_flag = black_asia
+		}
+	}
+	fast_openasia = {
+		major = yes
+		potential = {
+			ai = no
+			has_global_flag = black_asia
+			is_year = 1700
+			not = { has_global_flag = open_asia }
+		}
+		allow = { }
+		effect = {
+			every_country = {
+				limit = { has_country_modifier = boho_world }
+				country_event = { id = fast.11 }
+			}
+			set_global_flag = open_asia
+		}
+	}
+	fast_restore_idea = {
+		potential = {
+			ai = no
+			has_global_flag = fast_idea
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			clr_global_flag = fast_idea
+		}
+	}
+	fast_no_decision = {
+		major = yes
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+		}
+		allow = { }
+		effect = {
+			set_global_flag = no_decision
+		}
+	}
+	fast_decision = {
+		major = yes
+		potential = {
+			ai = no
+			has_global_flag = no_decision
+		}
+		allow = { }
+		effect = {
+			clr_global_flag = no_decision
+		}
+	}
+}

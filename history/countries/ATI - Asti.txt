@@ -1,0 +1,17 @@
+# ATI - Asti
+
+government = republic
+add_government_reform = merchants_reform government_rank = 1
+primary_culture = piedmontese
+religion = catholic
+technology_group = western
+capital = 5021
+
+1355.1.1 = {
+	monarch = {
+		name = "Consiglio Generale"
+		ADM = 4
+		DIP = 4
+		MIL = 2
+	}
+}

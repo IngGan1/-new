@@ -1,0 +1,124 @@
+namespace = new_mercantilism
+
+# The Price Revolution Begins
+country_event = {
+	id = new_mercantilism.1
+	title = new_mercantilism.1.t
+	desc = new_mercantilism.1.d
+	picture = ECONOMY_eventPicture
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		technology_group = western
+		is_colonial_nation = yes
+		gold = 1
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_mercantilism.1.a
+		ai_chance = {
+			factor = 100
+		}
+		overlord = {
+			country_event = {
+				id = new_mercantilism.2
+				days = 1
+			}
+		}
+	}
+}
+
+# The Price Revolution Begins
+country_event = {
+	id = new_mercantilism.2
+	title = new_mercantilism.1.t
+	desc = new_mercantilism.1.d
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = new_mercantilism.1.a
+		add_country_modifier = {
+			name = price_revolution
+			duration = 36500
+		}
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					technology_group = western
+					NOT = {
+						has_country_flag = price_revolution
+					}
+				}
+				country_event = {
+					id = new_mercantilism.2
+					days = 90
+				}
+				set_country_flag = price_revolution
+			}
+		}
+	}
+}
+ 
+# New World Crops
+country_event = {
+	id = new_mercantilism.3
+	title = new_mercantilism.3.t
+	desc = new_mercantilism.3.d
+	picture = FARMING_eventPicture
+
+	trigger = {
+		has_global_flag = columbian_grain
+		technology_group = western
+		is_colonial_nation = yes
+		grain = 1
+		NOT = {
+			has_country_flag = columbian_grain_arrival
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = new_mercantilism.3.a
+		set_country_flag = columbian_grain_arrival
+		add_country_modifier = {
+			name = new_world_crops
+			duration = -1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					NOT = {
+						OR = {
+							technology_group = nomadic
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = north_american
+							technology_group = south_american
+						}
+					}
+				}
+				country_event = {
+					id = new_mercantilism.3
+					days = 360
+				}
+			}
+		}
+	}
+}

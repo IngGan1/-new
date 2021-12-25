@@ -1,0 +1,91 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 255  241  89 }
+revolutionary_colors = { 4 8 4 }
+
+historical_idea_groups = {
+	religious_ideas
+	defensive_ideas
+	spy_ideas
+	trade_ideas
+	offensive_ideas
+	economic_ideas
+	maritime_ideas
+	diplomatic_ideas
+	generalstab0
+	staatsverwaltung0
+	justiz0
+	propaganda0
+	gesellschaft0
+	fire0
+	assimilation0
+}
+
+historical_units = {
+	eastern_medieval_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	ottoman_spahi
+	ottoman_sekban
+	ottoman_reformed_spahi
+	ottoman_reformed_janissary
+	ottoman_toprakli_hit_and_run
+	ottoman_nizami_cedid
+	ottoman_toprakli_dragoon
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	ottoman_new_model
+	ottoman_lancer
+}
+
+monarch_names = {
+	"Pietro #0" = 10
+	"Tommasso #0" = 10
+	"Andrea #0" = 10
+	"Giovanni #1" = 10
+	"Emanuele #0" = 10
+	"Henry #0" = 10
+	"Baldwin #0" = 10
+	"Robert #0" = 10
+	"John #0" = 10
+	"Peter #0" = 10
+	"Louis #0" = 10
+	"Stephen #0" = 10
+	"William #0" = 10
+	"Boniface #0" = 10
+	"James #0" = 10
+	"Walter #0" = 10
+	
+	"Maria #1" = -15
+	"Alexandra #0" = -1
+	"Antonia #0" = -1
+	"Anna #0" = -1
+	"Margaret #0" = -1
+}	
+
+leader_names = { 
+	Angelus Asan
+	Branas	
+	Cantacuzene Comnenus 
+	Ducas
+	Mavros 
+	Notaras
+	Palaeologus Phocas
+	Raoul
+	Spagnoli Sphrantzes
+	Tocco
+	Zaccaria
+}
+
+ship_names = {
+	"Agios Kyprianos" Areopoli
+	Elika
+	Geronlimenas Gytheio
+	Kardamyli Kokkala Kotronas
+	Skoutari
+	Vathia
+}

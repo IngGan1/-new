@@ -1,0 +1,11 @@
+league_public_weal_interference = {
+opinion = -50
+years = 25
+yearly_decay = 2
+}
+
+league_public_weal_no_interference = {
+opinion = 50
+years = 25
+yearly_decay = 2
+}

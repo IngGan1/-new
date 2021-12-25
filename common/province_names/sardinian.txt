@@ -1,0 +1,8 @@
+123 = "Calàbbria"
+124 = "Missina"
+125 = "Palermu"
+1933 = "Bàre"
+2986 = "Castéddu"
+3020 = "Aristanis"
+3021 = "Gaddùra"
+5082 = "Maurreddìa"

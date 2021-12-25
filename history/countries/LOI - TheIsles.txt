@@ -1,0 +1,48 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = western
+primary_culture = highland_scottish
+religion = catholic
+capital = 252	# Inbhir Pheofharain
+
+1425.1.1 = {
+	monarch = {
+		name = "Alasdair"
+		dynasty = "MacDomhnaill"
+		birth_date = 1404.1.1
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
+
+
+1434.1.1 = {
+	heir = {
+		name = "Eoin"
+		dynasty = "MacDomhnaill"
+		birth_date = 1434.1.1
+		death_date = 1503.1.1
+		monarch_name = "Eoin I"
+		claim = 95
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+
+1449.1.1 = {
+	monarch = {
+		name = "Eoin"
+		dynasty = "MacDomhnaill"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+
+1560.8.1   = { religion = reformed }

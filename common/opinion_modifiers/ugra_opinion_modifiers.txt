@@ -1,0 +1,23 @@
+gave_tribute = {
+    opinion = 25
+    years = 5
+    yearly_decay = 5
+}
+
+refused_tribute = {
+    opinion = -100
+    years = 25
+    yearly_decay = 4
+}
+
+horde_demanded_tribute = {
+    opinion = -100
+    years = 25
+    yearly_decay = 4
+}
+
+no_horde_demanded_tribute = {
+    opinion = 25
+    years = 5
+    yearly_decay = 5
+}

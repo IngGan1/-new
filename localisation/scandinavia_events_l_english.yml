@@ -1,0 +1,18 @@
+﻿l_english:
+ scandinavia.1.t: "…ÈP­ ¬Ö¬ä´tÇ t³È¹lÐÐÅ Ä³)ÌXÕä²"
+ scandinavia.1.d: "Recently, Protestant reformers have arrived in $CAPITAL$, attempting to convince $MONARCHTITLE$ $MONARCH$ to abandon the Catholic Church and the influence of the Papacy entirely. According to the reformers, Catholic practices have, over the centuries, gradually corrupted the sancity of the Christian faith and perverted people's morals through inappropriate practices, including simony and indulgences.\nThe $MONARCHTITLE$ seems receptive to these claims, but it is not very clear how far $MONARCHTITLE$ $MONARCH$ is willing to go in acquiescing to the reformers' suggestions. What should we do?"
+ scandinavia.1.a: "t³È¹lÐÐÅ ÈÀj¸´Æ P­ŒÖ|¹ 2ÁË¹XÕÇ!"
+ scandinavia.1.b: "P­iÖXÇ „´x±|¹ ´À DÕ”Æ”² ÆÅä²."
+ scandinavia.2.t: "…ÈP­ ¬Ö¬ä´tÇ ²ÂèÆt³ÐÅ Ä³)ÌXÕä²"
+ scandinavia.2.d: "Recently, Protestant reformers have arrived in $CAPITAL$, attempting to convince $MONARCHTITLE$ $MONARCH$ to abandon the Catholic Church and the influence of the Papacy entirely. According to the reformers, Catholic practices have, over the centuries, gradually corrupted the sancity of the Christian faith and perverted people's morals through inappropriate practices, including simony and indulgences.\nThe $MONARCHTITLE$ seems receptive to these claims, but it is not very clear how far $MONARCHTITLE$ $MONARCH$ is willing to go in acquiescing to the reformers' suggestions. What should we do?"
+ scandinavia.2.a: "²ÂèÆt³ÐÅ ÈÀj¸´Æ P­ŒÖ|¹ 2ÁË¹XÕÇ!"
+ scandinavia.2.b: "P­iÖXÇ „´x±|¹ ´À DÕ”Æ”² ÆÅä²."
+ protestant_scandinavia: "P­iÖXÇ „´x±|¹ ¬Àä²"
+ no_protestant_scandinavia: "P­iÖÐÅŒ¬ ©Í1ÁXÕä²"
+ scandinavia.3.t: "LÅÓø­"
+ scandinavia.3.d: "The Althing is the world's oldest parliament, having been founded in Iceland in 930. The Althing made many important decisions for the peoples of the Icelandic Commonwealth, including the declaration of Christianity as the island's official faith in the year 1000. However, in the time of Norwegian and then Danish rule, the Althing gradually lost its power as the Icelandic people submitted themselves to the overseas power of the crown, before the Althing's independence was extinguished entirely during the age of Danish absolutism. However, now that we have a degree of autonomy once again, we can once again restore this prestigious historical institution."
+ scandinavia.3.a: "LÅÓø­|¹ ä²ÜÂ 2ÁË¹XÕÇ!"
+ scandinavia.3.b: "ø­ð·ƒ¬ä´NÇ ä² ü¬p¬XÇ .Ç°À|Ç Ð¿tÇä²."
+ scandinavia.7.t: "lÐ¬¹²Â Ñ˜Ót¹ 38Á"
+ scandinavia.7.d: "In 1441, Christopher of Bavaria, who had already become King of Denmark, was elected King of Sweden, effectively continuing the Kalmar Union. Although the nobles were not particularly fond of Christopher, blaming bad harvests and other mishaps upon him, his reign was accepted, even if begrudgingly. It appears that Sweden will continue to remain in union with Denmark for some time, until circumstance changes."
+ scandinavia.7.a: "©Í1ÁtÇ Ä¬Á´ÈÅ<Çtº ‹È ¬p­."

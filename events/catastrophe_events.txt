@@ -1,0 +1,51 @@
+namespace = catastrophe
+normal_or_historical_nations = yes
+
+# The Ravages of Religious War
+country_event = {
+	id = catastrophe.1
+	title = catastrophe.1.t
+	desc = catastrophe.1.d
+	picture = VILLAGE_BURNING_eventPicture
+
+	trigger = {
+		has_dlc = "Art of War"
+		is_in_league_war = yes
+		is_part_of_hre = yes
+		war_exhaustion = 2.5
+		NOT = {
+			manpower_percentage = 0.5
+		}
+    }
+	
+	mean_time_to_happen = {
+		months = 32
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				manpower_percentage = 0.25
+			}
+		}
+	}
+	
+	option = {
+		name = catastrophe.1.a
+		random_owned_province = {
+			add_base_tax = -1
+		}
+		random_owned_province = {
+			add_base_production = -1
+		}
+		random_owned_province = {
+			add_base_manpower = -1
+		}
+	}
+}

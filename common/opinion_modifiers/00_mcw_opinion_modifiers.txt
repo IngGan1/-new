@@ -1,0 +1,4 @@
+kaz_angered_qasim_sovereignty = {
+	opinion = -25
+	yearly_decay = 2.5
+}

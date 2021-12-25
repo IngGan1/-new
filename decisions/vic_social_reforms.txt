@@ -1,0 +1,219 @@
+country_decisions = {    
+    social_reforms_decision = {
+        major = yes
+               
+		potential = {
+			has_country_flag = vic_social_reform_decision
+		}
+        
+		allow = {     
+                always = yes
+        }
+        
+		effect = {
+
+            ##### Minimum Wage #####
+            custom_tooltip = VIC_MIN_WAGE_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_min_wage value = 0 }
+                    NOT = {
+                        check_variable = { which = social_min_wage value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_MIN_WAGE_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_min_wage value = 1 }
+                    NOT = {
+                        check_variable = { which = social_min_wage value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_MIN_WAGE_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_min_wage value = 2 }
+                    NOT = {
+                        check_variable = { which = social_min_wage value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_MIN_WAGE_2
+            }
+            else = {
+                custom_tooltip = VIC_MIN_WAGE_3
+            }
+
+            ##### Maximum Workhours #####
+            custom_tooltip = VIC_MAX_WORKHOURS_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_max_workhours value = 0 }
+                    NOT = {
+                        check_variable = { which = social_max_workhours value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_MAX_WORKHOURS_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_max_workhours value = 1 }
+                    NOT = {
+                        check_variable = { which = social_max_workhours value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_MAX_WORKHOURS_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_max_workhours value = 2 }
+                    NOT = {
+                        check_variable = { which = social_max_workhours value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_MAX_WORKHOURS_2
+            }
+            else = {
+                custom_tooltip = VIC_MAX_WORKHOURS_3
+            }
+
+            ##### Safety Regulations #####
+            custom_tooltip = VIC_SAFETY_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_safety value = 0 }
+                    NOT = {
+                        check_variable = { which = social_safety value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_SAFETY_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_safety value = 1 }
+                    NOT = {
+                        check_variable = { which = social_safety value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_SAFETY_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_safety value = 2 }
+                    NOT = {
+                        check_variable = { which = social_safety value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_SAFETY_2
+            }
+            else = {
+                custom_tooltip = VIC_SAFETY_3
+            }
+
+            ##### Unemployment Subsidies #####
+            custom_tooltip = VIC_UNEMPLOYMENT_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_unemployment value = 0 }
+                    NOT = {
+                        check_variable = { which = social_unemployment value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_UNEMPLOYMENT_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_unemployment value = 1 }
+                    NOT = {
+                        check_variable = { which = social_unemployment value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_UNEMPLOYMENT_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_unemployment value = 2 }
+                    NOT = {
+                        check_variable = { which = social_unemployment value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_UNEMPLOYMENT_2
+            }
+            else = {
+                custom_tooltip = VIC_UNEMPLOYMENT_3
+            }
+
+            ##### Pensions #####
+            custom_tooltip = VIC_PENSION_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_pension value = 0 }
+                    NOT = {
+                        check_variable = { which = social_pension value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_PENSION_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_pension value = 1 }
+                    NOT = {
+                        check_variable = { which = social_pension value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_PENSION_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_pension value = 2 }
+                    NOT = {
+                        check_variable = { which = social_pension value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_PENSION_2
+            }
+            else = {
+                custom_tooltip = VIC_PENSION_3
+            }
+
+            ##### Health Care #####
+            custom_tooltip = VIC_HEALTH_TITLE
+            if = {
+                limit = {
+                    check_variable = { which = social_health value = 0 }
+                    NOT = {
+                        check_variable = { which = social_health value = 1 }
+                    }
+                }        
+                custom_tooltip = VIC_HEALTH_0
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_health value = 1 }
+                    NOT = {
+                        check_variable = { which = social_health value = 2 }
+                    }
+                }
+                custom_tooltip = VIC_HEALTH_1
+            }
+            else_if = {
+                limit = {
+                    check_variable = { which = social_health value = 2 }
+                    NOT = {
+                        check_variable = { which = social_health value = 3 }
+                    }
+                }
+                custom_tooltip = VIC_HEALTH_2
+            }
+            else = {
+                custom_tooltip = VIC_HEALTH_3
+            }
+
+        }
+		ai_will_do = {
+            factor = 0
+        }
+        ai_importance = 0
+	}
+}

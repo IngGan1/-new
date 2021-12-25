@@ -1,0 +1,63 @@
+
+
+
+TS_issue_with_trade = {
+
+}
+
+
+demand_unlawful_territory_action_ai_delay = {
+
+}
+
+demand_unlawful_territory_action_ai_delay2 = {
+
+}
+
+
+TS_issue_with_diplomacy = {
+	diplomats = -1
+	envoy_travel_time = 1
+	years_of_nationalism = 20
+	core_creation = 0.2
+	province_warscore_cost = 0.2
+}
+
+TS_condemn = {
+	prestige_decay = 0.05
+	ae_impact = 0.25
+}
+
+TS_legitimacy = {
+	prestige_decay = 0.01
+}
+
+
+ts_agreement = {
+
+}
+
+TS_ruchao = {
+
+}
+
+journey_for_ruchao = {
+
+}
+
+ts_agreement_refused = {
+
+}
+
+ruchao_10_years = {
+
+}
+
+ruchao_started = {
+
+}
+
+
+TS_recon_province = {
+	local_core_creation = 5
+}

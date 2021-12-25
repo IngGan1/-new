@@ -1,0 +1,185 @@
+fealty = {}
+burgundy_union = {}
+french_fealty = {}
+india_colony = {}
+
+burgundy_union = {
+	copy_from = default
+
+	# Graphics:
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
+
+	# Properties:
+	has_overlords_ruler = yes
+	can_be_integrated = yes
+	overlord_can_attack = no
+	has_power_projection = no
+	gets_help_with_rebels = yes
+	can_have_subjects_of_other_types = yes
+	can_union_break = yes
+	transfer_subjects_when_made = yes
+	takes_diplo_slot = no
+
+	liberty_desire_negative_prestige = 1.0
+	military_focus = 0.66
+
+	relative_power_class = 1
+
+	restoration_cb = cb_restore_personal_union
+	
+	# Subject Interactions:
+	placate_rulers = no
+	enforce_culture = yes
+	siphon_income = yes
+	support_loyalists = yes
+
+	# Modifiers:
+	modifier_overlord = {
+		modifier = union_subject
+	}
+
+	overlord_opinion_modifier = in_union
+	subject_opinion_modifier = in_union
+}
+
+french_fealty = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# Properties:
+	joins_overlords_wars = no
+	overlord_can_attack = no
+	has_power_projection = no
+	can_be_annexed = yes
+	takes_diplo_slot = no
+	separatists_become_subjects = yes
+	overlord_can_fabricate_for = no
+	base_liberty_desire = 25.0
+	pays_overlord = 0.5
+	forcelimit_bonus = 0.5
+	forcelimit_to_overlord = 0.1
+	
+	max_government_rank = 1
+	trust_on_start = 10
+
+	can_fight = {
+		same_overlord = french_fealty
+	}
+	can_rival = {
+		same_overlord = french_fealty
+	}
+	can_ally = {
+		same_overlord = french_fealty
+	}
+	can_marry = {
+		same_overlord = french_fealty
+	}
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	# (immediate)
+	conscript_general = yes
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_overlord = {
+		modifier = vassal_subject
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}
+
+fealty = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# Properties:
+	joins_overlords_wars = no
+	overlord_can_attack = no
+	has_power_projection = no
+	can_be_annexed = yes
+	takes_diplo_slot = no
+	separatists_become_subjects = yes
+	overlord_can_fabricate_for = no
+	base_liberty_desire = 10.0
+
+	max_government_rank = 1
+	trust_on_start = 10
+
+	can_fight = {
+		same_overlord = fealty
+	}
+	can_rival = {
+		same_overlord = fealty
+	}
+	can_ally = {
+		same_overlord = fealty
+	}
+	can_marry = {
+		same_overlord = fealty
+	}
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	# (immediate)
+	conscript_general = yes
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_overlord = {
+		modifier = vassal_subject
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}
+
+india_colony = {
+	copy_from = colony
+	is_colony_subtype = no
+	change_colonial_type = no
+	can_send_missionary_to_subject = yes
+	liberty_desire_development_ratio = 0.01
+	
+	forcelimit_bonus = 0.5
+	forcelimit_to_overlord = 0.25
+	manpower_bonus = 0.5
+	manpower_to_overlord = 0.25
+	naval_forcelimit_bonus = 0.25
+	naval_forcelimit_to_overlord = 0.025
+	sailors_bonus = 0.25
+	sailors_to_overlord = 0.025
+	
+	embargo_rivals = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	send_officers = yes
+	enforce_religion = yes
+	takeondebt = yes
+	block_settlement_growth = yes
+	allow_settlement_growth = yes
+	
+	#joins_overlords_wars = yes
+	can_use_claims = yes
+	can_fight = {
+		other_overlord = all
+		neighboring_primitives = yes
+	    independent_nations = yes
+	}
+
+}

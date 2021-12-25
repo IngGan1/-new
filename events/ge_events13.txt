@@ -1,0 +1,1522 @@
+namespace = ge_events
+#Gustav II Adolf
+country_event = { 
+	id = ge_events.81
+	title = "ge_events.81.t"
+	desc = "ge_events.81.d"
+	picture = COURT_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = SWE
+		is_lesser_in_union = no
+        SWE = {
+		exists = yes
+		is_subject = no
+		}    
+        is_year = 1611
+		NOT = {
+		is_year = 1632
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.81.a  
+		ai_chance = { factor = 100 }
+		define_ruler = {
+			name = "Gustav II Adolf"
+			dynasty = "Vasa"
+			adm = 5
+			dip = 5
+			mil = 6
+			age = 16
+            fixed = yes
+            leader = {
+            name = "Gustav II Adolf"
+            fire = 7
+            shock = 6
+            manuever = 7
+            siege = 5
+			fixed = yes
+			}
+		}
+		if = { limit = { SWE = { ai = yes } }
+        add_ruler_modifier = { name = gustav_adolf_swe }
+		if = {
+			limit = {
+				DAN = { ai = yes is_subject = no }
+			}
+			skaneland_area = { 
+				limit = { owned_by = DAN }
+				remove_core = DAN
+				cede_province = SWE
+				add_core = SWE
+			}
+        }
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300
+        add_prestige = 50
+		}
+	}
+}
+
+#James I Stuart
+country_event = { 
+	id = ge_events.82
+	title = "ge_events.82.t"
+	desc = "ge_events.82.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = ENG
+		ai = yes
+        is_year = 1600	
+		is_lesser_in_union = no
+		is_female = no
+        has_global_flag = governments_extended_historical_yes
+		NOT = {
+			is_year = 1635
+		}
+        SCO = {
+			exists = yes
+			ai = yes
+			was_player = no
+		    is_lesser_in_union = no
+			is_subject = no
+		}    
+		#religion = anglican
+    }
+
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.82.a  
+		ai_chance = {
+			factor = 100 
+			modifier = {
+				factor = 0
+				not = { total_development = 2300 }
+			}
+		}
+        add_historical_friend = SCO
+        add_prestige = 100
+		define_ruler = {
+			name = "James I"
+			culture = scottish
+			dynasty = "Stuart"
+			adm = 2
+			dip = 3
+			mil = 1
+            fixed = yes
+			age = 36
+		}
+		define_heir = {
+			name = "Charles I"
+			culture = scottish
+			dynasty = "Stuart"
+			adm = 2
+			dip = 3
+			mil = 2
+			age = 2
+		}
+		create_union = SCO
+        SCO = {
+            add_historical_friend = ENG
+        }
+	}
+
+	option = {
+		name = ge_events.82.b 
+		ai_chance = {
+			factor = 0 
+			modifier = {
+				factor = 100
+				total_development = 2300
+			}
+		}
+        add_opinion = { 
+			who = SCO
+            modifier = opinion_displeased
+        }
+	}
+}
+
+#James Cook
+country_event = { 
+	id = ge_events.83
+	title = "ge_events.83.t"
+	desc = "ge_events.83.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        tag = GBR
+		ai = yes
+        is_year = 1788	
+		NOT = {
+			is_year = 1808
+		}
+        has_global_flag = governments_extended_historical_yes
+		exists = yes
+		religion = anglican
+    }
+
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.83.a  
+		ai_chance = { factor = 100 }
+		eastern_australia_area = {
+			limit = { not = { is_city = yes } }
+            cede_province = GBR
+            add_core = GBR
+            change_culture = english
+            change_religion = anglican
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+		southern_australia_area = {
+			limit = { not = { is_city = yes } }
+            cede_province = GBR
+            add_core = GBR
+            change_culture = english
+            change_religion = anglican
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+		northern_australia_area = {
+			limit = { not = { is_city = yes } }
+            cede_province = GBR
+            add_core = GBR
+            change_culture = english
+            change_religion = anglican
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+		murray_river_area = {
+			limit = { not = { is_city = yes } }
+            cede_province = GBR
+            add_core = GBR
+            change_culture = english
+            change_religion = anglican
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+        }
+	}
+}
+
+#Akbar the Great
+country_event = { 
+	id = ge_events.84
+	title = "ge_events.84.t"
+	desc = "ge_events.84.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+        tag = MUG
+        is_year = 1556	
+        exists = yes
+        is_subject = no
+		NOT = {
+			is_year = 1605
+		}
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.84.a  
+		ai_chance = { factor = 100 }
+		define_ruler = {
+			name = "Akbar"
+			dynasty = "Timurid"
+			adm = 6
+			dip = 5
+			mil = 6
+			age = 15
+            fixed = yes
+		}
+		if = { limit = { MUG = { ai = yes } }
+			add_ruler_modifier = { name = akbar_the_great }
+			if = { limit = { DLH = { ai = yes is_subject = no } } inherit = DLH }
+			#if = { limit = { JNP = { ai = yes is_subject = no } } inherit = JNP }
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			add_prestige = 50
+			add_stability = 6
+		}
+	}
+}
+
+#Arthur Wellesley
+country_event = { 
+	id = ge_events.85
+	title = "ge_events.85.t"
+	desc = "ge_events.85.d"
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GBR
+		is_year = 1796	
+		NOT = {
+			is_year = 1816
+		}
+		exists = yes
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.85.a  
+		ai_chance = { factor = 100 }
+		define_general = {
+			name = "Arthur Wellesley"
+			shock = 7
+			fire = 7
+			manuever = 6
+			siege = 5
+			trait = inspirational_leader_general_personality
+		}
+	}
+}
+
+#War of Spanish Succession
+country_event = { 
+	id = ge_events.86
+	title = "ge_events.86.t"
+	desc = "ge_events.86.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = FRA
+		ai = no
+		is_year = 1690
+		NOT = {
+		is_year = 1730
+		}
+		dynasty = "de Bourbon"
+		is_subject = no
+		NOT = { started_in = 1701.9.1 }
+        SPA = {
+			ai = yes
+			is_at_war = no
+			exists = yes
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		HAB = {
+			ai = yes
+			exists = yes
+			is_at_war = no
+			is_subject = no
+			is_lesser_in_union = no
+		}
+		PRU = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+		GBR = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+		NED = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+		POR = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+		DAN = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+		SWE = {
+			or = { ai = no is_at_war = no not = {had_recent_war = 1 } }
+		}
+        has_global_flag = governments_extended_historical_yes
+    }
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ge_events.86.a  
+		ai_chance = {
+			factor = 0 
+			modifier = {
+				factor = 100
+				total_development = 2000
+			}
+		}
+        hidden_effect = {
+			every_country = {
+				limit = {
+					not = { or = { tag = FRA tag = SPA tag = HAB tag = GBR tag = NED tag = PRU tag = SAX tag = SWE tag = POR tag = DAN } }
+					capital_scope = { superregion = europe_superregion }
+				}
+				country_event = { id = ge_events.101 days = 5 }
+			}
+		}
+		HAB = {
+			every_ally = {
+				form_coalition_against = FRA
+			}
+			form_coalition_against = FRA
+		}
+		GBR = {
+			if = { limit = { exists = yes ai = yes } }
+				form_coalition_against = FRA
+				every_ally = {
+					form_coalition_against = FRA
+				}
+		}
+		PRU = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		NED = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		SAX = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		SWE = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		POR = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		SAV = {
+			if = { limit = { ai = yes } }
+				form_coalition_against = FRA
+		}
+		DAN = {
+			if = { limit = { exists = yes ai = yes } }
+				form_coalition_against = FRA
+		}
+		HAB = {
+			declare_war_with_cb = {
+				who = FRA
+				casus_belli = cb_super_badboy
+			}
+		}
+		FRA = {
+			remove_historical_rival = SPA
+		}
+		HAB = {
+			remove_historical_friend = SPA
+		}
+		SPA = {
+			remove_historical_rival = FRA
+			remove_historical_friend = HAB
+			create_alliance = FRA
+			define_ruler = {
+				name = "Felipe V"
+				culture = cosmopolitan_french
+				dynasty = "de Bourbon"
+				adm = 3
+				dip = 1
+				mil = 3
+			}
+			join_all_defensive_wars_of = FRA
+		}
+		hidden_effect = { set_global_flag = fra_spa_war }
+	}
+		
+	option = {
+		name = ge_events.86.b  
+		ai_chance = {
+			factor = 0 
+			modifier = {
+				factor = 100
+				not = { total_development = 2000 }
+			}
+		}
+		SPA = {
+			define_ruler = {
+				name = "Carlos"
+				dynasty = "von Habsburg"
+				adm = 4
+				dip = 4
+				mil = 3
+				age = 16
+				fixed = yes
+			}
+		}
+		add_truce_with = HAB
+		add_prestige = -20
+	}
+}
+
+country_event = { 
+	id = ge_events.87
+	title = "ge_events.87.t"
+	desc = "ge_events.87.d"
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = FRA
+		has_global_flag = fra_spa_war
+		HAB = {
+			war_score_against = {
+				who = FRA
+				value = 80
+			}
+		}
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = ge_events.87.a
+		ai_chance = { factor = 1 }
+		white_peace = HAB
+		add_prestige = -50
+		SPA = {
+			define_ruler = {
+				name = "Carlos"
+				dynasty = "von Habsburg"
+				adm = 4
+				dip = 4
+				mil = 3
+				age = 16
+				fixed = yes
+			}
+			white_peace = HAB
+			226 = {
+				cede_province = GBR
+				add_core = GBR
+			}
+		}
+		hidden_effect = { clr_global_flag = fra_spa_war }
+	}
+		
+	option = {
+		name = ge_events.87.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { 
+	id = ge_events.870
+	title = "ge_events.87.t"
+	desc = "ge_events.87.d"
+	picture = WOUNDED_SOLDIERS_eventPicture
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		has_global_flag = fra_spa_war 
+		ai = no
+        or = { 
+			SPA = {
+				has_ruler = "Carlos"
+			}
+			is_year = 1740
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { clr_global_flag = fra_spa_war }
+}
+
+# Burgundy inheritance
+country_event = { 
+	id = ge_events.88
+	title = "ge_events.88.t"
+	desc = "ge_events.88.d"
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+        tag = BUR
+		ai = yes
+		is_at_war = no
+        NOT = { has_country_flag = burgundian_succession_start }
+		has_global_flag = governments_extended_historical_yes
+		is_year = 1500
+		NOT = {
+		is_year = 1520
+		}
+		is_free_or_tributary_trigger = yes
+        capital_scope = {
+			continent = europe
+		}
+        FRA = {
+			ai = yes
+			exists = yes
+			is_free_or_tributary_trigger = yes
+			num_of_cities = 8
+			is_neighbor_of = BUR
+		}
+		OR = {
+			emperor = {
+				exists = yes
+				NOT = { war_with = FRA }
+				ai = yes
+			}
+			emperor = {
+				exists = no
+			}
+		}
+	}
+
+	option = {
+		name = ge_events.89.a  
+		ai_chance = { factor = 100 }
+		country_event = { id = incidents_bur_inheritance.1 }
+	}
+}
+
+# Anjou under France
+country_event = { 
+	id = ge_events.89
+	title = "ge_events.89.t"
+	desc = "ge_events.89.d"
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+        tag = FRA
+        NOT = { war_with = ANJ }
+		is_year = 1480
+		not = { is_year = 1510 }
+		is_subject = no
+        has_global_flag = governments_extended_historical_yes
+		num_of_cities = 10
+        FRA = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_subject = no
+		}    
+        ANJ = {
+			exists = yes
+			ai = yes
+			was_player = no
+			is_subject = no
+			is_at_war = no
+		}    
+	}
+
+
+	option = {
+		name = ge_events.89.a  
+		ai_chance = { factor = 100 }
+		inherit = ANJ
+	}
+}
+
+country_event = {
+	id = ge_events.92
+	title = "ge_events.89.t"
+	desc = "ge_events.89.d"
+	picture = ANGRY_MOB_eventPicture
+	
+	hidden = yes
+	trigger = {
+		not = { is_year = 1550 }
+		87 = {
+			is_claim = ROOT
+		}
+		ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 0
+	}
+	
+	immediate = {
+		remove_claim = 87
+	}
+	
+	option = {
+		name = "ge_events.89.a"
+		add_prestige = 2
+	}
+}
+
+country_event = {
+	id = ge_events.93
+	title = "ge_events.93.t"
+	desc = "ge_events.93.d"
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SWE
+		is_year = 1523
+		NOT = { is_year = 1550 }
+		or = {
+			is_subject = no
+			and = { is_subject_of = DAN ai = yes }
+		}
+		is_at_war = no
+		is_religion_enabled = protestant 
+		DAN = { ai = yes }
+		has_global_flag = governments_extended_historical_yes
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = ge_events.82.a  
+		if = { limit = { SWE = { ai = yes } }
+			define_ruler = {
+				name = "Gustav I"
+				dynasty = "Vasa"
+				birth_date = 1496.5.12
+				adm = 6
+				dip = 4
+				mil = 4
+				fixed = yes
+				religion = protestant
+				culture = protestant
+			}
+			add_ruler_modifier = { name = historically_strong_king }
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			add_yearly_manpower = 10
+			add_stability = 6
+			add_corruption = -100
+			add_years_of_income = 5
+			change_religion = protestant
+			every_owned_province = {
+				change_religion = protestant
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				remove_core = DAN
+			}
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.5
+					cavalry = 0.2
+					artillery = 0.3
+				}
+			}
+			DAN = {
+				every_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+		}
+		else = {
+			define_ruler = {
+				name = "Gustav I"
+				dynasty = "Vasa"
+				birth_date = 1496.5.12
+				adm = 6
+				dip = 4
+				mil = 4
+				fixed = yes
+			}
+		}
+		clear_scripted_personalities = yes
+		add_ruler_personality = lawgiver_personality
+		add_ruler_personality = industrious_personality
+		add_ruler_personality = cruel_personality
+		add_truce_with = DAN
+		add_truce_with = RUS
+		add_truce_with = MOS
+		white_peace = DAN
+		white_peace = RUS
+		white_peace = MOS
+	}
+}
+
+country_event = { 
+	id = ge_events.94
+	title = "ge_events.94.t"
+	desc = "ge_events.94.d"
+	picture = COLONIZATION_eventPicture
+    
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = GBR
+        has_global_flag = governments_extended_historical_yes
+        is_year = 1732
+		NOT = {
+			is_year = 1762
+		}
+        exists = yes
+        ai = yes
+        was_player = no
+		is_subject = no
+		MUG = {
+            ai = yes
+            was_player = no
+			is_subject = no
+        }
+		BNG = {
+            ai = yes
+            was_player = no
+			{ is_subject = no is_subject_of = MUG }
+        }
+		or = { BNG = { exists = yes } MUG = { exists = yes } }
+    }
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		bengal_region = {
+			limit = { owned_by = MUG }
+			cede_province = GBR
+			add_core = GBR
+			remove_core = MUG
+		}
+		bengal_region = {
+			limit = { BNG = { ai = yes or = { is_subject = no is_subject_of = MUG } } owned_by = BNG }
+			cede_province = GBR
+			add_core = GBR
+			remove_core = BNG
+		}
+		bengal_region = {
+			limit = { ORI = { ai = yes is_subject = no or = { is_subject = no is_subject_of = MUG } } owned_by = ORI }
+			cede_province = GBR
+			add_core = GBR
+			remove_core = ORI
+		}
+		every_province = {
+			limit = {
+				region = west_india_region
+			}
+			add_permanent_claim = ROOT
+		}
+		every_province = {
+			limit = {
+				region = deccan_region
+			}
+			add_permanent_claim = ROOT
+		}
+		every_province = {
+			limit = {
+				region = coromandel_region
+				not = { is_island = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		every_province = {
+			limit = {
+				region = bengal_region
+				not = { is_island = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = { 
+	id = ge_events.95
+	title = "ge_events.95.t"
+	desc = "ge_events.95.d"
+	picture = COLONIZATION_eventPicture
+    
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		NOT = {
+			is_year = 1460
+		}
+		tag = MNG
+		ai = yes
+        was_player = no
+        has_global_flag = governments_extended_historical_yes
+		OIR = { 
+            exists = yes
+            ai = yes
+            was_player = no
+			war_score_against = {
+				who = MNG
+				value = 20
+			}
+        }
+		war_with = OIR
+    }
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+        white_peace = OIR
+		OIR = { white_peace = MNG }
+	}
+}
+
+# Friedrich II 
+country_event = { 
+	id = ge_events.96
+	title = "ge_events.96.t"
+	desc = "ge_events.96.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		is_year = 1720
+	    NOT = {
+		is_year = 1740
+	    }
+        OR = {
+            tag = PRU
+            AND = { 
+                tag = GER
+                NOT = { exists = PRU }
+            }
+			AND = { 
+                tag = NGF
+                NOT = { exists = PRU }
+            }
+        }
+		is_lesser_in_union = no
+    }
+
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+
+	option = {
+		name = ge_events.10.a  
+		ai_chance = { factor = 100 }
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+		define_ruler = {
+			name = "Friedrich II der Grosse"
+		    dynasty = "von Hohenzollern"
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 20
+            fixed = yes
+            leader = {
+                name = "Friedrich II der Grosse"
+                fire = 8
+                shock = 5
+                manuever = 6
+                siege = 4
+				fixed = yes
+            }
+		}
+		if = { limit = { PRU = { ai = yes } }
+			add_ruler_modifier = { name = historically_strong_king } 
+			add_ruler_personality = lawgiver_personality
+			add_adm_power = 300
+			add_dip_power = 300
+			add_mil_power = 300
+			add_meritocracy_effect = yes
+			add_prestige = 50
+		}
+	}
+}
+
+#Oda Nobunaga
+country_event = { 
+	id = ge_events.97
+	title = "ge_events.97.t"
+	desc = "ge_events.97.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+        is_year = 1550	
+        or = { is_subject = no is_subject_of_type = daimyo_vassal }
+		NOT = {
+			is_year = 1570
+		}
+		ai = yes
+		any_owned_province = {
+			province_id = 1030
+		}
+		not = { tag = BO5 }
+		not = { has_country_modifier = boho_world }
+    }
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.97.a  
+		ai_chance = { factor = 100 }
+        if = { limit = { ODA = { exists = no } }
+			release = ODA
+			chubu_area = { limit = { owned_by = ROOT }
+				cede_province = ODA
+				remove_core = ROOT
+			}
+			1030 = { remove_core = ROOT }
+		}
+		ODA = {
+			add_prestige = 50
+			add_stability = 6
+			define_ruler = {
+				name = "Nobunaga"
+				dynasty = "Oda"
+				adm = 5
+				dip = 5
+				mil = 6
+				age = 15
+				fixed = yes
+				leader = {
+					name = "Oda Nobunaga"
+					fire = 8
+					shock = 5
+					manuever = 6
+					siege = 4
+					fixed = yes
+				}
+			}
+			change_religion = shinto
+			clear_scripted_personalities = yes
+			if = { limit = { ODA = { ai = yes } }
+				add_ruler_modifier = { name = oda_nobunaga }
+				add_adm_power = 900
+				add_dip_power = 900
+				add_mil_power = 900
+				add_manpower = 100
+				add_treasury = 2000
+				chubu_area = { add_core = ODA }
+				eastern_chubu_area = { add_core = ODA }
+				kinai_area = { add_core = ODA }
+				ASK = {
+					create_subject = {
+					subject = ODA
+					subject_type = daimyo_vassal
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ge_events.98
+	title = flavor_jap.57.t
+	desc = flavor_jap.57.d
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		overlord = { has_reform = shogunate }
+		is_subject_of_type = tributary_state
+		capital_scope = {
+			region = japan_region
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_jap.57.a
+		overlord = {
+			create_subject = {
+				subject = ROOT
+				subject_type = daimyo_vassal
+			}
+		}
+	}
+}
+
+province_event = {
+	id = ge_events.99
+	title = flavor_jap.57.t
+	desc = flavor_jap.57.d
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		owner = { religion = noreligion }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_jap.57.a
+		owner = { change_religion = ROOT }
+	}
+}
+
+country_event = {
+	id = ge_events.100
+	title = "ge_events.100.t"
+	desc = "ge_events.100.d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		not = { is_year = 1453 }
+		tag = ENG
+		has_global_flag = governments_extended_historical_yes
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = ge_events.100.a
+	}
+	option = {
+		name = ge_events.100.b
+		set_global_flag = no_ge19
+	}
+}
+
+country_event = {
+	id = ge_events.101
+	title = "ge_events.101.t"
+	desc = "ge_events.101.d"
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		not = { war_with = HAB }
+		not = { war_with = FRA }
+	}
+	
+	option = {
+		name = ge_events.101.a
+		join_all_offensive_wars_of = HAB
+	}
+	option = {
+		name = ge_events.101.b
+	}
+}
+
+# Nadir
+country_event = { 
+	id = ge_events.102
+	title = "ge_events.102.t"
+	desc = "ge_events.102.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+        tag = PER
+        is_year = 1730
+	    NOT = {
+		is_year = 1750
+	    }
+		is_lesser_in_union = no
+		is_at_war = no
+    }
+
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+
+	option = {
+		name = ge_events.10.a  
+		ai_chance = { factor = 100 }
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+		define_ruler = {
+			name = "Nadir"
+		    dynasty = "Afsharid"
+			adm = 2
+			dip = 4
+			mil = 6
+			age = 20
+            fixed = yes
+            leader = {
+                name = "Afsharid"
+                fire = 5
+                shock = 8
+                manuever = 8
+                siege = 2
+				fixed = yes
+            }
+		}
+		if = { limit = { PER = { ai = yes } }
+			add_adm_power = 900
+			add_dip_power = 900
+			add_mil_power = 900
+			add_yearly_manpower = 10
+			add_meritocracy_effect = yes
+			add_prestige = 50
+			if = { limit = { TUR = { ai = yes is_subject = no } }
+				persia_superregion = { 
+					limit = { owned_by = TUR }
+					remove_core = TUR
+					cede_province = PER
+					add_core = PER
+				}
+				caucasia_region = { 
+					limit = { owned_by = TUR }
+					remove_core = TUR
+					cede_province = PER
+					add_core = PER
+				}
+			}
+			if = { limit = { MUG = { ai = yes is_subject = no } }
+				persia_superregion = { 
+					limit = { owned_by = MUG }
+					remove_core = MUG
+					cede_province = PER
+					add_core = PER
+				}
+			}
+			if = { limit = { RUS = { ai = yes is_subject = no } }
+				persia_superregion = { 
+					limit = { owned_by = RUS }
+					remove_core = RUS
+					cede_province = PER
+					add_core = PER
+				}
+				caucasia_region = { 
+					limit = { owned_by = RUS }
+					remove_core = RUS
+					cede_province = PER
+					add_core = PER
+				}
+			}
+			if = { limit = { OMA = { ai = yes is_subject = no } }
+				inherit = OMA
+			}
+			if = { limit = { ALH = { ai = yes is_subject = no } }
+				inherit = ALH
+			}
+		}
+	}
+	option = {
+		name = albania.1.b  
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #무굴의 쇠락
+	id = ge_events.106
+	title = "ge_events.106.t"
+	desc = "ge_events.106.d"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = MUG
+		is_year = 1755
+		not = { is_year = 1785 }
+		ai = yes
+		exists = yes
+		is_subject = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = ge_events.57.a 
+		ai_chance = { factor = 100 }
+		every_owned_province = {
+			limit = {
+				culture = baluchi
+			}
+			add_core = BAL
+			remove_core = MUG
+		}
+		release = BAL
+		every_owned_province = {
+			limit = {
+				culture = khorasani
+			}
+			add_core = KHO
+			remove_core = MUG
+		}
+		release = KHO
+		every_owned_province = {
+			limit = {
+				region = khorasan_region
+			}
+			add_core = AFG
+			remove_core = MUG
+		}
+		every_owned_province = {
+			limit = {
+				area = pamir_area
+			}
+			add_core = AFG
+			remove_core = MUG
+		}
+		every_owned_province = {
+			limit = {
+				region = persia_region
+			}
+			add_core = AFG
+			remove_core = MUG
+		}
+		release = AFG
+		BAL = { country_event = { id = fast.6 } }
+		KHO = { country_event = { id = fast.6 } }
+		AFG = { country_event = { id = fast.6 } }
+		add_country_modifier = {
+			name = "mug_revolter"
+			duration = 18250
+		}
+	}
+}
+
+country_event = { #영국 인도 지배
+	id = ge_events.107
+	title = "ge_events.107.t"
+	desc = "ge_events.107.d"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = GBR
+		is_year = 1826
+		not = { is_year = 1856 }
+		ai = yes
+		exists = yes
+		is_subject = no
+		MUG = { ai = yes is_subject = no }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		MUG = {
+			every_owned_province = {
+				limit = {
+					superregion = india_superregion
+				}
+				cede_province = GBR
+				add_core = GBR
+				remove_core = MUG
+			}
+		}
+	}
+}
+
+province_event = { #스페인 식민지
+	id = ge_events.108
+	title = "ge_events.107.t"
+	desc = "ge_events.107.d"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_year = 1530
+		not = { is_year = 1555 }
+		or = { superregion = andes_superregion superregion = central_america_superregion }
+		owner = { primitives = yes ai = yes }
+		SPA = { ai = yes exists = yes is_subject = no is_at_war = no }
+		any_neighbor_province = {
+			owner = { technology_group = western }
+		}
+		not = { any_country = { ai = no has_idea_group = exploration_ideas } }
+		has_global_flag = hab_colony_start
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		add_core = SPA
+		cede_province = SPA
+	}
+}
+
+country_event = { #스페인 식민지
+	id = ge_events.109
+	title = "ge_events.107.t"
+	desc = "ge_events.107.d"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1530
+		not = { is_year = 1532 }
+		or = { tag = CAS tag = SPA }
+		ai = yes
+		4793 = { is_empty = yes }
+		not = { has_global_flag = fast_idea }
+		has_global_flag = hab_colony_start
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		4793 = {
+			add_core = ROOT
+			cede_province = ROOT
+		}
+	}
+}
+
+country_event = { #케이프타운
+	id = ge_events.110
+	title = "ge_events.107.t"
+	desc = "ge_events.107.d"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1480
+		not = { is_year = 1482 }
+		tag = POR
+		ai = yes
+		1177 = { is_empty = yes }
+		not = { has_global_flag = fast_idea }
+		has_global_flag = hab_colony_start
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		1177 = {
+			add_core = POR
+			cede_province = POR
+		}
+	}
+}
+
+country_event = { #멕시코
+	id = ge_events.111
+	title = "ge_events.107.t"
+	desc = "ge_events.107.d"
+	picture = COURT_eventPicture
+	
+	hidden = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1530
+		not = { is_year = 1532 }
+		or = { tag = CAS tag = SPA }
+		ai = yes
+		4817 = { is_empty = yes }
+		not = { has_global_flag = fast_idea }
+		has_global_flag = hab_colony_start
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = ge_events.57.a  
+		ai_chance = { factor = 100 }
+		4817 = {
+			add_core = ROOT
+			cede_province = ROOT
+		}
+	}
+}

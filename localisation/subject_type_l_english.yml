@@ -1,0 +1,68 @@
+﻿l_english:
+ vassal_title:0 "…ÈÁm­"
+ march_title:0 "À¼Ë¬m­"
+ client_vassal_title:0 "Ç1Ám­"
+ client_march_title:0 "À¼Ë¬ Ç1Ám­"
+ personal_union_title:0 "Ù³p­ðÅiÕ …ÈÁm­"
+ protectorate_title:0 "ô¼8Öm­"
+ colony_title:0 "ÝÂü»ÀÉ"
+ daimyo_vassal_title:0 "ä²tÇ»"
+ vassal_title_plural:0 "…ÈÁm­ä´"
+ march_title_plural:0 "À¼Ë¬m­ä´"
+ client_vassal_title_plural:0 "Ç1Ám­ä´"
+ client_march_title_plural:0 "À¼Ë¬ Ç1Ám­ä´"
+ personal_union_title_plural:0 "Ù³p­ðÅiÕ …ÈÁm­ä´"
+ protectorate_title_plural:0 "ô¼8Öm­ä´"
+ colony_title_plural:0 "ÝÂü»ÀÉä´"
+ daimyo_vassal_title_plural:0 "ä²tÇ»ä´"
+ DEFAULT_OVERLORD:0 "…ÈüÈm­"
+ personal_union_overlord_title:0 "Ù³p­ðÅiÕ …ÈüÈm­"
+ colony_overlord_title:0 "ÝÂü»ÀÉ …ÈüÈm­"
+ vassal_long_desc:0 "…ÈÁm­NÇ …ÈüÈm­DÇ ÇtÕ ÈÁÇÐÅ 8ÌìÅtÕ|Å XÕpº, xÆP­jÖÙ³DÇ `Õ Â¬ ÆÅµÂÈ²ä². ø­¬¹à¬ Â…ÇXÇ |ÇŽ´|¹ …ÈüÈm­ÐÅ ¼ÐÌ|Å iÕÈ²ä²."
+ march_long_desc:0 "À¼Ë¬m­NÇ iÕÑ¼.´ Â ÆÅà¬ ´Å²µ 8Á®Ä³ ´°ÀÉ JÅÀÉÌ¹, ³àÂ |Ç¼ …ÈÁm­ô¼ä² T³ Î¹NÇ p­³|¹ ô¼.Ç`Õ Â ˆÇ”² …ÈÁm­…ÇÈ²ä²."
+ client_vassal_long_desc:0 "|Ç¼ÈxÇ …ÈÁm­ü¬ È¹,Ì¬ÀÉj¸, XÇtÈm­NÇ …ÈüÈm­DÇ ÇtÕ ÈÁÇÐÅ 8ÌìÅtÕ|Å XÕpº, xÆP­jÖÙ³DÇ `Õ Â¬ ÆÅµÂÈ²ä². ø­¬¹à¬ Â…ÇXÇ |ÇŽ´|¹ …ÈüÈm­ÐÅ ¼ÐÌ|Å iÕÈ²ä²."
+ daimyo_vassal_long_desc:0 "ä²tÇ» …ÈÁm­NÇ …ÈüÈm­DÇ ÇtÕ ÈÁÇÐÅ 8ÌìÅtÕ|Å XÕpº, xÆP­jÖÙ³DÇ `Õ Â¬ ÆÅµÂÈ²ä². ø­¬¹à¬ Â…ÇXÇ |ÇŽ´|¹ …ÈüÈm­ÐÅ ¼ÐÌ|Å iÕÈ²ä². ¶jÕ ä²tÇ» …ÈÁm­ä´NÇ Áj¸ øÂ¸Æ Â ˆÇµÂÈ²ä²."
+ client_march_long_desc:0 "|Ç¼ÈxÇ À¼Ë¬m­ü¬ È¹,Ì¬ÀÉj¸, À¼Ë¬ Ç1Ám­NÇ iÕÑ¼.´ Â ÆÅà¬ ´Å²µ 8Á®Ä³ ´°ÀÉ JÅÀÉÌ¹, ³àÂ |Ç¼ …ÈÁm­ô¼ä² T³ Î¹NÇ p­³|¹ ô¼.Ç`Õ Â ˆÇ”² …ÈÁm­…ÇÈ²ä²."
+ colony_long_desc:1 "ÝÂü»ÀÉ”² ø¼m­XÇ µÑXÎ XÕÐÅ „´¬¹´´Å ˆÇ”² ÝÂü»ÀÉ m­¬…ÇÈ²ä². ÝÂü»ÀÉ”² ÝÀ°Àü¬ 4»íÅ Â…ÇXÇ ¼DÇ …ÈüÈm­ÐÅŒ¬ ä¹ÔÆ ­8Áj¸ ÀÉˆ´XÕà¬ 4»íÅ%¸XÇ $TRADE|0%$|¹ ÁÀ©°tÕ|Å iÕÈ²ä². ÝÂü»ÀÉ”² 2ÆÁÉ ø»¬m­ ¶”² ä²x¹ ÝÂü»ÀÉÐÅÌ¹ .ÁÈìÓà¬|¹ `Õ Â ˆÇµÂÈ²ä²."
+ protectorate_long_desc:0 "…ÈüÈm­tÇ ô¼8Öm­DÇ ô¼8Ö`Õ Ù³HÅ, ô¼8Öm­NÇ …ÈüÈm­ÐÅŒ¬ 4»íÅ%¸XÇ È¼DÇ Èõ¬`Õ ƒ¬ …ÇÈ²ä²."
+ personal_union_long_desc:0 "Ù³p­ðÅiÕNÇ P´ ˜°|·¬ ¬NÇ p­üÈÐÅŒ¬ µÑXÎ´ä²”² ƒ¬DÇ XÇø» iÕÈ²ä². …ÈÁ´ Ù³¼Ç”² ÇàÂXÇ …ÈüÈm­DÇ ÇtÕ ÈÁÇÐÅ 8ÌìÅtÕ|Å XÕpº, xÆP­jÖÙ³DÇ `Õ Â¬ ÆÅµÂÈ²ä². p­üÈ¬ ¬ÀÝ¹`Õ ÜÂ Ä¬Á tÇ´Å¬p¬˜°, ­Ä¬|¹ J°p¬˜° ¶”² …ÈÁ´ Ù³¼Ç¬ ÁÀÁiÕÑ¼DÇ `Õ Â¬ ˆÇµÂÈ²ä²."
+ vassal_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ …ÈÁm­…ÇÈ²ä²."
+ march_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ À¼Ë¬m­…ÇÈ²ä²."
+ client_vassal_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ Ç1Ám­…ÇÈ²ä²."
+ client_march_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ À¼Ë¬ Ç1Ám­…ÇÈ²ä²."
+ personal_union_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹¬ µÑXÎXÕ”² Ù³p­ðÅiÕ DÅ˜· ˆÇµÂÈ²ä²."
+ protectorate_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ ô¼8Öm­…ÇÈ²ä²."
+ colony_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ ÝÂü»ÀÉ…ÇÈ²ä²."
+ daimyo_vassal_is_our:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ ä²tÇ» …ÈÁm­…ÇÈ²ä²."
+ IS_OUR_OVERLORD:0 "$NAME|Y$ !ÎNÇ °Æ¬¹XÇ …ÈüÈm­…ÇÈ²ä²."
+ colony_cant_fight:1 "$SUBJECTTYPE$ .ÇÖ<Çj¸Á, ù²àÂNÇ 2ÆÁÉ ä²x¹ ÝÂü»ÀÉä´tÇ˜° tÇÃÆjÕ ÐÆüÈü», tÇP­Ä³ä´ÐÅŒ¬Ì¹ ÈÁÇDÇ .ÁìÓ`Õ Â ˆÇµÂÈ²ä²."
+ subject_cant_fight:0 "$SUBJECTTYPES$ .ÇÖNÇ ÇàÂä´XÇ ÈÁÇÐÅÁ ²Â²Âj¸ øÂ¸Æ Â ÆÅµÂÈ²ä²."
+ subject_cant_rival:0 "$SUBJECTTYPES$ .ÇÖNÇ Ë¬ÁÇm­DÇ ÀÉÈ`Õ Â ÆÅµÂÈ²ä²."
+ subject_cant_ally:0 "$SUBJECTTYPES$ .ÇÖNÇ Ù³ù¹DÇ Ì¹ä´ Â ÆÅµÂÈ²ä²."
+ subject_cant_marry:0 "$SUBJECTTYPES$ .ÇÖNÇ UÆäÂ°¬<ÖDÇ `Õ Â ÆÅµÂÈ²ä²."
+ subject_only_fight_same_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ¬NÇ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ øÂ¸Æ Â ˆÇµÂÈ²ä²."
+ subject_only_fight_other_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ä²x¹ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ øÂ¸Æ Â ˆÇµÂÈ²ä²."
+ subject_only_rival_same_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ¬NÇ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ Ë¬ÁÇm­DÇ ÀÉÈ`Õ Â ˆÇµÂÈ²ä²."
+ subject_only_rival_other_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ä²x¹ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ Ë¬ÁÇm­DÇ ÀÉÈ`Õ Â ˆÇµÂÈ²ä²."
+ subject_only_ally_same_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ¬NÇ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ Ù³ù¹`Õ Â ˆÇµÂÈ²ä²."
+ subject_only_ally_other_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ä²x¹ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ Ù³ù¹`Õ Â ˆÇµÂÈ²ä²."
+ subject_only_marry_same_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ¬NÇ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ UÆäÂ°¬<Ö `Õ Â ˆÇµÂÈ²ä²."
+ subject_only_marry_other_overlord:0 "$MYSUBJECTTYPE$ .ÇÖ<Çj¸Á, °Æ¬¹”² ä²x¹ …ÈüÈm­DÇ P´à¬ ˆÇ”² $THEIRSUBJECTTYPES$ .ÇÖXÇ m­¬NÆÌ¹ UÆäÂ°¬<Ö `Õ Â ˆÇµÂÈ²ä²."
+ personal_union_no_overlord_dow:0 "ù²àÂNÇ ù²àÂü¬ Ù³p­ðÅiÕ ÉxÇ m­¬ÐÅ ³tÕ ÈÁÇDÇ .ÁìÓ`Õ Â ÆÅµÂÈ²ä²."
+ colony_no_overlord_dow:0 "ù²àÂXÇ ÝÂü»ÀÉÐÅ .ÁÈìÓà¬|¹ `Õ Â ÆÅµÂÈ²ä²."
+ protectorate_no_overlord_dow:0 "ù²àÂNÇ ù²àÂXÇ ô¼8Ö9¸ÐÅ ÈÁÇDÇ .Á¸Å `Õ Â ÆÅµÂÈ²ä²."
+ relation_fight:0 "ä²LÇ m­¬ÐÅ .ÁÈìÓà¬:"
+ relation_rival:0 "Ë¬ÁÇm­"
+ relation_ally:0 "Ù³ù¹"
+ relation_marry:0 "UÆäÂ°¬<Ö"
+ THEIR_SUBJECT_TYPE_NO_ALLOW:0 "ø­ä´NÇ $SUBJECTTYPE$…ÇÈ²ä²."
+ tributary_state:0 "pÈõ¬m­"
+ tributary_state_title:0 "pÈõ¬m­"
+ tributary_state_title_plural:0 "pÈõ¬m­ä´"
+ tributary_state_is_our:0 "§Y$NAME$§! !ÎNÇ °Æ¬¹XÇ pÈõ¬m­…ÇÈ²ä²."
+ tributary_state_long_desc:1 "pÈõ¬m­NÇ ä²x¹ Å³Ë¹m­ä´j¸Ž´0Ñ ô¼8Ö|¹ ¼”² ³¬j¸ …ÈüÈm­ÐÅŒ¬ ä¹D± pÈõ¬DÇ ¼ÐÌ|ÅÌ¹ iÕÈ²ä². pÈõ¬m­ä´NÇ …ÈüÈm­XÇ ÈÁÇÐÅ 8ÌìÅXÕÀÉ JÅ<Çpº ÇàÂä´Ì¹XÇ xÆP­|¹ Â‰ÕXÕ”² ƒ¬tÇ ¬¥²iÕÈ²ä²."
+ dummy:0 "Dummy"
+ dummy_title:0 "Dummy"
+ dummy_title_plural:0 "Dummies"
+ dummy_is_our:0 "§Y$NAME$§! is our Dummy."
+ dummy_long_desc:1 "A Dummy is a model of the human body used for various purposes."

@@ -1,0 +1,670 @@
+# For specific government types
+# Will pick the first valid one it finds in list
+
+# Korea
+korean_monarchy_medieval = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GONG
+		2 = WANG
+		3 = HWANGJE
+	}
+	
+	ruler_female = {
+		1 = GONG
+		2 = WANG
+		3 = HWANGJE
+	}
+	
+	consort_male = {
+		1 = GONG
+		2 = GONG
+		3 = GONG
+	}
+
+	consort_female = {
+		1 = BI
+		2 = WANGHU
+		3 = HWANGHU
+	}
+	
+	heir_male = {
+		1 = GONGJA
+		2 = SEJA
+		3 = TAEJA
+	}
+	
+	heir_female = {
+		1 = ONGJU
+		2 = GONGJU
+		3 = GONGJU
+	}
+
+	trigger = {
+		always = no
+		or = { tag = KOR tag = JOS }
+		not = { government = republic }
+	}
+}
+
+# China
+chinese_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	trigger = {
+		government = monarchy
+		culture_group = east_asian #Chinese
+	}
+}
+
+# Japan
+gov_daimyo = {
+	rank = {
+		1 = DAIMYO
+	}
+	
+	ruler_male = {
+		1 = DAIMYO
+	}
+	
+	ruler_female = {
+		1 = DAIMYO
+	}
+	
+	consort_male = {
+		1 = OTTO
+	}
+	
+	consort_female = {
+		1 = FUJIN
+	}
+	
+	heir_male = {
+		1 = KOUKEISHA
+	}
+	
+	heir_female = {
+		1 = HIME
+	}
+
+	trigger = {
+		culture_group = japanese_g
+		OR = {
+			has_reform = daimyo
+			has_reform = daimyo_legacy
+			overlord = {
+				tag = JAP
+			}
+		}
+	}
+}
+
+gov_indep_daimyo = {
+	rank = {
+		1 = INDEP_DAIMYO
+		2 = GRAND_INDEP_DAIMYO
+		3 = GREAT_INDEP_DAIMYO
+	}
+	
+	ruler_male = {
+		1 = DAIMYO
+		2 = DAIMYO
+		3 = DAIMYO
+	}
+	
+	ruler_female = {
+		1 = DAIMYO
+		2 = DAIMYO
+		3 = DAIMYO
+	}
+	
+	consort_male = {
+		1 = OTTO
+		2 = OTTO
+		3 = OTTO
+	}
+	
+	consort_female = {
+		1 = FUJIN
+		2 = FUJIN
+		3 = FUJIN
+	}
+	
+	heir_male = {
+		1 = KOUKEISHA
+		2 = KOUKEISHA
+		3 = KOUKEISHA
+	}
+	
+	heir_female = {
+		1 = HIME
+		2 = HIME
+		3 = HIME
+	}
+
+	trigger = {
+		culture_group = japanese_g
+		OR = {
+			has_reform = indep_daimyo
+			has_reform = indep_daimyo_legacy
+			AND = {
+				NOT = { tag = JAP }
+				NOT = { tag = RYU }
+				OR = {
+					has_reform = feudalism_reform
+					has_reform = autocracy_reform
+					has_reform = plutocratic_reform
+				}
+			}
+		}
+	}
+}
+
+gov_daijo_daijin = {
+	rank = {
+		2 = SHOGUNATE
+	}
+
+	ruler_male = {
+		2 = DAIJO_DAIJIN
+	}
+	
+	ruler_female = {
+		2 = DAIJO_DAIJIN
+	}
+
+	consort_male = {
+		2 = OTTO
+	}
+	
+	consort_female = {
+		2 = FUJIN
+	}
+	
+	heir_male = {
+		2 = KOUKEISHA
+	}
+	
+	heir_female = {
+		2 = HIME
+	}
+
+	trigger = {
+		culture_group = japanese_g
+		has_country_flag = g_daijo_daijin_flag
+		OR = {
+			has_reform = shogunate
+			has_reform = shogunate_legacy
+		}
+	}
+}
+
+gov_kampaku = {
+	rank = {
+		2 = SHOGUNATE
+	}
+
+	ruler_male = {
+		2 = KAMPAKU
+	}
+	
+	ruler_female = {
+		2 = KAMPAKU
+	}
+
+	consort_male = {
+		2 = OTTO
+	}
+	
+	consort_female = {
+		2 = FUJIN
+	}
+	
+	heir_male = {
+		2 = KOUKEISHA
+	}
+	
+	heir_female = {
+		2 = HIME
+	}
+
+	trigger = {
+		culture_group = japanese_g
+		has_country_flag = g_kampaku_flag
+		OR = {
+			has_reform = shogunate
+			has_reform = shogunate_legacy
+		}
+	}
+}
+
+gov_shogunate = {
+	rank = {
+		2 = SHOGUNATE
+	}
+
+	ruler_male = {
+		2 = SHOGUN
+	}
+	
+	ruler_female = {
+		2 = SHOGUN
+	}
+	
+	consort_male = {
+		2 = OTTO
+	}
+	
+	consort_female = {
+		2 = FUJIN
+	}
+	
+	heir_male = {
+		2 = KOUKEISHA
+	}
+	
+	heir_female = {
+		2 = HIME
+	}
+
+	trigger = {
+		culture_group = japanese_g
+		has_country_flag = g_shogun_flag
+		OR = {
+			has_reform = shogunate
+			has_reform = shogunate_legacy
+		}
+	}
+}
+
+gov_reject = {
+	rank = {
+		2 = SHOGUNATE
+	}
+
+	ruler_male = {
+		2 = DAIMYO
+	}
+	
+	ruler_female = {
+		2 = DAIMYO
+	}
+	
+	consort_male = {
+		2 = OTTO
+	}
+	
+	consort_female = {
+		2 = FUJIN
+	}
+
+	heir_male = {
+		2 = KOUKEISHA
+	}
+	
+	heir_female = {
+		2 = HIME
+	}
+	
+	trigger = {
+		culture_group = japanese_g
+		OR = {
+			has_country_flag = g_reject_flag
+			AND = {
+				NOT = { has_country_flag = g_shogun_flag }
+				NOT = { has_country_flag = g_kampaku_flag }
+				NOT = { has_country_flag = g_daijo_daijin_flag }
+				NOT = { has_country_flag = g_reject_flag }
+			}
+		}
+		OR = {
+			has_reform = shogunate
+			has_reform = shogunate_legacy
+		}
+	}
+}
+
+# Tartary
+gov_steppe_horde = {
+	rank = {
+		1 = HORDE
+		2 = KHANATE
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		1 = JINONG
+		2 = KHAN
+		3 = KHAGAN
+	}
+	
+	ruler_female = {
+		1 = REGENT_GEGE
+		2 = REGENT_KHATUN
+		3 = REGENT_KHATUN
+	}
+	
+	consort_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = KHAGAN
+	}
+
+	consort_female = {
+		1 = GEGE
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHANUM
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = steppe_horde_legacy
+		}
+		NOT = { primary_culture = manchu }
+	}
+}
+
+yuan_empire = {
+	rank = {
+		3 = KHAGANATE
+	}
+	
+	ruler_male = {
+		3 = KHAGAN
+	}
+	
+	ruler_female = {
+		3 = REGENT_KHATUN
+	}
+	
+	consort_male = {
+		3 = YEKHE_KHAGAN
+	}
+
+	consort_female = {
+		3 = YEKHE_KHANUM
+	}
+	
+	heir_male = {
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		3 = KHANUM
+	}
+	
+	trigger = {
+		tag = YUA
+		government = monarchy
+	}
+}
+
+jurchen_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KHANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = KHAGAN
+	}
+
+	ruler_female = {
+		1 = REGENT_GEGE
+		2 = REGENT_KHATUN
+		3 = REGENT_KHATUN
+	}
+
+	consort_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = KHAGAN
+	}
+
+	consort_female = {
+		1 = GEGE
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	heir_male = {
+		1 = BEIZI
+		2 = JUNWANG
+		3 = QINWANG
+	}
+
+	heir_female = {
+		1 = GEGE
+		2 = GEGE
+		3 = GEGE
+	}
+
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_reform = steppe_horde_legacy
+		}
+		primary_culture = manchu
+	}
+}
+
+qing_monarchy = {
+	rank = {
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		3 = HUANGDI
+	}
+
+	ruler_female = {
+		3 = REGENT_HUANGHOU
+	}
+	
+	consort_male = {
+		3 = QINWANG
+	}
+
+	consort_female = {
+		3 = HUANGHOU
+	}
+
+	heir_male = {
+		3 = TAIZI
+	}
+
+	heir_female = {
+		3 = GEGE
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			tag = MCH
+			tag = QNG
+		}
+	}
+}
+
+sinicized_monarchy = {
+	rank = {
+		1 = DUCHY
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = GONG
+		2 = DAWANG
+		3 = HUANGDI
+	}
+
+	ruler_female = {
+		1 = REGENT_FEI
+		2 = REGENT_WANGHOU
+		3 = REGENT_HUANGHOU
+	}
+	
+	consort_male = {
+		1 = GONG
+		2 = GONG
+		3 = WANG
+	}
+
+	consort_female = {
+		1 = FEI
+		2 = WANGHOU
+		3 = HUANGHOU
+	}
+	
+	heir_male = {
+		1 = GONGZI
+		2 = SHIZI
+		3 = TAIZI
+	}
+	
+	heir_female = {
+		1 = WENGZHU
+		2 = GONGZHU
+		3 = GONGZHU
+	}
+
+	trigger = {
+		government = monarchy
+		OR = {
+			tag = LIO
+			tag = TAN
+			tag = XIA
+		}
+	}
+}
+
+mongolian_theocracy = {
+	rank = {
+		1 = HOLY_STATE
+		2 = HOLY_STATE
+		3 = HOLY_STATE
+	}
+
+	ruler_male = {
+		1 = KHAN
+		2 = KHAN
+		3 = KHAN
+	}
+
+	trigger = {
+		government = theocracy
+		tag = MN2
+		OR = {
+			religion = buddhism #Theravada
+			religion = vajrayana
+			religion = mahayana
+		}
+	}
+}
+
+tibetan_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = TSENPO
+		3 = TSENPO
+	}
+
+	ruler_female = {
+		1 = REGENT_PRINCESS
+		2 = REGENT_TSENPO
+		3 = REGENT_TSENPO
+	}
+
+	trigger = {
+		OR = {
+			government = tribal
+			government = monarchy
+		}
+		OR = {
+			tag = TIB
+			tag = ZHA
+			tag = UTS
+			tag = PHA
+		}
+	}
+}
+
+tibetan_theocracy = {
+	rank = {
+		1 = HOLY_STATE
+		2 = HOLY_STATE
+		3 = HOLY_STATE
+	}
+
+	ruler_male = {
+		1 = DALAI_LAMA
+		2 = DALAI_LAMA
+		3 = DALAI_LAMA
+	}
+
+	trigger = {
+		government = theocracy
+		tag = TIB
+		OR = {
+			religion = buddhism #Theravada
+			religion = vajrayana
+			religion = mahayana
+		}
+	}
+}

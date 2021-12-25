@@ -1,0 +1,14 @@
+# Saxony
+VOG = "countries/Vogtland.txt"
+
+# Caucasus
+OSS = "countries/Ossetia.txt"
+KAH = "countries/Kakheti.txt"
+ABK = "countries/Abkhazia.txt"
+
+# Hispaniola
+HIT = "countries/Higuey.txt"
+JRT = "countries/Jaragua.txt"
+MGT = "countries/Magua.txt"
+MNT = "countries/Maguana.txt"
+MRT = "countries/Marien.txt"

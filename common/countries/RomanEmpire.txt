@@ -1,0 +1,181 @@
+# Roman Empire
+graphical_culture = greekgfx
+
+color = { 107 14 16 }
+
+historical_idea_groups = {
+	offensive_ideas
+	defensive_ideas
+	trade_ideas
+	administrative_ideas
+	spy_ideas
+	economic_ideas
+	innovativeness_ideas
+	diplomatic_ideas
+	generalstab0
+	staatsverwaltung0
+	justiz0
+	propaganda0
+	gesellschaft0
+	fire0
+	assimilation0
+}
+
+army_names = {
+	"Legio I Germanica" "Legio II Sabina" "Legio III Cyrenaica" "Legio IV Macedonica" "Legio V Alaudae" "Legio VI Ferrata" 
+	"Legio VII Claudia Pia Fidelis" "Legio VIII Augusta" "Legio IX Hispania" "Legio X Fretensis" "Legio XI Neptune"
+	"Legio XII Vitrix" "Legio XIII Gemina" "Legio XIV Gallica" "Legio XV Scythica" "Legio XVI Veneria" "Legio XVII Equestris"
+	"Legio XVIII Libyca" "Legio XIX Antiqua" "Legio XX Aegyptica" "Legio XXI Britannica" "Legio XXII Romana"
+	"Legio XXIII Galatica" "Legio XXIV Dalmatica" "Legio XXV Italica" "Legio XXVI Mauretanica" "Legio XXVII Pannonica"
+	"Legio XXVIII Moesica" "Legio XXIX Arabica" "Legio XXX Ulpia Vitrix" "Legio $PROVINCE$" "Auxilia $PROVINCE$"
+}
+
+fleet_names = {
+	"Classis Misenensis" "Classis Ravennas" "Classis Alexandrina" "Classis Britannica" "Classis Germanica" "Classis Libyca"
+	"Classis Mauretanica" "Classis Moesica" "Classis Perinthia" "Classis Pontica" "Classis Syriaca" "Classis Anderetianorum"
+	"Classis Ararica" "Classis Barbariocum" "Classis Comensis" "Classis Sambrica" "Classis Venetum" "Classis Rhodani"
+	"Classis Pannonica" "Classis Histrica" "Classis $PROVINCE$"
+}
+
+leader_names = {
+	 "Annaeus" "Annaeus Cicero" "Annaeus Crispus" "Annaeus Crispus" "Annaeus Hibrida" "Annaeus Metellus" "Annaeus Nobilior" "Annaeus Piso" "Annaeus Scipio" 
+	 "Annaeus Seneca" "Annaeus Sulla" "Annaeus Adranos" "Annaeus Arvina" "Annaeus Brutus" "Annaeus Crassus" "Annaeus Durio" "Annaeus Faustus" "Annaeus Felix" "Annaeus Laenas"
+	 "Aponius" "Aponius Cicero" "Aponius Crispus" "Aponius Crispus" "Aponius Hibrida" "Aponius Metellus" "Aponius Nobilior" "Aponius Piso" "Aponius Scipio" 
+	 "Aponius Seneca" "Aponius Sulla" "Aponius Adranos" "Aponius Arvina" "Aponius Brutus" "Aponius Crassus" "Aponius Durio" "Aponius Faustus" "Aponius Felix" "Aponius Laenas"
+	 "Flavius" "Flavius Cicero" "Flavius Crispus" "Flavius Crispus" "Flavius Hibrida" "Flavius Metellus" "Flavius Nobilior" "Flavius Piso" "Flavius Scipio" 
+	 "Flavius Seneca" "Flavius Sulla" "Flavius Adranos" "Flavius Arvina" "Flavius Brutus" "Flavius Crassus" "Flavius Durio" "Flavius Faustus" "Flavius Felix" "Flavius Laenas"
+	 "Gavius" "Gavius Cicero" "Gavius Crispus" "Gavius Crispus" "Gavius Hibrida" "Gavius Metellus" "Gavius Nobilior" "Gavius Piso" "Gavius Scipio" 
+	 "Gavius Seneca" "Gavius Sulla" "Gavius Adranos" "Gavius Arvina" "Gavius Brutus" "Gavius Crassus" "Gavius Durio" "Gavius Faustus" "Gavius Felix" "Gavius Laenas"
+	 "Mamilius" "Mamilius Cicero" "Mamilius Crispus" "Mamilius Crispus" "Mamilius Hibrida" "Mamilius Metellus" "Mamilius Nobilior" "Mamilius Piso" "Mamilius Scipio" 
+	 "Mamilius Seneca" "Mamilius Sulla" "Mamilius Adranos" "Mamilius Arvina" "Mamilius Brutus" "Mamilius Crassus" "Mamilius Durio" "Mamilius Faustus" "Mamilius Felix" "Mamilius Laenas"
+	 "Claudius" "Claudius Cicero" "Claudius Crispus" "Claudius Crispus" "Claudius Hibrida" "Claudius Metellus" "Claudius Nobilior" "Claudius Piso" "Claudius Scipio" 
+	 "Claudius Seneca" "Claudius Sulla" "Claudius Adranos" "Claudius Arvina" "Claudius Brutus" "Claudius Crassus" "Claudius Durio" "Claudius Faustus" "Claudius Felix" "Claudius Laenas"
+	 "Sempronius" "Sempronius Cicero" "Sempronius Crispus" "Sempronius Crispus" "Sempronius Hibrida" "Sempronius Metellus" "Sempronius Nobilior" "Sempronius Piso" "Sempronius Scipio" 
+	 "Sempronius Seneca" "Sempronius Sulla" "Sempronius Adranos" "Sempronius Arvina" "Sempronius Brutus" "Sempronius Crassus" "Sempronius Durio" "Sempronius Faustus" "Sempronius Felix" "Sempronius Laenas"
+	 "Caecilius" "Caecilius Cicero" "Caecilius Crispus" "Caecilius Crispus" "Caecilius Hibrida" "Caecilius Metellus" "Caecilius Nobilior" "Caecilius Piso" "Caecilius Scipio" 
+	 "Caecilius Seneca" "Caecilius Sulla" "Caecilius Adranos" "Caecilius Arvina" "Caecilius Brutus" "Caecilius Crassus" "Caecilius Durio" "Caecilius Faustus" "Caecilius Felix" "Caecilius Laenas"
+	 "Valerius" "Valerius Cicero" "Valerius Crispus" "Valerius Crispus" "Valerius Hibrida" "Valerius Metellus" "Valerius Nobilior" "Valerius Piso" "Valerius Scipio" 
+	 "Valerius Seneca" "Valerius Sulla" "Valerius Adranos" "Valerius Arvina" "Valerius Brutus" "Valerius Crassus" "Valerius Durio" "Valerius Faustus" "Valerius Felix" "Valerius Laenas"
+	 "Licinius" "Licinius Cicero" "Licinius Crispus" "Licinius Crispus" "Licinius Hibrida" "Licinius Metellus" "Licinius Nobilior" "Licinius Piso" "Licinius Scipio" 
+	 "Licinius Seneca" "Licinius Sulla" "Licinius Adranos" "Licinius Arvina" "Licinius Brutus" "Licinius Crassus" "Licinius Durio" "Licinius Faustus" "Licinius Felix" "Licinius Laenas"
+	 "Cornelius" "Cornelius Cicero" "Cornelius Crispus" "Cornelius Crispus" "Cornelius Hibrida" "Cornelius Metellus" "Cornelius Nobilior" "Cornelius Piso" "Cornelius Scipio" 
+	 "Cornelius Seneca" "Cornelius Sulla" "Cornelius Adranos" "Cornelius Arvina" "Cornelius Brutus" "Cornelius Crassus" "Cornelius Durio" "Cornelius Faustus" "Cornelius Felix" "Cornelius Laenas"
+	 "Pompeius" "Pompeius Cicero" "Pompeius Crispus" "Pompeius Crispus" "Pompeius Hibrida" "Pompeius Metellus" "Pompeius Nobilior" "Pompeius Piso" "Pompeius Scipio" 
+	 "Pompeius Seneca" "Pompeius Sulla" "Pompeius Adranos" "Pompeius Arvina" "Pompeius Brutus" "Pompeius Crassus" "Pompeius Durio" "Pompeius Faustus" "Pompeius Felix" "Pompeius Laenas"
+	 "Calpurnius" "Calpurnius Cicero" "Calpurnius Crispus" "Calpurnius Crispus" "Calpurnius Hibrida" "Calpurnius Metellus" "Calpurnius Nobilior" "Calpurnius Piso" "Calpurnius Scipio" 
+	 "Calpurnius Seneca" "Calpurnius Sulla" "Calpurnius Adranos" "Calpurnius Arvina" "Calpurnius Brutus" "Calpurnius Crassus" "Calpurnius Durio" "Calpurnius Faustus" "Calpurnius Felix" "Calpurnius Laenas"
+	 "Hortensius" "Hortensius Cicero" "Hortensius Crispus" "Hortensius Crispus" "Hortensius Hibrida" "Hortensius Metellus" "Hortensius Nobilior" "Hortensius Piso" "Hortensius Scipio" 
+	 "Hortensius Seneca" "Hortensius Sulla" "Hortensius Adranos" "Hortensius Arvina" "Hortensius Brutus" "Hortensius Crassus" "Hortensius Durio" "Hortensius Faustus" "Hortensius Felix" "Hortensius Laenas"
+	 "Julius" "Julius Cicero" "Julius Crispus" "Julius Crispus" "Julius Hibrida" "Julius Metellus" "Julius Nobilior" "Julius Piso" "Julius Scipio" 
+	 "Julius Seneca" "Julius Sulla" "Julius Adranos" "Julius Arvina" "Julius Brutus" "Julius Crassus" "Julius Durio" "Julius Faustus" "Julius Felix" "Julius Laenas"
+	 "Octavius Seneca" "Octavius Sulla" "Octavius Adranos" "Octavius Arvina" "Octavius Brutus" "Octavius Crassus" "Octavius Durio" "Octavius Faustus" "Octavius Felix" "Octavius Laenas"  "Octavius"
+	 "Marius" "Livius Patavinus" "Octavius Thurinus" "Tullius Cicero"
+
+}
+monarch_names = {
+	"Appius #0" = 20
+	"Aulus #0" = 20
+	"Caeso #0" = 15
+	"Decimus #0" = 10
+	"Faustus #0" = 10
+	"Gaius #0" = 25
+	"Gnaeus #0" = 10
+	"Hostus #0" = 15
+	"Lucius #0" = 20
+	"Mamercus #0" = 10
+	"Manius #0" = 10
+	"Marcus #0" = 20
+	"Mettius #0" = 10
+	"Nonus #0" = 10
+	"Numerius #0" = 15
+	"Opiter #0" = 10
+	"Paullus #0" = 15
+	"Postumus #0" = 10
+	"Proculus #0" = 10
+	"Publius #0" = 20
+	"Quintus #0" = 20
+	"Septimus #0" = 20
+	"Sertor #0" = 10
+	"Servius #0" = 15
+	"Sextus #0" = 15
+	"Spurius #0" = 10
+	"Statius #0" = 10
+	"Tiberius #0" = 20
+	"Titus #0" = 20
+	"Tullus #0" = 15
+	"Vibius #0" = 10
+	"Volesus #0" = 10
+	"Vopiscus #0" = 10
+
+	"Aelia #0" = -1
+	"Flavia #0" = -1
+	"Cassia #0" = -1
+	"Antonia #0" = -1
+	"Camilla #0" = -1
+	"Octaviana #0" = -1
+	"Sabina #0" = -1
+	"Verina #0" = -1
+	"Claudia #0" = -1
+	"Julia #0" = -1
+	"Livia #0" = -1
+	"Drusilla #0" = -1
+	"Agrippina #0" = -1
+	"Atia #0" = -1
+	"Appia #0" = -2
+	"Aula #0" = -2
+	"Caesula #0" = -1
+	"Decima #0" = -1
+	"Fausta #0" = -1
+	"Gaia #0" = -1
+	"Gnaea #0" = -1
+	"Hosta #0" = -1
+	"Lucia #0" = -2
+	"Maio #0" = -1
+	"Mamerca #0" = -1
+	"Mania #0" = -1
+	"Marcia #0" = -1
+	"Maxima #0" = -1
+	"Mettia #0" = -1
+	"Mino #0" = -1
+	"Nona #0" = -1
+	"Numeria #0" = -1
+	"Octavia #0" = -2
+	"Paulla #0" = -1
+	"Postuma #0" = -1
+	"Prima #0" = -1
+	"Procula #0" = -1
+	"Publia #0" = -2
+	"Quarta #0" = -1
+	"Quinta #0" = -2
+	"Secunda #0" = -1
+	"Septima #0" = -1
+	"Servia #0" = -2
+	"Sexta #0" = -1
+	"Spuria #0" = -1
+	"Statia #0" = -1
+	"Tertia #0" = -1
+	"Titia #0" = -1
+	"Tiberia #0" = -2
+	"Tulla #0" = -2
+	"Vibia #0" = -1
+	"Volusa #0" = -1
+	"Vopisca #0" = -1
+}
+ship_names = {
+	Jupiter Juno Neptunus Minerva Mars Venus Apollon Diana Vulcan Mercurius Ceres
+	Tellus Sol Luna Liber Robigus Flora Libera Fauni Dryad Saturnus Janus Genius Orcus
+	Vesta Lucina Augustus Aurora Aura Bacchus Carmenta Carna Clementia Cloacina Collatina
+	Concordia Cuba Cunina Cupid Cura Cybele Decimata Dea Devera Disciplina Discordia
+	Domiduca Egeria Empanda Epona Fama Fauna Faustitas Febris Fecunditas Felicitas
+	Ferentina Feronia Fessonia Fides Fortuna Fraus Furrina Hercules Hespera Hilaritas
+	Honos Hora Hostilina Honoria Inuus Invidia Iris Justitia Juturna Juventas Larentina
+	Laverna Levana Liberalitas Libertas Libitina Lima Lua Meditrina Mellona Messia Molae
+	Moneta Murcia Muta Necessitas Nemesis Nerio Neverita Nona Nox Orbona Palatua Partula
+	Patelana Pax "Pax Romana" Pellonia Pietas Pluto Pomona Porrima Portunes Postverta
+	Potina Proserpina Providentia Pudicitia Puta Quiritis Roma Rumina Rusina Salacia
+	Salus Sancus Secia Securitas Segetia Semonia Sentia Somnus Sors Spes "Stata Mater"
+	Statina Strentua Suadela Summanus Tempestas Terra Tiberinus Tranquillitas Trivia
+	Uranus Vacuna Vallonia Veritas Victoria Volturnus Virtus "Vica Pota" Virbinus Volumnas
+	Volutina
+}
+

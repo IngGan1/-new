@@ -1,0 +1,57 @@
+too_strong_tributary_state = {
+	potential = {
+		OR = {
+			is_subject_of_type = tributary_state
+			is_subject_of_type = tributary_state_join_war
+		}
+	}
+
+	trigger = {
+		any_country = {
+			overlord_of = ROOT
+			ROOT = {
+				military_strength = {
+					who = PREV
+					value = 1
+				}
+			}
+		}
+	}
+
+	prestige_decay = 0.02
+}
+
+horde_protected_by_tianzi = {
+	potential = {
+		OR = {
+			is_subject_of_type = tributary_state
+			is_subject_of_type = tributary_state_join_war
+		}
+		is_nomad = yes
+	}
+
+	trigger = {
+		any_country = {
+			overlord_of = ROOT
+			trust = {
+				who = ROOT
+				value = 50
+			}
+			ROOT = {
+				trust = {
+					who = PREV
+					value = 50
+				}
+				NOT = {
+					military_strength = {
+						who = PREV
+						value = 0.5
+					}
+				}
+			}
+		}
+		NOT = { horde_unity = 30 }
+	}
+
+	horde_unity = 100
+}

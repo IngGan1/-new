@@ -1,0 +1,245 @@
+NATIO_1 = {
+	icon = privilege_royal_authority
+	loyalty = 0.2
+	influence = 0.2
+	max_absolutism = -5
+	is_valid = {
+		AND = {
+			has_estate = estate_nationalist
+		}
+	}
+	can_select = {
+		NOT = {
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 80
+			}
+		}
+	}
+	on_granted = {
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+	}
+	cooldown_years = 30
+	on_cooldown_expires = { remove_estate_privilege = NATIO_1 }
+	ai_will_do = {
+		factor = 5
+		modifier = {
+            factor = 0.5
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 2
+			not = {
+				estate_loyalty = {
+					estate = estate_nationalist
+					loyalty = 30
+				}
+			}
+		}
+	}
+}
+
+NATIO_2 = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	loyalty = 0.1
+	influence = 0.1
+	max_absolutism = -5
+	is_valid = {
+		AND = {
+			has_estate = estate_nationalist
+		}
+	}
+	can_select = {
+		NOT = {
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 80
+			}
+		}
+	}
+	on_granted = {
+	}
+	cooldown_years = 15
+	ai_will_do = {
+		factor = 5
+		modifier = {
+            factor = 0.5
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 2
+			not = {
+				estate_loyalty = {
+					estate = estate_nationalist
+					loyalty = 30
+				}
+			}
+		}
+	}
+}
+
+NATIO_3 = {
+	icon = privilege_admin_power
+	loyalty = -0.1
+	influence = 0.1
+	is_valid = {
+		AND = {
+			has_estate = estate_nationalist
+		}
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_nationalist
+			loyalty = 40
+		}
+	}
+	on_granted = {		
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		custom_tooltip = auto_cancel_10
+	}
+	benefits = {
+		global_unrest = 2
+	}
+	cooldown_years = 10
+	on_cooldown_expires = { remove_estate_privilege = NATIO_3 }
+	ai_will_do = {
+		factor = 5
+		modifier = {
+            factor = 0.5
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 0.5
+			not = {
+				estate_loyalty = {
+					estate = estate_nationalist
+					loyalty = 40
+				}
+			}
+		}
+		modifier = {
+            factor = 0.1
+			not = {
+				monthly_adm = 10
+				monthly_dip = 10
+				monthly_mil = 10
+			}
+		}
+	}
+}
+
+NATIO_4 = {
+	icon = privilege_give_money
+	loyalty = -0.1
+	influence = 0.1
+	is_valid = {
+		AND = {
+			has_estate = estate_nationalist
+		}
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_nationalist
+			loyalty = 40
+		}
+	}
+	on_granted = {
+		add_years_of_income = 1
+		custom_tooltip = auto_cancel
+	}
+	penalties = {
+		global_tax_modifier = -0.1
+	}
+	cooldown_years = 15
+	on_cooldown_expires = { remove_estate_privilege = NATIO_4 }
+	ai_will_do = {
+		factor = 5
+		modifier = {
+            factor = 0.5
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 0.5
+			not = {
+				estate_loyalty = {
+					estate = estate_nationalist
+					loyalty = 40
+				}
+			}
+		}
+		modifier = {
+            factor = 5
+			num_of_loans = 10
+		}
+	}
+}
+
+NATIO_5 = {
+	icon = privilege_demand_more_troops
+	loyalty = -0.1
+	influence = 0.1
+	is_valid = {
+		AND = {
+			has_estate = estate_nationalist
+		}
+	}
+	can_select = {
+		estate_loyalty = {
+			estate = estate_nationalist
+			loyalty = 40
+		}
+	}
+	on_granted = {
+		add_yearly_manpower = 2
+		custom_tooltip = auto_cancel
+	}
+	penalties = {
+		manpower_recovery_speed = -0.1
+	}
+	cooldown_years = 15
+	on_cooldown_expires = { remove_estate_privilege = NATIO_5 }
+	ai_will_do = {
+		factor = 5
+		modifier = {
+            factor = 0.5
+			estate_influence = {
+				estate = estate_nationalist
+				influence = 70
+			}
+		}
+		modifier = {
+            factor = 0.5
+			not = {
+				estate_loyalty = {
+					estate = estate_nationalist
+					loyalty = 40
+				}
+			}
+		}
+		modifier = {
+            factor = 0
+			manpower_percentage = 0.6
+		}
+		modifier = {
+            factor = 2
+			not = { manpower_percentage = 0.1 }
+		}
+	}
+}

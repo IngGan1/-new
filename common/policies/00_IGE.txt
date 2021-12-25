@@ -1,0 +1,2087 @@
+got_mit_und_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = stehendesheer0
+		has_idea_group = islam0
+	}
+	allow = {
+		full_idea_group = stehendesheer0
+		full_idea_group = islam0
+	}
+	
+	manpower_recovery_speed = 0.20
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+got_mit_und_act_1 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = stehendesheer0
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = stehendesheer0
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+	
+	manpower_recovery_speed = 0.20
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+noble_administrators_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = staatsverwaltung0
+		has_idea_group = horde_gov_ideas
+	}
+	allow = {
+		full_idea_group = staatsverwaltung0
+		full_idea_group = horde_gov_ideas
+	}
+	
+	mil_advisor_cost = -0.10
+	cavalry_cost = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+noble_administrators_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = staatsverwaltung0
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = staatsverwaltung0
+		full_idea_group = aristocracy_ideas
+	}
+	
+	mil_advisor_cost = -0.10
+	cavalry_cost = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+political_entry_test_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = staatsverwaltung0
+		has_idea_group = plutocracy_ideas
+	}
+	allow = {
+		full_idea_group = staatsverwaltung0
+		full_idea_group = plutocracy_ideas
+	}
+	
+	candidate_random_bonus = 1
+	state_maintenance_modifier = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+clerical_education_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = propaganda0
+		has_idea_group = islam0
+	}
+	allow = {
+		full_idea_group = propaganda0
+		full_idea_group = islam0
+	}
+	
+	institution_spread_from_true_faith = 0.5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+clerical_education_act_2 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = propaganda0
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = propaganda0
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+	
+	institution_spread_from_true_faith = 0.5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#V1.1
+
+advanced_diplomacy_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = innovativeness_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = innovativeness_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_propagation_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_all_reli_idea_groups = yes
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_all_reli_idea_groups = yes
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_missionary_strength = 0.01
+	missionaries = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_propagation_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_missionary_strength = 0.01
+	missionaries = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_propagation_act_2 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = islam0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = islam0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_missionary_strength = 0.01
+	missionaries = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+sovereign_wealth_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = economic_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = economic_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	interest = -1
+	inflation_reduction = 0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+continental_colony_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = expansion_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = expansion_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_colonial_growth = 10
+	range = 0.33
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+administrative_impact_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	administrative_efficiency = 0.025
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+civic_efficiency_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = staatsverwaltung0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = staatsverwaltung0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	prestige_decay = -0.01
+	global_autonomy = -0.05
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+global_relief_funds_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = humanist_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = humanist_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_tax_modifier = 0.10
+	diplomatic_reputation = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+noble_privileges_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = aristocracy_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	cavalry_cost = -0.10
+	ae_impact = -0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+foreign_warriors_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	cavalry_cost = -0.10
+	mercenary_manpower = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+republican_navy_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = plutocracy_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = plutocracy_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	sailor_maintenance_modifer = -0.25
+	ship_power_propagation = 0.25
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+renowned_cannon_corps_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	fire_damage = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+outstanding_defensive_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = defensive_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = defensive_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	defensiveness = 0.20
+	rival_border_fort_maintenance = -0.5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+marine_corps_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = quality_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = quality_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	naval_morale = 0.1
+	global_ship_cost = -0.1
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+big_stick_diplomacy_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = quantity_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = quantity_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	diplomatic_upkeep = 1
+	land_forcelimit_modifier = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+high_seas_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_naval_engagement_modifier = 0.1
+	heavy_ship_power = 0.10
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+impressive_roads_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = festung0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = festung0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	development_cost = -0.15
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+foreign_drill_instructors_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = stehendesheer0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = stehendesheer0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	drill_decay_modifier = -0.25
+	army_tradition = 0.5
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_site_preservation_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+		has_idea_group = festung0
+	}
+	allow = {
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+		full_idea_group = festung0
+	}
+	
+	global_tax_modifier = 0.20
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_site_preservation_act_2 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = islam0
+		has_idea_group = festung0
+	}
+	allow = {
+		full_idea_group = islam0
+		full_idea_group = festung0
+	}
+	
+	global_tax_modifier = 0.20
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+state_domain_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = power_projection_idea_groups_expanded
+		or = { has_idea_group = imperialismus0 has_idea_group = nationalismus0 }
+	}
+	allow = {
+		full_idea_group = power_projection_idea_groups_expanded
+		or = { full_idea_group = imperialismus0 full_idea_group = nationalismus0 }
+	}
+	
+	ae_impact = -0.10
+	governing_capacity = 100
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+holy_conversion_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+	
+	army_tradition = 0.5
+	prestige_per_development_from_conversion = 0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jihad_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = islam0
+	}
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = islam0
+	}
+	
+	warscore_cost_vs_other_religion = -0.10
+	manpower_recovery_speed = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+holy_war_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		OR = {
+		has_idea_group = religious_ideas
+		has_idea_group = shinto0
+		has_idea_group = norse0
+		has_idea_group = budda0
+		has_idea_group = hindu0
+		has_idea_group = tengri0
+		has_idea_group = coptic0
+		has_idea_group = helle0
+		has_idea_group = slav0
+		has_idea_group = jew0
+		has_idea_group = suomi0
+		has_idea_group = romuva0
+		has_idea_group = animist0
+		has_idea_group = feti0
+		has_idea_group = zoro0
+		has_idea_group = mane0
+		has_idea_group = ancli0
+		has_idea_group = mesoam0
+		has_idea_group = inti0
+		has_idea_group = tote0
+		has_idea_group = nahu0
+		}
+	}
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		OR = {
+			full_idea_group = religious_ideas 
+			full_idea_group = shinto0
+			full_idea_group = norse0
+			full_idea_group = budda0
+			full_idea_group = hindu0
+			full_idea_group = tengri0
+			full_idea_group = coptic0
+			full_idea_group = helle0
+			full_idea_group = slav0
+			full_idea_group = jew0
+			full_idea_group = suomi0
+			full_idea_group = romuva0
+			full_idea_group = animist0
+			full_idea_group = feti0
+			full_idea_group = zoro0
+			full_idea_group = mane0
+			full_idea_group = ancli0
+			full_idea_group = mesoam0
+			full_idea_group = inti0
+			full_idea_group = tote0
+			full_idea_group = nahu0
+		}
+	}
+	
+	warscore_cost_vs_other_religion = -0.10
+	land_morale = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+international_support_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	ae_impact = -0.10
+	improve_relation_modifier = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+national_sentiment_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = theocracy_gov_ideas
+		has_idea_group = propaganda0
+	}
+	allow = {
+		full_idea_group = theocracy_gov_ideas
+		full_idea_group = propaganda0
+	}
+	
+	tolerance_own = 1
+	stability_cost_modifier = -0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+live_and_let_live_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = diplomatic_ideas
+	}
+	
+	diplomatic_reputation = 1
+	diplomats = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+soft_power_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = influence_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = influence_ideas
+	}
+	
+	reduced_liberty_desire = 10
+	vassal_income = 0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+benevolent_power_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	ae_impact = -0.10
+	years_of_nationalism = -5
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+national_unity_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = propaganda0
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = propaganda0 
+	}
+	
+	religious_unity = 0.25
+	global_unrest = -1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+peacefull_colonization_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = exploration_ideas 
+	}
+	
+	native_uprising_chance = -0.50
+	colonist_placement_chance = 0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+ninja_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = spy_ideas 
+	}
+	
+	diplomats = 1
+	global_spy_defence = 0.20
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+treasure_fleet_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = maritime_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = maritime_ideas 
+	}
+	
+	global_ship_cost = -0.15
+	treasure_fleet_income = 0.50
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+peacefull_trading_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = trade_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = trade_ideas 
+	}
+	
+	trade_efficiency = 0.10
+	global_foreign_trade_power = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+####
+
+educated_nobility_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = aristocracy_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = aristocracy_ideas 
+	}
+	
+	monthly_splendor = 2
+	global_unrest = -1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+kalmyk_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = horde_gov_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = horde_gov_ideas 
+	}
+	
+	trade_efficiency = 0.10
+	tolerance_heathen = 1	
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+holy_council_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = plutocracy_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = plutocracy_ideas
+	}
+	
+	reelection_cost = -0.10
+	num_accepted_cultures = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+generic_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = theocracy_gov_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = theocracy_gov_ideas 
+	}
+	
+	global_tax_modifier = 0.10
+	global_unrest = -1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+wei_suo_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = quantity_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = quantity_ideas 
+	}
+	
+	global_manpower_modifier = 0.15
+	manpower_recovery_speed = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+warrior_poets_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = quality_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = quality_ideas 
+	}
+	
+	prestige_from_land = 1
+	army_tradition_from_battle = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+tranquil_defence_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = defensive_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = defensive_ideas 
+	}
+	
+	defensiveness = 0.10
+	hostile_attrition = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dragon_cannon_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = offensive_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = offensive_ideas 
+	}
+	
+	artillery_bonus_vs_fort = 3
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+military_mobility_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = stehendesheer0
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = stehendesheer0 
+	}
+	
+	land_attrition = -0.15
+	movement_speed = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+great_wall_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = festung0
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = festung0 
+	}
+	
+	defensiveness = 0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+coastal_patrols_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0
+		has_idea_group = naval_ideas
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = naval_ideas 
+	}
+	
+	galley_power = 0.10
+	global_naval_engagement_modifier = 0.10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+innovate_cannon_fire = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = innovativeness_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = innovativeness_ideas
+	}
+
+	artillery_fire = 1
+	heavy_ship_power = 0.05
+}
+
+religous_supremacy_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		OR = {
+		has_idea_group = religious_ideas   
+		has_idea_group = shinto0
+		has_idea_group = norse0
+		has_idea_group = budda0
+		has_idea_group = hindu0
+		has_idea_group = tengri0
+		has_idea_group = coptic0
+		has_idea_group = helle0
+		has_idea_group = slav0
+		has_idea_group = jew0
+		has_idea_group = suomi0
+		has_idea_group = romuva0
+		has_idea_group = animist0
+		has_idea_group = feti0
+		has_idea_group = zoro0
+		has_idea_group = mane0
+		has_idea_group = ancli0
+		has_idea_group = mesoam0
+		has_idea_group = inti0
+		has_idea_group = tote0
+		has_idea_group = nahu0
+		}
+	}
+	allow = {
+		has_idea_group = piracy_idea_groups_expanded
+		OR = {
+			full_idea_group = religious_ideas 
+			full_idea_group = shinto0
+			full_idea_group = norse0
+			full_idea_group = budda0
+			full_idea_group = confuci0 
+			full_idea_group = hindu0
+			full_idea_group = tengri0
+			full_idea_group = coptic0
+			full_idea_group = helle0
+			full_idea_group = slav0
+			full_idea_group = jew0
+			full_idea_group = suomi0
+			full_idea_group = romuva0
+			full_idea_group = animist0
+			full_idea_group = feti0
+			full_idea_group = zoro0
+			full_idea_group = mane0
+			full_idea_group = ancli0
+			full_idea_group = mesoam0
+			full_idea_group = inti0
+			full_idea_group = tote0
+			full_idea_group = nahu0
+		}	
+	}
+	
+	church_loyalty_modifier = 0.1
+	warscore_cost_vs_other_religion = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religous_supremacy_act_1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		has_idea_group = piracy_idea_groups_expanded
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+	
+	church_loyalty_modifier = 0.1
+	warscore_cost_vs_other_religion = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religous_supremacy_act_2 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = islam0
+	}
+	allow = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = islam0
+	}
+	
+	church_loyalty_modifier = 0.1
+	warscore_cost_vs_other_religion = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religous_supremacy_act_3 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = confuci0
+	}
+	allow = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = confuci0
+	}
+	
+	church_loyalty_modifier = 0.1
+	warscore_cost_vs_other_religion = -0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+captains_treasury_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = economic_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = economic_ideas
+	}
+	
+	global_tax_modifier = 0.15
+	yearly_corruption = -0.05
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+native_trade_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = expansion_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = expansion_ideas
+	}
+	
+	native_assimilation = 1
+	colonist_placement_chance = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+meritocratic_ranks_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = administrative_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = administrative_ideas
+	}
+	
+	sailors_recovery_speed = 0.20
+	global_ship_cost = -0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+stable_republic_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = staatsverwaltung0
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = staatsverwaltung0
+	}
+	
+	stability_cost_modifier = -0.15
+	republican_tradition = 0.3
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+marauder_equality_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = humanist_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = humanist_ideas
+	}
+	
+	tolerance_heretic = 1
+	years_of_nationalism = -5
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+absolute_power_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = imperialismus0
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = imperialismus0
+	}
+	
+	max_absolutism = 10
+	administrative_efficiency = 0.025
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+walk_the_plank_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = spy_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = spy_ideas
+	}
+	
+	harsh_treatment_cost = -0.25
+	global_spy_defence = 0.1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+pirate_congregation_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = diplomatic_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = diplomatic_ideas
+	}
+	
+	justify_trade_conflict_cost = -0.5
+	unjustified_demands = -0.25
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+jolly_roger_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = trade_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = trade_ideas
+	}
+	
+	global_ship_trade_power = 0.25
+	privateer_efficiency = 0.20
+
+	
+	ai_will_do = {
+		factor = 2
+	}
+}
+
+foreign_shores_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = exploration_ideas
+	}
+	
+	colonists = 1
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+dockyards_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = maritime_ideas
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = maritime_ideas
+	}
+	
+	global_ship_recruit_speed = -0.2
+	navy_tradition_decay = -0.01
+
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+fearsome_formation_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	global_naval_engagement_modifier = 0.2
+	disengagement_chance = 0.05
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+proud_navy_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = propaganda0
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = propaganda0
+	}
+	
+	free_leader_pool = 1
+	navy_tradition = 1
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+vassal_fleets_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded
+		has_idea_group = influence_ideas 
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = influence_ideas
+	}
+
+	naval_forcelimit_modifier = 0.25
+	reduced_liberty_desire = 5
+
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+religious_identity_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = shock0
+		has_idea_group = islam0 
+	}
+	allow = {
+		full_idea_group = shock0
+		full_idea_group = islam0
+	}
+
+	tolerance_own = 2
+}
+
+religious_identity_act1 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = shock0
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = shock0
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+
+	tolerance_own = 2
+}
+
+religious_identity_act3 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = shock0
+		has_idea_group = confuci0 
+	}
+	allow = {
+		full_idea_group = shock0
+		full_idea_group = confuci0
+	}
+
+	tolerance_own = 2
+}
+
+diplomatic_spice_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = shock0
+		has_idea_group = power_projection_idea_groups_expanded  
+	}
+	allow = {
+		full_idea_group = shock0
+		full_idea_group = power_projection_idea_groups_expanded 
+	}
+
+	power_projection_from_insults = 0.5
+	diplomatic_reputation = 1
+}
+
+one_nation_under_god_act_2 = {
+	monarch_power = ADM
+
+	potential = {
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+		has_idea_group = kolonialimperium0 
+	}
+	allow = {
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+		full_idea_group = kolonialimperium0
+	}
+
+	missionaries = 1 
+}
+
+one_nation_under_god_act_3 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = islam0 
+		has_idea_group = kolonialimperium0 
+	}
+	allow = {
+		full_idea_group = islam0
+		full_idea_group = kolonialimperium0
+	}
+
+	missionaries = 1 
+}
+
+one_nation_under_god_act_4 = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = confuci0 
+		has_idea_group = kolonialimperium0 
+	}
+	allow = {
+		full_idea_group = confuci0
+		full_idea_group = kolonialimperium0
+	}
+
+	religious_unity = 0.15 
+}
+
+founding_principles_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = piracy_idea_groups_expanded  
+		has_idea_group = kolonialimperium0 
+	}
+	allow = {
+		full_idea_group = piracy_idea_groups_expanded
+		full_idea_group = kolonialimperium0
+	}
+
+	republican_tradition = 0.20
+}
+
+warriors_of_fervor_act_2 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = soldnerheer0  
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = soldnerheer0
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+
+	manpower_in_true_faith_provinces = 0.25 
+}
+
+warriors_of_fervor_act_3 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = soldnerheer0  
+		has_idea_group = islam0
+	}
+	allow = {
+		full_idea_group = soldnerheer0
+		full_idea_group = islam0 
+	}
+
+	manpower_in_true_faith_provinces = 0.25 
+}
+
+warriors_of_fervor_act_4 = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = soldnerheer0  
+		has_idea_group = confuci0
+	}
+	allow = {
+		full_idea_group = soldnerheer0
+		full_idea_group = confuci0 
+	}
+
+	global_manpower_modifier = 0.25 
+}
+
+unyielding_battle_spirit_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = soldnerheer0  
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = soldnerheer0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	sunk_ship_morale_hit_recieved = -0.1
+	shock_damage_received = -0.05
+}
+
+religious_ceremonies_act = {
+	monarch_power = MIL 
+	
+	potential = {
+		has_idea_group = generalstab0
+		or = {
+			has_idea_group = katholisch0
+			has_idea_group = protestant0
+			has_idea_group = reformiert0
+			has_idea_group = orthodox0
+			has_idea_group = cathar0 has_idea_group = hussite0
+		}
+	}
+	allow = {
+		full_idea_group = generalstab0
+		or = {
+			full_idea_group = katholisch0
+			full_idea_group = protestant0
+			full_idea_group = reformiert0
+			full_idea_group = orthodox0
+			full_idea_group = cathar0 full_idea_group = hussite0
+		}
+	}
+	
+	tolerance_own = 1 
+	land_morale = 0.1 
+}
+
+religious_ceremonies_act_1 = {
+	monarch_power = MIL 
+	
+	potential = {
+		has_idea_group = generalstab0
+		has_idea_group = islam0 
+	}
+	allow = {
+		full_idea_group = generalstab0
+		full_idea_group = islam0  
+	}
+	
+	tolerance_own = 1 
+	monthly_piety = -0.0025  
+}
+
+religious_ceremonies_act_3 = {
+	monarch_power = MIL 
+	
+	potential = {
+		has_idea_group = generalstab0
+		has_idea_group = confuci0  
+	}
+	allow = {
+		full_idea_group = generalstab0
+		full_idea_group = confuci0  
+	}
+	
+	tolerance_heathen = 1  
+	land_morale = 0.1 
+}
+
+global_power_act = {
+	monarch_power = DIP 
+	
+	potential = {
+		has_idea_group = generalstab0
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = generalstab0
+		full_idea_group = power_projection_idea_groups_expanded  
+	}
+	
+	improve_relation_modifier = 0.33
+}
+
+supreme_state_act = {
+	monarch_power = ADM
+	
+	potential = {
+		has_idea_group = konigreich0
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = konigreich0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	province_warscore_cost = -0.10
+}
+
+
+#짭추가
+imperial_diplomats_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = assimilation0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = assimilation0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	envoy_travel_time = -0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+state_spycraft_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = gesellschaft0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = gesellschaft0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	fabricate_claims_cost = -0.25
+	diplomats = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+efficienct_subject_development_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = propaganda0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = propaganda0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	liberty_desire_from_subject_development = -0.25
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+magnificent_naval_forces_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = konigreich0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = konigreich0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	naval_forcelimit_modifier = 0.33
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+continental_trade_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = imperialismus0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = imperialismus0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	trade_range_modifier = 0.33
+	global_foreign_trade_power = 0.15
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+native_rights_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = kolonialimperium0
+		has_idea_group = power_projection_idea_groups_expanded
+	}
+	allow = {
+		full_idea_group = kolonialimperium0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+	
+	native_uprising_chance = -0.50
+	global_colonial_growth = 10
+	
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+central_authority_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = militarismus0 
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = militarismus0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+
+	max_absolutism = 5 
+	yearly_absolutism = 0.5  
+}
+
+bailout_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = dezentra0 
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = dezentra0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+
+	inflation_reduction = 0.05  
+	interest = -1
+}
+
+cooperation_act = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = wehrpflicht0
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = wehrpflicht0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+
+	global_autonomy = -0.025 
+	production_efficiency = 0.1 
+}
+
+anti_brain_drain_act = {
+	monarch_power = ADM
+
+	potential = {
+		has_idea_group = zentra0 
+		has_idea_group = power_projection_idea_groups_expanded 
+	}
+	allow = {
+		full_idea_group = zentra0
+		full_idea_group = power_projection_idea_groups_expanded
+	}
+
+	innovativeness_gain = 0.5
+}

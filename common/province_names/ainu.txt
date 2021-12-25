@@ -1,0 +1,3 @@
+1031 = "Peni'un'kur"
+1847 = "Sum'un'kur"
+1852 = "Menas'un'kur"

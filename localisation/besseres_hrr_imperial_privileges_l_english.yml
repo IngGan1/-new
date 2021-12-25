@@ -1,0 +1,125 @@
+﻿l_english:
+ imperial_privilege_electors_reduced_taxes: ".ÁÈÄÖm­XÇ 8Á® ¬ŒÁ"
+ imperial_privilege_electors_allowed_expansion: ".ÁÈÄÖm­XÇ UÖ¥Ç ÈÕ©Æ"
+ imperial_privilege_electors_diplomatic_appreciation: ".ÁÈÄÖm­XÇ xÆP­ ¹ÒÖ"
+ imperial_privilege_electors_imperial_recognition: ".ÁÈÄÖm­XÇ õ¬ÌÕ xÇÈ"
+ imperial_privilege_electors_imperial_legitimation: ".ÁÈÄÖm­ÐÅ ÈµÑ1Á Ž´ìÅ"
+ imperial_privilege_electors_imperial_administration: ".ÁÈÄÖm­DÇ ÇjÕ ‰ÕÈ ÅÅ4»"
+ imperial_privilege_electors_imperial_diplomacy: ".ÁÈÄÖm­DÇ ÇjÕ xÆP­ ÅÅ4»"
+ imperial_privilege_electors_imperial_military: ".ÁÈÄÖm­DÇ ÇjÕ p­¬À ÅÅ4»"
+ imperial_privilege_electors_exemption_from_the_imperial_army: ".ÁÈÄÖm­XÇ Èm­p­ ÕÉÑ¼ tºÈ"
+ imperial_privilege_electors_permission_for_imperial_mercenaries: ".ÁÈÄÖm­ÐÅ Èm­ ©ÆÑ¼ ¨ºÑ¼Œ­ Èõ¬"
+ imperial_privilege_electors_reduced_tariffs: ".ÁÈÄÖm­XÇ ­8Á ¬ŒÁ"
+ imperial_privilege_electors_improved_metal_quality: "Èm­XÇ DÌt­ÐÅ ³tÕ .ÁÈÄÖm­ÐÅ °Æ.ÁŒ­ Ž´ìÅ"
+ imperial_privilege_princes_reduced_taxes: "ÈÄÖm­XÇ 8Á® ¬ŒÁ"
+ imperial_privilege_princes_allowed_expansion: "ÈÄÖm­XÇ UÖ¥Ç ÈÕ©Æ"
+ imperial_privilege_princes_diplomatic_appreciation: "ÈÄÖm­XÇ xÆP­ ¹ÒÖ"
+ imperial_privilege_princes_imperial_recognition: "ÈÄÖm­XÇ õ¬ÌÕ xÇÈ"
+ imperial_privilege_princes_imperial_legitimation: "ÈÄÖm­ÐÅ ÈµÑ1Á Ž´ìÅ"
+ imperial_privilege_princes_imperial_administration: "ÈÄÖm­DÇ ÇjÕ ‰ÕÈ ÅÅ4»"
+ imperial_privilege_princes_imperial_diplomacy: "ÈÄÖm­DÇ ÇjÕ xÆP­ ÅÅ4»"
+ imperial_privilege_princes_imperial_military: "ÈÄÖm­DÇ ÇjÕ p­¬À ÅÅ4»"
+ imperial_privilege_princes_exemption_from_the_imperial_army: "ÈÄÖm­XÇ Èm­p­ ÕÉÑ¼ tºÈ"
+ imperial_privilege_princes_permission_for_imperial_mercenaries: "ÈÄÖm­ÐÅ Èm­ ©ÆÑ¼ ¨ºÑ¼Œ­ Èõ¬"
+ imperial_privilege_princes_reduced_tariffs: "ÈÄÖm­XÇ ­8Á ¬ŒÁ"
+ imperial_privilege_princes_improved_metal_quality: "Èm­XÇ DÌt­ÐÅ ³tÕ ÈÄÖm­ÐÅ °Æ.ÁŒ­ Ž´ìÅ"
+ IMPERIAL_PRIVILEGES_DISABLED_TT: "§YÈm­ ¹ÒŒ­§!tÇ D¾jÖ1ÁTÖ ÁÀÜÐtÇä²..."
+ IMPERIAL_PRIVILEGE_NONE_TT: "§YÈm­ ¹ÒŒ­§!DÇ Ž´ìÅXÕÀÉ JÅ<Çtº §YÈm­ Œ­jÕ§!DÇ §R-50%§! ÈXÕÜÂ¨Ðä²."
+ IMPERIAL_PRIVILEGE_CURRENTLY_HAS_THESE_EFFECTS_TT: "Ö¬Ç Ž´ìÅ´ §YÈm­ ¹ÒŒ­§!XÇ ¨Öü¬:"
+ IMPERIAL_PRIVILEGE_WILL_HAVE_THESE_EFFECTS_TT: ".ÁÝÐ´ §YÈm­ ¹ÒŒ­§!XÇ ¨Öü¬:\""
+ UNTIL_NEXT_IMPERIAL_ELECTION: "(Ì0® iÖÈ¬ .ÁœÍ.´ LµL®ÀÉ"
+ HAS_NOT_SELECTED_ANY_IMPERIAL_PRIVILEGE_ELECTORS: "§Y.ÁÈÄÖm­§!XÇ §YÈm­ ¹ÒŒ­§!DÇ .ÁÝÐXÕÀÉ JÅXÅä²"
+ HAS_NOT_SELECTED_ANY_IMPERIAL_PRIVILEGE_PRINCES: "§YÈÄÖm­§!XÇ §YÈm­ ¹ÒŒ­§!DÇ .ÁÝÐXÕÀÉ JÅXÅä²"
+ HAS_NOT_DECIDED_AN_IMPERIAL_PRIVILEGE_ELECTORS: "§Y.ÁÈÄÖm­§!XÇ §YÈm­ ¹ÒŒ­§!DÇ .ÁÝÐXÕÀÉ JÅXÅp¬˜° D¾jÖ1ÁTÖ XÕÀÉ JÅXÅä²"
+ HAS_NOT_DECIDED_AN_IMPERIAL_PRIVILEGE_PRINCES: "§YÈÄÖm­§!XÇ §YÈm­ ¹ÒŒ­§!DÇ .ÁÝÐXÕÀÉ JÅXÅp¬˜° D¾jÖ1ÁTÖ XÕÀÉ JÅXÅä²"
+ besseres_hrr_imperial_privileges_events.EVTNAME2: ".ÁÈÄÖm­ÐÅ Èm­ ¹ÒŒ­ Ž´ìÅ"
+ besseres_hrr_imperial_privileges_events.EVTDESC2: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] must decide what privilege [Root.Monarch.GetSheHe] wants to grant to the Electors - or whether [Root.Monarch.GetSheHe] wants to grant any at all. \nPrivileges give bonuses to the Electors - if we are an Elector, we will not get these bonuses - and maluses to us until the next imperial election."
+ besseres_hrr_imperial_privileges_events2.EVTOPT1: ".ÁÈÄÖm­ÐÅ ¹ÒŒ­NÇ DÕ”Æ ÆÅä²."
+ besseres_hrr_imperial_privileges_events2.EVTOPT2: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_reduced_taxes]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT3: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_allowed_expansion]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT4: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_diplomatic_appreciation]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT5: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_imperial_recognition]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT6: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_imperial_legitimation]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT7: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_imperial_administration]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT8: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_imperial_diplomacy]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT9: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_imperial_military]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT10: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_exemption_from_the_imperial_army]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT11: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_permission_for_imperial_mercenaries]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT12: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_reduced_tariffs]§!"
+ besseres_hrr_imperial_privileges_events2.EVTOPT13: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_electors_improved_metal_quality]§!"
+ besseres_hrr_imperial_privileges_events.EVTNAME3: "ÈÄÖm­ÐÅ Èm­ ¹ÒŒ­ Ž´ìÅ"
+ besseres_hrr_imperial_privileges_events.EVTDESC3: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] must decide what privilege [Root.Monarch.GetSheHe] wants to grant to the Princes - or whether [Root.Monarch.GetSheHe] wants to grant any at all. \nPrivileges give bonuses to the Electors - neither we nor the Electors will gain these bonuses - and maluses to us until the next imperial election."
+ besseres_hrr_imperial_privileges_events3.EVTOPT1: "ÈÄÖm­ÐÅ ¹ÒŒ­NÇ DÕ”Æ ÆÅä²."
+ besseres_hrr_imperial_privileges_events3.EVTOPT2: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_reduced_taxes]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT3: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_allowed_expansion]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT4: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_diplomatic_appreciation]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT5: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_imperial_recognition]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT6: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_imperial_legitimation]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT7: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_imperial_administration]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT8: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_imperial_diplomacy]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT9: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_imperial_military]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT10: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_exemption_from_the_imperial_army]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT11: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_permission_for_imperial_mercenaries]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT12: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_reduced_tariffs]§!"
+ besseres_hrr_imperial_privileges_events3.EVTOPT13: "¹ÒŒ­ Ž´ìÅ: §Y[imperial_privilege_princes_improved_metal_quality]§!"
+ besseres_hrr_imperial_privileges_events.EVTNAME4: "Èm­ ¹ÒŒ­tÇ D¾jÖ1ÁTÖ ´ÈÅä²"
+ besseres_hrr_imperial_privileges_events.EVTDESC4: "àÂ1Áj¸È¹Èm­XÇ l­pÈ”² ¬xÇÈxÇ ­Ä¬ÐÅ 0®¼DÇ T´ Èm­ÐÅÁ Èm­•¼ÐÅ 0®¼DÇ T´ ÈÄ³j¸ ¼°ÈÅä². tÇ À¼Ë¬<Çj¸ xÇtÕ Èm­ ¹ÒŒ­DÇ øÄ¨º ÆÅŒ¬ ´ÈÅµÂÈ²ä²."
+ besseres_hrr_imperial_privileges_events4.EVTOPT1: "e×ø»m¸p­."
+ imperial_privilege_electors_decision_title: ".ÁÈÄÖm­ÐÅ Èm­ ¹ÒŒ­ Ž´ìÅ"
+ imperial_privilege_electors_decision_desc: "[Root.Monarch.GetTitle]ÐÅ¬ [Root.Monarch.GetHerHis] µÑXÎ Ù³HÅ .ÁÈÄÖm­ÐÅ ³tÕ ¹ÒŒ­DÇ Ž´ìÅ`Õ XÇ4»¬ ˆÇä². tÇ ¹ÒŒ­NÇ .ÁÈÄÖm­ÐÅ¬ tÇÝ´DÇ üÈ”² ¼tº §Y[Root.GetName]§!ÐÅ¬ ÁtÕ|¹ |°`Î ƒ¬tÇä². \n§Y[Root.Monarch.GetName]§!¬ ¹ÒŒ­DÇ .ÁÝÐXÕÀÉ JÅp¬˜° [Root.Monarch.GetSheHe]¬ ¹ÒŒ­DÇ D¾jÖ1ÁTÖ XÕÀÉ JÅ”²ä²tº, Èm­ Œ­jÕXÇ É¬¬ §R-50%§! ¬ŒÁ`Õ ƒ¬tÇä². \n\n.ÁÝÐ´ ¹ÒŒ­: §Y[Root.GetSelectedImperialPrivilegeElectorsName]§!"
+ imperial_privilege_princes_decision_title: "ÈÄÖm­ÐÅ Èm­ ¹ÒŒ­ Ž´ìÅ"
+ imperial_privilege_princes_decision_desc: "[Root.Monarch.GetTitle]ÐÅ¬ [Root.Monarch.GetHerHis] µÑXÎ Ù³HÅ ÈÄÖm­ÐÅ ³tÕ ¹ÒŒ­DÇ Ž´ìÅ`Õ XÇ4»¬ ˆÇä². tÇ ¹ÒŒ­NÇ ÈÄÖm­ÐÅ¬ tÇÝ´DÇ üÈ”² ¼tº §Y[Root.GetName]§!ÐÅ¬ ÁtÕ¬ |°`Î ƒ¬tÇä². \n§Y[Root.Monarch.GetName]§!¬ ¹ÒŒ­DÇ .ÁÝÐXÕÀÉ JÅp¬˜° [Root.Monarch.GetSheHe]¬ ¹ÒŒ­DÇ D¾jÖ1ÁTÖ XÕÀÉ JÅ”²ä²tº, Èm­ Œ­jÕXÇ É¬¬ §R-50%§! ¬ŒÁ`Õ ƒ¬tÇä². \n\n.ÁÝÐ´ ¹ÒŒ­: §Y[Root.GetSelectedImperialPrivilegePrincesName]§!"
+ imperial_privilege_emperor_modifier_electors_reduced_taxes: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_reduced_taxes: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_allowed_expansion: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_allowed_expansion: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_diplomatic_appreciation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_diplomatic_appreciation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_imperial_recognition: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_imperial_recognition: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_imperial_legitimation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_imperial_legitimation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_imperial_administration: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_imperial_administration: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_imperial_diplomacy: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_imperial_diplomacy: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_imperial_military: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_imperial_military: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_exemption_from_the_imperial_army: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_exemption_from_the_imperial_army: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_permission_for_imperial_mercenaries: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_permission_for_imperial_mercenaries: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_reduced_tariffs: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_reduced_tariffs: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_improved_metal_quality: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_electors_improved_metal_quality: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_reduced_taxes: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_reduced_taxes: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_allowed_expansion: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_allowed_expansion: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_diplomatic_appreciation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_diplomatic_appreciation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_imperial_recognition: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_imperial_recognition: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_imperial_legitimation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_imperial_legitimation: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_imperial_administration: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_imperial_administration: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_imperial_diplomacy: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_imperial_diplomacy: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_imperial_military: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_imperial_military: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_exemption_from_the_imperial_army: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_exemption_from_the_imperial_army: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_permission_for_imperial_mercenaries: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_permission_for_imperial_mercenaries: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_reduced_tariffs: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_reduced_tariffs: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_princes_improved_metal_quality: "Èm­ ¹ÒŒ­"
+ imperial_privilege_modifier_princes_improved_metal_quality: "Èm­ ¹ÒŒ­"
+ imperial_privilege_emperor_modifier_electors_none: ".ÁÈÄÖm­ÐÅ ¹ÒŒ­DÇ Ž´ìÅXÕÀÉ JÅXÅä²"
+ desc_imperial_privilege_emperor_modifier_electors_none: "°Æ¬¹”² .ÁÈÄÖä´ÐÅŒ¬ ¹ÒŒ­DÇ üÈÀÉ JÅXÅ<Çpº, tÇ”² °Æ¬¹ Èm­XÇ Œ­Ç|¹ lÐŒ¬ tÕXÎ”² |Ç…ÇÈ²ä²."
+ imperial_privilege_emperor_modifier_princes_none: "ÈÄÖm­ÐÅ ¹ÒŒ­DÇ Ž´ìÅXÕÀÉ JÅXÅä²"
+ desc_imperial_privilege_emperor_modifier_princes_none: "°Æ¬¹”² À­qÈä´ÐÅŒ¬ ¹ÒŒ­DÇ Ž´ìÅXÕÀÉ JÅXÅ<Çpº, tÇ”² °Æ¬¹ Èm­XÇ Œ­Ç|¹ lÐŒ¬ ÁÁÀÜÂµÐÈ²ä²."
+ string_no_imperial_privilege_selected: "§RÆÅLÇ§W"
+ string_no_imperial_privilege_selected_yet: ".ÁÝÐXÕÀÉ JÅLÇ"

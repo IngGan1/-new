@@ -1,0 +1,143 @@
+#######################################
+# Timurid Empire
+#######################################
+technology_group = muslim
+primary_culture = uzbehk
+religion = sunni
+government = monarchy
+add_government_reform = iqta
+capital = 454 # Samarkand
+religious_school = hanafi_school
+
+1409.5.13 = {
+	monarch = {
+		name = "Ulugh Beg"
+		dynasty = "Timurid"
+		birth_date = 1394.1.1
+		adm = 3
+		dip = 5
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = scholar_personality
+	add_ruler_personality = righteous_personality
+	add_ruler_personality = naive_personality
+	heir = {
+		name = "'Abd Allâh Mîrzâ"
+		monarch_name = "'Abd Allâh Mîrzâ"
+		dynasty = "Timurid"
+		birth_date = 1409.5.13
+		death_date = 1451.6.23
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	add_piety = -0.5
+}
+
+1449.10.27 = {
+	monarch = {
+		name = "'Abdal-Latif" #Padarkush
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 2	
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = malevolent_personality
+}
+
+1450.5.9 = {
+	monarch = {
+		name = "'Abd Allâh Mîrzâ"
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 3
+		mil = 2	
+	}
+}
+
+1451.6.1 = {
+	monarch = {
+		name = "Abû Sa'id"
+		dynasty = "Timurid"
+		adm = 3
+		dip = 5
+		mil = 6
+		leader = {	
+			name = "Abû Sa'id"
+			type = general
+			fire = 4
+			shock = 5
+			manuever = 3
+			siege = 1
+		}
+	}
+}
+
+1458.12.23 = { capital = 446 } # Herat
+
+# Timurid dynasty in Samarkand
+
+1469.8.27 = {
+	monarch = {
+		name = "Ahmad"	
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 2	
+	}
+	capital = 454	#Samarkand
+}
+
+1494.7.1 = {
+	monarch = {
+		name = "Mahmud"	
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 0	
+	}
+}
+
+1495.7.1 = {
+	monarch = {
+		name = "Mas'ud"	
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 0	
+	}
+}
+
+1495.9.1 = {
+	monarch = {
+		name = "Bây Sunqur"
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 0
+	}
+}
+
+1499.8.1 = {
+	monarch = {
+		name = "'Ali"
+		dynasty = "Timurid"
+		adm = 0	
+		dip = 0	
+		mil = 0	
+	}
+}
+
+1500.4.1 = {
+	monarch = {
+		name = "Bâbur"
+		dynasty = "Timurid"
+		adm = 5	
+		dip = 5	
+		mil = 6
+		leader = {	name = "Bâbur"	type = general	fire = 5	shock = 5	manuever = 3	siege = 1 }
+	}
+}

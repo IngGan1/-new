@@ -1,0 +1,16 @@
+#1111 - Arguin
+
+add_core = SHD
+owner = SHD
+controller = SHD
+culture = mauritanian
+religion = sunni
+capital = "Atar"
+trade_goods = salt
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+discovered_by = sub_saharan
+discovered_by = MOR
+discovered_by = MAQ

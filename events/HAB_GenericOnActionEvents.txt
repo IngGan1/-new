@@ -1,0 +1,26 @@
+# Integrating FROMCOUNTRY
+country_event = {
+	id = 610
+	title = "EVTNAME610"
+	desc = "EVTDESC610"
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	trigger = {
+		NOT = {
+			FROM = {
+				has_country_modifier = to_be_agenda_annexed_timer
+			}
+			has_country_modifier = holy_roman_emperor
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTB610A"
+		add_country_modifier = {
+			name = "annexers_legacy"
+			duration = 3650
+		}
+	}
+}

@@ -1,0 +1,127 @@
+country_decisions = {
+	xorme_ai_build_capital_fort = {
+		potential = {
+			total_development = 100
+			not = { has_country_modifier = boho_world }
+			ai = yes
+			capital_scope = {
+				NOT = {
+					OR = {
+						fort_level = 2
+						xorme_ai_is_building_fort_trigger = yes
+					}
+				}
+			}
+		}
+
+		allow = {
+			NOT = { num_of_loans = 1 }
+			is_in_deficit = no
+			xorme_ai_can_build_fort = yes
+		}
+
+		effect = {
+			capital_scope = {
+				xorme_ai_build_forts_effect = yes
+			}
+		}
+
+		ai_importance = 400
+
+		ai_will_do = {
+			factor = 5.0
+		}
+	}
+
+	xorme_ai_build_forts = {
+		potential = {
+			NOT = { has_country_modifier = xorme_ai_build_fort_cooldown }
+			total_development = 400
+			current_income_balance = 10
+			treasury = 225
+			not = { has_country_modifier = boho_world }
+			is_at_war = no
+			ai = yes
+			capital_scope = {
+				OR = {
+					fort_level = 2
+					xorme_ai_is_building_fort_trigger = yes
+				}
+			}
+
+			any_owned_province = {
+				is_island = no
+				xorme_ai_fort_dev_requirements_trigger = yes
+				NOT = {
+					OR = {
+						xorme_ai_is_building_fort_trigger = yes
+						fort_level = 2
+						has_influencing_fort = yes
+					}
+				}
+
+				all_neighbor_province = {
+					NOT = {
+						OR = {
+							xorme_ai_is_building_fort_trigger = yes
+							fort_level = 2
+							has_influencing_fort = yes
+						}
+					}
+				}
+
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+
+		allow = {
+			NOT = { num_of_loans = 1 }
+			is_in_deficit = no
+			xorme_ai_can_build_fort = yes
+		}
+
+		effect = {
+			random_owned_province = {
+				limit = {
+					is_island = no
+					xorme_ai_fort_dev_requirements_trigger = yes
+
+					NOT = {
+						OR = {
+							xorme_ai_is_building_fort_trigger = yes
+							fort_level = 2
+							has_influencing_fort = yes
+						}
+					}
+
+					any_neighbor_province = {
+						NOT = { owned_by = ROOT }
+					}
+
+					all_neighbor_province = {
+						NOT = {
+							OR = {
+								xorme_ai_is_building_fort_trigger = yes
+								fort_level = 2
+								has_influencing_fort = yes
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					building = fort_15th
+					speed = 0
+					cost = 1
+				}
+			}
+		}
+
+		ai_importance = 200
+
+		ai_will_do = {
+			factor = 2.5
+		}
+	}
+}

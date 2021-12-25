@@ -1,0 +1,176 @@
+namespace = ipe_france
+
+normal_or_historical_nations = yes
+
+# The Mines of Paris
+country_event = {
+	id = ipe_france.1
+	title = ipe_france.1.t
+	desc = ipe_france.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		owns = 183
+		is_year = 1750
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = ipe_france.1.a
+		ai_chance = {
+			factor = 100
+		}
+		add_years_of_income = -0.25
+		183 = {
+			add_province_modifier = {
+				name = inspected_mines
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = ipe_france.1.b
+		ai_chance = {
+			factor = 0
+		}
+		183 = {
+			add_province_modifier = {
+				name = uninspected_mines
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Catacombs of Paris
+country_event = {
+	id = ipe_france.2
+	title = ipe_france.2.t
+	desc = ipe_france.2.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		owns = 183
+		is_year = 1750
+		183 = {
+			has_province_modifier = inspected_mines
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = ipe_france.2.a
+		ai_chance = {
+			factor = 100
+		}
+		add_years_of_income = -0.5
+		183 = {
+			add_province_modifier = {
+				name = catacombs_of_paris
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = ipe_france.2.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -1
+	}
+}
+
+# Sampiero Corso
+country_event = {
+	id = ipe_france.3
+	title = ipe_france.3.t
+	desc = ipe_france.3.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		NOT = {
+			alliance_with = GEN
+		}
+		GEN = {
+			owns = 1247
+		}
+		1247 = {
+			culture = corsican
+		}
+		is_year = 1550
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			war_with = GEN
+		}
+	}
+
+	option = {
+		name = ipe_france.3.a
+		add_manpower = -2
+		GEN = {
+			country_event = {
+				id = ipe_france.4
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = ipe_france.3.b
+		define_advisor = {
+			type = army_organiser
+			name = "Sampiero Corso"
+			skill = 3
+			discount = yes
+			culture = corsican
+			religion = catholic
+		}
+	}
+}
+
+# Sampiero Corso
+country_event = {
+	id = ipe_france.4
+	title = ipe_france.4.t
+	desc = ipe_france.4.d
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ipe_france.4.a
+		add_opinion = {
+			who = FRA
+			modifier = supported_sampiero_corso
+		}
+		1247 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				friend = COR
+				win = yes
+			}
+		}
+	}
+}

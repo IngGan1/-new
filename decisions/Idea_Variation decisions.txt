@@ -1,0 +1,561 @@
+#########################################################################################
+#########################################################################################
+##### Idea Variation Decisions by flogi
+#########################################################################################
+#########################################################################################
+
+
+country_decisions = {
+	
+	
+###########################################################
+### Development Decision
+###########################################################
+
+	
+	improve_development = {
+		major = yes
+		potential = {
+			has_idea = entwicklung1
+			NOT = { has_country_modifier = development_raised }
+			NOT = { has_country_modifier = development_raised_bonus }
+			
+		}
+		allow = {
+
+			has_idea = entwicklung1
+			is_at_war = no
+			stability = 1 
+			#years_of_income = 1.1 
+			NOT = { has_country_modifier = development_raised }
+			if = {
+			limit = { NOT = { total_development = 100 }	}
+			}
+				
+			if = {
+			limit = { total_development = 100
+			NOT = { total_development = 150 }	}
+			years_of_income = 0.17
+			}
+
+			if = {
+			limit = { total_development = 150 
+			NOT = { total_development = 250 }	}
+			years_of_income = 0.21
+			}	
+
+			if = {
+			limit = { total_development = 250 
+			NOT = { total_development = 400 }	}
+			years_of_income = 0.27
+			}	
+
+			if = {
+			limit = { total_development = 400 
+			NOT = { total_development = 500 }	}
+			years_of_income = 0.31
+			}	
+
+			if = {
+			limit = { total_development = 500 
+			NOT = { total_development = 700 }	}
+			years_of_income = 0.36
+			}	
+
+			if = {
+			limit = { total_development = 700 
+			NOT = { total_development = 800 }	}
+			years_of_income = 0.4
+			}	
+
+			if = {
+			limit = { total_development = 800 
+			NOT = { total_development = 1000 }	}
+			years_of_income = 0.46
+			}
+
+			if = {
+			limit = { total_development = 1000 	}
+			years_of_income = 0.5
+			}		
+
+		}
+		effect = {
+			
+			country_event = { id = flogi_ideas.3 days = 0 }
+			
+			add_prestige = 5
+			if = {
+			limit = { total_development = 100 }
+			# for mods that add more ages
+			if = {
+			limit = {
+			NOT = {
+			OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation 
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions 
+			}
+			}
+			}
+			
+			add_country_modifier = {
+ 			name = "development_raised"
+ 			duration = 1460
+ 			desc = "development_raised_desc"
+			}
+			
+			}
+			
+			if = {
+			limit = {
+			current_age = age_of_discovery
+			}
+			
+			add_country_modifier = {
+ 			name = "development_raised"
+ 			duration = 2738
+ 			desc = "development_raised_desc"
+			}
+			
+			}
+			
+			if = {
+			limit = {
+			current_age = age_of_reformation 
+			
+			}
+			
+			add_country_modifier = {
+ 			name = "development_raised"
+ 			duration = 2190
+ 			desc = "development_raised_desc"
+			}
+			
+			}
+			
+			if = {
+			limit = {
+			current_age = age_of_absolutism
+			
+			}
+			
+			add_country_modifier = {
+ 			name = "development_raised"
+ 			duration = 1825
+ 			desc = "development_raised_desc"
+			}
+			
+			}
+			
+			if = {
+			limit = {
+			current_age = age_of_revolutions 
+			
+			}
+			
+			add_country_modifier = {
+ 			name = "development_raised"
+ 			duration = 1460
+ 			desc = "development_raised_desc"
+			}
+			}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+
+			modifier = {
+			factor = 10
+			personality = ai_capitalist 
+			}
+
+			modifier = {
+			factor = 3
+			years_of_income = 0.2
+			}
+
+			modifier = {
+			factor = 2
+			years_of_income = 0.4
+			}
+
+			modifier = {
+			factor = 1.5
+			years_of_income = 0.6
+			}
+
+			modifier = {
+			factor = 1.5
+			years_of_income = 0.8
+			}
+
+			modifier = {
+			factor = 2
+			government = republic
+			}
+		}
+	}
+	
+
+###########################################################
+### Promotion of Dynasty
+###########################################################
+	
+	dynastie_promoten = {
+		major = yes
+		potential = {
+			
+			has_idea = foreign_embassies_2
+			
+			is_vassal = no
+			
+			
+		}
+		allow = {
+			
+			has_consort_regency = no	# to avoid problems with the wrong dynasty
+			
+			any_known_country = {
+				marriage_with = ROOT
+				has_spy_network_from = {
+				who = ROOT
+				value = 90
+					}
+				NOT = { 
+					dynasty  = ROOT 
+				 	heir_age = 15
+					has_country_modifier = dynastic_change
+				}	
+					
+				OR = {
+				has_consort_regency = yes
+				has_regency = yes
+				NOT = { heir_claim = 50 }
+				has_heir = no
+				
+				}
+				
+				
+				
+			
+			}
+			
+			has_idea = foreign_embassies_2
+			is_at_war = no
+			stability = 1 
+			prestige = 10
+			legitimacy = 85
+			years_of_income = 0.8 
+			#NOT = { has_country_modifier = dynastic_involvement }
+
+		}
+		effect = {
+			
+			
+			
+			random_country = {
+				limit = {
+				marriage_with = ROOT
+				has_spy_network_from = {
+				who = ROOT
+				value = 90
+					}
+				NOT = { 
+					dynasty  = ROOT 
+				 	heir_age = 15
+					has_country_modifier = dynastic_change
+				}	
+					
+				OR = {
+				has_consort_regency = yes
+				has_regency = yes
+				NOT = { heir_claim = 50 }
+				has_heir = no
+				
+				}
+				
+				
+				}
+				country_event = { id = cb_events.2 }
+			
+			}
+			
+			
+				
+			
+			
+
+			add_prestige = -10
+			add_years_of_income = -0.75
+			
+			hidden_effect = {	
+				dynastic_decision_ae = yes
+			}
+			custom_tooltip = dynasty_decision_ae_tooltip
+			
+			
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+
+		
+
+		}
+	}
+
+##############################################
+###### Advisor Decision
+##############################################	
+	
+	
+	hire_advisor = {
+		major = yes
+		potential = {
+			has_idea = gesellschaft4
+		}
+		allow = {
+			years_of_income = 0.35
+			has_idea = gesellschaft4
+			
+			NOT = { 
+				OR = {
+					has_country_modifier = advisor_hired_0
+					has_country_modifier = advisor_hired
+					has_country_modifier = advisor_hired_2
+				}
+			}
+		}
+		effect = {
+
+		country_event = { id = flogi_ideas.12 days = 0 }
+		add_country_modifier = {
+ 			name = "advisor_hired_0"
+ 			duration = 150
+ 			desc = "advisor_hired_desc_0"
+			}
+		}		
+			
+			
+			
+			
+		
+		ai_will_do = {
+			factor = 5
+
+		
+
+		}
+	}
+	
+##############################################
+###### Diktatur Decision
+##############################################	
+	
+	
+	diktatur_dec = {
+		major = yes
+		potential = {
+		
+			
+			
+			has_idea = diktatur6
+			
+			
+			
+			
+		}
+		allow = {
+			
+			
+			has_idea = diktatur6
+			
+			NOT = { 
+		
+			
+			has_country_modifier = diktatur_done
+			
+			
+			}
+
+		}
+		effect = {
+			
+						
+			
+		country_event = { id = flogi_ideas.22 days = 0 }
+			
+			
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+
+		
+
+		}
+	}	
+	
+##############################################
+###### Monarchie Decision
+##############################################	
+	
+	
+	monarchie_dec = {
+		major = yes
+		potential = {
+		
+			
+			
+			has_idea = monarchie1
+			
+			
+			
+			
+		}
+		allow = {
+			
+			has_idea = monarchie1
+			has_heir = no
+			stability = 1 
+			#prestige = 0
+
+		}
+		effect = {
+			
+						
+		add_adm_power = -50	
+		add_prestige = -10
+		country_event = { id = flogi_ideas.100 days = 0 }
+			
+			
+			
+			
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+
+		
+
+		}
+	}	
+	
+	
+
+	
+##############################################
+###### Königreich Idee Decision
+##############################################	
+	
+	
+	konigreich_dec = {
+		major = yes
+		
+		potential = {
+		
+			has_idea = konigreich1
+		}
+		allow = {
+			
+			has_idea = konigreich1
+			
+			NOT = { 
+			
+			has_country_modifier = konigreich_done
+			
+			}
+		}
+		effect = {	
+		add_years_of_income = -0.2
+		country_event = { id = flogi_ideas.101 days = 0 }
+			
+		}
+		
+		ai_will_do = {
+			factor = 5
+			
+			modifier = {
+			factor = 0.2
+			num_of_loans = 1
+			}
+			modifier = {
+			factor = 0.001
+			num_of_loans = 3
+			}
+			modifier = {
+			factor = 0.5
+			prestige = 0
+			}
+			modifier = {
+			factor = 0.5
+			prestige = 25
+			}
+			modifier = {
+			factor = 0
+			prestige = 50
+			}
+		}
+	}
+
+
+##############################################
+###### Sailor/Manpower Conversion Decision
+##############################################	
+	
+	
+	sailor_manpower_dec = {
+		major = yes
+		potential = {
+			always = no
+			ai = no		#probably won't be able to deal with it	
+			not = { has_global_flag = no_decision }
+		}
+		allow = {	
+			NOT = { 
+			has_country_modifier = sailor_converted
+			}
+		}
+		effect = {		
+		country_event = { id = flogi_ideas.106 days = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+	}	
+
+##############################################
+###### Militarism Idea Decision
+##############################################	
+	adopt_prussian_system = {
+		major = yes
+		potential = {
+			full_idea_group = militarismus0
+			not = { has_reform = prussian_monarchy }
+			not = { has_reform = minor_prussian_system }
+		}
+		allow = {
+			OR = {
+				reform_level = 4
+			}
+		}
+		effect = {
+			add_adm_power = -50
+			add_government_reform = minor_prussian_system
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+} # Klammerzu von country_decisions

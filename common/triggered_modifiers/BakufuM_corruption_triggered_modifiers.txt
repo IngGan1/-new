@@ -1,0 +1,616 @@
+corruption_1_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 20
+			}
+		}
+	}
+	trigger = {
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip2
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 15
+			}
+		}
+	}
+		legitimacy = 0.5
+	 	yearly_corruption = 0.1
+		years_of_nationalism = 3
+}
+
+corruption_2_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 20
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 25
+			}
+		}
+	}
+	trigger = {
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip3
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 20
+			}
+		}
+	}
+		legitimacy = 1.0
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 6
+}
+
+corruption_3_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 25
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 30
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip4
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 25
+			}
+		}
+	}
+		legitimacy = 1.5
+	 	yearly_corruption = 0.3
+		years_of_nationalism = 9
+}
+
+corruption_4_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 30
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 35
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip5
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 30
+			}
+		}
+	}
+		legitimacy = 2.0
+	 	yearly_corruption = 0.4
+		years_of_nationalism = 12
+}
+
+corruption_5_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 35
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 40
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip6
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 35
+			}
+		}
+	}
+		legitimacy = 2.5
+	 	yearly_corruption = 0.5
+		years_of_nationalism = 15
+}
+
+corruption_6_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 40
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 45
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip7
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 40
+			}
+		}
+	}
+		legitimacy = 3.0
+	 	yearly_corruption = 0.6
+		years_of_nationalism = 18
+}
+
+corruption_7_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 45
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 50
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip8
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 45
+			}
+		}
+	}
+		legitimacy = 3.5
+	 	yearly_corruption = 0.7
+		years_of_nationalism = 21
+}
+
+corruption_8_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 50
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 55
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip9
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 50
+			}
+		}
+	}
+		legitimacy = 4.0
+	 	yearly_corruption = 0.8
+		years_of_nationalism = 24
+}
+
+corruption_9_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 55
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 60
+			}
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip10
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 55
+			}
+		}
+	}
+		legitimacy = 4.5
+	 	yearly_corruption = 0.9
+		years_of_nationalism = 27
+}
+
+corruption_10_bakufuM = {
+	potential = {
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 0.9
+		}
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 60
+		}
+		NOT = { corruption = 30 }
+	}
+	trigger = {
+		NOT = { corruption = 30 }
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip11
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 60
+			}
+		}
+	}
+		legitimacy = 5.0
+	 	yearly_corruption = 1.0
+		years_of_nationalism = 30
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+corruption_3_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 25
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 30
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip4
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 25
+			}
+		}
+	}
+		legitimacy = 1.5
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 9
+}
+
+corruption_4_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 30
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 35
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip5
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 30
+			}
+		}
+	}
+		legitimacy = 2.0
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 12
+}
+
+corruption_5_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 35
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 40
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip6
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 35
+			}
+		}
+	}
+		legitimacy = 2.5
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 15
+}
+
+corruption_6_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 40
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 45
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip7
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 40
+			}
+		}
+	}
+		legitimacy = 3.0
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 18
+}
+
+corruption_7_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 45
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 50
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip8
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 45
+			}
+		}
+	}
+		legitimacy = 3.5
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 21
+}
+
+corruption_8_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 50
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 55
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip9
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 50
+			}
+		}
+	}
+		legitimacy = 4.0
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 24
+}
+
+corruption_9_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 55
+		}
+		NOT = {
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 60
+			}
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip10
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 55
+			}
+		}
+	}
+		legitimacy = 4.5
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 27
+}
+
+corruption_10_limit_bakufuM = {
+	potential = {
+		NOT = { tag = JAP }
+		NOT = { has_country_modifier = bakufu_reform_6 }
+		has_reform = shogunate
+		has_global_flag = CHECK_DAIYOS_CITIES_FLAG
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 0.9
+		}
+		check_variable = {
+			which = Shogun_Daimyo_Divided_Value
+			value = 60
+		}
+		corruption = 30
+	}
+	trigger = {
+		corruption = 30
+		total_development = 50
+		variable_arithmetic_trigger = {
+			custom_tooltip = too_big_bakufu_tooltip11
+			check_variable = {
+				which = Shogun_Daimyo_Divided_Value
+				value = 60
+			}
+		}
+	}
+		legitimacy = 5.0
+	 	yearly_corruption = 0.2
+		years_of_nationalism = 30
+}

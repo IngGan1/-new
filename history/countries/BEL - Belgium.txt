@@ -1,0 +1,75 @@
+government = republic
+set_legacy_government = constitutional_monarchy
+government_rank = 2
+primary_culture = wallonian
+add_accepted_culture = flemish
+religion = catholic
+technology_group = western
+capital = 92 # Bruxelles
+historical_rival = NED
+
+1790.1.11 = {
+	monarch = {
+		name = "Hendrik"
+		dynasty = "Van der Noot"
+		ADM = 3	
+		DIP = 4
+		MIL = 5
+		leader = {
+			name = "Hendrik Van der Noot"
+	        type = general
+			fire = 2
+			shock = 3
+			manuever = 4
+			siege = 0
+		}
+   	}
+}
+
+1831.7.21 = {
+
+	monarch = {
+
+		name = "Leopold I"
+
+		dynasty = "von Saxe-Coburg-Gotha"
+
+		birth_date = 1790.12.16
+
+		adm = 5
+
+		dip = 4
+
+		mil = 5
+
+	}
+
+}
+
+
+
+1835.4.9 = {
+
+	heir = {
+
+		name = "Leopold"
+
+		monarch_name = "Leopold II"
+
+		dynasty = "von Saxe-Coburg-Gotha"
+
+		birth_date = 1835.4.9
+
+		death_date = 1909.12.17
+
+		claim = 95
+
+		adm = 3
+
+		dip = 3
+
+		mil = 3
+
+	}
+
+}

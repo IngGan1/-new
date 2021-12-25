@@ -1,0 +1,116 @@
+synagogue = {
+    cost = 120				# Cost of the building in ducats
+    time = 12				# Time (in months) that it takes to construct the building
+	
+	potential = {
+		has_estate = jewish_estate
+	}
+	build_trigger = {
+		OR = {
+			culture_group = germanic
+			culture_group = scandinavian
+			culture_group = british
+			culture_group = gaelic
+			culture_group = latin
+			culture_group = iberian
+			culture_group = french
+			culture_group = south_slavic
+			culture_group = west_slavic
+			culture_group = carpathian
+			culture_group = east_slavic
+			culture_group = baltic
+			culture_group = byzantine
+			culture_group = caucasian
+			culture_group = turko_semitic
+			culture_group = maghrebi
+			culture_group = iranian
+			culture_group = sudanese
+			culture_group = cushitic
+		}
+	}
+	
+    modifier = {
+        local_tax_modifier = 0.2
+		local_missionary_strength = -0.01
+		jewish_loyalty_modifier = 0.001
+		jewish_influence_modifier = 0.001
+		local_state_maintenance_modifier = 0.5
+    }
+    
+    ai_will_do = {
+        factor = 0.1
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					tag = NED
+					owns = 97
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			FROM = {
+				NOT = {
+					estate_influence = {
+						estate = jewish_estate
+						influence = 20
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			FROM = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			FROM = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 70
+				}
+			}
+		}
+		modifier = {
+			factor = 0.2
+			NOT = {
+				FROM = {
+					reform_desire = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			FROM = {
+				estate_influence = {
+					estate = estate_church
+					influence = 70
+				}
+			}
+		}
+    }
+    
+    on_built = {
+		FROM = {
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = 5
+			}
+		}
+    }
+    
+    on_destroyed = {
+		FROM = {
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = -10
+			}
+		}
+    }
+}

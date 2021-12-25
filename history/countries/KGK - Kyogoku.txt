@@ -1,0 +1,344 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = japanese
+religion = shinto
+technology_group = chinese
+capital = 4982	# Omi
+
+1438.1.1 = {
+	monarch = {
+		name = "Mochikiyo"
+		dynasty = "Kyogoku"
+		adm = 3
+		dip = 3
+		mil = 3
+		}
+}
+
+1466.1.1 = {
+	heir = {
+		name = "Magodojimaru"
+		monarch_name = "Magodojimaru"
+		dynasty = "Kyogoku"
+		birth_date = 1466.1.1
+		death_date = 1471.1.1
+		claim = 90
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1470.8.30 = {
+	monarch = {
+		name = "Magodojimaru"
+		dynasty = "Kyogoku"
+		adm = 1
+		dip = 1
+		mil = 1
+		}
+}
+
+1470.8.30 = {
+	heir = {
+		name = "Masatsune"
+		monarch_name = "Masatsune"
+		dynasty = "Kyogoku"
+		birth_date = 1453.1.1
+		death_date = 1502.12.2
+		claim = 90
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1471.1.1 = {
+	monarch = {
+		name = "Masatsune"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 3
+		mil = 2
+		}
+}
+
+
+1471.1.1 = {
+	heir = {
+		name = "Takakiyo"
+		monarch_name = "Takakiyo"
+		dynasty = "Kyogoku"
+		birth_date = 1460.1.1
+		death_date = 1538.2.18
+		claim = 70
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+	
+1502.12.2 = { 
+	monarch = {
+		name = "Takakiyo"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 1
+		}
+	}
+
+1502.12.2 = {
+	heir = {
+		name = "Takanobu"
+		monarch_name = "Takanobu"
+		dynasty = "Kyogoku"
+		birth_date = 1480.1.1
+		death_date = 1553.1.1
+		claim = 90
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+	
+1538.2.18 = { 
+	monarch = {
+		name = "Takanobu"
+		dynasty = "Kyogoku"
+		adm = 1
+		dip = 1
+		mil = 1
+		}
+	}
+
+1538.2.18 = {
+	heir = {
+		name = "Takayoshi"
+		monarch_name = "Takayoshi"
+		dynasty = "Kyogoku"
+		birth_date = 1504.1.1
+		death_date = 1581.2.28
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
+	
+1553.1.1 = { 
+	monarch = {
+		name = "Takayoshi"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 1
+		}
+	}
+	
+1563.1.1 = {
+	heir = {
+		name = "Takatsugu"
+		monarch_name = "Takatsugu"
+		dynasty = "Kyogoku"
+		birth_date = 1563.1.1
+		death_date = 1609.6.4
+		claim = 90
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+	
+1581.2.28 = { 
+	monarch = {
+		name = "Takatsugu"
+		dynasty = "Kyogoku"
+		adm = 3
+		dip = 3
+		mil = 3
+		}
+	}
+		
+1593.1.1 = {
+	heir = {
+		name = "Tadataka"
+		monarch_name = "Tadataka"
+		dynasty = "Kyogoku"
+		birth_date = 1593.1.1
+		death_date = 1637.8.2
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+	
+1609.6.4 = { 
+	monarch = {
+		name = "Tadataka"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+
+1619.4.24 = {
+	heir = {
+		name = "Takakazu"
+		monarch_name = "Takakazu"
+		dynasty = "Kyogoku"
+		birth_date = 1619.4.24
+		death_date = 1662.11.3
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+	
+1637.8.2 = { 
+	monarch = {
+		name = "Takakazu"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1655.7.29 = {
+	heir = {
+		name = "Takatoyo"
+		monarch_name = "Takatoyo"
+		dynasty = "Kyogoku"
+		birth_date = 1655.7.29
+		death_date = 1694.6.10
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1662.11.3 = { 
+	monarch = {
+		name = "Takatoyo"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1692.2.25 = {
+	heir = {
+		name = "Takamochi"
+		monarch_name = "Takamochi"
+		dynasty = "Kyogoku"
+		birth_date = 1692.2.25
+		death_date = 1724.8.10
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1694.6.10 = { 
+	monarch = {
+		name = "Takamochi"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1718.5.13 = {
+	heir = {
+		name = "Takanori"
+		monarch_name = "Takanori"
+		dynasty = "Kyogoku"
+		birth_date = 1718.5.13
+		death_date = 1763.10.30
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1724.8.10 = { 
+	monarch = {
+		name = "Takanori"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1754.5.14 = {
+	heir = {
+		name = "Takanaka"
+		monarch_name = "Takanaka"
+		dynasty = "Kyogoku"
+		birth_date = 1754.5.14
+		death_date = 1811.2.6
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1763.10.30 = { 
+	monarch = {
+		name = "Takanaka"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1798.6.8 = {
+	heir = {
+		name = "Takaakira"
+		monarch_name = "Takaakira"
+		dynasty = "Kyogoku"
+		birth_date = 1798.6.8
+		death_date = 1874.2.14
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1811.2.6 = { 
+	monarch = {
+		name = "Takaakira"
+		dynasty = "Kyogoku"
+		adm = 2
+		dip = 2
+		mil = 2
+		}
+	}
+		
+1828.10.25 = {
+	heir = {
+		name = "Akiyuki"
+		monarch_name = "Akiyuki"
+		dynasty = "Kyogoku"
+		birth_date = 1828.10.25
+		death_date = 1882.5.11
+		claim = 80
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

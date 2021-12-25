@@ -1,0 +1,408 @@
+namespace = austria_hungary
+normal_or_historical_nations = yes
+
+# János Zápolya in Transylvania
+country_event = {
+	id = austria_hungary.23
+	title = austria_hungary.23.t
+	desc = austria_hungary.23.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = TUR
+		any_owned_province = {
+			is_core = TRA
+		}
+		is_at_war = no
+		is_subject = no
+		TRA = {
+			exists = no
+		}
+		owns = 153
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = austria_hungary.23.a
+		ai_chance = {
+			factor = 100
+		}
+		162 = {
+			add_core = TRA
+		}
+		southern_transylvania_area = {
+			add_core = TRA
+		}
+		transylvania_area = {
+			add_core = TRA
+		}
+		1953 = {
+			add_core = TRA
+		}
+		1952 = {
+			add_core = TRA
+		}
+		157 = {
+			add_core = TRA
+		}
+		4417 = {
+			add_core = TRA
+		}
+		1951 = {
+			add_core = TRA
+		}
+		3234 = {
+			add_core = TRA
+		}
+		4418 = {
+			add_core = TRA
+		}
+		release = TRA
+		TRA = {
+			change_government = monarchy
+			add_government_reform = feudalism_reform
+			adopt_reform_progress = ROOT
+		}
+		create_subject = {
+			subject_type = march
+			subject = TRA
+		}
+		TRA = {
+			define_ruler = {
+				name = "János"
+				dynasty = "Zápolya"
+				adm = 3
+				dip = 3
+				mil = 3
+				claim = 95
+			}
+		}
+		alfold_area = {
+			every_province_in_state = {
+				add_permanent_claim = TRA
+			}
+		}
+		transdanubia_area = {
+			every_province_in_state = {
+				add_permanent_claim = TRA
+			}		
+		}
+		slovakia_area = {
+			every_province_in_state = {
+				add_permanent_claim = TRA
+			}		
+		}
+		transylvania_area = {
+			every_province_in_state = {
+				add_permanent_claim = TRA
+			}		
+		}
+		southern_transylvania_area = {
+			every_province_in_state = {
+				add_permanent_claim = TRA
+			}		
+		}
+	}
+
+	option = {
+		name = austria_hungary.23.b
+		ai_chance = {
+			factor = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_core = TRA
+			}
+			spawn_rebels = {
+				size = 3
+				leader = "János Zápolya"
+				type = separatist_rebels
+				culture = hungarian
+			}
+		}
+	}
+}
+
+# The Fall of Hungary
+country_event = {
+	id = austria_hungary.24
+	title = austria_hungary.24.t
+	desc = austria_hungary.24.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = HUN
+		exists = HAB
+		exists = TRA
+		TRA = {
+			is_subject_of = TUR
+		}
+		is_subject = no
+		government = monarchy
+		NOT = {
+			num_of_cities = 25
+		}
+		NOT = {
+			has_ruler = "Ladislaus Postumus"
+		}
+		TUR = {
+			any_owned_province = {
+				is_core = HUN
+			}
+			owns = 153
+			num_of_cities = HAB
+		}
+		HAB = {
+			num_of_cities = HUN
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			dynasty = "von Habsburg"
+		}
+	}
+
+	option = {
+		name = austria_hungary.24.a
+		ai_chance = {
+			factor = 90
+		}
+		HAB = {
+			create_union = HUN
+		}
+	}
+
+	option = {
+		name = austria_hungary.24.b
+		ai_chance = {
+			factor = 10
+		}
+		add_stability = -1
+		every_owned_province = {
+			add_permanent_claim = HAB
+		}
+	}
+}
+
+# Spanish Acquisition of the Low Countries
+country_event = {
+	id = austria_hungary.9
+	title = spanish_low_countries.t
+	desc = spanish_low_countries.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Let us cede the lands to Spain
+		ai_chance = {factor = 100}
+		name = spanish_low_countries.a
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = low_countries_region
+						area = picardy_area
+					}
+				}
+				remove_core = HAB
+				add_core = SPA
+				cede_province = SPA
+			}
+			every_subject_country = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = low_countries_region
+							area = picardy_area
+						}
+					}
+					remove_core = HAB
+					add_core = SPA
+					cede_province = SPA
+				}
+			}
+		}
+		custom_tooltip = austria_hungary.9.a.tooltip
+		SPA = {
+			add_opinion = {
+				who = ROOT
+				modifier = ceded_netherlands
+			}
+			country_event = {
+				id = austria_hungary.11
+			}	
+		}
+		set_global_flag = low_countries_given_spa
+	}
+
+	option = { # Let us keep the lands for ourselves
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+					has_global_flag = governments_extended_historical_yes
+			}
+		}
+		name = spanish_low_countries.b
+		SPA = {
+			add_opinion = {
+				who = ROOT
+				modifier = did_not_cede_netherlands
+			}
+			country_event = {
+			id = austria_hungary.12
+			}
+		}
+		every_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = wrongful_rulers
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Castilian Acquisition of the Low Countries
+country_event = {
+	id = austria_hungary.10
+	title = castilian_low_countries.t
+	desc = castilian_low_countries.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Let us cede the lands to Castile
+		name = castilian_low_countries.a
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			HAB = {
+				country_event = { id = flavor_spa.14 }
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = low_countries_region
+						area = picardy_area
+					}
+				}
+				remove_core = HAB
+				add_core = CAS
+				cede_province = CAS
+			}
+			every_subject_country = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = low_countries_region
+							area = picardy_area
+						}
+					}
+					remove_core = HAB
+					add_core = CAS
+					cede_province = CAS
+				}
+			}
+		}
+		custom_tooltip = austria_hungary.10.a.tooltip
+		CAS = {
+			add_opinion = {
+				who = ROOT
+				modifier = ceded_netherlands
+			}
+			country_event = {
+				id = austria_hungary.11
+			}	
+		}
+		set_global_flag = low_countries_given_cas
+	}
+
+	option = { # Let us keep the lands for ourselves
+		name = castilian_low_countries.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+					has_global_flag = governments_extended_historical_yes
+			}
+		}
+		every_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = wrongful_rulers
+				duration = 3650
+			}
+		}
+		CAS = {
+			add_opinion = {
+				who = ROOT
+				modifier = did_not_cede_netherlands
+			}
+			country_event = {
+				id = austria_hungary.12
+			}
+		}
+		clr_country_flag = low_countries_controlled	
+	}
+}
+
+# Successful Acquisition of the Low Countries
+country_event = {
+	id = austria_hungary.11
+	title = successful_acquisition.t
+	desc = successful_acquisition.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Excellent
+		name = successful_acquisition.a
+		add_legitimacy = 10
+		add_prestige = 25
+		every_owned_province = {
+			limit = {
+				region = low_countries_region
+			}
+			add_province_modifier = {
+				name = rightful_rulers
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Failed Acquisition of the Low Countries
+country_event = {
+	id = austria_hungary.12
+	title = failed_acquisition.t
+	desc = failed_acquisition.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Unfortunate
+		name = failed_acquisition.a
+		add_legitimacy = -10
+		add_prestige = -25
+	}
+}

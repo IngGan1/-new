@@ -1,0 +1,504 @@
+declarewar = {
+	condition = {
+		tooltip = XXX
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = yes
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				mission_completed = sweden_support_the_roman_church
+				FROM = {
+					NOT = { religion = catholic }
+				}
+			}
+			change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
+		}
+	}
+	condition = {
+		tooltip = DECLAREWAR_CELESTIAL
+		potential = {
+			is_subject_of_type = tributary_state
+			FROM = { is_subject_of_type = tributary_state }
+		}
+		allow = {
+		    NOT = { has_global_flag = celestial_peace_enforced }
+		}
+	}
+	
+	condition = {
+		potential = {
+			not = { is_year = 1800 }
+			has_global_flag = governments_extended_historical_yes
+			or = {
+				and = {
+					ROOT = { tag = QNG }
+					FROM = { tag = RUS }
+				}
+				and = {
+					ROOT = { tag = RUS }
+					FROM = { tag = QNG }
+				}
+				and = {
+					ROOT = { tag = MNG }
+					FROM = { tag = RUS }
+				}
+				and = {
+					ROOT = { tag = RUS }
+					FROM = { tag = MNG }
+				}
+				and = {
+					ROOT = { tag = MCH }
+					FROM = { tag = RUS }
+				}
+				and = {
+					ROOT = { tag = RUS }
+					FROM = { tag = MCH }
+				}	
+			}
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1800 }
+			has_global_flag = governments_extended_historical_yes
+			or = {
+				and = {
+					ROOT = { tag = QNG }
+					FROM = { technology_group = western }
+				}
+				and = {
+					ROOT = { technology_group = western }
+					FROM = { tag = QNG }
+				}
+				and = {
+					ROOT = { tag = MNG }
+					FROM = { technology_group = western }
+				}
+				and = {
+					ROOT = { technology_group = western }
+					FROM = { tag = MNG }
+				}
+			}
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1800 }
+			has_global_flag = governments_extended_historical_yes
+			or = {
+				and = {
+					or = { ROOT = { tag = DAN } ROOT = { tag = NOR } }
+					FROM = { tag = SWE }
+				}
+				and = {
+					ROOT = { tag = SWE }
+					or = { FROM = { tag = DAN } FROM = { tag = NOR } }
+				}
+			}
+		}
+		allow = {
+		    or = { DAN = { ai = no } NOR = { ai = no } SWE = { ai = no } SWE = { is_subject_of = DAN } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1700 }
+			has_global_flag = governments_extended_historical_yes
+			and = {
+				or = { ROOT = { tag = POL } ROOT = { tag = PLC } }
+				FROM = { or = { tag = SWE tag = DAN } }
+			}
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1500 }
+			has_global_flag = governments_extended_historical_yes
+			or = {
+				and = {
+					ROOT = { tag = ENG }
+					FROM = { tag = BUR }
+				}
+				and = {
+					ROOT = { tag = BUR }
+					FROM = { tag = ENG }
+				}
+			}
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1600 }
+			or = {
+				and = {
+					ROOT = { tag = POL }
+					FROM = { tag = TUR }
+				}
+				and = {
+					ROOT = { tag = TUR }
+					FROM = { or = { tag = POL is_subject_of = POL } }
+				}
+			}
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1650 }
+			or = { FROM = { tag = BRA } FROM = { tag = PRU } }
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } ROOT = { is_emperor = yes } BRA = { total_development = 150 } PRU = { total_development = 300 } }
+		}
+	}
+	condition = {
+		potential = {
+			FROM = { tag = BYZ }
+			not = { is_year = 1580 }
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { or = { tag = TUR ai = no } } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			ROOT = { is_subject_of = MOR }
+			not = { is_year = 1500 }
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1750 }
+			ROOT = { or = { tag = SPA tag = POR tag = ARA tag = CAS } }
+			FROM = {
+				capital_scope = { region = maghreb_region }
+				not = { any_owned_province = { region = iberia_region } }
+				not = { total_development = 200 }
+			}
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			has_global_flag = governments_extended_historical_yes
+			ROOT = { tag = KOR }
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			has_global_flag = governments_extended_historical_yes
+			FROM = { tag = PER not = { total_development = 1000 } }
+			not = { is_year = 1750 }
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			ROOT = { tag = RUS }
+			FROM = {
+				capital_scope = {
+					superregion = far_east_superregion
+				}
+			}
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			or = { ROOT = { tag = CAS } ROOT = { tag = SPA } }
+			FROM = { tag = POR }
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1500 }
+			has_global_flag = governments_extended_historical_yes
+			or = {
+				and = { FROM = { tag = GRA } ROOT = { tag = POR } }
+				and = { FROM = { tag = POR } ROOT = { tag = GRA } }
+			}
+		}
+		allow = {
+		    or = { POR = { ai = no } GRA = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			always = no
+			has_global_flag = governments_extended_historical_yes
+			is_year = 1520
+			not = { is_year = 1700 }
+			or = {
+				and = { FROM = { tag = SPA } ROOT = { tag = FRA } }
+				and = { FROM = { tag = FRA } ROOT = { tag = SPA } }
+			}
+		}
+		allow = {
+		    or = { SPA = { ai = no } FRA = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1500 }
+			has_global_flag = governments_extended_historical_yes
+			FROM = { tag = ARA }
+			ROOT = { tag = FRA }
+		}
+		allow = {
+		    or = { ARA = { ai = no } FRA = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			ROOT = { tag = MUG }
+			FROM = {
+				not = {
+					capital_scope = {
+						superregion = india_superregion
+					}
+				}
+				not = { tag = PER }
+				not = { tag = RUS }
+			}
+			not = { is_year = 1800 }
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { ai = no } }
+		}
+	}
+	condition = {
+		potential = {
+			not = { is_year = 1700 }
+			ROOT = { or = { tag = AKK tag = PER tag = TIM } }
+			FROM = {
+				or = {
+					capital_scope = {
+						superregion = tartary_superregion
+					}
+					tag = MAM
+					tag = RAM
+					tag = DUL
+				}
+			}
+			has_global_flag = governments_extended_historical_yes
+		}
+		allow = {
+		    or = { ROOT = { ai = no } FROM = { or = { ai = no tag = PER tag = TIM } } }
+		}
+	}
+	condition = {
+		potential = {
+			has_global_flag = hab_colony_start
+			FROM = {
+				capital_scope = {
+					or = {
+						region = sahel_region
+						region = niger_region
+						region = guinea_region
+						region = kongo_region
+					}
+				}
+			}
+			ROOT = { technology_group = western }
+		}
+		allow = {
+		    or = { ROOT = { ai = no } has_global_flag = malaria_cure }
+		}
+	}
+	condition = {
+		potential = {
+			FROM = {
+				capital_scope = {
+					or = {
+						colonial_region = colonial_la_plata
+						colonial_region = colonial_peru
+						colonial_region = colonial_colombia
+						colonial_region = colonial_mexico
+						colonial_region = colonial_california
+					}
+				}
+				is_former_colonial_nation = no
+			}
+			has_global_flag = hab_colony_start
+			or = { SPA = { exists = yes } CAS = { exists = yes } }
+			ROOT = { technology_group = western }
+			not = { is_year = 1800 }
+		}
+		allow = {
+		    ROOT = { or = { ai = no tag = SPA is_subject_of = SPA tag = CAS is_subject_of = CAS is_colonial_nation = yes } }
+		}
+	}
+	condition = {
+		potential = {
+			FROM = {
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				is_former_colonial_nation = no
+			}
+			POR = { exists = yes }
+			has_global_flag = hab_colony_start
+			ROOT = { technology_group = western }
+			not = { is_year = 1800 }
+		}
+		allow = {
+		    ROOT = { or = { ai = no tag = POR is_subject_of = POR is_colonial_nation = yes } }
+		}
+	}
+	condition = {
+		potential = {
+			or = { ENG = { exists = yes } GBR = { exists = yes } }
+			has_global_flag = hab_colony_start
+			FROM = {
+				capital_scope = {
+					colonial_region = colonial_eastern_america
+				}
+				is_colonial_nation = no
+				is_former_colonial_nation = no
+			}
+			ROOT = { technology_group = western }
+			not = { is_year = 1800 }
+		}
+		allow = {
+		    ROOT = { or = { ai = no tag = ENG tag = GBR is_subject_of = GBR is_subject_of = ENG is_colonial_nation = yes } }
+		}
+	}
+	condition = {
+		potential = {
+			or = { ENG = { exists = yes } GBR = { exists = yes } FRA = { exists = yes } }
+			has_global_flag = hab_colony_start
+			FROM = {
+				capital_scope = {
+					colonial_region = colonial_canada
+				}
+				is_colonial_nation = no
+				is_former_colonial_nation = no
+			}
+			ROOT = { technology_group = western }
+			not = { is_year = 1800 }
+		}
+		allow = {
+		    ROOT = { or = { ai = no tag = FRA tag = ENG tag = GBR is_subject_of = FRA is_subject_of = GBR is_subject_of = ENG is_colonial_nation = yes } }
+		}
+	}
+	condition = {
+		potential = {
+			ROOT = {
+				ai = yes
+			}
+		}
+		allow = {
+		    manpower_percentage = 0.60 not = { num_of_loans = 5 }
+		}
+	}
+	condition = {
+		potential = {
+			has_global_flag = governments_extended_historical_yes
+			#ROOT = {
+			#	ai = yes
+			#}
+			FROM = {
+				capital_scope = { has_province_modifier = african_disease_modifier }
+			}
+		}
+		allow = {
+		    or = {
+				ROOT = {
+					capital_scope = { continent = africa }
+				}
+				ROOT = { ai = no }
+			}
+		}
+	}
+	condition = {
+		potential = {
+			or = {
+				ROOT = {
+					has_country_modifier = boho_world
+				}
+				FROM = {
+					has_country_modifier = boho_world
+				}
+			}
+		}
+		allow = {
+		    always = no
+		}
+	}
+	condition = {
+		potential = {
+			has_global_flag = governments_extended_historical_yes
+			ROOT = { tag = TUR }
+			MAM = { exists = yes }
+			TUR = { ai = yes owns = 151 }
+			or = {
+				and = {
+					is_year = 1520
+					not = { is_year = 1530 }
+				}
+				and = {
+					is_year = 1540
+					not = { is_year = 1550 }
+				}
+			}
+		}
+		allow = {
+		    FROM = {
+				or = { tag = MAM capital_scope = { region = anatolia_region } }
+			}
+		}
+	}
+	condition = {
+		tooltip = openasia_no_war
+		potential = {
+			FROM = {
+				has_country_modifier = no_war
+			}
+		}
+		allow = {
+		    always = no
+		}
+	}
+}

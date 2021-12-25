@@ -1,0 +1,48 @@
+# Ottoman Civil War
+cb_ottoman_civil_war = {
+	is_triggered_only = yes
+
+	war_goal = ottoman_civil_war_wargoal
+}
+
+# Kazakh Revolt
+cb_kazakh_revolt = {
+	is_triggered_only = yes
+
+	war_goal = kazakh_revolt_wargoal
+}
+
+# Kazani Invasion of Muscovy
+cb_kazan_muscovy = {
+	is_triggered_only = yes
+
+	war_goal = kazan_muscovy_wargoal
+}
+
+# Surrender of Maine
+cb_surrender_of_maine = {
+	is_triggered_only = yes
+
+	war_goal = surrender_of_maine_wargoal
+}
+
+# War of the Roses
+cb_war_of_the_roses = {
+	is_triggered_only = yes
+
+	war_goal = war_of_the_roses_wargoal
+}
+
+# Dutch Independence
+cb_dutch_independence = {
+	is_triggered_only = yes
+
+	war_goal = dutch_independence_wargoal
+}
+
+# Prussian Confederation
+cb_prussian_confederation = {
+	is_triggered_only = yes
+
+	war_goal = prussian_confederation_wargoal
+}

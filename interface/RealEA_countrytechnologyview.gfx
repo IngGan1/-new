@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_disaster_mng_talentless_tianzi_disaster"
+		texturefile = "gfx//interface//disasters//mng_talentless_tianzi_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_mng_wokou_disaster"
+		texturefile = "gfx//interface//disasters//mng_wokou_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_kha_internal_conflict_disaster"
+		texturefile = "gfx//interface//disasters//kha_internal_conflict_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
+		name = "GFX_disaster_kor_sarim_dictatorship"
+		texturefile = "gfx//interface//disasters//kor_sarim_dictatorship.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+}

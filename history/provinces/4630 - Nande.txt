@@ -1,0 +1,14 @@
+owner = BUE
+controller = BUE
+add_core = BUE
+
+culture = luba
+religion = shamanism #Fetishism
+trade_goods = livestock
+capital = "Nande"
+hre = no
+base_tax = 3
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african

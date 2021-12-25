@@ -1,0 +1,675 @@
+﻿l_english:
+ X_BECOMES_HARMONIZED:0 "$NAME|Y$ ÿ»LÇNÇ pÈTÖ´ÈÅµÂÈ²ä².\n"
+ TRENT_IS_NOT_ENABLED:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ”² |Ç´Å˜°ÀÉ JÅXÅä²."
+ TRENT_IS_ENABLED:1 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ¬ ÜÂ‘Ç´ÈÅä²"
+ ENABLE_COUNCIL_OF_TRENT:0 "§Y¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ§!\n ÜÂ‘Ç"
+ DISABLE_COUNCIL_OF_TRENT:0 "§Y¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ§!\n …ÈÌ¸"
+ NOT_CURRENT_ICON_TR:0 "$ICON|Y$NÇ(”²) Ö¬Ç Ì¹ä´´ÅÀÉÀÉ JÅXÅµÂÈ²ä²."
+ CURRENT_ICON_TR:0 "$ICON|Y$NÇ(”²) Ö¬Ç Ì¹ä´´ÅLÈµÂÈ²ä²."
+ ANY_STATE_STARTS:0 "´Å²µ üÈ"
+ NO_ANY_STATE_STARTS:0 "üÈ ÆÅLÇ"
+ ALL_STATE_STARTS:0 "¨ºà´ üÈ"
+ NO_ALL_STATE_STARTS:0 "¨ºà´ üÈ”² DÅØ²"
+ HAVE_NO_PATRIARCH_IN:1 "$NAME$ üÈÐÅ ³üÈP­¬ ÆÅµÂÈ²ä².\n"
+ HAVE_PATRIARCH_IN:1 "$NAME|Y$ üÈÐÅ ³üÈP­¬ ˆÇµÂÈ²ä².\n"
+ IN_GOLDEN_ERA:0 "$COUNTRY|Y$ !ÎNÇ iÖ®0®|¹ l­¬XÕà¬ ˆÇµÂÈ²ä²."
+ NOT_GOLDEN_ERA:0 "$COUNTRY|Y$ !ÎNÇ !ÎNÇ iÖ®0®|¹ l­¬XÕà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ DEVASTATION_LESS_THAN:0 "iÖÐÓÄ³¬  $VAL|Y$ ø»Ì¹…ÇÈ²ä².\n"
+ DEVASTATION_AT_LEAST:0 "iÖÐÓÄ³¬ $VAL|Y$ tÇÁÀ…ÇÈ²ä².\n"
+ DEVASTATION_EFF:0 "$WHERE$XÇ iÖÐÓÄ³ $VALUE$ $DIRECTION$.\n"
+ PROSPERITY_LESS_THAN:0 "ˆ¼ÆÄ³¬ $VAL|Y$ ø»Ì¹„Ç.\n"
+ PROSPERITY_AT_LEAST:0 "ˆ¼ÆÄ³¬ $VAL|Y$ tÇÁÀ„Ç.\n"
+ TRIG_STATE_NOT_PROSP:0 "$NAME|Y$ üÈ”² ˆ¼ÆXÕà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ TRIG_STATE_PROSP:0 "$NAME|Y$NÇ üÈ”² ˆ¼ÆXÕà¬ ˆÇµÂÈ²ä²!\n"
+ PROSP_EFF:0 "$WHERE|Y$XÇ ˆ¼ÆÄ³ $VALUE$ $DIRECTION$.\n"
+ AGE_ABIL_TRIG_NOT:0 "ÜÂ³ ¥²%¸ '$NAME|Y$'DÇ(|¹) ¬à¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ AGE_ABIL_TRIG:0 "ÜÂ³ ¥²%¸ '$NAME|Y$'DÇ(|¹) ¬à¬ ˆÇµÂÈ²ä².\n"
+ STATE_EDICT_TRIG_NOT:0 "'$NAME|Y$' YÎ9¸DÇ ¬À©ÆXÕà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ STATE_EDICT_TRIG:0 "'$NAME|Y$' YÎ9¸DÇ ¬À©ÆXÕà¬ ˆÇµÂÈ²ä².\n"
+ NUM_CONTINENTS_TRIG:0 "$VAL|Y$¬ tÇÁÀXÇ ³Y¹ÐÅÁ ÀÉíÅ ô¼.Ç\n"
+ NUM_CONTINENTS_TRIG_NOT:0 "ÀÉíÅDÇ ŒÁ.ÇXÕà¬ ˆÇ”² ³Y¹tÇ $VAL|Y$¬ ø»Ì¹„Ç\n"
+ INSTITUTION_DIFF_LOWER_THAN:0 "§Y$TARGET$§! !Îü¬ §Y$WHO$§! ¬ Â©ÆjÕ ÜÂ³­ ÂXÇ (ÌtÇ¬ §Y$VAL$§! ø»Ì¹…ÇÈ²ä²."
+ INSTITUTION_DIFF_AT_LEAST:0 "§Y$TARGET$§! !Îü¬ §Y$WHO$§! ¬ Â©ÆjÕ ÜÂ³­ ÂXÇ (ÌtÇ¬ §Y$VAL$§! tÇÁÀtÇÈ²ä²."
+ INSTITUTION_DIFF_LOWER_THAN_ALT:0 "§Y$TARGET$§! !ÎtÇ Â©ÆjÕ ÜÂ³­tÇ §Y$VAL$§! ø»Ì¹…ÇÈ²ä²."
+ INSTITUTION_DIFF_AT_LEAST_ALT:0 "§Y$TARGET$§! !ÎtÇ Â©ÆjÕ ÜÂ³­tÇ §Y$VAL$§! tÇÁÀ…ÇÈ²ä²."
+ ADM_EFFECT:0 "$WHO$ £adm£ $VALUE$ $DIRECTION$\n"
+ DIP_EFFECT:0 "$WHO$ £dip£ $VALUE$ $DIRECTION$\n"
+ MIL_EFFECT:0 "$WHO$ £mil£ $VALUE$ $DIRECTION$\n"
+ FRIENDLY_NEARBY_PROVINCE_STARTS:0 "xÇÈjÕ °Æ8Ö ÀÉíÅ"
+ INSTITUTION_NOT_SPAWNED_YET:0 "$WHICH|Y$ has not yet spawned\n"
+ NOT_HAS_INSTITUTION_IN_COUNTRY:0 "$COUNTRY$ !ÎNÇ $WHICH|Y$ ÜÂ³­DÇ Â©ÆXÕÀÉ JÅXÅLÇ\n"
+ TECH_REQUIRES_INSTITUTION:1 "$TECH|Y$ costs $PENALTY$ more for countries that have not embraced $INSTITUTION|Y$.\n"
+ TECH_COST:0 "Cost: $VAL$\n"
+ HAS_INSTITUTION_IN_COUNTRY:0 "$COUNTRY$ !ÎNÇ $WHICH|Y$ ÜÂ³­DÇ Â©ÆˆÕLÇ\n"
+ NOT_HAS_INSTITUTION_IN_PROV:1 "$WHICH|Y$ ÜÂ³­tÇ Â©Æ´ÀÉ JÅLÇ\n"
+ HAS_INSTITUTION_IN_PROV:1 "$WHICH|Y$ ÜÂ³­tÇ Â©Æ(´\n"
+ INSTITUTION_LOWER_IN_PROV:0 "$WHICH|Y$ÐÅ ³jÕ ÀÉÐÆtÇ $VAL|Y$ ø»Ì¹…ÇÈ²ä².\n"
+ INSTITUTION_AT_LEAST_PROV:0 "$WHICH|Y$ÐÅ ³jÕ ÀÉÐÆtÇ $VAL|Y$ tÇÁÀ…ÇÈ²ä².\n"
+ INSTITUTION_GROWTH_LOWER_IN_PROV:0 "$WHICH|Y$XÇ 1Á¥ÇtÇ $VAL|Y$ ø»Ì¹…ÇÈ²ä².\n"
+ INSTITUTION_GROWTH_AT_LEAST_IN_PROV:0 "$WHICH|Y$XÇ 1Á¥ÇtÇ $VAL|Y$ tÇÁÀ…ÇÈ²ä².\n"
+ NOT_INSTITUTION_ENABLED:0 "$WHICH|Y$ ÜÂ³­NÇ DÅÁÉ 8ÁÁÀÐÅ ñ´¥ÇXÕÀÉ JÅXÅµÂÈ²ä²."
+ INSTITUTION_ENABLED:0 "$WHICH|Y$ ÜÂ³­NÇ 8ÁÁÀÐÅ ñ´¥ÇˆÕµÂÈ²ä².\n"
+ NOT_INSTITUTION_ORIGIN:0 "tÕù² ÀÉíÅNÇ $WHICH|Y$XÇ ¼ÐÆÀÉ¬ DÅÙ²È²ä².\n"
+ INSTITUTION_ORIGIN:0 "tÕù² ÀÉíÅNÇ $WHICH|Y$XÇ ¼ÐÆÀÉ…ÇÈ²ä²."
+ ADD_INSTITUTION_EMBRACEMENT_EFFECT:0 "$WHICH|Y$ÐÅ ³jÕ ÀÉÐÆ $VALUE$ $DIRECTION$.\n"
+ HAS_MERCHANT_TRIGGER:1 "$WHO|Y$ !ÎNÇ $WHERE|Y$ÐÅ ÁÀxÇDÇ ¬à¬ ˆÇµÂÈ²ä².\n"
+ HAS_NOT_MERCHANT_TRIGGER:0 "$WHO|Y$ !ÎtÇ $WHERE|Y$ÐÅ ÁÀxÇDÇ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ HAS_NOT_DISASTER:0 "tÕù² m­¬”² $NAME|Y$DÇ(|¹) ª¬à¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ HAS_DISASTER:0 "tÕù² m­¬”² Ö¬Ç $NAME|Y$DÇ(|¹) ª¬à¬ ˆÇµÂÈ²ä².\n"
+ HAS_CUSTOM_IDEAS:0 "tÕù² m­¬”² ¬À©ÆÇ ÈXÇ m­¬ tÇP±DÇ ¬À©ÆXÕà¬ ˆÇµÂÈ²ä².\n"
+ HAS_NOT_CUSTOM_IDEAS:0 "tÕù² m­¬”² ¬À©ÆÇ ÈXÇ m­¬ tÇP±DÇ ¬À©ÆXÕà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ HAVE_NO_DISASTER_TRIGGER:0 "tÕù² m­¬”² Ö¬Ç ¬ÇYÅDÇ ª¬à¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ HAVE_DISASTER_TRIGGER:0 "tÕù² m­¬¬ Ö¬Ç ¬ÇYÅDÇ ª¬à¬ ˆÇµÂÈ²ä².\n"
+ HAVE_INF_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ô¼Ñ¼ ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_INF_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ô¼Ñ¼ ðÅ³|¹ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_CAV_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ 0®Ñ¼ ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_CAV_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ 0®Ñ¼ ðÅ³|¹ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_ART_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ìÓÑ¼ ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_ART_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ìÓÑ¼ ðÅ³|¹ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_HEAVY_SHIP_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ³Ö.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_HEAVY_SHIP_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ³Ö.ÁDÇ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_LIGHT_SHIP_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ŒÁÖ.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_LIGHT_SHIP_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ ŒÁÖ.Á ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_GALLEYS_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ 2¬¬¹.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_GALLEYS_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ 2¬¬¹.ÁDÇ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAVE_TRANSPORTS_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ Â¡Á.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_NO_TRANSPORTS_IN:0 "$COUNTRY$ !ÎtÇ $PROVINCE$ÐÅ Â¡Á.ÁDÇ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ ADD_CORE_CONSTRUCTION_EFFECT:0 "TÏ´Å ÝÀ1ÁDÇ ÜÂ‘ÇiÕÈ²ä². §Y$COST$%§!XÇ D¾©Æü¬ §Y$SPEED$%§!XÇ ÜÂ¬tÇ ŒÁ”Æ)´È²ä².\n"
+ ADD_BUILDING_CONSTRUCTION_EFFECT:0 "§Y$BUILDING$§!XÇ t¬2ÁDÇ ÜÂ‘ÇiÕÈ²ä².   §Y$COST$%§!XÇ D¾©Æü¬ §Y$SPEED$%§!XÇ ÜÂ¬tÇ ŒÁ”Æ)´È²ä².\n"
+ ADD_CULTURE_CONSTRUCTION_EFFECT:0 "8»TÖÀ¼Ë¬DÇ ÜÂ‘ÇiÕÈ²ä². §Y$COST$%§!XÇ D¾©Æü¬ §Y$SPEED$%§!XÇ ÜÂ¬tÇ ŒÁ”Æ)´È²ä².\n"
+ SIBIERIAN_EFFECT:0 "$VAL|Y$…ºXÇ ¬™ÌÇ¬ $WHERE|Y$XÇ À¼Ë¬ ¬™ÌÀÉÐÅ iÕX¹iÕÈ²ä².\n"
+ SEND_MISSIONARY_EFFECT:0 ".ÁP­¬À¬ tÕù² ÀÉíÅÐÅÁ ¬…ÈDÇ ÜÂ‘ÇiÕÈ²ä².\n"
+ KILL_UNITS_EFFECT:0 "$COUNTRY$ !ÎNÇ $AMOUNT|Y$¬XÇ ðÅ³|¹ ƒÇµÂÈ²ä².\n"
+ KILL_UNITS_OF_TYPE_EFFECT:0 "$COUNTRY$ !ÎNÇ $AMOUNT|Y$¬XÇ $TYPE|Y$ ðÅ³|¹ ƒÇµÂÈ²ä².\n"
+ TURN_OFF_PRIM_EFF:0 "$WHO|Y$ !ÎNÇ T³ tÇÁÀ ø»¬m­tÇ DÅÙ²È²ä².\n"
+ TURN_ON_PRIM_EFF:0 "$WHO|Y$ !ÎNÇ tÇÈ ø»¬m­…ÇÈ²ä².\n"
+ MORE_THAN_NUM_OF_UNITS_IN_PROVINCE:0 "$AMOUNT|$¬ tÇÁÀXÇ ðÅ³¬ ˆÇµÂÈ²ä²."
+ LESS_THAN_NUM_OF_UNITS_IN_PROVINCE:0 "$AMOUNT|$¬ ø»Ì¹XÇ ðÅ³¬ ˆÇµÂÈ²ä²."
+ MORE_THAN_NUM_OF_UNITS_OF_TYPE_IN_PROVINCE:0 "$TYPE|$ ðÅ³¬ $AMOUNT|$¬ tÇÁÀ ˆÇµÂÈ²ä²."
+ LESS_THAN_NUM_OF_UNITS_OF_TYPE_IN_PROVINCE:0 "$TYPE|$ ðÅ³¬ $AMOUNT|$¬ ø»Ì¹…ÇÈ²ä²."
+ DISSOLVE_PARLIAMENT:0 "m­ŒÖ tÕ°À"
+ REINSTATE_PARLIAMENT:0 "m­ŒÖ ¬Çl­1Á"
+ HAS_RULER_LEADER_FROM:0 "$COUNTRY|Y$XÇ µÑXÎÇ¬ tÇD°”² p­³"
+ HAS_NOT_RULER_LEADER_FROM:0 "$COUNTRY|Y$XÇ µÑXÎÇ¬ p­³|¹ tÇL°à¬ ˆÇÀÉ JÅLÇ"
+ HAS_HEIR_LEADER_FROM:0 "$COUNTRY|Y$XÇ ÄÖÄ¬Ç¬ tÇD°”² p­³"
+ HAS_NOT_HEIR_LEADER_FROM:0 "$COUNTRY|Y$XÇ ÄÖÄ¬Ç¬ p­³|¹ tÇL°à¬ ˆÇÀÉ JÅLÇ"
+ HAVE_HEIR_WITH_LOWER_ADM_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ ø»Ì¹XÇ ‰ÕÈ ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_HEIR_WITH_HIGHER_ADM_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ ø»Ì¹XÇ ‰ÕÈ ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_HEIR_WITH_LOWER_DIP_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ ø»Ì¹XÇ xÆP­ ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_HEIR_WITH_HIGHER_DIP_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ tÇÁÀXÇ xÆP­ ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_HEIR_WITH_LOWER_MIL_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ ø»Ì¹XÇ p­¬À ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAVE_HEIR_WITH_HIGHER_MIL_THEN:0 "ÄÖÄ¬Ç”² $VALUE|Y$ tÇÁÀXÇ p­¬À ¥²%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ REMOVE_LOOT_TAG_EFFECT:0 "$COUNTRY|Y$ !ÎNÇ $AMOUNT|Y$¤ Ì¹|Ð ‹ÅÈÐˆÕµÂÈ²ä²."
+ REMOVE_LOOT_ENEMY_EFFECT:0 "Èp­tÇ $AMOUNT|Y$¤ Ì¹|Ð ‹ÅÈÐˆÕµÂÈ²ä²."
+ PROVINCE_SIZE_AT_LEAST:0 "ÀÉíÅ Ü­¨º¬ $SIZE|Y$ tÇÁÀ…ÇÈ²ä²."
+ PROVINCE_SIZE_LESS_THAN:0 "ÀÉíÅ Ü­¨º¬ $SIZE|Y$ ø»Ì¹…ÇÈ²ä²."
+ IS_NOT_STATE:0 "tÕù² ÀÉíÅNÇ üÈÐÅ ÁXÕÀÉ JÅµÂÈ²ä²."
+ IS_STATE:0 "tÕù² ÀÉíÅNÇ üÈÐÅ ÁiÕÈ²ä²."
+ in_state:0 "üÈXÇ |ÇŽ´"
+ in_territory:0 "ÉüÈXÇ |ÇŽ´"
+ IS_NOT_TERRITORY:0 "tÕù² ÀÉíÅNÇ ÉüÈÐÅ ÁXÕÀÉ JÅµÂÈ²ä²."
+ IS_TERRITORY:0 "tÕù² ÀÉíÅNÇ ÉüÈÐÅ ÁiÕÈ²ä²."
+ HAVE_LESS_STATES_THAN:0 "$VALUE|Y$¬ ø»Ì¹XÇ üÈ|¹ ¬ÐÉ"
+ HAVE_MORE_STATES_THAN:0 "$VALUE|Y$¬ tÇÁÀXÇ üÈ|¹ ¬ÐÉ"
+ HAVE_GROWN_BY_LESS_STATES_THAN:0 "üÈ(state)XÇ Â¬ $VALUE|Y$¬ô¼ä² ÈŒ¬ É¬hÕ"
+ HAVE_GROWN_BY_MORE_STATES_THAN:0 "üÈ(state)XÇ Â¬ $VALUE|Y$¬ tÇÁÀ É¬hÕ"
+ HAVE_LESS_TERRITORIES_THAN:0 "$VALUE|Y$¬ ø»Ì¹XÇ ÉüÈ|¹ ¬ÐÉ"
+ HAVE_MORE_TERRITORIES_THAN:0 "ÉüÈXÇ Â¬ $VALUE|Y$¬ tÇÁÀ„Ç"
+ HAVE_LESS_OWNED_AREAS_THAN:0 "tºÈtÇ $VALUE|Y$ ô¼ä² ÈµÂÈ²ä²."
+ HAVE_MORE_OWNED_AREAS_THAN:0 "ÀÉíÅXÇ Â¬ jÍŒÁ $VALUE|Y$"
+ HAVE_LESS_PROVINCES_IN_STATES_THAN:0 "üÈÐÅ ÁjÕ ÀÉíÅtÇ $VALUE|Y$¬ ø»Ì¹„Ç"
+ HAVE_MORE_PROVINCES_IN_STATES_THAN:0 "üÈÐÅ ÁjÕ ÀÉíÅXÇ Â¬ $VALUE|Y$¬ tÇÁÀ„Ç"
+ HAVE_LESS_PROVINCES_IN_TERRITORIES_THAN:0 "ÉüÈÐÅ ÁjÕ ÀÉíÅtÇ $VALUE|Y$¬ ø»Ì¹„Ç"
+ HAVE_MORE_PROVINCES_IN_TERRITORIES_THAN:0 "ÉüÈÐÅ ÁjÕ ÀÉíÅXÇ Â¬ $VALUE|Y$¬ tÇÁÀ„Ç"
+ EXCOMMUNICATE_EFFECT:0 "$TARGET|Y$ !ÎDÇ Ó8»hÕ\n"
+ LIFT_EXCOMMUNICATE_EFFECT:0 "$TARGET|Y$ÐÅ ³jÕ Ó8»DÇ  ÌŒÖhÕ\n"
+ ADD_HISTORICAL_FRIEND_EFFECT:0 "$TARGET|Y$ !ÎDÇ íÅ¬ÀÈ °Æ)¼<Çj¸ ”Í¬hÕ\n"
+ REMOVE_HISTORICAL_FRIEND_EFFECT:0 "$TARGET|Y$ !ÎDÇ íÅ¬ÀÈ °Æ)¼ÐÅÁ Èp¬hÕ\n"
+ ADD_HISTORICAL_RIVAL_EFFECT:0 "$TARGET|Y$ !ÎDÇ íÅ¬ÀÈ Ë¬ÁÇm­<Çj¸ ”Í¬hÕ\n"
+ REMOVE_HISTORICAL_RIVAL_EFFECT:0 "$TARGET|Y$ !ÎDÇ íÅ¬ÀÈ Ë¬ÁÇm­ÐÅÁ Èp¬hÕ\n"
+ EXILE_RULER_AS_EFFECT:0 "$NAME|Y$NÇ(”²) ”Í)¼ù²hÕ\n"
+ EXILE_HEIR_AS_EFFECT:0 "$NAME|Y$NÇ(”²) ”Í)¼ù²hÕ\n"
+ SET_RULER_EFFECT:0 "$NAME|Y$ (˜°tÇ $AGE$, $ADM$/$DIP$/$MIL$)tÇ(¬) µÑXÎÇ¬ (´\n"
+ SET_HEIR_EFFECT:0 "$NAME|Y$ ($ADM$/$DIP$/$MIL$)tÇ(¬) ÄÖÄ¬Ç¬ (´\n"
+ DEFINE_LEADER_TO_RULER_EFFECT:0 "$CLAIM$XÇ ÈµÑ1ÁDÇ ¬ÀÉà¬ ˆÇ”² $LEADERTYPE$ $NAME|Y$ ($ADM$/$DIP$/$MIL$)tÇ(¬) µÑXÎÇ¬ (´\n"
+ CREATE_MARCH_EFFECT:0 "$WHO|Y$ !ÎNÇ À¼Ë¬m­tÇ )´È²ä².\n"
+ BREAK_ROYAL_MARRIAGE_EFFECT:0 "§Y$WHO$§WNÆXÇ UÆäÂ°¬<ÖDÇ Ó0®iÕÈ²ä².\n"
+ ADD_MERCENARY_SUB_UNIT_EFFECT:0 "§Y$WHERE$§WÐÅÁ ©ÆÑ¼ $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ ADD_STRELTSY_SUB_UNIT_EFFECT:0 "§Y$WHERE$§!ÐÅÁ '§G²Â¸Ò¸XÎ§!' $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ ADD_COSSACKS_SUB_UNIT_EFFECT:0 "$WHERE|Y$ÐÅÁ '§GtÎÇlÐ§!' $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ ADD_RAJPUT_SUB_UNIT_EFFECT:0 "$WHERE|Y$ÐÅÁ '§G|·ÀÉxÔ¸Ò§!' $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ ADD_CAWA_SUB_UNIT_EFFECT:0 "$WHERE|Y$ÐÅÁ '§GtÎNÆ§!' $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ CHANGE_GRAPHICAL_CULTURE_EFFECT:0 "Œ¬„Ç ´° jÔÜÂ´”² pÈ¸ÅÇ ÍÁÀTÖNÆ Ñ¼…ÈXÇ 8»TÖŒ­tÇ $CULTURE|Y$XÇ ƒ¬<Çj¸ ¼É¯È²ä².\n"
+ DO_NOT_OWN_OR_VASSAL_OF:1 "$COUNTRY$ 9ÖNÇ …ÈÁm­XÇ ŒÁ.Ç¬ DÅØ²"
+ OWNS_OR_VASSAL_OF:1 "$COUNTRY$ 9ÖNÇ …ÈÁm­XÇ ŒÁ.Ç„Ç"
+ DO_NOT_OWN_OR_NON_SOVEREIGN_SUBJECT_OF:1 "$COUNTRY$ ¶”² ø­ …ÈÁm­(pÈõ¬m­NÇ ÈxÆ)XÇ ŒÁ.Ç¬ DÅØ²"
+ OWNS_OR_NON_SOVEREIGN_SUBJECT_OF:1 "$COUNTRY$ ¶”² ø­ …ÈÁm­(pÈõ¬m­NÇ ÈxÆ)XÇ ŒÁ.Ç„Ç"
+ TRIG_IS_NOT_IN_COALITION_AGAINST:0 "§Y$WHO$§!ÐÅ ³jÕ ¼m­¬Ù³ù¹ÐÅ ¬…Ç ÉtÇÀÉ JÅLÇ.\n"
+ TRIG_ISIN_COALITION_AGAINST:0 "§Y$WHO$§!ÐÅ ³jÕ ¼m­¬Ù³ù¹ÐÅ ¬…Ç É.\n"
+ DISBAND_REBELS:0 "§Y$NAME$§!NÇ(”²) tÕ°À.´ ƒ¬…ÇÈ²ä².\n"
+ EMPIRE_NO_FEMALE:0 "ìÅ1ÁNÇ iÖÈ¬ .´ Â ÆÅµÂÈ²ä².\n"
+ EMPIRE_CAN_BE_FEMALE:0 "ìÅ1ÁÄ³ iÖÈ¬ .´ Â ˆÇµÂÈ²ä².\n"
+ HAVE_LESS_MERCENARIES_THAN:0 "§Y$VALUE$§!ô¼ä² ÈNÇ ©ÆÑ¼ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_AT_LEAST_MERCENARIES_THAN:0 "§Y$VALUE$§!ô¼ä² Î¹p¬˜° ¬NÇ ©ÆÑ¼ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_LESS_BANNERS_THAN:1 "§Y$VALUE$§!ô¼ä² ÈNÇ Ó0®p­ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_AT_LEAST_BANNERS_THAN:1 "§Y$VALUE$§! tÇÁÀXÇ Ó0®p­ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_LESS_STRELTSY_THAN:1 "§Y$VALUE$§!ô¼ä² ÈNÇ ²Â¸Ò¸XÎ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_AT_LEAST_STRELTSY_THAN:1 "§Y$VALUE$§! tÇÁÀXÇ ²Â¸Ò¸XÎ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_LESS_COSSACKS_THAN:1 "§Y$VALUE$§!ô¼ä² ÈNÇ tÎÇlÐ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_AT_LEAST_COSSACKS_THAN:1 "§Y$VALUE$§! tÇÁÀXÇ tÎÇlÐ ðÅ³|¹ ô¼.ÇXÕà¬ ˆÇLÇ.\n"
+ HAVE_LESS_HARMONIZED_THAN:1 "pÈTÖ´ …ÈP­˜° …ÈP­Œ­tÇ $VALUE|Y$¬ô¼ä² ÈLÇ(Ö¬Ç $CURRENTVALUE|Y$)."
+ HAVE_AT_LEAST_HARMONIZED_THAN:1 "pÈTÖ´ …ÈP­˜° …ÈP­Œ­tÇ $VALUE|Y$¬ô¼ä² Î¹p¬˜° ¬LÇ(Ö¬Ç $CURRENTVALUE|Y$)."
+ HAVE_LESS_HARMONIZED_THAN_COMP:1 "pÈTÖ´ …ÈP­˜° …ÈP­Œ­tÇ $COUNTRYNAME|Y$ ($VALUE|Y$)ô¼ä² ÈLÇ. Ö¬Ç $CURRENTVALUE|Y$."
+ HAVE_AT_LEAST_HARMONIZED_THAN_COMP:1 "pÈTÖ´ …ÈP­˜° …ÈP­Œ­tÇ $COUNTRYNAME|Y$ ($VALUE|Y$)ô¼ä² Î¹p¬˜° ¬LÇ. Ö¬Ç $CURRENTVALUE|Y$."
+ HAS_FEWER_TRADE_BONUS:0 "$VAL$ô¼ä² ÈNÇ 4»íÅ ô¼±²Â|¹ ¼à¬ ˆÇLÇ."
+ HAS_AT_LEAST_TRADE_BONUS:0 "$VAL$ô¼ä² Î¹p¬˜° ¬NÇ 4»íÅ ô¼±²Â|¹ ¼à¬ ˆÇLÇ."
+ RICHEST_TRADE_NODE:0 "$NAME$(NÇ)”² 8ÁÄ¬ÐÅÁ ¬¥Ç ’±NÇ ¬XÎ|¹ ÀÉÌ² 4»íÅ x±Ü´…ÇÈ²ä²."
+ NOT_RICHEST_TRADE_NODE:0 "$NAME$(NÇ)”² 8ÁÄ¬ÐÅÁ ¬¥Ç ’±NÇ ¬XÎ|¹ ÀÉÌ² 4»íÅ x±Ü´¬ DÅÙ²È²ä²."
+ HAS_FEWER_POWERFUL_ESTATES:0 "$VAL|Y$ ô¼ä² ÈNÇ Ä¬5Î ÇXÎ9¸ü¬ §Y70%§! tÇÁÀXÇ Æ¥Õ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_AT_LEAST_POWERFUL_ESTATES:0 "$VAL|Y$ ¬ tÇÁÀXÇ Ä¬5Î ÇXÎ9¸ü¬ §Y70%§! tÇÁÀXÇ Æ¥Õ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_FEWER_UNLOCKED_CULTS:0 "Ö¬Ç ,Á8® Â ˆÇ”² -Â0¼ ³ÁÀtÇ $VAL|Y$¬ ø»Ì¹„Ç."
+ HAS_AT_LEAST_UNLOCKED_CULTS:0 "Ö¬Ç ,Á8® Â ˆÇ”² -Â0¼ ³ÁÀtÇ $VAL|Y$¬ tÇÁÀ„Ç."
+ HAS_FEWER_ACTIVE_BLESSINGS:0 "Ö¬Ç jÖ1ÁTÖ´ •Íõ¼tÇ $VAL|Y$¬ ø»Ì¹„Ç."
+ HAS_AT_LEAST_ACTIVE_BLESSINGS:0 "Ö¬Ç jÖ1ÁTÖ´ •Íõ¼tÇ $VAL|Y$¬ tÇÁÀ„Ç."
+ HAS_FEWER_TRUSTED_ALLIES:0 "§Y100§! àÂ°¸Ä³|¹ ¬ÀÉà¬ ˆÇ”² Ù³ù¹tÇ $VAL|Y$ ô¼ä² ÈµÂÈ²ä²."
+ HAS_AT_LEAST_TRUSTED_ALLIES:0 "§Y100§!  àÂ°¸Ä³|¹ ¬ÀÉà¬ ˆÇ”² Ù³ù¹tÇ È´ÅÄ³ $VAL|Y$ ˆÇµÂÈ²ä²."
+ NATION_DESIGNER_POINTS_LESS_THAN:0 "¬À©ÆÇ ÈXÇ m­¬|¹ Ö1Á`Õ Lµ $VAL|Y$È tÇXÕj¸ ¬À©ÆˆÕµÂÈ²ä²."
+ NATION_DESIGNER_POINTS_AT_LEAST:0 "¬À©ÆÇ ÈXÇ m­¬|¹ Ö1Á`Õ Lµ È´ÅÄ³ $VAL|Y$ÈDÇ ¬À©ÆˆÕµÂÈ²ä²."
+ NATION_DESIGNER_TECH_GROUP_COST:0 "ä²LÇ pÈt¬ÐÅ ³jÕ ÈÂ D¾©Æ $COST|Y$:\n"
+ REFORM_DESIRE_IS_LESS_THAN:0 "¬Ö ôÅÝ¹tÇ §Y$SIZE$§!ô¼ä² ®°LÇ.\n"
+ REFORM_DESIRE_IS_AT_LEAST:0 "¬Ö ôÅÝ¹tÇ §Y$SIZE$§!ô¼ä² ’±LÇ.\n"
+ REFORM_DESIRE_EFFECT:1 "¬¨Ñ­¹XÇ ¬Ö ôÅÝ¹tÇ $DIRECTION$ $PERC|%-$.\n"
+ RELIG_ATTACK:0 "…ÈP­È È³m­DÇ õ¬©¬"
+ GOV_ATTACK:0 "ä²x¹ ÈŽ´|¹ õ¬©¬"
+ HAS_NOT_IDEA_ALLOWING:1 "'$WHICH$'(DÇ)|¹ ¬¥²XÕŒ¬ XÕ”² tÇP±DÇ ô¼.ÇÉ.\n"
+ HAS_IDEA_ALLOWING:1 "'$WHICH$'(DÇ)|¹ ¬¥²XÕŒ¬ XÕ”² tÇP±DÇ ô¼.Ç É.\n"
+ HAS_NOT_FEATURE_ALLOWING:1 "'$WHICH$'(DÇ)|¹ ¬¥²XÕŒ¬ XÕ”² ”ÆŒÁ ô¼.Ç É.\n"
+ HAS_FEATURE_ALLOWING:1 "'$WHICH$'(DÇ)|¹ ¬¥²XÕŒ¬ XÕ”² ”ÆŒÁ ø»ô¼.Ç É.\n"
+ OPPOSE_NEXT_REFORM:1 "¬¥²jÕ ¨ºà´ ¬ÖÐÅ ¼³iÕÈ²ä²."
+ WANTS_NEXT_REFORM:1 "¬¥²jÕ ¬Ö É È´ÅÄ³ XÕ˜°|¹ ÐÆiÕÈ²ä²."
+ HAVE_LESS_THAN_ADM_POWER:0 "ä²LÇô¼ä² ‰ÕÈ%¸tÇ ÈLÇ"
+ HAVE_MORE_THAN_ADM_POWER:0 "ä²LÇô¼ä² ‰ÕÈ%¸tÇ Î¹LÇ"
+ HAVE_LESS_THAN_DIP_POWER:0 "ä²LÇô¼ä² xÆP­%¸tÇ ÈLÇ"
+ HAVE_MORE_THAN_DIP_POWER:0 "ä²LÇô¼ä² xÆP­%¸tÇ Î¹LÇ"
+ HAVE_LESS_THAN_MIL_POWER:0 "ä²LÇô¼ä² p­¬À%¸tÇ ÈLÇ"
+ HAVE_MORE_THAN_MIL_POWER:0 "ä²LÇô¼ä² p­¬À%¸tÇ Î¹LÇ"
+ HAVE_LESS_THAN_SPLENDOR:0 "ä²LÇô¼ä² ÈNÇ Æ­ÂXÎ|¹ ÀÉØ²"
+ HAVE_MORE_THAN_SPLENDOR:0 "Æ­ÂXÎ¬ ä²LÇô¼ä² Î¹p¬˜° ¬LÇ"
+ HAVE_LESS_THAN_ABSOLUTISM:0 "ä²LÇô¼ä² ÈNÇ È³üÈXÇ ÂXÎ|¹ ¬ÐÉ"
+ HAVE_MORE_THAN_ABSOLUTISM:0 "È³üÈXÇ¬ ä²LÇô¼ä² Î¹p¬˜° ¬LÇ:"
+ HAVE_LESS_THAN_ACCEPTED_CULTURES:1 "Â©Æ´ 8»TÖ¬ ä²LÇô¼ä² ÈLÇ:"
+ HAVE_MORE_THAN_ACCEPTED_CULTURES:2 "È´ÅÄ³ $VAL|Y$¬ tÇÁÀXÇ Â©Æ´ 8»TÖ|¹ ¬ÐÉ\n"
+ OWN_CONTROL_LESS_INSTITUTIONS:0 "$TXT$¬ ø»Ì¹XÇ ÜÂ³­ ¼ÐÆÀÉ|¹ ô¼.Ç, ÀÉ0¼hÕ\n"
+ OWN_CONTROL_AT_LEAST_INSTITUTIONS:0 "È´ÅÄ³ $TXT$¬ tÇÁÀXÇ ÜÂ³­ ¼ÐÆÀÉ|¹ ô¼.Ç, ÀÉ0¼hÕ\n"
+ HASNT_3_STAR_TR:0 "ÀÉ× ÉxÇ 31Á ÀÉ×­ ÆÅLÇ"
+ HAS_3_STAR_TR:0 "31Á ¥Çp­tÇ˜° ÈÅ³tÇ ÀÉ× É"
+ HAS_UNIFIED_CUL:0 "¨ºà´ $WHICH|Y$ ÀÉíÅ ŒÁ.Ç"
+ HASNT_UNIFIED_CULTUREGR:0 "8»TÖŒ­DÇ µÑ|ÇXÕÀÉ »ºhÕ"
+ IS_VARIABLE_EQUAL:0 "$VAR|Y$NÇ(”²) $VALUE|Y$ NÆ ¬µÂÈ²ä²."
+ NOT_IS_VARIABLE_EQUAL:0 "$VAR|Y$NÇ(”²) $VALUE|Y$ NÆ ¬ÀÉ JÅµÂÈ²ä²."
+ IS_NOT_MARCH:0 "NÇ(”²) À¼Ë¬m­tÇ DÅÙ²È²ä²."
+ IS_MARCH:0 "NÇ(”²) À¼Ë¬m­…ÇÈ²ä²."
+ IS_NOT_MARCH_OF:0 "NÇ(”²) ä²LÇ m­¬XÇ À¼Ë¬m­tÇ DÅÙ²È²ä²:"
+ IS_MARCH_OF:0 "NÇ(”²) ä²LÇ m­¬XÇ À¼Ë¬m­…ÇÈ²ä²:"
+ HAVE_LESS_MARCHES_THAN:0 "ä²LÇô¼ä² T³ ÈNÇ À¼Ë¬m­ ô¼.Ç:"
+ HAVE_MORE_MARCHES_THAN:0 "ä²LÇô¼ä² Î¹p¬˜° ¬NÇ À¼Ë¬m­ Â:"
+ CAN_NOT_CREATE_MARCH:0 "À¼Ë¬m­DÇ Ì¹ä´ Â ÆÅµÂÈ²ä²."
+ CAN_CREATE_MARCH:0 "À¼Ë¬m­DÇ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ CAN_CREATE_SUBJECT:0 "$TYPE$DÇ(|¹) Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ CAN_NOT_CREATE_SUBJECT:0 "$TYPE$DÇ(|¹) Ì¹ä´ Â ÆÅµÂÈ²ä²."
+ CAN_HAVE_SUBJECTS:1 "$SUBJECTS$DÇ(|¹) ¬ÈÉ Â ˆÇLÇ"
+ CAN_NOT_HAVE_SUBJECTS:1 "$SUBJECTS$DÇ(|¹) ¬ÈÉ Â ÆÅLÇ"
+ IS_NOT_A_POSSIBLE_MARCH:0 " NÇ(”²) À¼Ë¬m­tÇ ¬¥²XÕÀÉ JÅµÂÈ²ä²"
+ IS_A_POSSIBLE_MARCH:0 " NÇ(”²) À¼Ë¬m­tÇ ¬¥²iÕÈ²ä²"
+ HAS_NOT_TERRAIN:0 "tÕù²XÕ”² ÀÉÖtÇ DÅÙ²È²ä²: $TERRAIN|Y$"
+ HAS_TERRAIN:0 "tÕù²XÕ”² ÀÉÖ…ÇÈ²ä²: $TERRAIN|Y$"
+ ADM_POWER_EFFECT:0 "‰ÕÈ%¸ $VALUE$ $DIRECTION$.\n"
+ DIP_POWER_EFFECT:0 "xÆP­%¸ $VALUE$ $DIRECTION$.\n"
+ MIL_POWER_EFFECT:0 "p­¬À%¸ $VALUE$ $DIRECTION$.\n"
+ ADD_IDEA_GROUP_EFFECT:0 "$IDEAGROUP|Y$ tÇP± ø­ù¸ ”Í¬"
+ REMOVE_IDEA_GROUP_EFFECT:0 "$IDEAGROUP|Y$ tÇP± ø­ù¸ Èp¬"
+ ADD_IDEA_EFFECT:0 "$IDEA|Y$ tÇP± ”Í¬"
+ REMOVE_IDEA_EFFECT:0 "$IDEA|Y$ tÇP± Èp¬"
+ HRE_INHERITABLE_ENABLED:1 "àÂ1Áj¸È¹Èm­NÇ tÇÈ ¬NÇ m­¬ÐÅ mÕÁÀ ÁÀÁ)´È²ä².\nÁm­xÇ ÈÄÖä´NÇ tÇÈ iÖÈXÇ xÆP­ ­Ä¬ xÎDÇ (ÌÀÉXÕÀÉ JÅµÂÈ²ä²\n"
+ HRE_INHERITABLE_DISABLED:1 "àÂ1Áj¸È¹iÖÈ”² tÇÈ .Áp¬ÐÅ XÇtÕ .ÁœÍ)´È²ä²!\niÖÈXÇ Ám­ ÈÄÖä´NÇ tÇÈ xÆP­ ­Ä¬ xÎDÇ ¬À©ÆiÕÈ²ä²\n"
+ HAS_IDEAGROUP_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$GROUP$§W tÇP± ø­ù¸DÇ DÌÝÐˆÕµÂÈ²ä².\n"
+ HAS_NOT_IDEAGROUP_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$GROUP$§W tÇP± ø­ù¸DÇ DÌÝÐXÕÀÉ JÅXÅµÂÈ²ä².\n"
+ HAS_MAXIDEAGROUP_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$GROUP$§W tÇP± ø­ù¸DÇ DÆ1ÁˆÕµÂÈ²ä².\n"
+ HAS_NOT_MAXIDEAGROUP_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$GROUP$§W tÇP± ø­ù¸DÇ DÆ1ÁXÕÀÉ JÅXÅµÂÈ²ä².\n"
+ HAS_IDEAGROUPLEVEL_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$IDEA$§W tÇP±DÇ ¬)¼ˆÕµÂÈ²ä².\n"
+ HAS_NOT_IDEAGROUPLEVEL_TRIGGER:0 "§Y$COUNTRY$§WNÇ(”²) §Y$IDEA$§W tÇP±DÇ ¬)¼XÕÀÉ JÅXÅµÂÈ²ä².\n"
+ IS_NOT_COUNTRY_CLAIM:0 "$COUNTRYADJ$ tÐ¸„ÇtÇ DÅØ²."
+ IS_COUNTRY_CLAIM:0 "$COUNTRYADJ$ tÐ¸„Ç."
+ ADVISOR_NOT_EMPLOYED:0 "§Y$NAME$§WNÇ(”²) Ö¬Ç à¬©Æ´ÀÉ JÅLÇ.\n"
+ ADVISOR_EMPLOYED:0 "§Y$NAME$§WNÇ(”²) Ö¬Ç à¬©Æ(´.\n"
+ ADVISOR_TYPE_NOT_EMPLOYED_0:0 "Ö¬Ç $TYPE$tÇ(¬) à¬©Æ´ÀÉ JÅXÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_NOT_EMPLOYED_1:0 "Ö¬Ç $ARG0$ $TYPE$tÇ(¬) à¬©Æ´ÀÉ JÅXÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_NOT_EMPLOYED_2:0 "Ö¬Ç $ARG0$ $ARG1$ $TYPE$tÇ(¬) à¬©Æ´ÀÉ JÅXÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_NOT_EMPLOYED_3:0 "Ö¬Ç $ARG0$ $ARG1$ $ARG2$ $TYPE$tÇ(¬) à¬©Æ´ÀÉ JÅXÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_EMPLOYED_0:0 "Ö¬Ç $TYPE$tÇ(¬) à¬©Æ´ÈÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_EMPLOYED_1:0 "Ö¬Ç $ARG0$ $TYPE$tÇ(¬) à¬©Æ´ÈÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_EMPLOYED_2:0 "Ö¬Ç $ARG0$ $ARG1$ $TYPE$tÇ(¬) à¬©Æ´ÈÅµÂÈ²ä².\n"
+ ADVISOR_TYPE_EMPLOYED_3:0 "Ö¬Ç $ARG0$ $ARG1$ $ARG2$ $TYPE$tÇ(¬) à¬©Æ´ÈÅµÂÈ²ä².\n"
+ ADD_SPY_NETWORK_IN:0 "$TARGET$ÐÅÁXÇ ©Ìô¼Ý¹tÇ $VAL|+$Ì¹|Ð UÖ³)´È²ä².\n"
+ ADD_SPY_NETWORK_FROM:0 "$TARGET$ !ÎNÇ ø­ä´XÇ ©Ìô¼Ý¹DÇ $VAL|-$ Ì¹|Ð UÖ³ˆÕµÂÈ²ä².\n"
+ HAVE_SPY_NETWORK_IN:0 "$TARGET$ÐÅÁXÇ ©Ìô¼Ý¹ Ü­¨º¬ $VAL$ô¼ä² lÐp¬˜° ¬µÂÈ²ä².\n"
+ NOT_HAVE_SPY_NETWORK_IN:0 "$TARGET$ÐÅÁXÇ ©Ìô¼Ý¹ Ü­¨º¬ $VAL$ô¼ä² ‘ÇµÂÈ²ä².\n"
+ HAVE_SPY_NETWORK_FROM:0 "$TARGET$tÇ(¬) ¬ÄÉ ©Ìô¼Ý¹ Ü­¨º¬ $VAL$ô¼ä² lÐp¬˜° ¬µÂÈ²ä².\n"
+ NOT_HAVE_SPY_NETWORK_FROM:0 "$TARGET$tÇ(¬) ¬ÄÉ ©Ìô¼Ý¹ Ü­¨º¬ $VAL$ô¼ä² ‘ÇµÂÈ²ä².\n"
+ HAVENT_CLAIM:0 "ä²LÇÐÅ ³jÕ tÐ¸„ÇDÇ ¬ÀÉà¬ ˆÇÀÉ JÅLÇ:"
+ HAVE_CLAIM_IN:0 "ä²LÇÐÅ ³jÕ tÐ¸„ÇDÇ ¬ÀÉà¬ ˆÇLÇ:"
+ HAVE_PERMANENT_CLAIM_IN:0 "ä²LÇÐÅ ³jÕ Æl­ÈxÇ tÐ¸„ÇDÇ ¬ÀÉà¬ ˆÇLÇ:"
+ PIETY_LESS_THAN:0 "àÂYÅìÂtÇ §Y$VAL$§!ô¼ä² ÈLÇ.\n"
+ PIETY_AT_LEAST:0 "àÂYÅìÂtÇ §Y$VAL$§!ô¼ä² Î¹LÇ.\n"
+ KARMA_LESS_THAN:0 "tÎt¹È¹¬ §Y$VAL$§! ô¼ä² ÈµÂÈ²ä².\n"
+ KARMA_AT_LEAST:0 "tÎt¹È¹¬ È´ÅÄ³ §Y$VAL$§! …ÇÈ²ä².\n"
+ DOOM_LESS_THAN:0 "…ÈÐ¹tÇ §Y$VAL$§! ô¼ä² ÈµÂÈ²ä².\n"
+ DOOM_AT_LEAST:0 "…ÈÐ¹tÇ È´ÅÄ³ §Y$VAL$§! …ÇÈ²ä².\n"
+ AUTHORITY_LESS_THAN:0 "Œ­Ç¬ §Y$VAL$§! ô¼ä² ÈµÂÈ²ä².\n"
+ AUTHORITY_AT_LEAST:0 "Œ­Ç¬ È´ÅÄ³ §Y$VAL$§! …ÇÈ²ä².\n"
+ REPUBLIC_TRAD_LESS_THAN:0 "õ¬TÖm­ ÈµÑtÇ §Y$VAL$§!ô¼ä² ÈLÇ.\n"
+ REPUBLIC_TRAD_AT_LEAST:0 "õ¬TÖm­ ÈµÑtÇ §Y$VAL$§!ô¼ä² Î¹LÇ.\n"
+ DIPLO_REP_LESS_THAN:0 "xÆP­È ÉÓÓtÇ §Y$VAL$§! ô¼ä² ÈµÂÈ²ä².\n"
+ DIPLO_REP_AT_LEAST:0 "xÆP­È ÉÓÓtÇ §Y$VAL$§! tÇÁÀ…ÇÈ²ä².\n"
+ TARGET_GETS_NEW_CLAIM_EFFECT:0 "§Y$WHO$§W !ÎtÇ §Y$NEW$§WÐÅ ³jÕ tÐ¸„ÇDÇ ÖÝ´iÕÈ²ä².\n"
+ TARGET_GETS_NEW_PERMANENT_CLAIM_EFFECT:0 "§Y$WHO$§W !ÎtÇ §Y$NEW$§WÐÅ ³jÕ Æl­ÈxÇ tÐ¸„ÇDÇ ÖÝ´iÕÈ²ä².\n"
+ TARGET_LOSE_CLAIM_EFFECT:0 "§Y$WHO$§W !ÎtÇ §Y$LOSE$§WÐÅ ³jÕ tÐ¸„ÇDÇ ƒÇµÂÈ²ä².\n"
+ HAVE_NOT_CORE_CLAIM_AGAINST:0 "ä²LÇ ÀÉíÅÐÅ ³jÕ tÐ¸„ÇDÇ ¬à¬ ˆÇÀÉ JÅLÇ:"
+ HAVE_CORE_CLAIM_AGAINST:0 "ä²LÇ ÀÉíÅÐÅ ³jÕ tÐ¸„ÇDÇ ¬à¬ ˆÇLÇ:"
+ IS_NOT_RELIGION_REFORMED:0 " ø­ä´XÇ …ÈP­|¹ ¬ÖXÕÀÉ JÅXÅµÂÈ²ä²."
+ IS_RELIGION_REFORMED:0 " ø­ä´XÇ …ÈP­|¹ ¬ÖˆÕµÂÈ²ä²."
+ IS_NOT_IN_LEAGUE_WAR:0 " ðÅù¹XÇ ÈÁÇÐÅ 8ÌÈXÕÀÉ JÅXÅµÂÈ²ä²."
+ IS_IN_LEAGUE_WAR:0 " ðÅù¹XÇ ÈÁÇÐÅ 8ÌÈ É…ÇÈ²ä²."
+ IS_NOT_LEAGUE_LEADER:0 " …ÈP­ ðÅù¹XÇ üÈÄ³m­tÇ DÅÙ²È²ä²."
+ IS_LEAGUE_LEADER:0 " …ÈP­ ðÅù¹XÇ üÈÄ³m­…ÇÈ²ä²."
+ IS_NOT_IN_COALITION_WAR:0 " ¼m­¬Ù³ù¹ ÈÁÇ ÉtÇÀÉ JÅLÇ."
+ IS_IN_COALITION_WAR:0 " ¼m­¬Ù³ù¹ ÈÁÇ É."
+ IS_NOT_IN_COALITION:0 " ¼m­¬Ù³ù¹ÐÅ ¬…Ç ÉtÇÀÉ JÅLÇ."
+ IS_IN_COALITION:0 " ¼m­¬Ù³ù¹ÐÅ ¬…Ç É."
+ LEADS_NOT_COALITION:0 " ¼m­¬Ù³ù¹DÇ üÈÄ³ ÉtÇÀÉ JÅLÇ."
+ LEADS_COALITION:0 " ¼m­¬Ù³ù¹DÇ üÈÄ³ É."
+ ANY_COALITION_MEMBER_STARTS:0 "´Å²µ ¼m­¬Ù³ù¹ ¬…Çm­"
+ TRIG_NOT_SPAWNED_REBELS:0 "œÍÖjÕ ¼Ž·p­tÇ ä²LÇÐÅ tÕù²´ÀÉ JÅLÇ"
+ TRIG_SPAWNED_REBELS:0 "œÍÖjÕ ¼Ž·p­tÇ ä²LÇÐÅ tÕù²(´"
+ TRIG_NOT_ANY_SPAWNED_REBELS:0 "	´0®jÕ ¼Ž·p­tÇ ÆÅµÂÈ²ä²."
+ TRIG_ANY_SPAWNED_REBELS:0 "	´0®jÕ ¼Ž·p­tÇ ˆÇµÂÈ²ä²."
+ TRIG_NOT_NOTSPAWNED_REBELS:0 "œÍÖXÕÀÉ JÅNÇ ¼Ž·p­tÇ ä²LÇÐÅ tÕù²´ÀÉ JÅLÇ"
+ TRIG_NOTSPAWNED_REBELS:0 "œÍÖXÕÀÉ JÅNÇ ¼Ž·p­tÇ ä²LÇÐÅ tÕù²(´"
+ IS_NOT_SEA_ZONE:0 "!ÇÁÀÐÅ ˆÇLÇ"
+ IS_SEA_ZONE:0 "tÕÁÀÐÅ ˆÇLÇ"
+ DYNASTY_CHANGE:0 "$WHO$ !ÎNÇ $NEW$tÇ(¬) (´\n"
+ IS_NOT_STRONGEST_TRADE_POWER:0 "§Y$WHO$§WNÇ(”²) ø­ ÀÉ)¼ÐÅÁ ¬¥Ç ¬jÕ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAS_NOT_MORE_TRADE_POWER:0 "$WHO|Y$ !ÎNÇ $VAL$%ô¼ä² ÈNÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_SAME_OR_MORE_TRADE_POWER:1 "$WHO|Y$ !ÎNÇ §Y$VAL$%§W tÇÁÀXÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ TOTAL_HAS_NOT_MORE_PRIVATEERS:0 "$WHERE|Y$XÇ ¬Àµ· tÕÈ ÍiÕÉ·NÇ 4»íÅ%¸XÇ §Y$VAL$%§! ô¼ä² ÈµÂÈ²ä²."
+ TOTAL_HAS_SAME_OR_MORE_PRIVATEERS:0 "$WHERE|Y$XÇ ¬Àµ· tÕÈ ÍiÕÉ·NÇ jÍŒÁjÕ 4»íÅ%¸XÇ §Y$VAL$%§! ÂÉNÇ )´È²ä²."
+ HAS_NOT_MORE_PRIVATEERS:0 "$WHO|Y$XÇ ¬Àµ· tÕÈNÇ $VAL$%ô¼ä² ÈNÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_SAME_OR_MORE_PRIVATEERS:0 "$WHO|Y$XÇ ¬Àµ· tÕÈNÇ $VAL$%ô¼ä² Î¹p¬˜° ¬NÇ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_PRIVATEERS_IN_ANY_NODE:0 "$WHO|Y$ !ÎNÇ XÕ˜° tÇÁÀXÇ x±Ü´ÐÅ ¬Àµ·.ÁDÇ Ó¬¬ˆÕµÂÈ²ä²."
+ HAS_NOT_PRIVATEERS_IN_ANY_NODE:0 "$WHO|Y$ !ÎNÇ ´Å² x±Ü´ÐÅÄ³ ¬Àµ·.ÁDÇ Ó¬¬XÕÀÉ JÅXÅµÂÈ²ä²."
+ HAS_NOT_MORE_PRIVATEERS_IN_NODE:0 "$WHERE|Y$ÐÅÁ $WHO|Y$ !ÎNÇ $VAL$%ô¼ä² ÈNÇ ¬Àµ·.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_SAME_OR_MORE_PRIVATEERS_IN_NODE:0 "$WHERE|Y$ÐÅÁ $WHO|Y$ !ÎNÇ $VAL$%ô¼ä² Î¹NÇ ¬Àµ·.ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_ACTIVE_FERVOR:0 "$WHO|Y$ !ÎNÇ ôÅÈ ¨Öü¬|¹ jÖ1ÁTÖˆÕµÂÈ²ä²."
+ HAS_NOT_ACTIVE_FERVOR:0 "$WHO|Y$ !ÎNÇ ôÅÈ ¨Öü¬|¹ jÖ1ÁTÖXÕÀÉ JÅXÅµÂÈ²ä²."
+ IS_STRONGEST_TRADE_POWER:0 "§Y$WHO$§WNÇ(”²) §Y$WHERE$§WÐÅÁ ¬¥Ç ¬jÕ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ IS_NOT_MOST_TRADE_POWER_PROVINCES:0 "§Y$WHO$§WNÇ(”²) ¬¥Ç ¬jÕ ÀÉíÅ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ IS_MOST_TRADE_POWER_PROVINCES:0 "§Y$WHO$§WNÇ(”²) ¬¥Ç ¬jÕ ÀÉíÅ 4»íÅ%¸DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ ANY_TRADE_NODE_TR:0 "´Å²µ 4»íÅ x±Ü´"
+ ANY_ACTIVE_TRADE_NODE_TR:1 "´Å²µ jÖ1ÁTÖ´ 4»íÅ x±Ü´"
+ RECALL_MERCHANT_EFFECT:0 "§Y$COUNTRY$§!XÇ $WHO$tÇ(¬) §Y$WHERE$§!DÇ(|¹)  µ¬°µÂÈ²ä²\n"
+ RULER_MODIFIER_ADDED:1 "$WHERE$ !ÎtÇ '$WHAT|Y$' À¼Ù³XÎ|¹ $TIME$ ¬ÑÉÈ²ä². tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\n"
+ RULER_MODIFIER_ADDED_TIME_DATE:0 "$DATE|Y$ ¶”² $WHO|Y$tÇ(¬) ¬ÀÝ¹`Õ LµL®ÀÉ"
+ RULER_MODIFIER_ADDED_TIME_DURATION:0 "$DURATION|Y$ Ù³HÅ ¶”² $WHO|Y$tÇ(¬) ¬ÀÝ¹`Õ LµL®ÀÉ"
+ RULER_MODIFIER_ADDED_TIME_FOREVER:0 " $WHO|Y$tÇ(¬) ¬ÀÝ¹`Õ LµL®ÀÉ"
+ HAS_TRADE_MODIFIER:0 "$WHO$ !ÎNÇ §Y$WHERE$§!ÐÅ §Y$WHAT$§!DÇ(|¹) ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ HAS_NOT_TRADE_MODIFIER:0 "$WHO$ !ÎNÇ §Y$WHERE$§!ÐÅ §Y$WHAT$§!(DÇ)|¹ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ TRADE_MODIFIER_EFFECT:0 "4»íÅ%¸: $VAL$"
+ TRADE_MODIFIER_EFFECT_PERCENT:0 "4»íÅ%¸ À¼Ù³XÎ: $VAL$"
+ TRADE_MODIFIER_ADDED:1 "$WHO$ !ÎtÇ §Y$WHERE$§!ÐÅÁ §Y$WHAT$§! ($EFFECT$)DÇ(|¹) $DATE$L®ÀÉ »ÅµÂÈ²ä².\n"
+ TRADE_MODIFIER_REMOVED:1 "$WHO$ !ÎtÇ §Y$WHERE$§!ÐÅÁ §Y$WHAT$§! ($EFFECT$)DÇ(|¹) ƒÇµÂÈ²ä².\n"
+ HAVE_CORE_ALREADY:0 "ù²àÂNÇ tÇø» tÇ ÀÉíÅÐÅ TÏ´Å|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ ANY_CORE_PROVINCE_STARTS:0 "´Å²µ TÏ´Å ÀÉíÅ"
+ ANY_CORE_COUNTRY_STARTS:0 "´Å²µ TÏ´Å m­¬"
+ ANY_LOCAL_ENEMY_STARTS:0 "´Å²µ ÀÉíÅÈ Èm­"
+ ANY_HERETIC_PROVINCE_STARTS:0 "´Å²µ tÇè² ÀÉíÅ"
+ ANY_PRIVATEERING_COUNTRY:0 "$NODE$ÐÅ ¬Àµ·.ÁDÇ Ó¬¬jÕ ´Å²µ m­¬"
+ ALL_PRIVATEERING_COUNTRY:0 "$NODE$ÐÅ ¬Àµ·.ÁDÇ Ó¬¬jÕ ¨ºà´ m­¬"
+ TARGET_GETS_NEW_CORE_EFFECT:0 "§Y$WHO$§W !ÎNÇ §Y$NEW$§WÐÅ TÏ´Å|¹ ÖÝ´iÕÈ²ä².\n"
+ TARGET_LOSE_CORE_EFFECT:0 "§Y$WHO$§W !ÎNÇ §Y$LOSE$§WXÇ TÏ´Å|¹ ÁÀäÂiÕÈ²ä².\n"
+ AT_LEAST_ONE_PROVINCE_IN_SUPERREGION:0 "$SUPERREGION$ DÅ³Y¹ÐÅ ÁjÕ XÕ˜° tÇÁÀXÇ ÀÉíÅ"
+ NOT_ONE_PROVINCE_IN_SUPERREGION:0 "$SUPERREGION$ DÅ³Y¹ÐÅ ÁjÕ ÀÉíÅtÇ ÆÅLÇ"
+ ALL_PROVINCES_IN_SUPERREGION:0 "$SUPERREGION$ DÅ³Y¹ÐÅ ÁjÕ ¨ºà´ ÀÉíÅ"
+ NOT_ALL_PROVINCES_IN_SUPERREGION:0 "$SUPERREGION$ DÅ³Y¹XÇ ¨ºà´ ÀÉíÅDÇ ¬ÀÉ JÅLÇ"
+ IS_NOT_IN_THE_SAME_REGION:0 "ä²LÇü¬ ¬NÇ Œ­íÅÐÅ ÇXÎXÕÀÉ JÅLÇ"
+ IS_IN_THE_SAME_REGION:0 "ä²LÇü¬ ¬NÇ Œ­íÅÐÅ ÇXÎhÕ"
+ ANY_NEIGHBOR_PROVINCE_STARTS:0 "´Å²µ xÇÈjÕ ÀÉíÅ"
+ ALL_NEIGHBOR_PROVINCE_STARTS:0 "¨ºà´ xÇÈjÕ ÀÉíÅ"
+ ALL_EMPTY_NEIGHBOR_PROVINCE_STARTS:0 "¨ºà´ D¾´ÅˆÇ”² xÇÈjÕ ÀÉíÅ"
+ ALL_PROVINCE_STARTS:0 "¨ºà´ ÀÉíÅ"
+ ALL_STATE_PROVINCE_STARTS:0 "¨ºà´ üÈ ÀÉíÅ"
+ ALL_OWNED_PROVINCE_STARTS:0 "¨ºà´ ŒÁ.ÇjÕ ÀÉíÅ"
+ ALL_CORE_PROVINCE_STARTS:0 "´Å²µ TÏ´Å ÀÉíÅ"
+ ALL_HERETIC_PROVINCE_STARTS:0 "¨ºà´ tÇè² ÀÉíÅ"
+ ALL_ACTIVE_TRADE_NODE_TR:0 "¨ºà´ jÖ1ÁTÖ´ 4»íÅ x±Ü´"
+ ALL_TRADE_NODE_TR:0 "¨ºà´ 4»íÅ x±Ü´"
+ ALL_RIVAL_COUNTRY_STARTS:0 "¨ºà´ Ë¬ÁÇm­"
+ ALL_THREAT_COUNTRY_STARTS:0 "¨ºà´ ÇÖ"
+ ALL_ELECTOR_STARTS:0 "¨ºà´ .ÁÈÄÖ"
+ ALL_ALLY_STARTS:0 "¨ºà´ Ù³ù¹m­"
+ ALL_LOCAL_ENEMY_STARTS:0 "¨ºà´ ÀÉíÅÈ È"
+ ALL_CORE_COUNTRY_STARTS:0 "¨ºà´ TÏ´Å m­¬"
+ ALL_KNOWN_COUNTRY_STARTS:0 "¨ºà´ LÅ2¸ÄÉ m­¬"
+ ALL_COUNTRIES_STARTS:0 "¨ºà´ m­¬ ($COUNTRY|Y$ ÈxÆ)"
+ ALL_COUNTRIES_INCLUDING_SELF_STARTS:0 "¨ºà´ m­¬"
+ ALL_COALITION_MEMBER_STARTS:0 "¨ºà´ ¼m­¬Ù³ù¹ |ÇÐÆ"
+ HAS_AT_LEAST_COALITION_MEMBERS:0 "È´ÅÄ³ $VAL$ …ºXÇ ¼m­¬Ù³ù¹ l­1ÁÐÆDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_FEWER_COALITION_MEMBERS:0 "$VAL$ …ºô¼ä² ÈNÇ ¼m­¬Ù³ù¹ l­1ÁÐÆDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ achievement_tooltip_colonial_management:0 "È´ÅÄ³ 3¬ tÇÁÀXÇ ÝÂü»ÀÉ ÍÅ³tÇ ù²àÂÐÅ XÇtÕ „Ç…º´ÈÅµÂÈ²ä²."
+ ALL_NEIGHBOR_COUNTRY_STARTS:0 "¨ºà´ tÇÃÆ m­¬"
+ ALL_PROVINCES_IN_REGION:0 "$REGION$ Œ­íÅ(region)ÐÅ ÁjÕ ¨ºà´ ÀÉíÅ."
+ NOT_ALL_PROVINCES_IN_REGION:0 "$REGION$ Œ­íÅ(region)ÐÅ ÁjÕ ¨ºà´ ÀÉíÅNÇ DÅØ²."
+ ALL_PROVINCES_IN_AREA:0 "$AREA$ ÀÉ)¼(area)ÐÅ ÁjÕ ¨ºà´ ÀÉíÅ."
+ NOT_ALL_PROVINCES_IN_AREA:0 "$AREA$ ÀÉ)¼(area)ÐÅ ÁjÕ ¨ºà´ ÀÉíÅNÇ DÅØ²."
+ AT_LEAST_ONE_PROVINCE_IN_AREA:0 "$AREA$ ÀÉ)¼(area)ÐÅ ÁjÕ jÍŒÁjÕ XÕ˜°XÇ ÀÉíÅ."
+ NOT_ONE_PROVINCE_IN_AREA:0 "$AREA$ ÀÉ)¼(area)ÐÅ ÁjÕ ÀÉíÅtÇ ÆÅLÇ."
+ ALL_PROVINCES_IN_CONTINENT:0 "$CONTINENT$ ³Y¹ÐÅ ÁjÕ ¨ºà´ ÀÉíÅ."
+ NOT_ALL_PROVINCES_IN_CONTINENT:0 "$CONTINENT$ ³Y¹ÐÅ ÁjÕ ¨ºà´ ÀÉíÅNÇ DÅØ²."
+ AT_LEAST_ONE_PROVINCE_IN_PROVINCEGROUP:0 "$PROVINCEGROUP$ ÀÉíÅ ø­ù¸ÐÅ ÁjÕ jÍŒÁjÕ XÕ˜°XÇ ÀÉíÅ."
+ NOT_ONE_PROVINCE_IN_PROVINCEGROUP:0 "$PROVINCEGROUP$ ÀÉíÅ ø­ù¸ÐÅ ÁjÕ ÀÉíÅtÇ ÆÅLÇ."
+ ALL_PROVINCES_IN_PROVINCEGROUP:0 "$PROVINCEGROUP$ ÀÉíÅ ø­ù¸ÐÅ ÁjÕ ¨ºà´ ÀÉíÅ."
+ NOT_ALL_PROVINCES_IN_PROVINCEGROUP:0 "$PROVINCEGROUP$ ÀÉíÅ ø­ù¸ÐÅ ÁjÕ ¨ºà´ ÀÉíÅNÇ DÅØ²."
+ UNIT_TYPE_IS_NOT:0 "Ž´³ .ÇÖtÇ $NAME$ÐÅ tÕù²´ÀÉ JÅLÇ"
+ UNIT_TYPE_IS:0 "Ž´³ .ÇÖtÇ $NAME$ÐÅ tÕù²(´"
+ HAVE_LESS_GLOBAL_MODIFIER:0 "$VALUE$ô¼ä² ÈNÇ $MODIFIER$ ô¼.Ç"
+ HAVE_MORE_GLOBAL_MODIFIER:0 "$VALUE$ô¼ä² Î¹p¬˜° ¬NÇ $MODIFIER$ ô¼.Ç"
+ HAVE_LESS_LOCAL_MODIFIER:0 "$VALUE$ô¼ä² ÈNÇ $MODIFIER$ ô¼.Ç"
+ HAVE_MORE_LOCAL_MODIFIER:0 "$VALUE$ô¼ä² Î¹p¬˜° ¬NÇ $MODIFIER$ ô¼.Ç"
+ IS_THREATENED_BY:0 "ä²LÇXÇ ÇÖDÇ ¼à¬ ˆÇLÇ"
+ NOT_IS_THREATENED_BY:0 "ä²LÇXÇ ÇÖDÇ ¼à¬ ˆÇÀÉ JÅLÇ"
+ TOTAL_BASE_TAX_LESS_THAN:0 "0®ø¼ 8Á®tÇ ä²LÇô¼ä² ÈLÇ"
+ TOTAL_BASE_TAX_MORE_THAN:0 "0®ø¼ 8Á®tÇ ä²LÇô¼ä² Î¹LÇ"
+ HAS_CLIMATE:0 "§Y$CLIMATE$§! 0®ÄÖ|¹ ¬ÐÉ"
+ HAS_NOT_CLIMATE:0 "§Y$CLIMATE$§! 0®ÄÖ|¹ ¬ÀÉà¬ ˆÇÀÉ JÅLÇ"
+ HAS_WINTER:0 "§Y$WINTER$§!DÇ(|¹) ¬ÐÉ"
+ HAS_NOT_WINTER:0 "§Y$WINTER$§!DÇ(|¹) ¬ÀÉà¬ ˆÇÀÉ JÅLÇ"
+ NUMBER_OF_TRADE_COMPANIES_LESS_THAN:0 "$VALUE|Y$ ø»Ì¹XÇ 4»íÅ ŒÖ¬À"
+ NUMBER_OF_TRADE_COMPANIES_AT_LEAST:1 "$VALUE|Y$ tÇÁÀXÇ 4»íÅ ŒÖ¬À|¹ ¬ÐÉ"
+ NOT_OWNED_BY_TRADE_COMPANY:0 "4»íÅ ŒÖ¬ÀÐÅ ÁXÕÀÉ JÅLÇ\n"
+ OWNED_BY_TRADE_COMPANY:0 "4»íÅ ŒÖ¬ÀÐÅ ÁhÕ\n"
+ TRADE_COMPANY_SIZE_LESS_THAN:0 "4»íÅ ŒÖ¬ÀXÇ lÐ0®¬ $VALUE|Y$ô¼ä² ‘ÇLÇ"
+ TRADE_COMPANY_SIZE_AT_LEAST:0 "4»íÅ ŒÖ¬ÀXÇ lÐ0®¬ $VALUE|Y$ô¼ä² |Ð"
+ IS_NOT_IN_TRADE_COMPANY_REGION:0 "4»íÅ ŒÖ¬À Œ­íÅ $REGION|Y$ÐÅ ˆÇÀÉ JÅLÇ"
+ IS_IN_TRADE_COMPANY_REGION:0 "4»íÅ ŒÖ¬À Œ­íÅ $REGION|Y$ÐÅ ˆÇLÇ"
+ NUMBER_OF_TRADE_COMPANIES_IN_REGION_SIZE_LESS_THAN:0 "tÕù² Œ­íÅXÇ 4»íÅ ŒÖ¬À¬ $VALUE|Y$ô¼ä² ÈLÇ"
+ NUMBER_OF_TRADE_COMPANIES_IN_REGION_AT_LEAST:0 "tÕù² Œ­íÅXÇ 4»íÅ ŒÖ¬À¬ $VALUE|Y$ô¼ä² |Ð"
+ NOT_ONE_PROVINCE_IN_TRADE_COMPANY_REGION:0 "$REGION$ 4»íÅ ŒÖ¬À Œ­íÅÐÅ ÁjÕ ÀÉíÅ ÆÅLÇ"
+ AT_LEAST_ONE_PROVINCE_IN_TRADE_COMPANY_REGION:0 "$REGION$ 4»íÅ ŒÖ¬À Œ­íÅÐÅ ÁjÕ jÍŒÁjÕ XÕ˜°XÇ ÀÉíÅ"
+ NOT_ALL_PROVINCES_IN_TRADE_COMPANY_REGION:0 "$REGION$ 4»íÅ ŒÖ¬À Œ­íÅÐÅ ÁjÕ ¨ºà´ ÀÉíÅNÇ DÅØ²"
+ ALL_PROVINCES_IN_TRADE_COMPANY_REGION:0 "$REGION$ 4»íÅ ŒÖ¬À Œ­íÅÐÅ ÁjÕ ¨ºà´ ÀÉíÅ"
+ IS_CONSTRUCTING_TRIGGER:0 "Ö¬Ç $TYPE$„Ç."
+ IS_NOT_CONSTRUCTING_TRIGGER:0 "Ö¬Ç $TYPE$tÇ(¬) DÅØ²."
+ IS_PERMANENT_ACCEPTED_CULTURE:0 "$CULTURE|Y$NÇ(”²) Æl­È<Çj¸ Â©Æ´ 8»TÖ…ÇÈ²ä²."
+ IS_NOT_PERMANENT_ACCEPTED_CULTURE:0 "$CULTURE|Y$NÇ(”²) Æl­È<Çj¸ Â©Æ´ 8»TÖ¬ DÅÙ²È²ä²."
+ MERCHANT_CONSTRUCTION:0 "4»íÅ"
+ DIPLOMAT_CONSTRUCTION:0 "ÖÁÀ"
+ ARMY_CONSTRUCTION:0 "¨ºÑ¼"
+ NAVY_CONSTRUCTION:0 "hÕ³ t¬pÈ"
+ BUILDING_CONSTRUCTION:0 "t¬<» t¬2Á"
+ MISSIONARY_CONSTRUCTION:0 "¬…È"
+ CORE_CONSTRUCTION:0 "TÏ´Å ÝÀ1Á"
+ CULTURE_CONSTRUCTION:0 "8»TÖ À¼Ë¬"
+ GREAT_PROJECT_CONSTRUCTION:0 "p¬³ Õj¸È¸Ò ”ÍÄÉ"
+ CANAL_CONSTRUCTION:0 "ÝÀ°À èÍŒÁ"
+ ANY_CONSTRUCTION:0 "4»¸Å¬|¹ t¬2Á"
+ HAVE_LESS_THAN_X_BUILDINGS:0 "$VALUE$ ø»Ì¹XÇ $BUILDING$ ô¼.Ç"
+ HAVE_MORE_THAN_X_BUILDINGS:0 "$VALUE$ tÇÁÀXÇ $BUILDING$ ô¼.Ç"
+ HAVE_LESS_THAN_X_SUBJECTS:0 "$VALUE$ô¼ä² ÈNÇ $SUBJECT$ ô¼.Ç"
+ HAVE_MORE_THAN_X_SUBJECTS:0 "$VALUE$ô¼ä² Î¹p¬˜° ¬NÇ $SUBJECT$ ô¼.Ç"
+ OWNS_CORE_PROVINCE:0 "TÏ´Å¬ ÝÀ1Á´ ŒÁ.Ç ÀÉíÅ:"
+ NOT_OWNS_CORE_PROVINCE:0 "TÏ´Å¬ ÝÀ1Á´ÀÉ JÅNÇ ŒÁ.Ç ÀÉíÅ:"
+ RULER_AGE_LESS_THAN:0 "µÑXÎÇXÇ ˜°tÇ¬ ä²LÇô¼ä² ÈLÇ"
+ RULER_AGE_AT_LEAST:0 "µÑXÎÇXÇ ˜°tÇ¬ ä²LÇô¼ä² Î¹LÇ"
+ HAS_GREAT_PROJECT:1 "³Ü­¨º Ä¬Ö $NAME|Y$ ô¼.Ç"
+ HAS_NOT_GREAT_PROJECT:1 "³Ü­¨º Ä¬Ö $NAME|Y$ ø»ô¼.Ç"
+ START_GREAT_PROJECT:0 "p¬³ Õj¸È¸Ò $NAME|Y$DÇ(|¹) ÜÂ‘ÇhÕ."
+ CONSTRUCTION_DELAYED:0 "$NAME$NÇ(”²) $DAYS|Y$|Ç ¦²Œ¬ DÆÌ¸.´ ƒ¬…ÇÈ²ä²."
+ CONSTRUCTION_HURRIED:0 "$NAME$NÇ(”²) $DAYS|Y$|Ç h¾¬¹ DÆÌ¸.´ ƒ¬…ÇÈ²ä²."
+ CONSTRUCTION_PROGRESS_AT_LEAST:0 "ÝÀ°ÀtÇ $VAL|%$ tÇÁÀ Ë¬ü¬(´"
+ CONSTRUCTION_PROGRESS_LESS_THAN:0 "ÝÀ°ÀtÇ $VAL|%$ tÇÁÀ Ë¬ü¬´ÀÉ JÅLÇ"
+ CONSTRUCTION_CANCELED:0 "ÝÀ°ÀtÇ èÍŒÁ.´ ƒ¬…ÇÈ²ä²."
+ ADD_PERMANENT_ACCEPTED_CULTURE:0 "$CULTURE|Y$tÇ(¬) Æl­ÈxÇ Â©Æ 8»TÖ¬ )´È²ä².\n"
+ REMOVE_PERMANENT_ACCEPTED_CULTURE:0 "$CULTURE|Y$tÇ(¬) Æl­ÈxÇ Â©Æ 8»TÖÐÅÁ Èp¬)´È²ä².\n"
+ SAVE_EVENT_TARGET_EFFECT:0 "$NAME|Y$j¸ $TARGET|Y$(DÇ)|¹ l­iÕÈ²ä²"
+ HAS_NOT_REBEL_FACTION:0 "$FACTION|Y$ ÓŒ¼XÇ ¼p­DÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²"
+ HAS_REBEL_FACTION:0 "$FACTION|Y$ ÓŒ¼XÇ ¼p­DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²"
+ NOT_GUARANTEED_BY:0 "$WHO|Y$ ÐÅ XÇtÕ Å³Ë¹DÇ ô¼¥Ç¼ÀÉ JÅµÂÈ²ä²"
+ GUARANTEED_BY:0 "$WHO|Y$ÐÅ XÇtÕ Å³Ë¹DÇ ô¼¥Ç ¼µÂÈ²ä²"
+ HAS_NOT_GUARANTEED:0 "$WHO|Y$XÇ Å³Ë¹DÇ ô¼¥ÇXÕÀÉ JÅµÂÈ²ä²"
+ HAS_GUARANTEED:0 "$WHO|Y$XÇ Å³Ë¹DÇ ô¼¥ÇiÕÈ²ä²"
+ SWITCH_TAG:0 "$TAG|Y$j¸ Õ¸tÇ iÕÈ²ä².\n"
+ REBELS:0 "¼Ž·p­"
+ CLEAR_SCRIPTED_PERSONALITIES:0 "m­¬ÐÅÁ ¬1Á Èp¬´ÈÅµÂÈ²ä².(2ÁÈ …º9¸)"
+ RULER_HAS_PERSONALITY:0 "$NAME$(NÇ)”² $PERSONALITY$…ÇÈ²ä²\n"
+ RULER_HAS_NOT_PERSONALITY:0 "$NAME$(NÇ)”² $PERSONALITY$tÇ(¬) DÅÙ²È²ä²\n"
+ HEIR_HAS_PERSONALITY:0 "ÄÖÄ¬Ç '$NAME$'(NÇ)”² $PERSONALITY$ …ÇÈ²ä²\n"
+ HEIR_HAS_NOT_PERSONALITY:0 "ÄÖÄ¬Ç '$NAME$'(NÇ)”² $PERSONALITY$tÇ(¬) DÅÙ²È²ä²\n"
+ CONSORT_HAS_PERSONALITY:0 "0¼°ÆÇ '$NAME$'NÇ(”²) $PERSONALITY$…ÇÈ²ä²\n"
+ CONSORT_HAS_NOT_PERSONALITY:0 "0¼°ÆÇ '$NAME$'NÇ(”²) $PERSONALITY$tÇ(¬) DÅÙ²È²ä²\n"
+ ADD_RULER_PERSONALITY:0 "$NAME$(NÇ)”² Ö¬Ç $PERSONALITY|Y$ …ÇÈ²ä².\n"
+ REMOVE_RULER_PERSONALITY:0 "$NAME$(NÇ)”² T³ tÇÁÀ $PERSONALITY|Y$tÇ(¬) DÅÙ²È²ä².\n\n"
+ KILL_CONSORT_DESCRIPTION:0 "$COUNTRYNAME$XÇ $CONSORTNAME|Y$tÇ(¬) ´ÀtÕù²ˆÕµÂÈ²ä².\n"
+ REMOVE_CONSORT_DESCRIPTION:0 "$CONSORTNAME$tÇ(¬) $COUNTRYNAME$ ­ÈÐÅÁ ÓÊ¨¬¬°µÂÈ²ä².\n"
+ WARSCORE_AGAINST_LESS_THAN:0 "$WHO$ÐÅ ³mÕXÕ”² ÈÁÇ ÈÂ¬ $SCORE|Y%$ô¼ä² ®°LÇ"
+ WARSCORE_AGAINST_MORE_THAN:0 "$WHO$ÐÅ ³mÕXÕ”² ÈÁÇ ÈÂ¬ $SCORE|Y%$ô¼ä² ’±LÇ"
+ NOT_HAS_HARSH_TREATMENT:0 "¬9ÖjÕ pÈXÎ|¹ èÍXÕÀÉ JÅLÇ"
+ HAS_HARSH_TREATMENT:0 "¬9ÖjÕ pÈXÎ|¹ èÍhÕ"
+ ADD_TRUCE_WITH_EFFECT:0 "$WHO|Y$NÆ ÉÓTÖ ÖÈ ”Í¬"
+ NOT_IS_REPUBLIC:0 "õ¬TÖm­tÇ DÅØ²"
+ IS_REPUBLIC:0 "õ¬TÖm­„Ç"
+ HAS_DEITY:0 "$DEITY|Y$DÇ(|¹) 0µ„¹"
+ NOT_HAS_DEITY:0 "$DEITY|Y$(DÇ)|¹ 0µt¹à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ CHANGE_DEITY_EFFECT:1 "üÈàÂDÇ $NAME|Y$ (<Ç)j¸ À¼Ë¬($MODIFIER$)"
+ IN_LEAGUE:0 "§Y$RELIGION$ ðÅù¹§!ÐÅ ÁtÕ ˆÇµÂÈ²ä²!"
+ NOT_IN_LEAGUE:0 "§Y$RELIGION$ ðÅù¹§!ÐÅ ÁtÕ ˆÇÀÉ JÅµÂÈ²ä²!"
+ HAS_OPINION_MOD:0 "­Ä¬Ä³ À¼Ù³XÎ|¹ ¬ÐÉ"
+ HAS_NOT_OPINION_MOD:0 "­Ä¬Ä³ À¼Ù³XÎ|¹ ¬ÀÉÀÉ JÅLÇ"
+ HAS_NO_SECONDARY_RELIGION:0 "P´ ˆ¼øÉ …ÈP­|¹ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²"
+ HAS_A_SECONDARY_RELIGION:0 "P´ ˆ¼øÉ …ÈP­|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²"
+ SECONDARY_RELIGION_IS:0 "§Y$WHO$§! !ÎNÇ §Y$NAME$§! ÿ»LÇDÇ P´ ˆ¼øÉ …ÈP­j¸ ¬ÀÉà¬ ˆÇµÂÈ²ä²"
+ SECONDARY_RELIGION_ISNOT:0 "§Y$WHO$§! !ÎNÇ §Y$NAME$§! ÿ»LÇDÇ P´ ˆ¼øÉ …ÈP­j¸ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²"
+ SECONDARY_RELIGION_PROV_IS:0 "§Y$WHO$§!XÇ …ÈP­”² §Y$NAME$§! <ÖP­…ÇÈ²ä²"
+ SECONDARY_RELIGION_PROV_ISNOT:0 "§Y$WHO$§!XÇ …ÈP­”² §Y$NAME$§! <ÖP­¬ DÅÙ²È²ä²"
+ HAS_MATCHING_RELIGION:0 "§Y$WHO$§!XÇ …ÈP­˜° <ÖP­”² §Y$REL$§! …ÇÈ²ä²."
+ HAS_NOT_MATCHING_RELIGION:0 "§Y$WHO$§!XÇ …ÈP­˜° <ÖP­”² §Y$REL$§!tÇ(¬) DÅÙ²È²ä²."
+ HAS_MATCHING_RELIGION_COUNTRY:1 "§Y$WHO$§!XÇ …ÈP­˜° <ÖP­˜° pÈTÖ´ …ÈP­”² §Y$OTHER$§!XÇ …ÈP­˜° <ÖP­NÆ ¬µÂÈ²ä²."
+ HAS_NOT_MATCHING_RELIGION_COUNTRY:1 "§Y$WHO$§!XÇ …ÈP­˜° <ÖP­˜° pÈTÖ´ …ÈP­”² §Y$OTHER$§!XÇ …ÈP­˜° <ÖP­NÆ ä²…¹È²ä²."
+ HAS_BEEN_DISCOVERED_YEARS:0 " È´ÅÄ³ $YEARS$ D±ÈÐÅ ¼¬¬´ÈÅµÂÈ²ä²."
+ HAS_NOT_BEEN_DISCOVERED_YEARS:0 " È´ÅÄ³ $YEARS$ D± ÈÐÅ ¼¬¬´ÀÉ JÅXÅµÂÈ²ä²."
+ DOES_NOT_HAVE_ATTITUDE_ABOUT:0 "§Y$WHO$§!ÐÅ ³tÕÁ §Y$ATTITUDE$§!XÇ ÜÐÄ³|¹ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²"
+ HAS_ATTITUDE_ABOUT:0 "§Y$WHO$§!ÐÅ ³tÕÁ §Y$ATTITUDE$§!XÇ ÜÐÄ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²"
+ IS_NOT_PERMANENT_COUNTRY_CLAIM:0 "Æl­ÈxÇ $COUNTRYADJ$ tÐ¸„ÇtÇ DÅÙ²È²ä²."
+ IS_PERMANENT_COUNTRY_CLAIM:0 "Æl­ÈxÇ $COUNTRYADJ$ tÐ¸„Ç …ÇÈ²ä²."
+ DOESNT_HAVE_PERMANENT_CLAIM_ON:0 "ä²LÇ ÀÉíÅÐÅ Æl­ÈxÇ tÐ¸„ÇDÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAS_PERMANENT_CLAIM_ON:0 "ä²LÇ ÀÉíÅÐÅ Æl­ÈxÇ tÐ¸„ÇDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ INCREASE_DISASTER_PROGRESS_EFFECT:0 "§Y$DISASTER$§!ÐÅ ­jÕ ¬ÇYÅ ÄÉ‰ÕÄ³¬ §R$VALUE$§!Ì¹|Ð É¬iÕÈ²ä²."
+ DECREASE_DISASTER_PROGRESS_EFFECT:0 "§Y$DISASTER$§!ÐÅ ³jÕ ¬ÇYÅ ÄÉ‰ÕÄ³¬ §G$VALUE$§!Ì¹|Ð ¬ŒÁiÕÈ²ä²."
+ DOES_NOT_HAVE_DISASTER_PROGRESS:0 "$DISASTER|Y$ ÐÅ ³jÕ ¬ÇYÅ ÄÉ‰ÕÄ³¬ $VALUE|Y$ ô¼ä² ÈµÂÈ²ä²."
+ HAS_DISASTER_PROGRESS:0 "$DISASTER|Y$ ÐÅ ³jÕ ¬ÇYÅ ÄÉ‰ÕÄ³¬ È´ÅÄ³ $VALUE|Y$ tÇÁÀ…ÇÈ²ä²."
+ IS_ADMIRAL:0 "NÇ(”²) ÈÅ³tÇä²"
+ IS_GENERAL:0 "NÇ(”²) ¥Çp­tÇä²"
+ HAS_HAREM:0 "NÇ(”²) XÕ¸DÇ ¬ÄÉä²"
+ CHANGE_CONSORT_REGENT_TO_RULER_EFFECT_DESC:0 "$CONSORTREGENTNAME|Y$tÇ(¬) T³ tÇÁÀ -ÁÈtÇ DÅÈ²|· DÆÈjÕ µÑXÎÇ¬ .´ ƒ¬…ÇÈ²ä².\n"
+ CHANGE_CONSORT_REGENT_TO_RULER_EFFECT_LEGITIMACY_DESC:0 "$CONSORTREGENTNAME|Y$tÇ(¬) T³ tÇÁÀ -ÁÈtÇ DÅÈ²|· DÆÈjÕ µÑXÎÇ¬ .´ ƒ¬…ÇÈ²ä². ø­XÇ ÈµÑ1ÁNÇ $NEWLEGITIMACY|Y$…ÇÈ²ä².\n"
+ HAS_SAVED_EVENT_TARGET:0 "tÇ²¼¸Ò ³ÁÀDÇ È¥ÇhÕ"
+ HAS_NOT_SAVED_EVENT_TARGET:0 "È¥Ç´ tÇ²¼¸Ò ³ÁÀtÇ ÆÅLÇ"
+ HAS_GAME_STARTED:0 "Œ¬„ÇtÇ ÜÂ‘Ç´ÈÅµÂÈ²ä².\n"
+ HAS_GAME_NOT_STARTED:0 "Œ¬„ÇtÇ ÜÂ‘Ç´ÀÉ JÅXÅµÂÈ²ä².\n"
+ HEIR_CAN_BE_CHILD_OF_CONSORT:0 "ÄÖÄ¬Ç”² 0¼°ÆÇXÇ DÅtÇ|Ç Â ˆÇµÂÈ²ä².\n"
+ HEIR_CAN_NOT_BE_CHILD_OF_CONSORT:0 "ÄÖÄ¬Ç”² DÅÈ¹ 0¼°ÆÇXÇ DÅtÇ¬ DÅÐ² ƒ¬…ÇÈ²ä².\n"
+ NEIGHBOR_TECH_DISCOUNT_LESS_THAN:0 "tÇÃÆm­¬j¸ xÇjÕ 0®.Â D¾©Æ ¬ŒÁ É ¬¥Ç ’±NÇ ƒ¬tÇ §Y$VAL$%§!ô¼ä² ‘ÇµÂÈ²ä²."
+ NEIGHBOR_TECH_DISCOUNT_IS_AT_LEAST:0 "tÇÃÆm­¬j¸ xÇjÕ 0®.Â D¾©Æ ¬ŒÁ É ¬¥Ç ’±NÇ ƒ¬tÇ §Y$VAL$%§!ô¼ä² lÐp¬˜° ¬µÂÈ²ä²."
+ IS_RELIGION_GRANT_COLONIAL_CLAIM:0 "NÇ(”²) $RELIGION|Y$ …ÈP­XÇ Â¥Ç<Çj¸Ž´0Ñ $COUNTRY|Y$ÐÅŒ¬ ÝÂü»ÀÉ tÐ¸„Ç<Çj¸ üÈ´ÅLÈµÂÈ²ä²."
+ IS_NOT_RELIGION_GRANT_COLONIAL_CLAIM:0 "NÇ(”²) $RELIGION|Y$ …ÈP­XÇ Â¥Ç<Çj¸Ž´0Ñ $COUNTRY|Y$ÐÅŒ¬ ÝÂü»ÀÉ tÐ¸„Ç<Çj¸ üÈ´ÅÀÉÀÉ JÅXÅµÂÈ²ä²."
+ IS_ANY_RELIGION_GRANT_COLONIAL_CLAIM:0 "NÇ(”²) ÝÂü»ÀÉ tÐ¸„Ç<Çj¸ ¨ºà´ m­¬ÐÅ üÈ´ÅLÈµÂÈ²ä²."
+ IS_NOT_ANY_RELIGION_GRANT_COLONIAL_CLAIM:0 "NÇ(”²) ÝÂü»ÀÉ tÐ¸„Ç<Çj¸ ¨ºà´ m­¬ÐÅ üÈ´ÅÀÉÀÉ JÅXÅµÂÈ²ä²."
+ HAVENT_TERRITORIAL_CORE:0 "ä²LÇ ÀÉíÅÐÅ ÉüÈ TÏ´Å¬ ÆÅµÂÈ²ä²:"
+ HAVE_TERRITORIAL_CORE_IN:0 "ä²LÇ ÀÉíÅÐÅ ÉüÈ TÏ´Å¬ ˆÇµÂÈ²ä²:"
+ IS_NOT_COUNTRY_TERRITORIAL_CORE:0 "NÇ(”²) $COUNTRYADJ$XÇ ÉüÈ TÏ´Å¬ DÅÙ²È²ä²"
+ IS_COUNTRY_TERRITORIAL_CORE:0 "NÇ(”²) $COUNTRYADJ$XÇ ÉüÈ TÏ´Å…ÇÈ²ä²"
+ HAVENT_STATE_CORE:0 "ä²LÇ ÀÉíÅÐÅ ÈÝÂ üÈ TÏ´Å¬ ÆÅµÂÈ²ä²:"
+ HAVE_STATE_CORE_IN:0 "ä²LÇ ÀÉíÅÐÅ ÈÝÂ üÈ TÏ´Å¬ ˆÇµÂÈ²ä²:"
+ IS_NOT_COUNTRY_STATE_CORE:0 "NÇ(”²) $COUNTRYADJ$XÇ ÈÝÂ üÈ TÏ´Å¬ DÅÙ²È²ä²"
+ IS_COUNTRY_STATE_CORE:0 "NÇ(”²) $COUNTRYADJ$XÇ ÈÝÂ üÈ TÏ´Å…ÇÈ²ä²"
+ NEW_TERRITORIAL_CORE_EFFECT_EMPEROR:0 "iÖÈ”² §Y$NEW$§WÐÅ ³jÕ ÉüÈ TÏ´Å|¹ ÖÝ´iÕÈ²ä².\n"
+ TARGET_GETS_NEW_TERRITORIAL_CORE_EFFECT:0 "§Y$WHO$§WtÇ(¬) §Y$NEW$§WÐÅ ³jÕ ÉüÈ TÏ´Å|¹ ÖÝ´iÕÈ²ä².\n\n"
+ dlc_or_feudalism_tooltip:1 "NÇ(”²) …ÈP­|¹ ¬ÖˆÕp¬˜° 	´t¬üÈXÇ|¹ Â©ÆˆÕµÂÈ²ä²"
+ WAR_START_DATE:0 "¬ÜÂ|Ç tÇÄÖ"
+ WAR_DURATION_DAYS:0 "0®¬ (|Ç): $VAL|Y$"
+ WAR_GOAL_PROVINCE:0 "ÈÁÇ ©ºjÔ ÀÉíÅ: $VAL|Y$"
+ IS_IN_WAR_WARSCORE_MORE:0 "ÈÁÇÈÂ¬ $VAL|Y$ tÇÁÀ"
+ IS_IN_WAR_WARSCORE_LESS:0 "ÈÁÇÈÂ¬ $VAL|Y$ ø»Ì¹"
+ DEFENDER_WARLEADER:0 ")¼´Å!Î ÈÁÇ ÀÉÄ³Ç"
+ ATTACKER_WARLEADER:0 "õ¬©¬!Î ÈÁÇ ÀÉÄ³Ç"
+ CELESTIAL_REFORM_LEVEL_NOT:0 "¬Ö: $REFORMNAME|Y$ ”² ÈÈ´ÀÉ µÑü¬´ÀÉ JÅXÅä²."
+ CELESTIAL_REFORM_LEVEL:0 "¬Ö: $REFORMNAME|Y$ ”² µÑü¬´ÈÅä²."
+ SET_CELESTIAL_EMPEROR_DESC:0 "$COUNTRYNAME$NÇ(”²) œÌÇ¬ )´È²ä².\n"
+ DISMANTLE_CELESTIAL_EMPIRE_DESC:0 "ÉTÖÈm­NÇ tÕ´Ì´ÈÅµÂÈ²ä².\n"
+ REFORM_CELESTIAL_EMPIRE_DESC:0 "ÉTÖ Èm­tÇ ¬ÇÖ1Á ´ÈÅµÂÈ²ä².\n"
+ ADD_MANDATE_DESC:0 "œÌ…º $MANDATECHANGE|Y$ $DIRECTION$.\n"
+ SET_MANDATE_DESC:0 "œÌ…ºtÇ $MANDATEVALUE|Y$tÇ )´È²ä².\n"
+ IS_SUBJECT_TYPE:0 "$SUBJECTTYPE$ .ÇÖXÇ …ÈÁm­„Ç.\n"
+ IS_NOT_SUBJECT_TYPE:1 "NÇ(”²) $SUBJECTTYPE$tÇ(¬) DÅÙ²È²ä².\n"
+ HAVE_LESS_LEADERS_THAN:0 "ÀÉ×­XÇ Â¬ $VALUE|Y$ ô¼ä² ÈLÇ"
+ HAVE_MORE_LEADERS_THAN:0 "ÀÉ×­XÇ Â¬ $VALUE|Y$ ô¼ä² Î¹p¬˜° ¬LÇ"
+ USES_ISOLATIONISM:0 "$COUNTRY|Y$ !ÎNÇ à¬Ë¹üÈXÇ|¹ tÇ©ÆiÕÈ²ä².\n"
+ USES_NOT_ISOLATIONISM:0 "$COUNTRY|Y$ !ÎNÇ à¬Ë¹üÈXÇ|¹ tÇ©ÆXÕÀÉ JÅµÂÈ²ä².\n"
+ ISOLATIONISM_AT_LEAST:0 "à¬Ë¹üÈXÇ ÂÉtÇ $VALUE|Y$ô¼ä² ’±p¬˜° ¬µÂÈ²ä².\n"
+ ISOLATIONISM_LESS_THAN:0 "à¬Ë¹üÈXÇ ÂÉtÇ $VALUE|Y$ô¼ä² ®°µÂÈ²ä².\n"
+ INCIDENT_VARIABLE_VALUE:0 "¬Àt¬ $INCIDENTNAME|Y$ ¬tÇ È´ÅÄ³ $VALUE|Y$ tÇ´Å|Å iÕÈ²ä²\n"
+ INCIDENT_VARIABLE_VALUE_NOT:0 "¬Àt¬ $INCIDENTNAME|Y$ ¬tÇ $VALUE|Y$ ô¼ä² ‘ÇDÅ|Å iÕÈ²ä²\n"
+ IS_INCIDENT_POTENTIAL:0 "¬Àt¬ $INCIDENTNAME|Y$NÇ(”²) "$COUNTRYNAME|Y$"XÇ ø»˜·ÐÅ ¼ÝÀ`Õ Â ˆÇµÂÈ²ä².\n"
+ IS_INCIDENT_POTENTIAL_NOT:0 "¬Àt¬ $INCIDENTNAME|Y$NÇ(”²) $COUNTRYNAME|Y$XÇ ø»˜·ÐÅ ¼ÝÀ`Õ Â ÆÅµÂÈ²ä².\n"
+ IS_INCIDENT_ACTIVE:0 "¬Àt¬ $INCIDENTNAME|Y$NÇ(”²) $COUNTRYNAME|Y$ÐÅÁ ¼ÝÀˆÕµÂÈ²ä².\n"
+ IS_INCIDENT_ACTIVE_NOT:0 "¬Àt¬ $INCIDENTNAME|Y$NÇ(”²) $COUNTRYNAME|Y$ÐÅÁ ¼ÝÀXÕÀÉ JÅXÅµÂÈ²ä².\n"
+ IS_INCIDENT_ACTIVE_ANY:0 "$COUNTRYNAME|Y$ÐÅÁ ´Å²µ ¬Àt¬tÇ ¼ÝÀ É…ÇÈ²ä².\n"
+ IS_INCIDENT_ACTIVE_ANY_NOT:0 "$COUNTRYNAME|Y$ÐÅÁ DÅ4»ð· ¬Àt¬Ä³ ¼ÝÀ ÉtÇÀÉ JÅµÂÈ²ä².\n"
+ IS_INCIDENT_PAST:1 "¬Àt¬ $INCIDENTNAME|Y$tÇ(¬) $COUNTRYNAME|Y$ÐÅ ¼ÝÀˆÕµÂÈ²ä².\n"
+ IS_INCIDENT_PAST_NOT:1 "¬Àt¬ $INCIDENTNAME|Y$tÇ(¬) $COUNTRYNAME|Y$ÐÅ ¼ÝÀXÕÀÉ JÅXÅµÂÈ²ä².\n"
+ IS_INCIDENT_POSSIBLE:1 "¬Àt¬ $INCIDENTNAME|Y$tÇ(¬) $COUNTRYNAME|Y$ÐÅ ¼ÝÀ`Õ Â ˆÇµÂÈ²ä².\n"
+ IS_INCIDENT_POSSIBLE_NOT:1 "¬Àt¬ $INCIDENTNAME|Y$NÇ(”²) $COUNTRYNAME|Y$ÐÅ ¼ÝÀ`Õ Â ÆÅµÂÈ²ä².\n"
+ ADD_ISOLATIONISM_EFFECT:0 "à¬Ë¹üÈXÇ ÂÉtÇ $VALUE|Y$Ì¹|Ð É¬iÕÈ²ä².\n"
+ ADD_ISOLATIONISM_EFFECT_REDUCE:0 "à¬Ë¹üÈXÇ ÂÉtÇ $VALUE|Y$Ì¹|Ð ¬ŒÁiÕÈ²ä².\n"
+ SET_ISOLATIONISM_EFFECT:0 "à¬Ë¹üÈXÇ ÂÉtÇ $VALUE|Y$<Çj¸ À¼iÕÈ²ä².\n"
+ ADD_INCIDENT_VARIABLE_VALUE_EFFECT:0 "$VALUE|Y$|¹ $INCIDENTNAME|Y$ÐÅ T³iÕÈ²ä².\n"
+ SET_INCIDENT_VARIABLE_VALUE_EFFECT:0 "$INCIDENTNAME|Y$DÇ(|¹) $VALUE|Y$<Ç(j¸) ÀÉÈiÕÈ²ä².\n"
+ END_INCIDENT_EFFECT:0 "¬Àt¬ $INCIDENTNAME|Y$tÇ(¬) k°©°È²ä².\n"
+ ADD_HARMONY_EFFECT:0 "pÈTÖ $VALUE$ $DIRECTION$.\n"
+ ADD_HARMONIZATION_PROGRESS_EFFECT:0 "…ÈP­È pÈTÖ ÄÉ‰ÕÄ³ $VALUE$ $DIRECTION$\n"
+ HARMONY_LESS_THAN:0 "pÈTÖ¬ §Y$VAL$%§!ô¼ä² ®°LÇ"
+ HARMONY_AT_LEAST:0 "pÈTÖ¬ §Y$VAL|Y$%§!ô¼ä² ’±p¬˜° ¬LÇ"
+ HARMONIZATION_PROGRESS_LESS_THAN:0 "pÈTÖ ÄÉ‰ÕÄ³¬ §Y$VAL$%§!ô¼ä² ®°LÇ"
+ HARMONIZATION_PROGRESS_AT_LEAST:0 "pÈTÖ ÄÉ‰ÕÄ³¬ §Y$VAL$%§!ô¼ä² ’±p¬˜° ¬LÇ"
+ ADD_ACTIVE_POLICY_EFFECT:0 "§Y$POLICY$§! ÈEÌ ÈÈ"
+ HAD_NOT_ACTIVE_POLICY_TRIGGER:0 "$POLICY|Y$ ÈEÌtÇ ÜÂ‰Õ´ ÜÂ¬tÇ $DAYS|Y$|Çô¼ä² ÈLÇ"
+ HAD_ACTIVE_POLICY_TRIGGER:0 "$POLICY|Y$ ÈEÌtÇ ÜÂ‰Õ´ ÜÂ¬tÇ $DAYS|Y$|Çô¼ä² Î¹p¬˜° ¬LÇ"
+ ADD_ADM_TECH_EFFECT_SINGULAR:0 "‰ÕÈ 0®.ÂtÇ §G1§! ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ ADD_ADM_TECH_EFFECT_PLURAL:0 "‰ÕÈ 0®.ÂtÇ $VAL|+$ ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ ADD_DIP_TECH_EFFECT_SINGULAR:0 "xÆP­ 0®.ÂtÇ §G1§! ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ ADD_DIP_TECH_EFFECT_PLURAL:0 "xÆP­ 0®.ÂtÇ $VAL|+$ ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ ADD_MIL_TECH_EFFECT_SINGULAR:0 "p­¬À 0®.ÂtÇ §G1§! ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ ADD_MIL_TECH_EFFECT_PLURAL:0 "p­¬À 0®.ÂtÇ $VAL|+$ ¸¨¼ ÄÉô¼iÕÈ²ä²"
+ REVANCHISM_LOWER_THAN_TRIGGER:0 "m­¬ ô¼õ¼üÈXÇ¬ $VAL|Y$%ô¼ä² ®°µÂÈ²ä²"
+ REVANCHISM_HIGHER_THAN_TRIGGER:0 "m­¬ ô¼õ¼üÈXÇ¬ $VAL|Y$%ô¼ä² ’±µÂÈ²ä²"
+ IS_DYNAMIC_TAG:0 "NÇ(”²) íÅÙ³È Tag…ÇÈ²ä²"
+ IS_NOT_DYNAMIC_TAG:0 "NÇ(”²) íÅÙ³È Tag¬ DÅÙ²È²ä²"
+ REMOVE_ADVISOR_OF_CATEGORY_ADM:0 "°Æ¬¹XÇ ‰ÕÈ pÈ¸ÅÇ $NAME|Y$tÇ(¬) ­ÈDÇ  µ©°È²ä².\n"
+ REMOVE_ADVISOR_OF_CATEGORY_DIP:0 "°Æ¬¹XÇ xÆP­ pÈ¸ÅÇ $NAME|Y$tÇ(¬) ­ÈDÇ  µ©°È²ä².\n"
+ REMOVE_ADVISOR_OF_CATEGORY_MIL:0 "°Æ¬¹XÇ p­¬À pÈ¸ÅÇ $NAME|Y$tÇ(¬) ­ÈDÇ  µ©°È²ä².\n"
+ HAVE_NOT_RULER_FLAG:0 "ÀÉÄ³Ç Õ˜·ø­ '§Y$FLAG$§W'¬ ÆÅµÂÈ²ä²."
+ HAVE_RULER_FLAG:0 "ÀÉÄ³Ç Õ˜·ø­ '§Y$FLAG$§W'¬ ˆÇµÂÈ²ä²."
+ ADD_ARMYPROF_EFFECT:0 "p­³ È8»1Á $PERC|2$ $DIRECTION$  \n"
+ SET_ARMYPROF_EFFECT:0 "p­³ È8»1ÁtÇ $PERC|Y$<Çj¸ À¼hÕ\n"
+ GOVERNMENT_POWER_EFFECT:0 "$NAME$ $VALUE$ $DIRECTION$.\n"
+ TRIG_NOT_USES_RELIGIOUS_SCHOOLS:0 "$RELIGION$ÐÅ”² …ÈP­ YÕÓ¬ ÆÅµÂÈ²ä².\n"
+ TRIG_USES_RELIGIOUS_SCHOOLS:0 "$RELIGION$ÐÅ”² …ÈP­ YÕÓ¬ ˆÇµÂÈ²ä².\n"
+ TRIG_NOT_HAS_RELIGIOUS_SCHOOL:0 "$COUNTRY$ !ÎNÇ …ÈP­ YÕÓ¬ ÆÅµÂÈ²ä².\n"
+ TRIG_HAS_RELIGIOUS_SCHOOL:0 "$COUNTRY$ !ÎNÇ …ÈP­ YÕÓ¬ ˆÇµÂÈ²ä².\n"
+ TRIG_NOT_SCHOOL_OPINION:0 "$FIRST$NÇ(”²) $SECOND$NÆXÇ ­Ä¬¬ $OPINION$ô¼ä² ˜°iÀÈ²ä².\n"
+ TRIG_SCHOOL_OPINION:0 "$FIRST$NÇ(”²) $SECOND$NÆXÇ ­Ä¬¬ $OPINION$ô¼ä² ‹Èp¬˜° ¬µÂÈ²ä².\n"
+ EFFECT_SET_SCHOOL_OPINION:0 "$FIRST$ü¬(NÆ) $SECOND$XÇ ­Ä¬¬ $OPINION$<Çj¸ À¼`Õ ƒ¬…ÇÈ²ä²."
+ EFFECT_SET_RELIGIOUS_SCHOOL:1 "$COUNTRY$ !ÎNÇ  $SCHOOL$XÇ P­¬¹|¹ 0µ…¹È²ä².\n($MODIFIER$)"
+ HAS_ACTIVE_POLICY:0 "$NODE|Y$ x±Ü´ÐÅÁ jÖ1ÁTÖ´ 4»íÅ ÈEÌ<Çj¸ $NAME|Y$"DÇ(|¹) ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_NOT_ACTIVE_POLICY:0 "$NODE|Y$ x±Ü´ÐÅÁ jÖ1ÁTÖ´ 4»íÅ ÈEÌ<Çj¸ $NAME|Y$"DÇ(|¹) ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAS_ANY_ACTIVE_POLICY:0 "$NODE|Y$ x±Ü´ÐÅÁ jÖ1ÁTÖ´ 4»íÅÈEÌDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ HAS_NOT_ANY_ACTIVE_POLICY:0 "$NODE|Y$ x±Ü´ÐÅÁ jÖ1ÁTÖ´ 4»íÅÈEÌDÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ has_river_estuary_tooltip:0 "§YÉ”Æ XÕœÌXÇ XÕl­§!DÇ(|¹) ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ has_no_river_estuary_tooltip:0 "§YÉ”Æ XÕœÌXÇ XÕl­§!DÇ(|¹) ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ is_free_or_tributary_trigger_tooltip:0 "Å³Ë¹m­tÇp¬˜° pÈõ¬m­…ÇÈ²ä²"
+ is_subject_other_than_tributary_trigger_tooltip:0 "pÈõ¬m­tÇ DÅÌ² …ÈÁm­…ÇÈ²ä²."
+ HAS_GOVERNMENT:0 "§Y$TAG$XÇ§! ÈŽ´´ÌÈ”² $GOV|Y$…ÇÈ²ä².\n"
+ HAS_NOT_GOVERNMENT:0 "§Y$TAG$XÇ§! ÈŽ´´ÌÈ”² $GOV|Y$tÇ(¬) DÅÙ²È²ä².\n"
+ ALL_CONTROLLED_PROVINCE_STARTS:0 "¨ºà´ µÑÈ´ ÀÉíÅä´"
+ HAVE_LESS_THAN_N_CULTURES_IN_COURT:0 "ù²àÂXÇ ­ÈÐÅÁ Áj¸ ä²x¹ 8»TÖXÇ Â¬ §Y$VALUE$§!ô¼ä² ÈµÂÈ²ä².\n"
+ HAVE_MORE_THAN_N_CULTURES_IN_COURT:0 "ù²àÂXÇ ­ÈÐÅÁ Áj¸ ä²x¹ 8»TÖXÇ Â¬ §Y$VALUE$§!ô¼ä² Î¹p¬˜° ¬µÂÈ²ä².\n"
+ HAVE_LESS_THAN_N_RELIGIONS_IN_COURT:0 "ù²àÂXÇ ­ÈÐÅÁ Áj¸ ä²x¹ …ÈP­XÇ Â¬ §Y$VALUE$§!ô¼ä² ÈµÂÈ²ä².\n"
+ HAVE_MORE_THAN_N_RELIGIONS_IN_COURT:0 "ù²àÂXÇ ­ÈÐÅÁ Áj¸ ä²x¹ …ÈP­XÇ Â¬ §Y$VALUE$§!ô¼ä² Î¹p¬˜° ¬µÂÈ²ä².\n"
+ HAVE_LESS_THAN_N_REGIMENTS_AT_FULL_DRILL:1 "jÍ³ ÈÖ(¸Ä³XÇ ðÅ³¬ §Y$VALUE$§!ô¼ä² ÈµÂÈ²ä².\n"
+ HAVE_MORE_THAN_N_REGIMENTS_AT_FULL_DRILL:1 "jÍ³ ÈÖ(¸Ä³XÇ ðÅ³¬ §Y$VALUE$§!ô¼ä² Î¹p¬˜° ¬µÂÈ²ä².\n"
+ ANY_ARMY_STARTS:0 "¨ºà´ p­³"
+ HAVE_LESS_REGIMENT_TYPE_THAN_PERC:2 "$TYPE$ ðÅ³($NUM|Y$)XÇ D¾(ÇtÇ $PERC|%Y$ô¼ä² ®°µÂÈ²ä²."
+ HAVE_MORE_REGIMENT_TYPE_THAN_PERC:2 "$TYPE$ ðÅ³($NUM|Y$)XÇ D¾(ÇtÇ $PERC|%Y$ô¼ä² Î¹µÂÈ²ä²."
+ NORMAL_REGIMENT_TYPE:0 "0®ø¼"
+ MERCENARY_REGIMENT_TYPE:0 "©ÆÑ¼"
+ BANNER_REGIMENT_TYPE:0 "C®¼"
+ STRELTSY_REGIMENT_TYPE:0 "²Â¸Ò¸XÎ"
+ COSSACKS_REGIMENT_TYPE:0 "TÏ­À"
+ JANISSARIES_REGIMENT_TYPE:0 "ÆÈ²´Ì¬¹"
+ RAJPUT_REGIMENT_TYPE:0 "|·ÀÉxÔ¸Ò"
+ HAVE_LESS_JANISSARIES_THAN:0 "$VALUE|Y$ô¼ä² T³ ÈNÇ ÆÈ²´Ì¬¹ ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ HAVE_AT_LEAST_JANISSARIES_THAN:0 "$VALUE|Y$ tÇÁÀXÇ ÆÈ²´Ì¬¹ ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ HAVE_LESS_RAJPUT_THAN:0 "$VALUE|Y$ô¼ä² T³ ÈNÇ |·ÀÉxÔ¸Ò ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ HAVE_AT_LEAST_RAJPUT_THAN:0 "$VALUE|Y$ tÇÁÀXÇ |·ÀÉxÔ¸Ò ðÅ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ SUPPLY_DEPOT_IN_PROVINCE:0 "ÀÉíÅÐÅ ô¼	®KÌDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä².\n"
+ SUPPLY_DEPOT_NOT_IN_PROVINCE:0 "ÀÉíÅÐÅ ô¼	®KÌDÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ EFFECT_ADD_LATENT_GOODS:0 "$GOODS|Y$tÇ(¬) $PROVINCE|Y$XÇ  Ç¬ÇÈ 4»íÅ ÁÀˆÔtÇ )´È²ä²."
+ HAS_NOT_LATENT_TRADE_GOODS_SPECIFIC:0 "$NAME$DÇ(|¹)  Ç¬ÇÈ 4»íÅ ÁÀˆÔ<Çj¸ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAS_LATENT_TRADE_GOODS_SPECIFIC:0 "$NAME$DÇ(|¹)  Ç¬ÇÈ 4»íÅ ÁÀˆÔ<Çj¸ ¬à¬ ˆÇµÂÈ²ä²."
+ HAS_NOT_LATENT_TRADE_GOODS_ANY:0 "´Å²µ  Ç¬ÇÈ 4»íÅ ÁÀˆÔÄ³ ¬à¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ HAS_LATENT_TRADE_GOODS_ANY:0 " Ç¬ÇÈ 4»íÅ ÁÀˆÔDÇ ¬à¬ ˆÇµÂÈ²ä²."
+ EFFECT_REMOVE_LATENT_GOODS:0 "$GOODS|Y$tÇ(¬) $PROVINCE|Y$XÇ  Ç¬ÇÈ 4»íÅ ÁÀˆÔÐÅÁ ¬À|·ÑÉÈ²ä²."
+ EFFECT_REMOVE_ALL_LATENT_GOODS:0 "$PROVINCE|Y$XÇ ¨ºà´  Ç¬ÇÈ 4»íÅ ÁÀˆÔä´tÇ ¬À|·ÑÉÈ²ä²."
+ INNOVATIVENESS_IS_LESS_THAN:0 "ÖàÂ1ÁtÇ §Y$SIZE$§!ô¼ä² ®°µÂÈ²ä².\n"
+ INNOVATIVENESS_IS_AT_LEAST:0 "ÖàÂ1ÁtÇ §Y$SIZE$§!ô¼ä² ’±p¬˜° ¬µÂÈ²ä².\n"
+ CHANGE_INNOVATIVENESS_EFFECT:0 "ÖàÂ1ÁtÇ $VALUE$ $DIRECTION$.\n"
+ RAISE_WAR_TAXES_EFFECT:0 "$DURATION|Y$D± Ù³HÅ £mil D¾©Æ ÆÅtÇ ÈÁÇ 8Á®DÇ ÕÉÂiÕÈ²ä².\n"
+ TAKE_LOAN_EFFECT:0 "$DURATION|Y$¬ÔÆXÇ NÇ‰Õ DÌŒ­DÇ"
+ INTEREST_MODIFIER_DESC:0 " $VAL$ $DIR$ |Ó<Á¸ÒXÇ tÇÇ(Çj¸ ¼‰ÕiÕÈ²ä²."
+ FIXED_INTEREST_DESC:1 " tÇ DÌŒ­XÇ tÇÇ(ÇNÇ $RATE|Y$ <Çj¸ à¬È…ÇÈ²ä²."
+ ESTATE_LOAN_DESC:0 " ù²àÂXÇ Ä¬5ÎtÇ tÇ ³œÍDÇ Èõ¬ˆÕµÂÈ²ä²."
+ LOWER:0 "T³ ®°NÇ"
+ HIGHER:0 "T³ ’±NÇ"
+ WITH_GOVERNMENT_TYPE:0 "ø­ä´tÇ Ö1ÁjÕ m­¬”² $GOV|Y$ ÈŽ´|¹ ¬ÈÉ ƒ¬…ÇÈ²ä²."
+ WITH_GOVERNMENT_REFORM:0 ""
+ HAVE_LESS_THAN_ADM_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ô¼ä² ‰ÕÈ%¸tÇ ÈLÇ.\n"
+ HAVE_LESS_THAN_DIP_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ô¼ä² xÆP­%¸tÇ ÈLÇ.\n"
+ HAVE_LESS_THAN_MIL_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ô¼ä² p­¬À%¸tÇ ÈLÇ.\n"
+ HAVE_MORE_THAN_ADM_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ ‰ÕÈ%¸DÇ ô¼.ÇhÕ.\n"
+ HAVE_MORE_THAN_DIP_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ xÆP­%¸DÇ ô¼.ÇhÕ.\n"
+ HAVE_MORE_THAN_MIL_POWER_COST_TRIGGER:0 "$AMOUNT|Y$ p­¬À%¸DÇ ô¼.ÇhÕ.\n"
+ ADM_POWER_COST_EFFECT:1 "‰ÕÈ%¸ $AMOUNT|R$DÇ ƒÇµÂÈ²ä².\n"
+ DIP_POWER_COST_EFFECT:1 "xÆP­%¸ $AMOUNT|R$DÇ ƒÇµÂÈ²ä².\n"
+ MIL_POWER_COST_EFFECT:1 "p­¬À%¸ $AMOUNT|R$DÇ ƒÇµÂÈ²ä².\n"
+ HAS_HOSTILE_TROOPS:0 "È³È p­³¬ ˆÇµÂÈ²ä².\n"
+ HAS_NO_HOSTILE_TROOPS:0 "È³È p­³¬ ÆÅµÂÈ²ä².\n"
+ OWNS_ALL_PROVINCES:0 "¨ºà´ ÀÉíÅ ŒÁ.Ç.\n"
+ HAS_NON_GENERIC_MISSIONS:0 "$COUNTRY|Y$ !ÎNÇ |Ç¼ „Ç4»|¹ ¬ÀÉÀÉ JÅLÇ.\n"
+ HAS_NOT_NON_GENERIC_MISSIONS:0 "$COUNTRY|Y$ !ÎNÇ |Ç¼ „Ç4»|¹ ¬ÐÉ.\n"
+ IS_REBEL_TYPE_TRIGGER:0 "(NÇ)”² $TYPE|Y$ ¼p­…ÇÈ²ä².\n"
+ IS_NOT_REBEL_TYPE_TRIGGER:0 "(NÇ)”² $TYPE|Y$ ¼p­tÇ DÅÙ²È²ä².\n"
+ EFFECT_GAIN_POWER_PROJECTION:0 "$TAG|Y$ !ÎNÇ $AMOUNT|G$XÇ 8Á%¸,Ò¬À|¹ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ EFFECT_LOSE_POWER_PROJECTION:0 "$TAG|Y$ !ÎNÇ $AMOUNT|R$XÇ 8Á%¸,Ò¬À|¹ ƒÇDÇ ƒ¬…ÇÈ²ä²."
+ EFFECT_SUPPORT_INDEPENDENCE:0 "$TAG|Y$ !ÎNÇ $TARGET|Y$XÇ Å³Ë¹DÇ ÀÉÐÆ`Õ ƒ¬…ÇÈ²ä²."
+ TRIGGER_WAS_HUMILIATED_BY:0 "$TAG|Y$ !ÎNÇ jÍü­ÐÅ $BY|Y$ÐÅŒ¬ t­•Æù²ˆÕµÂÈ²ä²."
+ TRIGGER_WAS_NOT_HUMILIATED_BY:0 "$TAG|Y$ !ÎNÇ jÍü­ÐÅ $BY|Y$ÐÅŒ¬ t­•Æù²XÕÀÉ JÅXÅµÂÈ²ä²."
+ TRIGGER_IS_HIRING_CONDOTTIERE_FROM:0 "$TAG|Y$ !ÎNÇ $FROM|Y$ÐÅÁ XÏÄ³ðÒÐÅ¬¹|¹ à¬©ÆˆÕµÂÈ²ä²."
+ TRIGGER_IS_NOT_HIRING_CONDOTTIERE_FROM:0 "$TAG|Y$ !ÎNÇ $FROM|Y$ÐÅÁ XÏÄ³ðÒÐÅ¬¹|¹ à¬©ÆXÕÀÉ JÅXÅµÂÈ²ä²."

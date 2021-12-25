@@ -1,0 +1,107 @@
+﻿l_english:
+ TEU_fc_title: "0®¬Àè²DÇ ŒÁÑÉXÕ|·!"
+ TEU_fc_desc: "The Baltic Crusades might be over, but our job here has just begun. The constant looming threats of Poland and Lithuania, joint aggressors that they be, force us to keep our guard up at all times. We cannot sit idly by as our foes prepare for war!"
+ TEU_avenge_tannenberg_title: "ø­ì¸¼¸Ò|¹ ÇjÕ õ¼Â"
+ TEU_avenge_tannenberg_desc: "It has been over three decades since the Battle of Grunwald, yet we have not forgotten the travesty the Poles inflicted upon us that day. We are an order scarred by the blade of grief, sharpened by the needless bloodshed of Christendom. The Teutonic Knights shan't bend knee to the Slavs!"
+ TEU_borderlands_title: "m­Ë¬ÀÉ³ È9¸"
+ TEU_borderlands_desc: "Our southern flank has done us well, but a nation cannot survive by simply defending. We must take the initiative and strike out in righteous vengeance, for we know no greater threat than the Poles."
+ TEU_curtail_the_burghers_title: "Preußischer Bund"
+ TEU_curtail_the_burghers_desc: "The powerful merchant class of Prussia has grown increasingly militant in their efforts to gain further autonomy. As such, the Prussian Confederation must be considered an insurgency and be dealt with accordingly."
+ TEU_restore_control_title: "Back in Control"
+ TEU_restore_control_desc: "The times of trouble are not yet over. The remnants of the Prussian Confederation still linger, vying for dominance on a local level. The merchant-aligned nobles must be put to rest so that we might gain full control over our Prussian holdings."
+ TEU_end_confederations_title: "ðÅ)¼XÇ tÕ°À"
+ TEU_end_confederations_desc: "The time has come to put a decisive end to the Prussian Confederation and all its successors. With the possibility of civil war averted, the confederations remain as husks of their former being, ready for us to destroy them."
+ TEU_solidify_relations_title: "Ž¬XÇ ÖÈä´"
+ TEU_solidify_relations_desc: "Our brother-order of Livonia has recently gained considerable autonomy within the Teutonic Knights. This is a solid state of affairs for administrative purposes, but the fact remains that we are two separate governing entities. We should actively seek to maintain this bond of brotherhood to eventually mend this minor schism."
+ TEU_samogitia_title: "¬À¨º0®ðÒDÅ ¬ÇÈ9¸"
+ TEU_samogitia_desc: "Following our string of defeats at the hands of the Poles and Lithuanians, we were unfortunately forced to cede the territory of Samogitia following our terrible defeat at Grunwald. With our crusading days over, perhaps it is time to see ourselves back in possession of our once-held territory."
+ TEU_brandenburg_title: "8ÖÔÅÍ¸x¹XÇ ÆíÅ"
+ TEU_brandenburg_desc: "The Northern March of Brandenburg finds its fate ever-interwined with our own. With the dynastic link drawing us to the west, the time has come to see our lands united under one [ROOT.Ruler.GetTitle]."
+ TEU_pomerania_title: "ìÓTº|·È²DÅ Èõ¼"
+ TEU_pomerania_desc: "With the fall of Brandenburg, the Pomeranians did not halt their raids on the March; nay, they ramped up their aggression, even going as far as warmongering. Centuries of grudges and bloodshed cannot be forgotten so easily. We would do well to act first."
+ TEU_prussian_ascendance_title: "Õj¸tÇ<ÁXÇ ¹ÂœÌ"
+ TEU_prussian_ascendance_desc: "Prussia has always been a center of commerce, wealthy by nature and strong of steel. It has served well as the base for our valiant crusades, but as each age passes, a new must begin. Such a time shall sally forth alongside an ascending European power. Prussia shall rise!"
+ TEU_appeal_title: "iÖÈÐÅŒ¬ ¬­Ì"
+ TEU_appeal_desc: "Despite our expansionist policies into the Holy Roman Empire, we must maintain the guise of Imperial and Papal support through our campaigns. The Kaiser supported us in our most dire straits, thus we must count on their support once more."
+ TEU_merchant_navy_title: "tÕ‘Å ÁÀ.Áè²"
+ TEU_merchant_navy_desc: "Despite our reknowned militarism, we lack a fleet able to stand up to the many threats of the Baltic Sea. The Hansa and United North both seek our fertile soil as a colony. The only way to dissuade such a terror is through constructing a navy capable of defending our coastline from the sea tyrants."
+ TEU_restore_control_in_gotland_title: "à¬ÀÒŽ·Ü´ ŒÖõ¼"
+ TEU_restore_control_in_gotland_desc: "Decades ago, we found ourselves in need of funding, and as such we saw fit to sell the island of Gotland to the Danes. With our economy in better condition, it is time to revoke this deal."
+ TEU_reaffirm_amber_monopoly_title: "8Ö¼ Å³È"
+ TEU_reaffirm_amber_monopoly_desc: "The great town of Konigsberg is one of the very few sources of amber in all of Europe. Such a monopoly cannot go to waste, for there is certainly a market for the beautiful orange gems. Let us see to enforcing our exclusive trading rights."
+ TEU_teutonic_cities_title: "œÒ¼ÒxÇXÇ Ä³ÜÂä´"
+ TEU_teutonic_cities_desc: "Whilst we did not start as the natives of Prussia, we have seen fit to settle the lands as our own, effiectively becoming the Prussian state. The Teutons and Prussians are now one. Despite this, we lack true urbanization of the countryside akin to other centralized nations. We should encourage colonization and reclamation of empty lands in accordance with Kulmer Law."
+ TEU_grossschaffer_title: "Großschäffer der Städte"
+ TEU_grossschaffer_desc: "The smooth and consistent facilities of trade must be upkept and standardized to ensure we make a profit off of our lucarative position in the Baltic Sea. The Schäffer was responsible for the upkeep of commerce in the Teutonic Order."
+ TEU_fortress_of_marienburg_title: "È¹¬¹DÅXÇ ”ÆÈÀ"
+ TEU_fortress_of_marienburg_desc: "1Á¨º È¹¬¹DÅÐÅŒ¬ ÌÕÈ´ È¹¬¹ÔÅŽ´t¹lÐ ”ÆÈÀ”², Ç³jÕ 0®¬Àè²DÇ ÂÝÂ¬ÐÅ •´4­ÜÂ²Ðà¬Ç XÕ”² ôÓŽ·Ü´xÇü¬ ¬¹,ÒDÅÈ²DÅxÇXÇ ä²¬2Æ”² ÄÉ©¬ÐÅ Þ¹Á ¨°ËÊ !ÎtºDÇ )¼´ÅXÕ0® ÇtÕ s­t¬ˆ× Á ˆÇµÂÈ²ä². °Æ¬¹”² °º‹·DÇ )¼ÀÉXÕ0® ÇtÕ ”ÆÈÀ|¹ Ä¬ÁtÕÁ .ÇÀÉtÕ|Å iÕÈ²ä²."
+ TEU_hanseatic_cities_title: "jÕÇ Ù³ù¹"
+ TEU_hanseatic_cities_desc: "The Hanseatic League has always been an important cog in the machine of Baltic Sea trade. We have managed to maintain good relations with the many mercantile states of the League. We would do well to further build up positive relationships with our trader neighbors."
+ TEU_religious_Foundations_title: "Religious Foundations"
+ TEU_religious_Foundations_desc: "The Teutonic Brothers of the Sword were initially dispatched to dislodge Pagan heresies from the Baltic states. As such, devout Catholicism has always been the cornerstone of our nation."
+ TEU_internal_mission_title: "Internal Mission"
+ TEU_internal_mission_desc: "As the backbone of our nation, our faith is not merely our way to grow closer to the Lord, but it also serves as our way of life. On the administrative level, we must ensure a homogenous and pious Knightly Order."
+ TEU_reformation_title: "àÂYÅXÇ ¬Ö"
+ TEU_reformation_desc: "With the Reformation raging across Europe, the time has come to reevalute our cause. Many within the order seek secularization, whilst many more wish to align themselves with the Papacy, following along our original quest of crusading. The time has come to choose our path."
+ TEU_marienburg: "¬%¸jÕ ”ÆÈÀ"
+ TEU_naval_base: "œÒ¼Ò tÕp­ 0®ÀÉ"
+ TEU_holy_roman_mercenaries: "àÂ1Á j¸È¹ Èm­ ©ÆÑ¼ä´"
+ TEU_samogitia: "Æ Ñ ¬ÇðÅ°¬"
+ TEU_pious_power: "Ë¬t¬hÕXÇ ô¼è¸"
+ TEU_diplomacy: "¬¹ô¼È²DÅ ÖÈä´ü¬XÇ .Ç³"
+ TEU_development_of_kulm_law: "èÏ„¹ •¼(Kulmer Law)XÇ ¼ì²"
+ TEU_navy: "tÕÁÀ 4»íÅXÇ 1Á¥Ç"
+ TEU_grunwald: "Reversed the Downfall"
+ TEU_trade_deal: "œÒ¼Ò-jÕÇ 4»íÅ pÈ‹Å"
+ TEU_amber_rights: "jÕÇ Ù³ù¹ü¬XÇ É¬XÕ”² P­íÅ"
+ TEU_brandenburg_acquired: "¾Ž·t³Ž´t¹lÐ ÖÝ´"
+ TEU_piety: "A Religious Order After All"
+ TEU_seat_of_schaeffer: "Seat of Großschäffer"
+ TEU_stability_for_days: "©Í1Á²Âì·´Æ 8®Ü´ä´"
+ TEU_control: "µÑÈ ŒÖõ¼"
+ TEU_revenge: "²¼¸Ò(Wendish)xÇ õ¬‘Çä´ÐÅ ³jÕ õ¼Â"
+ TEU_books_of_prussia: "The Reformer Books of Prussia"
+ TEU_conquest_of_livonia: "Consolidation of Rule in Livonia"
+ TEU_return_of_the_victual_brothers: "Return of the Victual Brothers"
+ TEU_loyal_to_the_pope: "P­iÖÐÅŒ¬ ©Í1Á"
+ brotherly_order: "ÖÈ 0®¬Àè²"
+ TEU_brotherly_order_decision_title: "¬¹ô¼È²DÅ 0®¬Àè²ü¬ ðÅiÕ"
+ TEU_brotherly_order_decision_desc: ""
+ TEU_faceting: "The '§YFaceting§!' event happened to us."
+ TEU_reward_if_ally: "Reward if the mission is completed by §Malliance§!:"
+ TEU_reward_if_ally_yes: "£yes£Reward if the mission is completed by §Malliance§!:"
+ TEU_reward_if_war: "Reward if the mission is completed by §Mconquest§!:"
+ TEU_reward_if_war_yes: "£yes£Reward if the mission is completed by §Mconquest§!:"
+ TEU_get_25_monarch_power: "Gain §G25§! of each §YMonarch Power§! for every estate that has at least §Y60.0%§! loyalty, for a maximum of §G75§! when §YBurghers§!, §YClergy§! and §YNobility§! are loyal."
+ TEU_more_mercs_available: "More §YMercenary Companies§! will become available."
+ TEU_get_5_light_ships_in_a_random_province: "Get §G5§! §YLight Ships§! in a Random Coastal Province."
+ TEU_this_will_come_into_effect: "§MWarning§! This will come into effect only if §Y[HSA.GetName]§! accepts."
+ TEU_disable_prussia_formation_make_LO_subject: "Disables the decision to form @PRU§Y[PRU.GetName]§!\nA Decision will be unlocked to make @LIV§Y[LIV.GetName]§! a §YBrotherly Order§!.\n'§YForm Terra Mariana§!' decision will become unlocked. (WIP)\n\nMission tree will be slightly expanded."
+ TEU_ttf_tooltip: "Have at least §G6.00§! Tolerance of the True Faith"
+ TEU_devotion_tooltip: "Have at least §G+0.50§! Yearly Devotion"
+ TEU_every_church: "Every owned province with a §YTax Building§! gains §G+25.0%§! Prosperity and loses §G25.0%§! Devastation."
+ TEU_curtailed_prussian_conf: "§YPrussian Confederation§! has been curtailed."
+ TEU_prussian_conf_fired: "§YPrussian Confederation§! has been fired."
+ TEU_if_TEU_Accepts: "If §Y[TEU.GetName]§! accepts:"
+ ME_Teutonic_Order_Events.1.t: "ø­ì¸¼¸ÒXÇ ¬t¹hÎ"
+ ME_Teutonic_Order_Events.1.d: "The bloody and disastrous battle of Grunwald sparked the decline of the holy Teutonic Order. A decline that would certainly lead to many empires' downfall. But not ours, for we are unlike other states. We are a state that can learn from prior mistakes and one that can improve. The holy establishment in the Baltics shall not only live to see another day, but also to deliver divine will in the north."
+ ME_Teutonic_Order_Events.1.a: "0®¬Àè²XÇ ÉÓÓtÇ ŒÖõ¼´ä²!"
+ ME_Teutonic_Order_Events.2.t: "4»íÅ p¬˜·|¹ ÖÁÀXÕä²."
+ ME_Teutonic_Order_Events.2.d: "The means of exchange are truly the Wealth of Nations. This especially affects us, for a significant portion of our income is based on the export of the valuable amber and the exclusive trading rights related to it. The trade within the cities forms the bulk of national income and it is only natural that we go out to great lengths to ensure the growth of commerce. In order to do that, we should reach out to the Hansa, with whom we have been cooperating for the past century, so as to negotiate a trade deal benefitting us both."
+ ME_Teutonic_Order_Events.2.a: "ÁÀxÇä´ü¬XÇ Ö%¸ 	ÍÄÉ"
+ ME_Teutonic_Order_Events.2.b: "8Ö¼ÐÅ ³jÕ Å³È Œ­jÕ ÈHÅ"
+ ME_Teutonic_Order_Events.2.c: "hÕ³|¹ È8Á ´°Ç"
+ ME_Teutonic_Order_Events.2.e: "°Æ¬¹ ²Â²Âj¸ ˜Ç ­¬¹`Õ Â ˆÇä²."
+ ME_Teutonic_Order_Events.3.t: "ÂuÇ1ÁtÇ ‹ÈNÇ ÈHÅ"
+ ME_Teutonic_Order_Events.3.d: "The [From.GetName] must truly favor their merchants, for they decided to offer us an exclusive trade deal that would tighten the mercantile relationship between our league and their cities. There truly is profit to be made here."
+ ME_Teutonic_Order_Events.3.a: "4»¨Â Â|¹ hÃÁ|·Ä³!"
+ ME_Teutonic_Order_Events.3.b: "°Æ°¹ ä²x¹ °Æ2¸¬ÀmÕtÇ ˆÇä²."
+ ME_Teutonic_Order_Events.4.t: "A Weak Grip"
+ ME_Teutonic_Order_Events.4.d: "Description Work in Progress!"
+ ME_Teutonic_Order_Events.4.a: "Tighten the Grip!"
+ ME_Teutonic_Order_Events.4.b: "à¬ÀÒŽ·Ü´”² ¬ÀŒÁjÕ 8»Èä²!"
+ ME_Teutonic_Order_Events.4.c: ",ÁDÇ œÒ¼ÒxÇä´ÐÅŒ¬ ‘ÅÄ³XÕ|·."
+ ME_Teutonic_Order_Events.5.t: "¬¥Ç ­³jÕ ÈHÅ"
+ ME_Teutonic_Order_Events.5.d: "t³È¹lÐxÇä´tÇ à¬ÀÒŽ·Ü´|¹ µÑÈ`Õ Â ÆÅ”² ƒ¬tÇ „´…ºiÕÈ²ä². ø­ä´tÇ °Æ¬¹ÐÅŒ¬ ,ÁDÇ ä²ÜÂ ´À ƒ¬DÇ ÈHÅˆÕ0® Lµ8»…ÇÈ²ä²."
+ ME_Teutonic_Order_Events.5.a: "¼Ü´ÜÂ ¼DÅä´ìÅ|·!"
+ ME_Teutonic_Order_Events.5.b: "ø­ ,ÁNÇ °Æ¬¹¬ DÅÌ² ø­ä´XÇ 8»ÈtÇä²."

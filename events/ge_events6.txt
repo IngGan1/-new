@@ -1,0 +1,299 @@
+namespace = ge_events
+# Fall of the Ming Empire
+country_event = {
+	id = ge_events.16 
+	title = "ge_events.16.t"
+	desc = "ge_events.16.d"
+	picture = BATTLE_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = MCH
+		has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge16 }
+		is_year = 1645
+		NOT = {
+			is_year = 1665
+		}
+		MNG = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		MCH = {
+			exists = yes
+			ai = yes
+			was_player = no
+		}
+		HUH = {
+			ai = yes
+			was_player = no
+		}
+		MYR = {
+			ai = yes
+			was_player = no
+		}
+		CSH = {
+			ai = yes
+			was_player = no
+		}
+		MYR = {
+			ai = yes
+			was_player = no
+		}
+		KHA = {
+			ai = yes
+			was_player = no
+		}
+		OIR = {
+			ai = yes
+			was_player = no
+		}
+		BRT = {
+			ai = yes
+			was_player = no
+		}    
+		KRC = {
+			ai = yes
+			was_player = no
+		}
+	}
+ 
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.16.a  
+		ai_chance = { factor = 100 }
+	  	inner_mongolia_area = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+	  	hebei_area = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+		xilin_gol_area = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+		eastern_mongolia = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+		chahar_area = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+	    manchuria_region = {
+			limit = { owner = { ai = yes } }
+	  		add_core = MCH
+	  		cede_province = MCH
+	  	}
+		korea_region = {
+			limit = { 
+				owned_by = MCH
+			}
+			remove_core = MCH
+			add_core = KOR
+			cede_province = KOR
+		}
+		if = { 
+			limit = { exists = RUS }
+			east_siberia_region = {
+				limit = { 
+				   owned_by = MCH
+				}
+				remove_core = MCH
+				add_core = RUS
+				cede_province = RUS
+			}
+			west_siberia_region = {
+				limit = { 
+				   owned_by = MCH
+				}
+				remove_core = MCH
+				add_core = RUS
+				cede_province = RUS
+			}
+		}
+		inherit = CSH
+		if = {
+			limit = { KOR = { ai = yes } }
+			add_historical_friend = KOR
+			KOR = {
+			  add_historical_friend = MCH
+			}
+			create_subject = { 
+				who = KOR
+				subject_type = tributary_state
+			}
+		}
+	}
+}
+
+country_event = {
+    id = ge_events.58
+	title = "ge_events.58.t"
+	desc = "ge_events.58.d"
+	picture = BATTLE_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+        tag = QNG
+		is_year = 1664
+		NOT = {
+			is_year = 1684
+		}
+		not = { has_global_flag = no_ge16 }
+		has_global_flag = governments_extended_historical_yes
+		QNG = {
+			ai = yes
+			was_player = no
+		}
+		MNG = {
+			ai = yes
+			was_player = no
+		}
+		KHA = {
+		   ai = yes
+		   was_player = no
+		}
+		OIR = {
+		   ai = yes
+		   was_player = no
+		}
+		CDL = {
+		   ai = yes
+		   was_player = no
+		   is_free_or_tributary_trigger = yes
+		}
+		KAM = {
+		   ai = yes
+		   was_player = no
+		   is_free_or_tributary_trigger = yes
+		}
+            }
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.58.a  
+		ai_chance = { factor = 100 }
+		inherit = MNG
+		if = { limit = { exists = YUE ai = yes }
+		inherit = YUE
+		}
+		if = { limit = { exists = WUU ai = yes }
+		inherit = WUU
+		}
+		if = { limit = { exists = QIC ai = yes }
+		inherit = QIC
+		}
+		if = { limit = { exists = CHU ai = yes }
+		inherit = CHU
+		}
+		if = { limit = { exists = YAN ai = yes }
+		inherit = YAN
+		}
+		if = { limit = { exists = JIN ai = yes }
+		inherit = JIN
+		}
+		if = { limit = { exists = LNG ai = yes }
+		inherit = LNG
+		}
+		if = { limit = { exists = CXI ai = yes }
+		inherit = CXI
+		}
+		if = { limit = { exists = NNG ai = yes }
+		inherit = NNG
+		}
+		if = { limit = { exists = CSH ai = yes }
+		inherit = CSH
+		}
+		if = { limit = { exists = MCH ai = yes }
+		inherit = MCH
+		}
+		if = { limit = { exists = CDL ai = yes }
+		inherit = CDL
+		}
+		if = { limit = { exists = HUA ai = yes }
+		inherit = HUA
+		}
+		if = { limit = { exists = CMI ai = yes }
+		inherit = CMI
+		}
+		if = { limit = { exists = CYI ai = yes }
+		inherit = CYI
+		}
+		if = { limit = { exists = KAM ai = yes }
+		inherit = KAM
+		}
+		if = { limit = { exists = CHC ai = yes }
+		inherit = CHC
+		}
+		if = { limit = { exists = CHC ai = yes }
+		inherit = SHU
+		}
+		if = { limit = { exists = CHC ai = yes }
+		inherit = MIN
+		}
+		if = { limit = { exists = QIN ai = yes }
+		inherit = QIN
+		}
+        korea_region = {
+            limit = { 
+                owned_by = QNG
+            }
+            remove_core = QNG
+            add_core = KOR
+	  	    cede_province = KOR
+        }
+        add_historical_friend = KOR
+        KOR = {
+        add_historical_friend = QNG
+        }
+	    manchuria_region = {
+		limit = { owner = { ai = yes } }
+	  	remove_core = KOR
+	  	add_core = QNG
+	  	cede_province = QNG
+	  	}
+		west_gansu_area = {
+		limit = { owner = { ai = yes } }
+	  	add_core = QNG
+	  	cede_province = QNG
+	  	}
+		amdo_area = {
+		limit = { owner = { ai = yes } }
+	  	add_core = QNG
+	  	cede_province = QNG
+	  	}
+		kham_area = {
+		limit = { owner = { ai = yes } }
+	  	add_core = QNG
+	  	cede_province = QNG
+	  	}
+		turpan_kumul_area = {
+		limit = { owner = { ai = yes } }
+	  	add_core = QNG
+	  	cede_province = QNG
+	  	}
+        create_subject = { 
+            who = KOR
+            subject_type = tributary_state
+        }
+		set_emperor_of_china = QNG
+		every_owned_province = { add_devastation = -100 }
+}

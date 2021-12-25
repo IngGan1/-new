@@ -1,0 +1,12 @@
+# KBR - Kabardia
+
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = circassian
+religion = orthodox
+technology_group = muslim
+capital = 2197
+
+1700.1.1 = {
+	religion = sunni
+}

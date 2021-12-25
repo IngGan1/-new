@@ -1,0 +1,712 @@
+﻿l_english:
+ rat_1_1_aristo:0 "À­qÈ ÓŒ¼"
+ rat_1_1_aristo_FACTION_DESC:0 "À­qÈ ÓŒ¼NÇ m­¬XÇ À­qÈä´DÇ ³jÔiÕÈ²ä². ø­ä´XÇ üÈ”Æ ­ìÂ¬À”² jÎqÈXÇ Œ­%¸tÇpº ¬¥²jÕ jÕ ÈNÇ 8Á®DÇ ´°à¬ m­¬´°ÐÅÁ Œ­%¸DÇ .ÇÀÉXÕ”² ƒ¬…ÇÈ²ä²."
+ rat_1_1_aristo_influence:0 "À­qÈ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_1_aristo_title:0 "À­qÈ ÓŒ¼ ÀÉÐÆ"
+ rat_2_1_aristo:0 "À­qÈ ÓŒ¼"
+ rat_2_1_aristo_FACTION_DESC:0 "À­qÈ ÓŒ¼NÇ m­¬XÇ À­qÈä´DÇ ³jÔiÕÈ²ä². ø­ä´XÇ üÈ”Æ ­ìÂ¬À”² jÎqÈXÇ Œ­%¸tÇpº ¬¥²jÕ jÕ ÈNÇ 8Á®DÇ ´°à¬ m­¬´°ÐÅÁ Œ­%¸DÇ .ÇÀÉXÕ”² ƒ¬…ÇÈ²ä²."
+ rat_2_1_aristo_influence:0 "À­qÈ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_1_aristo_title:0 "À­qÈ ÓŒ¼ ÀÉÐÆ"
+ rat_3_1_aristo:0 "À­qÈ ÓŒ¼"
+ rat_3_1_aristo_FACTION_DESC:0 "À­qÈ ÓŒ¼NÇ m­¬XÇ À­qÈä´DÇ ³jÔiÕÈ²ä². ø­ä´XÇ üÈ”Æ ­ìÂ¬À”² jÎqÈXÇ Œ­%¸tÇpº ¬¥²jÕ jÕ ÈNÇ 8Á®DÇ ´°à¬ m­¬´°ÐÅÁ Œ­%¸DÇ .ÇÀÉXÕ”² ƒ¬…ÇÈ²ä²."
+ rat_3_1_aristo_influence:0 "À­qÈ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_1_aristo_title:0 "À­qÈ ÓŒ¼ ÀÉÐÆ"
+ rat_1_2_klerus:0 "1ÁÁÉÇ ÓŒ¼"
+ rat_1_2_klerus_FACTION_DESC:0 "1ÁÁÉÇ ÓŒ¼NÇ ù²àÂXÇ µÑXÎÐÅ Èù²1ÁDÇ Ž´ìÅXÕà¬ tÇP­Ä³|¹ ¬…ÈÜÂ¬Ð ƒ¬…ÇÈ²ä². ø­ì·˜° ø­ä´NÇ ¬ÖDÇ ÀÉÀÉXÕp¬˜° tÇP­Ä³˜° tÇè²ÇÐÅ ³tÕ ­³XÕŒ¬ ³XÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_1_2_klerus_influence:0 "1ÁÁÉÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_2_klerus_title:0 "1ÁÁÉÇ ÓŒ¼ ÀÉÐÆ"
+ rat_2_2_klerus:0 "1ÁÁÉÇ ÓŒ¼"
+ rat_2_2_klerus_FACTION_DESC:0 "1ÁÁÉÇ ÓŒ¼NÇ ù²àÂXÇ µÑXÎÐÅ Èù²1ÁDÇ Ž´ìÅXÕà¬ tÇP­Ä³|¹ ¬…ÈÜÂ¬Ð ƒ¬…ÇÈ²ä². ø­ì·˜° ø­ä´NÇ ¬ÖDÇ ÀÉÀÉXÕp¬˜° tÇP­Ä³˜° tÇè²ÇÐÅ ³tÕ ­³XÕŒ¬ ³XÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_2_2_klerus_influence:0 "1ÁÁÉÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_2_klerus_title:0 "1ÁÁÉÇ ÓŒ¼ ÀÉÐÆ"
+ rat_3_2_klerus:0 "1ÁÁÉÇ ÓŒ¼"
+ rat_3_2_klerus_FACTION_DESC:0 "1ÁÁÉÇ ÓŒ¼NÇ ù²àÂXÇ µÑXÎÐÅ Èù²1ÁDÇ Ž´ìÅXÕà¬ tÇP­Ä³|¹ ¬…ÈÜÂ¬Ð ƒ¬…ÇÈ²ä². ø­ì·˜° ø­ä´NÇ ¬ÖDÇ ÀÉÀÉXÕp¬˜° tÇP­Ä³˜° tÇè²ÇÐÅ ³tÕ ­³XÕŒ¬ ³XÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_3_2_klerus_influence:0 "1ÁÁÉÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_2_klerus_title:0 "1ÁÁÉÇ ÓŒ¼ ÀÉÐÆ"
+ rat_1_3_burger:0 "ÜÂü» ÓŒ¼"
+ rat_1_3_burger_FACTION_DESC:0 "ÜÂü» ÓŒ¼NÇ ¬ÀÅÅÐÅ ³tÕ ®°NÇ Ü­È|¹ XÕÄ³k¸ ù²àÂDÇ 2ÁÝ´XÕ2¸à¬ x±%¸`Õ ƒ¬…ÇÈ²ä². ¶jÕ ¬ÀÅÅÐÅ tÕ|¹ |°`Î ƒ¬tÇ0® Lµ8»ÐÅ ø­ä´NÇ ÈÁÇDÇ ÀÉÐÆXÕÀÉ JÅDÇ ƒ¬…ÇÈ²ä². ø­ì·˜° ù²àÂtÇ ø­ä´DÇ hÕØ®XÕŒ¬ ´ä²tº ø­ä´NÇ ù²àÂXÇ m­¬ÐÅ pÐ Ž´|¹ ¬8È,Æ ƒ¬…ÇÈ²ä²."
+ rat_1_3_burger_influence:0 "ÜÂü» ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_3_burger_title:0 "ÜÂü» ÓŒ¼ ÀÉÐÆ"
+ rat_2_3_burger:0 "ÜÂü» ÓŒ¼"
+ rat_2_3_burger_FACTION_DESC:0 "ÜÂü» ÓŒ¼NÇ ¬ÀÅÅÐÅ ³tÕ ®°NÇ Ü­È|¹ XÕÄ³k¸ ù²àÂDÇ 2ÁÝ´XÕ2¸à¬ x±%¸`Õ ƒ¬…ÇÈ²ä². ¶jÕ ¬ÀÅÅÐÅ tÕ|¹ |°`Î ƒ¬tÇ0® Lµ8»ÐÅ ø­ä´NÇ ÈÁÇDÇ ÀÉÐÆXÕÀÉ JÅDÇ ƒ¬…ÇÈ²ä². ø­ì·˜° ù²àÂtÇ ø­ä´DÇ hÕØ®XÕŒ¬ ´ä²tº ø­ä´NÇ ù²àÂXÇ m­¬ÐÅ pÐ Ž´|¹ ¬8È,Æ ƒ¬…ÇÈ²ä²."
+ rat_2_3_burger_influence:0 "ÜÂü» ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_3_burger_title:0 "ÜÂü» ÓŒ¼ ÀÉÐÆ"
+ rat_3_3_burger:0 "ÜÂü» ÓŒ¼"
+ rat_3_3_burger_FACTION_DESC:0 "ÜÂü» ÓŒ¼NÇ ¬ÀÅÅÐÅ ³tÕ ®°NÇ Ü­È|¹ XÕÄ³k¸ ù²àÂDÇ 2ÁÝ´XÕ2¸à¬ x±%¸`Õ ƒ¬…ÇÈ²ä². ¶jÕ ¬ÀÅÅÐÅ tÕ|¹ |°`Î ƒ¬tÇ0® Lµ8»ÐÅ ø­ä´NÇ ÈÁÇDÇ ÀÉÐÆXÕÀÉ JÅDÇ ƒ¬…ÇÈ²ä². ø­ì·˜° ù²àÂtÇ ø­ä´DÇ hÕØ®XÕŒ¬ ´ä²tº ø­ä´NÇ ù²àÂXÇ m­¬ÐÅ pÐ Ž´|¹ ¬8È,Æ ƒ¬…ÇÈ²ä²."
+ rat_3_3_burger_influence:0 "ÜÂü» ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_3_burger_title:0 "ÜÂü» ÓŒ¼ ÀÉÐÆ"
+ rat_1_4_gilde:0 "8®Ü´ ÓŒ¼"
+ rat_1_4_gilde_FACTION_DESC:0 "8®Ü´ ÓŒ¼NÇ ÈÀj¸´Æ EµDÇ üÈ¥ÇXÕp¬˜° 0®¼ ÜÂ2ÁDÇ t¬2Á`Õ Lµ ä¹°Æ Ä³ÀÆtÇ )´È²ä². XÕÀÉÌ¹ ø­ä´NÇ ÇàÂDÇ ÇtÕ ÇÐÆDÇ ŒÁD¾`Õ ƒ¬tÇpº ù²àÂXÇ ÈÁÇDÇ ÇtÕ xÇ%¸DÇ ÀÉÐÆXÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_1_4_gilde_influence:0 "8®Ü´ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_4_gilde_title:0 "8®Ü´ ÓŒ¼ ÀÉÐÆ"
+ rat_2_4_gilde:0 "8®Ü´ ÓŒ¼"
+ rat_2_4_gilde_FACTION_DESC:0 "8®Ü´ ÓŒ¼NÇ ÈÀj¸´Æ EµDÇ üÈ¥ÇXÕp¬˜° 0®¼ ÜÂ2ÁDÇ t¬2Á`Õ Lµ ä¹°Æ Ä³ÀÆtÇ )´È²ä². XÕÀÉÌ¹ ø­ä´NÇ ÇàÂDÇ ÇtÕ ÇÐÆDÇ ŒÁD¾`Õ ƒ¬tÇpº ù²àÂXÇ ÈÁÇDÇ ÇtÕ xÇ%¸DÇ ÀÉÐÆXÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_2_4_gilde_influence:0 "8®Ü´ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_4_gilde_title:0 "8®Ü´ ÓŒ¼ ÀÉÐÆ"
+ rat_3_4_gilde:0 "8®Ü´ ÓŒ¼"
+ rat_3_4_gilde_FACTION_DESC:0 "8®Ü´ ÓŒ¼NÇ ÈÀj¸´Æ EµDÇ üÈ¥ÇXÕp¬˜° 0®¼ ÜÂ2ÁDÇ t¬2Á`Õ Lµ ä¹°Æ Ä³ÀÆtÇ )´È²ä². XÕÀÉÌ¹ ø­ä´NÇ ÇàÂDÇ ÇtÕ ÇÐÆDÇ ŒÁD¾`Õ ƒ¬tÇpº ù²àÂXÇ ÈÁÇDÇ ÇtÕ xÇ%¸DÇ ÀÉÐÆXÕ”²ƒ¬DÇ ¼®´¹ ƒ¬…ÇÈ²ä²."
+ rat_3_4_gilde_influence:0 "8®Ü´ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_4_gilde_title:0 "8®Ü´ ÓŒ¼ ÀÉÐÆ"
+ rat_1_5_trader:0 "ÁÀxÇ ÓŒ¼"
+ rat_1_5_trader_FACTION_DESC:0 "4»íÅ ÓŒ¼NÇ ÂÎ¹NÇ 4»íÅ )¼ÝÂDÇ LÅà¬ ˆÇÀÉÌ¹, xÆP­ ¶”² m­)¼ ÈEÌÐÅ ­tÕÁ”² ˜Ç LÅÀÉ »ºiÕÈ²ä². ø­ä´NÇ m­)¼ÐÅ È³DÇ ðÄ”² ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅ<Çpº LµLµj¸ °Æ¬¹ ˜°|·XÇ ©ºjÔÐÅ ³tÕ ±4» õ¬¬È<Çj¸ tÇ|Å0®iÕÈ²ä²."
+ rat_1_5_trader_influence:0 "ÁÀxÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_5_trader_title:0 "ÁÀxÇ ÓŒ¼ ÀÉÐÆ"
+ rat_2_5_trader:0 "ÁÀxÇ ÓŒ¼"
+ rat_2_5_trader_FACTION_DESC:0 "4»íÅ ÓŒ¼NÇ ÂÎ¹NÇ 4»íÅ )¼ÝÂDÇ LÅà¬ ˆÇÀÉÌ¹, xÆP­ ¶”² m­)¼ ÈEÌÐÅ ­tÕÁ”² ˜Ç LÅÀÉ »ºiÕÈ²ä². ø­ä´NÇ m­)¼ÐÅ È³DÇ ðÄ”² ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅ<Çpº LµLµj¸ °Æ¬¹ ˜°|·XÇ ©ºjÔÐÅ ³tÕ ±4» õ¬¬È<Çj¸ tÇ|Å0®iÕÈ²ä²."
+ rat_2_5_trader_influence:0 "ÁÀxÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_5_trader_title:0 "ÁÀxÇ ÓŒ¼ ÀÉÐÆ"
+ rat_3_5_trader:0 "ÁÀxÇ ÓŒ¼"
+ rat_3_5_trader_FACTION_DESC:0 "4»íÅ ÓŒ¼NÇ ÂÎ¹NÇ 4»íÅ )¼ÝÂDÇ LÅà¬ ˆÇÀÉÌ¹, xÆP­ ¶”² m­)¼ ÈEÌÐÅ ­tÕÁ”² ˜Ç LÅÀÉ »ºiÕÈ²ä². ø­ä´NÇ m­)¼ÐÅ È³DÇ ðÄ”² ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅ<Çpº LµLµj¸ °Æ¬¹ ˜°|·XÇ ©ºjÔÐÅ ³tÕ ±4» õ¬¬È<Çj¸ tÇ|Å0®iÕÈ²ä²."
+ rat_3_5_trader_influence:0 "ÁÀxÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_5_trader_title:0 "ÁÀxÇ ÓŒ¼ ÀÉÐÆ"
+ rat_1_6_minder:0 "ŒÁÂÇ ÓŒ¼"
+ rat_1_6_minder_FACTION_DESC:0 "ŒÁÂ ÓŒ¼XÇ üÈ”Æ ©ºjÔ”² ÉÓñ´jÕ Œ­¬¹|¹ ô¼¥ÇXÕ”² ƒ¬…ÇÈ²ä². ø­ ³¬j¸ °Æ¬¹”² ä²‘ÅjÕ ­Èü¬ È8» ÀÉÝÂDÇ Èõ¬ ¼µÂÈ²ä². ø­ì·˜° °Æ¬¹ ¬ÀŒÖXÇ ä²x¹ tÇä´NÇ ø­ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅDÇ Â ˆÇµÂÈ²ä²."
+ rat_1_6_minder_influence:0 "ŒÁÂÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_1_6_minder_title:0 "ŒÁÂÇ ÓŒ¼ ÀÉÐÆ"
+ rat_2_6_minder:0 "ŒÁÂÇ ÓŒ¼"
+ rat_2_6_minder_FACTION_DESC:0 "ŒÁÂ ÓŒ¼XÇ üÈ”Æ ©ºjÔ”² ÉÓñ´jÕ Œ­¬¹|¹ ô¼¥ÇXÕ”² ƒ¬…ÇÈ²ä². ø­ ³¬j¸ °Æ¬¹”² ä²‘ÅjÕ ­Èü¬ È8» ÀÉÝÂDÇ Èõ¬ ¼µÂÈ²ä². ø­ì·˜° °Æ¬¹ ¬ÀŒÖXÇ ä²x¹ tÇä´NÇ ø­ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅDÇ Â ˆÇµÂÈ²ä²."
+ rat_2_6_minder_influence:0 "ŒÁÂÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_2_6_minder_title:0 "ŒÁÂÇ ÓŒ¼ ÀÉÐÆ"
+ rat_3_6_minder:0 "ŒÁÂÇ ÓŒ¼"
+ rat_3_6_minder_FACTION_DESC:0 "ŒÁÂ ÓŒ¼XÇ üÈ”Æ ©ºjÔ”² ÉÓñ´jÕ Œ­¬¹|¹ ô¼¥ÇXÕ”² ƒ¬…ÇÈ²ä². ø­ ³¬j¸ °Æ¬¹”² ä²‘ÅjÕ ­Èü¬ È8» ÀÉÝÂDÇ Èõ¬ ¼µÂÈ²ä². ø­ì·˜° °Æ¬¹ ¬ÀŒÖXÇ ä²x¹ tÇä´NÇ ø­ƒ¬DÇ ‹ÈDÅXÕÀÉ JÅDÇ Â ˆÇµÂÈ²ä²."
+ rat_3_6_minder_influence:0 "ŒÁÂÇ ÓŒ¼ Æ¥Õ%¸"
+ support_rat_3_6_minder_title:0 "ŒÁÂÇ ÓŒ¼ ÀÉÐÆ"
+ Idea_Variation_estate_1:0 ".ÁÈŽ´ ¥Ç­: §Y$VAL$§!"
+ Idea_Variation_estate_2:0 "D¾¼ Ë¬0Ì: §Y$VAL$§!"
+ Idea_Variation_estate_3:0 "õ¬Ë¹ Ñ¼ÐÆ: §Y$VAL$§!"
+ Idea_Variation_estate_4:0 "Noble Family Ties: §Y$VAL$§!"
+ Idea_Variation_estate_5:0 "Ç.Çj¸´Æ ÁÀxÇä´: §Y$VAL$§!"
+ Idea_Variation_estate_6:0 "¬ÀŒÖ µÑÈ: §Y$VAL$§!"
+ Idea_Variation_estate_7:0 "¬ÀŒÖ µÑÈ: §Y$VAL$§!"
+ Idea_Variation_estate_8:0 "À­qÈXÇ hÎ,Ò: §Y$VAL$§!"
+ Idea_Variation_estate_9:0 "À­qÈXÇ hÎ,Ò: §Y$VAL$§!"
+ Idea_Variation_estate_10:0 "2Æ²ÂÌ¹ ÈŽ´ §Y$VAL$§!"
+ Idea_Variation_estate_11:0 "ðÅÄ³: 1500 §Y$VAL$§!"
+ Idea_Variation_estate_12:0 "ðÅÄ³: 1600 §Y$VAL$§!"
+ Idea_Variation_estate_13:0 "ðÅÄ³: 1600 §Y$VAL$§!"
+ EST_VAL_JANI_MINISTER:0 "¨ºÑÉ´ ¥Ç­: §Y$VAL$%§!"
+ SPENDE_JANI:0 "ÆÈ²´Ì¬¹ÐÅŒ¬ 0®Ž´XÕä²"
+ EINFLUSS_AM_HOF:0 "ÈXÎÈ Æ¥Õ%¸ Ž´ìÅ"
+ NATIO_1:0 "ü»qÈüÈXÇÇ ä¹Â"
+ NATIO_2:0 "ÁÉÇ ÈHÅ"
+ NATIO_3:0 "”Æl­ ÀÉÐÆ"
+ NATIO_4:0 "tÐý·ÐÅ 8Á®DÇ Ž´ü¬XÕä²."
+ NATIO_5:0 "tÐý·ÐÅÁ ¨ºÑÉXÕä²"
+ NATIO_INFLU_1:0 "tÈË¬¼”² ü»qÈüÈXÇÇ"
+ NATIO_INFLU_2:0 "ü»qÈüÈXÇÇ ¥Çp­"
+ NATIO_INFLU_3:0 "tÐý·DÇ ®ÀÉXÕä²"
+ NATIO_INFLU_4:0 "ÀÉÄ³Ç¬ ´ÌìÓ´ä²."
+ NATIO_INFLU_5:0 "ü»qÈüÈXÇÇ ¥Ç­"
+ BURG_INFLU_1:0 "ÌÖm¹jÕ À¼8Ö¬À"
+ Nobil_1:0 "ÕÉÑÉ ü»Ñ¼³"
+ NOBIL_1_DESC:0 "ü»Ñ¼³|¹ ÕÉÑÉXÕä²"
+ Burg_1:0 "Paying court to the  Burghers"
+ Burg_1_desc:0 "As our Burghers have good influence in our state and support the government we might as well give them power over our government."
+ Burg_1_influ:0 "Payed court to the Burghers"
+ Chur_1:0 "1ÁÁÉÇ ŒÖXÇ"
+ Chur_1_desc:0 "Arranging clerical congresses will give us some influence over some princes of the church without antagonizing someone."
+ estate_influ_1:0 "Æ¥Õ%¸ ÈjÕ §Y$VAL$§!"
+ estate_influ_2:0 "Ä¬5Î ÀÉÄ³Ç ˜ÌÖ §Y$VAL$§!"
+ estate_influ_3:0 "ÈµÑ1Á Ž´ìÅ §Y$VAL$§!"
+ estate_influ_4:0 "Æ­ Ž´ìÅ §Y$VAL$§!"
+ estate_influ_5:0 "‹ÅÁXÕä² §Y$VAL$§!"
+ estate_influ_6:0 "Estate Project Financed §Y$VAL$§!"
+ estate_influ_7:0 "8ÖXÇ Ž´ìÅ §Y$VAL$§!"
+ estate_influ_8:0 "¹ÒŒ­ ¬pÈ §Y$VAL$§!"
+ estate_influ_9:0 "p­³ ¨ºÑÉ §Y$VAL$§!"
+ estate_influ_10:0 "8Á® Ž´ü¬ §Y$VAL$§!"
+ estate_influ_11:0 "hÕ.Á ÕÉ¼ §Y$VAL$§!"
+ estate_influ_12:0 "À­qÈ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_13:0 "1ÁÁÉÇ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_14:0 "ÜÂü» ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_15:0 "ü»qÈüÈXÇÇ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_16:0 "ÆÈ²´Ì¬¹ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_17:0 "TÏ¬ÀlÐ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_18:0 "2µø» ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_19:0 "¾|·Ì¹ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_20:0 "È¹|·ÀÐ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_21:0 "¼tÇäÀ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_22:0 "ÇtÇ˜°P­ ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_23:0 "|·ÀÉxÔ¸Ò ¹ÒŒ­ §Y$VAL$§!"
+ estate_influ_24:0 "¨ºÑÉ´ ¥Ç­: §Y$VAL$%§!"
+ estate_influ_25:0 " ÑÀÉ UÅÂ §Y$VAL$§!"
+ estate_influ_26:0 "¬Ö ÀÉÀÉ ”Æ­Ì §Y$VAL$§!"
+ estate_influ_27:0 "Ä¬5Î¬XÇ à­ÖDÇ ¡Çä²"
+ idea_variation_estate_1:0 "1ÁÁÉÇ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_2:0 "À­qÈ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_3:0 "ÜÂü» ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_4:0 "ü»qÈüÈXÇÇ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_5:0 "ÆÈ²´Ì¬¹ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_6:0 "TÏ¬ÀlÐ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_7:0 "2µø» ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_8:0 "¾|·Ì¹ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_9:0 "È¹|·ÀÐ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_10:0 "¼tÇäÀ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_11:0 "ÇtÇ˜°P­ ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_12:0 "|·ÀÉxÔ¸Ò ÆíÅÐÅÁ ¨ºÑÉ"
+ idea_variation_estate_13:0 "Ä¬5ÎtÇ ¬ÖDÇ ÀÉÀÉXÕä²"
+ tooltip_own_province_estate_1:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YChurch§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_2:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YNobility§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_3:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YBurgher§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_4:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YNationalist§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_5:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YJanissary§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_6:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YCossack§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_7:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YDhimmi§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_8:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YBrahmins§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_9:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YMaratha§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_10:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YVaisyas§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_11:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YJain§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ tooltip_own_province_estate_12:0 "jÍŒÁ XÕ˜°XÇ ÀÉíÅtÇ §YRajput§! Ä¬5ÎXÇ ŒÁ.ÇtÇä²."
+ Chur_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Chur_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Chur_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Chur_5:0 "ÇàÂ ô¼tÇ0®"
+ Chur_6:0 "‹ÅÁXÕä²"
+ Chur_7:0 "•¼HÅ ¬°¬"
+ Chur_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Chur_9:0 "¹ÒŒ­ ¬pÈ"
+ Chur_10:0 "¥Ç­ ¨ºÑÉ"
+ Chur_11:0 "8Á® Ž´ü¬"
+ Chur_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Chur_13:0 " ÑÀÉ °ºÂ"
+ Chur_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Nobil_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Nobil_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Nobil_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Nobil_5:0 "ÇàÂ ô¼tÇ0®"
+ Nobil_6:0 "‹ÅÁXÕä²"
+ Nobil_7:0 "•¼HÅ ¬°¬"
+ Nobil_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Nobil_9:0 "¹ÒŒ­ ¬pÈ"
+ Nobil_10:0 "¥Ç­ ¨ºÑÉ"
+ Nobil_11:0 "8Á® Ž´ü¬"
+ Nobil_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Nobil_13:0 " ÑÀÉ °ºÂ"
+ Nobil_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Burg_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Burg_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Burg_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Burg_5:0 "ÇàÂ ô¼tÇ0®"
+ Burg_6:0 "‹ÅÁXÕä²"
+ Burg_7:0 "•¼HÅ ¬°¬"
+ Burg_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Burg_9:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Burg_10:0 "¥Ç­ ¨ºÑÉ"
+ Burg_11:0 "8Á® Ž´ü¬"
+ Burg_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Burg_13:0 " ÑÀÉ °ºÂ"
+ Burg_14:0 "ÈÁÇDÇ ÇjÕ 2¬¬¹ ÕÉ¼"
+ Burg_15:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Kosak_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Kosak_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Kosak_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Kosak_5:0 "ÇàÂ ô¼tÇ0®"
+ Kosak_6:0 "‹ÅÁXÕä²"
+ Kosak_7:0 "•¼HÅ ¬°¬"
+ Kosak_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Kosak_9:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Kosak_10:0 "¥Ç­ ¨ºÑÉ"
+ Kosak_11:0 "8Á® Ž´ü¬"
+ Kosak_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Kosak_13:0 " ÑÀÉ °ºÂ"
+ Kosak_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Dhim_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Dhim_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Dhim_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Dhim_5:0 "ÇàÂ ô¼tÇ0®"
+ Dhim_6:0 "‹ÅÁXÕä²"
+ Dhim_7:0 "•¼HÅ ¬°¬"
+ Dhim_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Dhim_9:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Dhim_10:0 "¥Ç­ ¨ºÑÉ"
+ Dhim_11:0 "8Á® Ž´ü¬"
+ Dhim_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Dhim_13:0 " ÑÀÉ °ºÂ"
+ Dhim_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Nationa_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Nationa_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Nationa_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Nationa_5:0 "ÇàÂ ô¼tÇ0®"
+ Nationa_6:0 "‹ÅÁXÕä²"
+ Nationa_7:0 "•¼HÅ ¬°¬"
+ Nationa_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Nationa_9:0 "¹ÒŒ­ ¬pÈ"
+ Nationa_10:0 "¥Ç­ ¨ºÑÉ"
+ Nationa_11:0 "8Á® Ž´ü¬"
+ Nationa_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Nationa_13:0 " ÑÀÉ °ºÂ"
+ Nationa_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Jani_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Jani_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Jani_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Jani_5:0 "ÇàÂ ô¼tÇ0®"
+ Jani_6:0 "‹ÅÁXÕä²"
+ Jani_7:0 "•¼HÅ ¬°¬"
+ Jani_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Jani_9:0 "¹ÒŒ­ ¬pÈ"
+ Jani_10:0 "¥Ç­ ¨ºÑÉ"
+ Jani_11:0 "8Á® Ž´ü¬"
+ Jani_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Jani_13:0 " ÑÀÉ °ºÂ"
+ Jani_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Brah_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Brah_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Brah_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Brah_5:0 "ÇàÂ ô¼tÇ0®"
+ Brah_6:0 "‹ÅÁXÕä²"
+ Brah_7:0 "•¼HÅ ¬°¬"
+ Brah_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Brah_9:0 "¹ÒŒ­ ¬pÈ"
+ Brah_10:0 "¥Ç­ ¨ºÑÉ"
+ Brah_11:0 "8Á® Ž´ü¬"
+ Brah_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Brah_13:0 " ÑÀÉ °ºÂ"
+ Brah_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Mara_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Mara_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Mara_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Mara_5:0 "ÇàÂ ô¼tÇ0®"
+ Mara_6:0 "‹ÅÁXÕä²"
+ Mara_7:0 "•¼HÅ ¬°¬"
+ Mara_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Mara_9:0 "¹ÒŒ­ ¬pÈ"
+ Mara_10:0 "¥Ç­ ¨ºÑÉ"
+ Mara_11:0 "8Á® Ž´ü¬"
+ Mara_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Mara_13:0 " ÑÀÉ °ºÂ"
+ Mara_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Vais_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Vais_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Vais_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Vais_5:0 "ÇàÂ ô¼tÇ0®"
+ Vais_6:0 "‹ÅÁXÕä²"
+ Vais_7:0 "•¼HÅ ¬°¬"
+ Vais_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Vais_9:0 "¹ÒŒ­ ¬pÈ"
+ Vais_10:0 "¥Ç­ ¨ºÑÉ"
+ Vais_11:0 "8Á® Ž´ü¬"
+ Vais_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Vais_13:0 " ÑÀÉ °ºÂ"
+ Vais_14:0 "ÈÁÇDÇ ÇjÕ 2¬¬¹ ÕÉ¼"
+ Vais_15:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Jain_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Jain_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Jain_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Jain_5:0 "ÇàÂ ô¼tÇ0®"
+ Jain_6:0 "‹ÅÁXÕä²"
+ Jain_7:0 "•¼HÅ ¬°¬"
+ Jain_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Jain_9:0 "¹ÒŒ­ ¬pÈ"
+ Jain_10:0 "¥Ç­ ¨ºÑÉ"
+ Jain_11:0 "8Á® Ž´ü¬"
+ Jain_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Jain_13:0 " ÑÀÉ °ºÂ"
+ Jain_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ Raj_2:0 "Æ¥Õ%¸ ÈjÕ"
+ Raj_3:0 "É”Æ xÇ<»DÇ ˜ÌÖXÕä²"
+ Raj_4:0 "ÈµÑ1Á ô¼tÇ0®"
+ Raj_5:0 "ÇàÂ ô¼tÇ0®"
+ Raj_6:0 "‹ÅÁXÕä²"
+ Raj_7:0 "•¼HÅ ¬°¬"
+ Raj_8:0 "8ÖXÇ|¹  ¼ŽÔä²"
+ Raj_9:0 "¹ÒŒ­ ¬pÈ"
+ Raj_10:0 "¥Ç­ ¨ºÑÉ"
+ Raj_11:0 "8Á® Ž´ü¬"
+ Raj_12:0 "ø­ä´XÇ ÆíÅÐÅÁ ¨ºÑÉXÕä²"
+ Raj_13:0 " ÑÀÉ °ºÂ"
+ Raj_14:0 "¬Ö ÀÉÀÉ ”Æ­Ì"
+ estate_aristocrats:0 "À­qÈ"
+ IV_ESTATE_ENDTIER:0 "ÈŽ´¬Ö è²Ä¬|¹ DÅÁÉ DÆÌ¸XÕÀÉ JÅXÅµÂÈ²ä²"
+ IV_ESTATE_INTERACTION_1:0 "¬Ö ˆÇLÇ : À­qÈ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_2:0 "¬Ö ˆÇLÇ : 1ÁÁÉÇ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_3:0 "¬Ö ˆÇLÇ : ÜÂü» ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_4:0 "¬Ö ˆÇLÇ : ü»qÈüÈXÇÇ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_5:0 "¬Ö ˆÇLÇ : ÆÈ²´Ì¬¹ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_6:0 "¬Ö ˆÇLÇ : TÏ¬ÀlÐ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_7:0 "¬Ö ˆÇLÇ : 2µø» ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_8:0 "¬Ö ˆÇLÇ : ¾|·Ì¹ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_9:0 "¬Ö ˆÇLÇ : È¹|·ÀÐ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_10:0 "¬Ö ˆÇLÇ : ¼tÇäÀ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_11:0 "¬Ö ˆÇLÇ : ÇtÇ˜°P­ ¹ÒŒ­"
+ IV_ESTATE_INTERACTION_12:0 "¬Ö ˆÇLÇ : |·ÀÉxÔ¸Ò ¹ÒŒ­"
+ estate_interaction_idea_variation_2:0 "ÈµÑ1Á ô¼tÇ0®"
+ estate_interaction_idea_variation_3:0 "ÇàÂ ô¼tÇ0®"
+ estate_interaction_idea_variation_4:0 "¬ÖDÇ ø»è¸ä²"
+ estate_interaction_idea_variation_5:0 "Ž´(ÓjÕ Ä¬5Î"
+ estate_interaction_idea_variation_6:0 "ÇXÎŒ­ Ž´ìÅ"
+ estate_interaction_idea_variation_7:0 "8Á® ÉìÅ"
+ estate_interaction_idea_variation_8:0 "Æ¥Õ%¸ ÈjÕ"
+ estate_interaction_idea_variation_9:0 "Ä¬5ÎXÇ ÀÉÄ³Ç|¹ ˜ÌÖXÕä²"
+ estate_interaction_idea_variation_10:0 ".Ç°À •¼`¹DÇ ô¼ÉXÕä²"
+ janissary_loyalty_modifier:0 "ÆÈ²´Ì¬¹ ©Í1ÁÄ³ à­Ö"
+ janissary_influence_modifier:0 "ÆÈ²´Ì¬¹ Æ¥Õ%¸"
+ nationalist_loyalty_modifier:0 "ü»qÈüÈXÇÇ ©Í1ÁÄ³ à­Ö"
+ nationalist_influence_modifier:0 "ü»qÈüÈXÇÇ Æ¥Õ%¸"
+ estate_janissary_ownership:0 "ÆÈ²´Ì¬¹  ÑÀÉ ŒÁ.ÇŒ­"
+ estate_nationalist_ownership:0 "ü»qÈüÈXÇÇ  ÑÀÉ ŒÁ.ÇŒ­"
+ estate_draft_heavies:0 "10 Ñ¼%¸ jÕÄ¬È¹ä² 2™ÌXÇ ³Ö.Á ÕÉ¼"
+ estate_draft_galleys:0 "10 Ñ¼%¸ jÕÄ¬È¹ä² 4™ÌXÇ 2¬¬¹ ÕÉ¼"
+ estate_priv_idea_variation_1_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_1_1_desc:0 ""
+ estate_priv_idea_variation_1_2:0 "àÂYÕÇ ¨ºÑÉ"
+ estate_priv_idea_variation_1_2_desc:0 ""
+ estate_priv_idea_variation_1_3:0 "tÇè²ìÂ8»­ ¨ºÑÉ"
+ estate_priv_idea_variation_1_3_desc:0 ""
+ estate_priv_idea_variation_1_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_1_4_desc:0 ""
+ estate_priv_idea_variation_1_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_1_5_desc:0 ""
+ estate_priv_idea_variation_1_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_1_6_desc:0 ""
+ estate_priv_idea_variation_1_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_1_7_desc:0 ""
+ estate_priv_idea_variation_1_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_1_8_desc:0 ""
+ estate_priv_idea_variation_1_9:0 "àÂ³Y¹XÇ ¬…È"
+ estate_priv_idea_variation_1_9_desc:0 ""
+ estate_priv_idea_variation_1_10:0 "P­iÖÐÅŒ¬ xÆP­­ Ó¬¬"
+ estate_priv_idea_variation_1_10_desc:0 ""
+ estate_priv_idea_variation_1_11:0 "Èõ¼Ç ¨ºÑÉ"
+ estate_priv_idea_variation_1_11_desc:0 ""
+ estate_priv_idea_variation_1_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_1_12_desc:0 ""
+ estate_priv_idea_variation_2_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_2_1_desc:0 ""
+ estate_priv_idea_variation_2_2:0 "xÆP­­ ¨ºÑÉ"
+ estate_priv_idea_variation_2_2_desc:0 ""
+ estate_priv_idea_variation_2_3:0 "³ô²jÕ õ¬©¬Ç ¨ºÑÉ"
+ estate_priv_idea_variation_2_3_desc:0 ""
+ estate_priv_idea_variation_2_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_2_4_desc:0 ""
+ estate_priv_idea_variation_2_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_2_5_desc:0 ""
+ estate_priv_idea_variation_2_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_2_6_desc:0 ""
+ estate_priv_idea_variation_2_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_2_7_desc:0 ""
+ estate_priv_idea_variation_2_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_2_8_desc:0 ""
+ estate_priv_idea_variation_2_9:0 "àÂ8ÁÄ¬ UÖ¥Ç"
+ estate_priv_idea_variation_2_9_desc:0 ""
+ estate_priv_idea_variation_2_11:0 "¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_2_11_desc:0 ""
+ estate_priv_idea_variation_2_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_2_12_desc:0 ""
+ estate_priv_idea_variation_3_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_3_1_desc:0 ""
+ estate_priv_idea_variation_3_2:0 "Ž´³ ÀÉ×­ ¨ºÑÉ"
+ estate_priv_idea_variation_3_2_desc:0 ""
+ estate_priv_idea_variation_3_3:0 "õ¬1Á È8»¬ ¨ºÑÉ"
+ estate_priv_idea_variation_3_3_desc:0 ""
+ estate_priv_idea_variation_3_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_3_4_desc:0 ""
+ estate_priv_idea_variation_3_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_3_5_desc:0 ""
+ estate_priv_idea_variation_3_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_3_6_desc:0 ""
+ estate_priv_idea_variation_3_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_3_7_desc:0 ""
+ estate_priv_idea_variation_3_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_3_8_desc:0 ""
+ estate_priv_idea_variation_3_9:0 "àÂ8ÁÄ¬ UÖ¥Ç"
+ estate_priv_idea_variation_3_9_desc:0 ""
+ estate_priv_idea_variation_3_11:0 "¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_3_11_desc:0 ""
+ estate_priv_idea_variation_3_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_3_12_desc:0 ""
+ estate_priv_idea_variation_4_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_4_1_desc:0 ""
+ estate_priv_idea_variation_4_2:0 "pÈÐÓm­ ¥Ç­ ¨ºÑÉ"
+ estate_priv_idea_variation_4_2_desc:0 ""
+ estate_priv_idea_variation_4_3:0 "tÕp­ ¬Ö¬ ¨ºÑÉ"
+ estate_priv_idea_variation_4_3_desc:0 ""
+ estate_priv_idea_variation_4_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_4_4_desc:0 ""
+ estate_priv_idea_variation_4_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_4_5_desc:0 ""
+ estate_priv_idea_variation_4_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_4_6_desc:0 ""
+ estate_priv_idea_variation_4_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_4_7_desc:0 ""
+ estate_priv_idea_variation_4_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_4_8_desc:0 ""
+ estate_priv_idea_variation_4_9:0 "àÂ8ÁÄ¬XÇ Œ­¬¹"
+ estate_priv_idea_variation_4_9_desc:0 ""
+ estate_priv_idea_variation_4_10:0 "ÈÅ³ ¨ºÑÉ"
+ estate_priv_idea_variation_4_10_desc:0 ""
+ estate_priv_idea_variation_4_11:0 "ÐÐØÕ¬ ¨ºÑÉ"
+ estate_priv_idea_variation_4_11_desc:0 ""
+ estate_priv_idea_variation_4_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_4_12_desc:0 ""
+ estate_priv_idea_variation_4_13:0 "xÇ%¸ ¨ºÑÉ"
+ estate_priv_idea_variation_4_13_desc:0 ""
+ estate_priv_idea_variation_4_14:0 "³Ö.Á ÕÉ¼"
+ estate_priv_idea_variation_4_14_desc:0 ""
+ estate_priv_idea_variation_4_15:0 "2¬¬¹ ÕÉ¼"
+ estate_priv_idea_variation_4_15_desc:0 ""
+ estate_priv_idea_variation_5_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_5_1_desc:0 ""
+ estate_priv_idea_variation_5_2:0 "pÈÐÓm­ ¥Ç­ ¨ºÑÉ"
+ estate_priv_idea_variation_5_2_desc:0 ""
+ estate_priv_idea_variation_5_3:0 "tÕp­ ¬Ö¬ ¨ºÑÉ"
+ estate_priv_idea_variation_5_3_desc:0 ""
+ estate_priv_idea_variation_5_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_5_4_desc:0 ""
+ estate_priv_idea_variation_5_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_5_5_desc:0 ""
+ estate_priv_idea_variation_5_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_5_6_desc:0 ""
+ estate_priv_idea_variation_5_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_5_7_desc:0 ""
+ estate_priv_idea_variation_5_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_5_8_desc:0 ""
+ estate_priv_idea_variation_5_9:0 "àÂ8ÁÄ¬XÇ Œ­¬¹"
+ estate_priv_idea_variation_5_9_desc:0 ""
+ estate_priv_idea_variation_5_10:0 "ÈÅ³ ¨ºÑÉ"
+ estate_priv_idea_variation_5_10_desc:0 ""
+ estate_priv_idea_variation_5_11:0 "ÐÐØÕ¬ ¨ºÑÉ"
+ estate_priv_idea_variation_5_11_desc:0 ""
+ estate_priv_idea_variation_5_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_5_12_desc:0 ""
+ estate_priv_idea_variation_5_13:0 "xÇ%¸ ¨ºÑÉ"
+ estate_priv_idea_variation_5_13_desc:0 ""
+ estate_priv_idea_variation_5_14:0 "³Ö.Á ÕÉ¼"
+ estate_priv_idea_variation_5_14_desc:0 ""
+ estate_priv_idea_variation_5_15:0 "2¬¬¹ ÕÉ¼"
+ estate_priv_idea_variation_5_15_desc:0 ""
+ estate_priv_idea_variation_6_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_6_1_desc:0 ""
+ estate_priv_idea_variation_6_2:0 "àÂYÕÇ ¨ºÑÉ"
+ estate_priv_idea_variation_6_2_desc:0 ""
+ estate_priv_idea_variation_6_3:0 "ŒÖÄ¬¬À ¨ºÑÉ"
+ estate_priv_idea_variation_6_3_desc:0 ""
+ estate_priv_idea_variation_6_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_6_4_desc:0 ""
+ estate_priv_idea_variation_6_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_6_5_desc:0 ""
+ estate_priv_idea_variation_6_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_6_6_desc:0 ""
+ estate_priv_idea_variation_6_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_6_7_desc:0 ""
+ estate_priv_idea_variation_6_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_6_8_desc:0 ""
+ estate_priv_idea_variation_6_9:0 "àÂ³Y¹XÇ ¬…È"
+ estate_priv_idea_variation_6_9_desc:0 ""
+ estate_priv_idea_variation_6_11:0 "Èõ¼Ç ¨ºÑÉ"
+ estate_priv_idea_variation_6_11_desc:0 ""
+ estate_priv_idea_variation_6_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_6_12_desc:0 ""
+ estate_priv_idea_variation_7_1:0 "¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_7_1_desc:0 ""
+ estate_priv_idea_variation_7_2:0 "p­³ ¬Ö¬ ¨ºÑÉ"
+ estate_priv_idea_variation_7_2_desc:0 ""
+ estate_priv_idea_variation_7_3:0 "0®Ñ¼ ³¥Ç ¨ºÑÉ"
+ estate_priv_idea_variation_7_3_desc:0 ""
+ estate_priv_idea_variation_7_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_7_4_desc:0 ""
+ estate_priv_idea_variation_7_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_7_5_desc:0 ""
+ estate_priv_idea_variation_7_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_7_6_desc:0 ""
+ estate_priv_idea_variation_7_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_7_7_desc:0 ""
+ estate_priv_idea_variation_7_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_7_8_desc:0 ""
+ estate_priv_idea_variation_7_11:0 "TÏ¬ÀlÐ ðÅ³ UÖ¥Ç"
+ estate_priv_idea_variation_7_11_desc:0 ""
+ estate_priv_idea_variation_7_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_7_12_desc:0 ""
+ estate_priv_idea_variation_8_1:0 "¬Ž´ ÀÉÐÆ ”Æl­"
+ estate_priv_idea_variation_8_1_desc:0 ""
+ estate_priv_idea_variation_8_2:0 "TÖ0® È8»¬ ¨ºÑÉ"
+ estate_priv_idea_variation_8_2_desc:0 ""
+ estate_priv_idea_variation_8_3:0 "ô¼Ñ¼ ¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_8_3_desc:0 ""
+ estate_priv_idea_variation_8_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_8_4_desc:0 ""
+ estate_priv_idea_variation_8_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_8_5_desc:0 ""
+ estate_priv_idea_variation_8_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_8_6_desc:0 ""
+ estate_priv_idea_variation_8_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_8_7_desc:0 ""
+ estate_priv_idea_variation_8_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_8_8_desc:0 ""
+ estate_priv_idea_variation_8_9:0 "|·ÀÉxÔ¸Ò ðÅ³ ÈÕ¬"
+ estate_priv_idea_variation_8_9_desc:0 ""
+ estate_priv_idea_variation_8_10:0 "|·ÀÉxÔ¸Ò ðÅ³ UÖ¥Ç"
+ estate_priv_idea_variation_8_10_desc:0 ""
+ estate_priv_idea_variation_8_11:0 "|·ÀÉxÔ¸Ò ðÅ³ UÖ¥Ç"
+ estate_priv_idea_variation_8_11_desc:0 ""
+ estate_priv_idea_variation_8_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_8_12_desc:0 ""
+ estate_priv_idea_variation_9_1:0 "¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_9_1_desc:0 ""
+ estate_priv_idea_variation_9_2:0 "ìÓÑ¼ ¥Çp­ ¨ºÑÉ"
+ estate_priv_idea_variation_9_2_desc:0 ""
+ estate_priv_idea_variation_9_3:0 "ô¼Ñ¼ ÀÉÄ³Ç ¨ºÑÉ"
+ estate_priv_idea_variation_9_3_desc:0 ""
+ estate_priv_idea_variation_9_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_9_4_desc:0 ""
+ estate_priv_idea_variation_9_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_9_5_desc:0 ""
+ estate_priv_idea_variation_9_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_9_6_desc:0 ""
+ estate_priv_idea_variation_9_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_9_7_desc:0 ""
+ estate_priv_idea_variation_9_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_9_8_desc:0 ""
+ estate_priv_idea_variation_9_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_9_12_desc:0 ""
+ estate_priv_idea_variation_10_2:0 "ÁÀxÇ ¨ºÑÉ"
+ estate_priv_idea_variation_10_2_desc:0 ""
+ estate_priv_idea_variation_10_3:0 "xÇ8»üÈXÇÇ ¨ºÑÉ"
+ estate_priv_idea_variation_10_3_desc:0 ""
+ estate_priv_idea_variation_10_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_10_4_desc:0 ""
+ estate_priv_idea_variation_10_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_10_5_desc:0 ""
+ estate_priv_idea_variation_10_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_10_6_desc:0 ""
+ estate_priv_idea_variation_10_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_10_7_desc:0 ""
+ estate_priv_idea_variation_10_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_10_8_desc:0 ""
+ estate_priv_idea_variation_10_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_10_12_desc:0 ""
+ estate_priv_idea_variation_11_2:0 "Ó¬À ¨ºÑÉ"
+ estate_priv_idea_variation_11_2_desc:0 ""
+ estate_priv_idea_variation_11_3:0 "³Ž´ÅÅÇ ¨ºÑÉ"
+ estate_priv_idea_variation_11_3_desc:0 ""
+ estate_priv_idea_variation_11_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_11_4_desc:0 ""
+ estate_priv_idea_variation_11_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_11_5_desc:0 ""
+ estate_priv_idea_variation_11_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_11_6_desc:0 ""
+ estate_priv_idea_variation_11_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_11_7_desc:0 ""
+ estate_priv_idea_variation_11_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_11_8_desc:0 ""
+ estate_priv_idea_variation_11_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_11_12_desc:0 ""
+ estate_priv_idea_variation_12_1:0 "ÈŽ´XÇ ü»qÈüÈXÇÇ"
+ estate_priv_idea_variation_12_1_desc:0 ""
+ estate_priv_idea_variation_12_2:0 "ü»qÈüÈXÇÇ ¨ºÑÉ"
+ estate_priv_idea_variation_12_2_desc:0 ""
+ estate_priv_idea_variation_12_3:0 "(ÂNÇ äÂ%¸¬ ¨ºÑÉ"
+ estate_priv_idea_variation_12_3_desc:0 ""
+ estate_priv_idea_variation_12_4:0 "¹ÒŒ­ ¬pÈ"
+ estate_priv_idea_variation_12_4_desc:0 ""
+ estate_priv_idea_variation_12_5:0 "8Á%¸ ¬pÈ"
+ estate_priv_idea_variation_12_5_desc:0 ""
+ estate_priv_idea_variation_12_6:0 "8Á® xÇÁÀ"
+ estate_priv_idea_variation_12_6_desc:0 ""
+ estate_priv_idea_variation_12_7:0 "Ä¬5ÎXÇ Æ ÑÐÅÁ ¨ºÑÉ"
+ estate_priv_idea_variation_12_7_desc:0 ""
+ estate_priv_idea_variation_12_8:0 "¬Ö ÀÉÀÉ"
+ estate_priv_idea_variation_12_8_desc:0 ""
+ estate_priv_idea_variation_12_12:0 "$ESTATE_NAME$  ÑÀÉ Œ­¬¹"
+ estate_priv_idea_variation_12_12_desc:0 ""
+ estate_janissary_give_us_money:0 "°Æ¬¹XÇ 0®ìÅÐÅ ³jÕ ô¼ÁÀ"
+ estate_janissary_get_allies:0 "Ù³ù¹ l­•Í"
+ estate_janissary_befriend_rival_of_rival:1 "[rival_country.GetUsableName]XÇ Ë¬ÁÇÇNÆ jÎtÕÀÉä²"
+ estate_janissary_restore_legitimacy:1 "[Root.GetLegitimacyOrMeritocracy] õ¼l­"
+ estate_janissary_relations_with_X:0 "[agenda_country.GetUsableName]NÆ ­Ä¬|¹ ¬.ÁXÕä²"
+ estate_janissary_break_coalition:0 "¼m­¬ Ù³ù¹DÇ h®Ž´Âä²."
+ estate_janissary_condottieri_rivals:0 "[agenda_country.GetUsableName]ÐÅ ³mÕXÕìÅ XÏÄ³ðÒÐÅ¬¹|¹ ô¼´°ä²"
+ estate_janissary_support_independence:0 "[agenda_country.GetAdjective]¬ Å³Ë¹`Õ Â ˆÇÄ³k¸ ÀÉÐÆXÕä²"
+ estate_janissary_retake_core:0 "[agenda_province.GetName]|¹ ´>Ìä²."
+ estate_janissary_crush_revolts:0 "¼Ž·p­DÇ ©¬ôÑXÕä²"
+ estate_janissary_regain_liberty:0 "°Æ¬¹XÇ Å³Ë¹DÇ ´>Ìä²."
+ estate_janissary_convert_province_culture:0 "Make [agenda_province.GetName] [Root.Culture.GetName]"
+ estate_janissary_protect_our_culture:0 "[agenda_province.GetName]ÐÅÁ [Root.GetAdjective] ¬ÀŒ·ä´DÇ ô¼8ÖXÕä²."
+ estate_janissary_vassalise_vulnerable_country:0 "[agenda_country.GetUsableName] Ám­TÖ"
+ estate_janissary_expand_into_x:0 "[agenda_province.GetAreaName]<Çj¸ UÖ¥Ç"
+ estate_janissary_complete_conquest_of_x:0 "[agenda_province.GetAreaName]ÐÅ ³jÕ Èõ¼ DÆÌ¸"
+ estate_janissary_annex_subject:0 "[agenda_country.GetUsableName] iÕÑ¼"
+ estate_janissary_build_an_army:0 "°Æ¬¹XÇ m­¬|¹ ÇtÕ p­³|¹ ‘Å1ÁXÕä²."
+ estate_janissary_bigger_army_than_rival:0 "[agenda_country.GetUsableName]ÐÅ ³mÕjÕ )¼´Å"
+ estate_janissary_build_up_manpower_reserves:0 "°Æ¬¹XÇ xÇ%¸DÇ D¾•ÍXÕä²"
+ estate_janissary_recover_abysmal_prestige:0 "°Æ¬¹XÇ ÇàÂDÇ ŒÖõ¼XÕä²."
+ estate_janissary_improve_prestige:0 "°Æ¬¹XÇ ÇàÂDÇ ¬.ÁXÕä²."
+ estate_janissary_hire_advisor_desc:0 "ÆÈ²´Ì¬¹”² [Root.Monarch.GetTitle]¬ ÈÀj¸´Æ p­¬À à¬8»DÇ à¬©ÆXÕ0®|¹ ÐÆXÕà¬ ˆÇµÂÈ²ä²."
+ estate_janissary_fire_advisor_desc:0 "[Root.Mil_Advisor.GetTitle] [Root.Mil_Advisor.GetName] has insulted the Janissaries. They demand that we fire [Root.Mil_Advisor.GetHerHim]!"
+ estate_janissary_get_allies_desc:0 "ÆÈ²´Ì¬¹”² [Root.GetUsableName]XÇ xÆP­È à¬Ë¹ÐÅ ³tÕ q¬ÈXÕà¬ ˆÇµÂÈ²ä². ø­ä´NÇ °Æ¬¹¬ T³ Î¹NÇ Ù³ù¹m­DÇ >Ì”² ƒ¬DÇ ÀÉÀÉiÕÈ²ä²."
+ estate_janissary_befriend_rival_of_rival_desc:0 "ÆÈ²´Ì¬¹”² [rival_country.GetUsableName]ÐÅÁ °Æ¬¹XÇ Ë¬ÁÇÇ¬ ¬XÕ”² ÇÖÐÅ ³tÕ °Æ2¸XÕà¬ ˆÇµÂÈ²ä². ø­ä´NÇ °Æ¬¹¬ ø­ä´XÇ Ë¬ÁÇÇxÇ [agenda_country.GetUsableName]NÆ jÎl­¬ ´´Å Ë¬ÁÇÇÐÅ ³mÕtÕ ˜×DÇ iÕXÎÄ³k¸ Œ­¥ÇiÕÈ²ä²"
+ estate_janissary_restore_legitimacy_desc:0 "The Janissaries are concerned that the [Root.Monarch.GetTitle] is unable to command the respect of [Root.Monarch.GetHerHis] people. They demand that the legitimacy of the [Root.Monarch.GetTitle] be restored - one way or another..."
+ estate_janissary_relations_with_X_desc:0 "The Janissaries see [agenda_country.GetUsableName] as a valuable potential ally. They recommend that we seek closer ties with them."
+ estate_janissary_break_coalition_desc:0 "The alliance of nations arrayed against us is deeply worrying to the Janissaries. They beseech us to do what we can to mollify the fears of those who would oppose us - or failing that, to break their resistance by crushing them in battle."
+ estate_janissary_condottieri_rivals_desc:0 "Our rivals in [agenda_country.GetUsableName] are seeking to expand their power through their war with [agenda_enemy_country.GetUsableName]. The Janissaries call for us to prevent them from stealing a march on us by sending a force to support the [agenda_enemy_country.GetAdjective] cause."
+ estate_janissary_support_independence_desc:0 "The Janissaries draw attention to the plight of [agenda_country.GetUsableName], a nation cruelly subjugated by our rivals, [agenda_rival_country.GetUsableName]. They enjoin us to take up the cause of justice and support [agenda_country.GetAdjective] independence."
+ estate_janissary_retake_core_desc:0 "The Janissaries bemoan the fact that [agenda_province.GetName], an integral part of our nation, is not under our control. They demand that we reclaim the land that is rightfully ours!"
+ estate_janissary_crush_revolts_desc:0 "The Janissaries demand that we restore order and crush the revolts that are sweeping across our nation."
+ estate_janissary_regain_liberty_desc:0 "The Janissaries chafe under the rule of our [agenda_country.GetAdjective] overlords. They demand action to restore [Root.GetAdjective] liberty!"
+ estate_janissary_convert_province_culture_desc:0 "The Janissaries have been seeking new land for their people. They consider [agenda_province.GetName] to be an ideal place for [Root.Culture.GetName] settlement, if the locals can be persuaded of the merits of our ways."
+ estate_janissary_protect_our_culture_desc:0 "The Janissaries claim that our [Root.Culture.GetName] brothers in [agenda_province.GetName] face considerable oppression at the hands of their [agenda_country.GetAdjective] masters. They demand that we seize the province and bring them into our nation!"
+ estate_janissary_vassalise_vulnerable_country_desc:0 "The Janissaries can't help but be tempted by the vulnerable target presented by our neighbors in [agenda_country.GetUsableName]. They are pushing for a military campaign to bring them under our dominion!"
+ estate_janissary_expand_into_x_desc:0 "The Janissaries have been casting a jealous eye on [agenda_province.GetAreaName], an area they claim would make a fine addition to our nation. They call for a military campaign to secure part of it for ourselves."
+ estate_janissary_complete_conquest_of_x_desc:0 "The Janissaries see [agenda_province.GetAreaName] as an integral part of [Root.GetUsableName] and resent the fact that it is not entirely our own. They exhort us to secure the rest of the area for ourselves!"
+ estate_janissary_annex_subject_desc:0 "The Janissaries covet the lands of our [agenda_country.GetAdjective] subjects. They demand that we integrate them fully into our country."
+ estate_janissary_build_an_army_desc:0 "The Janissaries consider our army to be an embarrassment to our nation. They urgently call for it to be expanded, so that our forces may present sufficient deterrence to enemies that may covet our lands."
+ estate_janissary_bigger_army_than_rival_desc:0 "The Janissaries are worried that our army would fare poorly against the [agenda_country.GetAdjective] in a war. They insist that we must increase our recruitment so that our armed forces are no longer outmatched by our rivals."
+ estate_janissary_build_up_manpower_reserves_desc:0 "The depletion of our manpower reserves is worrying to the Janissaries, who warn that [Root.GetUsableName] would be left defenseless should our enemies seek to take advantage of the situation. They advocate that we consolidate for a time and allow our reserves to recover."
+ estate_janissary_recover_abysmal_prestige_desc:0 "The Janissaries are dismayed at the depths to which we have allowed the image of our nation to sink. They demand a concerted effort to restore our reputation among our peers!"
+ estate_janissary_improve_prestige_desc:0 "The Janissaries wish us to improve our standing among nations by increasing the splendor of the [Root.Monarch.GetTitle]'s court."
+ estate_janissary_develop_x:0 "Increase Manpower in [agenda_province.GetName]"
+ estate_janissary_develop_x_desc:0 "The Janissaries request that we invest in the prosperity of their lands in [agenda_province.GetName]."
+ estate_janissary_build_army_building_in_y:0 "Expand Military Infrastructure in [agenda_province.GetName]"
+ estate_janissary_build_army_building_in_y_desc:0 "The Janissaries of [agenda_province.GetName] urge us to build new army training and recruitment centers in the province so that our supply of high-quality recruits to the army may be made more secure."
+ estate_janissary_build_manufactory_in_y:0 "Build a Manufactory in [agenda_province.GetName]"
+ estate_janissary_build_manufactory_in_y_desc:0 "The Janissaries of [agenda_province.GetName] request that we fund the construction of a new [agenda_province.GetManufactory]. They claim that it will be a highly profitable investment, doubling the province's output of [agenda_province.GetTradeGoodsName]."
+ estate_nationalist_give_us_money:0 "°Æ¬¹XÇ 0®ìÅÐÅ ³jÕ ô¼ÁÀ"
+ estate_nationalist_get_allies:0 "Ù³ù¹ ú¹0®"
+ estate_nationalist_befriend_rival_of_rival:1 "[rival_country.GetUsableName]XÇ Ë¬ÁÇÇNÆ jÎtÕÀÉä²"
+ estate_nationalist_restore_legitimacy:1 "[Root.GetLegitimacyOrMeritocracy] õ¼l­"
+ estate_nationalist_relations_with_X:0 "[agenda_country.GetUsableName]NÆ ­Ä¬|¹ ¬.ÁXÕä²"
+ estate_nationalist_break_coalition:0 "¼m­¬ Ù³ù¹DÇ h®Ž´Âä²."
+ estate_nationalist_condottieri_rivals:0 "[agenda_country.GetUsableName]ÐÅ ³mÕXÕìÅ XÏÄ³ðÒÐÅ¬¹|¹ ô¼´°ä²"
+ estate_nationalist_support_independence:0 "[agenda_country.GetAdjective]¬ Å³Ë¹`Õ Â ˆÇÄ³k¸ ÀÉÐÆXÕä²"
+ estate_nationalist_retake_core:0 "[agenda_province.GetName]|¹ ´>Ìä²."
+ estate_nationalist_crush_revolts:0 "¼Ž·p­DÇ „´ÄÁXÕ|·!"
+ estate_nationalist_regain_liberty:0 "°Æ¬¹XÇ Å³Ë¹DÇ ´>Ìä²."
+ estate_nationalist_convert_province_culture:0 "Make [agenda_province.GetName] [Root.Culture.GetName]"
+ estate_nationalist_protect_our_culture:0 "[agenda_province.GetName]ÐÅÁ [Root.GetAdjective] ¬ÀŒ·ä´DÇ ô¼8ÖXÕä²."
+ estate_nationalist_vassalise_vulnerable_country:0 "[agenda_country.GetUsableName] Ám­TÖ"
+ estate_nationalist_expand_into_x:0 "[agenda_province.GetAreaName]<Çj¸ UÖ¥Ç"
+ estate_nationalist_complete_conquest_of_x:0 "[agenda_province.GetAreaName]ÐÅ ³jÕ Èõ¼ DÆÌ¸"
+ estate_nationalist_annex_subject:0 "[agenda_country.GetUsableName] iÕÑ¼"
+ estate_nationalist_build_an_army:0 "°Æ¬¹XÇ m­¬|¹ ÇtÕ p­³|¹ ‘Å1ÁXÕä²."
+ estate_nationalist_bigger_army_than_rival:0 "[agenda_country.GetUsableName]ÐÅ ³mÕjÕ )¼´Å"
+ estate_nationalist_build_up_manpower_reserves:0 "°Æ¬¹XÇ xÇ%¸DÇ D¾•ÍXÕä²"
+ estate_nationalist_recover_abysmal_prestige:0 "°Æ¬¹XÇ ÇàÂDÇ ŒÖõ¼XÕä²."
+ estate_nationalist_improve_prestige:0 "°Æ¬¹XÇ ÇàÂDÇ ¬.ÁXÕä²."
+ estate_nationalist_hire_advisor_desc:0 "The Nationalists desire the [Root.Monarch.GetTitle] to hire a new military advisor."
+ estate_nationalist_fire_advisor_desc:0 "[Root.Mil_Advisor.GetTitle] [Root.Mil_Advisor.GetName] has insulted the Nationalists. They demand that we fire [Root.Mil_Advisor.GetHerHim]!"
+ estate_nationalist_get_allies_desc:0 "The Nationalists are worried at [Root.GetUsableName]'s diplomatic isolation. They advocate that we find more allies for our nation."
+ estate_nationalist_befriend_rival_of_rival_desc:0 "The Nationalists are concerned at the threat posed by our rivals in [rival_country.GetUsableName]. They recommend that we befriend their rivals, [agenda_country.GetUsableName], so that together way may stand strong against them."
+ estate_nationalist_restore_legitimacy_desc:0 "The Nationalists are concerned that the [Root.Monarch.GetTitle] is unable to command the respect of [Root.Monarch.GetHerHis] people. They demand that the legitimacy of the [Root.Monarch.GetTitle] be restored - one way or another..."
+ estate_nationalist_relations_with_X_desc:0 "The Nationalists see [agenda_country.GetUsableName] as a valuable potential ally. They recommend that we seek closer ties with them."
+ estate_nationalist_break_coalition_desc:0 "The alliance of nations arrayed against us is deeply worrying to the Nationalists. They beseech us to do what we can to mollify the fears of those who would oppose us - or failing that, to break their resistance by crushing them in battle."
+ estate_nationalist_condottieri_rivals_desc:0 "Our rivals in [agenda_country.GetUsableName] are seeking to expand their power through their war with [agenda_enemy_country.GetUsableName]. The Nationalists call for us to prevent them from stealing a march on us by sending a force to support the [agenda_enemy_country.GetAdjective] cause."
+ estate_nationalist_support_independence_desc:0 "The Nationalists draw attention to the plight of [agenda_country.GetUsableName], a nation cruelly subjugated by our rivals, [agenda_rival_country.GetUsableName]. They enjoin us to take up the cause of justice and support [agenda_country.GetAdjective] independence."
+ estate_nationalist_retake_core_desc:0 "The Nationalists bemoan the fact that [agenda_province.GetName], an integral part of our nation, is not under our control. They demand that we reclaim the land that is rightfully ours!"
+ estate_nationalist_crush_revolts_desc:0 "The Nationalists demand that we restore order and crush the revolts that are sweeping across our nation."
+ estate_nationalist_regain_liberty_desc:0 "The Nationalists chafe under the rule of our [agenda_country.GetAdjective] overlords. They demand action to restore [Root.GetAdjective] liberty!"
+ estate_nationalist_convert_province_culture_desc:0 "The Nationalists have been seeking new land for their people. They consider [agenda_province.GetName] to be an ideal place for [Root.Culture.GetName] settlement, if the locals can be persuaded of the merits of our ways."
+ estate_nationalist_protect_our_culture_desc:0 "The Nationalists claim that our [Root.Culture.GetName] brothers in [agenda_province.GetName] face considerable oppression at the hands of their [agenda_country.GetAdjective] masters. They demand that we seize the province and bring them into our nation!"
+ estate_nationalist_vassalise_vulnerable_country_desc:0 "The Nationalists can't help but be tempted by the vulnerable target presented by our neighbors in [agenda_country.GetUsableName]. They are pushing for a military campaign to bring them under our dominion!"
+ estate_nationalist_expand_into_x_desc:0 "The Nationalists have been casting a jealous eye on [agenda_province.GetAreaName], an area they claim would make a fine addition to our nation. They call for a military campaign to secure part of it for ourselves."
+ estate_nationalist_complete_conquest_of_x_desc:0 "The Nationalists see [agenda_province.GetAreaName] as an integral part of [Root.GetUsableName] and resent the fact that it is not entirely our own. They exhort us to secure the rest of the area for ourselves!"
+ estate_nationalist_annex_subject_desc:0 "The Nationalists covet the lands of our [agenda_country.GetAdjective] subjects. They demand that we integrate them fully into our country."
+ estate_nationalist_build_an_army_desc:0 "The Nationalists consider our army to be an embarrassment to our nation. They urgently call for it to be expanded, so that our forces may present sufficient deterrence to enemies that may covet our lands."
+ estate_nationalist_bigger_army_than_rival_desc:0 "The Nationalists are worried that our army would fare poorly against the [agenda_country.GetAdjective] in a war. They insist that we must increase our recruitment so that our armed forces are no longer outmatched by our rivals."
+ estate_nationalist_build_up_manpower_reserves_desc:0 "The depletion of our manpower reserves is worrying to the Nationalists, who warn that [Root.GetUsableName] would be left defenseless should our enemies seek to take advantage of the situation. They advocate that we consolidate for a time and allow our reserves to recover."
+ estate_nationalist_recover_abysmal_prestige_desc:0 "The Nationalists are dismayed at the depths to which we have allowed the image of our nation to sink. They demand a concerted effort to restore our reputation among our peers!"
+ estate_nationalist_improve_prestige_desc:0 "The Nationalists wish us to improve our standing among nations by increasing the splendor of the [Root.Monarch.GetTitle]'s court."
+ estate_nationalist_develop_x:0 "[agenda_province.GetName]ÐÅÁXÇ xÇ%¸ É¬"
+ estate_nationalist_develop_x_desc:0 "The Nationalists request that we invest in the prosperity of their lands in [agenda_province.GetName]."
+ estate_nationalist_build_army_building_in_y:0 "Expand Military Infrastructure in [agenda_province.GetName]"
+ estate_nationalist_build_army_building_in_y_desc:0 "The Nationalists of [agenda_province.GetName] urge us to build new army training and recruitment centers in the province so that our supply of high-quality recruits to the army may be made more secure."
+ estate_nationalist_build_manufactory_in_y:0 "Build a Manufactory in [agenda_province.GetName]"
+ estate_nationalist_build_manufactory_in_y_desc:0 "The Nationalists of [agenda_province.GetName] request that we fund the construction of a new [agenda_province.GetManufactory]. They claim that it will be a highly profitable investment, doubling the province's output of [agenda_province.GetTradeGoodsName]."

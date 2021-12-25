@@ -1,0 +1,5 @@
+supported_sampiero_corso = {
+	opinion = -100
+	years = 25
+	yearly_decay = 4
+}

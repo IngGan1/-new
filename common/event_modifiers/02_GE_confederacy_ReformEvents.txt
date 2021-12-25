@@ -1,0 +1,3 @@
+Iroqouis_Matriarchy = {
+	prestige = 1
+}

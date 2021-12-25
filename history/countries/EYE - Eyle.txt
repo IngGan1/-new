@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+technology_group = east_african
+unit_type = sub_saharan
+religion = sunni
+primary_culture = ajuran
+capital = 4599
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name= "Gedi Ababo"
+		dip = 5
+		mil = 6
+		adm = 4
+	}
+	add_piety = 0.25
+}

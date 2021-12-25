@@ -1,0 +1,91 @@
+country_decisions = {
+
+	austra_bavaria_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			ai = no
+			OR = {
+				primary_culture = bavarian
+				primary_culture = austrian
+			}
+			east_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			austria_proper_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { has_reform = celestial_empire }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 5
+				}
+			}
+			OR = {
+				tag = HAB
+				tag = BAV
+			}
+			NOT = { has_country_flag = formed_austria_bavaria_nation }
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = austria_proper_area
+				area = east_bavaria_area
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			has_institution = renaissance
+			religion = catholic
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			OR = {
+				hre_reform_passed = reichsregiment
+				hre_reform_passed = emperor_reichsregiment
+			}
+			austria_proper_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_country_flag = formed_austria_bavaria_nation
+			change_tag = AUB
+			add_accepted_culture = bavarian
+			add_accepted_culture = austrian
+			add_prestige = 25
+			if = {
+				limit = {
+					primary_culture = bavarian
+				}
+				override_country_name = AUB_BAV
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

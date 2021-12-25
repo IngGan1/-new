@@ -1,0 +1,1398 @@
+# Country Names:
+defined_text = {
+	name = HRE_DUCHY_LOMBARDY
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HRE_DUCHY_LOMBARDY
+	}
+}
+
+# Areas:
+defined_text = {
+	name = east_bavaria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = east_bavaria_area
+	}
+}
+
+defined_text = {
+	name = lower_bavaria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lower_bavaria_area
+	}
+}
+
+defined_text = {
+	name = upper_bavaria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = upper_bavaria_area
+	}
+}
+
+defined_text = {
+	name = upper_swabia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = upper_swabia_area
+	}
+}
+
+defined_text = {
+	name = lower_swabia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lower_swabia_area
+	}
+}
+
+defined_text = {
+	name = upper_rhineland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = upper_rhineland_area
+	}
+}
+
+defined_text = {
+	name = palatinate_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = palatinate_area
+	}
+}
+
+defined_text = {
+	name = franconia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = franconia_area
+	}
+}
+
+defined_text = {
+	name = upper_franconia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = upper_franconia_area
+	}
+}
+
+defined_text = {
+	name = hesse_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = hesse_area
+	}
+}
+
+defined_text = {
+	name = lower_rhineland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lower_rhineland_area
+	}
+}
+
+defined_text = {
+	name = north_rhine_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = north_rhine_area
+	}
+}
+
+defined_text = {
+	name = thuringia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = thuringia_area
+	}
+}
+
+defined_text = {
+	name = north_westphalia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = north_westphalia_area
+	}
+}
+
+defined_text = {
+	name = weser_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = weser_area
+	}
+}
+
+defined_text = {
+	name = westphalia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = westphalia_area
+	}
+}
+
+defined_text = {
+	name = braunschweig_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = braunschweig_area
+	}
+}
+
+defined_text = {
+	name = lower_saxony_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lower_saxony_area
+	}
+}
+
+defined_text = {
+	name = northern_saxony_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = northern_saxony_area
+	}
+}
+
+defined_text = {
+	name = holstein_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = holstein_area
+	}
+}
+
+defined_text = {
+	name = mittelmark_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mittelmark_area
+	}
+}
+
+defined_text = {
+	name = neumark_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = neumark_area
+	}
+}
+
+defined_text = {
+	name = mecklenburg_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mecklenburg_area
+	}
+}
+
+defined_text = {
+	name = vorpommern_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = vorpommern_area
+	}
+}
+
+defined_text = {
+	name = hinter_pommern_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = hinter_pommern_area
+	}
+}
+
+defined_text = {
+	name = lusatia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lusatia_area
+	}
+}
+
+defined_text = {
+	name = silesia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = silesia_area
+	}
+}
+
+defined_text = {
+	name = west_prussia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = west_prussia_area
+	}
+}
+
+defined_text = {
+	name = east_prussia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = east_prussia_area
+	}
+}
+
+defined_text = {
+	name = south_saxony_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = south_saxony_area
+	}
+}
+
+defined_text = {
+	name = alsace_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = alsace_area
+	}
+}
+
+defined_text = {
+	name = erzgebirge_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = erzgebirge_area
+	}
+}
+
+defined_text = {
+	name = bohemia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = bohemia_area
+	}
+}
+
+defined_text = {
+	name = moravia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = moravia_area
+	}
+}
+
+defined_text = {
+	name = switzerland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = switzerland_area
+	}
+}
+
+defined_text = {
+	name = romandie_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = romandie_area
+	}
+}
+
+defined_text = {
+	name = frisia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = frisia_area
+	}
+}
+
+defined_text = {
+	name = holland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = holland_area
+	}
+}
+
+defined_text = {
+	name = north_brabant_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = north_brabant_area
+	}
+}
+
+defined_text = {
+	name = brabant_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = brabant_area
+	}
+}
+
+defined_text = {
+	name = flanders_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = flanders_area
+	}
+}
+
+defined_text = {
+	name = austria_proper_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = austria_proper_area
+	}
+}
+
+defined_text = {
+	name = inner_austria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = inner_austria_area
+	}
+}
+
+defined_text = {
+	name = brittany_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = brittany_area
+	}
+}
+
+defined_text = {
+	name = normandy_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = normandy_area
+	}
+}
+
+defined_text = {
+	name = picardy_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = picardy_area
+	}
+}
+
+defined_text = {
+	name = poitou_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = poitou_area
+	}
+}
+
+defined_text = {
+	name = massif_central_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = massif_central_area
+	}
+}
+
+defined_text = {
+	name = orleans_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = orleans_area
+	}
+}
+
+defined_text = {
+	name = bourgogne_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = bourgogne_area
+	}
+}
+
+defined_text = {
+	name = west_burgundy_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = west_burgundy_area
+	}
+}
+
+defined_text = {
+	name = lorraine_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lorraine_area
+	}
+}
+
+defined_text = {
+	name = pyrenees_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = pyrenees_area
+	}
+}
+
+defined_text = {
+	name = guyenne_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = guyenne_area
+	}
+}
+
+defined_text = {
+	name = languedoc_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = languedoc_area
+	}
+}
+
+defined_text = {
+	name = provence_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = provence_area
+	}
+}
+
+defined_text = {
+	name = savoy_dauphine_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = savoy_dauphine_area
+	}
+}
+
+defined_text = {
+	name = piedmont_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = piedmont_area
+	}
+}
+
+defined_text = {
+	name = corsica_sardinia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = corsica_sardinia_area
+	}
+}
+
+defined_text = {
+	name = lombardy_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lombardy_area
+	}
+}
+
+defined_text = {
+	name = po_valley_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = po_valley_area
+	}
+}
+
+defined_text = {
+	name = emilia_romagna_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = emilia_romagna_area
+	}
+}
+
+defined_text = {
+	name = venetia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = venetia_area
+	}
+}
+
+defined_text = {
+	name = tuscany_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = tuscany_area
+	}
+}
+
+defined_text = {
+	name = lazio_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lazio_area
+	}
+}
+
+defined_text = {
+	name = central_italy_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = central_italy_area
+	}
+}
+
+defined_text = {
+	name = apulia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = apulia_area
+	}
+}
+
+defined_text = {
+	name = naples_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = naples_area
+	}
+}
+
+defined_text = {
+	name = calabria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = calabria_area
+	}
+}
+
+defined_text = {
+	name = sicily_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = sicily_area
+	}
+}
+
+defined_text = {
+	name = western_sicily_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = western_sicily_area
+	}
+}
+
+defined_text = {
+	name = catalonia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = catalonia_area
+	}
+}
+
+defined_text = {
+	name = aragon_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = aragon_area
+	}
+}
+
+defined_text = {
+	name = valencia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = valencia_area
+	}
+}
+
+defined_text = {
+	name = baleares_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = baleares_area
+	}
+}
+
+defined_text = {
+	name = basque_country
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = basque_country
+	}
+}
+
+defined_text = {
+	name = galicia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = galicia_area
+	}
+}
+
+defined_text = {
+	name = beieras_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = beieras_area
+	}
+}
+
+defined_text = {
+	name = alentejo_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = alentejo_area
+	}
+}
+
+defined_text = {
+	name = asturias_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = asturias_area
+	}
+}
+
+defined_text = {
+	name = extremadura_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = extremadura_area
+	}
+}
+
+defined_text = {
+	name = toledo_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = toledo_area
+	}
+}
+
+defined_text = {
+	name = lower_andalucia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = lower_andalucia_area
+	}
+}
+
+defined_text = {
+	name = upper_andalucia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = upper_andalucia_area
+	}
+}
+
+defined_text = {
+	name = macaronesia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = macaronesia_area
+	}
+}
+
+defined_text = {
+	name = slovakia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = slovakia_area
+	}
+}
+
+defined_text = {
+	name = transdanubia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = transdanubia_area
+	}
+}
+
+defined_text = {
+	name = alfold_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = alfold_area
+	}
+}
+
+defined_text = {
+	name = southern_transylvania_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = southern_transylvania_area
+	}
+}
+
+defined_text = {
+	name = transylvania_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = transylvania_area
+	}
+}
+
+defined_text = {
+	name = mazovia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mazovia_area
+	}
+}
+
+defined_text = {
+	name = sandomierz_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = sandomierz_area
+	}
+}
+
+defined_text = {
+	name = malopolska_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = malopolska_area
+	}
+}
+
+defined_text = {
+	name = central_poland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = central_poland_area
+	}
+}
+
+defined_text = {
+	name = kuyavia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = kuyavia_area
+	}
+}
+
+defined_text = {
+	name = wielkopolska_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = wielkopolska_area
+	}
+}
+
+defined_text = {
+	name = moldavia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = moldavia_area
+	}
+}
+
+defined_text = {
+	name = red_ruthenia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = red_ruthenia_area
+	}
+}
+
+defined_text = {
+	name = croatia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = croatia_area
+	}
+}
+
+defined_text = {
+	name = carinthia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = carinthia_area
+	}
+}
+
+defined_text = {
+	name = east_adriatic_coast_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = east_adriatic_coast_area
+	}
+}
+
+defined_text = {
+	name = bosnia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = bosnia_area
+	}
+}
+
+defined_text = {
+	name = slavonia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = slavonia_area
+	}
+}
+
+defined_text = {
+	name = wallachia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = wallachia_area
+	}
+}
+
+defined_text = {
+	name = silistria_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = silistria_area
+	}
+}
+
+defined_text = {
+	name = serbia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = serbia_area
+	}
+}
+
+defined_text = {
+	name = rascia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = rascia_area
+	}
+}
+
+defined_text = {
+	name = thrace_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = thrace_area
+	}
+}
+
+defined_text = {
+	name = macedonia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = macedonia_area
+	}
+}
+
+defined_text = {
+	name = albania_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = albania_area
+	}
+}
+
+defined_text = {
+	name = northern_greece_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = northern_greece_area
+	}
+}
+
+defined_text = {
+	name = morea_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = morea_area
+	}
+}
+
+defined_text = {
+	name = aegean_archipelago_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = aegean_archipelago_area
+	}
+}
+
+defined_text = {
+	name = jutland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = jutland_area
+	}
+}
+
+defined_text = {
+	name = denmark_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = denmark_area
+	}
+}
+
+defined_text = {
+	name = skaneland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = skaneland_area
+	}
+}
+
+defined_text = {
+	name = western_norway
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = western_norway
+	}
+}
+
+defined_text = {
+	name = eastern_norway
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = eastern_norway
+	}
+}
+
+defined_text = {
+	name = northern_norway
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = northern_norway
+	}
+}
+
+defined_text = {
+	name = norrland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = norrland_area
+	}
+}
+
+defined_text = {
+	name = svealand_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = svealand_area
+	}
+}
+
+defined_text = {
+	name = ostra_svealand_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ostra_svealand_area
+	}
+}
+
+defined_text = {
+	name = gotaland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = gotaland_area
+	}
+}
+
+defined_text = {
+	name = vastra_gotaland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = vastra_gotaland_area
+	}
+}
+
+defined_text = {
+	name = finland_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = finland_area
+	}
+}
+
+defined_text = {
+	name = bothnia_area
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = bothnia_area
+	}
+}

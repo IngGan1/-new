@@ -1,0 +1,15 @@
+culture = yorumba
+religion = shamanism
+capital = "Djougou"
+trade_goods = ivory
+owner = BOG
+controller = BOG
+add_core = BOG
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 0
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = sub_saharan

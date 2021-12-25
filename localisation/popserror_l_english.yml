@@ -1,0 +1,15 @@
+﻿l_english:
+ POPS_invalid-email:0 "tÇTº|ÇtÇ .Ç¨ÖXÕÀÉ JÅµÂÈ²ä²."
+ POPS_account-exists:0 "tÕù² tÇTº|Ç Ä¬ÈtÇ tÇø» tÈ¬ÇiÕÈ²ä²."
+ POPS_dynamodb-failure:0 "ðÅ°¬XÕÀÉ »ºˆÕµÂÈ²ä²."
+ POPS_ua:0 "Œ­jÕtÇ ÆÅµÂÈ²ä²."
+ POPS_not-authorized:0 "…Ç%¸XÕàÂ tÇTº|Çü¬ D¾¼ˆ¼8Ö¬ |ÇXÎXÕÀÉ JÅµÂÈ²ä²."
+ POPS_UNEXPECTED_ERROR:0 "j¸ø­xÇÐÅ äÂ(ÓˆÕµÂÈ²ä². xÇ0Ñ7± ðÅ°¬DÇ UÖxÇXÕà¬ ä²ÜÂ ÜÂÄ³XÕíÂÜÂ2Æ."
+ POPS_bad-password-length:0 "D¾¼ˆ¼8Ö¬ ±4» çÉµÂÈ²ä²."
+ POPS_missing-required-account-details-keys:0 "DÕ”ÆjÕ Èô¼¬ ÆÅµÂÈ²ä²."
+ POPS_invalid-country-code:0 "m­¬ TÏÜ´¬ .Ç¨ÖXÕÀÉ JÅµÂÈ²ä²."
+ POPS_invalid-language-code:0 "¸Å´Å TÏÜ´¬ .Ç¨ÖXÕÀÉ JÅµÂÈ²ä²."
+ POPS_invalid-ISO-8601-format:0 " °ÜÉ ÖÝÂtÇ ˜Ç»º´ÈÅµÂÈ²ä²."
+ POPS_parse-failure:0 "tÐ|·tÇ¸Å¸Ò äÂ(Ó (l­8» „´Á)"
+ POPS_unsupported-account-details-keys:0 "tÐ|·tÇ¸Å¸Ò 2ÆX¹ (ÀÉÐÆ´ÀÉ JÅ”² ²Ð)"
+ POPS_invalid-script-code:0 "tÐ|·tÇ¸Å¸Ò 2ÆX¹ (˜Ç»º´ ²ÂlÐË¹¸Ò)"

@@ -1,0 +1,15 @@
+# No previous file for Kafela
+
+owner = KBO
+controller = KBO
+add_core = KBO
+is_city = yes
+culture = kanuri
+religion = sunni
+capital = "Kafela"
+trade_goods = livestock
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 0
+discovered_by = sub_saharan

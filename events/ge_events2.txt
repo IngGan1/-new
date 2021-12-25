@@ -1,0 +1,335 @@
+namespace = ge_events
+# Isabel I de Castile
+country_event = { 
+	id = ge_events.1
+	title = women_history_events.11.t
+	desc = women_history_events.11.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+            tag = CAS
+            is_year = 1473	
+		    is_lesser_in_union = no
+            has_global_flag = governments_extended_historical_yes
+		    NOT = {
+			    is_year = 1500
+		    }
+            NAP = {
+			    was_player = no
+		    }    
+            NAV = {
+			    ai = yes
+			    was_player = no
+				is_at_war = no
+		    }
+            GRA = {
+			    was_player = no
+				is_at_war = no
+		    }     
+            ARA = {
+			    exists = yes
+				or = {
+					is_subject = no
+					is_subject_of = CAS
+				}
+		    }
+		    religion = catholic
+    }
+
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+
+	option = {
+		name = women_history_events.11.a 
+		ai_chance = { factor = 100 }
+		if = { limit = { CAS = { ai = yes } ARA = { ai = yes } NAP = { ai = yes } not = { has_global_flag = no_ge1 } }
+			inherit = NAV
+			ARA = {
+                add_historical_friend = CAS
+            }
+            add_historical_friend = ARA
+			create_union = ARA
+			if = {
+			limit = {
+				GRA = { ai = yes is_subject = no }
+			}
+        	inherit = GRA
+			}
+			if = {
+				limit = {
+					or = {
+						NAP = { is_subject = no }
+						NAP = { is_subject_of = ARA }
+					}
+				}
+				create_union = NAP
+				NAP = {
+					add_historical_friend = CAS
+				}
+				add_historical_friend = NAP
+			}
+			if = { limit = { POR = { ai = yes } }
+				if = { limit = { MOR = { ai = yes } }
+					iberia_region = { 
+						limit = { owned_by = MOR is_core = CAS }
+						remove_core = MOR
+						cede_province = CAS
+					}
+					iberia_region = { 
+						limit = { owned_by = MOR is_core = POR }
+						remove_core = MOR
+						cede_province = POR
+					}
+				}
+				lower_andalucia_area = {
+					limit = {
+						owned_by = POR
+					}
+					remove_core = POR
+					add_core = CAS
+					cede_province = CAS
+				}
+				upper_andalucia_area = {
+					limit = {
+						owned_by = POR
+					}
+					remove_core = POR
+					add_core = CAS
+					cede_province = CAS
+				}
+			}
+		}
+        add_prestige = 30
+		define_ruler = {
+			name = "Isabella I"
+			female = yes
+			dynasty = "de Trastamara"
+			adm = 5
+			dip = 6
+			mil = 4
+            fixed = yes
+			age = 23
+		}
+	}
+	option = {
+		name = women_history_events.11.b
+		ai_chance = { factor = 0 }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			type = statesman
+			discount = yes
+			skill = 2
+			culture = castillian
+			name = "Isabel de Trastamara"
+		}
+	}
+}
+
+# Charles V von Habsburg
+country_event = { 
+	id = ge_events.8
+	title = "ge_events.8.t"
+	desc = "ge_events.8.d"
+	picture = COURT_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = { 
+			tag = SPA
+			tag = CAS
+		}
+		is_year = 1505
+		NOT = {
+			is_year = 1550
+		}
+		SPA = { ai = yes } CAS = { ai = yes }
+		is_subject = no
+		is_lesser_in_union = no
+		has_global_flag = governments_extended_historical_yes
+    }
+
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = ge_events.8.a  
+		ai_chance = { factor = 100 }
+		define_ruler = {
+			name = "Juana I"
+			dynasty = "de Trastamara"
+			adm = 1
+			dip = 1
+			mil = 1
+			female = yes
+			age = 70
+		}
+		if = {
+		limit = {
+			NAP = { is_subject = no ai = yes }
+		}
+		create_union = NAP
+		}
+		create_marriage = HAB
+		add_meritocracy_effect = yes
+		add_historical_friend = HAB
+		kill_heir = { allow_new_heir = no }
+		HAB = {
+			add_historical_friend = ROOT
+		}
+		if = {
+			limit = { FRA = { ai = yes } }
+			add_historical_rival = FRA
+			FRA = {
+				add_historical_rival = ROOT
+			}
+		}
+	}
+
+	option = {
+		    name = ge_events.8.b 
+		    ai_chance = { factor = 0 }
+            add_prestige = 50
+            add_opinion = {
+                who = HAB
+                modifier = opinion_displeased
+            }
+            add_opinion = {
+                who = FRA
+                modifier = opinion_pleased 
+            }
+	}
+}
+
+# Suleiman the Magnificent
+country_event = { 
+	id = ge_events.9
+	title = "ge_events.9.t"
+	desc = "ge_events.9.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		tag = TUR
+		is_year = 1520
+		NOT = {
+		is_year = 1546
+		}
+		NOT = { current_age = age_of_discovery }
+		religion = sunni
+		is_lesser_in_union = no
+    }
+
+
+	mean_time_to_happen = {
+		    months = 10
+	}
+
+
+	option = {
+		name = ge_events.9.a  
+		ai_chance = { factor = 100 }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_corruption = -20
+		add_meritocracy_effect = yes
+		add_prestige = 50
+		add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+		define_ruler = {
+			name = "Suleiman I"
+			dynasty = "Osmanoglu"
+			adm = 6
+			dip = 5
+			mil = 6
+			fixed = yes
+			age = 26
+		}
+		if = { limit = { TUR = { ai = yes } }
+			add_ruler_modifier = { name = "suleiman_the_great" } 
+		}
+	}
+}
+
+# Jan III Sobieski
+country_event = { 
+	id = ge_events.10
+	title = "ge_events.10.t"
+	desc = "ge_events.10.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+        OR = {
+            tag = POL
+            AND = { 
+                tag = PLC
+                NOT = { exists = POL }
+            }
+        }
+        is_year = 1674
+	    NOT = {
+		is_year = 1696
+	    }
+		is_lesser_in_union = no
+	    religion = catholic
+        }
+
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+
+	option = {
+		name = ge_events.10.a  
+		ai_chance = { factor = 100 }
+		add_adm_power = 300
+		add_dip_power = 300
+		add_mil_power = 300
+		add_meritocracy_effect = yes
+        add_prestige = 50
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+		define_ruler = {
+			name = "Jan III"
+		            dynasty = "Sobieski"
+			adm = 4
+			dip = 4
+			mil = 6
+            fixed = yes
+			age = 44
+            leader = {
+                name = "Jan III"
+                fire = 7
+                shock = 6
+                manuever = 6
+                siege = 3
+            }
+		}
+	}
+	option = {
+		name = albania.1.b  
+		ai_chance = { factor = 0 }
+	}
+}

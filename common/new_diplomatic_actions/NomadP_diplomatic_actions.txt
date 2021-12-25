@@ -1,0 +1,102 @@
+nomadp_loot_action = {
+	category = economy
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_nomad = yes
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = is_been_looting_modifier
+				}
+			}
+		}
+	}
+	is_allowed = {
+		FROM = {
+			is_neighbor_of = ROOT
+			is_nomad = no
+		}
+		not = { 
+			or = {
+				has_opinion = { who = FROM value = 100 }
+				ai_attitude = { who = FROM attitude = attitude_allied }
+				ai_attitude = { who = FROM attitude = attitude_friendly }
+			}
+		}
+		NOT = { war_with = FROM }
+		NOT = { truce_with = FROM }
+		NOT = { is_subject_of = FROM }
+		NOT = { overlord_of = FROM }
+		NOT = { alliance_with = FROM }
+		NOT = { religion = FROM }
+		NOT = { primary_culture = FROM }
+	}
+	on_accept = {
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = is_been_looting_modifier
+			}
+		}
+	}
+	ai_will_do = {
+		NOT = { ai_attitude = { who = FROM attitude = attitude_friendly } }
+		OR = {
+			NOT = { has_opinion = { who = FROM value = 50 } }
+			ai_attitude = { who = FROM attitude = attitude_hostile }
+			ai_attitude = { who = FROM attitude = attitude_outraged }
+		}
+	}
+}
+
+
+nomadp_loot_action_cancel = {
+	category = economy
+	
+	require_acceptance = no # Whether the recipient gets an option to decline
+	
+	is_visible = {
+		is_nomad = yes
+		FROM = {
+			has_opinion_modifier = {
+				who = ROOT
+				modifier = is_been_looting_modifier
+			}
+		}
+	}
+	is_allowed = {
+		NOT = { war_with = FROM }
+	}
+	on_accept = {
+		FROM = {
+			remove_opinion = {
+				who = ROOT
+				modifier = is_been_looting_modifier
+			}
+		}
+	}
+	ai_will_do = {
+		or = {
+			AND = {
+				OR = {
+					has_opinion = { who = FROM value = 100 }
+					ai_attitude = { who = FROM attitude = attitude_allied }
+					ai_attitude = { who = FROM attitude = attitude_friendly }
+				}
+				NOT = {
+					ai_attitude = { who = FROM attitude = attitude_hostile }
+					ai_attitude = { who = FROM attitude = attitude_outraged }
+				}
+			}
+		war_with = FROM
+		truce_with = FROM
+		is_subject_of = FROM
+		overlord_of = FROM
+		alliance_with = FROM
+		religion = FROM
+		primary_culture = FROM
+	}
+}

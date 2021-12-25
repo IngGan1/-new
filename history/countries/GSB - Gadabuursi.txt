@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = iqta 
+technology_group = east_african
+unit_type = sub_saharan
+religion = sunni
+primary_culture = issa
+capital = 2793 #Hargeisa
+religious_school = shafii_school

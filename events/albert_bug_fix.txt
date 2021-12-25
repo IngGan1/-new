@@ -1,0 +1,31 @@
+namespace = albert_bug_fix
+normal_or_historical_nations = yes
+
+# Italian Unification reset
+country_event = {
+	id = albert_bug_fix.1
+	title = "albert_bug_fix.1.t"
+	desc = "albert_bug_fix.1.d"
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = italian_revolt_happened
+			clr_global_flag = young_italy_happened
+			clr_global_flag = Garibaldi_Redshirts
+			every_country = {
+				clr_country_flag = state_joined_italy
+			}
+			every_province = {
+				clr_province_flag = italian_revolt
+				remove_core = ITA
+			}
+		}	
+	}
+	
+	option = {
+		name = "albert_bug_fix.1.a"
+	}
+}

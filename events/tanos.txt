@@ -1,0 +1,376 @@
+namespace = tanos
+
+country_event = {
+	id = tanos.1
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_province = {
+			limit = {
+				not = { owner = { technology_group = western } }
+				or = {
+					superregion = north_america_superregion
+					region = carribeans_region
+					region = brazil_region
+					region = la_plata_region
+					region = colombia_region
+					region = central_africa_region
+					area = texas_area
+					area = darfur_central_sahara_area
+					area = waddai_area
+					area = kanem_area
+					area = bornu_area
+					area = east_azbin_area
+					area = dendi_area
+					area = western_sahara_area
+					area = azbin_area
+					area = niger_bend_area
+					area = katsina_area
+					area = kebbi_area
+					area = hausa_area
+					area = upper_volta_area
+					area = jenne_area
+					province_id = 862
+					province_id = 883
+					province_id = 886
+				}
+				not = { trade_company_region = trade_company_west_africa }
+				is_empty = no
+				not = { owner = { ai = no } }
+				not = { owner = { tag = KNG } }
+				not = { owner = { tag = BON } }
+				not = { owner = { tag = ASH } }
+				not = { owner = { tag = DAH } }
+				not = { owner = { tag = BEN } }
+				not = { owner = { tag = BNN } }
+				not = { owner = { tag = NRI } }
+				not = { owner = { tag = JOL } }
+				not = { owner = { tag = SHD } }
+				not = { owner = { tag = OYO } }
+				not = { owner = { tag = KWA } }
+				not = { owner = { has_country_modifier = boho_world } }
+			}
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			cede_province = KKK
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+	}
+	
+	option = { set_global_flag = remove_province set_global_flag = remove_province5 clr_global_flag = african_disease }
+}
+
+country_event = {
+	id = tanos.2
+	title = "remove_cores2"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_province = {
+			limit = {
+				not = { owner = { technology_group = western } }
+				or = {
+					superregion = north_america_superregion
+					region = carribeans_region
+					region = brazil_region
+					region = la_plata_region
+					region = colombia_region
+					region = central_africa_region
+					area = texas_area
+					area = darfur_central_sahara_area
+					area = waddai_area
+					area = kanem_area
+					area = bornu_area
+					area = east_azbin_area
+					area = dendi_area
+					area = western_sahara_area
+					area = azbin_area
+					area = niger_bend_area
+					area = katsina_area
+					area = kebbi_area
+					area = hausa_area
+					area = upper_volta_area
+					area = lower_volta_area
+					area = atacora_oueme_area
+					area = borgu_area
+					area = oyo_area
+					area = lower_niger_area
+					area = adamawa_plateau_area
+					area = ife_area
+					area = matamba_area
+					area = madagascar_highlands_area
+					area = jenne_area
+					area = kamchatka_area
+					area = zazzau_area
+					area = kong_area
+					area = baghena_area
+					area = massina_area
+					area = kasai_area
+					area = lower_kasai
+					area = jubba_area
+					area = yamamah_area
+					area = qasim_area
+					area = nafud_area
+					area = fezzan_area
+					area = ngonde_area
+					area = kaffa_area
+					area = southern_ethiopia_area
+					area = hadiya_area
+					area = kamchatka_area
+					area = magadan_area
+					area = kurdufan_area
+					area = south_sudan_area
+					province_id = 862
+					province_id = 883
+					province_id = 886
+					province_id = 1216
+					province_id = 1217
+					province_id = 2323
+					province_id = 1041
+					province_id = 2257
+				}
+				not = { trade_company_region = trade_company_west_africa }
+				is_empty = no
+				not = { owner = { ai = no } }
+				not = { owner = { has_country_modifier = boho_world } }
+			}
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			cede_province = KKK
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+	}
+	
+	option = {
+		set_global_flag = remove_province
+		set_global_flag = remove_province2
+		set_global_flag = remove_province5
+		clr_global_flag = african_disease
+	}
+}
+
+country_event = {
+	id = tanos.3
+	title = "remove_cores3"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_province = {
+			limit = {
+				not = { owner = { technology_group = western } }
+				or = {
+					continent = north_america
+					continent = south_america
+				}
+				is_empty = no
+				not = { owner = { ai = no } }
+			}
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			remove_core = ROOT
+			cede_province = KKK
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+		every_province = {
+			limit = {
+				or = {
+					#region = tibet_region
+					#region = moluccas_region
+					#region = horn_of_africa_region
+					#region = arabia_region
+					region = east_africa_region
+					region = central_africa_region
+					region = south_africa_region
+					region = sahel_region
+					region = niger_region
+					region = guinea_region
+					region = kongo_region
+					region = south_africa_region
+					area = yamamah_area
+					area = qasim_area
+					area = nafud_area
+					area = kaffa_area
+					area = southern_ethiopia_area
+					area = hadiya_area
+					area = ajuuran_area
+					area = mogadishu_area
+					area = kamchatka_area
+					area = magadan_area
+					area = south_sudan_area
+					#trade_company_region = trade_company_indonesia
+					#trade_company_region = trade_company_philippines
+					#trade_company_region = trade_company_moluccas
+					#owner = { tag = CHA }
+					#owner = { tag = KHM }
+				}
+				not = { trade_company_region = trade_company_west_africa }
+				not = { owner = { technology_group = western } }
+				not = { owner = { ai = no } }
+				not = { owner = { has_country_modifier = boho_world } }
+			}
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			cede_province = KKK
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+	}
+	
+	option = {
+		set_global_flag = remove_province
+		set_global_flag = remove_province2
+		set_global_flag = remove_province3
+		set_global_flag = remove_province5
+		clr_global_flag = african_disease
+	}
+}
+
+country_event = {
+	id = tanos.4
+	title = "remove_cores4"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_province = {
+			limit = {
+				is_empty = no
+				or = {
+					#continent = north_america
+					#continent = south_america
+					#region = tibet_region
+					#region = moluccas_region
+					#region = horn_of_africa_region
+					#region = arabia_region
+					#region = east_africa_region
+					#region = central_africa_region
+					#region = south_africa_region
+					#region = sahel_region
+					#region = niger_region
+					#region = guinea_region
+					#region = kongo_region
+					#region = south_africa_region
+					#continent = europe
+					#continent = africa
+					#continent = oceania
+					#superregion = tartary_superregion
+					#superregion = far_east_superregion
+					#superregion = persia_superregion
+					#superregion = east_indies_superregion
+					superregion = india_superregion
+				}
+				#not = { owner = { technology_group = western } }
+			}
+			remove_core = ROOT
+			cede_province = KKK
+			remove_building = fort_14th
+			remove_building = fort_15th
+			#add_base_tax = -1
+			#add_base_production = -1
+			#add_base_manpower = -1
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+	}
+	
+	option = {
+		clr_global_flag = african_disease
+	}
+}
+
+country_event = {
+	id = tanos.5
+	title = "remove_cores"
+	desc = "does it do that?"
+
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		every_province = {
+			limit = {
+				not = { owner = { technology_group = western } }
+				or = {
+					superregion = north_america_superregion
+					region = carribeans_region
+					region = brazil_region
+					region = la_plata_region
+					region = colombia_region
+					area = texas_area
+					province_id = 862
+					province_id = 883
+					province_id = 886
+				}
+				is_empty = no
+				not = { owner = { ai = no } }
+				not = { owner = { has_country_modifier = boho_world } }
+			}
+			if = { limit = { or = { base_tax = 3 base_production = 3 base_manpower = 3 } }
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			remove_building = fort_14th
+			remove_building = fort_15th
+			cede_province = KKK
+			if = {
+				limit = { not = { native_size = 0.1 } }
+				change_native_size = 20
+				change_native_hostileness = 4
+				change_native_ferocity = 4
+			}
+		}
+	}
+	
+	option = { set_global_flag = remove_province5 }
+}

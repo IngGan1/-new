@@ -1,0 +1,16 @@
+namespace = moulins
+
+#Edict of Moulins
+country_event = {
+	id = moulins.1
+	title = "moulins.1_title"
+	desc = "moulins.1_desc"
+	picture = BAD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "moulins.1.op1"
+		FRA = { set_country_flag = edit_de_moulins }
+	}
+}

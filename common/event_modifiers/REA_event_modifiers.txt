@@ -1,0 +1,23 @@
+
+
+realea_rise_of_manchu = {
+	global_unrest = -3
+	land_maintenance_modifier = -0.33
+}
+
+
+realea_ashikaga_clan = {
+	reduced_liberty_desire = 30
+	#legitimacy = 1
+}
+
+
+realea_awesome_cungsan = {
+	fire_damage_received = -0.33
+	shock_damage_received = -0.33
+	leader_land_shock = 2
+}
+
+founder_of_the_empire_ruler_modifier = {
+	imperial_mandate = 0.05
+}

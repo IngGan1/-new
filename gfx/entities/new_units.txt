@@ -1,0 +1,167 @@
+#NEW-2
+entity = { clone = "KOR_INFANTRY_1"		   name = "JOS_INFANTRY_1"  version = 1  }
+entity = { clone = "KOR_CAVALRY_1"		   name = "JOS_CAVALRY_1"   version = 2  }
+entity = { clone = "KOR_ARTILLERY_1"       name = "JOS_ARTTLLERY_1" version = 2  }
+entity = { clone = "KOR_INFANTRY_2"		   name = "JOS_INFANTRY_2"  version = 1  } 
+entity = { clone = "KOR_CAVALRY_2"		   name = "JOS_CAVALRY_2"   version = 2  }
+entity = { clone = "KOR_ARTILLERY_2"       name = "JOS_ARTTLLERY_2" version = 2  }
+entity = { clone = "KOR_INFANTRY_3"		   name = "JOS_INFANTRY_3"  version = 1  } 
+entity = { clone = "KOR_CAVALRY_3"		   name = "JOS_CAVALRY_3"   version = 2  }
+entity = { clone = "KOR_ARTILLERY_3"       name = "JOS_ARTTLLERY_3" version = 2  }
+entity = { clone = "KOR_INFANTRY_4"		   name = "JOS_INFANTRY_4"  version = 1  } 
+entity = { clone = "KOR_CAVALRY_4"		   name = "JOS_CAVALRY_4"   version = 2  }
+entity = { clone = "KOR_ARTILLERY_4"       name = "JOS_ARTTLLERY_4" version = 2  }
+
+#NEW2
+entity = { clone = "JAP_INFANTRY_1"		   name = "BKJ_INFANTRY_1"  version = 3  ) ##Beakjak (BKJ)
+entity = { clone = "JAP_ARTILLERY_1"	   name = "BKJ_ARTILLERY_1" version = 3  }
+entity = { clone = "JAP_CAVALRY_1"         name = "BKJ_CAVALRY_1"   version = 3  }
+entity = { clone = "JAP_INFANTRY_2"        name = "BKJ_INFANTRY_2"	version = 3  } ##Beakjak(BKJ)
+entity = { clone = "JAP_CAVALRY_2"         name = "BKJ_CAVALRY_2"	version = 3  }	
+entity = { clone = "JAP_ARTILLERY_2"       name = "BKJ_ARTILLERY_2"	version = 3  }	
+entity = { clone = "JAP_INFANTRY_3"        name = "BKJ_INFANTRY_3"	version = 3  } ##Beakjak(BKJ)
+entity = { clone = "JAP_CAVALRY_3"         name = "BKJ_CAVALRY_3"	version = 3  }	
+entity = { clone = "JAP_ARTILLERY_3"       name = "BKJ_ARTILLERY_3"	version = 3  }	
+entity = { clone = "JAP_INFANTRY_4"        name = "BKJ_INFANTRY_4"	version = 3  } ##Beakjak (BKJ)
+entity = { clone = "JAP_CAVALRY_4"         name = "BKJ_CAVALRY_4"	version = 3  }	
+entity = { clone = "JAP_ARTILLERY_4"       name = "BKJ_ARTILLERY_4"	version = 3  }	
+
+##Jianzhou (MJZ)
+entity = { clone = "MCH_INFANTRY_1"        name = "MJZ_INFANTRY_1"	version=3  }
+entity = { clone = "MCH_INFANTRY_2"        name = "MJZ_INFANTRY_2"	version=3  }
+entity = { clone = "MCH_INFANTRY_3"        name = "MJZ_INFANTRY_3"	version=3  }
+entity = { clone = "MCH_INFANTRY_4"        name = "MJZ_INFANTRY_4"	version=3  }
+entity = { clone = "MCH_CAVALRY_1"         name = "MJZ_CAVALRY_1"	version=3  }	
+entity = { clone = "MCH_CAVALRY_2"         name = "MJZ_CAVALRY_2"	version=3  }	
+entity = { clone = "MCH_CAVALRY_3"         name = "MJZ_CAVALRY_3"	version=3  }	
+entity = { clone = "MCH_CAVALRY_4"         name = "MJZ_CAVALRY_4"	version=3  }
+entity = { clone = "MCH_ARTILLERY_1"       name = "MJZ_ARTILLERY_1"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_2"       name = "MJZ_ARTILLERY_2"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_3"       name = "MJZ_ARTILLERY_3"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_4"       name = "MJZ_ARTILLERY_4"	version=3  }
+                                                                            
+##Yeren (MYR)                                                               
+entity = { clone = "MCH_INFANTRY_1"        name = "MYR_INFANTRY_1"	version=3  }
+entity = { clone = "MCH_INFANTRY_2"        name = "MYR_INFANTRY_2"	version=3  }
+entity = { clone = "MCH_INFANTRY_3"        name = "MYR_INFANTRY_3"	version=3  }
+entity = { clone = "MCH_INFANTRY_4"        name = "MYR_INFANTRY_4"	version=3  }
+entity = { clone = "MCH_CAVALRY_1"         name = "MYR_CAVALRY_1"	version=3  }	
+entity = { clone = "MCH_CAVALRY_2"         name = "MYR_CAVALRY_2"	version=3  }	
+entity = { clone = "MCH_CAVALRY_3"         name = "MYR_CAVALRY_3"	version=3  }	
+entity = { clone = "MCH_CAVALRY_4"         name = "MYR_CAVALRY_4"	version=3  }
+entity = { clone = "MCH_ARTILLERY_1"       name = "MYR_ARTILLERY_1"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_2"       name = "MYR_ARTILLERY_2"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_3"       name = "MYR_ARTILLERY_3"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_4"       name = "MYR_ARTILLERY_4"	version=3  }
+                                                                            
+##Haixi (MHX)                                                               
+entity = { clone = "MCH_INFANTRY_1"        name = "MHX_INFANTRY_1"	version=3  }
+entity = { clone = "MCH_INFANTRY_2"        name = "MHX_INFANTRY_2"	version=3  }
+entity = { clone = "MCH_INFANTRY_3"        name = "MHX_INFANTRY_3"	version=3  }
+entity = { clone = "MCH_INFANTRY_4"        name = "MHX_INFANTRY_4"	version=3  }
+entity = { clone = "MCH_CAVALRY_1"         name = "MHX_CAVALRY_1"	version=3  }	
+entity = { clone = "MCH_CAVALRY_2"         name = "MHX_CAVALRY_2"	version=3  }	
+entity = { clone = "MCH_CAVALRY_3"         name = "MHX_CAVALRY_3"	version=3  }	
+entity = { clone = "MCH_CAVALRY_4"         name = "MHX_CAVALRY_4"	version=3  }
+entity = { clone = "MCH_ARTILLERY_1"       name = "MHX_ARTILLERY_1"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_2"       name = "MHX_ARTILLERY_2"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_3"       name = "MHX_ARTILLERY_3"	version=3  }	
+entity = { clone = "MCH_ARTILLERY_4"       name = "MHX_ARTILLERY_4"	version=3  }
+
+##Yarkand (KAS)
+entity = { clone = "CHG_INFANTRY_1"        name = "KAS_INFANTRY_1"	version="1"  }
+entity = { clone = "CHG_INFANTRY_2"        name = "KAS_INFANTRY_2"	version="1"  }
+entity = { clone = "CHG_INFANTRY_3"        name = "KAS_INFANTRY_3"	version="1"  }
+entity = { clone = "CHG_INFANTRY_4"        name = "KAS_INFANTRY_4"	version="1"  }
+entity = { clone = "CHG_CAVALRY_1"         name = "KAS_CAVALRY_1"	version="1"  }	
+entity = { clone = "CHG_CAVALRY_2"         name = "KAS_CAVALRY_2"	version="1"  }	
+entity = { clone = "CHG_CAVALRY_3"         name = "KAS_CAVALRY_3"	version="1"  }	
+entity = { clone = "CHG_CAVALRY_4"         name = "KAS_CAVALRY_4"	version="1"  }
+entity = { clone = "CHG_ARTILLERY_1"       name = "KAS_ARTILLERY_1"	version="1"  }	
+entity = { clone = "CHG_ARTILLERY_2"       name = "KAS_ARTILLERY_2"	version="1"  }	
+entity = { clone = "CHG_ARTILLERY_3"       name = "KAS_ARTILLERY_3"	version="1"  }	
+entity = { clone = "CHG_ARTILLERY_4"       name = "KAS_ARTILLERY_4"	version="1"  }
+
+##Buryatia (BRT)
+entity = { clone = "KHA_INFANTRY_1"        name = "BRT_INFANTRY_1"	version="2"  }
+entity = { clone = "KHA_INFANTRY_2"        name = "BRT_INFANTRY_2"	version="1"  }
+entity = { clone = "KHA_INFANTRY_3"        name = "BRT_INFANTRY_3"	version="1"  }
+entity = { clone = "KHA_INFANTRY_4"        name = "BRT_INFANTRY_4"	version="1"  }
+entity = { clone = "KHA_CAVALRY_1"         name = "BRT_CAVALRY_1"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_2"         name = "BRT_CAVALRY_2"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_3"         name = "BRT_CAVALRY_3"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_4"         name = "BRT_CAVALRY_4"	version="1"  }
+entity = { clone = "KHA_ARTILLERY_1"       name = "BRT_ARTILLERY_1"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_2"       name = "BRT_ARTILLERY_2"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_3"       name = "BRT_ARTILLERY_3"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_4"       name = "BRT_ARTILLERY_4"	version="1"  }
+
+##Korchin (KRC)
+entity = { clone = "KHA_INFANTRY_1"        name = "KRC_INFANTRY_1"	version="1"  }
+entity = { clone = "KHA_INFANTRY_2"        name = "KRC_INFANTRY_2"	version="1"  }
+entity = { clone = "KHA_INFANTRY_3"        name = "KRC_INFANTRY_3"	version="1"  }
+entity = { clone = "KHA_INFANTRY_4"        name = "KRC_INFANTRY_4"	version="1"  }
+entity = { clone = "KHA_CAVALRY_1"         name = "KRC_CAVALRY_1"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_2"         name = "KRC_CAVALRY_2"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_3"         name = "KRC_CAVALRY_3"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_4"         name = "KRC_CAVALRY_4"	version="1"  }
+entity = { clone = "KHA_ARTILLERY_1"       name = "KRC_ARTILLERY_1"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_2"       name = "KRC_ARTILLERY_2"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_3"       name = "KRC_ARTILLERY_3"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_4"       name = "KRC_ARTILLERY_4"	version="1"  }
+
+##Kara Del (HMI)
+entity = { clone = "OIR_INFANTRY_1"        name = "HMI_INFANTRY_1"	version="1"  }
+entity = { clone = "OIR_INFANTRY_2"        name = "HMI_INFANTRY_2"	version="1"  }
+entity = { clone = "OIR_INFANTRY_3"        name = "HMI_INFANTRY_3"	version="1"  }
+entity = { clone = "OIR_INFANTRY_4"        name = "HMI_INFANTRY_4"	version="1"  }
+entity = { clone = "OIR_CAVALRY_1"         name = "HMI_CAVALRY_1"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_2"         name = "HMI_CAVALRY_2"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_3"         name = "HMI_CAVALRY_3"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_4"         name = "HMI_CAVALRY_4"	version="1"  }
+entity = { clone = "OIR_ARTILLERY_1"       name = "HMI_ARTILLERY_1"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_2"       name = "HMI_ARTILLERY_2"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_3"       name = "HMI_ARTILLERY_3"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_4"       name = "HMI_ARTILLERY_4"	version="1"  }
+
+##Sarig Yogir (SYG)
+entity = { clone = "OIR_INFANTRY_1"        name = "SYG_INFANTRY_1"	version="1"  }
+entity = { clone = "OIR_INFANTRY_2"        name = "SYG_INFANTRY_2"	version="1"  }
+entity = { clone = "OIR_INFANTRY_3"        name = "SYG_INFANTRY_3"	version="1"  }
+entity = { clone = "OIR_INFANTRY_4"        name = "SYG_INFANTRY_4"	version="1"  }
+entity = { clone = "OIR_CAVALRY_1"         name = "SYG_CAVALRY_1"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_2"         name = "SYG_CAVALRY_2"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_3"         name = "SYG_CAVALRY_3"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_4"         name = "SYG_CAVALRY_4"	version="1"  }
+entity = { clone = "OIR_ARTILLERY_1"       name = "SYG_ARTILLERY_1"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_2"       name = "SYG_ARTILLERY_2"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_3"       name = "SYG_ARTILLERY_3"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_4"       name = "SYG_ARTILLERY_4"	version="1"  }
+
+## Koshuud (KSD)
+entity = { clone = "OIR_INFANTRY_1"        name = "KSD_INFANTRY_1"	version="1"  }
+entity = { clone = "OIR_INFANTRY_2"        name = "KSD_INFANTRY_2"	version="1"  }
+entity = { clone = "OIR_INFANTRY_3"        name = "KSD_INFANTRY_3"	version="1"  }
+entity = { clone = "OIR_INFANTRY_4"        name = "KSD_INFANTRY_4"	version="1"  }
+entity = { clone = "OIR_CAVALRY_1"         name = "KSD_CAVALRY_1"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_2"         name = "KSD_CAVALRY_2"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_3"         name = "KSD_CAVALRY_3"	version="1"  }	
+entity = { clone = "OIR_CAVALRY_4"         name = "KSD_CAVALRY_4"	version="1"  }
+entity = { clone = "OIR_ARTILLERY_1"       name = "KSD_ARTILLERY_1"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_2"       name = "KSD_ARTILLERY_2"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_3"       name = "KSD_ARTILLERY_3"	version="1"  }	
+entity = { clone = "OIR_ARTILLERY_4"       name = "KSD_ARTILLERY_4"	version="1"  }	
+
+## Great Yuan (YUA)
+entity = { clone = "KHA_INFANTRY_1"        name = "YUA_INFANTRY_1"	version="1"  }
+entity = { clone = "KHA_INFANTRY_2"        name = "YUA_INFANTRY_2"	version="1"  }
+entity = { clone = "KHA_INFANTRY_3"        name = "YUA_INFANTRY_3"	version="1"  }
+entity = { clone = "KHA_INFANTRY_4"        name = "YUA_INFANTRY_4"	version="1"  }
+entity = { clone = "KHA_CAVALRY_1"         name = "YUA_CAVALRY_1"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_2"         name = "YUA_CAVALRY_2"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_3"         name = "YUA_CAVALRY_3"	version="1"  }	
+entity = { clone = "KHA_CAVALRY_4"         name = "YUA_CAVALRY_4"	version="1"  }
+entity = { clone = "KHA_ARTILLERY_1"       name = "YUA_ARTILLERY_1"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_2"       name = "YUA_ARTILLERY_2"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_3"       name = "YUA_ARTILLERY_3"	version="1"  }	
+entity = { clone = "KHA_ARTILLERY_4"       name = "YUA_ARTILLERY_4"	version="1"  }

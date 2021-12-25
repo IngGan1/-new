@@ -1,0 +1,76 @@
+########################
+#Hellenic Flavor Events#
+########################
+
+namespace = hellenic_flavor
+
+
+#Secular Games
+country_event = {
+	id = hellenic_flavor.2
+	title = hellenic_flavor.2.t
+	desc = hellenic_flavor.2.d
+	picture = THEATRE_eventPicture
+
+	fire_only_once = no
+
+	trigger = {
+		OR = {
+			tag = ROM
+			tag = BYZ
+		}
+		owns = 118
+		owns = 151
+		primary_culture = roman
+		OR = {
+			AND = {
+				is_year = 1447
+				NOT = { is_year = 1448 }
+			}
+			AND = {
+				is_year = 1547
+				NOT = { is_year = 1548 }
+			}
+			AND = {
+				is_year = 1647
+				NOT = { is_year = 1648 }
+			}
+			AND = {
+				is_year = 1747
+				NOT = { is_year = 1748 }
+			}
+			AND = {
+				is_year = 1847
+				NOT = { is_year = 1848 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = hellenic_flavor.2.a
+		add_years_of_income = -1
+		add_prestige = 20
+		add_stability = 1
+	}
+
+	option = {
+		name = hellenic_flavor.2.b
+		add_years_of_income = -0.5
+		add_prestige = 20
+	}
+
+	option = {
+		name = hellenic_flavor.2.c
+		add_years_of_income = -0.2
+		add_prestige = 5
+	}
+
+	option = {
+		name = hellenic_flavor.2.e
+		add_prestige = -15
+	}
+}

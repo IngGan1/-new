@@ -1,0 +1,2689 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+### Nation specific idea groups
+
+### Patch 1.0 ###
+
+HKC_ideas = {  #Hokucho
+	start = {
+		land_morale = 0.10
+		province_warscore_cost = -0.10
+	}
+	
+	bonus = {
+		monarch_military_power = 1
+	}
+	
+	trigger = {
+		tag = HKC
+	}
+	free = yes
+	
+	empowered_bakufu_of_japan = {
+		core_creation = -0.10
+	}
+	disempowered_emperor_of_japan = {
+		land_forcelimit_modifier = 0.25
+	}
+	proper_vassal_ties = {
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.25
+	}	
+	emphasis_on_military_skill = {
+		army_tradition = 1.0
+	}
+	disciplined_samurai_class = {
+		discipline = 0.05
+	}
+	solve_administrative_conflicts = {
+		legitimacy = 1.0
+	}	
+	undo_rival_lord_power = {
+		harsh_treatment_cost = -0.25
+	}
+}
+NNC_ideas = {  #Nancho
+	start = {
+		diplomatic_reputation = 1
+		years_of_nationalism = -5
+	}
+	
+	bonus = {
+		monarch_admin_power = 1
+	}
+	
+	trigger = {
+		tag = NNC
+	}
+	free = yes
+	
+	the_three_japanese_regalia = {
+		legitimacy = 1.0
+	}
+	restoration_of_true_imperial_power = {
+		land_morale = 0.10
+	}
+	reinstate_offices_of_civil_governors = {
+		free_adm_policy = 1
+	}	
+	disempower_the_shugo_lords = {
+		improve_relation_modifier = 0.20
+		global_spy_defence = 0.20
+	}
+	endurace_of_the_southern_court = {
+		war_exhaustion = -0.02
+	}
+	expand_and_reform_the_kanrei = {
+		reform_progress_growth = 0.10
+		advisor_cost = -0.10
+	}	
+	sole_legitimacy_over_japan = {
+		global_manpower_modifier = 0.25
+	}
+}
+KNM_ideas = {  #Kenmu
+	start = {
+		reform_progress_growth = 0.10
+		legitimacy = 1
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	
+	trigger = {
+		tag = KNM
+	}
+	free = yes
+	
+	spearhead_of_the_emperor = {
+		global_manpower_modifier = 0.25
+	}
+	properly_deal_with_the_samurai_class = {
+		land_maintenance_modifier = -0.05
+		land_forcelimit_modifier = 0.20
+	}
+	land_owndership_questions = {
+		global_autonomy = -0.05
+	}	
+	go_daigos_failure_with_civilians = {
+		global_unrest = -2
+	}
+	the_military_class_do_not_rule = {
+		discipline = 0.05
+	}
+	go_daigos_corruption_failures = {
+		yearly_corruption = -0.05
+	}	
+	put_the_governors_back_into_place = {
+		reduced_liberty_desire = 10
+	}
+}
+FJI_ideas = {  #Fujiwara
+	start = {
+		diplomats = 1
+		legitimacy = 1
+	}
+	
+	bonus = {
+		free_adm_policy = 1
+	}
+	
+	trigger = {
+		tag = FJI
+	}
+	free = yes
+	
+	foremost_clan_closest_to_power = {
+		ae_impact = -0.10
+		heir_chance = 0.50
+	}
+	the_sessho_and_kampaku_positions = {
+		yearly_corruption = -0.10
+	}
+	strong_links_via_soft_power = {
+		diplomatic_reputation = 1
+	}	
+	uphold_strict_family_governance = {
+		monarch_admin_power = 1
+	}
+	to_become_the_puppet_master = {
+		reduced_liberty_desire = 10
+		diplomatic_upkeep = 1
+	}
+	a_new_period_of_cultural_flourishing = {
+		prestige = 1.0
+	}	
+	steady_enforcement_of_fujiwara_power = {
+		land_forcelimit_modifier = 0.25
+	}
+}
+TAA_ideas = {  #Taira
+	start = {
+		same_culture_advisor_cost = -0.20
+		improve_relation_modifier = 0.20
+	}
+	
+	bonus = {
+		ae_impact = -0.15
+	}
+	
+	trigger = {
+		tag = TAA
+	}
+	free = yes
+	
+	the_kanmu_heishi_lineage = {
+		diplomatic_reputation = 1
+	}
+	taira_no_kiyomori_samurai_lineage = {
+		land_maintenance_modifier = -0.10
+	}
+	the_hogen_and_heiji_rebellions = {
+		land_morale = 0.10
+		prestige = 0.5
+	}	
+	rein_in_the_kanmu_heishi_lines = {
+		province_warscore_cost = -0.10
+	}
+	learn_from_loss_in_the_genpei = {
+		army_tradition_decay = -0.01
+	}
+	defeat_minamoto_power = {
+		land_forcelimit_modifier = 0.20
+	}	
+	restoration_of_proper_power = {
+		legitimacy = 1
+	}
+}
+MTO_ideas = {  #Minamoto
+	start = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.10
+	}
+	
+	bonus = {
+		global_regiment_cost = -0.10
+	}
+	
+	trigger = {
+		tag = MTO
+	}
+	free = yes
+	
+	the_21_genji_lines = {
+		global_manpower_modifier = 0.25
+	}
+	guardians_of_heian_kyo = {
+		discipline = 0.05
+	}
+	destruction_of_the_taira_clan = {
+		prestige = 1.0
+	}	
+	legacy_of_the_first_bakufu = {
+		legitimacy = 1.0
+		vassal_forcelimit_bonus = 1
+	}
+	restoration_of_minamoto_power = {
+		core_creation = -0.10 
+	}
+	revoke_the_power_of_shikken = {
+		global_autonomy = -0.05
+	}	
+	the_one_true_leader_of_japan = {
+		free_mil_policy = 1
+	}
+}
+
+
+
+LML_ideas = {  #Lombard League
+	start = {
+		global_autonomy = -0.05
+		defensiveness = 0.15
+	}
+	
+	bonus = {
+		trade_efficiency = 0.10
+	}
+	
+	trigger = {
+		tag = LML
+	}
+	free = yes
+	
+	in_defense_of_the_peninsula = {
+		manpower_recovery_speed = 0.10
+		drill_gain_modifier = 0.25
+	}
+	papal_sanctioned_protection = {
+		land_morale = 0.10
+	}
+	cities_opposed_to_the_hre = {
+		state_maintenance_modifier = 0.25
+		land_forcelimit_modifier = 0.20
+		recover_army_morale_speed = 0.10
+	}	
+	beyond_driot_de_regale = {
+		global_unrest = -1
+	}
+	turn_over_any_imperial_ban = {
+		diplomatic_reputation = 1
+	}
+	reform_the_universitas = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		devotion = 1
+	}	
+	customs_union_and_trade_privleges = {
+		global_prov_trade_power_modifier = 0.10
+	}
+}
+SMA_ideas = { #Somalia
+	start = {
+		navy_tradition = 1.00
+		naval_maintenance_modifier = -0.20
+	}
+	
+	bonus = {
+		province_warscore_cost = -0.10
+	}
+	
+	trigger = {
+		tag = SMA
+	}
+	free = yes
+	
+	united_somali_communites = {
+		manpower_recovery_speed = 0.15
+	}
+	dominant_merchant_fleets = {
+		naval_morale = 0.10
+		sunk_ship_morale_hit_recieved = -0.33
+	}
+	hegemony_over_ports = {
+		global_trade_power = 0.15
+	}
+	formal_clan_duties = {
+		global_manpower_modifier = 0.25
+	}
+	somali_honor_guards = {
+		discipline = 0.05
+	}
+	command_east_africa = {
+		trade_efficiency = 0.15
+	}
+	somali_ocean = {
+		capture_ship_chance = 0.33
+		naval_tradition_from_trade = 1.0
+	}
+}
+LVN_MLO_ideas = {  #Lombardy-Venetia, Milan Version
+	start = {
+		mercenary_cost = -0.15
+		development_cost = -0.10
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	
+	trigger = {
+		tag = LVN
+		primary_culture = lombard
+	}
+	free = yes
+	
+	mlo_a_permanent_military_force = {
+		global_regiment_cost = -0.10
+	}
+	lvn_symbol_of_italian_unification = { #Same for Both
+		years_of_nationalism = -5
+		recover_army_morale_speed = 0.10
+	}
+	mlo_epitome_of_the_renaissance = {
+		idea_cost = -0.10
+	}	
+	lvn_land_and_sea_arsenal = { #Same for Both
+		naval_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.25
+	}
+	mlo_enlightened_rulership = {
+		global_unrest = -1
+	}
+	lvn_honest_representation_of_italians = { #Same for Both
+		legitimacy = 1.0
+		republican_tradition = 0.5
+		advisor_pool = 1
+	}	
+	mlo_rally_lombards_and_venetians = {
+		global_manpower_modifier = 0.20
+	}
+}
+LVN_VEN_ideas = {  #Lombardy-Venetia, Venice Version
+	start = {
+		galley_power = 0.25
+		global_trade_power = 0.15
+	}
+	
+	bonus = {
+		free_dip_policy = 1
+	}
+	
+	trigger = {
+		tag = LVN
+		primary_culture = venetian
+	}
+	free = yes
+	
+	ven_influences_beyond_adriatic = {
+		diplomatic_upkeep = 2
+	}
+	lvn_symbol_of_italian_unification = { #Same for Both
+		years_of_nationalism = -5
+		recover_army_morale_speed = 0.10
+	}
+	ven_trade_monopolies = {
+		trade_efficiency = 0.15
+	}	
+	lvn_land_and_sea_arsenal = { #Same for Both
+		naval_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.25
+	}
+	ven_naval_bases = {
+		naval_maintenance_modifier = -0.20
+	}
+	lvn_honest_representation_of_italians = { #Same for Both
+		legitimacy = 1.0
+		republican_tradition = 0.5
+		advisor_pool = 1
+	}	
+	ven_protect_what_is_ours = {
+		naval_tradition_from_trade = 1.0
+		naval_morale = 0.10
+	}
+}
+HXA_ZAP_ideas = { #Huaxyacac, Zapotec Version
+	start = {
+		army_tradition_decay = -0.01
+		core_creation = -0.15
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = HXA
+		primary_culture = zapotek
+	}
+	free = yes
+	
+	hxa_unite_the_scattered_cities = { #Same for all
+		development_cost = -0.15
+	}
+	zap_religious_heart_of_mitla = {
+		missionaries = 1
+	}
+	hxa_central_religious_unity = { #Same for all
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	zap_empire_building_once_again = {
+		governing_capacity_modifier = 0.25
+	}
+	hxa_workings_of_gold_and_jade = { #Same for all
+		prestige = 1.0
+		caravan_power = 0.25
+	}
+	zap_beyond_obsidian = {
+		infantry_power = 0.10
+	}
+	hxa_codices_of_our_history = { #Same for all
+		legitimacy = 1.0
+	}
+}
+HXA_MIX_ideas = { #Huaxyacac, Mixtec Version
+	start = {
+		global_manpower_modifier = 0.20
+		inflation_reduction = 0.10
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = HXA
+		primary_culture = mixtec
+	}
+	free = yes
+	
+	hxa_unite_the_scattered_cities = { #Same for all
+		development_cost = -0.15
+	}
+	mix_connect_the_city_states = {
+		movement_speed = 0.10
+	}
+	hxa_central_religious_unity = { #Same for all
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	mix_learn_from_previous_battles = {
+		war_exhaustion = -0.02
+	}
+	hxa_workings_of_gold_and_jade = { #Same for all
+		prestige = 1.0
+		caravan_power = 0.25
+	}
+	mix_refine_tribute_systems = {
+		global_tax_modifier = 0.15
+	}
+	hxa_codices_of_our_history = { #Same for all
+		legitimacy = 1.0
+	}
+}
+HXA_TLA_ideas = { #Huaxyacac, Tlapanec Version
+	start = {
+		num_accepted_cultures = 2
+		hostile_attrition = 1.0
+	}
+	
+	bonus = {
+		province_warscore_cost = -0.10
+	}
+	
+	trigger = {
+		tag = HXA
+		primary_culture = tlapanec
+	}
+	free = yes
+	
+	hxa_unite_the_scattered_cities = { #Same for all
+		development_cost = -0.15
+	}
+	tla_reformation_of_cotton_armor = {
+		shock_damage_received = -0.10
+	}
+	hxa_central_religious_unity = { #Same for all
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	tla_endless_wars = {
+		drill_gain_modifier = 0.25
+		army_tradition_decay = -0.01
+	}
+	hxa_workings_of_gold_and_jade = { #Same for all
+		prestige = 1.0
+		caravan_power = 0.25
+	}
+	tla_strong_internal_domain = {
+		global_autonomy = -0.05
+	}
+	hxa_codices_of_our_history = { #Same for all
+		legitimacy = 1.0
+	}
+}
+
+
+
+### Patch 1.1 ###
+
+
+
+ 
+ANV_ideas = {  #Angevin Realm
+	start = {
+		naval_morale = 0.15
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = ANV
+	}
+	free = yes
+	
+	the_two_domains = {
+		land_forcelimit_modifier = 0.25
+		land_morale = 0.10
+	}
+	inter_disciplinary_standards = {
+		discipline = 0.05
+	}
+	subjects_of_the_crowns = {
+		reduced_liberty_desire = 10
+		diplomatic_upkeep = 1
+	}
+	english_channel_control = {
+		global_trade_power = 0.15
+		navy_tradition = 1.00
+	}
+	fertility_of_french_land = {
+		production_efficiency = 0.10
+	}
+	inter_lock_administrative_cadres = {
+		advisor_cost = -0.15
+	}
+	industrialization_measures = {
+		global_trade_goods_size_modifier = 0.20
+	}
+}
+MGB_ideas = {  #Maghreb
+    start = {
+        galley_power = 0.25
+        warscore_cost_vs_other_religion = -0.15
+    }
+    
+    bonus = {
+        free_dip_policy = 1
+    }
+    
+    trigger = {
+        tag = MGB
+    }
+    free = yes
+    
+    pacify_the_berbers = {
+        global_manpower_modifier = 0.20
+		global_sailors_modifier = 0.20
+    }
+    caliphate_status = {
+        global_missionary_strength = 0.02
+    }
+    masterful_defenses = {
+        hostile_attrition = 1.0
+    }
+    command_north_african_trade = {
+		trade_steering = 0.20
+		caravan_power = 0.10
+    }
+    maghrebi_guard = {
+        discipline = 0.05
+    }
+    promote_barbary_pirates = {
+		may_perform_slave_raid = yes
+        privateer_efficiency = 0.20
+    }
+    formal_maghrebi_nation = {
+        governing_capacity_modifier = 0.10     
+    }
+}
+RRR_ideas = {  #Great Russian Republic
+	start = {
+		yearly_corruption = -0.10
+		years_of_nationalism = -5
+	}
+	
+	bonus = {
+		manpower_recovery_speed = 0.20
+	}
+	
+	trigger = {
+		tag = RRR
+	}
+	free = yes
+	
+	representation_of_russian_people = {
+		global_manpower_modifier = 0.25
+		global_unrest = -1
+	}
+	system_of_tribute_and_taxes = {
+		reduced_liberty_desire = 10
+	}
+	strengthen_democratic_institutions = {
+		republican_tradition = 0.5
+		reelection_cost = -0.10
+	}
+	beyond_the_urals = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	promoting_russian_arts = {
+		tolerance_own = 1
+		prestige = 1.0
+	}
+	baltic_dominance = {
+		trade_efficiency = 0.10
+		global_ship_cost = -0.10
+	}
+	reformed_military_standards = {
+		discipline = 0.05
+	}
+}
+NSE_ideas = {
+	start = {
+		navy_tradition = 1
+		infantry_power = 0.15
+	}
+	
+	bonus = {
+		core_creation = -0.20
+	}
+	
+	trigger = {
+		tag = NSE
+	}
+	free = yes
+	
+	cnut_the_greats_empire = {
+		global_manpower_modifier = 0.25
+	}
+	rulers_of_the_north_sea = {
+		naval_morale = 0.15
+		heavy_ship_power = 0.10
+	}
+	divide_and_rule = {
+		vassal_income = 0.25
+		reduced_liberty_desire = 10
+	}
+	fierce_norse_fighters = {
+		land_morale = 0.10
+	}
+	english_administrative_structures = {
+		global_unrest = -1
+	}
+	enforce_danelaw = {
+		legitimacy = 1.0
+	}
+	might_of_the_north_sea_empire = {
+		land_maintenance_modifier = -0.10
+		naval_maintenance_modifier = -0.10
+	}
+}
+SCF_ideas = { #Seven Council Fires aka Great Sioux Nation
+	start = {
+		war_exhaustion = -0.02
+		governing_capacity_modifier = 0.10
+	}
+	
+	bonus = {
+		monarch_military_power = 1
+	}
+	
+	trigger = {
+		tag = SCF
+	}
+	free = yes
+	
+	foundations_of_a_nation = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+		global_colonial_growth = 10
+	}
+	councils_of_the_nakota = {
+		advisor_cost = -0.15
+	}
+	reformation_of_sioux_politics = {
+		global_unrest = -2
+	}
+	councils_of_the_lakota = {
+		discipline = 0.05
+	}
+	plains_warfare = {
+		shock_damage = 0.05
+		fire_damage = 0.05
+	}
+	councils_of_the_dakota = {
+		num_accepted_cultures = 1
+	}
+	seven_fires_to_light_our_way = {
+		global_manpower_modifier = 0.33
+	}
+}
+WKU_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.20
+		naval_maintenance_modifier = -0.20
+	}
+	
+	bonus = {
+		colonists = 1
+	}
+	
+	trigger = {
+		tag = WKU
+	}
+	free = yes
+	
+	dismantle_coastal_forts = {
+		global_naval_barrage_cost = -0.50
+		privateer_efficiency = 0.25
+	}
+	force_open_trade_routes = {
+		trade_steering = 0.10
+		global_prov_trade_power_modifier = 0.10
+	}
+	command_the_waters = {
+		naval_morale = 0.10
+		ship_durability = 0.10
+	}
+	repurpose_enemy_ships = {
+		capture_ship_chance = 0.25
+	}
+	gunpowder_convoy_raids = {
+		leader_naval_fire = 1
+		leader_land_fire = 1
+	}
+	multi_ethnic_formation = {
+		num_accepted_cultures = 2
+	}
+	age_of_the_wokou = {
+		navy_tradition = 1.0
+	}
+}
+NUA_ideas = {
+	start = {
+		land_forcelimit_modifier = 0.25
+		manpower_recovery_speed = 0.15
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = NUA
+	}
+	free = yes
+	
+	blood_for_the_gods_above = {
+		global_missionary_strength = 0.02
+	}
+	meritocratic_military_ranks = {
+		free_mil_policy = 1
+		army_tradition = 0.50
+	}
+	jade_gold_artwork = {
+		prestige_decay = -0.01
+	}
+	refine_the_colonizing_system = {
+		global_colonial_growth = 25
+	}
+	refine_the_tributary_system = {
+		reduced_liberty_desire = 10
+		vassal_forcelimit_bonus = 1
+	}
+	cultivation_of_harsh_land = {
+		development_cost = -0.10
+	}
+	currency_transition = {
+		inflation_reduction = 0.10
+	}
+}
+AIM_ideas = { #Ainu Mosir/Jomon Empire
+	start = {
+		land_attrition = -0.20
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = AIM
+	}
+	free = yes
+	
+	write_the_yukars = { #Same for Mosir and Ezo
+		prestige_decay = -0.01
+	}
+	bring_back_what_japan_once_was = {
+		culture_conversion_cost = -0.20
+	}
+	reprisal_against_the_wajin = {
+		province_warscore_cost = -0.10
+	}
+	judged_by_others_in_the_community = { #Same for Mosir and Ezo
+		global_unrest = -2
+	}
+	the_kamuy_guide_us_to_war = {
+		land_forcelimit_modifier = 0.25
+	}
+	chasi_forts_secure_trade = {
+		defensiveness = 0.20
+		global_prov_trade_power_modifier = 0.10
+	}
+	unify_the_ainu_people = {  #Same for Mosir and Ezo
+		colonists = 1
+	}
+}
+EZO_ideas = { #Ezo
+	start = {
+		defensiveness = 0.20
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = EZO
+	}
+	free = yes
+	
+	write_the_yukars = { #Same for Mosir and Ezo
+		prestige_decay = -0.01
+	}
+	ainu_wajin_feud_settling = {
+		free_adm_policy = 1
+	}
+	representation_of_all_in_ezo = {
+		republican_tradition = 0.5
+	}
+	judged_by_others_in_the_community = { #Same for Mosir and Ezo
+		global_unrest = -2
+	}
+	the_kamuy_guide_us_to_peace = {
+		war_exhaustion = -0.02
+	}
+	to_defend_ezo_itself = {
+		naval_morale = 0.10
+		recover_army_morale_speed = 0.10
+	}
+	unify_the_ainu_people = {  #Same for Mosir and Ezo
+		colonists = 1
+	}
+}
+PHI_HIN_ideas = { #Lusong, Hindu Version
+	start = {
+		navy_tradition = 1.0
+		galley_power = 0.20
+	}
+	
+	bonus = {
+		trade_steering = 0.30
+	}
+	
+	trigger = {
+		tag = PHI
+		religion_group = dharmic
+	}
+	free = yes
+	
+	indianization_of_the_islands = { 
+		idea_cost = -0.10
+	}
+	multiple_hearts_of_trade = { #Same for all Lusong Versions
+		global_prov_trade_power_modifier = 0.20
+		center_of_trade_upgrade_cost = -0.20
+	}
+	bastion_of_brahmic_tradition = {
+		religious_unity = 0.25
+	}
+	protected_coasts_of_lusong = { #Same for all Lusong Versions
+		defensiveness = 0.15
+		hostile_attrition = 1.0
+	}
+	promote_further_indianization = {
+		culture_conversion_cost = -0.20
+	}
+	more_and_more_islands = { #Same for all Lusong Versions
+		colonists = 1
+	}
+	dominate_nusantara = {
+		province_warscore_cost = -0.10
+	}
+}
+PHI_BUD_ideas = { #Lusong, Buddhist/Confucian Version
+	start = {
+		navy_tradition = 1.0
+		diplomats = 1
+	}
+	
+	bonus = {
+		naval_maintenance_modifier = -0.20
+	}
+	
+	trigger = {
+		tag = PHI
+		religion_group = eastern
+	}
+	free = yes
+	
+	confucian_buddhist_trade = { 
+		global_own_trade_power = 0.15
+	}
+	multiple_hearts_of_trade = { #Same for all Lusong Versions
+		global_prov_trade_power_modifier = 0.20
+		center_of_trade_upgrade_cost = -0.20
+	}
+	harmony_with_other_faiths = {
+		diplomatic_reputation = 1
+	}
+	protected_coasts_of_lusong = { #Same for all Lusong Versions
+		defensiveness = 0.15
+		hostile_attrition = 1.0
+	}
+	gunpowdcer_from_the_north = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}
+	more_and_more_islands = { #Same for all Lusong Versions
+		colonists = 1
+	}
+	tributaries_of_our_own = {
+		reduced_liberty_desire = 10
+	}
+}
+PHI_MUS_ideas = { #Lusong, Muslim Version
+	start = {
+		navy_tradition = 1.0
+		trade_efficiency = 0.15
+	}
+	
+	bonus = {
+		global_trade_power = 0.15
+	}
+	
+	trigger = {
+		tag = PHI
+		religion_group = muslim
+	}
+	free = yes
+	
+	through_talk_and_blood = { 
+		global_missionary_strength = 0.02
+	}
+	multiple_hearts_of_trade = { #Same for all Lusong Versions
+		global_prov_trade_power_modifier = 0.20
+		center_of_trade_upgrade_cost = -0.20
+	}
+	muslim_merchant_fleets = {
+		heavy_ship_power = 0.10
+	}
+	protected_coasts_of_lusong = { #Same for all Lusong Versions
+		defensiveness = 0.15
+		hostile_attrition = 1.0
+	}
+	expertise_in_mercantile_matters = {
+		placed_merchant_power = 10
+	}
+	more_and_more_islands = { #Same for all Lusong Versions
+		colonists = 1
+	}
+	influx_of_muslims_scholars = {
+		advisor_pool = 1
+	}
+}
+PHI_ANI_ideas = { #Lusong, Animist Version
+	start = {
+		navy_tradition = 1.0
+		no_religion_penalty = yes
+	}
+	
+	bonus = {
+		production_efficiency = 0.15
+	}
+	
+	trigger = {
+		tag = PHI
+		religion_group = pagan
+	}
+	free = yes
+	
+	encompass_all_of_the_archipelago = { 
+		global_manpower_modifier = 0.10
+		global_sailors_modifier = 0.30
+	}
+	multiple_hearts_of_trade = { #Same for all Lusong Versions
+		global_prov_trade_power_modifier = 0.20
+		center_of_trade_upgrade_cost = -0.20
+	}
+	masterful_sailors = {
+		naval_morale = 0.15
+	}
+	protected_coasts_of_lusong = { #Same for all Lusong Versions
+		defensiveness = 0.15
+		hostile_attrition = 1.0
+	}
+	harbors_and_naval_bases = {
+		global_ship_recruit_speed = -0.25
+	}
+	more_and_more_islands = { #Same for all Lusong Versions
+		colonists = 1
+	}
+	fertility_and_unity = {
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+CTF_ideas = { #Council of Three Fires
+	start = {
+		diplomatic_reputation = 1
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	
+	trigger = {
+		tag = CTF
+	}
+	free = yes
+	
+	reunite_the_anishinaabe_people = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+		manpower_recovery_speed = 0.10
+	}
+	ojibwe_tempered_ambition = {
+		province_warscore_cost = -0.10
+	}
+	ottawa_great_lakes_trade = {
+		trade_efficiency = 0.15
+	}
+	potawatomi_seven_grandfather_teachings = {
+		global_unrest = -2
+	}
+	ojibwe_keepers_of_the_faith = {
+		tolerance_own = 1
+		global_missionary_strength = 0.02
+	}
+	ottawa_keepers_of_trade = {
+		global_trade_power = 0.15
+	}
+	potawatomi_keepers_for_the_fire = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+}
+TMY_ideas = { #Tamoyo Confederation
+	start = {
+		shock_damage_received = -0.10
+		movement_speed = 0.10
+	}
+	
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = TMY
+	}
+	free = yes
+	
+	unite_against_the_foreigners = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+		free_leader_pool = 1
+	}
+	honor_dead_fighters_and_family = {
+		tolerance_own = 2
+		global_missionary_strength = 0.01
+	}
+	tupi_irregular_units = {
+		infantry_power = 0.10
+	}
+	tropical_developments_of_the_tupi = {
+		development_cost = -0.15
+	}
+	resolve_tribal_feuds = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	revoke_foreign_power_over_tupis = {
+		manpower_recovery_speed = 0.10
+	}
+	organization_of_tupi_politics = {
+		global_unrest = -2
+	}
+}
+DOZ_ideas = { #Dongbu, Eastern State
+	start = {
+		heavy_ship_power = 0.10
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	bonus = {
+		placed_merchant_power = 5
+	}
+	
+	trigger = {
+		tag = DOZ
+	}
+	free = yes
+	
+	thriving_eastern_trade = {
+		trade_efficiency = 0.10
+		global_prov_trade_power_modifier = 0.10
+	}
+	vitality_of_the_grand_canal = {
+		trade_steering = 0.25
+	}
+	porcelain_tower_and_nanjing = {
+		development_cost = -0.10
+	}
+	anti_piracy_policies = {
+		navy_tradition = 1.0
+	}
+	defending_our_opulence = {
+		land_morale = 0.10
+	}
+	the_capital_of_nanjing = {
+		global_trade_power = 0.15
+	}
+	zhongguo = {
+		land_forcelimit_modifier = 0.15
+		years_of_nationalism = -5
+	}
+}
+XBU_ideas = { #Xibu, Western Land
+	start = {
+		fabricate_claims_cost = -0.25
+		war_exhaustion = -0.02
+	}
+	
+	bonus = {
+		global_regiment_cost = -0.10
+	}
+	
+	trigger = {
+		tag = XBU
+	}
+	free = yes
+	
+	western_defenses = {
+		defensiveness = 0.15
+		garrison_size = 0.25
+	}
+	the_sichuan_dialect = {
+		same_culture_advisor_cost = -0.20
+	}
+	the_four_rivers_of_sichuan = {
+		development_cost = -0.10
+	}
+	refugees_in_our_midst = {
+		global_manpower_modifier = 0.20
+	}
+	unmistakble_influence_of_buddhism = {
+		religious_unity = 0.25
+	}
+	the_capital_of_xijing = { #Xijing = Western Capital
+		fort_maintenance_modifier = -0.15
+	}
+	zhongguo = {
+		land_forcelimit_modifier = 0.15
+		years_of_nationalism = -5
+	}
+}
+NCH_ideas = { #Nanfang, Land of the South
+	start = {
+		diplomatic_reputation = 1
+		hostile_attrition = 1.0
+	}
+	
+	bonus = {
+		production_efficiency = 0.10
+	}
+	
+	trigger = {
+		tag = NCH
+	}
+	free = yes
+	
+	foreign_entries_of_the_south = {
+		improve_relation_modifier = 0.20
+		diplomatic_upkeep = 1
+	}
+	new_center_of_chinese_growth = {
+		manpower_recovery_speed = 0.10
+	}
+	more_than_dangerous_trading = {
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	migrations_southward_from_northern_chaos = {
+		global_manpower_modifier = 0.20
+	}
+	amends_with_the_western_expanse = {
+		global_unrest = -1
+	}
+	the_capital_of_guangzhou = {
+		trade_efficiency = 0.15
+	}
+	zhongguo = {
+		land_forcelimit_modifier = 0.15
+		years_of_nationalism = -5
+	}
+}
+BCH_ideas = { #Beichao, Northern Dynasty
+	start = {
+		legitimacy = 1.0
+		stability_cost_modifier = -0.10
+	}
+	
+	bonus = {
+		core_creation = -0.10
+	}
+	
+	trigger = {
+		tag = BCH
+	}
+	free = yes
+	
+	robust_northern_bueracracy = {
+		global_autonomy = -0.05	
+		advisor_pool = 1
+	}
+	on_the_northern_frontier = {
+		defensiveness = 0.15
+	}
+	recruit_nomadic_mercenaries = {
+		mercenary_cost = -0.15
+	}
+	imperial_military_prepartions = {
+		land_maintenance_modifier = -0.10
+	}
+	strict_military_divisions = {
+		infantry_power = 0.10
+	}
+	the_capital_of_beijing = {
+		yearly_corruption = -0.05
+	}
+	zhongguo = {
+		land_forcelimit_modifier = 0.15
+		years_of_nationalism = -5
+	}
+}
+ZXI_ideas = { #The Later Xia
+	start = {
+		build_cost = -0.20
+		army_tradition_decay = -0.01
+	}
+	
+	bonus = {
+		development_cost = -0.10
+	}
+	
+	trigger = {
+		tag = ZXI
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	reclaiming_ancient_heritage = {
+		prestige_decay = -0.01
+	}
+	two_crownings_and_three_respects = {
+		global_autonomy = -0.05
+	}
+	splendor_of_ancestor_veneration = {
+		global_unrest = -2
+	}
+	empowered_by_the_stories = {
+		land_morale = 0.15
+	}
+	the_finality_of_the_middle_kingdom = {
+		land_forcelimit_modifier = 0.25
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZSG_ideas = { #The Later Shang
+	start = {
+		improve_relation_modifier = 0.25
+		free_leader_pool = 1
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = ZSG
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	legacy_of_the_oracle_bones = {
+		stability_cost_modifier = -0.10
+	}
+	age_old_steppe_nomad_rivalries = {
+		defensiveness = 0.25
+	}
+	compound_upon_shang_diplomacy = {
+		diplomats = 1
+	}
+	order_amongst_religious_life = {
+		yearly_corruption = -0.10
+	}
+	the_focus_on_town_upkeep = {
+		garrison_size = 0.25
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZHA_ideas = { #The Later Han
+	start = {
+		years_of_nationalism = -5
+		prestige = 1.0
+	}
+	
+	bonus = {
+		reduced_liberty_desire = 10 
+	}
+	
+	trigger = {
+		tag = ZHA
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	cut_down_the_power_of_kings = {
+		harsh_treatment_cost = -0.25
+	}
+	discipline_of_frontier_life = {
+		discipline = 0.05
+	}
+	the_blurring_of_the_four_occupations = {
+		production_efficiency = 0.15
+	}
+	establishing_dutiful_subjects = {
+		diplomatic_upkeep = 2
+	}
+	the_issue_of_conufcianism_and_taoism = {
+		development_cost = -0.10
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZLA_ideas = { #The Later Liao
+	start = {
+		core_creation = -0.10
+		cavalry_cost = -0.20
+	}
+	
+	bonus = {
+		cavalry_flanking = 1.0
+	}
+	
+	trigger = {
+		tag = ZLA
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	the_most_capable_son_shall_rule = {
+		monarch_military_power = 1
+	}
+	khitan_legacy = {
+		num_accepted_cultures = 1
+	}
+	experience_from_the_steppe = {
+		cavalry_power = 0.15
+	}
+	parallel_administrative_bodies = {
+		advisor_pool = 1
+	}
+	rethinking_the_status_of_women = {
+		global_institution_spread = 0.10
+		female_advisor_chance = 0.33
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZSN_ideas = { #The Later Song
+	start = {
+		technology_cost = -0.10
+		army_tradition_decay = -0.01
+	}
+	
+	bonus = {
+		advisor_cost = -0.15
+	}
+	
+	trigger = {
+		tag = ZSN
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	the_example_of_shen_kuo = {
+		idea_cost = -0.10
+	}
+	new_wave_of_minor_major_reforms = {
+		monarch_admin_power = 1
+	}
+	how_the_southern_song_survived = {
+		trade_efficiency = 0.15
+	}
+	pivotal_naval_strength_of_the_song = {
+		heavy_ship_power = 0.10
+	}
+	the_military_does_not_threaten_us = {
+		harsh_treatment_cost = -0.25
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZSU_ideas = { #The Later Sui
+	start = {
+		development_cost = -0.15
+		land_maintenance_modifier = -0.10
+	}
+	
+	bonus = {
+		global_regiment_recruit_speed = -0.10
+	}
+	
+	trigger = {
+		tag = ZSU
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	learn_from_the_sui_founding = {
+		global_spy_defence = 0.25
+	}
+	costly_wars_against_the_cham = {
+		land_attrition = -0.20
+	}
+	buddhist_influences_entrenched = {
+		ae_impact = -0.15
+	}
+	revive_the_army_that_invaded_east = {
+		land_forcelimit_modifier = 0.25
+	}
+	not_to_over_extend_our_economy = {
+		interest = -0.5
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZWE_ideas = { #The Later Northern Wei
+	start = {
+		movement_speed = 0.15
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		army_tradition = 1.0
+	}
+	
+	trigger = {
+		tag = ZWE
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	the_heat_of_northern_weis_founding = {
+		core_creation = -0.10
+	}
+	buddhism_of_the_northern_wei = {
+		manpower_recovery_speed = 0.15
+	}
+	address_hostility_between_the_two_people = {
+		num_accepted_cultures = 2
+	}
+	honor_the_warriors_of_our_land = {
+		free_mil_policy = 1
+	}
+	the_developing_frontiers = {
+		hostile_attrition = 1.0
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZLS_ideas = { #The Later Liu Song
+	start = {
+		global_institution_spread = 0.15
+		global_regiment_cost = -0.10  
+	}
+	
+	bonus = {
+		years_of_nationalism = -5
+	}
+	
+	trigger = {
+		tag = ZLS
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	legacy_of_liu_yu = {
+		army_tradition_decay = -0.01
+	}
+	permanent_threats_to_our_power = {
+		land_forcelimit_modifier = 0.25
+	}
+	remedy_military_shortcomings = {
+		land_morale = 0.15
+	}
+	weeds_in_the_royal_dynasty = {
+		yearly_corruption = -0.10
+	}
+	poets_and_scholars_of_chaos = {
+		idea_cost = -0.10
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+ZZH_ideas = { #The Later Zhao
+	start = {
+		province_warscore_cost = -0.10
+		free_leader_pool = 1
+	}
+	
+	bonus = {
+		advisor_pool = 1
+	}
+	
+	trigger = {
+		tag = ZZH
+	}
+	free = yes
+	
+	the_whole_of_zhongguo = { #Same for all
+		global_manpower_modifier = 0.25
+		imperial_mandate = 0.10
+	}
+	tattered_history_of_our_name = {
+		war_exhaustion = -0.02
+	}
+	adaptives_form_of_fighting = {
+		discipline = 0.05
+	}
+	realize_our_potential_han_zhao = {
+		army_tradition = 0.50
+	}
+	reform_the_court_later_zhao = {
+		possible_policy = 1
+	}
+	eternal_peace_with_the_zhao = {
+		fort_maintenance_modifier = -0.20
+	}
+	an_end_to_warring_states = { #Same for all
+		yearly_harmony = 0.5
+		monthly_karma = 0.50
+		same_culture_advisor_cost = -0.20
+	}
+}
+
+### Key for the event to make it work properly and the nation in question receives the MoH: [set_emperor_of_china = ROOT] ###
+
+
+AUB_HAB_ideas = { #Austria-Bavaria, Austrian Version
+	start = {
+		imperial_authority_value = 0.10
+		diplomatic_reputation = 2.0
+	}
+	
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+	
+	trigger = {
+		tag = AUB
+		primary_culture = austrian
+	}
+	free = yes
+	
+	reinheitsgebot_for_our_beer = { #Same for both
+		production_efficiency = 0.10
+	}
+	the_troublesome_south_and_east = { #Unique
+		army_tradition_decay = -0.01
+	}
+	fugger_and_welsers_of_ab = { #Same for both
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+	navigating_hre_politics = { #Unique
+		ae_impact = -0.15
+	}
+	monpolizing_various_industries = { #Same for Both
+		global_prov_trade_power_modifier = 0.15
+	}
+	discipline_of_the_grenzers = { #Unique
+		infantry_power = 0.10
+	}
+	mastery_of_soft_power = { #Same for both
+		diplomatic_annexation_cost = -0.20
+	}
+}
+AUB_BAV_ideas = { #Austria-Bavaria, Bavarian Version
+	start = {
+		imperial_authority_value = 0.10
+		army_tradition = 1.0
+	}
+	
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+	
+	trigger = {
+		tag = AUB
+		primary_culture = bavarian
+	}
+	free = yes
+	
+	reinheitsgebot_for_our_beer = { #Same for both
+		production_efficiency = 0.10
+	}
+	attract_those_of_the_german_renaissance = { #Unique
+		prestige = 1.0
+		idea_cost = -0.05
+	}
+	fugger_and_welsers_of_ab = { #Same for both
+		interest = -0.5
+		inflation_reduction = 0.05
+	}
+	absolutist_power_means_a_standing_army = { #Unique
+		discipline = 0.05
+	}
+	monpolizing_various_industries = { #Same for Both
+		global_prov_trade_power_modifier = 0.15
+	}
+	army_restructuring = { #Unique
+		land_forcelimit_modifier = 0.25
+	}
+	mastery_of_soft_power = { #Same for both
+		diplomatic_annexation_cost = -0.20
+	}
+}
+BGM_WAL_ideas = { #Belgium, Wallonian Version
+	start = {  #Walloon identity branches from French Identity#
+		production_efficiency = 0.15
+		free_adm_policy = 1
+	}
+	
+	bonus = {
+		development_cost = -0.15
+	}
+
+	trigger = {
+		tag = BGM
+		primary_culture = wallonian
+	}
+	free = yes
+	
+	the_belgian_revolution = { #Same for both
+		land_morale = 0.10
+	}
+	continual_french_support = { #Unique
+		land_maintenance_modifier = -0.10
+	}
+	distinct_from_dutch_and_french = { #Same for both
+		manpower_recovery_speed = 0.05
+		prestige = 1.0
+	}
+	formulate_belgian_political_parties = { #Unique
+		reform_progress_growth = 0.10
+	}
+	refusal_of_pure_despotism = { #Same for Both
+		max_absolutism = -10
+		yearly_corruption = -0.10
+	}
+	evenly_distribute_the_burden = { #Unique
+		legitimacy = 1.0
+		republican_tradition = 0.5
+	}
+	shift_to_flemish_and_walloon_language = { #Same for both
+		global_unrest = -2
+	}
+}
+BGM_FLE_ideas = { #Belgium, Flemish Version
+	start = {  #Flemish identity branches from Dutch Identity#
+		production_efficiency = 0.15
+		free_dip_policy = 1
+	}
+	
+	bonus = {
+		global_prov_trade_power_modifier = 0.15
+	}
+	
+	trigger = {
+		tag = BGM
+		primary_culture = flemish
+	}
+	free = yes
+	
+	the_belgian_revolution = { #Same for both
+		land_morale = 0.10
+	}
+	as_thrifty_as_any_dutchmen = { #Unique
+		trade_efficiency = 0.15
+	}
+	distinct_from_dutch_and_french = { #Same for both
+		manpower_recovery_speed = 0.05
+		prestige = 1.0
+	}
+	satiate_german_and_french_minorities = { #Unique
+		global_manpower_modifier = 0.25
+	}
+	refusal_of_pure_despotism = { #Same for Both
+		max_absolutism = -10
+		yearly_corruption = -0.10
+	}
+	high_level_diplomacy = { #Unique
+		diplomatic_reputation = 1
+	}
+	shift_to_flemish_and_walloon_language = { #Same for both
+		global_unrest = -2
+	}
+}
+IKI_ideas = { #Jodo Shinshu
+	start = {
+		years_of_nationalism = -5
+		development_cost = -0.10
+	}
+	
+	bonus = {
+		reinforce_cost_modifier = -0.33
+	}
+	
+	trigger = {
+		tag = IKI
+	}
+	free = yes
+	
+	power_from_the_bottom_up = { 
+		max_absolutism = -10
+		manpower_recovery_speed = 0.15
+	}
+	defensive_temple_towns = { 
+		defensiveness = 0.10
+		garrison_size = 0.25
+	}
+	recruit_the_sohei = { 
+		discipline = 0.05
+	}
+	listening_to_the_commoners = { 
+		global_unrest = -2
+	}
+	preach_to_the_downtrodden = { 
+		global_missionary_strength = 0.02
+	}
+	hail_to_buddha_amida = { 
+		land_morale = 0.05
+		recover_army_morale_speed = 0.10
+	}
+	disband_the_samurai_class = { 
+		global_autonomy = -0.05
+	}
+}
+
+
+
+### Patch 1.2 ###
+
+
+
+ 
+TNC_ideas = { #Tir na Celtigh
+	start = {
+		land_forcelimit_modifier = 0.25
+		naval_forcelimit_modifier = 0.25
+	}
+	
+	bonus = {
+		core_creation = -0.10
+	}
+	
+	trigger = {
+		tag = TNC
+	}
+	free = yes
+	
+	the_courage_of_the_celts = { 
+		land_morale = 0.10
+		army_tradition = 0.50
+	}
+	legacy_of_the_norse_invasions = { 
+		range = 0.25
+		navy_tradition = 1.0
+	}
+	traditions_of_celtic_bards = { 
+		prestige = 0.5
+		global_unrest = -2
+	}
+	resettling_celtic_lands = { 
+		culture_conversion_cost = -0.20
+		global_colonial_growth = 10
+	}
+	compile_celtic_laws = { 
+		governing_capacity_modifier = 0.25
+	}
+	six_official_languages = { 
+		global_manpower_modifier = 0.25
+	}
+	from_the_brink_of_death_and_back = { 
+		discipline = 0.05
+	}
+}
+APC_ideas = {  #Apacheria
+	start = {
+		global_manpower_modifier = 0.25
+		free_mil_policy = 1
+	}
+	
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = APC
+	}
+	free = yes
+	
+	expand_apache_borders = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	give_it_all_for_apacheria = {
+		manpower_recovery_speed = 0.15
+	}
+	apache_rifle_riders = {
+		cavalry_power = 0.20
+		fire_damage = 0.05
+	}
+	manage_our_internal_ecosystem = {
+		cavalry_cost = -0.10
+		production_efficiency = 0.10
+	}
+	mobile_apache_cannons = {
+		movement_speed = 0.10
+	}
+	infantry_and_cavalry_skirmishes = {
+		cav_to_inf_ratio = 0.30
+		cavalry_flanking = 0.50
+	}
+	killer_of_enemies_and_child_of_the_water = {
+		monarch_military_power = 1
+	}
+}
+CMN_ideas = {  #Comancheria
+	start = {
+		movement_speed = 0.10
+		global_autonomy = -0.05
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	trigger = {
+		tag = CMN
+	}
+	free = yes
+	
+	rightful_claims_of_comancheria = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	the_lord_of_the_plains_forever_more = {
+		cavalry_power = 0.20
+		leader_land_fire = 1
+	}
+	outposts_across_the_plains = {
+		hostile_attrition = 1
+	}
+	well_managed_hunting = {
+		stability_cost_modifier = -0.15
+		army_tradition = 0.75
+	}
+	unmatched_horsemanship = {
+		cavalry_cost = -0.10
+		cav_to_inf_ratio = 0.30
+	}
+	melt_into_the_plains_and_then_counter = {
+		shock_damage = 0.10
+	}
+	reformation_of_comanche_bands = {
+		global_manpower_modifier = 0.25
+	}
+}
+NVJ_ideas = {  #Dinétah
+	start = {
+		development_cost = -0.15
+		hostile_attrition = 1.5
+	}
+	
+	bonus = {
+		technology_cost = -0.075
+	}
+	
+	trigger = {
+		tag = NVJ
+	}
+	free = yes
+	
+	engage_in_greater_cooperation = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	mutual_understanding_and_kinship = {
+		advisor_pool = 1
+		global_manpower_modifier = 0.25
+	}
+	navajo_farmlands_extended = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	the_fearing_time_is_over = {
+		land_morale = 0.10
+		defensiveness = 0.20
+	}
+	new_production_ways_and_new_ethnobotany = {
+		production_efficiency = 0.10
+		manpower_recovery_speed = 0.10
+	}
+	matrilineal_system_and_cant_live_without_eachother = {
+		global_unrest = -2
+		female_advisor_chance = 0.25
+	}
+	unmatched_artistic_crafts = {
+		prestige = 1
+	}
+}
+TMA_ideas = {
+	start = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		manpower_recovery_speed = 0.15
+	}
+	
+	bonus = {
+		num_accepted_cultures = 1
+	}
+	
+	trigger = {
+		tag = TMA
+	}
+	free = yes
+	
+	cheran_cholan_pandyan = {
+		global_manpower_modifier = 0.25
+	}
+	chera_spice_trade_connections = {
+		trade_efficiency = 0.10
+		trade_steering = 0.20
+	}
+	chera_wootz_steel = {
+		discipline = 0.05
+	}
+	chola_naval_expeditions = {
+		navy_tradition = 1.0
+		naval_morale = 0.10
+	}
+	chola_grand_invasions = {
+		core_creation = -0.15
+	}
+	pandyan_surviving_and_still_fighting = {
+		land_forcelimit_modifier = 0.25
+		army_tradition = 0.5
+	}
+	pandyan_reassemble_the_sangams = {
+		global_institution_spread = 0.10
+	}
+}
+SQL_ideas = {  #Selis-Qlispe
+	start = {
+		production_efficiency = 0.15
+		global_supply_limit_modifier = 0.25
+	}
+	
+	bonus = {
+		fort_maintenance_modifier = -0.20
+	}
+	
+	trigger = {
+		tag = SQL
+	}
+	free = yes
+	
+	encompassing_wider_kin_groups = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	fur_trade_of_the_northwest = {
+		trade_efficiency = 0.10
+		global_trade_goods_size_modifier = 0.10
+	}
+	reorganized_housing_and_property = {
+		development_cost = -0.15
+	}
+	the_art_of_a_diverse_nation = {
+		prestige_decay = -0.01
+	}
+	canoe_and_forest_combatants = {
+		leader_land_fire = 1
+		leader_naval_fire = 1
+	}
+	keep_the_potlach_feast = {
+		global_unrest = -2
+	}
+	unmatched_terrain_experience = {
+		drill_gain_modifier = 0.25
+		army_tradition = 0.50
+	}
+}
+MHY_ideas = {  #Meghalaya
+	start = {
+		hostile_attrition = 1.0
+		tolerance_heathen = 3
+	}
+	
+	bonus = {
+		fire_damage_received = -0.10
+	}
+	
+	trigger = {
+		tag = MHY
+	}
+	free = yes
+	
+	the_abode_of_clouds = {
+		defensiveness = 0.20
+		land_attrition = -0.10
+	}
+	islamic_invasions_and_islamic_ideas = {
+		idea_cost = -0.10
+	}
+	untold_amounts_of_diversity = {
+		num_accepted_cultures = 2
+		promote_culture_cost = -0.50
+	}
+	adaptation_to_tropical_agriculture = {
+		development_cost = -0.15
+	}
+	the_wettest_homeland_on_earth = {
+		leader_land_manuever = 1
+	}
+	multi_faced_meghalaya_military = {
+		land_forcelimit_modifier = 0.25
+	}
+	celebrate_like_no_other = {
+		global_unrest = -2
+	}
+}
+TMZ_ideas = {  #Tamazagha
+	start = {
+		hostile_attrition = 1.0
+		movement_speed = 0.15
+	}
+	
+	bonus = {
+		land_morale = 0.15
+	}
+	
+	trigger = {
+		tag = TMZ
+	}
+	free = yes
+	
+	the_differences_in_berber_beliefs = {
+		tolerance_heretic = 2
+		tolerance_heathen = 2
+	}
+	respect_for_confederacies = {
+		global_manpower_modifier = 0.20
+		land_attrition = -0.20
+	}
+	mutual_understanding_with_arabs = {
+		legitimacy = 1
+		republican_tradition = 0.5
+	}
+	camel_warfare_across_tamazagha = {
+		cavalry_power = 0.20
+	}
+	open_to_more_egalitarian_measures = {
+		global_unrest = -1
+		female_advisor_chance = 0.25
+		may_recruit_female_generals = yes
+	}
+	regular_crossing_of_saharan_trade = {
+		trade_efficiency = 0.15
+	}
+	modernized_ksars = {  #Remember the agadir, or, fortified granary
+		defensiveness = 0.25
+	}
+}
+LTE_ideas = {  #Latin Empire
+	start = {
+		tolerance_own = 3
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = LTE
+	}
+	free = yes
+	
+	battles_for_strait_control = {
+		galley_power = 0.15
+		naval_forcelimit_modifier = 0.25
+	}
+	frontier_against_islam = {
+		diplomatic_upkeep = 1
+		warscore_cost_vs_other_religion = -0.10
+	}
+	northern_and_southern_threats = {
+		army_tradition_decay = -0.01
+	}
+	establishing_formal_latinokratia = {
+		global_autonomy = -0.05
+	}
+	uphold_catholic_prelates_and_archbishop = {
+		global_missionary_strength = 0.03
+	}
+	out_of_greek_bureaucracy_and_to_a_new_form = {
+		global_tax_modifier = 0.15
+	}
+	legacy_of_the_crusaders_founding = {
+		monarch_military_power = 1
+	}
+}
+HDE_ideas = {
+	start = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		harsh_treatment_cost = -0.25
+	}
+	
+	bonus = {
+		war_exhaustion = -0.03
+	}
+	
+	trigger = {
+		tag = HDE
+	}
+	free = yes		# will be added at load
+	
+	the_great_law_of_peace = {
+		monarch_admin_power = 1
+		female_advisor_chance = 0.50
+	}
+	in_unity_we_exude_power = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+	}
+	long_house_deliberation = {
+		global_unrest = -2
+	}
+	distribution_and_respect_for_power = {
+		global_autonomy = -0.05
+	}
+	the_need_to_command_the_fur_trade = {
+		movement_speed = 0.10
+		caravan_power = 0.25
+	}
+	the_covenant_chain_of_assimilation = {
+		improve_relation_modifier = 0.50
+		diplomatic_annexation_cost = -0.10
+	}
+	how_we_hunt_is_how_we_fight = {
+		discipline = 0.05
+	}
+}
+HET_ideas = {  #Hetmanate
+	start = {
+		manpower_recovery_speed = 0.10
+		land_morale = 0.10
+	}
+	
+	bonus = {
+		movement_speed = 0.10
+	}
+	
+	trigger = {
+		tag = HET
+	}
+	free = yes
+	
+	toward_all_of_ruthenia = {
+		province_warscore_cost = -0.10
+	}
+	all_under_the_zaoporzhian_host = {
+		free_leader_pool = 1
+		global_unrest = -1
+	}
+	exiles_and_freedom_seekers = {
+		rebel_support_efficiency = 0.25
+		global_manpower_modifier = 0.25
+	}
+	the_kish_the_sich_rada_and_military_court = {
+		army_tradition = 1.0
+	}
+	cossack_infantry_supremacy = {
+		infantry_power = 0.075
+		fire_damage = 0.075
+	}
+	the_price_we_set_for_service = {
+		possible_condottieri = 0.50
+	}
+	kleinody = {
+		prestige = 1.0 
+	}
+}
+ILY_CRO_ideas = {  #Illyria, Croatian 
+    start = {
+        free_leader_pool = 1
+        adm_tech_cost_modifier = -0.10
+    }
+    
+    bonus = {
+        tolerance_heretic = 3  #Same for All
+    }
+    
+    trigger = {
+        tag = ILY
+        primary_culture = croatian
+    }
+    free = yes
+    
+    many_governments_but_one_authority = {  #Same for All
+        advisor_cost = -0.15
+        general_cost = -0.25
+    }
+    adriatic_hostilities = {
+        naval_forcelimit_modifier = 0.25
+    }
+    remember_the_twelve_noble_croatian_tribes = {
+        advisor_pool = 1
+        global_manpower_modifier = 0.15
+    }
+    the_pandurs_of_illyria = {
+        army_tradition = 0.25
+        fire_damage = 0.075
+    }
+    sabors_to_represent_illyria = {
+        global_unrest = -2
+    }
+    the_stopping_point_of_the_ottomans = {
+        defensiveness = 0.25
+    }
+    in_brotherhood_as_we_are_in_statehood = {  #Same for All
+        manpower_recovery_speed = 0.15
+    }
+}
+ILY_SER_ideas = {  #Illyria, Serbian
+	start = {
+		land_morale = 0.10
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		tolerance_heretic = 3  #Same for All
+	}
+	
+	trigger = {
+		tag = ILY
+		primary_culture = serbian
+	}
+	free = yes
+	
+	many_governments_but_one_authority = {  #Same for All
+		advisor_cost = -0.15
+		general_cost = -0.25
+	}
+	illyrian_serbian_economics = {
+		inflation_reduction = 0.10
+	}
+	stability_brings_prosperity_to_illyria = {
+		development_cost = -0.05
+		build_cost = -0.15
+	}
+	hajduks_and_hussars = {
+		infantry_power = 0.10
+		cavalry_cost = 0.20
+	}
+	modernize_dusans_code = {
+		yearly_corruption = -0.10
+	}
+	religion_and_politics_inside_illyria = {
+		governing_capacity_modifier = 0.25
+	}
+	in_brotherhood_as_we_are_in_statehood = {  #Same for All
+		manpower_recovery_speed = 0.15
+	}
+}
+ILY_BUL_ideas = {  #Illyria, Bulgarian
+	start = {
+		core_creation = -0.15
+		legitimacy = 1
+	}
+	
+	bonus = {
+		tolerance_heretic = 3  #Same for All
+	}
+	
+	trigger = {
+		tag = ILY
+		primary_culture = bulgarian
+	}
+	free = yes
+	
+	many_governments_but_one_authority = {  #Same for All
+		advisor_cost = -0.15
+		general_cost = -0.25
+	}
+	ecclesiastic_politics_settled = {
+		prestige = 1.0
+		tolerance_own = 1
+	}
+	at_the_edge_of_crusaders = {
+		land_morale = 0.10
+	}
+	stabilize_the_southern_balkans = {
+		global_autonomy = -0.05
+		global_institution_spread = 0.10
+	}
+	cooperation_against_the_ottomans = {
+		land_forcelimit_modifier = 0.25
+	}
+	stone_walls_and_swift_movements = {
+		defensiveness = 0.15
+		movement_speed = 0.10
+	}
+	in_brotherhood_as_we_are_in_statehood = {  #Same for All
+		manpower_recovery_speed = 0.15
+	}
+}
+ILY_BOS_ideas = {  #Illyria, Bosnian
+	start = {
+		religious_unity = 0.25
+		fort_maintenance_modifier = -0.20
+	}
+	
+	bonus = {
+		tolerance_heretic = 3  #Same for All
+	}
+	
+	trigger = {
+		tag = ILY
+		primary_culture = bosnian
+	}
+	free = yes
+	
+	many_governments_but_one_authority = {  #Same for All
+		advisor_cost = -0.15
+		general_cost = -0.25
+	}
+	mastery_of_balkan_defenses = {
+		hostile_attrition = 1.0
+		defensiveness = 0.20
+	}
+	crowned_authority_to_rule_over_the_others = {
+		core_creation = -0.15
+	}
+	a_stronger_diplomatic_position = {
+		diplomats = 1
+		diplomatic_upkeep = 1
+	}
+	organize_mining_operations = {
+		global_trade_goods_size_modifier = 0.10
+	}
+	respect_for_krstjani_catholicism_and_orthodox = {
+		idea_cost = -0.10
+	}
+	in_brotherhood_as_we_are_in_statehood = {  #Same for All
+		manpower_recovery_speed = 0.15
+	}
+}
+ILY_ALB_ideas = {  #Illyria, Albanian
+	start = {
+		land_forcelimit_modifier = 0.25
+		shock_damage = 0.10
+	}
+	
+	bonus = {
+		tolerance_heretic = 3  #Same for All
+	}
+	
+	trigger = {
+		tag = ILY
+		primary_culture = albanian
+	}
+	free = yes
+	
+	many_governments_but_one_authority = {  #Same for All
+		advisor_cost = -0.15
+		general_cost = -0.25
+	}
+	skirmishing_over_direct_battle = {
+		cavalry_flanking = 0.50
+		land_attrition = -0.10
+	}
+	skanderbegs_legacy = {
+		land_morale = 0.15
+	}
+	defend_against_venetians_and_turks = {
+		garrison_size = 0.25
+		army_tradition = 0.75
+	}
+	aristocrats_for_a_common_cause = {
+		global_manpower_modifier = 0.20
+	}
+	amends_with_all_the_balkans = {
+		global_regiment_cost = -0.10
+	}
+	in_brotherhood_as_we_are_in_statehood = {  #Same for All
+		manpower_recovery_speed = 0.15
+	}
+}
+ILY_SLO_ideas = {  #Illyria, slovene
+	start = {
+		diplomatic_reputation = 1
+		dip_tech_cost_modifier = -0.10
+	}
+	
+	bonus = {
+		tolerance_heretic = 3  #Same for All
+	}
+	
+	trigger = {
+		tag = ILY
+		primary_culture = slovene
+	}
+	free = yes
+	
+	many_governments_but_one_authority = {  #Same for All
+		advisor_cost = -0.15
+		general_cost = -0.25
+	}
+	illyrian_cooperation_means_prosperity = {
+		harsh_treatment_cost = -0.25
+	}
+	languages_of_illyria_standardized = {
+		stability_cost_modifier = -0.15
+		prestige = 1
+	}
+	how_the_austrians_handle_diplomacy = {
+		diplomats = 1
+	}
+	baroque_in_the_balkan_style = {
+		advisor_pool = 1
+		global_institution_spread = 0.10
+	}
+	the_new_middle_class_of_illyria = {
+		development_cost = -0.10
+	}
+	in_brotherhood_as_we_are_in_statehood = {  #Same for All
+		manpower_recovery_speed = 0.15
+	}
+}
+KCH_ideas = {
+	start = {
+		hostile_attrition = 1.0
+		global_colonial_growth = 20
+	}
+	
+	bonus = {
+		war_exhaustion = -0.05
+	}
+	
+	trigger = {
+		tag = KCH
+	}
+	free = yes
+	
+	the_long_roads_between_us = {
+		movement_speed = 0.10
+		envoy_travel_time = -0.25
+	}
+	enlarge_the_capacity_of_siberian_trade = {
+		caravan_power = 0.25
+	}
+	egalitarianism_from_bands_on_up = {
+		yearly_corruption = -0.10
+		global_unrest = -1
+		female_advisor_chance = 0.50
+	}
+	improving_garments_of_the_koryaks = {
+		land_attrition = -0.20
+	}
+	reindeer_riders_and_transports = {  #Same for the Evenks and Koryaks; they both used Reindeer extensively
+		production_efficiency = 0.10
+		reinforce_speed = 0.25
+	}
+	the_unforgiving_nature_of_siberia = {
+		defensiveness = 0.25
+	}
+	what_is_learned_from_hunting = {
+		leader_land_manuever = 2
+	}
+}
+EVK_ideas = {
+	start = {
+		hostile_attrition = 1.0
+		reinforce_cost_modifier = -0.33
+	}
+	
+	bonus = {
+		leader_land_manuever = 2
+	}
+	
+	trigger = {
+		tag = EVK
+	}
+	free = yes
+	
+	colonizers_of_vast_taiga_and_tundra = {
+		global_colonial_growth = 20
+	}
+	southern_influences_on_the_koryaks = {
+		build_cost = -0.10
+		religious_unity = 0.20
+	}
+	hunting_in_two_ways = {
+		fire_damage = 0.10
+	}
+	the_respect_we_have_for_animals = {
+		legitimacy = 1
+		republican_tradition = 0.5
+		devotion = 1
+		horde_unity = 1.0
+	}
+	reindeer_riders_and_transports = {  #Same for the Evenks and Koryaks; they both used Reindeer extensively
+		production_efficiency = 0.10
+		reinforce_speed = 0.25
+	}
+	welcoming_into_the_vast_family_home = {
+		years_of_nationalism = -5
+	}
+	respect_for_nature_and_its_protection = {
+		land_attrition = -0.20
+	}
+}
+CRC_ideas = {  #Nehiyaw-Pwat aka The Iron Confederacy
+	start = {
+		leader_land_fire = 1
+		global_manpower_modifier = 0.25
+	}
+	
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+	
+	trigger = {
+		tag = CRC
+	}
+	free = yes
+	
+	join_together_against_common_threats = {
+		colonists = 1
+		auto_explore_adjacent_to_colony = yes
+		recover_army_morale_speed = 0.10
+	}
+	middle_man_of_fur_trading = {
+		caravan_power = 0.25
+		trade_efficiency = 0.15
+	}
+	confederacy_against_confederacy = {
+		core_creation = -0.10
+	}
+	strengthen_the_strained_bonds = {
+		global_institution_spread = 0.10
+	}
+	skirmishers_of_the_forests_and_hills = {
+		fire_damage = 0.075
+		movement_speed = 0.075
+	}
+	facilitate_greater_movement_of_goods = {
+		global_trade_power = 0.20
+	}
+	consolidation_of_the_plains = {
+		production_efficiency = 0.10
+	}
+}
+

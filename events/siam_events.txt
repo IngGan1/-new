@@ -1,0 +1,111 @@
+namespace = siam
+
+# Siam Unified
+country_event = {
+	id = siam.1
+	title = "siam.1.t"
+	desc = "siam.1.d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+    major = yes
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = AYU
+		has_ruler = "Trailokanat"
+		dynasty = "Suphannaphum"
+        SUK = {
+            has_ruler = "Trailokanat"
+			dynasty = "Suphannaphum"
+        }
+		NOT = {
+			has_global_flag = siam_disunited
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "siam.1.a"
+		set_global_flag = siam_unified
+        AYU = {
+            inherit = SUK
+		}
+    }
+}
+
+# Trailokanat Dies (Ayutthaya)
+country_event = {
+	id = siam.2
+	title = siam.2.t
+	desc = siam.2.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = AYU
+			tag = SUK
+		}
+		NOT = {
+			has_global_flag = siam_unified
+		}
+		if = {
+			limit = {
+				tag = AYU
+			}
+			SUK = {
+				NOT = {
+					has_ruler = "Trailokanat"
+				}
+			}
+		}
+		if = {
+			limit = {
+				tag = SUK
+			}
+			AYU = {
+				NOT = {
+					OR = {
+						has_ruler = "Trailokanat"
+						has_heir = "Trailokanat"
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = siam.2.a
+		set_global_flag = siam_disunited
+		if = {
+			limit = {
+				tag = AYU
+				has_heir = "Trailokanat"
+			}
+			kill_heir = {}
+		}
+		if = {
+			limit = {
+				tag = AYU
+				has_ruler = "Trailokanat"
+			}
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				tag = SUK
+				has_ruler = "Trailokanat"
+			}
+			kill_ruler = yes
+		}
+	}
+}

@@ -1,0 +1,137 @@
+namespace = colonial_system
+
+#################################
+# Colonisation de la Laponie
+#################################
+# Laponie
+country_event = {
+	id = colonial_system.6
+	title = "colonial_system_6_title"
+	desc = "colonial_system_6_desc"
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1470
+		tag = SWE
+		NOT = { is_year = 1650 }
+		18 = {
+			is_city = no
+			is_empty = yes
+		}
+		3775 = {
+			is_city = no
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = { months = 120 }
+
+	option = {
+		name = "colonial_system.op0" # Colonise la province
+		add_treasury = -25
+		18 = {
+			cede_province = SWE
+			add_core = SWE
+			change_trade_goods = fur
+		}
+		3775 = {
+			cede_province = SWE
+			add_core = SWE
+			change_trade_goods = fur
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "colonial_system.op2"
+		add_treasury = 15
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+# Haute Laponie
+country_event = {
+	id = colonial_system.7
+	title = "colonial_system_7_title"
+	desc = "colonial_system_7_desc"
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1490
+		tag = SWE
+		NOT = { is_year = 1650 }
+		3220 = {
+			is_city = no
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = { months = 120 }
+
+	option = {
+		name = "colonial_system.op0" # Colonise la province
+		add_treasury = -25
+		3220 = {
+			cede_province = SWE
+			add_core = SWE
+			change_trade_goods = fur
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {
+		name = "colonial_system.op2"
+		add_treasury = 15
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+# Rovaniemi
+country_event = {
+	id = colonial_system.8
+	title = "colonial_system_7_title"
+	desc = "colonial_system_7_desc"
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_year = 1440
+		tag = SWE
+		NOT = { is_year = 1650 }
+		3204 = {
+			is_city = no
+			is_empty = yes
+		}
+		3221 = {
+			is_city = no
+			is_empty = yes
+		}
+	}
+
+	mean_time_to_happen = { months = 120 }
+
+	option = {
+		name = "colonial_system.op0" # Colonise la province
+		discover_province = 3777
+		add_treasury = -25
+		3204 = {
+			cede_province = SWE
+			add_core = SWE
+			change_trade_goods = fur
+		}
+		3221 = {
+			cede_province = SWE
+			add_core = SWE
+			change_trade_goods = fur
+		}
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = "colonial_system.op2"
+		add_treasury = 25
+		ai_chance = { factor = 0 }
+	}
+}

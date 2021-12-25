@@ -1,0 +1,594 @@
+
+country_decisions = {
+	root_out_corruption_act = {
+		major = yes
+		potential = {
+			or = { current_age = age_of_absolutism current_age = age_of_revolutions current_age = industrial_age }
+			NOT = { has_country_flag = root_out_corruption_act_flag }
+		}
+		allow = {
+			stability = 2
+			adm_tech = 20
+			adm_power = 400
+			dip_power = 400
+			mil_power = 400
+			is_at_war = no
+			legitimacy_equivalent = 90
+			has_country_modifier = alleviate_corruption_act
+		}
+		effect = {
+			set_country_flag = root_out_corruption_act_flag
+			add_prestige = 20
+			add_adm_power = -400
+			add_dip_power = -400
+			add_mil_power = -400
+			add_country_modifier = {
+				name = "anti_corruption_act"
+				duration = -1
+			}
+			remove_country_modifier = alleviate_corruption_act
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+
+country_decisions = {
+	establish_permanent_anti_corruption_agency = {
+		major = yes
+		potential = {
+			or = { current_age = age_of_revolutions current_age = industrial_age }
+			NOT = { has_country_flag = establish_permanent_anti_corruption_agency_flag }
+		}
+		allow = {
+			stability = 2
+			adm_tech = 25
+			adm_power = 600
+			dip_power = 600
+			mil_power = 600
+			treasury = 1500
+			is_at_war = no 
+			legitimacy_equivalent = 90
+			has_country_modifier = anti_corruption_act
+		}
+		effect = {
+			set_country_flag = establish_permanent_anti_corruption_agency_flag
+			add_prestige = 20
+			add_treasury = -1500
+			add_adm_power = -600
+			add_dip_power = -600
+			add_mil_power = -600
+			add_country_modifier = {
+				name = "permanent_anti_corruption_agency"
+				duration = -1
+			}
+			remove_country_modifier = anti_corruption_act
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+
+country_decisions = {
+	line_infantry_tactics = {
+		major = yes
+		potential = {
+			capital_scope = { continent = europe }
+			mil_tech = 16
+			NOT = { has_country_flag = line_infantry_tactics_flag }
+		}
+		allow = {
+			stability = 1
+			mil_tech = 18
+			is_at_war = no 
+			mil_power = 200
+		}
+		effect = {
+			set_country_flag = line_infantry_tactics_flag
+			add_prestige = 20
+			add_mil_power = -200
+			add_country_modifier = {
+				name = "line_infantry"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+country_decisions = {
+	flintlock_musket_adopting = {
+		major = yes
+		potential = {
+			capital_scope = { continent = europe }
+			mil_tech = 18
+			NOT = { has_country_flag = flintlock_musket_adopting_flag }
+		}
+		allow = {
+			stability = 1
+			mil_tech = 20
+			treasury = 1000
+			is_at_war = no 
+            mil_power = 200
+		}
+		effect = {
+			set_country_flag = flintlock_musket_adopting_flag
+			add_prestige = 20
+			add_treasury = -1000
+			add_mil_power = -200
+			add_country_modifier = {
+				name = "flintlock_musket"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+country_decisions = {
+	line_infantry_tactics_not_europe = {
+		major = yes
+		potential = {
+			NOT = { capital_scope = { continent = europe } }
+			OR = {
+				any_neighbor_country = { has_country_flag = line_infantry_tactics_flag }
+				tag = KOR
+				tag = JAP
+				tag = MNG
+				tag = QNG
+				is_emperor_of_china = yes
+			}
+			mil_tech = 18
+			NOT = { has_country_flag = line_infantry_tactics_flag }
+		}
+		allow = {
+			stability = 1
+			mil_tech = 20
+			is_at_war = no 
+			mil_power = 300
+		}
+		effect = {
+			set_country_flag = line_infantry_tactics_flag
+			add_prestige = 20
+			add_mil_power = -300
+			add_country_modifier = {
+				name = "line_infantry"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+country_decisions = {
+	flintlock_musket_adopting_not_europe = {
+		major = yes
+		potential = {
+			NOT = { capital_scope = { continent = europe } }
+			OR = {
+				any_neighbor_country = { has_country_flag = flintlock_musket_adopting_flag }
+				tag = KOR
+				tag = JAP
+				tag = MNG
+				tag = QNG
+				is_emperor_of_china = yes
+			}
+			mil_tech = 20
+			NOT = { has_country_flag = flintlock_musket_adopting_flag }
+		}
+		allow = {
+			stability = 1
+			mil_tech = 22
+			treasury = 2000
+			is_at_war = no 
+			mil_power = 300
+		}
+		effect = {
+			set_country_flag = flintlock_musket_adopting_flag
+			add_prestige = 20
+			add_treasury = -2000
+			add_mil_power = -300
+			add_country_modifier = {
+				name = "flintlock_musket"
+				duration = -1
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+country_decisions = {
+	Difficulty_Setting = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			country_event = { id = idea_settings.2 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	auto_building = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			or = { treasury = 5000 has_country_flag = auto_uni has_country_flag = auto_for has_country_flag = auto_man has_country_flag = auto_tra has_country_flag = auto_pro has_country_flag = auto_tax has_country_flag = auto_inf has_country_flag = auto_land has_country_flag = auto_manu }
+		}
+		effect = {
+			country_event = { id = jjab_events.10 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	declare_onin_war = {
+		potential = {
+			ai = no
+			has_reform = daimyo
+			NOT = { is_year = 1466 }
+			NOT = { has_global_flag = onin_war_flag }
+		}
+		allow = {
+			NOT = { is_year = 1466 }
+		}
+		effect = {
+			ASK = {
+				add_prestige = -20
+				add_stability = -1
+				add_country_modifier = {
+					name = "sengoku_daimyo"
+					duration = -1
+				}
+			}
+			set_global_flag = "onin_war_flag"
+			add_trust = {
+				who = ASK
+				value = -20
+				mutual = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	byz_help = {
+		potential = {
+			ai = no
+			has_country_modifier = start_of_game
+			NOT = { has_global_flag = no_decision }
+			NOT = { has_global_flag = byz_help_flag }
+			NOT = { total_development = 100 }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "byz_help"
+				duration = 30
+			}
+			set_global_flag = byz_help_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hab_colony_decision = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_global_flag = no_decision }
+			NOT = { has_global_flag = hab_colony_start }
+			NOT = { has_global_flag = aaa_col_limit_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_global_flag = hab_colony_start
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	d_aaa_cheat_menu = {
+		major = yes
+		potential = {
+			always = no
+			ai = no
+			NOT = { has_global_flag = no_decision }
+			NOT = { has_global_flag = hab_colony_start }
+			NOT = { has_global_flag = aaa_col_limit_flag }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			country_event = { id = aaa_cheat.1 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	hab_colony_decision2 = {
+		potential = {
+			ai = no
+			NOT = { has_global_flag = no_decision }
+			or = { 
+				has_global_flag = hab_colony_start
+				has_global_flag = aaa_col_limit_flag
+			}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			clr_global_flag = hab_colony_start
+			clr_global_flag = aaa_col_limit_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	peace_for_all = {
+		major = yes
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = make_peace }
+			has_country_modifier = start_of_game
+			is_year = 1445
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = make_peace
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_at_war = yes
+					}
+					country_event = { id = jjab_events.7 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	heir_for_all = {
+		major = yes
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+			not = { has_global_flag = make_heir }
+			has_country_modifier = start_of_game
+			is_year = 1445
+		}
+		allow = {
+		}
+		effect = {
+			set_global_flag = make_heir 
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_heir = no
+					}
+					country_event = { id = jjab_events.8 }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+country_decisions = {
+	make_india_colony = {
+		potential = {
+			NOT = { exists = IDA }
+			or = {
+				and = {
+					ai = no
+					calc_true_if = {
+						india_superregion = {
+							owned_by = ROOT
+						}
+						amount = 10
+					}
+				}
+				and = {
+					ai = yes
+					calc_true_if = {
+						india_superregion = {
+							owned_by = ROOT
+						}
+						amount = 50
+					}
+				}
+			}
+			capital_scope = {
+				not = { continent = asia }
+			}
+		}
+
+		allow = {
+			calc_true_if = {
+				india_superregion = {
+					owned_by = ROOT
+				}
+				amount = 50
+			}
+			adm_tech = 20
+			is_subject = no
+			is_at_war = no
+		}
+		effect = {
+			india_superregion = {
+				limit = { owned_by = ROOT }
+				add_core = IDA
+				remove_core = ROOT
+			}
+			release = IDA
+			IDA = {
+				change_technology_group = indian
+				change_unit_type = indian
+			}
+			country_event = { id = jjab_events.9 }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+country_decisions = {
+	no_jap_unite = {
+		potential = {
+			always = no
+			ai = no
+			has_country_modifier = start_of_game
+			not = { has_global_flag = no_decision }
+			not = { has_country_flag = no_jap_unite }
+			capital_scope = {
+				or = {
+					superregion = china_superregion
+					region = korea_region
+					region = manchuria_region
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = no_jap_unite
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	no_historical_events = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+		}
+		allow = {
+		}
+		effect = {
+			country_event = { id = jjab_events.12 }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	clear_ideas = {
+		major = yes
+		potential = {
+			ai = no
+			has_country_modifier = start_of_game
+			not = { has_global_flag = no_decision }
+			not = { has_country_flag = clear_ideas }
+			is_year = 1445
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			every_country = { country_event = { id = jjab_events.24 } }
+			set_country_flag = clear_ideas
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	malaria_cure_invent = {
+		potential = {
+			ai = no
+			not = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			any_province = {
+				continent = africa
+				has_discovered = ROOT
+			}
+			is_year = 1500
+			innovativeness = 40
+			OR = {
+				has_idea_group = exploration_ideas
+				has_idea_group = expansion_ideas
+			}
+			NOT = { has_global_flag = malaria_cure }
+			NOT = { has_country_flag= malaria_cure_research }
+		}
+		allow = {
+			innovativeness = 60
+			treasury = 4000
+		}
+		effect = {
+			if = {
+				limit = { is_year = 1750 }
+				change_innovativeness = -5
+				add_treasury = -1000
+			}
+			else_if = {
+				limit = { is_year = 1700 }
+				change_innovativeness = -10
+				add_treasury = -2000
+			}
+			else_if = {
+				limit = { is_year = 1650 }
+				change_innovativeness = -15
+				add_treasury = -3000
+			}
+			else_if = {
+				limit = { is_year = 1600 }
+				change_innovativeness = -20
+				add_treasury = -4000
+			}
+			else_if = {
+				limit = { is_year = 1550 }
+				change_innovativeness = -25
+				add_treasury = -5000
+			}
+			else_if = {
+				limit = { is_year = 1500 }
+				change_innovativeness = -30
+				add_treasury = -6000
+			}
+			country_event = { id = vic_africa.2000 days = 3650 }
+			set_country_flag = malaria_cure_research
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -1,0 +1,11 @@
+﻿l_english:
+ new_mercantilism.1.t: "The Price Revolution Begins"
+ new_mercantilism.1.d: "From the second half of the 15th century to the first half of the 17th century, Western Europe underwent a phenomenon now known as the Price Revolution, in which countries experienced unprecedented inflation as a result of the large influx of gold and silver from Spanish colonies in the New World. The flow of precious metals through Spain gradually spread through the rest of Europe because of a Spanish balance of payments deficit, enlarging the money supply and price levels of other European countries. Inflation would further be perpetuated by population growth and urbanization, creating a revolution within the global economy."
+ new_mercantilism.1.a: "An interesting development."
+ new_mercantilism.3.t: "New World Crops"
+ new_mercantilism.3.d: "One aspect of the Columbian Exchange between the New and Old Worlds was the transfer of plants across the oceans, making many new varieties of crops available for cultivation worldwide. In Europe, potatoes, maize, and tomatoes became staples of consumption and cuisine, improving nutrition and extending lifespans, while the Americas began to grow Old World rice cultivated with the knowledge and expertise possessed by African slaves. Ultimately, the vast array of crops spread about by the Columbian Exchange helped sustain a substantial increase in global population growth, increasing the prosperity of societies all over the world."
+ new_mercantilism.3.a: "A momentous change."
+ price_revolution: "The Price Revolution"
+ desc_price_revolution: "A massive influx of New World gold and silver has caused the prices of goods to rise all over Europe."
+ new_world_crops: "New World Crops"
+ desc_new_world_crops: "The introduction of New World crops to the Old World has helped support great gains in nutrition, life expectancy, and population growth by improving food security and the diversity of people's diets."

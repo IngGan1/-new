@@ -1,0 +1,261 @@
+namespace = vic_africa
+
+country_event = {
+	id = vic_africa.1
+	title = "vic_africa.1.t"
+	desc = "vic_africa.1.d"
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { is_year = 1830 }
+		NOT = { has_global_flag = african_disease }
+		NOT = { has_global_flag = malaria_cure }
+	}
+
+	immediate = {
+		set_global_flag = african_disease
+	}
+
+	option = {
+		name = "vic_africa.1.a"
+		every_province = {
+			limit = {
+				or = {
+					and = {
+						OR = {
+							region = kongo_region
+							region = central_africa_region
+							region = south_africa_region
+							region = east_africa_region
+							region = niger_region
+							region = guinea_region
+							region = sahel_region
+						}
+						has_port = no
+					}
+					or = {
+						area = sakalava_area
+						area = southern_madagascar
+						area = betsimasaraka_area
+					}
+				}
+				NOT = { has_province_modifier = african_disease_modifier }
+			}
+			add_permanent_province_modifier = {
+				name = african_disease_modifier
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = vic_africa.2
+	title = "vic_africa.2.t"
+	desc = "vic_africa.2.d"
+	picture = EXPLORERS_eventPicture
+
+	major = yes
+	fire_only_once = yes
+	mean_time_to_happen = { months = 60 }
+
+	trigger = {
+		or = {
+			is_year = 1800
+			had_global_flag = {
+				flag = malaria_cure_100y
+				days = 30000
+			}
+		}
+		OR = {
+			has_idea_group = exploration_ideas
+			has_idea_group = expansion_ideas
+		}
+		NOT = { has_global_flag = malaria_cure }
+		ai = yes
+		has_global_flag = african_disease
+		OR = {
+			NOT = { has_dlc = "Rule_Britannia"}
+			innovativeness = 60
+		}
+	}
+
+	immediate = {
+		set_global_flag = malaria_cure
+	}
+
+	option = {
+		name = "vic_africa.2.a"
+		every_province = {
+			limit = {
+				has_province_modifier = african_disease_modifier
+			}
+			remove_province_modifier = african_disease_modifier
+			#add_permanent_province_modifier = {
+				#name = african_disease_cured_modifier
+				#duration = -1
+			#}
+		}
+		every_province = {
+			limit = {
+				has_province_modifier = african_disease_colony_modifier
+			}
+			remove_province_modifier = african_disease_colony_modifier
+			#add_permanent_province_modifier = {
+				#name = african_disease_cured_modifier
+				#duration = -1
+			#}
+		}	
+	}
+}
+
+country_event = {
+	id = vic_africa.2000
+	title = "vic_africa.2000.t"
+	desc = "vic_africa.2000.d"
+	picture = EXPLORERS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		set_country_flag = malaria_cure_researched
+		set_global_flag = malaria_cure_100y
+	}
+
+	option = {
+		name = "vic_africa.2000.a"
+		every_owned_province = {
+			limit = {
+				has_province_modifier = african_disease_modifier
+			}
+			remove_province_modifier = african_disease_modifier
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = african_disease_colony_modifier
+			}
+			remove_province_modifier = african_disease_colony_modifier
+		}
+		add_prestige = 50	
+	}
+}
+
+province_event = {
+	id = vic_africa.3
+	title = "vic_africa.2.t"
+	desc = "vic_africa.2.d"
+	picture = COLONIZATION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = african_disease_modifier
+		owner = {
+			not = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			not = { has_country_flag = malaria_cure_researched }
+		}
+	}
+
+	option = {
+		name = "vic_africa.2.a"
+		remove_province_modifier = african_disease_modifier
+		add_permanent_province_modifier = {
+			name = african_disease_colony_modifier
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = vic_africa.4
+	title = "vic_africa.2.t"
+	desc = "vic_africa.2.d"
+	picture = COLONIZATION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = african_disease_colony_modifier
+		owner = {
+			capital_scope = {
+				continent = africa
+			}
+			not = { has_country_flag = malaria_cure_researched }
+		}
+	}
+
+	option = {
+		name = "vic_africa.2.a"
+		remove_province_modifier = african_disease_colony_modifier
+		add_permanent_province_modifier = {
+			name = african_disease_modifier
+			duration = -1
+		}
+	}
+}
+
+province_event = {
+	id = vic_africa.5
+	title = "vic_africa.2.t"
+	desc = "vic_africa.2.d"
+	picture = COLONIZATION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		or = { has_province_modifier = african_disease_modifier has_province_modifier = african_disease_colony_modifier }
+		owner = {
+			not = {
+				capital_scope = {
+					continent = africa
+				}
+			}
+			has_country_flag = malaria_cure_researched
+		}
+	}
+
+	option = {
+		name = "vic_africa.2.a"
+		remove_province_modifier = african_disease_modifier
+		remove_province_modifier = african_disease_colony_modifier
+	}
+}
+
+province_event = {
+	id = vic_africa.6
+	title = "vic_africa.2.t"
+	desc = "vic_africa.2.d"
+	picture = COLONIZATION_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_province_modifier = african_disease_colony_modifier
+		owner = {
+			capital_scope = {
+				continent = africa
+			}
+			has_country_flag = malaria_cure_researched
+		}
+	}
+
+	option = {
+		name = "vic_africa.2.a"
+		remove_province_modifier = african_disease_modifier
+		remove_province_modifier = african_disease_colony_modifier
+	}
+}

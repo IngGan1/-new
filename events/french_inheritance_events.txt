@@ -1,0 +1,1856 @@
+namespace = french_inheritance
+
+# French Inheritance of Brittany
+country_event = {
+	id = french_inheritance.1
+	title = "breton_inheritance.t"
+	desc = "breton_inheritance.d"
+	picture = DIPLOMACY_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		government = monarchy
+		NOT = { war_with = BRI }
+		BRI = {
+			exists = yes
+			ai = yes
+			is_subject = no
+			is_neighbor_of = ROOT
+			government = monarchy
+		}
+		is_subject = no
+		num_of_cities = 10
+		OR = {
+			AND = {
+				FRA = { is_female = yes }
+				BRI = { is_female = no }
+			}
+			AND = {
+				FRA = { is_female = no }
+				BRI = { is_female = yes }
+			}
+			BRI = {
+				ai = yes
+				has_regency = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.1
+			OR = {
+				AND = {
+					tag = FRA
+					BRI = {
+						has_regency = no 
+					}
+				}
+				AND = {
+					tag = FRA
+					BRI = { 
+						has_regency = no 
+					}
+				}
+			}
+		}
+	}
+	
+	
+	option = {		# France gains Restoration of Union casus belli on Brittany
+		name = "breton_inheritance.a"
+		ai_chance = { factor = 90 }
+		FRA = {
+			add_casus_belli = {	
+				target = BRI
+				type = cb_restore_personal_union
+				months = 300
+			}
+		}
+		BRI = {
+			add_opinion = {
+			who = FRA
+			modifier = forced_breton_inheritance_brittany
+			}
+			hidden_effect = {
+				country_event = { id = french_inheritance.4 days = 1 }
+			}
+		}
+		every_known_country = {
+			limit = {
+				marriage_with = BRI
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = forced_breton_inheritance_rm
+			}
+		}
+	}
+	option = {		# France rejects a personal union over Brittany
+		name = "breton_inheritance.b"
+		ai_chance = { factor = 10 }
+		BRI = {
+			add_opinion = {
+				who = ROOT
+				modifier = no_forced_breton_inheritance
+			}
+			hidden_effect = {
+				country_event = { id = french_inheritance.5 days = 1 }
+			}
+		}
+		add_legitimacy = -5
+		add_prestige = -5
+	}
+}
+
+#French Inheritance of Provence
+country_event = {
+	id = french_inheritance.2
+	title = "provencal_inheritance.t"
+	desc = "provencal_inheritance.d"
+	picture = CITY_VIEW_eventPicture
+	
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		NOT = { war_with = PRO }
+		is_year = 1480
+		NOT = {
+		is_year = 1500
+		}
+		ai = yes
+		PRO = {
+			exists = yes
+			ai = yes
+			is_subject = no
+			is_neighbor_of = ROOT
+			is_at_war = no
+			is_part_of_hre = no
+		}
+		is_subject = no
+		num_of_cities = 10
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 1.1
+			luck = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.5
+			PRO = {
+				dynasty = FRA
+			}
+		}
+	}
+	
+	option = {		#France inherits Provence and its subjects
+		name = "provencal_inheritance.a"
+		if = {
+			limit = {
+				PRO = {
+					owns_core_province = 187
+				}
+				LOR = {
+					exists = yes
+					is_subject = no
+				}
+			}
+			187 = {
+				add_core = LOR
+				cede_province = LOR
+				add_local_autonomy = 10
+			}
+		}
+		PRO = {
+			every_subject_country = {
+				every_owned_province = {
+					add_core = PRO
+					cede_province = PRO
+				}
+			}
+			set_in_empire = no
+		}
+		inherit = PRO
+		LOR = {
+			country_event = { id = french_inheritance.6 days = 1 }
+		}
+	}
+}
+
+# Breton Reaction to French Claims on Brittany
+country_event = {
+	id = french_inheritance.4
+	title = "breton_reaction_french_claim.t"
+	desc = "breton_reaction_french_claim.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "breton_reaction_french_claim.a"
+
+		add_country_modifier = {
+			name = threatened_france
+			duration = 1825
+		}
+	}
+}
+
+# Breton Reaction to French Claims on Brittany (Relinquished)
+country_event = {
+	id = french_inheritance.5
+	title = "breton_reaction_french_claim_relinquished.t"
+	desc = "breton_reaction_french_claim_relinquished.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "breton_reaction_french_claim_relinquished.a"
+		add_legitimacy = 5
+		add_prestige = 5
+	}
+}
+
+# Lorrainer Reaction to French Inheritance of Provence
+country_event = {
+	id = french_inheritance.6
+	title = "lorrainer_reaction.t"
+	desc = "lorrainer_reaction_provence.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "lorrainer_reaction.a"
+		tooltip = {
+			187 = {
+				add_core = LOR
+				cede_province = LOR
+				add_local_autonomy = 10
+			}
+		}
+		add_legitimacy = 5
+		add_prestige = 5
+	}
+}
+
+# French Claim to Milan
+country_event = {
+	id = french_inheritance.8
+	title = "french_claim_milan.t"
+	desc = "french_claim_milan.d"
+	picture = COURT_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		is_year = 1490
+		NOT = { is_year = 1520 }
+		NOT = { senior_union_with = MLO }
+		MLO = {
+			exists = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {		# Let us claim what is rightfully ours!
+		name = "french_claim_milan.a"
+		set_country_flag = league_of_venice_possible
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 50
+				alliance_with = MLO
+			}
+		}
+		every_province = {
+			limit = {
+				owned_by = MLO
+			}
+			add_claim = FRA
+		}
+        if = {
+            limit = {
+            	MLO = {
+                    government = monarchy
+					is_subject = no
+                }
+            }
+            add_casus_belli = {
+                target = MLO
+                type = cb_restore_personal_union
+                months = 300
+            }
+        }
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_claimed_milan
+			}
+		}
+		custom_tooltip = league_of_venice_possible_milan_tooltip
+	}
+	option = {		# Let us drop our claims for good!
+		name = "french_claim_milan.b"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 50
+				alliance_with = MLO
+			}
+		}
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_did_not_claim_milan
+			}
+		}
+	}
+}
+
+# Succession of Ducal Vassals
+country_event = {
+	id = french_inheritance.13
+	title = french_inheritance.13.t
+	desc = french_inheritance.13.d
+	picture = CITY_VIEW_eventPicture
+	
+	trigger = {
+		is_subject_of_type = french_fealty
+		is_subject_of = FRA
+		ai = yes
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 1000
+		modifier = {
+			factor = 0.9
+			luck = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.9
+			ROOT = {
+				dynasty = FRA
+			}
+		}
+		modifier = {
+			factor = 0.75
+			is_year = 1470
+		}
+		modifier = {
+			factor = 0.75
+			is_year = 1480
+		}
+		modifier = {
+			factor = 0.75
+			is_year = 1490
+		}
+		modifier = {
+			factor = 0.75
+			is_year = 1500
+		}
+	}
+
+	option = {
+		name = french_inheritance.13.a
+		FRA = {
+			inherit = ROOT
+			country_event = {
+				id = french_inheritance.14
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = french_inheritance.14
+	title = french_inheritance.14.t
+	desc = french_inheritance.14.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.14.a
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = french_inheritance.15
+	title = french_inheritance.15.t
+	desc = french_inheritance.15.d
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		has_country_flag = vassalize_naples
+		NAP = {
+			is_subject_of = ROOT
+			is_lesser_in_union = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = french_inheritance.15.a
+		add_prestige = 25
+		create_union = NAP
+		clr_country_flag = vassalize_naples
+	}
+}
+
+country_event = {
+	id = french_inheritance.16
+	title = french_inheritance.16.t
+	desc = french_inheritance.16.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SWI
+		is_year = 1490
+		NOT = {
+			is_year = 1550
+		}
+		MLO = {
+			is_subject_of = FRA
+			is_lesser_in_union = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = french_inheritance.16.a
+		set_country_flag = restoring_sforza
+		add_casus_belli = {
+			target = MLO
+			type = cb_vassalize_mission
+			months = 300
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = meddling_in_milan
+			}
+		}
+	}
+
+	option = {
+		name = french_inheritance.16.b
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = staying_out_of_milan
+			}
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = french_inheritance.17
+	title = french_inheritance.17.t
+	desc = french_inheritance.17.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = SPA
+		}
+		is_year = 1490
+		NOT = {
+			is_year = 1550
+			has_casus_belli = {
+				type = cb_vassalize_mission
+				target = MLO
+			}
+		}
+		MLO = {
+			is_subject_of = FRA
+			is_lesser_in_union = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = french_inheritance.17.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 50
+				alliance_with = FRA
+			}
+		}
+		add_casus_belli = {
+			target = MLO
+			type = cb_vassalize_mission
+			months = 300
+		}
+		every_province = {
+			limit = {
+				owned_by = MLO
+			}
+			add_claim = ROOT
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = meddling_in_milan
+			}
+		}
+		set_country_flag = vassalize_milan
+	}
+
+	option = {
+		name = french_inheritance.17.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				alliance_with = FRA
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = staying_out_of_milan
+			}
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = {
+	id = french_inheritance.18
+	title = french_inheritance.18.t
+	desc = french_inheritance.18.d
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		has_country_flag = vassalize_milan
+		MLO = {
+			is_subject_of = ROOT
+			is_lesser_in_union = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = french_inheritance.18.a
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 25
+		ROOT = {
+			create_union = MLO
+		}
+		clr_country_flag = vassalize_milan
+	}
+
+	option = {
+		name = french_inheritance.18.b
+		ai_chance = {
+			factor = 50
+		}
+		add_stability = 1
+		MLO = {
+			grant_independence = yes
+			define_ruler = {
+				dynasty = "Sforza"
+				max_random_adm = 3
+				max_random_dip = 3
+				max_random_mil = 3
+				age = 26
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = freed_milan
+			}
+		}
+		clr_country_flag = vassalize_milan
+		hidden_effect = {
+			FRA = {
+				country_event = {
+					id = french_inheritance.19
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = french_inheritance.19
+	title = french_inheritance.19.t
+	desc = french_inheritance.19.d
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.19.a
+		add_casus_belli = {
+			target = MLO
+			type = cb_restore_personal_union
+			months = 300
+		}
+		every_province = {
+			limit = {
+				owned_by = MLO
+			}
+			add_claim = FRA
+		}
+	}
+}
+
+# League of Venice for Naples 
+country_event = {
+	id = french_inheritance.20
+	title = french_inheritance.21.t
+	desc = french_inheritance.21.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = FRA
+		has_country_flag = vassalize_naples
+		has_country_flag = league_of_venice_possible
+		is_year = 1490
+		NOT = {
+			is_year = 1550
+		}
+		is_in_war = {
+			attacker_leader = FRA
+			defender_leader = NAP
+		}
+		NAP = {
+			capital_scope = {
+				controlled_by = FRA
+			}
+		}
+	}
+
+	option = {
+		name = french_inheritance.21.a
+		if = {
+			limit = {
+				PAP = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			PAP = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				VEN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			VEN = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				SPA = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			SPA = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				CAS = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			CAS = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				ARA = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			ARA = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				MLO = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			MLO = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				emperor = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			emperor = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				LAN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			LAN = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			ENG = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			MAN = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				GEN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = NAP
+						is_rival = NAP
+					}
+				}
+			}
+			GEN = {
+				country_event = {
+					id = french_inheritance.21
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		FRA = {
+			country_event = {
+				id = french_inheritance.22
+			}
+		}
+		NAP = {
+			country_event = {
+				id = french_inheritance.23
+			}
+		}
+		clr_country_flag = league_of_venice_possible
+	}
+}
+
+# Joining the League of Venice
+country_event = {
+	id = french_inheritance.21
+	title = french_inheritance.21.t
+	desc = french_inheritance.21.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.21.a
+		ai_chance = {
+			factor = 85
+			modifier = {
+				factor = 0
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 100
+				is_rival = FRA
+			}
+			modifier = {
+				factor = 100
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_hostile
+				}
+			}
+			modifier = {
+				factor = 100
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_outraged
+				}
+			}
+			modifier = {
+				factor = 90
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_threatened
+				}
+			}
+		}
+		create_alliance = NAP
+		NAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = defending_naples
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = joined_the_league_of_venice
+			}
+		}
+	}
+
+	option = {
+		name = french_inheritance.21.b
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 100
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 0
+				is_rival = FRA
+			}
+			modifier = {
+				factor = 0
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_hostile
+				}
+			}
+			modifier = {
+				factor = 0
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_outraged
+				}
+			}
+			modifier = {
+				factor = 10
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_threatened
+				}
+			}
+		}
+		NAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = not_defending_naples
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_the_league_of_venice
+			}
+		}
+	}
+}
+
+# League of Venice Forms
+country_event = {
+	id = french_inheritance.22
+	title = french_inheritance.22.t
+	desc = french_inheritance.22.d
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+	
+	option = {
+		name = french_inheritance.22.a
+		add_country_modifier = {
+			name = furia_francese
+			duration = 3650
+		}
+	}
+}
+
+# League of Venice Forms
+country_event = {
+	id = french_inheritance.23
+	title = french_inheritance.23.t
+	desc = french_inheritance.23.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = french_inheritance.23.a
+		set_country_flag = opposing_france
+		add_war_exhaustion = -5
+		add_yearly_manpower = 1
+	}
+}
+
+# League of Venice Victorious
+country_event = {
+	id = french_inheritance.24
+	title = french_inheritance.24.t
+	desc = french_inheritance.24.d
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		has_country_flag = opposing_france
+		NAP = {
+			NOT = {
+				war_with = FRA
+			}
+			exists = yes
+			NOT = {
+				is_subject_of = FRA
+			}
+			all_core_province = {
+				NOT = {
+					owned_by = FRA
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = french_inheritance.24.a
+		if = {
+			limit = {
+				tag = NAP
+			}
+			add_legitimacy = 25
+			hidden_effect = {
+				FRA = {
+					country_event = {
+						id = french_inheritance.32
+						days = 1
+					}
+				}
+			}
+		}
+		add_prestige = 25
+		clr_country_flag = opposing_france
+	}
+}
+
+# League of Venice Defeated
+country_event = {
+	id = french_inheritance.25
+	title = french_inheritance.25.t
+	desc = french_inheritance.25.d
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		has_country_flag = opposing_france
+		NAP = {
+			NOT = {
+				war_with = FRA
+			}
+			OR = {
+				exists = no
+				is_subject_of = FRA
+				any_core_province = {
+					owned_by = FRA
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = french_inheritance.25.a
+		if = {
+			limit = {
+				tag = NAP
+			}
+			hidden_effect = {
+				FRA = {
+					country_event = {
+						id = french_inheritance.33
+						days = 1
+					}
+				}
+			}
+		}
+		add_prestige = -25
+		clr_country_flag = opposing_france
+	}
+}
+
+# League of Venice for Milan 
+country_event = {
+	id = french_inheritance.26
+	title = french_inheritance.27.t
+	desc = french_inheritance.27.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		tag = FRA
+		has_country_flag = vassalize_milan
+		is_year = 1490
+		NOT = {
+			is_year = 1550
+		}
+		is_in_war = {
+			attacker_leader = FRA
+			defender_leader = MLO
+		}
+		MLO = {
+			capital_scope = {
+				controlled_by = FRA
+			}
+		}
+	}
+
+	option = {
+		name = french_inheritance.27.a
+		if = {
+			limit = {
+				PAP = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			PAP = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				VEN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			VEN = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				SPA = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			SPA = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				CAS = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			CAS = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				ARA = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			ARA = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				NAP = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			NAP = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				emperor = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			emperor = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				LAN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			LAN = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				ENG = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			ENG = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			MAN = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		if = {
+			limit = {
+				GEN = {
+					is_subject = no
+					NOT = {
+						war_with = FRA
+						war_with = MLO
+						is_rival = MLO
+					}
+				}
+			}
+			GEN = {
+				country_event = {
+					id = french_inheritance.27
+					days = 10
+				}
+				set_country_flag = opposing_france
+			}
+		}
+		FRA = {
+			country_event = {
+				id = french_inheritance.28
+			}
+		}
+		MLO = {
+			country_event = {
+				id = french_inheritance.29
+			}
+		}
+		clr_country_flag = league_of_venice_possible
+	}
+}
+
+# Joining the League of Venice
+country_event = {
+	id = french_inheritance.27
+	title = french_inheritance.27.t
+	desc = french_inheritance.27.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.27.a
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 0
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 100
+				is_rival = FRA
+			}
+			modifier = {
+				factor = 100
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_hostile
+				}
+			}
+			modifier = {
+				factor = 100
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_outraged
+				}
+			}
+			modifier = {
+				factor = 90
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_threatened
+				}
+			}
+		}
+		create_alliance = MLO
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = defending_naples
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = joined_the_league_of_venice
+			}
+		}
+	}
+
+	option = {
+		name = french_inheritance.27.b
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 100
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 0
+				is_rival = FRA
+			}
+			modifier = {
+				factor = 0
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_hostile
+				}
+			}
+			modifier = {
+				factor = 0
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_outraged
+				}
+			}
+			modifier = {
+				factor = 10
+				ai_attitude = {
+					who = FROM
+					attitude = attitude_threatened
+				}
+			}
+		}
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = not_defending_naples
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = rejected_the_league_of_venice
+			}
+		}
+	}
+}
+
+# League of Venice Forms
+country_event = {
+	id = french_inheritance.28
+	title = french_inheritance.28.t
+	desc = french_inheritance.28.d
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.28.a
+		add_country_modifier = {
+			name = furia_francese
+			duration = 3650
+		}
+	}
+}
+
+# League of Venice Forms
+country_event = {
+	id = french_inheritance.29
+	title = french_inheritance.29.t
+	desc = french_inheritance.29.d
+	picture = DIPLOMACY_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.29.a
+		set_country_flag = opposing_france
+		add_war_exhaustion = -5
+		add_yearly_manpower = 1
+	}
+}
+
+# League of Venice Victorious
+country_event = {
+	id = french_inheritance.30
+	title = french_inheritance.30.t
+	desc = french_inheritance.30.d
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		has_country_flag = opposing_france
+		MLO = {
+			NOT = {
+				war_with = FRA
+			}
+			exists = yes
+			NOT = {
+				is_subject_of = FRA
+			}
+			all_core_province = {
+				NOT = {
+					owned_by = FRA
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = french_inheritance.30.a
+		if = {
+			limit = {
+				tag = MLO
+			}
+			add_legitimacy = 25
+			hidden_effect = {
+				FRA = {
+					country_event = {
+						id = french_inheritance.32
+						days = 1
+					}
+				}
+			}
+		}
+		add_prestige = 25
+		clr_country_flag = opposing_france
+	}
+}
+
+# League of Venice Defeated
+country_event = {
+	id = french_inheritance.31
+	title = french_inheritance.31.t
+	desc = french_inheritance.31.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	trigger = {
+		has_country_flag = opposing_france
+		MLO = {
+			NOT = {
+				war_with = FRA
+			}
+			OR = {
+				exists = no
+				is_subject_of = FRA
+				any_core_province = {
+					owned_by = FRA
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {
+		name = french_inheritance.31.a
+		if = {
+			limit = {
+				tag = MLO
+			}
+			add_legitimacy = 25
+			hidden_effect = {
+				FRA = {
+					country_event = {
+						id = french_inheritance.33
+						days = 1
+					}
+				}
+			}
+		}
+		add_prestige = -25
+		clr_country_flag = opposing_france
+	}
+}
+
+# The League of Venice Victorious
+country_event = {
+	id = french_inheritance.32
+	title = french_inheritance.32.t
+	desc = french_inheritance.32.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = french_inheritance.32.a
+		remove_country_modifier = furia_francese
+		add_prestige = -5
+	}
+}
+
+# The League of Venice Defeated
+country_event = {
+	id = french_inheritance.33
+	title = french_inheritance.33.t
+	desc = french_inheritance.33.d
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = french_inheritance.33.a
+		remove_country_modifier = furia_francese
+		add_prestige = 25
+		add_legitimacy = 25
+	}
+}
+
+# The French in Naples
+country_event = {
+	id = french_inheritance.43
+	title = french_inheritance.43.t
+	desc = french_inheritance.43.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = ARA
+			tag = SPA
+		}
+		NOT = {
+			is_year = 1550
+		}
+		OR = {
+			NAP = {
+				is_subject_of = FRA
+				is_lesser_in_union = yes
+			}
+			FRA = {
+				any_owned_province = {
+					OR = {
+						area = western_sicily_area
+						area = sicily_area
+						area = naples_area
+						area = apulia_area
+						area = calabria_area
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = french_inheritance.43.a
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 100
+				is_rival = FRA
+			}
+		}
+		every_province = {
+			limit = {
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
+					province_id = 120
+				}
+				NOT = {
+					province_id = 118
+				}
+			}
+			add_claim = ROOT
+		}
+		if = {
+			limit = {
+				NAP = {
+					exists = yes
+				}
+			}
+			add_casus_belli = {	
+				target = NAP
+				type = cb_vassalize_mission
+				months = 300
+			}
+			set_country_flag = vassalize_naples_spain
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_claimed_naples
+			}
+		}
+	}
+	
+	option = {
+		name = french_inheritance.43.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_rival = FRA
+			}
+		}
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = fra_did_not_claim_naples
+			}
+		}
+	}
+}
+
+country_event = {
+	id = french_inheritance.44
+	title = french_inheritance.44.t
+	desc = french_inheritance.44.d
+	picture = CONQUEST_eventPicture
+
+	major = yes
+
+	trigger = {
+		has_country_flag = vassalize_naples_spain
+		NAP = {
+			is_subject_of = ROOT
+			is_lesser_in_union = no
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = french_inheritance.44.a
+		add_prestige = 25
+		create_union = NAP
+		clr_country_flag = vassalize_naples_spain
+	}
+}
+
+country_event = {
+	id = french_inheritance.45
+	title = french_inheritance.45.t
+	desc = french_inheritance.45.d
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = french_inheritance.45.a
+		add_legitimacy = 5
+	}
+}
+
+country_event = {
+	id = french_inheritance.46
+	title = french_inheritance.46.t
+	desc = french_inheritance.46.d
+	picture = COURT_eventPicture
+
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NAP
+		has_country_flag = dynasty_change
+		dynasty = "Trastamara"
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = french_inheritance.46.a
+		set_dynasty = "de Trastamara"
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			kill_heir = {}
+		}
+		clr_country_flag = dynasty_change
+	}
+}

@@ -1,0 +1,86 @@
+Bakufu_to_vassal_opinion_1 = {
+	opinion = -20
+}
+
+Bakufu_to_vassal_opinion_2 = {
+	opinion = -40
+}
+
+Bakufu_to_vassal_opinion_3 = {
+	opinion = -40
+}
+
+Bakufu_to_vassal_opinion_4 = {
+	opinion = -60
+}
+
+Bakufu_to_vassal_opinion_5 = {
+	opinion = -80
+}
+
+Bakufu_to_vassal_opinion_6 = {
+	opinion = -100
+}
+
+Bakufu_to_vassal_opinion_7 = {
+	opinion = -120
+}
+
+Bakufu_to_vassal_opinion_8 = {
+	opinion = -140
+}
+
+Bakufu_to_vassal_opinion_9 = {
+	opinion = -160
+}
+
+Bakufu_to_vassal_opinion_10 = {
+	opinion = -180
+}
+
+Bakufu_to_vassal_opinion_11 = {
+	opinion = -200
+}
+
+
+
+
+Bakufu_to_vassal_opinion_12 = {
+	opinion = -20
+}
+
+Bakufu_to_vassal_opinion_13 = {
+	opinion = -40
+}
+
+Bakufu_to_vassal_opinion_14 = {
+	opinion = -60
+}
+
+Bakufu_to_vassal_opinion_15 = {
+	opinion = -80
+}
+
+Bakufu_to_vassal_opinion_16 = {
+	opinion = -100
+}
+
+Bakufu_to_vassal_opinion_17 = {
+	opinion = -120
+}
+
+Bakufu_to_vassal_opinion_18 = {
+	opinion = -140
+}
+
+Bakufu_to_vassal_opinion_19 = {
+	opinion = -160
+}
+
+Bakufu_to_vassal_opinion_20 = {
+	opinion = -180
+}
+
+Bakufu_to_vassal_opinion_21 = {
+	opinion = -200
+}

@@ -1,0 +1,34 @@
+# 1868 - Augsburg
+owner = AUG
+controller = AUG
+add_core = AUH
+add_core = AUG
+culture = swabian
+religion = catholic
+base_tax = 4
+base_production = 4
+trade_goods = cloth	#fustians
+base_manpower = 3
+capital = "Augsburg"
+is_city = yes
+hre = yes
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+set_province_flag = starting_fort
+
+1200.1.1 = { 
+	add_building = fort_14th
+}
+
+
+1803.1.1 = {
+           add_core = BAV
+           owner = BAV
+           controller = BAV
+}
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

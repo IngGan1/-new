@@ -1,0 +1,167 @@
+namespace = scottish_survival
+normal_or_historical_nations = yes
+
+# The Rough Wooing
+country_event = {
+	id = scottish_survival.3
+	title = scottish_survival.3.t
+	desc = scottish_survival.3.d
+	picture = ACCUSATION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = ENG
+		ai = yes
+		is_year = 1540
+		not = { is_year = 1650 }
+		government = monarchy
+		NOT = { war_with = SCO }
+		SCO = {
+			exists = yes
+			is_subject = no
+			is_neighbor_of = ROOT
+			government = monarchy
+		}
+		is_subject = no
+		num_of_cities = SCO
+		OR = {
+			AND = {
+				ENG = { is_female = yes }
+				SCO = { is_female = no }
+			}
+			AND = {
+				ENG = { is_female = no }
+				SCO = { is_female = yes }
+			}
+			SCO = {
+				has_regency = yes
+			}
+			SCO = {
+				has_female_heir = yes
+			}
+			SCO = {
+				has_heir = no
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	
+	option = {		# England gains Restoration of Union casus belli on Scotland
+		name = "scottish_survival.3.a"
+		ai_chance = { factor = 90 }
+		ENG = {
+			add_casus_belli = {	
+				target = SCO
+				type = cb_restore_personal_union
+				months = 30
+			}
+		}
+		SCO = {
+			add_opinion = {
+				who = ENG
+				modifier = laid_claim_to_scotland
+			}
+			hidden_effect = {
+				country_event = { id = scottish_survival.4 days = 1 }
+			}
+		}
+		every_known_country = {
+			limit = {
+				marriage_with = SCO
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = laid_claim_to_scotland_rm
+			}
+		}
+	}
+	option = {		# England rejects a personal union over Scotland
+		name = "scottish_survival.3.b"
+		ai_chance = { factor = 10 }
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = scottish_survival.4
+	title = scottish_survival.4.t
+	desc = scottish_survival.4.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = scottish_survival.4.a
+		tooltip = {
+			add_opinion = {
+				who = ENG
+				modifier = laid_claim_to_scotland
+			}
+		}
+	}
+}
+
+country_event = {
+	id = scottish_survival.6
+	title = scottish_survival.6.t
+	desc = scottish_survival.6.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = ENG
+		primary_culture = english
+		372 = {
+			owned_by = ENG
+			culture = irish
+		}
+		3276 = {
+			owned_by = ENG
+			culture = irish
+		}
+		is_year = 1550
+		NOT = {
+			exists = IRE
+		}
+	}
+
+	option = {
+		name = scottish_survival.6.a
+		ai_chance = {
+			factor = 75
+		}
+		372 = {
+			change_culture = english
+			change_religion = root
+		}
+		3276 = {
+			change_culture = english
+			change_religion = root
+		}
+		every_owned_province = {
+			limit = {
+				culture = irish
+			}
+			add_province_modifier = {
+				name = plantations_of_ireland
+				duration = 36500
+			}
+		}
+	}
+
+	option = {
+		name = scottish_survival.6.b
+		ai_chance = {
+			factor = 25
+		}
+		add_stability_or_adm_power = yes
+	}
+}

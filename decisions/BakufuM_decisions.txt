@@ -1,0 +1,367 @@
+country_decisions = {
+
+	#Enforce Taiko Kenchi
+	bakufu_reform_1 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_1 }
+		}
+		allow = {
+			is_at_war = no
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.50 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				set_global_flag = bakufu_reform_degree_1
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of_type = daimyo_vassal
+					is_subject_of = ROOT
+				}
+				add_liberty_desire = 25
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_1
+				duration = -1
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Sword Hunt
+	bakufu_reform_2 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_2 }
+		}
+		allow = {
+			is_at_war = no
+			has_country_modifier = bakufu_reform_1
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.51 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				clr_global_flag = bakufu_reform_degree_1
+				set_global_flag = bakufu_reform_degree_2
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = daimyo_vassal
+				}
+				add_liberty_desire = 25
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_2
+				duration = -1  
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Pass Anti-piracy Law
+	bakufu_reform_3 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_3 }
+		}
+		allow = {
+			is_at_war = no
+			has_country_modifier = bakufu_reform_2
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.52 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				clr_global_flag = bakufu_reform_degree_2
+				set_global_flag = bakufu_reform_degree_3
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = daimyo_vassal
+				}
+				add_liberty_desire = 25
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_3
+				duration = -1  
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Issue Ikkoku Ichijo Edict
+	bakufu_reform_4 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_4 }
+		}
+		allow = {
+			is_at_war = no
+			has_country_modifier = bakufu_reform_3
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.53 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				clr_global_flag = bakufu_reform_degree_3
+				set_global_flag = bakufu_reform_degree_4
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = daimyo_vassal
+				}
+				add_liberty_desire = 25
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_4
+				duration = -1  
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Establish Alternate Attendance System
+	bakufu_reform_5 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_5 }
+		}
+		allow = {
+			is_at_war = no
+			has_country_modifier = bakufu_reform_4
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.54 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				clr_global_flag = bakufu_reform_degree_4
+				set_global_flag = bakufu_reform_degree_5
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = daimyo_vassal
+				}
+				add_liberty_desire = 25
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_5
+				duration = -1  
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Abolish Han system
+	bakufu_reform_6 = {
+		major = yes
+		potential = {
+			has_reform = shogunate
+			has_country_modifier = FEUDAL_BAKUFU_bakufuM
+			has_country_flag = bakufu_reform_level_shogun
+			NOT = { tag = JAP }
+			NOT = { has_country_modifier = bakufu_reform_6 }
+		}
+		allow = {
+			is_at_war = no
+			has_country_modifier = bakufu_reform_5
+			NOT = { has_country_modifier = bakufu_reform_backrash }
+			adm_power = 100
+			prestige = 0
+			legitimacy = 75
+		}
+		effect = {
+			country_event = { id = BakufuM_events.55 }
+			hidden_effect = {
+				every_subject_country = {
+					limit = { has_reform = daimyo }
+					set_ai_personality = {
+						personality = ai_militarist
+						locked = no
+					}
+				}
+				clr_global_flag = bakufu_reform_degree_5
+				set_global_flag = bakufu_reform_degree_6
+			}
+			add_adm_power = -50
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = daimyo_vassal
+				}
+				add_liberty_desire = 25
+			}
+			custom_tooltip = BakufuM_reform_6_tooltip
+			hidden_effect = {
+				remove_country_modifier = bakufu_reform_1
+				remove_country_modifier = bakufu_reform_2
+				remove_country_modifier = bakufu_reform_3
+				remove_country_modifier = bakufu_reform_4
+				remove_country_modifier = bakufu_reform_5
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_6
+				duration = -1
+				hidden = yes
+			}
+			add_country_modifier = { 
+				name = bakufu_reform_backrash
+				duration = 1825
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+
+	#Establish Shogunate
+	establish_shogunate_decision = {
+		major = yes
+		potential = {
+			NOT = { has_reform = shogunate }
+			NOT = { exists = JAP }
+			culture_group = japanese_g
+			capital_scope = { region = japan_region }
+			all_country = { NOT = { has_reform = shogunate } }
+		}
+		allow = {
+			is_at_war = no
+			any_owned_province = { has_province_modifier = heian_kyo }
+		}
+		effect = {
+			hidden_effect = {
+				clr_global_flag = bakufu_reform_degree_1
+				clr_global_flag = bakufu_reform_degree_2
+				clr_global_flag = bakufu_reform_degree_3
+				clr_global_flag = bakufu_reform_degree_4
+				clr_global_flag = bakufu_reform_degree_5
+				clr_global_flag = bakufu_reform_degree_6
+			}
+			country_event = { id = BakufuM_events.28 }
+			random_owned_province = {
+				limit = { has_province_modifier = heian_kyo }
+				set_capital = THIS
+			}
+			add_government_reform = shogunate
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+}

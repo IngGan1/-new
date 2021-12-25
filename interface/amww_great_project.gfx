@@ -1,0 +1,92 @@
+spriteTypes = {
+
+		spriteType = {
+		name = "GFX_great_project_nazca_lines"	
+		texturefile = "gfx//interface//great_projects//great_project_nazca_lines.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_quito"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_cajamarca"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_huanuco"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_cuzco"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_tiahuanaco"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_potosi"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_jujuy"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_tucuman"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_qhapaq_mendoza"	
+		texturefile = "gfx//interface//great_projects//great_project_qhapaq_nan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_sumaq_urqu"	
+		texturefile = "gfx//interface//great_projects//great_project_sumaq_urqu.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_cahokia_mounds"	
+		texturefile = "gfx//interface//great_projects//great_project_cahokia_mounds.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_crater_lake"	
+		texturefile = "gfx//interface//great_projects//great_project_crater_lake.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_matho_thipila"	
+		texturefile = "gfx//interface//great_projects//great_project_matho_thipila.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_medicine_wheel"	
+		texturefile = "gfx//interface//great_projects//great_project_medicine_wheel.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_chan_chan"	
+		texturefile = "gfx//interface//great_projects//great_project_chan_chan.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_agustin_statues"	
+		texturefile = "gfx//interface//great_projects//great_project_agustin_statues.dds"
+	}
+	
+		spriteType = {
+		name = "GFX_great_project_tree_peace"	
+		texturefile = "gfx//interface//great_projects//great_project_tree_peace.dds"
+	}
+}

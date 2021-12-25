@@ -1,0 +1,4 @@
+86 = "Mönster"
+2972 = "Paterboärn"
+4505 = "Düörpm"
+4516 = "Tiäkenbuorch"

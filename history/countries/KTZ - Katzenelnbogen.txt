@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = rhenish
+religion = catholic
+technology_group = western
+capital = 3724	# Nassau
+fixed_capital = 3724 # Cannot move capital away from this province & no power cost to move to it
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Philipp I"
+		dynasty = "von Katzenelnbogen"
+		birth_date = 1402.1.1
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+}

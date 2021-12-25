@@ -1,0 +1,477 @@
+namespace = ge_events
+# British Red Coat Army
+country_event = {
+    id = ge_events.17 
+	title = "ge_events.17.t"
+	desc = "ge_events.17.d"
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		is_year = 1645
+    }
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.17.a  
+		ai_chance = { factor = 100 }
+		add_mil_power = 100
+		add_prestige = 20
+		add_country_modifier = {
+			name = "british_red_coat"
+			duration = -1
+		}
+	}
+}
+
+# Brandenburg-Preussen
+country_event = {
+    id = ge_events.18 
+	title = "ge_events.18.t"
+	desc = "ge_events.18.d"
+	picture = DIPLOMACY_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+        tag = BRA
+        has_global_flag = governments_extended_historical_yes
+		is_year = 1615
+		NOT = {
+			is_year = 1648
+		}
+        BRA = {
+            exists = yes
+            ai = yes
+            was_player = no
+		    is_subject = no
+        }
+        TEU = {
+            ai = yes
+            was_player = no                  
+        }
+        POL = {
+            ai = yes
+            was_player = no
+        }
+        PLC = {
+            ai = yes
+            was_player = no
+        }
+        LIT = {
+            ai = yes
+            was_player = no
+        }
+        LIV = {
+            ai = yes
+            was_player = no
+        }
+        POM = {
+            ai = yes
+            was_player = no
+        }
+		BOH = {
+			ai = yes
+			was_player = no
+		}
+		MKL = {
+			ai = yes
+			was_player = no
+		}
+		SWE = {
+			ai = yes
+			was_player = no
+		}
+		DAN = {
+			ai = yes
+			was_player = no
+		}
+		MAZ = {
+			ai = yes
+			was_player = no
+		}
+		SIL = {
+			ai = yes
+			was_player = no
+		}
+		HUN = {
+			ai = yes
+			was_player = no
+		}
+		SAX = {
+			ai = yes
+			was_player = no
+		}
+		ANH = {
+			ai = yes
+			was_player = no
+		}
+		MAG = {
+			ai = yes
+			was_player = no
+		}
+		BRU = {
+			ai = yes
+			was_player = no
+		}
+		LAU = {
+			ai = yes
+			was_player = no
+		}
+		LUN = {
+			ai = yes
+			was_player = no
+		}
+		HSA = {
+			ai = yes
+			was_player = no
+		}
+		DTT = {
+			ai = yes
+			was_player = no
+		}
+		SHL = {
+			ai = yes
+			was_player = no
+		}
+		MOL = {
+			ai = yes
+			was_player = no
+		}
+		PRU = {
+			ai = yes
+			is_at_war = no
+			was_player = no
+			or = {
+				is_subject = no
+				is_subject_of = PLC
+				is_subject_of = POL
+				is_subject_of = BRA
+			}
+		}
+		WOL = {
+			ai = yes
+			was_player = no
+		}
+		STE = {
+			ai = yes
+			was_player = no
+		}
+		STP = {
+			ai = yes
+			was_player = no
+		}
+		CLB = {
+			ai = yes
+			was_player = no
+		}
+		WLF = {
+			ai = yes
+			was_player = no
+		}
+		RUP = {
+		  ai = yes
+		  was_player = no
+		}
+		ERF = {
+			ai = yes
+			was_player = no
+		}
+		KMM = {
+			ai = yes
+			was_player = no
+		}
+        HAN = {
+            ai = yes
+			was_player = no
+            }
+        WES = {
+            ai = yes
+            was_player = no
+        }
+        WRM = {
+            ai = yes
+            was_player = no
+        }
+        PRC = {
+            ai = yes
+            was_player = no
+        }
+        DNZ = {
+			ai = yes
+			was_player = no
+        }
+    }
+
+	mean_time_to_happen = {
+		months = 10
+	}
+
+	option = {
+		name = ge_events.18.a  
+		ai_chance = { factor = 100 }
+	  	mittelmark_area = {
+                                    limit = { owner = { ai = yes } }
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+	  	northern_saxony_area = {
+                                    limit = { owner = { ai = yes } }
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+	  	hinter_pommern_area = {
+                                    limit = { owner = { ai = yes } }
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+	  	neumark_area = {
+                                    limit = { owner = { ai = yes } }
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+		east_prussia_area = {
+                                    limit = { owner = { ai = yes } }
+	  		remove_core = PLC
+	  		add_core = BRA
+	  		cede_province = BRA
+	  	}
+		inherit = PRU
+		change_tag = PRU
+		change_religion = protestant
+		set_government_rank = 2
+		add_government_reform = prussian_monarchy
+		change_primary_culture = prussian
+		swap_free_idea_group = yes
+        add_prestige = 100
+		add_adm_power = 1000
+		add_dip_power = 1000
+		add_mil_power = 1000
+		add_manpower = 200
+		add_stability = 3
+		add_corruption = -10
+		add_treasury = 5000
+		define_ruler = {
+			name = "Georg Wilhelm I"
+		    dynasty = "von Hohenzollern"
+			adm = 5
+			dip = 5
+			mil = 4
+			age = 20
+            fixed = yes
+		}
+		define_heir = {
+			name = "Friedrich Wilhelm I"
+		    dynasty = "von Hohenzollern"
+			adm = 4
+			dip = 5
+			mil = 5
+			age = 0
+            fixed = yes
+		}
+		add_ruler_modifier = { name = historically_strong_king }
+		set_country_flag = formed_prussia_flag
+        add_country_modifier = {
+			name = "centralised_state"
+			duration = 7300
+		} 
+	}
+}
+
+# End of the Hundred Years of war
+country_event = {
+    id = ge_events.19 
+	title = "ge_events.19.t"
+	desc = "ge_events.19.d"
+	picture = BATTLE_eventPicture
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+        tag = ENG
+        has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge19 }
+		or = {
+			and = { 
+				is_year = 1453
+				NOT = {
+				is_year = 1455
+				}
+				ENG = { ai = yes }
+				FRA = { ai = yes }
+			}
+			and = {
+				ENG = { ai = yes }
+				NOT = { is_year = 1453 }
+				NOT = {
+					controls = 5038
+					controls = 167
+					controls = 4471
+					controls = 5105
+					controls = 1879
+					controls = 168
+					controls = 2863
+					controls = 177
+					controls = 87
+				}
+				NOT = {
+					tag = GUY
+					controls = 4085
+					controls = 174
+					controls = 4468
+				}
+				FRA = {
+					ai = yes
+					is_subject = no
+					or = {
+						is_in_war = {
+							attacker_leader = FRA
+							defender_leader = ENG
+						}
+						is_in_war = {
+							attacker_leader = ENG
+							defender_leader = FRA
+						}
+					}
+					and = {
+						  controls = 183
+						  controls = 5033
+						  controls = 5039
+						  controls = 4472
+						  controls = 4470
+						  controls = 3059
+					}
+				}
+			}
+			and = {
+				ENG = { ai = no }
+				or = { 
+					NOT = {	owns = 177 }
+					NOT = {	owns = 2863 }
+					NOT = {	owns = 168 }
+					NOT = {	owns = 5105 }
+					NOT = {	owns = 1879 }
+					NOT = {	owns = 4471 }
+					NOT = {	owns = 167 }
+					NOT = {	owns = 5038 }
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = ge_events.19.a  
+		ai_chance = { factor = 100 }
+		tooltip = {
+		    france_region = {
+				limit = { 
+					owned_by = ENG
+				}
+				cede_province = FRA
+			}
+		white_peace = FRA
+		}
+		FRA = { country_event = { id = ge_events.20 } }
+		add_prestige = -5
+	}
+}
+
+# End of the Hundred Years of war
+country_event = {
+    id = ge_events.20
+	title = "ge_events.20.t"
+	desc = "ge_events.20.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.20.a  
+		ai_chance = { factor = 100 }
+		france_region = {
+			limit = { 
+			   owned_by = ENG
+			}
+			cede_province = FRA
+		}
+            FRA = { inherit = GUY }
+		87 = {
+			if = { limit = { owned_by = FRA }
+			add_core = ENG
+			cede_province = ENG
+			}
+		}
+		white_peace = ENG
+		add_prestige = 10
+	}
+}
+
+# British India Company
+country_event = {
+	id = ge_events.21
+	title = "ge_events.21.t"
+	desc = "ge_events.21.d"
+	picture = SHIP_SAILING_eventPicture
+	
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = { 
+			tag = GBR
+			AND = {
+				tag = ENG
+				NOT = { exists = GBR }
+			}
+		}
+        has_global_flag = governments_extended_historical_yes
+		is_year = 1690
+			NOT = {
+			is_year = 1710
+		}
+		primary_culture = english
+		num_of_ports = 1
+		561 = {
+			owner = { ai = yes }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+
+	option = {		
+		name = "ge_events.21.a"
+		ai_chance = { factor = 90 }
+		561 = { cede_province = ROOT }
+		every_province = {
+			limit = {
+				region = bengal_region
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	option = {		
+		name = "ge_events.21.b"
+		ai_chance = { factor = 10 }
+		every_province = {
+			limit = {
+				region = bengal_region
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}

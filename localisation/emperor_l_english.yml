@@ -1,0 +1,1023 @@
+﻿l_english:
+ SUPPORTS_INDEPENDENCE_OF:0 "$SUPPORTER|Y$(NÇ)”² $SUPPORTED|Y$XÇ Å³Ë¹DÇ ÀÉÐÆiÕÈ²ä².\n"
+ NOT_SUPPORTS_INDEPENDENCE_OF:0 "$SUPPORTER|Y$(NÇ)”² $SUPPORTED|Y$XÇ Å³Ë¹DÇ ÀÉÐÆXÕÀÉ JÅµÂÈ²ä².\n"
+ REV_EST_LOYALTY_WILL_DROP:0 "©Í1ÁÄ³”² $VAL|+0$Ì¹|Ð À¼Ë¬)´È²ä²"
+ at_peace_revolutionary:0 "ÉÓTÖ ÉxÇ Ö…º m­¬"
+ mechanic_revolutionary_yes:0 "(NÇ)”² Ö…º m­¬tÇpº l­´ÌÈÐÅ ¼³iÕÈ²ä²!"
+ revolutionary_guard_regiment:0 "Ö…º ü­Ç³"
+ DIP_LAND_FORCE:0 "Í Ñ¼¬À Â $NAME|Y$"
+ DIP_NAVAL_FORCE:0 "Í hÕ.Á Â $NAME|Y$"
+ SPY_ARMY_ENTRY:0 "$WHERE$ÐÅ $NUM$¬"
+ SPY_NAVY_ENTRY:0 "$WHERE$ÐÅ $NUM$™ÌXÇ hÕ.Á"
+ DIP_MANPOWER_V:0 "xÇ%¸ ô¼.ÇÉ· $NAME$"
+ IF_WE_BREAK_FAITH:0 "°Æ¬¹¬ tÇƒ¬DÇ ˆ´…ºÆ²Âý·Œ¬ `Õ Ë¬°Æ:"
+ FAITH_BREAKER_INFO:0 "°Æ¬¹”² ä²LÇXÇ ¨Öü¬|¹ $DAYS$|Ç Ù³HÅ »ÅµÂÈ²ä²:\n$MODIFIER$"
+ FAITH_BREAKER_TRUST:0 "Í $NAME$¬XÇ m­¬ä´XÇ àÂ°¸¬ $VAL|+$Ì¹|Ð À¼iÕÈ²ä².\n"
+ FAITH_BREAKER_OPINION:0 "$NAME$XÇ °Æ¬¹ÐÅ ³jÕ ­Ä¬Ä³¬ $VAL|+$Ì¹|Ð À¼iÕÈ²ä².\n"
+ CENTER_OF_REVOLUTION:0 "Ö…ºXÇ ÉìÂÀÉ"
+ REVOLUTION_HAS_SPREADED:0 "Ö…ºtÇ tÇó¬ÐÅ DÆÈˆ× tÈ¬ÇiÕÈ²ä²!"
+ REVOLUTION_IS_SPREADING:0 "Ö…ºtÇ tÇó¬<Çj¸ UÖ°À´à¬ ˆÇµÂÈ²ä²"
+ SPREADING_TO_NEARBY_PROVINCES:0 "$VAL|Y$¬XÇ ÀÉíÅÐÅ UÖ°À É"
+ REV_MOVE_MAP_TO:0 "tÇƒ¬DÇ tÐ­¹XÕtº $NAME|Y$ÐÅ ˆÇ”² §YÖ…ºXÇ ÉìÂÀÉ§!j¸ ÀÉÄ³XÇ ÉìÂtÇ tÇÙ³iÕÈ²ä². ¶jÕ ÀÉÄ³¨ºÜ´|¹ Ö…º ÀÉÄ³¨ºÜ´j¸ À¼Ë¬iÕÈ²ä²."
+ MERC_MAINTENANCE_TT:0 "§YÔÆ¬ .ÇÀÉD¾§!\n"
+ MERC_ENTRY_FOR:0 "$AMOUNT$ $NAME$: $VAL|Y$¤\n"
+ BANNER_FROM_STATE_ENTRY:0 "$NAME$: $VAL|Y2+$\n"
+ FORCES_LIMITED_BY_FOG_OF_WAR:0 "ÈjÕ´ µÑÄ¬KÌtÇ˜°  Ç4® µÑÄ¬KÌ<Çj¸ Õ¸tÇXÕtº p­¬À Èô¼¬ È¥ÇXÇ HÅ¬j¸ xÇtÕ ÈjÕ)´È²ä²."
+ ASSIGN_HEIR_NOT_IN_ELECTIVE:0 "ÄÖÄ¬Ç¬ .ÁÝÐ´ÈÅDÇ Lµ”² tÇ 0®¥²DÇ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²!"
+ AGENDA_EXPLANATION_TOOLTIP:0 "XÇŒÖ|¹ ŒÁÑÉXÕ”² Ë¬°Æ, Ä¬5ÎNÇ ù²àÂtÇ .ÁÝÐ`Õ Â ˆÇ”² HÅt¬ ‡º ¬ÀÉ|¹ ÈHÅiÕÈ²ä². ø­¬¹à¬ ˜°Á HÅt¬XÇ ©ºjÔ|¹ Ì¹qÈÜÂÏ|Å iÕÈ²ä²."
+ HRE_REFORM_PATHS_MUTUALLY_EXCLUSIVE:0 "ÉYÅÑÉŒ­TÖNÆ ÀÉ)¼„´Œ­TÖ”² ÁÀ8Ö 0¼ÀÐÈxÇ ¬Ö )¼¥Õ …ÇÈ²ä². iÖÈ”² jÕ¬ÀÉ ¬Ö )¼¥Õ<Çj¸Ì¹ ¬ Â ˆÇµÂÈ²ä²!"
+ FORCED_MARCH_STATIONARY:0 "p­³¬ jÕ ÀÉíÅÐÅ 8º<»à¬ ˆÇ<Çtº, ¬À0®¬ ŒÖõ¼´à¬ ¬ ðÅ³¬ ©ÍÐÆ.´ ƒ¬…ÇÈ²ä²."
+ FABRICATE_CLAIM_ENTRY_TT:0 "tÇƒ¬NÇ ä²LÇü¬ ¬NÇ tÇ.Çj¸ °Æ¬¹XÇ ©Ìô¼Ý¹DÇ $VAL|YÌ¹|Ð ¬ŒÁÜÂµÐÈ²ä²:\n$WHY$"
+ PAPAL_BULL_POSSIBLE:0 "§YP­iÖ ®xÇYÎÁ§!\ntÇƒ¬ä´NÇ P­iÖ pÈ…ÈÇ¬ ÈÈ`Õ Â ˆÇ”² P­iÖ ®xÇ YÎÁä´…ÇÈ²ä².\n"
+ PAPAL_BULL_EXPLANATION:1 "P­iÖ ®xÇYÎÁ”² P­iÖ pÈ…ÈÇ¬ P­iÖ­Ì ¬ÇÐÆDÇ tÇ©ÆtÕ ÈÈ`Õ Â ˆÇ”² ô¼±²Âj¸ ¨ºà´ ¬¨Ñ­¹ m­¬ä´ÐÅŒ¬ ÖÝÐDÇ ÉÈ²ä²! ¨Öü¬”² Ö¬Ç P­iÖtÇ ýÈDÇ LµL®ÀÉ ÀÉÁ)´È²ä²."
+ JUSTIFY_TRADE_BASE:0 "4»íÅ „´ÁÇ Èù²TÖ|¹ ÇjÕ D¾©ÆNÇ ä²LÇDÇ 0®É<Çj¸ iÕÈ²ä²:\n0®ø¼ D¾©Æ: $VAL|Y0$\n"
+ FABRICATE_CLAIM_BASE:1 "§!tÐ¸„Ç pÈ‘Ç D¾©ÆNÇ ä²LÇDÇ 0®É<Çj¸ iÕÈ²ä²:\n0®ø¼ D¾©Æ: $VAL|Y0$\n"
+ FABRICATE_CLAIM_INSIDE_HRE:1 "àÂ1Áj¸È¹Èm­ ´°Ž´: $VAL|-1%$\n"
+ FABRICATE_ALREADY_CLAIMS:1 "tÇø» $CLAIM|Y$(tÇ)¬ tÐ¸„ÇDÇ ¬ÐÉ: $VAL|-1%$\n"
+ FABRICATE_CLAIM_CAPPED:0 "\n$VAL|Y$XÇ D¾©ÆtÇ jÕÄ³„Ç!"
+ SPECIAL_FORCE_LIMIT:0 "°Æ¬¹”² ä²LÇü¬ ¬NÇ tÇ.Çj¸ 2ÆÁÉ $VAL|Y$¬XÇ $NAME$Ì¹ ¬ÈÉ Â ˆÇµÂÈ²ä²:\n$WHY$"
+ COSSACKS_FORCELIMIT:1 "°Æ¬¹”² $FL$XÇ Ñ¼%¸ jÕÄ¬ É $VAL|%Y$|¹ §GtÎÇlÐ§! ðÅ³j¸ ¨ºÑÉ`Õ Â ˆÇ<Çpº, tÇ.Ç”² ä²LÇü¬ ¬µÂÈ²ä²:\n"
+ RAJPUT_FORCELIMIT:1 "°Æ¬¹”² $FL$XÇ Ñ¼%¸ jÕÄ¬ É $VAL|%Y$|¹ §G|·ÀÉxÔ¸Ò§! ðÅ³j¸ ¨ºÑÉ`Õ Â ˆÇ<Çpº, tÇ.Ç”² ä²LÇü¬ ¬µÂÈ²ä²:\n"
+ REV_GUARD_FORCELIMIT:1 "°Æ¬¹”² $FL$XÇ Ñ¼%¸ jÕÄ¬ É $VAL|%Y$|¹ §GÖ…º ü­Ç³§! ðÅ³j¸ ¨ºÑÉ`Õ Â ˆÇ<Çpº, tÇ.Ç”² ä²LÇü¬ ¬µÂÈ²ä²:\n"
+ MARINES_FORCELIMIT:1 "°Æ¬¹”² $FL$XÇ Ñ¼%¸ jÕÄ¬ É $VAL|%Y$|¹ §GtÕÑ¼³§! ðÅ³j¸ ¨ºÑÉ`Õ Â ˆÇ<Çpº, tÇ.Ç”² ä²LÇü¬ ¬µÂÈ²ä²:\n"
+ JANISSARY_FORCELIMIT:1 "°Æ¬¹”² $FL$XÇ Ñ¼%¸ jÕÄ¬ É $VAL|%Y$|¹ §GÆÈ²´Ì¬¹§! ðÅ³j¸ ¨ºÑÉ`Õ Â ˆÇ<Çpº ÆÈ²´Ì¬¹”² °Æ¬¹¬ ŒÁ.ÇjÕ tÇP­ ÀÉíÅÐÅÁÌ¹ ¨ºÑÉ`Õ Â ˆÇµÂÈ²ä².\n"
+ NO_CURRENT_COUNTRIES_IN_THIS_LIST:0 "Ö¬Ç m­¬ ÆÅLÇ"
+ HARSH_INFO_TOOLTIP:0 "õ¬XÇŒÖÐÅÁ ¬Ë¬EÌDÇ ÀÉÀÉXÕ”² ”Í0®Ë¬NÇ $VAL|Y$…º…ÇÈ²ä².\n¬Ë¬EÌDÇ ÀÉÀÉXÕ”² ƒ¬NÇ $WHO$ÐÅŒ¬ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ CONCIL_INFO_TOOLTIP:0 "õ¬XÇŒÖÐÅÁ ŒÖ.ÇEÌDÇ ÀÉÀÉXÕ”² ”Í0®Ë¬NÇ $VAL|Y$…º…ÇÈ²ä².\nŒÖ.ÇEÌDÇ ÀÉÀÉXÕ”² ƒ¬NÇ $WHO$ÐÅŒ¬ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ COUNCIL_OF_TRENT_EXPLANATION:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ”² ¨ºà´ ‘Åô¼HÅtÇ DÌÝÐ´p¬˜°, ÂíÂD±tÇ ÀÉ ° LµL®ÀÉ ÀÉÁ)´È²ä²."
+ WE_ARE_NEUTRAL_IN_COUNCIL:0 "°Æ¬¹”² Ö¬Ç õ¬XÇŒÖÐÅÁ ÉË¹tÇpº, tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ OTHERS_ARE_NEUTRAL_IN_COUNCIL:0 "õ¬XÇŒÖÐÅÁ ÉË¹xÇ m­¬ä´NÇ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ »ÅµÂÈ²ä²:\n$EFFECT$"
+ PAPAL_BULL_NOT_CURIA_CONTROLLER:0 "§Rù²àÂNÇ P­iÖ pÈ…ÈÇ¬ DÅÙ²È²ä². 2ÆÁÉ P­iÖ pÈ…ÈÇÌ¹tÇ P­iÖ­Ì ¬ÇÐÆDÇ ¬À©ÆtÕ P­iÖ ®xÇYÎÁ|¹ ÈÈ`Õ Â ˆÇµÂÈ²ä².§!"
+ DISCILINE_FOR_MERC:0 "tÇ ©ÆÑ¼³”² ä²LÇü¬ ¬NÇ tÇ.Çj¸ $VAL|+%2$ Ü­(ÇDÇ ”Í¬j¸ ¬ÑÉÈ²ä²:\n"
+ RULER_AS_GENERAL:0 "µÑXÎÇ|¹ ¥Çp­<Çj¸ „Ç…º"
+ RULER_AS_GENERAL_DESC:0 "µÑXÎÇ|¹ ¥Çp­<Çj¸ ¬À©ÆXÕ”² ƒ¬NÇ ”Í¬ D¾©ÆtÇ ŒÁ¨º´ÀÉ JÅÀÉÌ¹, È¥ÇÐÅÁ ¬ÀÝ¹`Õ Â ˆÇ”² ÇØÕtÇ ”Í¬)´È²ä²."
+ HEIR_AS_GENERAL:0 "ÄÖÄ¬Ç|¹ ¥Çp­<Çj¸ „Ç…º"
+ HEIR_AS_GENERAL_DESC:0 "ÄÖÄ¬Ç|¹ ¥Çp­<Çj¸ ¬À©ÆXÕ”² ƒ¬NÇ ”Í¬ D¾©ÆtÇ ŒÁ¨º´ÀÉ JÅÀÉÌ¹, È¥ÇÐÅÁ ¬ÀÝ¹`Õ Â ˆÇ”² ÇØÕtÇ ”Í¬)´È²ä²."
+ RULER_AS_ADMIRAL:0 "µÑXÎÇ|¹ ÈÅ³<Çj¸ „Ç…º"
+ RULER_AS_ADMIRAL_DESC:0 "µÑXÎÇ|¹ ÈÅ³<Çj¸ ¬À©ÆXÕ”² ƒ¬NÇ ”Í¬ D¾©ÆtÇ ŒÁ¨º´ÀÉ JÅÀÉÌ¹, ¼ä²ÐÅÁ ¬ÀÝ¹`Õ Â ˆÇ”² ÇØÕtÇ ”Í¬)´È²ä²."
+ REVOLUTION_NOT_IS_GREAT_POWER:0 "$NAME$(NÇ)”² ôÅ¬tÇ DÅÈ²0® Lµ8»ÐÅ, Ö…º üÈÄ³m­XÇ ÀÉÇ|¹ üÈ¥Ç`Õ Â ÆÅµÂÈ²ä²!"
+ CLAIM_REVOLUTION_BUTTON_TITLE:0 "§YÖ…º üÈÄ³m­ ÀÉÇ üÈ¥Ç§!\n"
+ REVOLUTION_TARGET_INFO:0 "Ö…º üÈÄ³m­NÇ $SCORE|+0%$XÇ ÈÂ|¹ T³ »Å<Çpº ä²LÇü¬ ¬NÇ ÖÝÐDÇ »ÅµÂÈ²ä²:\n$EFFECT$"
+ CAPPED_AT_LOW_GCAP:0 "¬¼Ä³XÇ $VAL|2%$ô¼ä² È³ ®°ÀÉ JÅLÇ"
+ GOVERNING_COST_PROV:0 "§Y$NAME$XÇ µÑXÎ D¾©Æ§!\n$DEV|Y$XÇ ¬¼Ä³\n"
+ SHIP_DEPLOYEDIN_COMBAT:0 "§Y$NAME$XÇ 0¼XÎ§!\n$ENGAGED|Y$™ÌXÇ $NAME$(tÇ)¬ Ö¬Ç È,Ò ÉtÇpº, $RESERVE|Y$™ÌtÇ ÆD¾hÕ³tÇpº, $DISENGAGED|Y$™ÌtÇ tÇø»  ÌÂˆÕµÂÈ²ä²."
+ MORALE_TO_DISENGAGE:0 "¬À0®¬ $VAL|2Y$ tÇXÕ|Ç Lµ , tÇ hÕ³XÇ hÕ.ÁNÇ  ÌÂ`Õ UÖ`¹DÇ §G$CHANCE$%§! ¬ÀÉà¬ ˆÇµÂÈ²ä². ¬À0®¬ §R0§!xÇ hÕ.ÁNÇ T³ tÇÁÀ øÂ¸Æ Â ÆÅ<Çpº,  ÌÂXÕ2¸à¬Ì¹ `Õ ƒ¬…ÇÈ²ä²."
+ MACRO_LAND_UNITS_TAB:0 "ðÅ³ ¨ºÑÉ"
+ MACRO_LAND_TEMPLATES_TAB:0 "!Çp­ ¬¬ø¼Ó ÈXÇ"
+ MACRO_RECRUIT_MERC_TAB:0 "©ÆÑ¼ ¨ºÑÉ"
+ DISINHERIT_NOT_THIS:0 "íÅ¬ÀÈxÇ tÇ.Çj¸ xÇtÕ $NAME$XÇ ÁÀÁŒ­DÇ ¼ÈÐ`Õ Â ÆÅµÂÈ²ä²."
+ MODIFIER_AVAILABLE_PROVINCE_LOOT:0 "¬¥²jÕ ‹ÅÈÐÉ·"
+ TRADELEAGUE_TAG_IS_SUBJECT:0 "$NAME$ !ÎNÇ Ám­tÇ´ÅÁ 4»íÅ ðÅiÕÐÅ ¬…Ç`Õ Â ÆÅµÂÈ²ä²."
+ CORE_COLONY_DESC:0 "¬NÇ ÝÂü»ÀÉ Œ­íÅ x$VAL$\n"
+ ASSIGN_HEIR_WHY:0 "ä²LÇ tÇ.Çj¸ ˆ´¬¥²: $WHY$"
+ CAN_NOT_BE_DISIHERITED:0 "(§RtÇ ÄÖÄ¬ÇXÇ ÁÀÁŒ­DÇ ¼ÈÐ`Õ Â ÆÅµÂÈ²ä²!§!)\n"
+ MODIFIER_BLOCK_INTRODUCE_NEW_HEIR:0 "ÈÀj¸´Æ ÄÖÄ¬Ç Ä³…Ç É¹LÇ"
+ SELLSHIP_INDEBT:0 "ä²LÇ tÇ.Çj¸ hÕ.Á Óä¹ ˆ´¬¥²: $REASON$."
+ PROVINCE_HAS_LESS_THAN_BUILDINGS:0 "$NAME|Y$(NÇ)”² $VAL|Y$¬ ø»Ì¹XÇ t¬<»DÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä².\n"
+ PROVINCE_HAS_AT_LEAST_BUILDINGS:0 "$NAME|Y$(NÇ)”² $VAL|Y$¬ tÇÁÀXÇ t¬<»DÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä².\n"
+ HAS_LESS_MONTHLY_POWER_THAN:0 "$NAME|Y$(NÇ)”² ä¹ÔÆ $VAL|Y$ ø»Ì¹XÇ $TYPE$(DÇ)|¹ »ÅµÂÈ²ä² .\n"
+ HAS_AT_LEAST_MONTHLY_POWER:0 "$NAME|Y$ (NÇ)”² ä¹ÔÆ $VAL|Y$ tÇÁÀXÇ $TYPE$(DÇ)|¹ »ÅµÂÈ²ä² .\n"
+ HAS_LESS_POWER_PROJECTION_THAN:0 "$NAME|Y$XÇ 8Á%¸ ,Ò¬À¬ $VAL|Y$ ø»Ì¹…ÇÈ²ä².\n"
+ HAS_AT_LEAST_POWER_PROJECTION:0 "$NAME|Y$XÇ 8Á%¸ ,Ò¬À¬ $VAL|Y$ tÇÁÀ…ÇÈ²ä².\n"
+ OWNER_IMPROVED_COUNT_TRIGGER_LESS:0 "ø­ó¬XÇ Ö¬Ç ŒÁ.ÇÇÐÅ XÇtÕ $VAL|Y$ˆ¼ ø»Ì¹<Çj¸ ¬.Á´ÈÅµÂÈ²ä².\n"
+ OWNER_IMPROVED_COUNT_TRIGGER_AT_LEAST:0 "ø­ó¬XÇ Ö¬Ç ŒÁ.ÇÇÐÅ XÇtÕ $VAL|Y$ˆ¼ tÇÁÀ<Çj¸ ¬.Á´ÈÅµÂÈ²ä².\n"
+ DOES_NOT_RENT_CONDOTTIERI_TO:0 "$FROM|Y$" !ÎNÇ $TO|Y$ÐÅŒ¬ XÏÄ³ðÒÐÅ¬¹|¹ ³ìÅtÕüÈà¬ ˆÇÀÉ JÅµÂÈ²ä².\n"
+ RENTS_CONDOTTIERI_TO:0 "$FROM|Y$" !ÎNÇ $TO|Y$ÐÅŒ¬ XÏÄ³ðÒÐÅ¬¹|¹ ³ìÅtÕüÈà¬ ˆÇµÂÈ²ä².\n"
+ MERC_FRACTION_LESS_THAN:0 "©ÆÑ¼ D¾(ÇtÇ §Y$VAL$%§! ø»Ì¹ …ÇÈ²ä².\n"
+ MERC_FRACTION_AT_LEAST:0 "©ÆÑ¼ D¾(ÇtÇ §Y$VAL$%§! tÇÁÀ …ÇÈ²ä².\n"
+ HAS_NOT_HIGHER_DEV_THAN:0 "$THIS|$(NÇ)”² $OTHER|Y$ô¼ä² ¬¼Ä³¬ ’±ÀÉ JÅµÂÈ²ä².\n"
+ HAS_HIGHER_DEV_THAN:0 "$THIS|$ !ÎNÇ $OTHER|Y$ô¼ä² ¬¼Ä³¬ ’±µÂÈ²ä².\n"
+ HAS_NOT_HAD_GOLDEN_AGE:0 "$NAME|Y$ !ÎNÇ iÖ®0®¬ DÅÙ²È²ä².\n"
+ HAS_HAD_GOLDEN_AGE:0 "$NAME|Y$ !ÎNÇ iÖ®0®…ÇÈ²ä².\n"
+ DETSIEG_HOLD_SHIFT:0 "\n§G ÀÉ×­Ä³ „´¬¹XÕ2¸tº lÂÕ¸Ò ²Ð|¹ ²t¹8Á”Æ.§!"
+ MODIFIER_LOCAL_HEIR_ADMIN:0 "ÀÉíÅ ÄÖÄ¬Ç ‰ÕÈ%¸"
+ MODIFIER_LOCAL_HEIR_DIPLOMATIC:0 "ÀÉíÅ ÄÖÄ¬Ç xÆP­%¸"
+ MODIFIER_LOCAL_HEIR_MILITARY:0 "ÀÉíÅ ÄÖÄ¬Ç p­¬À%¸"
+ ABOUT_NOW_TXT:0 "ÀÉ®"
+ ALREADY_REACHED_TOOLTIP:0 "°Æ¬¹¬ §YÀÉ®§! ä²LÇ ¬ÖDÇ ÈÈXÕ0®ÐÅ ©Í„´iÕÈ²ä²!"
+ UNIT_IS_SHATTERED:0 "tÇ Ž´³”² „´°À ÄÖôÑ ÉtÇpº, ŒÖõ¼DÇ 0®ä²¬¹à¬ ˆÇµÂÈ²ä²."
+ JANISSARY_LIMIT_RELIGION:0 "$PROVINCE$ ÀÉíÅNÇ $RELIGION$ ÀÉíÅtÇ0® Lµ8»ÐÅ, tÇó¬ÐÅÁ ÆÈ²´Ì¬¹|¹ ¨ºÑÉ`Õ Â ÆÅµÂÈ²ä²."
+ JOIN_TRADE_LEAGUE_EFFECT:0 "§Y$WHO$§W !ÎNÇ °Æ¬¹ 4»íÅ ðÅiÕÐÅ ¬…ÇiÕÈ²ä².\n"
+ TRANSFER_TRADE_POWER_EFFECT:0 "§Y$WHO$§W !ÎNÇ °Æ¬¹ÐÅŒ¬ 4»íÅ%¸DÇ Èì²`Õ ƒ¬…ÇÈ²ä².\n"
+ custom_mercantilism_cost:0 "ÉÁÀüÈXÇÈ Ë¬¥Õ"
+ custom_mercantilism_cost_desc:0 "Ë¬ÁÇm­XÇ m­%¸DÇ ŒÁ¨ºÜÂÏ Çm­XÇ m­%¸DÇ T³XÕ”² ƒ¬DÇ ©ºÈ<Çj¸ jÕ, m­¬ Ë¬ÈÐÅ ³jÕ ÈŽ´XÇ Ü­È. ÉÁÀüÈXÇ”² ÈXÎÈ È³üÈXÇXÇ Ë¬ÈÈ Ù³¼ÇÆµÂÈ²ä²."
+ custom_allowed_marine_fraction:0 "tÕÑ¼³"
+ custom_allowed_marine_fraction_desc:0 "`¾t¹Œ¬ tÕHÅDÇ õ¬©¬`Õ Â ˆÇ”² p­³|¹ ÈÖ(¸ÜÂ²Ð”² ƒ¬tÇ ÜÂ¬tÇ ÀÉ °Âk¸ ø­ ´Å² Lµô¼ä² DÕ”ÆtÕÀÉà¬ ˆÇµÂÈ²ä². tÕÑ¼³”² Œ¬„ÇXÇ ä²x¹ p­¬À .ÇÛ²ä´ô¼ä² T³ `¾t¹Œ¬ tÕÀ¼ÐÅ ÁÀY¹`Õ Â ˆÇµÂÈ²ä²."
+ HEGEMONS_TITLE_WIN:0 "(ÓŒ­m­"
+ LEDGER_GOVERNMENT_ADMIN_EFF:0 "‰ÕÈ ¨Ö(Ç"
+ alert_revolution_can_be_lost_instant:0 "§YÖ…º üÈÄ³m­ ÀÉÇ|¹ ƒÇDÇ Â ˆÇµÂÈ²ä²§!"
+ alert_revolution_can_be_lost_delayed:0 "°Æ¬¹”² T³ tÇÁÀ ¬¥Ç ’±NÇ Ö…ºXÇ ôÅXÇ|¹ ÀÉÌ² ˜°|·¬ DÅÈ²0® Lµ8»ÐÅ, $LIST|Y$ !ÎtÇ °Æ¬¹j¸Ž´0Ñ Ö…º üÈÄ³m­ ÀÉÇ|¹ |¾WÅDÇ Â ˆÇµÂÈ²ä²!"
+ alert_low_crown_lands_instant:1 "§YÁÉ`ÕÀÉ ÈLÇ§!"
+ alert_low_crown_lands_delayed:1 "ÈŽ´¬ °Æ¬¹ Æ ÑXÇ $VAL|&Y$Ì¹ ô¼.ÇXÕà¬ ˆÇ0® Lµ8»ÐÅ, °Æ¬¹”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ »ÅµÂÈ²ä²:\n$EFFECT$"
+ TRADE_GOODS_PRODUCED_LESS_THAN:2 "$WHO|Y$ !ÎNÇ $GOOD|Y$ ÁÀˆÔDÇ ÝÀ°ÀXÕ”² ÀÉíÅXÇ Â¬ $AMOUNT|Y$¬ ø»Ì¹ …ÇÈ²ä².\n"
+ TRADE_GOODS_PRODUCED_AT_LEAST:2 "$WHO|Y$ !ÎNÇ $GOOD|Y$ ÁÀˆÔDÇ ÝÀ°ÀXÕ”² ÀÉíÅXÇ Â¬ $AMOUNT|Y$¬ tÇÁÀ …ÇÈ²ä².\n"
+ CANT_SUPPORT_SUBJECT_OF_ALLY:0 "ù²àÂNÇ Ù³ù¹m­XÇ Ám­XÇ Å³Ë¹DÇ ÀÉÐÆ`Õ Â ÆÅµÂÈ²ä²."
+ ARMY_NAVY_TRADITION_IRO:0 "tÇ ÈµÑNÇ ä²LÇ tÇ.Çj¸ ä¹D± $VAL|+$)Å ¼°È²ä²:\n"
+ CANT_MERGE_MERCENARY_COMPANY:0 "©ÆÑ¼³|¹ Ñ¼iÕ`Õ Â”² ÆÅµÂÈ²ä²!"
+ IMP_AUTH_DECLINE_BY:0 "Èm­ Œ­Ç”² $VAL|R$Ì¹|Ð ¬ŒÁ.´ ƒ¬…ÇÈ²ä²."
+ ANY_ANY_PROVINCE_STARTS:0 "DÅ4» ÀÉíÅ"
+ IS_NOT_A_RIVAL_TRIGGER:0 "$NAME|Y$ !ÎNÇ Ë¬ÁÇm­tÇ DÅÙ²È²ä²"
+ IS_A_RIVAL_TRIGGER:0 "$NAME|Y$ !ÎNÇ Ë¬ÁÇm­…ÇÈ²ä²"
+ YEARLY_TAX_INCOME:0 "ðÅ¬ pÈ8Á Â…Ç"
+ MODIFIER_RELIGIOUS_CONVERSION_RESISTANCE_DRO:1 "tÇƒ¬NÇ ù²àÂXÇ m­¬¬ ¬ÖXÇ ÉìÂÀÉÐÅÁ UÖ°À´”² …ÈP­ÐÅ ¼ÅÈ¹˜° ˜Ç ÈmÕ`Õ Â ˆÇ”²ÀÉ|¹ ˜°ÀÐÅ°È²ä². tÇƒ¬NÇ ¬ÖXÇ ÉìÂÀÉ¬ ù²àÂXÇ ÀÉíÅDÇ .ÁÝÐ`Õ UÖ`¹DÇ ¬ŒÁÜÂµÐÈ²ä²."
+ MODIFIER_LEGITIMATE_SUBJECT_ELECTOR:0 "iÕ•¼ÈxÇ Ám­ .ÁÈÄÖ"
+ MODIFIER_ACCEPT_VASSALIZATION_REASONS:0 "…ÈÁm­TÖ Â©Æ"
+ MODIFIER_TRANSFER_TRADE_POWER_REASONS:0 "4»íÅ%¸ tÇ¡Á Â©Æ"
+ MODIFIER_LOCAL_WARSCORE_COST_MODIFIER:0 "ÈÁÇ ÈÂ D¾©Æ"
+ MODIFIER_MERCANTILISM_COST:0 "ÉÁÀüÈXÇ 	ÍÄÉ D¾©Æ"
+ TRENT_IS_FINISHED:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ …ÈÌ¸"
+ TRENT_IS_NOT_FINISHED:0 "‘Åô¼HÅ .ÁÝÐ ¬¥²"
+ ALLOW_SETTLEMENT_GROWTH_TITLE:0 "È)ÌÀÉ 1Á¥Ç ÈÕ©Æ"
+ ALLOW_SETTLEMENT_GROWTH_DESC:0 "tÇƒ¬NÇ Ám­tÇ ä²ÜÂ È)ÌÀÉ 1Á¥ÇDÇ ¬À©Æ`Õ Â ˆÇŒ¬ Ì¹í´È²ä²."
+ ALLOW_SETTLEMENT_GROWTH_NOT_AI:0 "Õ¸tÇ´ÅÐÅŒ¬ tÇ ÈjÕDÇ x¬ Â ÆÅµÂÈ²ä²."
+ ALLOW_SETTLEMENT_GROWTH_ALREADY:0 "ù²àÂNÇ tÇø» tÇ 0®¥²DÇ ÈÕ©ÆˆÕµÂÈ²ä²."
+ BLOCK_SETTLEMENT_GROWTH_TITLE:0 "È)ÌÀÉ 1Á¥Ç ®ÀÉ"
+ BLOCK_SETTLEMENT_GROWTH_DESC:0 "tÇƒ¬NÇ Ám­tÇ È)ÌÀÉ 1Á¥ÇDÇ ¬À©ÆXÕÀÉ »ºXÕŒ¬ Ì¹í´È²ä²."
+ BLOCK_SETTLEMENT_GROWTH_NOT_AI:0 "Õ¸tÇ´ÅÐÅŒ¬ tÇ ÈjÕDÇ x¬ Â ÆÅµÂÈ²ä²."
+ BLOCK_SETTLEMENT_GROWTH_ALREADY:0 "ù²àÂNÇ tÇø» tÇ 0®¥²DÇ ®ÀÉÜÂ0ÏµÂÈ²ä²."
+ ADD_RIVAL_EFFECT:0 "$TARGET|Y$ !ÎDÇ Ë¬ÁÇm­<Çj¸ ”Í¬iÕÈ²ä²\n"
+ REMOVE_RIVAL_EFFECT:0 "$TARGET|Y$ !ÎDÇ Ë¬ÁÇm­ÐÅÁ Èp¬iÕÈ²ä²\n"
+ feudalism_origin:0 "	´t¬üÈXÇXÇ ¼ÐÆÀÉ"
+ renaissance_origin:0 "t¹2±ÁÀ²ÂXÇ ¼ÐÆÀÉ"
+ new_world_i_origin:0 "ÝÂü»üÈXÇXÇ ¼ÐÆÀÉ"
+ printing_press_origin:0 "xÇÄÁ.ÂXÇ ¼ÐÆÀÉ"
+ global_trade_origin:0 "8ÁÄ¬ 4»íÅXÇ ¼ÐÆÀÉ"
+ manufactories_origin:0 "õ¬¥ÇÈXÇ ¼ÐÆÀÉ"
+ enlightenment_origin:0 "Ä¬ËºüÈXÇXÇ ¼ÐÆÀÉ"
+ industrialization_origin:0 "°ÀÅÅTÖXÇ ¼ÐÆÀÉ"
+ merchant_republic_mechanics_modifier:0 "ÁÀxÇ õ¬TÖÈ"
+ MODIFIER_TRADE_COMPANY_GOVERNING_COST:0 "4»íÅ ŒÖ¬À µÑXÎ D¾©Æ"
+ MODIFIER_TERRITORY_GOVERNING_COST:0 "ÉüÈ µÑXÎ D¾©Æ"
+ MODIFIER_STATES_GOVERNING_COST:0 "üÈ µÑXÎ D¾©Æ"
+ INC_BLOCKADES:0 "xÆm­ mÕl­ 	´ÄÁ É"
+ INC_LOOTING:0 "xÆm­ Ä³ÜÂ ‹ÅÈÐ É"
+ CV_FROM_BLOCKADING:0 "xÆm­ mÕl­ 	´ÄÁ É: $VAL|2+$¤"
+ CV_FROM_LOOTING:0 "xÆm­ Ä³ÜÂ ‹ÅÈÐ É: $VAL|2+$¤"
+ EV_EXP_LOOTING:0 "‹ÅÈÐ´à¬ ˆÇ”² °Æ¬¹ Ä³ÜÂ: $VAL|2+$¤"
+ EV_EXP_BLOCKADE:0 "mÕl­ 	´ÄÁ´ °Æ¬¹ Ä³ÜÂ: $VAL|2-$¤"
+ SORT_BY_ECONOMY:0 "§YË¬ÈÈ Æ¥Õ§!ÐÅ Þ¹°Í È,¸"
+ EXP_BLOCKADES:0 "mÕl­ 	´ÄÁ(´"
+ EXP_LOOTING:0 "Ä³ÜÂ ‹ÅÈÐ(´"
+ VIEW_US_AS_RIVALS:0 "ø­ä´NÇ °Æ¬¹|¹ Ë¬ÁÇm­<Çj¸ ´È²ä²!"
+ lost_hegemony:0 "(ÓŒ­ ÁÀäÂ"
+ ven_arsenal_marines:0 " ¼2±XÎDÅ tÕÑ¼³"
+ desc_ven_arsenal_marines:0 " ¼2±XÎDÅ Ñ¼0®KÌNÇ °Æ¬¹ 2¬¬¹.Áä´DÇ ÇtÕ T³ Î¹NÇ tÕÑ¼³|¹ ÈÖ(¸ÜÂ¬Ð Â ˆÇÄ³k¸ tÕÉÈ²ä²!"
+ DISBAND_UNIT_RETURN_SAILORS_CAPPED:0 "°Æ¬¹”² jÍ³ $MAX|Y$…ºXÇ .ÁÐÆDÇ Íü¬`Õ Â ÆÅ0® Lµ8»ÐÅ tÇ Ñ¼%¸ É $NUMBER|Y$…ºÌ¹ °Æ¬¹XÇ tÇ©Æ ¬¥² .ÁÐÆ<Çj¸ Ì³DÅ,Æ ƒ¬…ÇÈ²ä²."
+ DISBAND_UNIT_RETURN_SAILORS:0 "$NUMBER|Y$…ºXÇ tÇ Ñ¼%¸tÇ °Æ¬¹XÇ tÇ©Æ ¬¥² .ÁÐÆ<Çj¸ Ì³DÅ,Æ ƒ¬…ÇÈ²ä²."
+ TRADE_COMPANY_SAME_SUPER_REGION:0 "ù²àÂXÇ ÂÄ³¬ $NAME|Y$XÇ |ÇŽ´tÇ0® Lµ8»ÐÅ, tÇ ó¬NÇ 4»íÅ ŒÖ¬Àj¸ ÈXÖ`Õ Â ÆÅµÂÈ²ä²."
+ ND_SPRITE_PACK:0 "²ÂÕ|·tÇ¸Ò )Ó"
+ ND_SPRITE_PACK_SELECTED:0 "§Y²ÂÕ|·tÇ¸Ò )Ó .ÁÝÐ(´. .ÁÝÐ tÕÈXÕ2¸tº ä²ÜÂ tÐ­¹XÕíÂÜÂ2Æ.§!"
+ ND_SPRITE_PACK_UNSELECTED:0 "§Y²ÂÕ|·tÇ¸Ò )Ó .ÁÝÐ´ÀÉ JÅLÇ. ù²àÂXÇ ¬À©ÆÇ ÈXÇ m­¬XÇ ²ÂÕ|·tÇ¸Ò )ÓDÇ .ÁÝÐXÕíÂÜÂ2Æ.§!"
+ ND_UNIT_VIEWER_DESC:1 "$LEVEL|Y$ ðÒ´ÅXÇ $TYPE|Y$ jÔÜÂ É."
+ ND_UNIT_VIEWER_INTERACTIVE_DESC:2 "§YÈ¹°Æ²Â 2Æx¹ËÊ „¼¼ÒDÇ ²ì·Á§! ²ÂÕ|·tÇ¸Ò|¹ ŒÖÈÜÂ²Ð8Á”Æ§!."
+ ND_SPRITE_PACK_DETAIL_LIST_START:0 "tÇ ²ÂÕ|·tÇ¸Ò )ÓÐÅ”² ä²LÇtÇ ìÓhÕ´´Å ˆÇµÂÈ²ä²:"
+ ND_SPRITE_PACK_DETAIL_LIST_ENTRY:1 "\n$LEVEL|Y$ ðÒ´Å $TYPE|Y$"
+ CONCILATORY_POSITION_TAKEN:0 "ŒÖ.ÇEÌ …Ç¥Ç"
+ HARSH_POSITION_TAKEN:0 "¬Ë¬EÌ …Ç¥Ç"
+ CONCILATORY_POSITION_TAKEN_HEAD:0 "ŒÖ.ÇEÌ"
+ HARSH_POSITION_TAKEN_HEAD:0 "¬Ë¬EÌ"
+ COUNCIL_STANCE_US_TITLE:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION_HEAD$"
+ COUNCIL_STANCE_US_SETUP:0 "°Æ¬¹¬ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ …Ç¥ÇDÇ ¼À¯ Lµ"
+ COUNCIL_STANCE_US_HEADER:0 "°Æ¬¹ ³üÈP­XÇ ô¼à¬…ÇÈ²ä²"
+ COUNCIL_STANCE_US_1:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION$DÇ .ÁÝÐˆÕµÂÈ²ä²"
+ COUNCIL_STANCE_US_2:0 ""
+ COUNCIL_STANCE_US_3:0 ""
+ COUNCIL_STANCE_US_4:0 ""
+ COUNCIL_STANCE_US_LOG:0 "°Æ¬¹”² ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION$DÇ .ÁÝÐˆÕµÂÈ²ä²."
+ COUNCIL_STANCE_US_BTN1:0 "LÅ ¬ä²"
+ COUNCIL_STANCE_US_BTN2:0 "LÅ ¬ä²"
+ COUNCIL_STANCE_US_BTN3:0 "ø­ó¬<Çj¸"
+ COUNCIL_STANCE_US_MAP:0 "$POSITION$"
+ COUNCIL_STANCE_THEM_TITLE:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION_HEAD$"
+ COUNCIL_STANCE_THEM_SETUP:0 "ÀÐm­tÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ …Ç¥ÇDÇ ¼À¯ Lµ"
+ COUNCIL_STANCE_THEM_HEADER:0 "°Æ¬¹ ³üÈP­XÇ ô¼à¬…ÇÈ²ä²"
+ COUNCIL_STANCE_THEM_1:1 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ …Ç¥Ç À¼Ë¬"
+ COUNCIL_STANCE_THEM_2:1 "$WHO$ !ÎNÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION$ …Ç¥ÇDÇ À¼Ë¬ˆÕµÂÈ²ä²."
+ COUNCIL_STANCE_THEM_3:0 ""
+ COUNCIL_STANCE_THEM_4:0 ""
+ COUNCIL_STANCE_THEM_LOG:0 "$WHO$ !ÎNÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POSITION$DÇ .ÁÝÐˆÕµÂÈ²ä²."
+ COUNCIL_STANCE_THEM_BTN1:0 "LÅ ¬ä²"
+ COUNCIL_STANCE_THEM_BTN2:0 "LÅ ¬ä²"
+ COUNCIL_STANCE_THEM_BTN3:0 "ø­ó¬<Çj¸"
+ COUNCIL_STANCE_THEM_MAP:0 "$POSITION$"
+ COUNCIL_CONCESSION_TITLE:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖXÇ ‘Åô¼HÅ"
+ COUNCIL_CONCESSION_SETUP:0 "P­iÖ­Ì pÈ…ÈÇ¬ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ ¶ ä²x¹ ‘Åô¼HÅDÇ ÈÈˆÕDÇ Lµ"
+ COUNCIL_CONCESSION_HEADER:0 "°Æ¬¹ ³üÈP­XÇ ô¼à¬…ÇÈ²ä²"
+ COUNCIL_CONCESSION_1:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖXÇ ‘Åô¼HÅ"
+ COUNCIL_CONCESSION_2:0 "$WHO$ !ÎtÇ ¶ ä²x¹ ‘Åô¼HÅDÇ ÈÈˆÕ<Çpº, tÇÈ ¨ºà´ $RELIGION$ m­¬ä´NÇ $WHICH$(DÇ)|¹ »Å<Çpº, tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n"
+ COUNCIL_CONCESSION_3:0 "$EFFECT$"
+ COUNCIL_CONCESSION_4:0 ""
+ COUNCIL_CONCESSION_LOG:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $WHO$ÐÅ XÇtÕ $WHICH$(tÇ)¬ ÈÈ´ÈÅµÂÈ²ä²."
+ COUNCIL_CONCESSION_BTN1:0 "LÅ ¬ä²"
+ COUNCIL_CONCESSION_BTN2:0 "LÅ ¬ä²"
+ COUNCIL_CONCESSION_BTN3:0 "ø­ó¬<Çj¸"
+ COUNCIL_CONCESSION_MAP:0 "$POSITION$"
+ IS_NOT_HEGEMON_TRIGGER:0 "!ÎNÇ (ÓŒ­m­tÇ DÅÙ²È²ä²"
+ IS_HEGEMON_TRIGGER:0 "!ÎNÇ (ÓŒ­m­…ÇÈ²ä²"
+ LOST_HEGEMON_US_TITLE:0 "(ÓŒ­ ÁÀäÂ"
+ LOST_HEGEMON_US_SETUP:0 "°Æ¬¹¬ (ÓŒ­m­XÇ ÀÉÇ|¹ ƒÇÈÅDÇ Lµ!"
+ LOST_HEGEMON_US_HEADER:0 "°Æ¬¹ ¬ÇÁÀXÇ ô¼à¬…ÇÈ²ä²"
+ LOST_HEGEMON_US_1:0 "(ÓŒ­DÇ ÁÀäÂˆÕµÂÈ²ä²!"
+ LOST_HEGEMON_US_2:0 "°Æ¬¹”² $HEGEMONY$XÇ ÀÉÇ|¹ ÁÀäÂˆÕµÂÈ²ä². °Æ¬¹”² T³ tÇÁÀ ÀÉ0¼ÈxÇ 8Á%¸tÇ DÅÙ²È²ä²."
+ LOST_HEGEMON_US_3:0 ""
+ LOST_HEGEMON_US_4:0 ""
+ LOST_HEGEMON_US_LOG:0 "°Æ¬¹”² T³ tÇÁÀ $HEGEMONY$tÇ DÅÙ²È²ä²"
+ LOST_HEGEMON_US_BTN1:0 "LÅ ¬ä²"
+ LOST_HEGEMON_US_BTN2:0 "LÅ ¬ä²"
+ LOST_HEGEMON_US_BTN3:0 "ø­ó¬<Çj¸"
+ LOST_HEGEMON_US_MAP:0 "$HEGEMONY$ ÁÀäÂ"
+ LOST_HEGEMON_THEM_TITLE:0 "(ÓŒ­ ÁÀäÂ"
+ LOST_HEGEMON_THEM_SETUP:0 "ä²x¹ ˜°|·¬ (ÓŒ­m­<Çj¸ÁXÇ ÀÉÇ|¹ ƒÇDÇ Lµ."
+ LOST_HEGEMON_THEM_HEADER:0 "°Æ¬¹ ¬ÇÁÀXÇ ô¼à¬…ÇÈ²ä²"
+ LOST_HEGEMON_THEM_1:0 ""(ÓŒ­DÇ ÁÀäÂˆÕµÂÈ²ä²!"
+ LOST_HEGEMON_THEM_2:0 "$WHO$ !ÎNÇ $HEGEMONY$XÇ ÀÉÇ|¹ ÁÀäÂˆÕµÂÈ²ä². ø­ä´NÇ T³ tÇÁÀ ÀÉ0¼ÈxÇ 8Á%¸tÇ DÅÙ²È²ä²."
+ LOST_HEGEMON_THEM_3:0 ""
+ LOST_HEGEMON_THEM_4:0 ""
+ LOST_HEGEMON_THEM_LOG:0 "$WHO$ !ÎNÇ T³ tÇÁÀ $HEGEMONY$tÇ DÅÙ²È²ä²"
+ LOST_HEGEMON_THEM_BTN1:0 "LÅ ¬ä²"
+ LOST_HEGEMON_THEM_BTN2:0 "LÅ ¬ä²"
+ LOST_HEGEMON_THEM_BTN3:0 "ø­ó¬<Çj¸"
+ LOST_HEGEMON_THEM_MAP:0 "$HEGEMONY$ ÁÀäÂ"
+ GAIN_HEGEMON_US_TITLE:0 "(ÓŒ­ ÖÝ´"
+ GAIN_HEGEMON_US_SETUP:0 "ù²àÂtÇ (ÓŒ­DÇ .Á¸Å`Õ Lµ"
+ GAIN_HEGEMON_US_HEADER:0 "°Æ¬¹ ¬ÇÁÀXÇ ô¼à¬…ÇÈ²ä²"
+ GAIN_HEGEMON_US_1:0 "(ÓŒ­ .Á¸Å!"
+ GAIN_HEGEMON_US_2:0 "°Æ¬¹”² °Æ¬¹ ˜°|·|¹ $HEGEMONY$<Çj¸ .Á¸ÅˆÕµÂÈ²ä². °Æ¬¹”² 8ÁÄ¬ÐÅ NÖj¸ Þ¹2Á Â ˆÇ<Çpº, ÀÉ0¼ÈxÇ 8Á%¸tÇ .´ Â ˆÇä²à¬ UÖàÂiÕÈ²ä². °Æ¬¹”² LÅ	¸°ÀÜ´j¸²Â ³UÆü¬ mÎ0®ˆÉ xÎDÇ ¥²¬`Õ ƒ¬…ÇÈ²ä²!"
+ GAIN_HEGEMON_US_3:0 ""
+ GAIN_HEGEMON_US_4:0 "ø­ä´tÇ P´2¸ÌÆXÕ”² jÕ, É2ÆXÕŒ¬ ”±P´´Å|·(Oderint dum metuant)!."
+ GAIN_HEGEMON_US_LOG:0 ""
+ GAIN_HEGEMON_US_BTN1:0 "LÅ ¬ä²"
+ GAIN_HEGEMON_US_BTN2:0 "LÅ ¬ä²"
+ GAIN_HEGEMON_US_BTN3:0 "ø­ó¬<Çj¸"
+ GAIN_HEGEMON_US_MAP:0 "$HEGEMONY$ ÖÝ´"
+ GAIN_HEGEMON_THEM_TITLE:0 "(ÓŒ­ ÖÝ´"
+ GAIN_HEGEMON_THEM_SETUP:0 "ä²x¹ m­¬¬ (ÓŒ­DÇ .Á¸Å`Õ Lµ"
+ GAIN_HEGEMON_THEM_HEADER:0 "°Æ¬¹ ¬ÇÁÀXÇ ô¼à¬…ÇÈ²ä²"
+ GAIN_HEGEMON_THEM_1:0 "(ÓŒ­ .Á¸Å!"
+ GAIN_HEGEMON_THEM_2:0 "$WHO$ !ÎNÇ Ç0® m­¬|¹ $HEGEMONY$<Çj¸ .Á¸ÅˆÕµÂÈ²ä²."
+ GAIN_HEGEMON_THEM_3:0 "$REACTION$"
+ GAIN_HEGEMON_THEM_4:0 ""
+ GAIN_HEGEMON_THEM_LOG:0 "$WHO$ !ÎNÇ Ç0® m­¬|¹ $HEGEMONY$<Çj¸ .Á¸ÅˆÕµÂÈ²ä²."
+ GAIN_HEGEMON_THEM_BTN1:0 "LÅ ¬ä²"
+ GAIN_HEGEMON_THEM_BTN2:0 "LÅ ¬ä²"
+ GAIN_HEGEMON_THEM_BTN3:0 "ø­ó¬<Çj¸"
+ GAIN_HEGEMON_THEM_MAP:0 "$HEGEMONY$ ÖÝ´"
+ PLAYER_HEGEMON:0 "ÄÉÈjÕ Ë¬ÁÇÇxÇ¬? e×ø»m¸ ¬”²x¬!"
+ FRIEND_HEGEMON:0 "ø­ä´tÇ ìÅÈˆ× °Æ¬¹|¹ jÎl­j¸ ô¼0®|¹ ¼„· Â ¼ÐÅ!"
+ GP_HEGEMON:0 "¼m­¬ ðÅiÕDÇ pÈÁÉ`Õ ÜÂ¬tÇp­"
+ DEFAULT_HEGEMON_REACTION:0 "°Æ¬¹”² tÇƒ¬DÇ ä¹°Æ üÅ2¸jÕä²."
+ ANY_GP_COUNTRY_STARTS:0 "DÅ4» ôÅ¬"
+ ANY_OTHER_GP_COUNTRY_STARTS:1 "ä²x¹ ¨ºà´ ôÅ¬ä´"
+ cb_hegemon:0 "(ÓŒ­DÇ ô¼.ÇXÕä²"
+ cb_hegemon_desc:0 "ˆ±ä´DÇ L°´Å´°2¸|Å tÕ!"
+ military_hegemon:0 "!Çp­ (ÓŒ­m­"
+ naval_hegemon:0 "tÕp­ (ÓŒ­m­"
+ economic_hegemon:0 "Ë¬È (ÓŒ­m­"
+ HEGEMON_ALREADY:0 "ù²àÂNÇ tÇø» (ÓŒ­m­…ÇÈ²ä²!"
+ OTHER_HEGEMON_ALREADY:0 "tÇø» $WHICH|Y$tÇ tÈ¬ÇiÕÈ²ä². $WHO|Y$ !ÎtÇ ÈÁÇÐÅÁ (Ó0¼XÕÄ³k¸ tÕ|Å, ø­ä´XÇ (ÓŒ­m­ ÀÉÇ|¹ ÁÀäÂÜÂ¬Ð Â ˆÇµÂÈ²ä²."
+ WE_ARE_BOTH_HEGEMONS:0 "(ÓŒ­m­NÇ ä²x¹ (ÓŒ­m­¬ Ù³ù¹`Õ Â ÆÅµÂÈ²ä²"
+ DIPLO_HEGEMON:0 "$WHO$ !ÎNÇ (ÓŒ­m­…ÇÈ²ä²:"
+ is_hegemon:0 "(ÓŒ­m­"
+ allied_to_hegemon:0 "(ÓŒ­m­ü¬ Ù³ù¹hÕ"
+ SCORE_HEGEMONY:1 "jÍ…È ÈÂ”² $VAL|2%+Y$Ì¹|Ð ñ¬tÕÀÉpº, (ÓŒ­m­tÇtº tÇ ÂXÎ¬ É¬XÕà¬, (ÓŒ­m­ü¬ Ù³ù¹tÇtº ¬ŒÁiÕÈ²ä²."
+ HEGEMON_CURRENTLY_AT:0 "Ö¬Ç (ÓŒ­%¸NÇ $VAL|2%Y$tÇpº, $WHO$ !ÎNÇ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ »ÅµÂÈ²ä²:\n"
+ HEGEMON_POWER_MONTHL:1 "ä¹ÔÆ, (ÓŒ­%¸NÇ $VAL|2+%$Ì¹|Ð À¼iÕÈ²ä²"
+ HEGEMON_NO_LONGER_ELIGIBLE:0 " $NAME$ !ÎNÇ ä²LÇü¬ ¬NÇ tÇ.Çj¸ T³ 2Æ˜· Ç©¬DÇ ¬ÈÉ Â ˆÇµÂÈ²ä²:\n$WHY$"
+ HEGEMON_BASE_MODIFIER:0 "mÕÁÀ ä²LÇü¬ ¬NÇ ÖÝÐ ÖÝ´:\n"
+ HEGEMON_SCALES_MODIFIER:0 "ÜÂ¬tÇ ÀÉ °Âk¸, (ÓŒ­%¸tÇ É¬tÕ, ä²LÇ ¨Öü¬ ÖÝ´:\n"
+ HEGEMON_MAX_MODIFIER:0 "jÍ³ (ÓŒ­%¸ÐÅÁ ÖÝ´:\n"
+ PROCLAIM_HEGEMONY_TITLE:0 "$HEGEMONY$ .Á¸Å"
+ PROCLAIM_HEGEMONY_DESC:0 "(ÓŒ­DÇ .Á¸ÅXÕ”² ƒ¬NÇ ù²àÂÐÅŒ¬ Î¹NÇ ÖÝÐDÇ üÈà¬, 8Á%¸ ,Ò¬À|¹ É¬ÜÂ¬Ð Ð¿Ì¹ DÅÈ²|·, °Æ¬¹|¹ 8ÁÁÀÐÅÁ T³ NÖj¸ ÁŒ¬ Ì¹ä´ ƒ¬…ÇÈ²ä²!"
+ HAVE_HEGEMONY_PROGRESS_LESS_THAN:0 "(ÓŒ­%¸tÇ $VAL|Y%$ ø»Ì¹…ÇÈ²ä²"
+ HAVE_HEGEMONY_PROGRESS_MORE_THAN:0 "(ÓŒ­%¸tÇ $VAL|Y%$ tÇÁÀ…ÇÈ²ä²"
+ MODIFIER_BLOCKADE_FORCE_REQUIRED:0 "mÕl­ 	´ÄÁ hÕ³ DÕ”Æ"
+ MODIFIER_HOSTILE_DISEMBARK_SPEED:1 "Èp­ ÁÀY¹ ÜÂ¬"
+ MODIFIER_HOSTILE_FLEET_ATTRITION:0 "È hÕ³ ŒÁ¨º"
+ coastal_defence:0 "tÕHÅ )¼´ÅÜÂ2Á"
+ naval_battery:0 "tÕHÅ ìÓ³"
+ building_coastal_defence:0 "tÕHÅ )¼´ÅÜÂ2Á"
+ building_naval_battery:0 "tÕHÅ ìÓ³"
+ COASTAL_DEF:0 "tÕHÅ"
+ MARINE_NAME:0 "$HOME$XÇ $NUM$$ORDER$ tÕÑ¼³"
+ ADD_MARINE_SUB_UNIT_EFFECT:0 "§Y$WHERE$§!ÐÅÁ '§GtÕÑ¼³§!' $UNIT$ ðÅ³|¹ »ÅµÂÈ²ä²."
+ REGCAT_marines:0 "tÕÑ¼³"
+ MARINE_REGIMENT_TYPE:0 "tÕÑ¼³"
+ HAVE_LESS_MARINES_THAN:1 "§Y$VALUE$§! ø»Ì¹XÇ tÕÑ¼³ ô¼.Ç,\n"
+ HAVE_AT_LEAST_MARINES_THAN:1 "§Y$VALUE$§! tÇÁÀXÇ tÕÑ¼³ ô¼.Ç.\n"
+ MODIFIER_ALLOWED_MARINE_FRACTION:0 "tÕÑ¼³ Ñ¼%¸ jÕÄ¬"
+ MARINE_REGIMENT:0 "tÕÑ¼³ ðÅ³\n¬ Ä³XÕ ˜Ó±ðÒ 4»ÜÂ: §GYES§!\n.ÁÐÆDÇ xÇ%¸<Çj¸ ¬À©Æ: §GYES§!\nÁÀY¹ ÁÄ³: $VAL$\n¼”² ©Í©¬ <ÕtÕÉ·: $VAL2$\n"
+ MARINES_DESC:1 "!ÇÀÉNÆ ¼ä²ÐÅÁ Ù³|ÇXÕŒ¬ øÂ°Æ”² ÈÆ Ž´³xÇ, §YtÕÑ¼³§!”² .ÁÐÆDÇ xÇ%¸<Çj¸ ¬À©ÆXÕpº <»DÇ t¬±Á øÂ¸Æ Lµ tÇÈDÇ »ÅµÂÈ²ä²."
+ CANNOT_AFFORD_SAILIRS:0 "°Æ¬¹”² ©Í„´jÕ .ÁÐÆtÇ ÆÅµÂÈ²ä². tÕÑ¼³ ðÅ³ 1¬|¹ ¨ºÑÉXÕ2¸tº $VALUE|Y$…ºXÇ .ÁÐÆtÇ DÕ”ÆiÕÈ²ä²."
+ IMPERIAL_REALM_WAR_ENABLED:1 "iÖÈ¬ Ö¬Ç àÂ1Áj¸È¹Èm­ÐÅ ÁtÕˆÇÀÉ JÅNÇ ¨ºà´ m­¬ÐÅ ÈÁÇ …º„´DÇ Ì¹ä´ Â ˆÇŒ¬ iÕÈ²ä².\n"
+ IMPERIAL_REALM_WAR_DISABLED:1 "iÖÈ”² T³ tÇÁÀ àÂ1Áj¸È¹Èm­ ¼XÇ m­¬ä´ÐÅŒ¬ Èm­9¸ ÈÁÇ …º„´DÇ Ì¹ä´ Â ÆÅµÂÈ²ä².\n"
+ cb_imperial_realm_war:1 "Èm­9¸ ÈÁÇ"
+ cb_imperial_realm_war_desc:1 "àÂ1Á j¸È¹ iÖÈ”² tÇ ˜°|·|¹ õ¬©¬XÕ”² ƒ¬tÇ iÕ•¼ÈtÇ|·à¬ ´È²ä²."
+ ASSIGN_HEIR_SOMEONE_ELSE_RULER:0 "ù²àÂNÇ Ù³p­ðÅiÕXÇ …ÈüÈm­tÇ DÅÙ²È²ä², ø­ì·À»j¸ ÈÀj¸´Æ ÄÖÄ¬Ç|¹ Ä³…Ç`Õ Â ÆÅµÂÈ²ä²!"
+ ASSIGN_HEIR_NOT_WITH_FIXED_DYNASTY:0 "à¬È´ UÆpÈÐÅ XÇtÕ ÀÉ0¼¼”² m­¬”² tÇ 0®¥²DÇ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²."
+ ASSIGN_HEIR_TITLE:0 "ÈÀj¸´Æ ÄÖÄ¬Ç Ä³…Ç"
+ ASSIGN_HEIR_DESC:0 "ÈÀj¸´Æ ÄÖÄ¬Ç|¹ Ä³…ÇXÕ”² ƒ¬NÇ $PRESTIGE|Y$XÇ ÇàÂü¬ $LEGITIMACY|Y$XÇ ÈµÑ1ÁDÇ ŒÁ¨ºiÕÈ²ä²! ¬À©ÆXÕÜÂ ¬µÂÈ²L®?"
+ ASSIGN_HEIR_ALREADY_HEIR:0 "ù²àÂNÇ tÇø» ÄÖÄ¬Ç|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ ASSIGN_HEIR_TT:1 "§YÈÀj¸´Æ ÄÖÄ¬Ç Ä³…Ç§!\n$LEGITIMACY|Y$XÇ ÈµÑ1Áü¬ $PRESTIGE|Y$XÇ ÇàÂDÇ ¬À©ÆtÕ ÈÀj¸´Æ ÄÖÄ¬Ç|¹ »ÅµÂÈ²ä²!"
+ ASSIGN_HEIR_NOT_MONARCHY:0 "p­üÈÈÌ¹ ÈÀj¸´Æ ÄÖÄ¬Ç|¹ Ä³…Ç`Õ Â ˆÇµÂÈ²ä²!"
+ ASSIGN_HEIR_NOT_HEIRS:0 "ù²àÂXÇ ÈŽ´ ÖÜÐ”² ÀÉÈ´ ÄÖÄ¬Ç|¹ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²!"
+ ASSIGN_HEIR_AT_WAR:0 "ÈÁÇ ÉÐÅ”² ÈÀj¸´Æ ÄÖÄ¬Ç|¹ „Ç…º`Õ Â ÆÅµÂÈ²ä²!"
+ ASSIGN_HEIR_NOT_NOMADS:0 ".Ç©ºü»NÇ ÈÀj¸´Æ ÄÖÄ¬Ç|¹ „Ç…º`Õ Â ÆÅµÂÈ²ä²!"
+ ASSIGN_HEIR_REGENCY:0 "-ÁÈ ÉÐÅ”² ÈÀj¸´Æ ÄÖÄ¬Ç|¹ Ä³…Ç`Õ Â ÆÅµÂÈ²ä²!"
+ ASSIGN_HEIR_PRESTIGE:1 "ÈÀj¸´Æ ÄÖÄ¬Ç|¹ ŒÁ¬XÕ0® ÇtÕÁ”² È´ÅÄ³ $VAL|Y$Ì¹|ÐXÇ ÇàÂtÇ DÕ”ÆXÕÀÉÌ¹, ÀÉ®NÇ $CURRENT|Y$¼ÐÅ ÆÅµÂÈ²ä²"
+ ASSIGN_HEIR_LEGITIMACY:1 "ÈÀj¸´Æ ÄÖÄ¬Ç|¹ ŒÁ¬XÕ0® ÇtÕÁ”² È´ÅÄ³ $VAL|Y$Ì¹|ÐXÇ ÈµÑ1ÁtÇ DÕ”ÆXÕÀÉÌ¹, ÀÉ®NÇ $CURRENT|Y$¼ÐÅ ÆÅµÂÈ²ä²"
+ MILITARY_ACCESS_OWN:0 "$TAG|Y$ !ÎNÇ tÇ ÀÉíÅDÇ ÁÉÈ ŒÁ.ÇXÕà¬ ˆÇµÂÈ²ä²."
+ MILITARY_ACCESS_SUBJECT:0 "tÇ ÀÉíÅNÇ $TAG|Y$XÇ Ám­xÇ $SUBJECT|Y$ !ÎtÇ ŒÁ.ÇXÕà¬ ˆÇ0® Lµ8»ÐÅ p­¬À µÑ‰ÕŒ­DÇ Èõ¬iÕÈ²ä²."
+ MILITARY_ACCESS:0 "$TARGET|Y$ !ÎNÇ $TAG|Y$ !ÎÐÅŒ¬ p­¬À µÑ‰ÕŒ­DÇ Èõ¬ˆÕµÂÈ²ä²"
+ MILITARY_ACCESS_CONTROLLER:0 "$TARGET|Y$ !ÎtÇ tÇ ÀÉíÅDÇ µÑÈXÕà¬ ˆÇ<Çpº $TAG|Y$ÐÅŒ¬ p­¬À µÑ‰ÕŒ­DÇ Èõ¬ˆÕµÂÈ²ä²"
+ MILITARY_ACCESS_CONDITIONAL:0 "$TAG|Y$ !ÎNÇ $TARGET|Y$ !ÎÐÅŒ¬ pÈt¬Ž´ p­¬À µÑ‰ÕŒ­DÇ ¬ÑÉÈ²ä²"
+ MILITARY_ACCESS_CONDITIONAL_CONTROLLER:0 "$TAG|Y$ !ÎNÇ $TARGET|Y$ !ÎÐÅŒ¬ pÈt¬Ž´ p­¬À µÑ‰ÕŒ­DÇ ¬ÀÉpº, ø­ m­¬¬ tÇ ÀÉíÅDÇ µÑÈXÕà¬ ˆÇµÂÈ²ä²"
+ MAPMODE_MILITARY_ACCESS:0 "p­¬À µÑ‰ÕŒ­"
+ MAPMODE_MILITARY_ACCESS_DESC:0 ".ÁÝÐjÕ m­¬XÇ p­¬À µÑ‰ÕŒ­ÐÅ 0µ|· ÀÉíÅDÇ ÉÀ<Çj¸ jÔÜÂiÕÈ²ä²"
+ expand_administation_modifier:0 "UÖ¥Ç´ ‰ÕÈ"
+ MODIFIER_EXPAND_ADMINISTRATION_COST:0 "‰ÕÈ UÖ¥Ç D¾©Æ"
+ EXPAND_ADMINISTRATION:0 "‰ÕÈ UÖ¥Ç"
+ CALC_EXPAND_ADMIN:0 "$VAL|Y$XÇ ¬¼Ä³¬ $WHERE$ÐÅÁ øÂÈÉ ƒ¬…ÇÈ²ä²"
+ EXPAND_ADMINISTRATION_CONFIRM_TITLE:0 "‰ÕÈ UÖ¥Ç"
+ EXPAND_ADMINISTRATION_CONFIRM_DESC:0 "$COST|Y$XÇ ¬Ö ÄÉ‰ÕÄ³|¹ ¬À©ÆtÕ ä²LÇXÇ ¨Öü¬|¹ »Å ¬µÂÈ²L®?:\n$EFFECT$"
+ EXPAND_ADMINISTRATION_NOT_ENOUGH_PROGRESS:0 "§R- ‰ÕÈ UÖ¥ÇDÇ ¬À©ÆXÕ2¸tº jÍŒÁ $COST$XÇ ¬Ö ÄÉ‰ÕÄ³¬ DÕ”ÆiÕÈ²ä².§!"
+ EXPAND_ADMINISTRATION_TT:1 "$COST|Y$XÇ ¬Ö ÄÉ‰ÕÄ³|¹ ¬À©ÆtÕ ä²LÇXÇ ¨Öü¬ ÖÝ´:\n$EFFECT$"
+ COUNCIL_OF_TRENT:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ"
+ COUNCIL_POSITION_ALREADY:0 "§Rù²àÂNÇ tÇø» õ¬XÇŒÖÐÅÁ tÇ …Ç¥ÇDÇ .ÁÝÐˆÕµÂÈ²ä².§!"
+ COUNCIL_POSITION_THIS_RULER:0 "§R$NAME$(NÇ)”² tÇø» tÇ õ¬l×xÆÐÅÁ …Ç¥ÇDÇ ÈˆÕ<Çpº, µÑXÎÇ”² ÇàÂXÇ È¹LÇDÇ ¼À¯ Â ÆÅµÂÈ²ä².§!"
+ COUNCIL_POSITION_NO_CARDINAL:0 "§R°Æ¬¹”² ”Í0®Ë¬tÇ ÆÅ<ÇÀ»j¸, ¼¸ÅŒ­tÇ ÆÅµÂÈ²ä².§!"
+ COUNCIL_HARSH_TITLE:0 "¬Ë¬EÌ ÀÉÐÆ"
+ COUNCIL_HARSH_DESC:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ ¬Ë¬EÌ ¸ÓÐÅ Á ¬µÂÈ²L®? ÈÀj¸´Æ µÑXÎÇ|¹ »Å0® ÈL®ÄÉ ù²àÂXÇ ¸ÓDÇ ¼À¯ Â ÆÅµÂÈ²ä². tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ¬ÑÉÈ²ä²:\n$IMPACT$"
+ COUNCIL_CONCILATORY_TITLE:0 "ŒÖ.ÇEÌ ÀÉÐÆ"
+ COUNCIL_CONCILATORY_DESC:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ ŒÖ.ÇEÌ ¸ÓÐÅ Á ¬µÂÈ²L®? ÈÀj¸´Æ µÑXÎÇ|¹ »Å0® ÈL®ÄÉ ù²àÂXÇ ¸ÓDÇ ¼À¯ Â ÆÅµÂÈ²ä². tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ¬ÑÉÈ²ä²:\n$IMPACT$"
+ COUNCIL_CONCESSION_NOT:2 "§Rù²àÂNÇ P­iÖ pÈ…ÈÇ¬ DÅÙ²È²ä²!§!\n2ÆÁÉ P­iÖ pÈ…ÈÇÌ¹tÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ P­iÖ­Ì ¬ÇÐÆDÇ ¬À©ÆtÕ ÈÀj¸´Æ pÈXÎ|¹ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä². tÇ D¾©ÆNÇ ¬ ¸ÓDÇ ÀÉÀÉXÕ”² ”Í0®Ë¬XÇ ÂÐÅ XÇtÕ °¬È)´È²ä²."
+ COUNCIL_CONCESSION_ALREADY:0 "§Rù²àÂNÇ tÇø» ¼³ …Ç¥ÇDÇ .ÁÝÐˆÕµÂÈ²ä²!§!"
+ COUNCIL_CONCESSION_NOT_AFFORD:1 "§RP­iÖ­ÌNÇ tÇ ‘Åô¼HÅDÇ ÇjÕ Ç®tÇ Ž´qÈiÕÈ²ä².§!\n ä²LÇü¬ ¬NÇ tÇ.Çj¸  $COST$¤!XÇ D¾©ÆtÇ í´È²ä²:\n $WHY$"
+ COUNCIL_CONCESSION_CAN_AFFORD:1 "tÇ ‘Åô¼HÅNÇ ä²LÇü¬ ¬NÇ tÇ.Çj¸ $COST$¤!XÇ P­iÖ­Ì ¬ÇÐÆDÇ ŒÁ¨ºiÕÈ²ä²:\n $WHY$"
+ CARDINAL_OF_X_REDUCE:0 "\n$PERC|2%Y$XÇ ”Í0®Ë¬tÇ $WHAT$¸ÓÐÅ ˆÇµÂÈ²ä²: §G-$VAL|2$§!¤"
+ COUNCIL_CONCESSION_C_TITLE:1 "ŒÖ.ÇEÌ DÌÝÐ"
+ COUNCIL_CONCESSION_C_DESC:2 "$NAME$(DÇ)|¹ DÌÝÐXÕ”² ƒ¬NÇ $COST|Y$¤XÇ D¾©ÆtÇ ŒÁ¨º´pº ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$IMPACT$"
+ COUNCIL_NO_COUNCIL:1 "DÅÁÉ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖ¬ ÆÅµÂÈ²ä²"
+ COUNCIL_FINISHED:0 "¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖXÇ  Ñ`¸tÇ k°¬°à¬ P­ŒÖ”² À¼TÖ´ÈÅµÂÈ²ä².  T³ tÇÁÀ ù²àÂXÇ …Ç¥ÇDÇ ¼À¯ Â ÆÅµÂÈ²ä²."
+ IS_COUNCIL_POS_TRIGGER:0 "$NAME|Y$ !ÎNÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POS|Y$…ÇÈ²ä²"
+ IS_NOT_COUNCIL_POS_TRIGGER:0 "$NAME|Y$ !ÎNÇ ¸Ò¬¹ÔÅ¸Ò õ¬XÇŒÖÐÅÁ $POS|Y$tÇ DÅÙ²È²ä²"
+ COUNCIL_NEUTRAL_TRIG:0 "ÉË¹"
+ COUNCIL_CONCILATORY_TRIG:0 "ŒÖ.ÇEÌ"
+ COUNCIL_HARSH_TRIG:0 "¬Ë¬EÌ"
+ CURIA_TREASURY:0 "P­iÖ­Ì ¬ÇÐÆNÇ $VALUE|Y$¤…ÇÈ²ä²"
+ CURIA_TREASURY_DESC:1 "àÂYÅDÇ …ÇÉXÕ0® ÇtÕ, È 8ÁÄ¬XÇ ¬¨Ñ­¹ m­¬ä´NÇ P­iÖ­ÌtÇ ¬ÇÐÆDÇ DÌ¸Æ Â ˆÇÄ³k¸ P­iÖ­ÌÐÅŒ¬ ä¹ì² íÂ|ÇpÈ|¹ ÌÕ®`Õ ƒ¬…ÇÈ²ä². tÇˆ¼ ì²XÇ íÂ|ÇpÈ ”ÍÈXÎ”² $INCREMENT|Y$¤tÇpº, tÇ ÂXÎ”² ¬¨Ñ­¹ m­¬ä´ÐÅ 1ÁÁÉÇ Ä¬5ÎtÇ (ÌÀÉà¬ ˆÇ”²  ÑÀÉ D¾(ÇÐÅ XÇtÕ °¬È)´È²ä²:\n$WHY$"
+ EXPENSE_PAPAL_ACTION:0 "P­iÖ9¸ ÁÀ8Ö‘Ç©Æ"
+ CURIA_CONTRIBUTION_ENTRY:0 "$NAME|Y$XÇ $ESTATE$ ($PERC|2%$): $VAL|Y2$¤\n"
+ AND_FROM_X_MORE_COUNTRIES:0 "ø­¬¹à¬ $NUM|Y$¬XÇ ô¼ä² ‘ÇNÇ m­¬ä´ íÅÜÂ 0®ìÅXÕà¬ ˆÇµÂÈ²ä²..."
+ CURIA_CALL_ECUMENICAL_COUNCIL:0 "$COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ 8ÁÄ¬ õ¬XÇŒÖ|¹ ŒÁÑÉiÕÈ²ä². $TREASURY|Y$¤(NÇ)”² P­iÖ­Ì ¬ÇÐÆ<Çj¸ ä´´Å¬pº, ù²àÂNÇ ä²LÇ P­iÖ pÈ…ÈÇ¬ ´”²p³ DÕ”ÆjÕ §Y$INFLUENCE$§WXÇ ,ÒÇ´ Æ¥Õ%¸DÇ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ CURIA_CALL_ECUMENICAL_COUNCIL_NOT_ENOUGH_MONEY:0 "§R8ÁÄ¬ õ¬XÇŒÖ|¹ ŒÁÑÉXÕ2¸tº $COST|Y$¤(tÇ)¬ DÕ”ÆXÕÀÉÌ¹, Ö¬Ç ù²àÂNÇ $AVAILABLE|Y$¤Ì¹DÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä²§!"
+ CURIA_CALL_ECUMENICAL_COUNCIL_TITLE:0 "8ÁÄ¬ õ¬XÇŒÖ ŒÁÑÉ"
+ CURIA_CALL_ECUMENICAL_COUNCIL_DESC:0 "$COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ 8ÁÄ¬ õ¬XÇŒÖ|¹ ŒÁÑÉXÕÜÂ ¬µÂÈ²L®? $TREASURY|Y$¤(NÇ)”² P­iÖ­Ì ¬ÇÐÆ<Çj¸ ä´´Å¬pº, ù²àÂNÇ ä²LÇ P­iÖ pÈ…ÈÇ¬ ´”²p³ DÕ”ÆjÕ §Y$INFLUENCE$§WXÇ ,ÒÇ´ Æ¥Õ%¸DÇ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ CURIA_BUY_INDULGENCE:1 "$COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ ù²àÂXÇ ÄÈÐÅ ³jÕ tºÄÈŽ´|¹ l­ä¹iÕÈ²ä². $TREASURY|Y$¤(NÇ)”² P­iÖ­Ì ¬ÇÐÆ<Çj¸ ä´´Å¬pº, ù²àÂNÇ $YEARS|Y$D± Ù³HÅ ðÅ¬ P­iÖ­Ì Æ¥Õ%¸ $INFLUENCE|G$(DÇ)|¹ »ÅµÂÈ²ä². P­iÖNÇ tÇ Ç¼ÈxÇ ÈHÅÐÅ ¬¬À`Õ ƒ¬tÇpº, 0µ|·Á P­iÖü¬XÇ ­Ä¬Ä³|¹ ÉÄÉÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ CURIA_BUY_INDULGENCE_EXCOMMUNICATED:0 "ù²àÂNÇ Ó8»´ÈÅ<ÇÀ»j¸, tºÄÈŽ´ l­ä¹ D¾©ÆtÇ $MULTIPLIER|Y$ 0¼j¸ É¬iÕÈ²ä². XÕÀÉÌ¹, tºÄÈŽ´|¹ l­ä¹XÕtº P­iÖNÇ àÂYÅXÇ É…ºÐÅ ³jÕ ô¼ÁÀ<Çj¸ Ó8»DÇ èÍŒÁ`Õ ƒ¬tÇà¬ $YEARS|Y$D± Ù³HÅNÇ ä²ÜÂ Ó8»XÕÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ CURIA_BUY_INDULGENCE_TITLE:0 "tºÄÈŽ´ l­ä¹"
+ CURIA_BUY_INDULGENCE_DESC:0 "$COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ ù²àÂXÇ ÄÈÐÅ ³jÕ tºÄÈŽ´|¹ l­ä¹XÕÜÂ ¬µÂÈ²L®? $TREASURY|Y$¤(NÇ)”² P­iÖ­Ì ¬ÇÐÆ<Çj¸ ä´´Å¬pº, ù²àÂNÇ $YEARS|Y$D± Ù³HÅ ðÅ¬ P­iÖ­Ì Æ¥Õ%¸ $INFLUENCE|G$(DÇ)|¹ »ÅµÂÈ²ä². P­iÖNÇ tÇ Ç¼ÈxÇ ÈHÅÐÅ ¬¬À`Õ ƒ¬tÇpº, 0µ|·Á P­iÖü¬XÇ ­Ä¬Ä³|¹ ÉÄÉÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ CURIA_BUY_INDULGENCE_ALREADY_BOUGHT:0 "§Rù²àÂNÇ tÇø» ù²àÂXÇ ÄÈÐÅ ³jÕ tºÄÈŽ´|¹ l­ä¹tÕµÂÈ²ä², ´Å²µ ®aÅ<Çj¸Ä³ ÀÉ® P­iÖXÇ È¹LÇDÇ ¼À¯ Â ÆÅµÂÈ²ä².§!"
+ CURIA_BUY_INDULGENCE_NOT_ENOUGH_MONEY:0 "§RtºÄÈŽ´|¹ l­ä¹2¸tº $COST|Y$¤(tÇ)¬ DÕ”ÆXÕÀÉÌ¹, Ö¬Ç ù²àÂNÇ $AVAILABLE|Y$¤Ì¹DÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä²§!"
+ EXCOM_TARGET_BOUGHT_INDULGENCE:0 "§RtÕù² m­¬”² ÇàÂXÇ ÄÈÐÅ ³jÕ tºÄÈŽ´|¹ l­ä¹ˆÕÈÅµÂÈ²ä², 0µ|·Á ÀÉ®NÇ Ó8»`Õ Â ÆÅµÂÈ²ä².§!"
+ EXCOMM_INDULG:1 "tÇƒ¬NÇ °Æ¬¹ÐÅ ³jÕ Ó8»DÇ Èp¬`Õ ƒ¬tÇpº, °Æ¬¹NÆ Ù³p­ðÅiÕ ÉxÇ m­¬XÇ Ó8»Ä³ Èp¬`Õ ƒ¬…ÇÈ²ä²!"
+ bought_Indulgence:0 "tºÄÈŽ´ l­ä¹hÕ"
+ APPOINT_CARDINAL_COST_WHY:0 "tÇ ”Í0®Ë¬DÇ „Ç…ºXÕ”² ƒ¬NÇ ä²LÇü¬ ¬NÇ tÇ.Çj¸ $VAL|2Y$¤(DÇ)|¹ ŒÁ¨ºiÕÈ²ä²:\n$WHY$"
+ CARDINAL_BASE_COST:0 "0®ø¼ D¾©Æ: $VAL|+$¤\n"
+ CARDINAL_TOTAL_CARDINAL:0 "P­iÖ­ÌÐÅ Í $NUM$…ºXÇ ”Í0®Ë¬ tÈ¬Ç: $VAL|+$¤\n"
+ CARDINAL_TARGET_CARDINAL:0 "$NAME$ÐÅ $NUM$…ºXÇ ”Í0®Ë¬ tÈ¬Ç: $VAL|+$¤\n"
+ APPOINT_CARDINALTITLE:0 "”Í0®Ë¬ „Ç…º"
+ APPOINT_CARDINALDESC:0 "tÕù² m­¬ÐÅ ”Í0®Ë¬DÇ „Ç…ºiÕÈ²ä², °Æ¬¹ÐÅ ³jÕ ø­ä´XÇ ­Ä¬Ä³|¹ É¬ÜÂ²Ðpº ä²LÇ P­iÖ pÈ…ÈÇ .ÁœÍÐÅ DÕ”ÆjÕ °Æ¬¹XÇ ,ÒÇ´ Æ¥Õ%¸DÇ É¬ÜÂµÐÈ²ä²."
+ APPOINT_CARDINAL_DESCRIPTION:0 "$COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ $RECIPIENT$XÇ Æ ÑÐÅ ”Í0®Ë¬DÇ „Ç…ºiÕÈ²ä². tÇƒ¬NÇ DÅüÈ pÐ Æ­tÇpº ø­ä´NÇ °Æ¬¹ÐÅŒ¬ ¬¬ÀXÇ Z¾DÇ ÀÉŒ¬ .´ ƒ¬…ÇÈ²ä², °Æ¬¹ÐÅ ³jÕ ø­ä´XÇ ­Ä¬Ä³¬ $OPINION|G$Ì¹|Ð É¬iÕÈ²ä².\n\nä²LÇ P­iÖ pÈ…ÈÇ¬ ´”²p³ DÕ”ÆjÕ °Æ¬¹XÇ ,ÒÇ´ Æ¥Õ%¸tÇ $INFLUENCE|Y$Ì¹|Ð É¬)´È²ä²."
+ APPOINT_CARDINAL_NOT_IN_SUBJECTS_DIEING:0 "§R- °Æ¬¹¬ iÕÑ¼XÕ2¸”² m­¬ÐÅ ”Í0®Ë¬DÇ „Ç…º`Õ Â ÆÅµÂÈ²ä².§!"
+ APPOINT_CARDINAL_ONLY_CATHOLICS:0 "§RÄÉÈjÕ àÂYÅxÇ ¬¨Ñ­¹DÇ ÿ»”² m­¬ä´ÐÅŒ¬Ì¹ ”Í0®Ë¬DÇ „Ç…º`Õ Â ˆÇµÂÈ²ä².§!"
+ APPOINT_CARDINAL_TOO_MANY_IN_COUNTRY:0 "§R¬NÇ m­¬ÐÅ $MAX$…º ô¼ä² Î¹NÇ ”Í0®Ë¬DÇ „Ç…º`Õ Â ÆÅµÂÈ²ä².§!"
+ APPOINT_CARDINAL_TOO_MANY_IN_WORLD:0 "§RtÇø» È 8ÁÄ¬ÐÅ ©Í„´jÕ ÂXÇ ”Í0®Ë¬tÇ tÈ¬ÇiÕÈ²ä², ”Í0®Ë¬DÇ jÕ …º T³ „Ç…ºXÕ”² ƒ¬NÇ àÂXÇ Ä¬ÜÂ|¹ ¼NÇ °Æ¬¹XÇ Œ­Ç|¹ ˆ´HÅÈXÕŒ¬ `Õ ƒ¬…ÇÈ²ä².§!"
+ APPOINT_CARDINAL_NO_PROVINCE_AVAILABLE:0 "§R”Í0®Ë¬DÇ „Ç…ºXÕ0®ÐÅ ÈiÕjÕ ÀÉíÅtÇ ÆÅµÂÈ²ä².§!"
+ APPOINT_CARDINAL_NEED_MORE_CASH:0 "§R”Í0®Ë¬DÇ „Ç…ºXÕ”² ƒ¬NÇ $REQUIRED$¤XÇ D¾©ÆtÇ ä´ÀÉÌ¹ ù²àÂNÇ $AVAILABLE$Ì¹DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä².§!"
+ CURIA_APPOINT_CARDINAL:2 "ù²àÂXÇ È³ $COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ ù²àÂXÇ ©Í1ÁÓ É jÕ …ºDÇ ”Í0®Ë¬<Çj¸ „Ç…ºÜÂµÐÈ²ä². tÇƒ¬NÇ °Æ¬¹ÐÅŒ¬ $CORRUPTION|R$XÇ Ž´(ÓÄ³|¹ üÈpº ä²LÇ P­iÖ pÈ…ÈÇ¬ ´”²p³ DÕ”ÆjÕ °Æ¬¹XÇ ,ÒÇ´ Æ¥Õ%¸DÇ ä¹D± $INFLUENCE|Y$Ì¹|Ð É¬ÜÂµÐÈ²ä²."
+ CURIA_APPOINT_CARDINAL_SELF_TITLE:0 "©Í1ÁÓ ”Í0®Ë¬ „Ç…º"
+ CURIA_APPOINT_CARDINAL_SELF_DESC:1 "ù²àÂXÇ È³ $COST|Y$¤(DÇ)|¹ ¬À©ÆtÕ ù²àÂXÇ ©Í1ÁÓ É jÕ …ºDÇ ”Í0®Ë¬<Çj¸ „Ç…ºÜÂ²ÐÜÂ ¬µÂÈ²L®? tÇƒ¬NÇ °Æ¬¹ÐÅŒ¬ $CORRUPTION|R$XÇ Ž´(ÓÄ³|¹ üÈpº ä²LÇ P­iÖ pÈ…ÈÇ¬ ´”²p³ DÕ”ÆjÕ °Æ¬¹XÇ ,ÒÇ´ Æ¥Õ%¸DÇ ä¹D± $INFLUENCE|Y$Ì¹|Ð É¬ÜÂµÐÈ²ä²."
+ CURIA_GOLDEN_BULL_MECHANIC:0 "$MECHANIC|Y$ ÈÕ©Æ"
+ CURIA_GOLDEN_BULL_TRIGGER_DESC:0 "§YDÕ”Æ:§!"
+ CURIA_PICK_GOLDEN_BULL_NOT_ENOUGH_CASH:0 "§RP­iÖ ®xÇYÎÁ|¹ .ÁÝÐXÕ2¸tº P­iÖ­Ì ¬ÇÐÆÐÅ $REQUIRED|Y$¤(tÇ)¬ ˆÇ´Å|Å XÕÀÉÌ¹ Ö¬Ç ù²àÂNÇ $AVAILABLE|Y$¤Ì¹DÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä².§!"
+ CURIA_PICK_GOLDEN_BULL_ALREADY_PICKED:0 "§RjÕ ˆ¼ÐÅ XÕ˜°XÇ P­iÖ ®xÇYÎÁÌ¹ ÈÈ`Õ Â ˆÇµÂÈ²ä².§!"
+ CURIA_CURRENT_GOLDEN_BULL_PICKED:0 "§YtÇ P­iÖ ®xÇYÎÁ¬ P­iÖ­Ì pÈ…ÈÇÐÅ XÇtÕ ÈÈ´ÈÅ<Çpº Ö¬Ç P­iÖtÇ ýÈDÇ LµL®ÀÉ jÖ1Á ÁÀÜÐj¸ .ÇÀÉ)´È²ä².§!"
+ libertas_ecclesiae:0 "¬¹ ¼t¹ÀÐ²Â ÐÅtÐ¸ÜÂDÅtÇ"
+ libertas_ecclesiae_DESC:0 "¬¹ ¼t¹ÀÐ²Â ÐÅtÐ¸ÜÂDÅtÇ”² 8ÁÁÈ Œ­%¸<Çj¸Ž´0ÑXÇ P­ŒÖ Œ­ÇXÇ Ç.Ç|¹ XÇø»XÕ”² ¬P±tÇpº, tÇƒ¬NÇ 118Á0®Ž´0Ñ ÜÂ‘Ç´ ¬Ö ´ÆÙ³DÇ tÇL°´ÅTÆµÂÈ²ä².\nXÕÀÉÌ¹ àÂ1Á j¸È¹ iÖÈXÇ -¯P´¬ÜÂ¬ 1Á  ¼Ü´j¸XÇ UÆŒÈÐÅ IÅDÅ ˆÇä²tº ´Å¨µL®”Æ?"
+ immensa_aeterni_dei:0 "„ÇXº¬À ÐÅLÑt¹È² p³tÇ"
+ immensa_aeterni_dei_DESC:0 "ä²‘ÅjÕ „´|ÅÐÅ ­tÕ P­iÖÐÅŒ¬ pÈ¸ÅtÕÉ Æl­ÈxÇ P­iÖ­Ì ”Í0®Ë¬ ÇÐÆŒÖ|¹ 2ÁË¹tÕ, j¸È¹ P­iÖ­ÌDÇ ¬¸ÓiÕÈ²ä²."
+ cardinals_spread_institution:0 "”Í0®Ë¬XÇ ÜÂ³­ ÈÓ"
+ CURIA_PICK_GOLDEN_BULL_TITLE:0 "P­iÖ ®xÇYÎÁ .ÁÝÐ"
+ POPE_ENTRY:0 "$TITLE$ $NAME$"
+ CURIA_PICK_GOLDEN_BULL_DESC:2 "$NAME|Y$ P­iÖ ®xÇYÎÁ|¹ .ÁÝÐXÕÜÂ ¬µÂÈ²L®?\n\nP­iÖ ®xÇYÎÁ|¹ .ÁÝÐXÕ”² ƒ¬NÇ §YP­iÖ­Ì ¬ÇÐÆ§!XÇ $COST|Y$¤(DÇ)|¹ ŒÁ¨ºXÕpº, Ö¬Ç P­iÖxÇ $POPE|Y$(tÇ)¬ ¬ÀÝ¹`Õ LµL®ÀÉ ¨ºà´ $RELIGION|Y$ m­¬ä´ÐÅŒ¬ ä²LÇXÇ ¨Öü¬|¹ Ž´ìÅiÕÈ²ä²:\n\n$DESCRIPTION$"
+ FORCE_JOIN_HRE_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ Èm­ Èõ¼ ÈÁÇ"
+ REINTEGRATE_INTO_HRE_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ War of Imperial Reconquest"
+ cb_force_join_hre:0 "àÂ1Á j¸È¹ Èm­ UÖ¥Ç"
+ cb_force_join_hre_desc:0 "ø­ä´NÇ àÂ1Á j¸È¹ Èm­XÇ |ÇŽ´¬ ´´Å|Å iÕÈ²ä²!"
+ cb_reintegrate_into_hre:0 "Imperial Reconquest"
+ cb_reintegrate_into_hre_desc:0 "They defected from Imperial Rule and must return to the Empire!"
+ take_capital_force_join_hre_desc:3 "$COUNTRY|Y$ !Îü¬ Ám­XÇ ¨ºà´ $CONTINENT|Y$ ÀÉíÅ É Èm­ÐÅ ¬…Ç`Õ Â ˆÇ”² ÀÉíÅNÇ Èm­XÇ |ÇŽ´¬ .´ ƒ¬…ÇÈ²ä². iÖÈ”² $AUTHORITY|G$XÇ Èm­ Œ­Ç|¹ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ take_capital_reintegrate_into_hre:0 "Take the Capital"
+ take_capital_reintegrate_into_hre_desc:0 "All provinces of our enemy and its subjects that can join the Empire in Europe will become part of the empire."
+ CB_ALLOWED_JOIN_EMPIRE:0 "àÂ1Á j¸È¹ Èm­ÐÅ ÀÉíÅ ”Í¬"
+ JOIN_EMPIRE_TREATY_NAME:0 "àÂ1Á j¸È¹ Èm­ UÖ¥Ç"
+ HRE_LEAVE_STILL_BOUND_BY_TREATY:0 "ù²àÂNÇ $UNTIL|Y$L®ÀÉ àÂ1Á j¸È¹ Èm­ÐÅ ÁtÕˆÇÄ³k¸ XÕ”² ÉÓTÖ pÈ‹ÅDÇ ú¹ÈÅµÂÈ²ä²."
+ PEACE_OPTION_REQUIRES_PROVINCES_TO_JOIN:0 "àÂ1Á j¸È¹ Èm­ÐÅ ”Í¬`Õ Â ˆÇ”² ÀÉíÅtÇ ¨°DÅ ˆÇÀÉ JÅµÂÈ²ä²."
+ PEACE_OPTION_ONLY_EMPEROR:0 "Ö¬ÇXÇ àÂ1Á j¸È¹ iÖÈÌ¹ tÇƒ¬DÇ ”Æl­`Õ Â ˆÇµÂÈ²ä²."
+ ESTATE_CONTROLS:1 "$ESTATE|Y$ Ä¬5ÎtÇ m­ ÑXÇ $PERCENT|G$|¹ µÑÈiÕÈ²ä²."
+ CROWN_CONTROLS:1 "m­ ÑXÇ $PERCENT|G$|¹ ù²àÂtÇ DÆÈˆ× µÑÈiÕÈ²ä²."
+ GRANT_ESTATE_PRIVILEGE:2 "$PRIVILEGE|Y$\n$PRIVILEGE_FLAVOR$\n\n$PRIVILEGE_EFFECTS$"
+ REVOKE_ESTATE_PRIVILEGE:2 "$PRIVILEGE|Y$ ¹ÒŒ­ èÍŒÁ:\n$PRIVILEGE_FLAVOR$\n\n$PRIVILEGE_EFFECTS$tÇ ¹ÒŒ­DÇ èÍŒÁXÕtº Ä¬5ÎXÇ ©Í1ÁÄ³¬ §R$VAL$§!Ì¹|Ð ¬ŒÁiÕÈ²ä²."
+ ESTATE_GAINS_LAND:2 "$ESTATE|Y$ Ä¬5ÎtÇ m­ ÑXÇ $SHARE|Y2%$|¹ »ÅµÂÈ²ä²."
+ ESTATE_LOSES_LAND:2 "$ESTATE|Y$ Ä¬5ÎtÇ m­ ÑXÇ $SHARE|Y2%$|¹ ƒÇµÂÈ²ä²."
+ CANNOT_AFFORD_ESTATE_PRIVILEGE:0 "tÇ ¹ÒŒ­DÇ Ž´ìÅXÕ2¸tº $COST|Y$£adm£ (tÇ)¬ DÕ”ÆiÕÈ²ä²."
+ ESTATE_PRIVILEGE_ALREADY_GRANTED:0 "tÇø» tÇ Ä¬5ÎÐÅŒ¬ $PRIVILEGE|Y$ ¹ÒŒ­DÇ Ž´ìÅˆÕµÂÈ²ä²."
+ CANNOT_REVOKE_PRIVILEGE_LOW_LOYALTY:0 "¹ÒŒ­DÇ èÍŒÁXÕ2¸tº tÇ Ä¬5ÎXÇ ©Í1ÁÄ³¬ Æ¥Õ%¸ô¼ä² ’±DÅ|Å iÕÈ²ä²."
+ CANNOT_REVOKE_PRIVILEGE_NOT_GRANTED:0 "tÇ Ä¬5ÎÐÅŒ¬ ¹ÒŒ­DÇ Ž´ìÅXÕÀÉ JÅXÅµÂÈ²ä²."
+ CONFIRM_GRANT_PRIVILEGE_TITLE:0 "¹ÒŒ­ Ž´ìÅ"
+ CONFIRM_REVOKE_PRIVILEGE_TITLE:0 "¹ÒŒ­ èÍŒÁ"
+ CONFIRM_GRANT_PRIVILEGE_ON_GRANT_EFFECT:0 "tÇƒ¬NÇ ù²àÂÐÅŒ¬ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n$MODIFIERS$"
+ CONFIRM_GRANT_PRIVILEGE_DESC:2 "$PRIVILEGE|Y$ ¹ÒŒ­DÇ $ESTATE|Y$ Ä¬5ÎÐÅŒ¬ Ž´ìÅXÕÜÂ ¬µÂÈ²L®?\n¹ÒŒ­DÇ Ž´ìÅXÕ”² ƒ¬NÇ $COST|0Y$£adm£XÇ D¾©ÆtÇ ŒÁ¨º)´È²ä².\n\n$EFFECT$"
+ CONFIRM_GRANT_PRIVILEGE_DESC_NO_COST:1 "$ESTATE|Y$ Ä¬5ÎÐÅŒ¬ $PRIVILEGE|Y$ ¹ÒŒ­DÇ Ž´ìÅXÕÜÂ ¬µÂÈ²L®?.\n\n$EFFECT$"
+ CONFIRM_REVOKE_PRIVILEGE_DESC:5 "$ESTATE|Y$ Ä¬5ÎXÇ $PRIVILEGE|Y$ ¹ÒŒ­DÇ èÍŒÁXÕÜÂ ¬µÂÈ²L®?\n\n$EFFECT$tÇ ¹ÒŒ­DÇ èÍŒÁXÕtº Ä¬5ÎXÇ ©Í1ÁÄ³¬ §R$VAL$§!Ì¹|Ð ¬ŒÁ`Õ ƒ¬…ÇÈ²ä²."
+ ALL_ESTATE_LAND_SHARE_CHANGES:0 "Ä¬5ÎXÇ m­ Ñ D¾(ÇtÇ À¼Ë¬)´È²ä²:\n$CHANGE$"
+ CONFIRM_CROWN_LAND_INTERACTION:1 "$TITLE$ UÖxÇ"
+ CONFIRM_CROWN_LAND_INTERACTION_DESC:2 "ÁÉ`ÕÀÉÐÅ ä²LÇü¬ ¬NÇ À¼TÖ|¹ üÈÜÂ ¬µÂÈ²L®:\n$EFFECT$"
+ CROWN_INTERACTION_COST:0 "tÇƒ¬NÇ $COST$XÇ D¾©ÆtÇ ä´´Å¬È²ä²"
+ ESTATE_AGENDA_ACTIVE:0 "tÇ XÇÈ¬ jÖ1ÁTÖ´´Å ˆÇµÂÈ²ä²"
+ ESTATE_AGENDA_DENIED:0 "ù²àÂNÇ tÇ XÇÈ|¹ p¬Ž´ˆÕµÂÈ²ä²"
+ ESTATE_AGENDA_WAITING:0 "ù²àÂNÇ tÇ XÇÈ|¹ p¬Ž´XÕp¬˜° Â©Æ`Õ Â ˆÇµÂÈ²ä²"
+ ESTATE_AGENDA_TASK:1 "tÇ XÇÈ”² ä²LÇü¬ ¬NÇ pÈt¬DÇ ©ÍqÈtÕ|Å iÕÈ²ä²:"
+ ESTATE_AGENDA_WHEN_COMPLETED:0 "DÆÌ¸ ÜÂ, ä²LÇü¬ ¬NÇ ¨Öü¬|¹ »ÅµÂÈ²ä²:"
+ ESTATE_AGENDA_ALL_ACCEPT:4 "$AGENDA|Y$ XÇÈ:\n$FLAVOR$\n\n"
+ ESTATE_AGENDA_TASK_ACCEPT:2 "ä²LÇü¬ ¬NÇ pÈt¬tÇ ©ÍqÈ´DÇ Lµ DÆÌ¸(´:\n$CONDITIONS$\n\n"
+ ESTATE_AGENDA_IMMEDIATE:2 "Â©ÆXÕ”² ƒ¬NÇ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\n"
+ ESTATE_AGENDA_TASK_COMPLETED:4 "DÆÌ¸ ÜÂ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\n"
+ ESTATE_AGENDA_FAILING_EFFECT:2 "äÂ(Ó ÜÂ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\n"
+ DECIDE_ON_ESTATE_AGENDA:1 "Ä¬5Î XÇÈ $NAME|Y$ °¬È"
+ HAS_NOT_ESTATE_PRIVILEGE:1 "$PRIVILEGE|Y$ Ä¬5Î ¹ÒŒ­DÇ Ž´ìÅXÕÀÉ JÅLÇ"
+ HAS_ESTATE_PRIVILEGE:1 "$PRIVILEGE|Y$ Ä¬5Î ¹ÒŒ­ Ž´ìÅ(´"
+ FORCE_CONVERTED_BY:0 "$CONVERTED_BY|Y$ !ÎÐÅ XÇtÕ ¬…È ¬”Æ|¹ ¼LÇ"
+ NOT_FORCE_CONVERTED_BY:0 "$CONVERTED_BY|Y$ !ÎÐÅ XÇtÕ ¬…È ¬”Æ|¹ ¼ÀÉ JÅLÇ"
+ CROWN_LAND_SHARE_LESS_THAN:1 "ÁÉ`ÕÀÉ¬ $SHARE|Y$% ø»Ì¹\n"
+ CROWN_LAND_SHARE_AT_LEAST:1 "ÁÉ`ÕÀÉ¬ $SHARE|Y$% tÇÁÀ\n"
+ HAS_ESTATE_LOANS:0 "Ä¬5Î<Çj¸Ž´0ÑXÇ ³œÍtÇ ˆÇµÂÈ²ä²"
+ HAS_NO_ESTATE_LOANS:0 "Ä¬5Î<Çj¸Ž´0ÑXÇ ³œÍtÇ ÆÅµÂÈ²ä²"
+ GRANT_PRIVILEGE:1 "$ESTATE|Y$ Ä¬5ÎÐÅŒ¬ $PRIVILEGE|Y$ ¹ÒŒ­tÇ Ž´ìÅ´pº tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ REVOKE_PRIVILEGE:1 "$ESTATE|Y$ Ä¬5ÎXÇ $PRIVILEGE|Y$ ¹ÒŒ­tÇ èÍŒÁ´pº tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ PROVOKE_REVOLT:0 "¼Ž· .ÇÄ³"
+ PROVOKE_REVOLT_INSTANT:0 "‰ÉÜÂ ¼Ž·DÇ |Ç<Ç²ÐÄ³k¸ ¼Ž·p­DÇ Çù­ÜÂµÐÈ²ä². ¼Ž·p­NÇ ÉÓŒÁô¼ä² $EXTRA$ ¬tÕ8È, Í $SIZE|Y$ ðÅ³…ÇÈ²ä²."
+ PROVOKE_REVOLT_DELAYED:0 "¼Ž·NÇ ÁÀù²ˆ× Æ!ÎXÕ0® ´Å2¸´Æ |ÇtÇÀÉÌ¹, °Æ¬¹”² ‡º ¬ÀÉ ù­è²ÈxÇ pÈXÎ|¹ µÑtÕ ¼Ž·p­tÇ ÀÉ® ¼Ž·DÇ |Ç<Ç²ÐÄ³k¸ Ì¹ä´ Â ˆÇµÂÈ²ä². XÕÀÉÌ¹ tÇƒ¬NÇ ¼Ž·p­XÇ ³ôÅÐÅ T³ Î¹NÇ ¬ÀŒ·ä´tÇ iÕX¹XÕÄ³k¸ Ž´”Í8®ÀÉÄ³ ¨º…¹È²ä²."
+ PROVOKE_REVOLT_ALREADY_IN_REVOLT:0 "tÇø» ¼Ž·tÇ ÄÉ‰Õ É…ÇÈ²ä². °Æ¬¹”² <ºÈ ø­ ¼Ž·DÇ ˜Ì¬¹tÕ|Å iÕÈ²ä²."
+ PROVOKE_REVOLT_NO_RISK:0 "ø­ä´XÇ ³XÇ…º„´ÐÅ ³jÕ ÀÉÀÉ¬ ‹ÅtÕÀÉà¬ ˆÇ<ÇÈ², 8»È”² ‡º ì² HÅÐÅ tÕ°¬.´ ƒ¬…ÇÈ²ä²."
+ PROVOKE_REVOLT_CONFIRM:1 "$NAME$XÇ ¼Ž·DÇ .ÇÄ³XÕÜÂ ¬µÂÈ²L®?\n\n¼Ž·DÇ .ÇÄ³`Õ Ë¬°Æ $BONUS$XÇ Ñ¼%¸tÇ ø­ä´XÇ ³XÇ…º„´ÐÅ T³ iÕX¹tÕ, Í $SIZE|Y$ ðÅ³¬ ¼Ž·DÇ |Ç<ÇµÐÈ²ä²."
+ PROVOKE_REVOLT_AT_WAR:0 "°Æ¬¹”² ÈÁÇ ÉÐÅ ¼Ž· .ÇÄ³|¹ `Õ Â ÆÅµÂÈ²ä²."
+ PROVOKE_REVOLT_SIEGED_OR_OCCUPIED:0 "¼Ž· ÀÉíÅtÇ È9¸´p¬˜° õ¬1Á ÉxÇ Ë¬°Æ ¼Ž·DÇ .ÇÄ³`Õ Â ÆÅµÂÈ²ä²."
+ PROVOKE_REVOLT_BELOW_MIN_PROGRESS:0 "¼Ž·tÇ jÍŒÁ $MIN|0Y%$”² ÄÉ‰Õ´´Å|Å ¼Ž·DÇ .ÇÄ³`Õ Â ˆÇµÂÈ²ä². ÀÉ®L®ÀÉXÇ ÄÉ‰ÕÄ³”² $PROGRESS|0Y%$…ÇÈ²ä²."
+ CARDINAL_MAPICON_INSTANT:0 "$PROVINCE|Y$ ÀÉíÅÐÅ ”Í0®Ë¬tÇ tÈ¬ÇiÕÈ²ä²."
+ CARDINAL_MAPICON_DELAYED:0 "ø­”² $COUNTRY|Y$ $FLAG$ÐÅ ©Í1ÁiÕÈ²ä²."
+ CENTER_OF_REVOLUTION_INSTANT:0 "$PROVINCE|Y$ ÀÉíÅNÇ Ö…ºXÇ ÉìÂÀÉ…ÇÈ²ä²."
+ CENTER_OF_REVOLUTION_DELAYED:0 "Ö…ºXÇ ÉìÂÀÉ”² UÆü¬ üÈP­, Ä³ÈNÆ ¬NÇ ¬ÀŒ·ä´DÇ ³ÁÀ<Çj¸ jÕ EÅ.ÁÈDÇ |Ó(·¬¹”² ÇØÕjÕ ¼Ù³„´Çä´XÇ ø¼p¬ÀÉ…ÇÈ²ä². tÇä´NÇ ÈÀÉ´ÀÉ JÅ”²jÕ xÇü­ ÀÉíÅä´ÐÅ ÇàÂä´XÇ ¬ÀÁÀDÇ ÈÓ`Õ ƒ¬tÇpº ©Í1Á²Âì·´Æ àÂü»ä´DÇ pÈ¥ÇtÕ µÑXÎÇÐÅ Þ¹Á 4»0®|¹ ä´Œ¬ `Õ ƒ¬…ÇÈ²ä²."
+ CENTER_OF_REVOLUTION_DELAYED_REV:0 "Ö…ºXÇ ÉìÂÀÉ”² UÅÈÐÅ Þ¹Á Èù²XÕŒ¬ 4»0®|¹ à´ Ç³jÕ ¬ÀÁÀ¬ä´ü¬ xÇü»XÇ Ù³ÀÉä´XÇ ø¼p¬ÀÉ…ÇÈ²ä². ÜÂ¬tÇ P×t¹tº, tÇä´XÇ 1Áõ¬ô²tÇ xÇü­ ÀÉíÅä´j¸ |Ó8È˜°¬ ƒ¬tÇpº ø­ó¬XÇ üÈü»ä´tÇ íÓÈÐÅ Þ¹Á <Õ I»NÇ C®¼DÇ ä´Ä³k¸ à¬4»ÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ PROVINCE_HAS_REVOLUTION_INSTANT:0 "Ö…ºtÇ $PROVINCE|Y$ ÀÉíÅ<Çj¸ ÈÓ´ÈÅµÂÈ²ä²."
+ PROVINCE_HAS_REVOLUTION_INSTANT_2:0 "\n$OWNER|Y$(tÇ)¬ $ABSOLUTISM|Y$XÇ È³üÈXÇ|¹ ¬ÀÉà¬ ˆÇ0® Lµ8»ÐÅ, tÇ ÀÉíÅNÇ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ¬ÑÉÈ²ä²:\n\n$MODIFIERS$"
+ PROVINCE_HAS_REVOLUTION_DELAYED:1 "Ö…ºXÇ ¬ÀÁÀNÇ ÜÂ¬tÇ ÀÉ¨°ÐÅ 0µ|· Ö…ºXÇ ÉìÂÀÉXÇ xÇü­ ÀÉíÅä´j¸ |Ó8È˜°¬È²ä². Ö…ºtÇ jÕ ÀÉíÅÐÅ DÆÈˆ× ÈÓ´tº, ŒÁ.Ç m­¬XÇ È³üÈXÇ ÂXÎÐÅ 0µ|· ÇXÎÄ³¬ ÁÀ¹ÂiÕÈ²ä²."
+ PROVINCE_HAS_REVOLUTION_DELAYED_REV:1 "Ö…ºXÇ ¬ÀÁÀNÇ ÜÂ¬tÇ ÀÉ¨°ÐÅ 0µ|· Ö…ºXÇ ÉìÂÀÉXÇ xÇü­ ÀÉíÅä´j¸ |Ó8È˜°¬È²ä². ä²x¹ m­¬ä´ÐÅ Ö…ºDÇ ÈÓXÕ”² ƒ¬NÇ °Æ¬¹XÇ Ö…ºXÇ ôÅXÇ|¹ ÁÀ¹ÂÜÂµÐÈ²ä²."
+ PROVINCE_REVOLUTION_SPREAD_INSTANT:0 "Ö…ºNÇ $CENTER|Y$ÐÅÁ $PROVINCE|Y$ ÀÉíÅ<Çj¸ |Ó8È˜°¬à¬ ˆÇµÂÈ²ä². ÀÉ®L®ÀÉ tÇ ÀÉíÅÐÅ $PROGRESS|Y$%¬ ÈÓ´ÈÅµÂÈ²ä²."
+ PROVINCE_REVOLUTIONARY_ZEAL:0 "$COUNTRY|Y$(NÇ)”² Ö…ºDÇ ¼DÅä´Æà¬ Ö¬Ç $COUNTRY|Y$XÇ Ö…ºXÇ ôÅXÇ|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ PROVINCE_REVOLUTION_MODIFIER:0 "Ö…º"
+ LIBERTY_DESIRE_FROM_REVOLUTION:0 "Ö…ºXÇ ¬ÀÁÀtÇ Ám­ ¬¼Ä³XÇ §Y$SPREAD$%§!L®ÀÉ ÈÓ´ÈÅµÂÈ²ä²: $VAL$"
+ MAPMODE_REVOLUTION:0 "Ö…º"
+ MAPMODE_REVOLUTION_DESC:1 "tÇ ÀÉÄ³”² Ö…ºXÇ ÈÓNÆ Æ¥ÕDÇ ô¼ìÅÉÈ²ä².  Ö…º üÈÄ³m­NÇ ô¼|·ÉÀ<Çj¸, ä²x¹ Ö…º m­¬ä´NÇ Ík¸ÉÀ<Çj¸, Ö…º m­¬¬ DÅÌ² m­¬ä´NÇ ø­ä´XÇ ÀÉíÅä´tÇ ¼ÅÈ¹˜° Ö…ºÐÅ Æ¥Õ ¼XÅ”²ÀÉÐÅ 0µ|· x±Ž·ÉÀÐÅÁ h¾¬ÉÀ<Çj¸ jÔÜÂ)´È²ä²."
+ COUNTRY_CAN_EMBRACE_REVOLUTION:0 "°Æ¬¹”² Ö…ºDÇ ¼DÅä´|Ç Â ˆÇµÂÈ²ä²! 4»0®|¹ ä´|·, ÜÂü»ä´tÇìÅ(Aux armes, citoyens)!"
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_IS_REVOLUTIONARY:0 "°Æ¬¹”² tÇø» Ö…ºm­…ÇÈ²ä². UÆÐÅŒ¬ ýÈLÇDÇ!"
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_MIN_DEV:1 "$COUNTRY|Y$(NÇ)”² Ö…ºDÇ EÌ„ÇÀÉ0®ÐÅ”² ±4» ‹ÅiÕÈ²ä². jÍŒÁ $MINDEV|Y$ tÇÁÀXÇ ¬¼Ä³¬ DÕ”ÆXÕÀÉÌ¹ Ö¬Ç °Æ¬¹XÇ ¬¼Ä³”² $DEV|Y$ …ÇÈ²ä²."
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_NO_SPREAD:0 "Ö…ºXÇ ¬ÀÁÀtÇ $COUNTRY|Y$ÐÅ ©Í„´ˆ× ±Œ¬ |ÓÀÉÀÉ JÅDÅÁ Ö…ºDÇ ¼DÅä´|Ç Â ÆÅµÂÈ²ä². Ö…ºDÇ Â©ÆXÕ2¸tº §Y$REQUIRED$%§!¬ DÕ”ÆXÕÀÉÌ¹ Ö¬Ç °Æ¬¹”² §Y$SPREAD$%§!|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_NOT_AGAIN:0 "Ö…ºNÇ °Æ¬¹ ˜°|·ÐÅ J®NÇ ÁÀ˜Ì|¹ ¨°¼¬µÂÈ²ä². °Æ¬¹”² Ö…ºDÇ ä²ÜÂ”² ¼DÅä´tÇÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_CELESTIAL_EMPIRE:0 "Ö…ºNÇ œÌ…ºtÇ XÇø»XÕ”² ¨ºà´ ƒ¬ÐÅ Ç0¼)´È²ä². Ém­XÇ œÌÇ”² Ö…ºDÇ È³j¸ ¼DÅä´tÇÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_PAPAL_STATES:0 "P­iÖ­ÌNÇ È³j¸ Ö…ºDÇ ¼DÅä´tÇÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ COUNTRY_CANNOT_EMBRACE_REVOLUTION_HAS_DISASTER:0 "¬ÇYÅtÇ tÈ¬ÇXÕ”² Ù³HÅÐÅ”² Ö…ºDÇ ¼DÅä´|Ç Â ÆÅµÂÈ²ä²."
+ EMBRACE_REVOL_HAS_EFFE:0 "\ntÇƒ¬NÇ °Æ¬¹ ˜°|·ÐÅ ä²LÇü¬ ¬NÇ Æ¥ÕDÇ ø»iÎÈ²ä²:\n$EFFECT$"
+ COUNTRY_EMBRACE_REVOLUTION_DELAYED:1 "Ö…ºtÇ D¾ù­ÈxÇ …ÈÐ¹DÇ Þ¹tÇjÕä²tº, ä²x¹ ôÅ¬tÇ Ö…ºXÇ ³XÇ…º„´DÇ ÇàÂXÇ ƒ¬<Çj¸ ¼DÅä´tÇà¬ Ö…ºm­tÇ .´ Â ˆÇµÂÈ²ä²."
+ COUNTRY_REVOLUTION_SPREAD_INSTANT:0 "Ö…ºNÇ $COUNTRY|Y$ÐÅ $PROGRESS$ ÈÓ´ÈÅµÂÈ²ä²."
+ COUNTRY_REVOLUTION_SPREAD_DELAYED:0 "Ö…ºXÇ ¬ÀÁÀNÇ Ö…ºXÇ ÉìÂÀÉ xÇü­ ÀÉíÅä´j¸ |Ó8È˜°¬Á, ø­ ÀÉíÅä´tÇ Ö…ºXÇ ³XÇ…º„´DÇ ¼DÅä´tÇŒ¬ XÕà¬ ø­ó¬XÇ ¬ÀŒ·ä´tÇ È³üÈXÇÐÅ Þ¹Á ¼Ž·DÇ |Ç<Ç²ÐÄ³k¸ Ì¹í´È²ä². È³üÈXÇ ÂXÎ¬ ’±NÇ m­¬ |ÇÂk¸, ø­ ÀÉíÅä´ÐÅ ø»XÎ”² Ö…ºXÇ Ž´ÈÈxÇ Æ¥ÕtÇ T³ ìÂtÕÑÉÈ²ä². Ö…ºDÇ …ÈÝÂÜÂÏ|ÅÌ¹ Ö…ºXÇ UÖ°ÀtÇ Hº”Íà¬ ÈÉÁ¬ ŒÖõ¼.´ ƒ¬…ÇÈ²ä²."
+ COUNTRY_REVOLUTION_SPREAD_DELAYED_NO_TARGET:0 "È´ÅÄ³ ÀÉ®NÇ Ö…ºtÇ É¹DÇ ´°8¸µÂÈ²ä². ¬ ÀÉíÅä´ÐÅ Ö…ºXÇ ¬ÀÁÀtÇ ¨°DÅˆÇ”² jÕ, ¬ÀŒ·ä´NÇ È³üÈXÇ|¹ íÓ%¸È<Çj¸ …ÈÝÂÜÂ²Ð”² ƒ¬DÇ ìÅÈˆ× È¯À¯ ƒ¬…ÇÈ²ä². ¶ ä²x¹ m­¬¬ Ö…ºXÇ ³XÇ…º„´DÇ ¼DÅä´tÇ0®j¸ °¬ÈXÕÀÉ JÅ”²ä²tº, ø­ ôÅÈNÇ °¬m­ ¬À|·ÈÉ ƒ¬…ÇÈ²ä²."
+ PROVINCE_REVOLUTION_SPREAD_HINT:0 "ÀÉíÅ üÈü»ä´NÇ tÇÈ °Æ¬¹XÇ È³üÈXÇÈ 1Á¥ÕÐÅ ¼³`Õ ƒ¬…ÇÈ²ä²."
+ PROVINCE_REVOLUTION_SPREAD_HINT_REV:0 "°Æ¬¹ ˜°|· ´°XÇ Ö…ºÐÅ ³jÕ ÀÉÐÆtÇ T³±Æ ¬tÕÑÉÈ²ä²."
+ alert_can_embrace_revolution_instant:0 "§Y°Æ¬¹”² Ö…ºDÇ ¼DÅä´|Ç Â ˆÇµÂÈ²ä²§!"
+ alert_can_embrace_revolution_delayed:0 "Ö…ºXÇ ¬ÀÁÀtÇ °Æ¬¹ ˜°|·ÐÅ ©Í„´ˆ× |ÓLÈà¬ °Æ¬¹XÇ ÜÂü»ä´NÇ UÆü¬ UÅÈÇä´ÐÅ Þ¹Á 4»0®|¹ ä´ ÉD¾¬ ´ÈÅµÂÈ²ä². °Æ¬¹”² tÇÈ Ö…ºDÇ ¼DÅä´|Ç Â ˆÇµÂÈ²ä²!"
+ SPREAD_REVOLUTION_TREATY_NAME:0 "Ö…º ÈÓ"
+ SPREAD_REVOLUTION_TREATY_DESC:0 "Ö…ºXÇ ¬ÀÁÀtÇ $CONTINENT|Y$ÐÅ ˆÇ”² $GIVER_ADJECTIVE|Y$XÇ ¨ºà´ ÀÉíÅä´ÐÅ ÈÓ.´ ƒ¬…ÇÈ²ä². $TAKER|Y$(NÇ)”² ¬ p­üÈ%¸DÇ $POWER|G$ )Å »ÅDÇ ƒ¬tÇpº $GIVER|Y$(NÇ)”² ¬ p­üÈ%¸DÇ $POWER|R$ )Å ƒÇDÇ ƒ¬…ÇÈ²ä²."
+ PEACE_OPTION_ONLY_REV_TARGET:1 "2ÆÁÉ Ö…ºXÇ ø¼à¬¥ÇxÇ, Ö…º üÈÄ³m­Ì¹tÇ tÇ ÉÓTÖ .ÁÝÐÀÉ|¹ ”Æl­`Õ Â ˆÇµÂÈ²ä². 2ÆÁÉ ø­ä´Ì¹tÇ ÄÉÈjÕ Ö…ºDÇ ÈÓ`Õ Â ˆÇµÂÈ²ä²!"
+ PEACE_OPTION_REQUIRES_PROVINCES_TO_SPREAD:0 "T³ tÇÁÀ Ö…ºtÇ ÈÓ.´ Â ˆÇ”² ÀÉíÅtÇ ÆÅµÂÈ²ä²."
+ spread_revolution_to_enemy:0 "$TARGET$ÐÅ Ö…º ÈÓ"
+ spread_revolution_to_us:0 "$TARGET$ !ÎtÇ °Æ¬¹ ÀÉíÅä´ÐÅ Ö…ºDÇ ÈÓiÕÈ²ä²"
+ IS_CENTER_OF_REVOLUTION_TRIGGER:0 "Ö…ºXÇ ÉìÂÀÉ…ÇÈ²ä²"
+ IS_NOT_CENTER_OF_REVOLUTION_TRIGGER:0 "Ö…ºXÇ ÉìÂÀÉ¬ DÅÙ²È²ä²"
+ PROVINCE_HAS_REVOLUTION_TRIGGER:0 "Ö…ºXÇ ¬ÀÁÀDÇ ¬ÑÉÈ²ä²"
+ PROVINCE_HAS_NOT_REVOLUTION_TRIGGER:0 "Ö…ºXÇ ¬ÀÁÀtÇ ÆÅµÂÈ²ä²"
+ COUNTRY_HAS_REVOLUTION_SPREAD_TRIGGER:0 "Ö…ºXÇ ¬ÀÁÀ ÈÓ(ÇtÇ $VAL|Y$% tÇÁÀ …ÇÈ²ä²"
+ COUNTRY_HAS_NOT_REVOLUTION_SPREAD_TRIGGER:0 "Ö…ºXÇ ¬ÀÁÀ ÈÓ(ÇtÇ $VAL|Y$% ø»Ì¹ …ÇÈ²ä²"
+ CAN_EMBRACE_REVOLUTION_TRIGGER:0 "Ö…ºDÇ Â©Æ`Õ Â ˆÇµÂÈ²ä²"
+ CANNOT_EMBRACE_REVOLUTION_TRIGGER:0 "Ö…ºDÇ Â©Æ`Õ Â ÆÅµÂÈ²ä²"
+ PROVINCE_SET_REVOLUTION_EFFECT:1 "Ö…ºXÇ ¬ÀÁÀtÇ $PROVINCE|Y$ ÀÉíÅ<Çj¸ ÈÓ.´ ƒ¬…ÇÈ²ä²."
+ PROVINCE_REMOVE_REVOLUTION_EFFECT:1 "Ö…ºXÇ ¬ÀÁÀtÇ $PROVINCE|Y$ ÀÉíÅÐÅÁ Èp¬.´ ƒ¬…ÇÈ²ä²."
+ SPAWN_CENTER_OF_REVOLUTION_EFFECT:0 "Ö…ºXÇ ÉìÂÀÉ¬ $PROVINCE|Y$ ÀÉíÅÐÅ ˜°ÀÐ ° ƒ¬…ÇÈ²ä²."
+ REMOVE_CENTER_OF_REVOLUTION_EFFECT:0 "Ö…ºXÇ ÉìÂÀÉ¬ $PROVINCE|Y$ ÀÉíÅÐÅÁ Èp¬.´ ƒ¬…ÇÈ²ä²."
+ mechanic_uses_revolutionary_zeal_yes:0 "È³üÈXÇ ³àÂ Ö…ºXÇ ôÅXÇ 0®¥²DÇ ¬À©ÆiÕÈ²ä²"
+ COUNTRY_REVOLUTIONARY_ZEAL_MODIFIER:0 "Ö…ºXÇ ôÅXÇ"
+ REV_ZEAL_CHANGE_TT:0 "ä²LÇü¬ ¬NÇ tÇ.Çj¸ ä¹D± $VAL|+2$ )Å À¼TÖiÕÈ²ä²:\n$WHY$"
+ REVOLUTIONARY_ZEAL_INSTANT:0 "$VAL|YXÇ Ö…ºXÇ ôÅXÇj¸ xÇtÕ °Æ¬¹ ˜°|·”² ä²LÇü¬ ¬NÇ ÖÝÐDÇ »ÅµÂÈ²ä²:\n\n$MODIFIERS$"
+ REVOLUTIONARY_ZEAL_DELAYED:0 "Ö…ºXÇ ôÅXÇ”² °Æ¬¹XÇ ÜÂü»ä´ü¬ Ñ¼¬Àä´tÇ íÓÈÐÅ Þ¹Á øÂ°Æ”²p³ jÍ.ÁDÇ ä²XÕÄ³k¸ ©Æ0®|¹ ´Ë³DÅ ÉÈ²ä². Ö…ºXÇ ôÅXÇ”² Ö…º m­¬¬ È³üÈXÇ ³àÂ ¬À©ÆXÕ”² 0®¥²…ÇÈ²ä².\n\nÖ…ºXÇ ôÅXÇ ÂXÎ¬ §Y100§!|Ç Lµ ä²LÇü¬ ¬NÇ ÖÝÐDÇ ÉÈ²ä²:\n$MODIFIERS$"
+ MAX_REVOLUTIONARY_ZEAL_BASE:0 "§Y$SPREAD$%§!(<Ç)j¸Ž´0Ñ Ö…ºXÇ ÈÓ: $VAL$"
+ MAX_REVOLUTIONARY_ZEAL_INSTANT:0 "°Æ¬¹XÇ Ö¬Ç jÍ³ Ö…ºXÇ ôÅXÇ ÂXÎ”² $MAX|0Y$ …ÇÈ²ä²:\n\n$DETAILS$"
+ MAX_REVOLUTIONARY_ZEAL_DELAYED:0 "jÕ m­¬XÇ Ö…ºXÇ ôÅXÇ ÂXÎ”² ø­ m­¬XÇ ÀÉíÅä´ÐÅ ¼ÅÈ¹˜° Î¹tÇ Ö…ºtÇ ÈÓ´ÈÅ”²¬ÐÅ XÇtÕ ÈjÕ)´È²ä². Ö…ºtÇ Î¹tÇ ÈÓ´ÈÅDÇÂk¸, jÍ³ ÂXÎ¬ ’±µÂÈ²ä²."
+ PEACE_OPTION_ZEAL_GAIN:0 "$TAG|Y$ !ÎNÇ Ö…ºXÇ ôÅXÇ|¹ $ZEAL|G$ »ÅµÂÈ²ä²."
+ PEACE_OPTION_ZEAL_LOSS:0 "$TAG|Y$ !ÎNÇ Ö…ºXÇ ôÅXÇ|¹ $ZEAL|R$ ƒÇµÂÈ²ä²."
+ COUNTRY_ZEAL_GAIN:0 "°Æ¬¹”² Ö…ºXÇ ôÅXÇ|¹ $ZEAL|G$ »ÅµÂÈ²ä²."
+ COUNTRY_ZEAL_LOSS:0 "°Æ¬¹”² Ö…ºXÇ ôÅXÇ|¹ $ZEAL|R$ ƒÇµÂÈ²ä²."
+ USES_ABSOLUTISM_TRIGGER:0 "È³üÈXÇ 0®¥²DÇ ¬À©ÆiÕÈ²ä²"
+ USES_REVOLUTIONARY_ZEAL_TRIGGER:0 "Ö…ºXÇ ôÅXÇ 0®¥²DÇ ¬À©ÆiÕÈ²ä²"
+ COUNTRY_HAS_REVOLUTIONARY_ZEAL_TRIGGER:0 "$VAL|0Y$ tÇÁÀXÇ Ö…ºXÇ ôÅXÇ|¹ ¬ÑÉÈ²ä²"
+ COUNTRY_HAS_NOT_REVOLUTIONARY_ZEAL_TRIGGER:0 "$VAL|0Y$ ø»Ì¹XÇ Ö…ºXÇ ôÅXÇ|¹ ¬ÑÉÈ²ä²"
+ COUNTRY_HAS_MAX_REVOLUTIONARY_ZEAL_TRIGGER:0 "$VAL|0Y$ tÇÁÀXÇ jÍ³ Ö…ºXÇ ôÅXÇ ÂXÎ|¹ ¬ÑÉÈ²ä²"
+ COUNTRY_HAS_NOT_MAX_REVOLUTIONARY_ZEAL_TRIGGER:0 "$VAL|0Y$ ø»Ì¹XÇ jÍ³ Ö…ºXÇ ôÅXÇ ÂXÎ|¹ ¬ÑÉÈ²ä²"
+ IS_REVOLUTIONARY:0 "Ö…ºm­…ÇÈ²ä²"
+ IS_NOT_REVOLUTIONARY:0 "Ö…ºm­tÇ DÅÙ²È²ä²"
+ REVOLUTION_DISMANTLED_SINCE:0 "Ö…ºtÇ tÕ´Ì´ÀÉ $YEARS|Y$ D± tÇÁÀ ÀÉ¬°µÂÈ²ä²"
+ REVOLUTION_NOT_DISMANTLED_SINCE:0 "Ö…ºtÇ ìÅÈˆ× ÄÉ‰Õ ÉtÇp¬˜° tÕ´Ì´ÀÉ $YEARS|Y$ D±tÇ HÅ´µÂÈ²ä²."
+ COUNTRY_CLAIM_REVOLUTION:0 "°Æ¬¹”² Ö…º üÈÄ³m­XÇ ÀÉÇ|¹ üÈ¥Ç`Õ Â ˆÇµÂÈ²ä²!"
+ COUNTRY_CLAIM_REVOLUTION_ZEAL_TOO_LOW:0 "Ö…º üÈÄ³m­XÇ ÀÉÇ|¹ üÈ¥ÇXÕ0®ÐÅ”² °Æ¬¹XÇ Ö…ºXÇ ôÅXÇ¬ ±4» ®°µÂÈ²ä².  $MIN|Y$XÇ Ö…ºXÇ ôÅXÇ¬ DÕ”ÆXÕÀÉÌ¹ Ö¬Ç °Æ¬¹XÇ Ö…ºXÇ ôÅXÇ”² $VAL|R$ …ÇÈ²ä²."
+ COUNTRY_CLAIM_REVOLUTION_TARGET_STRONG:1 "$TARGET|Y$ !ÎNÇ ù²àÂô¼ä² ’±NÇ Ö…ºXÇ ôÅXÇ|¹ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä². ø­ä´NÇ $ZEAL|Y$XÇ Ö…ºXÇ ôÅXÇ|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ COUNTRY_CLAIM_REVOLUTION_TARGET_TOO_SOON:0 "$TARGET|Y$ !ÎtÇ Ö¬Ç Ö…ºDÇ tÇL°à¬ ˆÇµÂÈ²ä². Ì¹‹Å ø­ä´XÇ Ö…ºXÇ ôÅXÇ ÂXÎ¬ $DATE|Y$ ÈL®ÀÉ $LOW|Y$ (DÇ)|¹ ±´Å¬ÀÉ »ºjÕä²tº, °Æ¬¹¬ ø­ä´XÇ Ö…º üÈÄ³m­ ÀÉÇ|¹ üÈ¥Ç`Õ Â ˆÇµÂÈ²ä²."
+ alert_can_claim_revolution_instant:0 "§Y°Æ¬¹”² Ö…º üÈÄ³m­XÇ ÀÉÇ|¹ üÈ¥Ç`Õ Â ˆÇµÂÈ²ä²§!"
+ alert_can_claim_revolution_delayed:0 "Ö¬Ç Ö…ºXÇ ˜×NÇ ‹ÅiÕÈ²ä². °Æ¬¹ ˜°|·¬ ˜°ÁÁ Ö…ºDÇ ¹Â¬¹j¸ tÇL° ÜÂ¬tÇ TÆµÂÈ²ä²!"
+ MODIFIER_CURIA_POWERS_COST:0 "P­iÖ­Ì ¥²%¸ D¾©Æ"
+ MODIFIER_APPOINT_CARDINAL_COST:0 "”Í0®Ë¬ „Ç…º D¾©Æ"
+ MODIFIER_UNREST_CATHOLIC_PROVINCES:0 "¬¨Ñ­¹ ÀÉíÅXÇ ˆ´Ì¹Ä³"
+ MODIFIER_IMPERIAL_REFORM_CATHOLIC_APPROVAL:0 "¬¨Ñ­¹ ÈÄÖä´ÐÅ XÇjÕ Èm­ ¬Ö ¹ÂxÇ"
+ MODIFIER_CURIA_TREASURY_CONTRIBUTION:0 "P­iÖ­Ì ¬ÇÐÆ 0®Ž´®"
+ apostolicae_servitutis:0 "DÅìÓ²Â¨Ñ¬¹´Ì 8Át¹D¾,ÒðÒ²Â"
+ apostolicae_servitutis_DESC:0 "P­ŒÖÐÅ tÈ¬ÇXÕ”² Î¹NÇ ®•¼ä´ÐÅÄ³ ˆ´l­XÕà¬, |ÇŽ´ 1ÁÁÉÇä´NÇ 8ÁÁÈxÇ |ÇÐÅ °ºP´XÕ”² µÂ­ÐÅ `¾8Èä´ÈÅµÂÈ²ä².\n\ntÇƒ¬NÇ 8ÌDÇ Â ÆÅ”² ‰ÕÇtÇpº ®ÀÉÜÂÏ|Å iÕÈ²ä²."
+ dei_gratia_rex:0 "p³tÇ ø­|·ðÒDÅ 	¸²Â"
+ dei_gratia_rex_DESC:2 "XÕ²Ø²Ø®Á ­ù­È<Çj¸ °Æ¬¹XÇ µÑXÎÇ|¹ .ÁÝÐXÕhÁä²”² ƒ¬DÇ ¨ºà´ àÂÇä´tÇ È¹LÇ Á<Çj¸ LÅà¬ ˆÇ<Çpº, 0µ|·Á µÑXÎÇä´NÇ XÕ²Ø²XÇ NÇÍü¬ Ð¹Å<Çj¸ ä²²ÂË¹È²ä²."
+ illius_qui_se_pro_divini:0 "|Ç¬¹°Æ²Â 4Ð 8Á Õj¸ µD¾È²"
+ illius_qui_se_pro_divini_DESC:1 "ø­¬¹²ÂÄ³XÇ Ñ¼¬Àä´NÇ ä²ÜÂ jÕˆ¼ 1ÁÀÉXÇ tÕHÅÐÅÁ <Õ|¹ X×2¸|ÅÌ¹ iÕÈ²ä². íÂÇp­XÇ ÈàÂNÇ ¼Ü´ÜÂ ´´ÀDÅ˜°|Å iÕÈ²ä², ø­ƒ¬tÇ XÕ²Ø²XÇ I·…ÇÈ²ä²!"
+ crusades_after_age_limit:0 "ÜÂ³ ÈjÕ ÄÖÐÅÄ³ íÂÇp­ ¬¥²"
+ praeclara_carissimi:1 "lÐ¬¹²ÂðÒDÅ˜° <ÕÐÅÀÐ²Â"
+ praeclara_carissimi_DESC:1 "‹ÈNÇ 0®Å³P­xÇ<Çj¸Á °Æ¬¹”² ¨º”¼DÇ ô¼ìÅ|ÅÌ¹ iÕÈ²ä². °Æ¬¹”² .Ç³xÇü¬ ä²x¹ ˆ´àÂÇä´DÇ °Æ¬¹ EµÐÅ Í³XÕìÅ ø­ä´tÇ 0®Å³P­ µÑXÎXÇ NÇÖ|¹ ô¼à¬ È¹LÇ ÁÐÅ üÈØ²DÇ ¼DÅä´|Ç Â ˆÇÄ³k¸ tÕ|Å iÕÈ²ä²."
+ CURIA_TREASURY_LESS_THAN:0 "P­iÖ­Ì ¬ÇÐÆtÇ $CASH|Y$¤ ø»Ì¹…ÇÈ²ä²"
+ CURIA_TREASURY_AT_LEAST:0 "P­iÖ­Ì ¬ÇÐÆtÇ $CASH|Y$¤ tÇÁÀ…ÇÈ²ä²"
+ CURIA_YEARLY_TITHE_LESS_THAN:0 "ðÅ¬ P­iÖ­Ì íÂ|ÇpÈ¬ $CASH|Y$¤ ø»Ì¹…ÇÈ²ä²"
+ CURIA_YEARLY_TITHE_AT_LEAST:0 "ðÅ¬ P­iÖ­Ì íÂ|ÇpÈ¬ $CASH|Y$¤ tÇÁÀ…ÇÈ²ä²"
+ CURIA_TREASURY_CONTRIBUTION_LESS_THAN:0 "P­iÖ­Ì ¬ÇÐÆÐÅ ³jÕ 0®Ž´®tÇ $CASH|Y$¤ ø»Ì¹…ÇÈ²ä²"
+ CURIA_TREASURY_CONTRIBUTION_AT_LEAST:0 "P­iÖ­Ì ¬ÇÐÆÐÅ ³jÕ 0®Ž´®tÇ $CASH|Y$¤ tÇÁÀ…ÇÈ²ä²"
+ ADD_CURIA_TREASURY:0 "P­iÖ­Ì ¬ÇÐÆÐÅ $CASH$¤ ”Í¬\n"
+ REDUCE_CURIA_TREASURY:0 "P­iÖ­Ì ¬ÇÐÆÐÅÁ $CASH$¤ ¬ŒÁ\n"
+ INSTITUTION_LACKING_ACTIVE:0 "jÖ1ÁTÖ´ ÜÂ³­DÇ ¨ºP´ Â©ÆXÕÀÉ JÅXÅµÂÈ²ä²."
+ INSTITUTION_NOT_LACKING_ACTIVE:0 "jÖ1ÁTÖ´ ÜÂ³­DÇ ¨ºP´ Â©ÆˆÕµÂÈ²ä²."
+ WARN_NAVIES_OUT_OF_PORT:0 "§Yù²àÂXÇ tÕp­ É |ÇŽ´¬ mÕl­ ¼ÐÅ ˆÇµÂÈ²ä²!§!"
+ appointed_cardinal:0 "„Ç…º´ ”Í0®Ë¬"
+ DEFENDER_OF_FAITH_SAME_FAITH:0 "¬%¸jÕ àÂYÅXÇ Â8ÖÇ"
+ DEFENDER_OF_FAITH:0 "àÂYÅXÇ Â8ÖÇ"
+ IS_DEFENDER_OF_FAITH_OF_TIER:0 "$TIER|Y$ è²Ä¬XÇ àÂYÅXÇ Â8ÖÇ…ÇÈ²ä²."
+ MODIFIER_MANPOWER_IN_TRUE_FAITH_PROVINCES:0 "m­P­ ÀÉíÅXÇ xÇ%¸"
+ DEFENDER_OF_FAITH_EFFECT:1 "$RELIGION|Y$ àÂYÅDÇ ÿ»”² m­¬XÇ Â¬ Í $COUNTRIES|Y$¬ tÇ0® Lµ8»ÐÅ °Æ¬¹”² $TIER|Y$ è²Ä¬…ÇÈ²ä². ä²LÇ è²Ä¬”² àÂYÅDÇ ÿ»”² m­¬XÇ Â¬ $NEXT|Y$¬|Ç Lµ ¬À©Æ¬¥²iÕÈ²ä². Ö¬Ç è²Ä¬XÇ àÂYÅXÇ Â8ÖÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ DEFENDER_OF_FAITH_HIGHEST_EFFECT:0 "$RELIGION|Y$ àÂYÅDÇ ÿ»”² m­¬XÇ Â¬ Í $COUNTRIES|Y$¬ tÇ0® Lµ8»ÐÅ °Æ¬¹”² $TIER|Y$ è²Ä¬…ÇÈ²ä². Ö¬Ç è²Ä¬XÇ àÂYÅXÇ Â8ÖÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$"
+ DEFENDER_OF_FAITH_SHARED_EFFECT:0 "”Í¬È<Çj¸ ¬NÇ …ÈP­|¹ ¬ÄÉ m­¬ä´NÇ ¨ºP´ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ »ÅŒ¬ )´È²ä²:\n$EFFECT$"
+ MACRO_STATES_NUM_PROVINCES:0 "$VAL$/$SIZE$"
+ MACRO_STATES_DEVELOPMENT:0 "$VAL|0$"
+ MACRO_STATES_INCOME:0 "$VAL|+1$¤"
+ MACRO_STATES_PROSPERITY:0 "$VAL|0&$"
+ MACRO_STATES_EDICT_ENACTED_DATE:1 "$DATE|Y$ÐÅ ÈÈ´ÈÅµÂÈ²ä²"
+ MACRO_STATES_EDICT_ENACTED_DATE_LOCKED:0 "$DATE|Y$ÐÅ ÈÈ´ÈÅ<Çpº $ALLOWED|Y$ÐÅ ä²ÜÂ À¼Ë¬`Õ Â ˆÇµÂÈ²ä²."
+ SI_DATE_YEAR:0 "$VAL$y"
+ SI_DATE_MONTH:0 "$VAL$m"
+ SI_DATE_DAY:0 "$VAL$d"
+ SAME_AREA:0 "¬NÇ ÀÉ)¼"
+ SAME_REGION:0 "¬NÇ Œ­íÅ"
+ MACRO_BUILD_INVESTMENT:0 "$AREA|Y$ÐÅ $INVESTMENT|Y$ t¬2Á\n"
+ MACRO_BUILD_INVESTMENT_COST:0 "tÇƒ¬NÇ $COST|Y$¤XÇ D¾©ÆtÇ ä´´Å¬È²ä²\n"
+ MODIFIER_COUNTRY_ADMIN_POWER:0 "ä¹ÔÆ ‰ÕÈ%¸"
+ MODIFIER_COUNTRY_DIPLOMATIC_POWER:0 "ä¹ÔÆ xÆP­%¸"
+ MODIFIER_COUNTRY_MILITARY_POWER:0 "ä¹ÔÆ p­¬À%¸"
+ MODIFIER_YEARLY_PATRIARCH_AUTHORITY:0 "ä¹D± ³üÈP­ Œ­Ç"
+ YEARLY_PATRIARCH_AUTHORITY:0 "ä¹D± ³üÈP­ Œ­Ç:"
+ YEARLY_PRODUCTION_INCOME_FROM_PROVINCES:1 "ä²LÇXÇ ÝÀ°À<Çj¸Ž´0Ñ $FACTOR|+$¤ ÖÝ´:\n$TRIGGER_DESC$"
+ MODIFIER_YEARLY_KARMA_DECAY:0 "ä¹D± tÎt¹È¹ À¼Ù³"
+ LESS_THAN_MISSIONARY_STRENGTH:0 ".ÁP­%¸tÇ $STRENGTH$ ø»Ì¹"
+ MORE_THAN_MISSIONARY_STRENGTH:0 ".ÁP­%¸tÇ $STRENGTH$ Íü¬"
+ EMPIRE_JOIN_EMPEROR:0 "ù²àÂNÇ iÖÈ…ÇÈ²ä²"
+ EMPIRE_JOIN_ALREADY_MEMBER:0 "ù²àÂNÇ tÇø» àÂ1Á j¸È¹ Èm­XÇ |ÇÐÆ…ÇÈ²ä²"
+ EMPIRE_JOIN_CANNOT_CONNECT_CAPITAL:0 "£no£ ù²àÂXÇ ÂÄ³”² àÂ1Á j¸È¹ Èm­ü¬ !Çj¸j¸ ðÅ°¬.´ Â ÆÅµÂÈ²ä²\n"
+ JOIN_EMPIRE:0 "àÂ1Á j¸È¹ Èm­ ¬…Ç"
+ CANNOT_JOIN_EMPIRE:0 "ù²àÂNÇ àÂ1Á j¸È¹ Èm­ÐÅ ¬…Ç `Õ Â ÆÅµÂÈ²ä²:\n$REASONS$"
+ JOIN_EMPIRE_CONFIRM_DESC:0 "àÂ1Á j¸È¹ Èm­ÐÅ ¬…ÇXÕÜÂ ¬µÂÈ²L®?"
+ REQUIRED_REFORM_NOT_PASSED:0 "tÇ ¬ÖDÇ ÇtÕÁ”² $REQUIRED|Y$ (DÇ)|¹ <ºÈ µÑü¬ÜÂÏ|Å iÕÈ²ä²."
+ DISABLED_BY_REFORM:0 "ù²àÂNÇ tÇø» $DISABLED_BY|Y$ (DÇ)|¹ µÑü¬ÜÂ0ÏµÂÈ²ä², 0µ|·Á tÇ ¬ÖNÇ D¾jÖ1ÁTÖ´ÈÅµÂÈ²ä²."
+ ESTATE_AGENDA_EXPIRY:0 "tÇ XÇÈ”² $DATE|Y$ÐÅ ÇÙ³<Çj¸ p¬Ž´)´È²ä²."
+ HAS_ACTIVE_IMPERIAL_INCIDENT:0 "jÖ1ÁTÖ´ $INCIDENT|Y$ Èm­ ¬Àt¬DÇ ¬ÑÉÈ²ä²"
+ HAS_NOT_ACTIVE_IMPERIAL_INCIDENT:0 "jÖ1ÁTÖ´ $INCIDENT|Y$ Èm­ ¬Àt¬tÇ ÆÅµÂÈ²ä²"
+ HAS_ANY_ACTIVE_IMPERIAL_INCIDENT:0 "…ÈX¹ÐÅ ÁÀ­ÆÅtÇ jÖ1ÁTÖ´ Èm­ ¬Àt¬tÇ tÈ¬ÇiÕÈ²ä²"
+ HAS_NOT_ANY_ACTIVE_IMPERIAL_INCIDENT:0 "…ÈX¹ÐÅ ÁÀ­ÆÅtÇ jÖ1ÁTÖ´ Èm­ ¬Àt¬tÇ ÆÅµÂÈ²ä²"
+ END_IMPERIAL_INCIDENT:0 "Ö¬ÇXÇ Èm­ ¬Àt¬tÇ …ÈÌ¸.´ ƒ¬…ÇÈ²ä²"
+ SET_IMPERIAL_INCIDENT:0 "$INCIDENT|Y$ Èm­ ¬Àt¬tÇ jÖ1ÁTÖ.´ ƒ¬…ÇÈ²ä²"
+ INCIDENT_ACTIVE:1 "$INCIDENT|Y$"
+ IMPERIAL_INCIDENT_TITLE_TOOLTIP:1 "$INCIDENT|Y$ ¬Àt¬tÇ Ö¬Ç jÖ1ÁTÖ ´ÈÅµÂÈ²ä². tÇ ¬Àt¬ÐÅ ³jÕ iÖÈXÇ .ÁÝÐÐÅ 0µ|· ø­ ¨Öü¬¬ $EXPIRY|Y$ ÐÅ ˜°ÀÐ ° ƒ¬…ÇÈ²ä²."
+ MODIFIER_FREE_CITY_IMPERIAL_AUTHORITY:0 "Ç.ÇÜÂÐÅÁ »Å”² Èm­ Œ­Ç"
+ MODIFIER_IMPERIAL_MERCENARY_COST:1 "àÂ1Áj¸È¹Èm­ ©ÆÑ¼ ¨ºÑÉ D¾©Æ"
+ MODIFIER_MAX_FREE_CITIES:0 "Ç.ÇÜÂXÇ Â"
+ MODIFIER_MAX_ELECTORS:0 ".ÁÈÄÖXÇ Â"
+ MODIFIER_MANPOWER_AGAINST_IMPERIAL_ENEMIES:1 "Èm­XÇ Èü¬ Þ¹Á”² xÇ%¸"
+ MODIFIER_MONARCH_LIFESPAN:0 "ÉÓà­ p­üÈ Â…º"
+ IMPERIAL_INCIDENT_STARTED_TITLE:0 "Èm­ ¬Àt¬tÇ ÜÂ‘Ç´ÈÅµÂÈ²ä²"
+ IMPERIAL_INCIDENT_STARTED_SETUP:0 "Èm­ÐÅÁ ¬Àt¬tÇ ÜÂ‘Ç.´ Lµ"
+ IMPERIAL_INCIDENT_STARTED_HEADER:0 "$MESSENGER$"
+ IMPERIAL_INCIDENT_STARTED_1:0 "Èm­XÇ ¬Àt¬tÇ ÜÂ‘Ç´ÈÅµÂÈ²ä²"
+ IMPERIAL_INCIDENT_STARTED_2:0 "$TEXT$"
+ IMPERIAL_INCIDENT_STARTED_BTN1:0 "LÅXÅä²."
+ JOIN_ONGOING_WARS_OFFENSIVE:0 "õ¬©¬"
+ JOIN_ONGOING_WARS_DEFENSIVE:0 ")¼´Å"
+ JOIN_ONGOING_WARS:0 "$TARGET|Y$XÇ ¨ºà´ ÄÉ‰ÕÉxÇ $TYPE$ ÈÁÇÐÅ 8ÌìÅ`Õ ƒ¬…ÇÈ²ä²"
+ HRE_REVOKE_REFORM_NO_REFORMS:0 "°Æ¬¹”² tÇ ¬ÖHÅDÇ µÑü¬ÜÂ²ÐÀÉ »ºˆÕµÂÈ²ä²."
+ HRE_REVOKE_REFORM_ALREADY_DONE:0 "iÖÈ”² |ÇÝÀ Ù³HÅ XÕ˜°XÇ ¬ÖDÇ èÍŒÁ`Õ Â ˆÇµÂÈ²ä²."
+ HRE_REVOKE_REFORM_NO_AUTHORITY:0 "ù²àÂNÇ tÇ ¬ÖDÇ èÍŒÁXÕ”²p³ È´ÅÄ³ $COST|Y$ Èm­ Œ­Ç¬ DÕ”ÆiÕÈ²ä²."
+ HRE_REVOKE_DESC:0 "tÇ Èm­ ¬ÖDÇ èÍŒÁXÕ”² ƒ¬NÇ ù²àÂÐÅŒ¬ $COST|Y$ Èm­ Œ­Ç¬ DÕ”Æ`Õ ƒ¬…ÇÈ²ä². $EFFECTS$"
+ HRE_REVOKE_EFFECTS:0 "tÇƒ¬NÇ ù²àÂÐÅŒ¬ DÅ˜·NÆ ¬NÇ ¨Öü¬|¹ $TIME|Y$:L®ÀÉ É ƒ¬…ÇÈ²ä² \n$EFFECTS$"
+ HRE_REVOKE_CONFIRM_TITLE:0 "Èm­ ¬Ö èÍŒÁ"
+ HRE_REVOKE_CONFIRM_DESC:0 "ÈÐ¹j¸ ¬ÖDÇ  ÌŒÖXÕÜÂ ¬µÂÈ²L® $REFORM|Y$?"
+ HRE_REVOKE_CANNOT:0 "ù²àÂNÇ tÇ ¬ÖDÇ èÍŒÁ `Õ Â ÆÅµÂÈ²ä²:\n$REASON$"
+ HRE_REVOKE_REFORM:0 "¬Ö èÍŒÁ"
+ emperor_revoked_reform:0 "Èm­ ¬Ö èÍŒÁ"
+ ALL_ESTATES:0 "¨ºà´ Ä¬5Îä´"
+ ESTATE_LOYALTY_SHORT_GAIN:0 "$ESTATE|Y$ (NÇ)”² $LOYALTY|+G$ XÇ ©Í1ÁÄ³|¹ »ÅDÇ ƒ¬…ÇÈ²ä².\n"
+ ESTATE_LOYALTY_SHORT_LOSS:0 "$ESTATE|Y$ Ä¬5ÎNÇ $LOYALTY|-R$XÇ ©Í1ÁÄ³|¹ ƒÇDÇ ƒ¬…ÇÈ²ä²..\n"
+ ESTATE_INFLUENCE_SHORT_GAIN:0 "$ESTATE|Y$ (NÇ)”² $INFLUENCE|Y$XÇ Æ¥Õ%¸DÇ $DATE|Y$L®ÀÉ »ÅDÇ ƒ¬…ÇÈ²ä².\n"
+ ESTATE_INFLUENCE_SHORT_LOSS:0 "$ESTATE|Y$ Ä¬5ÎNÇ $INFLUENCE|Y$XÇ Æ¥Õ%¸DÇ $DATE|Y$L®ÀÉ ƒÇDÇ ƒ¬…ÇÈ²ä².\n"
+ LESS_THAN_SUPPLY_LIMIT:0 "$SUPPLY|Y$ ø»Ì¹XÇ ô¼	® jÕÄ¬"
+ MORE_THAN_SUPPLY_LIMIT:0 "$SUPPLY|Y$ Íü¬XÇ ô¼	® jÕÄ¬"
+ SEPERATOR_TOOLTIP:0 ""
+ ESTATES_SUMMON_THE_DIET_DESC:0 "§YXÇÈ§!|¹ ÈXÕ0® ÇtÕ XÇŒÖ|¹ ŒÁÑÉ`Õ ƒ¬…ÇÈ²ä²!"
+ estate_privileges_and_agendas_events.3.name:0 "XÇŒÖ XÇÈ"
+ estate_privileges_and_agendas_events.3.desc:1 "[Root.GetName]XÇ Ä¬5Îä´NÇ XÇŒÖÐÅ XÇÈä´DÇ ÈHÅˆÕµÂÈ²ä². tÇä´ É jÕ Ä¬5ÎÐÅ 8ÖXÇ|¹  ¼xÔ”² ƒ¬NÇ ¥Ç0®È<Çj¸ pÐ ÖÝÐDÇ ¬8È,Æ Â ˆÇµÂÈ²ä².\n\n[Root.GetCachedAgendasFlavorText]"
+ estate_privileges_and_agendas_events.3.a:1 "[Root.GetBrahminsName] XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.b:1 "[Root.GetClergyName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.c:1 "[Root.GetMarathasName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.d:1 "[Root.GetNobilityName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.e:1 "[Root.GetBurghersName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.f:1 "[Root.GetVaishyasName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.g:1 "[Root.GetCossacksName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.h:1 "[Root.GetTribesName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.i:1 "[Root.GetDhimmiName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.j:1 "[Root.GetJainsName]XÇ ÈHÅ"
+ estate_privileges_and_agendas_events.3.k:1 "[Root.GetRajputsName]XÇ ÈHÅ"
+ LEADER_ENTRY_NAME:0 "$NAME|Y$"
+ LEADER_ACTIVATION:0 "$DATE|Y$ÐÅ à¬©Æ(´. (˜°tÇ: $AGE|Y$)\n"
+ GOTO_PROVINCE:0 "$PROV|Y$ ÀÉíÅ<Çj¸ tÇÙ³."
+ CORE_ALL:0 "¨ºP´ TÏ´Å ÝÀ1Á"
+ CORE_ALL_DESC:0 "$NUM|Y$¬XÇ Õj¸H¾²ÂÐÅ TÏ´Å|¹ ÝÀ1ÁXÕ”² ƒ¬NÇ $COST|Y0$ £adm£XÇ D¾©ÆtÇ DÕ”Æ`Õ ƒ¬…ÇÈ²ä²."
+ CORE_ALL_PROVINCES_LIST:0 "$PROVINCES$"
+ CORE_ALL_TOO_EXPENSIVE:0 "TÏ´Å|¹ ÝÀ1Á`Õ D¾©ÆtÇ Ž´qÈiÕÈ²ä²!"
+ CORE_ALL_PROVINCES_LIST_ENTRY:0 "$PROVINCE|Y$: $COST|Y0$ £adm£\n"
+ REFORM_DESIRE_CONV_SPEED:0 "¬Ö ôÅÝ¹: $MOD|+G%$\n"
+ ESTATE_PRIVILEGE_ON_GRANTED:0 "¹ÒŒ­ Ž´ìÅ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n"
+ ESTATE_PRIVILEGE_ON_REVOKED:0 "¹ÒŒ­ èÍŒÁ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n"
+ ESTATE_PRIVILEGE_MECHANICS_LIST:0 "ä²LÇ 0®¥²DÇ ¬À©Æ`Õ Â ˆÇµÂÈ²ä²:\n$MECHANICS$\n"
+ ESTATE_PRIVILEGE_MECHANICS_ENTRY:0 "$MECHANIC|Y$\n"
+ enables_cossack_regiments:0 "tÎÇlÐ ðÅ³"
+ enables_rajput_regiments:0 "|·ÀÉxÔ¸Ò ðÅ³"
+ exempt_from_seize_land:0 " ÑÀÉ °ºÂ tºÈ"
+ ESTATE_PRIVILEGE_BENEFITS:0 "tÇ ¹ÒŒ­NÇ ä²LÇü¬ ¬NÇ ÖÝÐDÇ ÉÈ²ä²:\n$MODIFIERS$\n\n"
+ ESTATE_PRIVILEGE_PENALTIES:0 "tÇ ¹ÒŒ­NÇ ä²LÇü¬ ¬NÇ ÖÝÐDÇ ¬ÑÉÈ²ä²:\n$MODIFIERS$\n\n"
+ PROVINCE_PRODUCE_PLU:0 "$PROVINCE$ ¬ $GOODS$ <»ˆÔDÇ ÝÀ°ÀÉ…ÇÈ²ä²"
+ PROVINCE_DONT_PRODUCE_PLU:0 "$PROVINCE$ ¬ $GOODS$ <»ˆÔDÇ ÝÀ°ÀXÕÀÉ JÅµÂÈ²ä²"
+ EST_INWARD_PERFECTION_OFFENSIVE_WAR:0 "´°È DÆ°¬1ÁDÇ ¬ÄÉDÌ UÖ¥ÇüÈXÇ ÈÁÇ:"
+ MODIFIER_STABILITY_COST_TO_DECLAR_WAR:0 ".ÁÈ ìÓà¬ ÜÂ HÅÈÄ³ XÕ‹·"
+ MODIFIER_DISENGAGEMENT_CHANCE:0 "hÕ.Á ôÑ¬ UÖ`¹"
+ ESTATE_LOYALTY_VS_INFLUENCE_GREATER_THAN:0 "§Y$ESTATE$§W Ä¬5ÎXÇ ©Í1ÁÄ³”² Æ¥Õ%¸ ÂXÎNÆ Ù³|ÇXÕp¬˜° T³ ’±µÂÈ²ä²."
+ ESTATE_LOYALTY_VS_INFLUENCE_NOT_GREATER_THAN:0 "§Y$ESTATE$§W Ä¬5ÎXÇ ©Í1ÁÄ³”² Æ¥Õ%¸ ÂXÎô¼ä² ®°µÂÈ²ä²."
+ ALERT_UNCONTESTED_CLAIMS_ENTRY:0 "$PROV$: $EXPIRES|Y$\n"
+ LEADER_CURRENTLY_DRILLING:0 "ÀÉ×­NÇ Ö¬Ç 0¼XÎ´ Ž´³|¹ ÈÖ(¸ É…ÇÈ²ä²."
+ OPINION_YEARLY_CHANGE_SUM:0 "\nðÅ¬ ­Ä¬Ä³ Í À¼TÖ: $CHANGE|+1$"
+ alert_piety_interaction_instant:0 "4»¬Â¼¹ àÂYÅìÂ ÁÀ8Ö‘Ç©ÆDÇ ¬À©Æ`Õ Â ˆÇµÂÈ²ä²"
+ alert_piety_interaction_delayed:0 ""
+ CROWN_LAND_NO_EFFECT:0 "¨Öü¬ ÆÅLÇ"
+ CROWN_LAND_NO_EFFECT_TOOLTIP:0 "Ö¬ÇXÇ ÁÉ`ÕÀÉ D¾ÉNÇ DÅ4»ð· ¨Öü¬Ä³ üÈÀÉ JÅµÂÈ²ä²."
+ CROWN_LAND_LEVEL_DESC:3 "ÁÉ`ÕÀÉ”² m­¬ÐÅ XÇtÕ ÁÉÈ ä²²Â2¸ÀÉ”² EµXÇ D¾É…ÇÈ²ä². §Y50%§!tÇÁÀXÇ EµDÇ ÁÉ`ÕÀÉj¸ ¬ÀÉà¬ ˆÇä²tº ÀÉ0¼ÐÅ äÎä²Ž· tÇuÇDÇ ÉÈ²ä². §Y30%§! ø»Ì¹XÇ EµDÇ ÁÉ`ÕÀÉj¸ ¬ÀÉà¬ ˆÇä²tº °Æ¬¹XÇ Œ­ÇÐÅ ˆ´tÇuÇDÇ ÉÈ²ä².\n\nÁÉ`ÕÀÉ”² DÅ˜·XÇ )¼•¼<Çj¸ ÖÝ´`Õ Â ˆÇµÂÈ²ä²:\n  Ä¬5Î<Çj¸Ž´0Ñ §Y ÑÀÉ °ºÂ§!.\n  ÀÉíÅ §Y¬¼§!.\n  Ä¬5Î Æ¥Õ%¸tÇ §Y60%§! ø»Ì¹xÇ ÁÀÜÐÐÅÁ §YÆ Ñ Èõ¼§!.\n  ’±NÇ È³üÈXÇ ÁÀÜÐj¸ §YÆ Ñ Èõ¼§!."
+ DELEGATE_PATRIARCH_TOOLTIP:0 "§Y³üÈP­ „Ç…º§!"
+ DELEGATE_HOLYORDER_TOOLTIP:0 "§Y$ORDER$ ÂÄ³ŒÖ „Ç…º§!"
+ DELEGATE_PASHA_ALREADY_HAS:0 "§R$STATE|Y$ üÈ”² tÇø» „Ç…º´ ÓäÀ¬ ˆÇµÂÈ²ä².!§!\n"
+ STATE_PROSPERITY_TOOLTIP:0 "$STATE|Y$(NÇ)”² $PROSPERITY|Y$XÇ ˆ¼ÆÄ³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ IS_A_STATE:0 "$STATE|Y$(NÇ)”² §YüÈ§!…ÇÈ²ä²."
+ IS_A_TRADE_COMPANY:0 "$STATE|Y$(NÇ)”² §Y4»íÅ ŒÖ¬À§!XÇ |ÇŽ´…ÇÈ²ä²."
+ IS_A_TERRITORY:0 "$STATE|Y$(NÇ)”² §YÉüÈ…ÇÈ²ä²§!."
+ OWNED_PROVINCES_OF_STATE:1 "tÇ ÀÉ)¼XÇ Í $TOTAL|Y$¬XÇ ÀÉíÅ É ù²àÂNÇ $OWNED|Y$ ¬|¹ ŒÁ.ÇXÕà¬ ˆÇµÂÈ²ä²."
+ OWNED_DEV_IN_STATE:0 "ù²àÂNÇ $STATE|Y$ÐÅÁ $DEVELOPMENT|Y0$XÇ ¬¼Ä³|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ STATE_INCOME:0 "$STATE|Y$ Â…Ç: $INCOME|G$\n"
+ STATE_MAINTENANCE:0 "$STATE|Y$ .ÇÀÉD¾: $MAINTENANCE|R$"
+ BENEFIT_FOR_PROVINCE:0 "àÂ1Á j¸È¹ Èm­ ÀÉíÅNÇ ä²LÇDÇ »ÅµÂÈ²ä²:\n$MODIFIER$"
+ emperor_per_prince_modifier:0 "Èm­ ´° ÈÄÖm­ ù²"
+ gemeinerpfennig_emperor_per_prince:0 "ÈÄÖm­ä´ÐÅÁ »Å”² Èm­ |Ç¼8Á"
+ hre_event.7.t:0 "[From.GetCapitalName]XÇ Æl­ XÇŒÖ"
+ hre_event.7.d:0 "2Æ˜² tÇÄÖj¸, àÂ1Á j¸È¹ Èm­ XÇŒÖ”² ìÅ0® È0® „ÇÜÂj¸ .Æ¨¬ä²È²ÀÉ JÅà¬ [From.GetCapitalName] Ä³ÜÂÐÅÁ Ä¬ÁtÕÁ ¬ŒÖ.´ ƒ¬…ÇÈ²ä². tÇ pÈXÎ¬ Èm­XÇ °¬ÁDÇ ’±tÇà¬ iÖÈNÆ ÈÄÖä´ ¬ÀtÇXÇ ­Ä¬|¹ õ¬ÝÂTÖXÕ”²p³ Ä³ÀÆtÇ .´ ƒ¬tÇ „´…ºiÕÈ²ä². ä²x¹ jÕ¸Ó<Çj¸”², [From.GetCapitalName] Ä³ÜÂ¬ Èm­ÐÅ tÕ|¹ |°XÎ2¸”² m­¬ä´XÇ üÈ”Æ ©ºjÔ<»tÇ ´Ä³k¸ Ì¹ä´ ƒ¬…ÇÈ²ä²..."
+ hre_event.7.a:0 "HÅÈXÕà¬ UÖäÂjÕ ¬ÀŒÖ|¹ ÇXÕìÅ."
+ PERPETUAL_DIET_ESTABLISHED:0 "XÇŒÖ¬ ŒÁÑÉ.´ Â ˆÇ”² ÁÀ2Á ¥ÇŒÁ¬ 2ÁXÎ.´ ƒ¬tÇä²."
+ perpetual_diet:0 "Æl­ XÇŒÖ"
+ desc_perpetual_diet:0 "àÂ1Á j¸È¹ Èm­XÇ XÇŒÖ”² [Root.GetCapitalName]ÐÅÁ Æl­ˆ× ¬ŒÖ)´È²ä². Èm­XÇ Ä¬5Îä´XÇ ¬ÀÈä´ü¬ Î¹NÇ xÆm­XÇ à¬Ç xÇ¬Àä´DÇ .ÇXÎXÕpº, ìÅ0®Á ´°2¸ÄÉ °¬ÈNÇ l­Á%¸tÇ ˆÇ<Çpº iÖÈÐÅ XÇtÕ ¼Ü´ÜÂ äÂ‰Õ´´Å|Å iÕÈ²ä².\n\n§YÌ¹‹Å Ä³ÜÂ¬ Èm­XÇ Èä´ÐÅŒ¬ È9¸ù²jÕä²tº, iÖÈtÇ Œ­ÇÐÅ ³jÕ ìÂ¬jÕ ÀÐ©¬DÇ É ƒ¬…ÇÈ²ä².§!\n"
+ diet_occupied:0 "Èm­ XÇŒÖ¬ È9¸ù²XÕä²"
+ desc_diet_occupied:0 "Èm­ XÇŒÖ”² T³ tÇÁÀ iÖÈXÇ µÑÈ XÕÐÅ ˆÇÀÉJÅà¬ °Æ¬¹XÇ Èä´XÇ ÁÐÅ ¨µ´ÅLÈµÂÈ²ä²!"
+ STABHIT_FROM_INTERNAL_STRIFE:0 "Æl­ Ž·¸Ò ÉÓTÖ9¸tÇ ÈÈ´ÈÅµÂÈ²ä²"
+ geteilte_macht_emperor_per_prince:0 "ÈÄÖm­ä´j¸Ž´0ÑXÇ „´°À´ Œ­%¸"
+ geteilte_macht_elector_per_prince:0 "ÈÄÖm­ä´j¸Ž´0ÑXÇ „´°À´ Œ­%¸"
+ geteilte_macht_province:0 "„´°À´ Œ­%¸"
+ BENEFIT_FOR_ELECTOR:0 ".ÁÈÄÖä´NÇ »Å”²ä²:\n$MODIFIER$"
+ IMPERIALREALMWARTITLE:0 "Èm­ÈÁÇDÇ .ÁìÓ"
+ IMPERIALREALMWARDESC:0 "$COUNTRY|Y$ !ÎDÇ ÁÀ³j¸ Èm­ ÈÁÇDÇ .ÁìÓXÕÜÂ ¬µÂÈ²L®? tÇƒ¬NÇ $COST|Y$XÇ Èm­ Œ­Ç|¹ ŒÁ¨ºXÕÀÉÌ¹ $COUNTRY|Y$ !ÎÐÅ ³jÕ ÈÁÇ …º„´DÇ °Æ¬¹ÐÅŒ¬ 5D± Ù³HÅ Èõ¬iÕÈ²ä². tÇ ÈÁÇ …º„´NÇ °Æ¬¹¬ Èm­ È´ÌXÇ p­¬À%¸DÇ ¨ºDÇ Â ˆÇÄ³k¸ tÕÉÈ²ä²."
+ REICHSKRIEG_WAR_NAME:0 "$ORDER$XÇ $SECOND_NAME$ÐÅ ³jÕ $FIRST$ Èm­ ÈÁÇ"
+ ALEADY_HAS_IMPERIAL_REALM_WAR_CB:0 "§R°Æ¬¹”² tÇø» $TARGET|Y$! !ÎÐÅ ³tÕ Èm­ ÈÁÇDÇ .ÁìÓˆÕµÂÈ²ä²§!"
+ HINT_ZONEOFCONTROL_TITLE:0 "µÑÈ l­íÅ"
+ HINT_ZONEOFCONTROL_TEXT:0 "jÖ1ÁTÖ´ ”ÆÈÀ”² üÈÀ¼ ÀÉíÅÐÅ ³tÕ µÑÈl­íÅDÇ Èõ¬iÕÈ²ä². µÑÈl­íÅNÇ È p­³XÇ ÀÆÁÉ„ÇDÇ ÈjÕXÕà¬ ø­ä´tÇ ”ÆÈÀ|¹ <ºÈ õ¬1ÁXÕÄ³k¸ ¬ÈiÕÈ²ä²."
+ VIEW_MISSION_TREE:0 "$COUNTRY|Y$ ø»XÁ ¸Ò¬¹ ô¼0®"
+ VIEW_MISSION_TREE_CURRENT:1 "Ö¬Ç tÇ „Ç4» ¸Ò¬¹|¹ ô¼à¬ ˆÇµÂÈ²ä²."
+ VIEW_MISSION_TREE_OURS:1 "tÇƒ¬NÇ ù²àÂXÇ ˜°|·XÇ „Ç4» ¸Ò¬¹…ÇÈ²ä²."
+ VIEW_MISSION_TREE_SUBJECT:1 "ø­ä´tÇ °Æ¬¹XÇ §YSubject§!tÇ0® Lµ8»ÐÅ ø­ä´XÇ „Ç4»|¹ ü¼ Â ˆÇµÂÈ²ä²."
+ ADJECTIVE_MISSION_TITLE:0 "$ADJ$ „Ç4»ä´"
+ SECEDE_SUBJ_PROVINCES:0 "$WHO$ !ÎNÇ $WHAT$(DÇ)|¹ $TO$ÐÅŒ¬ ‘ÅÄ³`Õ ƒ¬tÇpº, Å³Ë¹ ôÅÝ¹NÇ $LD|-$Ì¹|Ð À¼iÕÈ²ä²."
+ STATES_TAB_TOOLTIP:0 "üÈ ­¬¹"
+ EDICTS_TAB_TOOLTIP:0 "üÈ YÎ9¸"
+ DELEGATE_TAB_TOOLTIP:0 "‰ÕÈ Ç„Ç"
+ TRADE_COMPANY_TAB_TOOLTIP:0 "4»íÅ ŒÖ¬À ,ÒÇ"
+ SORT_BY:0 "$WHAT|Y$ Â<Çj¸ È,¸XÕ2¸tº tÐ­¹."
+ INCOME:0 "Â…Ç"
+ PROSPERITY:0 "ˆ¼ÆÄ³"
+ ABANDON_STATE:0 "üÈ ìÓ0®"
+ MAKE_STATE:0 "üÈ ÝÀ1Á"
+ CORE_ALL_PROVINCES:0 "¨ºà´ ÀÉíÅÐÅ TÏ´Å ÝÀ1Á"
+ PICK_EDICT:0 "YÎ9¸ .ÁÝÐ"
+ EDICT:0 "YÎ9¸"
+ ADMINISTRATION:0 "‰ÕÈ"
+ UNKNOWN_LOC:0 "ÀÉíÅ"
+ UNLAWFUL_TERRITORY_HAS_OVERLORD:0 "§R$COUNTRY|Y$ !ÎNÇ $OVERLORD|Y$XÇ  §Y…ÈÁm­§!tÇpº, $OVERLORD|Y$(tÇ)¬ ø­ä´XÇ Æ ÑÐÅ ³jÕ µÑXÎŒ­DÇ ¬ÀÉà¬ ˆÇµÂÈ²ä².§!\n"
+ MERCENARY_COMPANY_BUILD_COST:0 "tÇƒ¬NÇ $COST|Y$¤ (DÇ)|¹ ŒÁ¨ºXÕpº $TIME|Y$|ÇtÇ x¬Ë¹È²ä²."
+ HIRE_MERCENARY_COMPANY:0 "$PROVINCE|Y$ÐÅÁ $COMPANY|Y$ à¬©Æ\n"
+ MACRO_MASS_BUILD_UNITS:0 "§YShift + tÐ­¹§!<Çj¸ $TYPE$ ðÅ³ 5¬|¹ ¨ºÑÉiÕÈ²ä².\n§YCtrl + tÐ­¹§!<Çj¸ $TYPE$ ðÅ³ 10¬|¹ ¨ºÑÉiÕÈ²ä²."
+ USE_CURIA_TREASURY:0 "P­iÖ­Ì ¬ÇÐÆ ¬À©Æ"
+ CURIA_TREASURY_NOT_CURIA_CONTROLLER:0 "§R2ÆÁÉ P­iÖ­Ì pÈ…ÈÇÌ¹ P­iÖ­Ì ¬ÇÐÆDÇ ¬À©Æ`Õ Â ˆÇµÂÈ²ä²!§!"
+ USE_CURIA_TREASURY_DESC:0 "ù²àÂNÇ P­iÖ­Ì pÈ…ÈÇtÇÀ»j¸ P­iÖ­Ì ¬ÇÐÆDÇ ¬À©Æ`Õ Â ˆÇµÂÈ²ä²."
+ REFORM_DESIRE_SCALE_EFFECT:0 "¬Ö ôÅÝ¹tÇ $PERC|%-0$ $DIRECTION$ É¬iÕÈ²ä².\n"
+ REFORM_DESIRE_SCALE_TOOLTIP:0 "°Æ¬¹XÇ ‰ÕÙ³ä´NÇ …ÈP­ ¬Ö¬ä´DÇ e×„´ÜÂÏÁ §Y¬Ö ôÅÝ¹§!tÇ $SCALE|%-0$ T³ `¾t¹Œ¬ É¬XÕÄ³k¸ Ì¹ä´ÈÅµÂÈ²ä²."
+ investigate_heresy:0 "tÇè² pÈ¬À"
+ MIL_CONST_MERCENARY_TIP:0 "$MERC|Y$ (NÇ)”² $DATE|Y$ÐÅ tÇó¬ÐÅ 0¼XÎ.´ ƒ¬…ÇÈ²ä²."
+ building_soldier_households:0 "Ñ¼¬À ÂŒÁ"
+ building_ramparts:0 "1Áý¬"
+ GOODS_BONUS:0 "$LIST$ ÁÀˆÔtÇ ˆÇ”² ÀÉíÅÐÅÁ T³±Æ ¨Öü¬È…ÇÈ²ä².\n"
+ building_impressment_offices:0 "ÕÉÑ¼ŒÁ"
+ MERCENARY_COMPANY_LOCAL:0 "ÀÉíÅ"
+ NO_GENERAL:0 "¥Çp­ ÆÅLÇ"
+ merc__local_small_company:0 "Ç.Ç ©ÆÑ¼è²"
+ merc__local_free_city_company:0 "Ç.ÇÜÂ ŒÖ¬À"
+ REVOLUTIONARY_GUARD_REGIMENT:0 "Ö…º ü­Ç³ ðÅ³\n$EFFECT$"
+ REGCAT_revolutionary_guard:0 "Ö…º ü­Ç³"
+ REVOLUTIONARY_GUARD_DESC:0 "Ö…º ü­Ç³”² ù²àÂXÇ p­³XÇ ÈÆ ðÅ³ä´…ÇÈ²ä². tÇä´NÇ <ÕtÕ|¹ j³ ¼DÇ ƒ¬tÇà¬, T³ `¾t¹Œ¬ ÈÖ(¸XÕÀÉÌ¹, .ÇÀÉ D¾©ÆtÇ T³ D¾	ÃÈ²ä²."
+ BUILD_SPECIAL_UNIT_TOOLTIP:0 "$CATEGORY$ $TYPE$\n"
+ JANISSARY_NAME:0 "$HOME$XÇ $NUM$$ORDER$ ÆÈ²´Ì¬¹"
+ REVOLUTIONARY_GUARD_NAME:0 "$HOME$XÇ $NUM$$ORDER$ ü­Ç³"
+ PRIVILEGE_NO_LONGER_VALID_TITLE:0 "Ä¬5Î ¹ÒŒ­ À¼Ë¬"
+ PRIVILEGE_NO_LONGER_VALID_DESC:0 "ù²àÂXÇ m­¬XÇ À¼TÖj¸ xÇtÕ $ESTATE|Y$ Ä¬5ÎNÇ ä²LÇ ¹ÒŒ­DÇ ƒÇŒ¬ )´È²ä²: $PRIVILEGE|Y$$EFFECTS$"
+ PRIVILEGE_NO_LONGER_VALID_EFFECTS:0 ":\n$EFFECTS|Y$"
+ PRIVILEGE_NO_LONGER_VALID_NO_EFFECT:0 ". tÇƒ¬NÇ T³tÇÁÀ tÕù² m­¬ÐÅ Æ¥ÕDÇ ø»XÎÀÉ JÅµÂÈ²ä²."
+ UNLOCK_FIXED_GOV_RANK:0 "ÈŽ´ ñ´	® À¼Ë¬ ¥²%¸DÇ tÕÈiÕÈ²ä²"
+ PRIVILEGE_PICKER_TITLE:0 "¹ÒŒ­"
+ PRIVILEGE_PICKER_SUB_TITLE:1 "$ESTATE|Y$ ¹ÒŒ­ Ž´ìÅ"
+ MANAGE_ESTATE_PRIVILEGES:1 "¹ÒŒ­ ”Í¬"
+ ESTATE_PICKER_PRIVILEGE_TITLE:0 "$PRIVILEGE|Y$"
+ GRANT_PRIVILEGE_DESC:0 "Ä¬5ÎÐÅŒ¬ tÇ ¹ÒŒ­DÇ Ž´ìÅjÕä²"
+ REVOKE_PRIVILEGE_DESC:0 "Ä¬5ÎÐÅÁ tÇ ¹ÒŒ­DÇ ÐÓÀÉjÕä²."
+ CANNOT_GRANT_PRIVILEGE:1 "ù²àÂNÇ Ö¬Ç tÇ ¹ÒŒ­DÇ Ž´ìÅ`Õ Â ÆÅµÂÈ²ä²:\n$REASON$"
+ CANNOT_REVOKE_PRIVILEGE:1 "ù²àÂNÇ Ö¬Ç tÇ ¹ÒŒ­DÇ èÍŒÁ`Õ Â ÆÅµÂÈ²ä²:\n$REASON$"
+ CHARTER_COMPANY_CAPITAL_SAME_SUPER_REGION:0 "ù²àÂü¬ ¬NÇ DÅ³Y¹ÐÅ ÂÄ³|¹ T´ m­¬ÐÅŒ¬ 4»íÅŒÖ¬À ÀÉíÅl­ä¹|¹ ”Æ­Ì`Õ Â ÆÅµÂÈ²ä²."
+ NO_MP_AFTER_RNW_OR_CN:0 "4»‘ÇÇ àÂ8ÁÄ¬˜° ¬À©ÆÇ ÈXÇ m­¬|¹ ¬À©ÆXÕà¬ ˜°Á”² NºðÒÕ¸tÇÐÅ ÈÁ`Õ Â ÆÅµÂÈ²ä². NºðÒÕ¸tÇÐÅ ÈÁXÕ2¸tº Œ¬„ÇDÇ ä²ÜÂ ÜÂ‘ÇXÕíÂÜÂ2Æ."
+ TECH_GOVERNING_CAPACITY:0 "µÑXÎ íÅÉ·: $VAL|+G$\n"
+ GOVERNING_CAPACITY_TOOLTIP:0 "§YµÑXÎ íÅÉ·§!\nÖ¬Ç $CAPACITY|Y0$ É $USED|Y0$ Ì¹|ÐDÇ ¬À©Æ É…ÇÈ²ä².\n\nÀ¼Ù³XÎ:\n$MOD$"
+ OVER_GOVERNING_CAPACITY_TOOLTIP:0 "\nµÑXÎ íÅÉ·DÇ §RÍü¬§!tÕÁ »Å”² ˆ´tÇuÇ:\n$MOD$"
+ GOVERNING_CAPACITY_MODIFIER:0 "\ntÇ ÂXÎ”² ä²LÇÐÅ XÇtÕ ñ¬tÕÑÉÈ²ä²:\n$MODIFIER$"
+ over_governing_capacity_modifier:0 "µÑXÎ íÅÉ· Íü¬"
+ MODIFIER_GOVERNING_CAPACITY:0 "µÑXÎ íÅÉ·"
+ MODIFIER_GOVERNING_CAPACITY_MODIFIER:0 "µÑXÎ íÅÉ· À¼Ù³XÎ"
+ MODIFIER_GOVERNING_COST:0 "µÑXÎ D¾©Æ"
+ MODIFIER_LOCAL_GOVERNING_COST:0 "ÀÉíÅ µÑXÎ D¾©Æ"
+ MODIFIER_STATEWIDE_GOVERNING_COST:0 "üÈ È´Ì µÑXÎ D¾©Æ"
+ local_autonomy_trade_company:0 "ÀÉíÅ ÇXÎÄ³"
+ local_autonomy_trade_company_multiplicative:0 "ÀÉíÅ ÇXÎÄ³"
+ TRADE_COMPANY_SAME_RELIGION:0 "4»íÅŒÖ¬À¬ ´0® ÇtÕÁ”² ä²x¹ …ÈP­p­ÐÅ ÁtÕ|Å iÕÈ²ä²."
+ TRADE_COMPANY_MUST_BE_OVERSEAS:0 "ÀÉíÅNÇ ù²àÂü¬ …ÈÁm­ ¨ºP´ÐÅŒ¬ tÕxÆj¸ ¬üÈ´´Å|Å iÕÈ²ä²."
+ OFFER_LOAN_STEPS:0 "$WHAT$(DÇ)|¹ $AMOUNT|Y$ Ì¹|Ð)Å $DIR$ ÜÂ²Ð2¸tº §YShift+tÐ­¹§!XÕíÂÜÂ2Æ"
+ OFFER_LOAN_DECREASE_INTEREST:0 "tÇÇ ¬ŒÁ"
+ OFFER_LOAN_INCREASE_INTEREST:0 "tÇÇ É¬"
+ OFFER_LOAN_DECREASE_DURATION:0 "Ì¹0® ¬ŒÁ"
+ OFFER_LOAN_INCREASE_DURATION:0 "Ì¹0® É¬"
+ DURATION:0 "Ì¹0®"
+ MIL_UPKEEP_WAR_TAXES:0 "ÈÁÇ 8Á®:-$COST|R$\n"
+ WAR_TAXES_TOOLTIP_START:0 "ÈÁÇ ÉtÇtº °Æ¬¹ÐÅŒ¬ É ƒ¬…ÇÈ²ä²:\n"
+ WAR_TAXES_TOOLTIP_COST:0 "ÈÁÇ ÉÐÅ èÍŒÁ.´ LµL®ÀÉ jÕ ì²ÐÅ $COST|Y$£mil£¬ ä´ ƒ¬…ÇÈ²ä²."
+ ALLY_FORCES_UNKNOWN:0 "???"
+ ALLY_FORCE_ENTRY:0 "$ADJ$ $TYPE$: $AMOUNT|Y0$\n"
+ ALLY_FORCE_TOTAL_ENTRY:0 "$COUNTRY$ !ÎNÇ $DEPLOYED|0Y$…ºDÇ 0¼XÎˆÕà¬ $MANPOWER|0Y$…ºtÇ ÆD¾³j¸ ˆÇµÂÈ²ä².\n"
+ building_state_house:0 "üÈXÇŒÖ XÇ¬Àù²"
+ DIPLO_UNIT_FORCES_UNKNOWN:0 "???"
+ elite_revolutionary_guard_title:0 "ÈÆ Ö…º ü­Ç³ ÈÖ(¸"
+ elite_revolutionary_guard_desc:0 "Ö…º ü­Ç³”² °Æ¬¹ ˜°|·XÇ tÇÁÀ…ÇÈ²ä². Ö…ºXÇ Èä´DÇ „´ÄÁXÕ0® ÇjÕ jÍÈ.Á!"
+ elite_revolutionary_guard_modifier:0 "ÈÆ Ö…º ü­Ç³ ÈÖ(¸"
+ desc_elite_revolutionary_guard_modifier:0 "Ö…º ü­Ç³”² °Æ¬¹ ˜°|·XÇ tÇÁÀ…ÇÈ²ä². Ö…ºXÇ Èä´DÇ „´ÄÁXÕ0® ÇjÕ jÍÈ.Á!"
+ elite_revolutionary_guard_modifier_country:0 "ÈÆ Ö…º ü­Ç³ ¨ºÑÉ"
+ desc_elite_revolutionary_guard_modifier_country:0 "Ö…º ü­Ç³”² °Æ¬¹ ˜°|·XÇ tÇÁÀ…ÇÈ²ä². Ö…ºXÇ Èä´DÇ „´ÄÁXÕ0® ÇjÕ jÍÈ.Á!"
+ professional_revolutionary_guard_title:0 "È8» Ö…º ü­Ç³ ÈÖ(¸"
+ professional_revolutionary_guard_desc:0 "Ö…º ü­Ç³”² °Æ¬¹ ˜°|·XÇ )¼)¼á¬á¬ÐÅÁ ¨ºìÅä´ÈÅµÂÈ²ä². °Æ¬¹ p­XÇ ’±NÇ 0®ÉÐÅ Þ¹”Í0® ÇtÕ ü­Ç³”² È¥ÇÐÅ ˜°Á0® È ÄÅ©¬jÕ ÈÖ(¸DÇ ¼µÂÈ²ä²."
+ professional_revolutionary_guard_modifier:0 "È8» Ö…º ü­Ç³ ÈÖ(¸"
+ desc_professional_revolutionary_guard_modifier:0 "Ö…º ü­Ç³”² °Æ¬¹ ˜°|·XÇ )¼)¼á¬á¬ÐÅÁ ¨ºìÅä´ÈÅµÂÈ²ä². °Æ¬¹ p­XÇ ’±NÇ 0®ÉÐÅ Þ¹”Í0® ÇtÕ ü­Ç³”² È¥ÇÐÅ ˜°Á0® È ÄÅ©¬jÕ ÈÖ(¸DÇ ¼µÂÈ²ä²."
+ mass_revolutionary_guard_title:0 "³É· Ö…º ü­Ç³ ÈÖ(¸"
+ mass_revolutionary_guard_desc:0 "Ö…ºXÇ Èä´tÇ Î¹<ÇÀ»j¸, °Æ¬¹”² m­Ë¬ ±´Å Ä³¬À¬¹à¬ ˆÇ”² ÇÖDÇ ©¬ôÑXÕ0® ÇtÕ ©Í„´jÕ ÂXÇ ©Í1Á²Âì·´Æ p­³|¹ ÉD¾tÕ|Å iÕÈ²ä²."
+ mass_revolutionary_guard_modifier:0 "³É· Ö…º ü­Ç³ ÈÖ(¸"
+ desc_mass_revolutionary_guard_modifier:0 "Ö…ºXÇ Èä´tÇ Î¹<ÇÀ»j¸, °Æ¬¹”² m­Ë¬ ±´Å Ä³¬À¬¹à¬ ˆÇ”² ÇÖDÇ ©¬ôÑXÕ0® ÇtÕ ©Í„´jÕ ÂXÇ ©Í1Á²Âì·´Æ p­³|¹ ÉD¾tÕ|Å iÕÈ²ä²."
+ mass_revolutionary_guard_modifier_country:0 "³É· Ö…º ü­Ç³ ¨ºÑÉ"
+ desc_mass_revolutionary_guard_modifier_country:0 "°Æ¬¹ Ö…ºXÇ ÈtÇ Î¹<ÇÀ»j¸, °Æ¬¹”² m­Ë¬ ±8ºÐÅ  Çõ¼tÕ ˆÇ”² ÇÖDÇ <»¬¹`Î ÉD¾¬ ´´Å ˆÇ”²ÀÉ ø­¬¹à¬ °Æ¬¹|¹ ÇtÕ øÂ¸Æ ©ÍÁÉjÕ Ñ¼¬Àä´tÇ Î¹tÇ ˆÇ”²ÀÉ|¹ UÖäÂˆ× `Õ DÕ”Æ¬ ˆÇµÂÈ²ä²."
+ vanguard_revolutionary_guard_title:0 "ÈÇ Ö…º ü­Ç³ ÈÖ(¸"
+ vanguard_revolutionary_guard_modifier:0 "ÈÇ Ö…º ü­Ç³ ÈÖ(¸"
+ desc_vanguard_revolutionary_guard_modifier:0 "ü­Ç³”² ÜÂü»ä´ ÉÐÅÁÄ³ ¬¥Ç ôÅÈÈxÇ Ö…º ÀÉÀÉÇä´…ÇÈ²ä². ø­ä´NÇ È,ÒÐÅÁ ^Å¥ÇÁà¬ È¹ÀÉÉ¹L®ÀÉ È¥ÇDÇ ÀÉ²Ð0® Lµ8»ÐÅ, ¬¥Ç XÎôÅjÕ øÂÀÆÐÅ ³D¾jÕ  ÈÖ(¸ü¬ ¥ÇD¾|¹ ÉD¾tÕ|Å iÕÈ²ä²."
+ vanguard_revolutionary_guard_desc:0 "ü­Ç³”² ÜÂü»ä´ ÉÐÅÁÄ³ ¬¥Ç ôÅÈÈxÇ Ö…º ÀÉÀÉÇä´…ÇÈ²ä². ø­ä´NÇ È,ÒÐÅÁ ^Å¥ÇÁà¬ È¹ÀÉÉ¹L®ÀÉ È¥ÇDÇ ÀÉ²Ð0® Lµ8»ÐÅ, ¬¥Ç XÎôÅjÕ øÂÀÆÐÅ ³D¾jÕ  ÈÖ(¸ü¬ ¥ÇD¾|¹ ÉD¾tÕ|Å iÕÈ²ä²."
+ ONLY_REVOLUTIONARY_GUARD_MODIFIER:0 "§Y2ÆÁÉ Ö…º ü­Ç³ ðÅ³ÐÅÌ¹ ¨Öü¬|¹ É§!"
+ MISSIONARY_STRENGTH:0 "$VAL|1+%$"
+ HRE_IMPERIALDIET:0 "Èm­ XÇŒÖ"
+ HRE_REFORMS:0 "¬Ö"
+ HRE_LEFTBRANCH:0 "ÀÉ)¼„´Œ­TÖ"
+ HRE_RIGHTBRANCH:0 "ÉYÅÑÉŒ­TÖ"
+ HRE_JOIN:0 "àÂ1Áj¸È¹Èm­ ¬…Ç"
+ HRE_NUM_FREE_CITIES:0 "$NUM$¬XÇ Ç.ÇÜÂ"
+ DISTANCE_TO_TARGET:0 "³ÁÀL®ÀÉXÇ p¬¬¹: $VAL|R$"
+ first_concession_harsh:0 "tÇè² ìÂÓ"
+ second_concession_harsh:0 "¸Ò¸¸Ò õ¬XÇŒÖXÇ P­¬¹8»õ²"
+ third_concession_harsh:0 "ø­¬¹²ÂÄ³XÇ Ñ¼¬À"
+ fourth_concession_harsh:0 "tÎ¨Ñ­¹ àÂD¾üÈXÇ"
+ first_concession_concilatory:0 "D¾¼ 8ÌŒÖ"
+ second_concession_concilatory:0 "D¾ |·ôÒ´Å 1ÁË¬"
+ third_concession_concilatory:0 "®•Æ(Å³àÂ)  ÌŒÖ"
+ fourth_concession_concilatory:0 "2ÆÁÉ ÿ»LÇ"
+ CROWN_INTERACTIONS_COOLDOWN:0 "§R$DATE|Y$ ä²ÜÂ tÇ©Æ`ÕÂ ˆÇµÂÈ²ä²§!"
+ ESTATES_DEV_SHARE_TITLE:0 "Ä¬5Î  ÑÀÉ"
+ ESTATES_CROWNLAND_TITLE:0 "ÁÉ`ÕÀÉ"
+ ESTATES_AGENDA_TITLE:0 "XÇÈ"
+ DEV_SHARE_VAL:0 "$VAL|&0Y$"
+ ESTATE_PRIVILEGE_BENEFITS_SHORT:0 "$MODIFIERS$\n"
+ ESTATE_PRIVILEGE_PENALTIES_SHORT:0 "$MODIFIERS$\n"
+ PRIVILEGE_MODIFIERS_SHORT:0 "§YModifiers:§!\n"
+ ESTATE_PRIVILEGE_ON_REVOKED_SHORT:0 "$EFFECT$\n"
+ ESTATE_PRIVILEGE_ON_GRANTED_SHORT:0 "$EFFECT$\n"
+ PRIVILEGE_EFFECT_SHORT:0 "§YEffect:§!\n"
+ YEARLY_PRODUCTION_INCOME_FROM_PROVINCES_CUSTOM:0 "$DESC$ $FACTOR|+$¤ ÖÝ´.\n"
+ MONOPOLY_INCOME_CLOTH_DESC:0 "XÇõ¼ ¶”² D¾è² ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_DYE_DESC:0 "üÅÌ¸ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_GLASS_DESC:0 ".Ç¬¹ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_PAPER_DESC:0 "…ÈtÇ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_IRON_DESC:0 " Ì ¶”² l­¬¹ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_LIVESTOCK_DESC:0 "¬•Í ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_GEMS_DESC:0 "ô¼Á ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_INCENSE_DESC:0 "¥ÕÌ¸ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_WOOL_DESC:0 "‘Å¨º ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_WINE_DESC:0 "NÆxÇ ÝÀ°ÀÐÅÁ"
+ MONOPOLY_INCOME_SLAVES_DESC:0 "x±Æ ÝÀ°ÀÐÅÁ"
+ ESTATE_PRIVILEGE_COOLDOWN:0 "$DATE|Y$ L®ÀÉ èÍŒÁ.´ Â ÆÅµÂÈ²ä²."
+ ESTATE_PRIVILEGE_LOYALTY_CHANGE:1 "$MOD$: $VALUE|+0%$\n"
+ ESTATE_PRIVILEGE_INFLUENCE_CHANGE:1 "$MOD$: $VALUE|+0%$\n"
+ ESTATE_PRIVILEGE_MAX_ABSOLUTISM_CHANGE:1 "jÍ³ È³üÈXÇ: $VALUE|+0$\n"
+ ESTATES_PRIVILEGES_LOYALTY_VALUE:0 "$VALUE|+%0$"
+ ESTATES_PRIVILEGES_INFLUENCE_VALUE:0 "$VALUE|Y%0$"
+ ESTATES_PRIVILEGES_LANDSHARE_VALUE:0 "$VALUE|+&0$"
+ ESTATES_PRIVILEGES_MAX_ABSOLUTISM_VALUE:0 "$VALUE|+0$"
+ ESTATE_PRIVILEGE_NO_MODIFIERS:0 "§YÀ¼Ù³XÎ:§!\n”Í¬ À¼Ù³XÎ¬ ÆÅµÂÈ²ä²."
+ ESTATE_PRIVILEGE_NO_EFFECTS:0 "§Y¨Öü¬:§!\n¹ÒŒ­ Ž´ìÅ ÜÂ DÅ4» ¨Öü¬Ä³ ÆÅµÂÈ²ä²."
+ LEADER_NAME_GREEN:0 "$NAME|G$"
+ TRADE_COMPANY_MOD:0 " & 0®ø¼NÇ $MOD|2Y$ …ÇÈ²ä²"
+ TRADE_COMPANY_INST_VALUE:0 " x $NAME|Y$ $VAL|G2%$"
+ TRADE_COMPANY_IMPACT_ENTRY:0 "$OWNER$: $IMPACT|+2%$  ($SHARE|Y%$ £icon_trade_power£$INST_EFF$$MOD$)\n"
+ trade_company_bonus:0 "4»íÅ ŒÖ¬À"
+ emperor_reichsreform_title:0 "Èm­¬Ö•¼ ¼ìÓ"
+ emperor_reichsreform_desc:0 "T³ ÉYÅÑÉŒ­ÈxÇ l­pÈj¸ Èm­DÇ ¬ÖiÕÈ²ä²."
+ emperor_reichsregiment_title:0 "Èm­µÑXÎÉÓXÇŒÖ 2ÁË¹"
+ emperor_reichsregiment_desc:0 "Èm­XÇŒÖ|¹ µÑiÕXÕìÅ …Ç•¼XÇ õ¼¡Ç1ÁDÇ É…ÇÈ²ä²."
+ emperor_gemeinerpfennig_title:0 "Èm­|Ç¼8Á ÈÈ"
+ emperor_gemeinerpfennig_desc:0 "àÂ1Á j¸È¹ Èm­XÇ ŒÖÐÆm­ä´tÇ iÖÈÐÅŒ¬ ÁÉÈ ¼XÎ”² ¹ÒÄ¼ 8Á®DÇ ÕÉÂiÕÈ²ä²."
+ emperor_hofgericht_title:0 "à¬ñ´¬ÇÓŒÁ ¬Ö"
+ emperor_hofgericht_desc:0 "iÖÈ¬ Èm­ ´°XÇ jÍ…È ¬À•¼Œ­DÇ ¬ÀÉŒ¬ XÕìÅ ¬À•¼Œ­XÇ Å³Ë¹1ÁDÇ É…ÇÈ²ä²."
+ emperor_landfriede_title:0 "Æl­ Ž·¸Ò ÉÓTÖ9¸ ¼ìÓ"
+ emperor_landfriede_desc:0 "l­1Ám­ä´ ¬XÇ ¬ñ´DÇ È¥ÇtÇ DÅÌ² •¼ÐÆÐÅÁ tÕ°¬XÕÄ³k¸ ¬ÈiÕÈ²ä²."
+ emperor_privilegia_de_non_appelando_title:0 "¹ÒŒ­ ÐÓÀÉ"
+ emperor_privilegia_de_non_appelando_desc:0 "ˆ´¬-Á ¹ÒŒ­DÇ ÐÓÀÉiÕÈ²ä²."
+ emperor_erbkaisertum_title:0 "iÖŒ­8ÁµÂ .Á¸Å"
+ emperor_erbkaisertum_desc:0 "àÂ1Áj¸È¹Èm­XÇ .Áp¬ p­üÈÈ|¹ ÐÓÀÉiÕÈ²ä²."
+ emperor_renovatio_title:0 "Èm­XÇ Ž´jÖ"
+ emperor_renovatio_desc:0 "„´¬¹´ ÁÀÜÐXÇ Èm­DÇ è²|Ç m­¬j¸ µÑ|ÇiÕÈ²ä²."
+ REVOLUTION_CLAIM_COOLDOWN:0 "Ö…º üÈÄ³m­XÇ ÀÉÇ”² jÍü­ÐÅ üÈ¥Ç´ÈÅµÂÈ²ä². ù²àÂNÇ $DATE|Y$ÐÅ ä²ÜÂ üÈ¥Ç`Õ Â ˆÇµÂÈ²ä²."
+ PICK_GOLDEN_BULL_TOOLTIP:0 "§YP­iÖ ®xÇYÎÁ .ÁÝÐ§!\n"
+ GOLDEN_BULL_COST:0 "$COST|Y2$"
+ alert_expiring_agenda_instant:0 "§YXÇÈ¬ ç¬ Ì¹Ì¸.´ ƒ¬…ÇÈ²ä²§!"
+ alert_expiring_agenda_delayed:0 "jÍü­XÇ XÇŒÖÐÅÁ Ä¬5Îü¬ iÕXÇˆÕX³ XÇÈ¬ ç¬ Ì¹Ì¸.´ ƒ¬…ÇÈ²ä². $DATE|Y$L®ÀÉ XÇÈ|¹ DÆÌ¸`Õ Â ˆÇµÂÈ²ä²."
+ alert_imperial_incident_instant:0 "§YÄÉ‰ÕÉxÇ Èm­ ¬Àt¬§!"
+ alert_imperial_incident_delayed:0 "ù²àÂNÇ Ö¬Ç ÄÉ‰Õ´”² Èm­ ¬Àt¬ÐÅ ³tÕ ,ÒjÔ`Õ Â ˆÇµÂÈ²ä².  $DATE|Y$ L®ÀÉ ,ÒjÔ`Õ Â ˆÇµÂÈ²ä²."
+ MERCENARY_COMPANY_OVER_FL:0 "\n§RHiring tÇ ©ÆÑ¼è²DÇ à¬©ÆXÕtº °Æ¬¹XÇ ÀÉÁÀÑ¼%¸jÕÄ¬|¹ Íü¬XÕŒ¬ .´ ƒ¬…ÇÈ²ä²!§!"
+ APH_IS_LARGE_SUBJECT:0 "200 ¬¼Ä³ tÇÁÀXÇ pÐ …ÈÁm­tÇä²."
+ HRE_ADD_ALL:0 "¨ºà´ ÀÉíÅ ”Í¬"
+ NO_PROVINCES_TO_ADD:0 "Èm­ÐÅ ”Í¬`Õ Â ˆÇ”² ÀÉíÅtÇ ÆÅµÂÈ²ä²."
+ ADD_PROVINCES_TO_HRE_TOOLTIP:0 "àÂ1Á j¸È¹ Èm­ÐÅ $NUM|Y$¬XÇ ÀÉ)¼ä´DÇ ”Í¬`Õ ƒ¬…ÇÈ²ä²."
+ ADD_PROVINCES_TO_EMPIRE:0 "¨ºà´ Õj¸H¾²Â|¹ Èm­ÐÅ ”Í¬"
+ ONLY_A_MEMBER_CAN_ADD:0 "ù²àÂNÇ àÂ1Á j¸È¹ Èm­XÇ ŒÖÐÆtÇ DÅÙ²È²ä²."
+ ADD_PROVINCES_TO_EMPIRE_DESC:0 "tÇƒ¬NÇ àÂ1Á j¸È¹ Èm­ÐÅ ”Í¬`Õ Â ˆÇ”² ¨ºà´ ÀÉíÅDÇ Èm­ÐÅ ”Í¬iÕÈ²ä². $NUM|Y$ ¬XÇ ÀÉíÅDÇ Èm­ÐÅ ”Í¬XÕÜÂ ¬µÂÈ²L®?"
+ GOVCAP_PROGRESS_VALUE:0 "$USED|0$/$CAP|0$"
+ SPRTE_TYPE_LABEL:0 ".ÇÛ² .ÇÖ"
+ SPRITE_TIER_LABEL:0 "0®.Â è²Ä¬"
+ RAISEWARTAXESSTOPPED_TITLE:0 "ÈÁÇ 8Á® ÕÉÂ¬ Éè²´ÈÅµÂÈ²ä²."
+ RAISEWARTAXESSTOPPED_SETUP:0 "ÈÁÇ8Á® ÕÉÂXÇ D¾©ÆDÇ T³ tÇÁÀ ÀÉˆ´`Õ Â ÆÅŒ¬ ´tº."
+ RAISEWARTAXESSTOPPED_1:0 "ÈÁÇ 8Á® ÕÉÂ¬ Éè²´ÈÅµÂÈ²ä²."
+ RAISEWARTAXESSTOPPED_2:0 "p­¬À ìÓxÇ¸ÒXÇ Ž´qÈ<Çj¸ xÇtÕ ÈÁÇ 8Á® ÕÉÂ|¹ Éè²XÕŒ¬ ´ÈÅµÂÈ²ä²."
+ RAISEWARTAXESSTOPPED_LOG:0 "p­¬À ìÓxÇ¸ÒXÇ Ž´qÈ<Çj¸ xÇtÕ ÈÁÇ 8Á® ÕÉÂ|¹ Éè²XÕŒ¬ ´ÈÅµÂÈ²ä²."
+ RAISEWARTAXESSTOPPED_BTN1:0 "LÅ ¬ä²"
+ estate_church_ownership:0 "[Country.GetClergyName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_brahmins_ownership:0 "[Country.GetBrahminsName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_maratha_ownership:0 "[Country.GetMarathasName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_nobles_ownership:0 "[Country.GetNobilityName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_burghers_ownership:0 "[Country.GetBurghersName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_vaisyas_ownership:0 "[Country.GetVaishyasName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_cossacks_ownership:0 "[Country.GetCossacksName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_nomadic_tribes_ownership:0 "[Country.GetTribesName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_dhimmi_ownership:0 "[Country.GetDhimmiName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_jains_ownership:0 "[Country.GetJainsName]XÇ  ÑÀÉ ŒÁ.Ç"
+ estate_rajput_ownership:0 "[Country.GetRajputsName]XÇ  ÑÀÉ ŒÁ.Ç"
+ ESTATE_OWNERSHIP_INFLUENCE:0 "$ESTATE$ Æ¥Õ%¸: $VALUE|1Y&$\n"
+ ESTATE_OWNERSHIP_MOD:0 "$MOD$"
+ NO_PICKED_BULL:0 "DÅ4»ƒ¬Ä³ .ÁÝÐ´ÀÉ JÅLÇ"
+ NUM_COUNCIL_CARDINALS:0 "$NUM$"
+ INCIDENT_VOTES:0 "tÇƒ¬DÇ .ÁÝÐXÕtº Èm­ Œ­Ç¬ $IA|Y$ Ì¹|Ð À¼Ë¬)´È²ä².\nÀÉÀÉXÕ”² .ÁÈÄÖ:\n$ELECTORS$\nÀÉÀÉXÕ”² ÈÄÖ:\n$MEMBERS$"
+ IMPERIAL_NO_INCIDENT_TITLE_TOOLTIP:0 "¬T°)Å, Èm­ È´ÌÐÅ Æ¥ÕDÇ |°XÎ”² 8»È¬ Èm­ XÇŒÖÐÅ È0®.´ ƒ¬…ÇÈ²ä². iÖÈ”² tÇÐÅ ³jÕ pÈXÎ|¹ èÍXÕÄ³k¸ ¬”Æ¼”²p³, ÈÄÖä´ü¬ .ÁÈÄÖä´XÇ I·DÇ 0µ|¹ ÂÄ³ ˆÇà¬ tÇ Ç‘·²Âì·´Æ XÇŒÖXÇ XÇø»|¹ tÕ`Î ÂÄ³ ˆÇµÂÈ²ä²."
+ kingdom_of_god_reform:0 "àÂXÇ UÆm­"
+ kingdom_of_god_reform_desc:0 "P­iÖNÇ tÇ EµÐÅ àÂXÇ UÆm­DÇ 8ÁàÆµÂÈ²ä². P­iÖ 1ÁXÕØ®Á tÇD°”² P­ŒÖXÇ Œ­Ç”² ÆÈxÇ ÆíÅü¬ 8ÁÁÈxÇ ÆíÅ ¨ºP´ÐÅÁ È³ÈtÇ´Å|Å iÕÈ²ä²."
+ LOCK_CURIA_EFFECT:0 "$WHO$NÇ Æl­È<Çj¸ P­iÖ­Ì pÈ…ÈÇ¬ )´È²ä²."
+ PAPAL_INFLUENCE_CURIA_LOCKED:0 "§RP­iÖ­ÌNÇ $WHO$Ì¹ ¬À©Æ`Õ Â ˆÇµÂÈ²ä².§!"
+ MODIFIER_PAPAL_INFLUENCE_FROM_CARDINALS:0 "”Í0®Ë¬ä´ÐÅÁ »Å”² P­iÖ Æ¥Õ%¸"
+ IMPERIAL_INCIDENT_OPTION_SUPPORT:0 "$VOTES$ / $PRINCES$"
+ IMPERIAL_INCIDENT_SELECTED_OPTION:0 "\n§YiÖÈ§!”² tÇ .ÁÝÐÀÉ|¹ .Á8ÖiÕÈ²ä²."
+ NONE_TEXT:0 "ÆÅLÇ"
+ GUI_SCALE_TOOLTIP:0 "tÇ 0®¥²NÇ äÂØÕ ÁÀÜÐtÇpº x1.0<Çj¸ 2ÁÈXÕÀÉ JÅ<Çtº 8»È¬ ¼ÝÀ`Õ Â ˆÇµÂÈ²ä²."
+ PAPACY_HARSH:0 "¬Ë¬EÌ"
+ PAPACY_CONCILATORY:0 "ŒÖ.ÇEÌ"
+ PAPACY_PICK_GOLDEN_BULL:0 "P­iÖ ®xÇYÎÁ .ÁÝÐ"
+ SPAWN_EVENT_ONLY_DAYS:0 " $WHEN|Y$ HÅÐÅ"
+ SPAWN_EVENT_ONLY_RANDOM_DAYS:0 " §Y0ÐÅÁ $WHEN$§! HÅÐÅ"
+ SPAWN_EVENT_ONLY_RANDOM_DAYS2:0 " §Y0|ÇÐÅÁ $WHEN$§!|Ç HÅÐÅ"
+ SPAWN_EVENT_IN_UP_TO_A_YEAR:0 " §Y$FROM$ÐÅÁ$TO$|Ç§! HÅÐÅ"
+ SPAWN_EVENT_IN_X_YEARS:0 " §Y$FROM$D±ÐÅÁ $TO$D±§! HÅÐÅ"
+ SPAWN_EVENT_IN_TIME_DURATION:0 " §Y$FROM$ÐÅÁ $TO$§! HÅÐÅ"
+ HRE_PAST4INCIDENTS:0 "ü¬p¬ ¬Àt¬ä´"
+ HRE_IMPERIALAUTHORITY:0 "Èm­ Œ­Ç"
+ HRE_DOMINANTFAITH:0 "ÀÉ0¼ÈxÇ àÂYÅ"
+ GOVERNING_CAPACITY:0 "µÑXÎ íÅÉ·"
+ STATES_AND_TERRITORIES:0 "üÈNÆ ÉüÈ"
+ DEVELOPMENT_TEXT:0 "¬¼Ä³"
+ alert_enact_golden_bull_instant:0 "P­iÖ ®xÇYÎÁ ÈÈ"
+ alert_enact_golden_bull_delayed:0 "ù²àÂNÇ P­iÖ­Ì pÈ…ÈÇtÇÀ»j¸ ¨ºà´ ¬¨Ñ­¹ m­¬ä´ÐÅŒ¬ ÖÝÐDÇ üÈ”² ®xÇYÎÁ|¹ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä²."
+ SPRITES_TITLE:0 "²ÂÕ|·tÇ¸Ò"
+ REVOLUTION_PROGRESS_VALUE:0 "$VALUE|¤0Y$§Y%§!"
+ NO_CURRENT_INCIDENT:0 "Ö¬Ç ¬Àt¬ ÆÅLÇ"
+ IMPERIAL_INCIDENT_ENDED_TITLE:0 "Èm­ ¬Àt¬tÇ k°¬°µÂÈ²ä²"
+ IMPERIAL_INCIDENT_ENDED_SETUP:0 "Èm­ ¬Àt¬tÇ k° ° Lµ."
+ IMPERIAL_INCIDENT_ENDED_HEADER:0 "$MESSENGER$"
+ IMPERIAL_INCIDENT_ENDED_1:0 "$TITLE$"
+ IMPERIAL_INCIDENT_ENDED_2:0 "$TEXT$"
+ IMPERIAL_INCIDENT_ENDED_BTN1:0 "LÅXÅä²"
+ CREATE_SUCCESSION_CRISIS_EFFECT:0 "$ATTACKER|Y$ !ÎNÇ $TARGET|Y$ !Îü¬ $DEFENDER|Y$ ¬ÀtÇXÇ Ù³p­ðÅiÕDÇ ÈÀÉXÕ0® ÇtÕ ÈÁÇDÇ ÜÂ‘Ç`Õ ƒ¬…ÇÈ²ä².\n"
+ picked_wrong_incident_option:0 "Èm­ XÇŒÖÐÅÁ °Æ¬¹XÇ ¼³¸ÓÐÅ 0ÁµÂÈ²ä²"
+ picked_right_incident_option:0 "Èm­ XÇŒÖÐÅÁ °Æ¬¹¸ÓÐÅ 0ÁµÂÈ²ä²"
+ NEEDS_MORE_DEV_THAN_EMPEROR:0 "$TARGET|Y$ !ÎNÇ ù²àÂ($DEV|Y0$)ô¼ä² ¬¼Ä³¬ ’±p¬˜° ¬DÅ|Å iÕÈ²ä²."
+ NEEDS_TO_NEIGHBOUR_EMPIRE:0 "$TARGET|Y$ !ÎNÇ àÂ1Á j¸È¹ Èm­ü¬ m­Ë¬DÇ ÈtÕ|Å iÕÈ²ä²."
+ REICHSKRIEG_DEFENSE_OF_REALM_MODIFIER:0 "iÖÈNÆ .ÁÈÄÖä´NÇ àÂ1Á j¸È¹ Èm­XÇ Èä´ü¬ øÂ¸Æ Lµ 4»Ì¸j¸ ÈÁÇ 8Á®DÇ ÕÉÂ`Õ Â ˆÇµÂÈ²ä²"
+ defense_of_the_empire_modifier:0 "Èm­XÇ )¼´Å"
+ mechanic_blocked_call_diet_yes:0 "XÇŒÖ ŒÁÑÉ ˆ´jÖ1ÁTÖ"
+ mechanic_blocked_call_diet:0 "XÇŒÖ ˆ´jÖ1ÁTÖ(´"
+ PICK_HOTKEY_BUTTON_HINT:0 "tÕù² è²•Í0®|¹ ¼¸¯2¸tº DÅ4» „¼¼ÒDÇ tÐ­¹XÕ8Á”Æ."
+ ASSIGN_HOTKEY_TITLE:0 "²Ðô¼Ü´ è²•Í²Ð 2ÁÈ"
+ HOTKEY_DESC:0 "„¼¼ÒÐÅ È©Æ`Õ ²Ð|¹ ²t¹8Á”Æ. (Ö¬Ç è²•Í²Ð: $CURRENT|Y$)"
+ HOTKEY:0 "è²•Í0®:"
+ HOTKEY_WAITING:0 "2ÁÈ`Õ ²Ð|¹ ²t¹8Á”Æ..."
+ HOTKEY_ALREADY_ASSIGNED:0 "§R$KEY|Y$ ²Ð”² tÇø» ¬À©Æ É…ÇÈ²ä²!"
+ HOTKEY_NOT_ASSIGNABLE:0 "§R$KEY|Y$ ”² è²•Í0®j¸ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²."
+ KEYCODE:0 "²Ð ÑÜ´ $CODE$"
+ RESET_SHORTCUTS:0 "²Ðô¼Ü´ è²•Í²Ð ¬Ç2ÁÈ"
+ RESET_SHORTCUTS_TOOLTIP:0 "¬À©ÆÇ ÀÉÈ è²•Í0®|¹ 0®ø¼¬<Çj¸ ¬Ç2ÁÈiÕÈ²ä²."
+ CONFIRM_RESET_SHORTCUTS:0 "¬À©ÆÇ ÀÉÈ´ ¨ºà´ è²•Í0®|¹ 0®ø¼¬<Çj¸ ¬Ç2ÁÈXÕÜÂ ¬µÂÈ²L®? (ä²ÜÂ ÜÂ‘ÇtÕ|Å iÕÈ²ä².)"
+ REVOLUTIONARY:0 "Ö…º"
+ mechanic_revolutionary_client_state_yes:0 "Ö…º Ç1Ám­DÇ 2ÁË¹`Õ Â ˆÇµÂÈ²ä²"
+ emperor_landfriede:0 "Æl­ Ž·¸Ò ÉÓTÖ9¸ ¼ìÓ"
+ ESTATE_NOT_ENOUGH_CROWNLAND:0 "ÁÉ`Õ9¸tÇ ©Í„´XÕÀÉ JÅLÇ"
+ EXPAND_EMPIRE_CB:0 "àÂ1Á j¸È¹ Èm­ü¬ m­Ë¬DÇ ÈXÕà¬ ˆÇ”² Èm­ÐÅ ÁXÕÀÉ JÅNÇ m­¬ÐÅŒ¬ Èm­ÐÅ iÕX¹XÕÄ³k¸ ¬”ÆXÕ”² ÈÁÇ …º„´DÇ Èõ¬iÕÈ²ä²."
+ force_peasant_republic_desc:0 "[From.GetName]”² ±ü» õ¬TÖm­tÇ .´ ƒ¬tÇä²."
+ CB_ALLOWED_force_peasant_republic:0 "±ü» µÑXÎ ÑÉ‰Õ"
+ PEACE_force_peasant_republic:0 "±ü» µÑXÎ ÑÉ‰Õ"
+ just_lost_war_timer:0 ")¼® (ÓÈhÕ"

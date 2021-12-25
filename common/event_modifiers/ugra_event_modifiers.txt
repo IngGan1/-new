@@ -1,0 +1,9 @@
+mongol_masters = {
+	global_tax_modifier = -0.10
+	prestige = -0.5
+}
+
+muscovite_tribute = {
+	global_tax_modifier = 0.10
+	prestige = 0.5
+}

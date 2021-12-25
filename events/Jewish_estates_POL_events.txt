@@ -1,0 +1,220 @@
+########################################
+# jewish_estates_events Events         #
+########################################
+
+namespace = jewish_estates_events
+country_event = {	#Expelled from Lithuania
+	id = jewish_estates_events.1
+	title = "jewish_estates_events.1.t"
+	desc = "jewish_estates_events.1.d"
+	picture = FARMING_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 24
+
+		modifier = {
+			factor = 0.2
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 20
+				}
+			}
+		}
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1494
+			tag = LIT
+			NOT = { is_year = 1500 }
+		}
+	}
+	 
+	option = {
+		name = "EXPULSION_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -50
+		}
+		add_estate_influence_modifier = {
+   			estate = jewish_estate
+			desc = jewish_influence_modifier
+   			influence = -90
+   			duration = 3643
+		}
+		hidden_effect = {
+			country_event = {
+				id = jewish_estates_events.2
+				days = 3650
+			}
+		}
+	}
+}
+
+country_event = {	#They return
+	id = jewish_estates_events.2
+	title = "jewish_estates_events.2.t"
+	desc = "jewish_estates_events.2.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes	
+	trigger = { tag = LIT }
+	option = {
+		name = "RETURN_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 25
+		}
+	}
+}
+
+country_event = {	#The Lithuanian statute of 1566
+	id = jewish_estates_events.3
+	title = "jewish_estates_events.3.t"
+	desc = "jewish_estates_events.3.d"
+	picture = BIG_BOOK_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+		}
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1566
+			tag = LIT
+			NOT = { is_year = 1570 }
+		}
+	}
+	 
+	option = {
+		name = "FANCY_CLOTHES_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = -10
+		}
+	}
+}
+
+country_event = {	#Influx of jews
+	id = jewish_estates_events.4
+	title = "jewish_estates_events.4.t"
+	desc = "jewish_estates_events.4.d"
+	picture = CITY_DEVELOPMENT_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 840
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1505
+			tag = POL	
+		}
+	}
+	 
+	option = {
+		name = "PROSPERITY_J_E"
+		POL = {
+			random_province_in_state = {
+				add_stability = 1
+			}
+		}
+	}
+}
+
+country_event = {	#Chief Rabbi
+	id = jewish_estates_events.5
+	title = "jewish_estates_events.5.t"
+	desc = "jewish_estates_events.5.d"
+	picture = STREET_SPEECH_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 20
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			estate_influence = {
+				estate = jewish_estate
+				influence = 70
+			}
+		}
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1551
+			NOT = { is_year = 1560 }
+			tag = POL	
+		}
+	}
+	 
+	option = {
+		name = "CHIEF_J_E"
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 30
+		}
+	}
+}
+
+country_event = {	#Council of four
+	id = jewish_estates_events.6
+	title = "jewish_estates_events.6.t"
+	desc = "jewish_estates_events.6.d"
+	picture = MERCHANTS_TALKING_eventPicture
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	trigger = { 
+		AND = {
+			is_year = 1580
+			OR = {
+				tag = LIT
+				tag = POL
+			}
+			NOT = { is_year = 1600 }
+		}
+	}
+	 
+	option = {
+		name = "COUNCIL_J_E"
+		add_estate_influence_modifier = {
+   			estate = jewish_estate
+			desc = jewish_influence_modifier
+   			influence = 20
+   			duration = 67160 #184 years worth
+		}
+	}
+}

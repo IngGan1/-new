@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "VICTORIA_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALBERT/VICTORIA_eventPicture.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "ALBERT_eventPicture"
+		texturefile = "gfx/event_pictures/event_pictures_ALBERT/ALBERT_eventPicture.dds"
+		alwaystransparent = yes
+	}

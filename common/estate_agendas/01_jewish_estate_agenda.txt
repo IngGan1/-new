@@ -1,0 +1,533 @@
+#(Nearly) all scopes are country scope
+#All parameters are optional (but it will not be much of an agenda without some of them...)
+
+jewish_estate_recover_stability = {
+	can_select = {
+		NOT = { stability = 0 }
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.5
+			NOT = { stability = -1 }
+		}
+	}
+	task_requirements = {
+		stability = 0
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+		add_prestige = 10
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+jewish_estate_tolerance = {
+ 	can_select = { 								 #Conditions for whether the agenda can be offered to you
+		NOT = {
+			employed_advisor = {
+				religion = jewish
+			}
+		}
+	}
+ 	selection_weight = {						#Determines how likely (compared to the estate's other agendas) this agenda is to be selected.
+		factor = 2							#initial factor will ignore numbers below 1, use a modifier for that!
+	}
+ 	task_requirements = { 		 				#Conditions for completing the task successfully
+		ROOT = {
+			employed_advisor = {
+				religion = jewish
+			}
+		}
+	}
+ 	task_completed_effect = {			 		#Effects executed when the agenda is successfully completed
+        add_estate_influence_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_INFLUENCE_MODIFIER
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+	}
+ 	failing_effect = {							#Effects executed when the agenda is failed (i.e. when fail_if is true or time runs out)
+        add_estate_loyalty_modifier = {
+			estate = jewish_estate
+			desc = JEWISH_ESTATE_LOYALTY_MODIFIER
+			loyalty = -5
+			duration = 7300
+		}
+	}
+}
+
+#Stabilise Country II
+jewish_estate_increase_stability = {
+	can_select = {
+		NOT = { stability = 2 }
+		stability = 1
+	}
+	selection_weight = {
+		factor = 1
+	}
+	fail_if = {
+		NOT = { stability = 0 }
+	}
+	task_requirements = {
+		stability = 2
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+		add_prestige = 10
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+jewish_estate_fire_advisor = {
+	can_select = {
+		employed_advisor = {
+			category = adm
+			religion = catholic
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	immediate_effect = {
+		hidden_effect = {
+			set_country_flag = need_to_fire_adm_advisor
+		}
+	}
+	on_invalid = {
+		clr_country_flag = need_to_fire_adm_advisor
+	}
+	task_requirements = {
+		custom_trigger_tooltip = {
+			tooltip = fire_adm_advisor_tooltip
+			has_country_flag = just_fired_adm_advisor
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+		clr_country_flag = just_fired_adm_advisor
+		clr_country_flag = need_to_fire_adm_advisor
+	}
+	invalid_trigger = {
+		NOT = {
+			employed_advisor = {
+				category = adm
+			}
+		}
+		NOT = { has_country_flag = just_fired_adm_advisor }
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+		clr_country_flag = need_to_fire_adm_advisor
+    }
+}
+
+jewish_estate_pay_off_loans = {
+	can_select = {
+		num_of_loans = 5
+		is_bankrupt = no
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 15
+		}
+		modifier = {
+			factor = 1.5
+			num_of_loans = 20
+		}
+	}
+	fail_if = {
+		is_bankrupt = yes
+	}
+	task_requirements = {
+		NOT = { num_of_loans = 1 }
+		hidden_trigger = {
+			is_bankrupt = no
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+		generate_scaled_advisor_of_type_and_religion_effect = {
+			type = treasurer
+			religion = root
+			discount = yes
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+jewish_estate_increase_trade_power_in_X = {
+	can_select = {
+		any_active_trade_node = {
+			trade_share = {
+				country = root
+				share = 5
+			}
+			NOT = {
+				trade_share = {
+					country = root
+					share = 50
+				}
+			}
+			any_trade_node_member_province = {
+				has_port = yes
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1.5
+		modifier = { #a good indication that you should be doing trade stuff
+			factor = 2
+			num_of_merchants = 3
+		}
+		modifier = {
+			factor = 2
+			num_of_merchants = 4
+		}
+		modifier = {
+			factor = 2
+			trade_income_percentage = 0.3
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = jewish_estate_increase_trade_power_in_X_var
+			value = 0
+		}
+		random_active_trade_node = {
+			limit = {
+				trade_share = {
+					country = root
+					share = 5
+				}
+				NOT = {
+					trade_share = {
+						country = root
+						share = 50
+					}
+				}
+				any_trade_node_member_province = {
+					has_port = yes
+				}
+			}
+			save_event_target_as = agenda_trade_node
+			if = {
+				limit = {
+					trade_share = { #Requires 65
+						country = root
+						share = 40
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 7
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					trade_share = { #Requires 50
+						country = root
+						share = 30
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 6
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					trade_share = { #Requires 40
+						country = root
+						share = 23
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					trade_share = { #Requires 30
+						country = root
+						share = 15
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 4
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					trade_share = { #Requires 25
+						country = root
+						share = 10
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					trade_share = { #Requires 20
+						country = root
+						share = 7
+					}
+				}
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 2
+					}
+				}
+			}
+			else = { #Requires 15
+				root = {
+					set_variable = {
+						which = jewish_estate_increase_trade_power_in_X_var
+						value = 1
+					}
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_trade_node
+	}
+	task_requirements = {
+		event_target:agenda_trade_node = {
+			if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 7
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 65
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 6
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 50
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 5
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 40
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 4
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 30
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 3
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 25
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 2
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 20
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						check_variable = {
+							which = jewish_estate_increase_trade_power_in_X_var
+							value = 1
+						}
+					}
+				}
+				trade_share = {
+					country = root
+					share = 15
+				}
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = jewish_estate
+			loyalty = 10
+		}
+		generate_scaled_advisor_of_type_and_religion_effect = {
+			type = trader
+			religion = root
+			discount = yes
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+jewish_estate_get_cash = {
+	can_select = {
+		NOT = { years_of_income = 0.5 }
+		NOT = { num_of_loans = 1 }
+		is_at_war = no
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		years_of_income = 2.5
+		NOT = { num_of_loans = 1 }
+	}
+	fail_if = {
+		num_of_loans = 1
+	}
+	task_completed_effect = {
+		if = {
+			limit = {
+				inflation = 5
+			}
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = 10
+			}
+			generate_scaled_advisor_of_type_and_religion_effect = {
+				type = master_of_mint
+				religion = root
+				discount = yes
+			}
+		}
+		else = {
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = 15
+			}
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = jewish_estate
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

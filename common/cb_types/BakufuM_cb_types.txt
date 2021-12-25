@@ -1,0 +1,109 @@
+cb_punish_daimyo = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+
+	months = 12
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_become_vassal
+		po_become_tributary_state
+		po_transfer_vassals
+	}
+
+	#defender_disabled_po = {
+	#	po_release_vassals
+	#	po_become_vassal
+	#	po_become_tributary_state
+	#	po_transfer_vassals
+	#}
+
+	war_goal = wargoal_BakufuM
+}
+
+
+
+
+
+cb_control_indep._daimyo = {
+	valid_for_subject = no
+
+	prerequisites = {
+		OR = {
+			has_reform = shogunate
+			AND = {
+				tag = JAP
+				any_owned_province = { has_province_modifier = heian_kyo }
+			}
+		}
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			NOT = { religion = animism }
+			OR = {
+				AND = {
+					is_subject = no
+					has_reform = indep_daimyo
+				}
+				AND = {
+					all_owned_province = { region = japan_region }
+					culture_group = ROOT
+				}
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_release_vassals
+		po_become_vassal
+		po_become_tributary_state
+		po_transfer_vassals
+	}
+
+	war_goal = take_capital_vassalize_bakufu
+}
+
+
+
+
+cb_liberate_japanese = {
+
+	prerequisites = {
+		OR = {
+			has_reform = shogunate
+			AND = {
+				tag = JAP
+				any_owned_province = { has_province_modifier = heian_kyo }
+			}
+		}
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+			OR = {
+				NOT = { culture_group = ROOT }
+				AND = {
+					NOT = { is_subject_of_type = tributary_state }
+					any_country = {
+						overlord_of = PREV
+						NOT = { culture_group = ROOT }
+					}
+				}
+			}
+			any_owned_province = {
+				region = japan_region
+				has_province_flag = bakufu_japan_region
+				culture_group = ROOT
+			}
+		}
+	}
+
+	attacker_disabled_po = {
+		po_release_vassals
+		po_become_vassal
+		po_become_tributary_state
+		po_transfer_vassals
+	}
+
+	war_goal = war_goal_liberate_japanese
+}

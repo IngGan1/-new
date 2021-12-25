@@ -1,0 +1,47 @@
+﻿l_english:
+ PEACE_OFFER_POWER_PROJECTION_POS:0 "$TAG$ !ÎNÇ §G$VAL$§!XÇ 8Á%¸,Ò¬À|¹ »ÅDÇ ƒ¬…ÇÈ²ä². \n"
+ PEACE_OFFER_POWER_PROJECTION_NEG:0 "$TAG$ !ÎNÇ §R$VAL$§!XÇ 8Á%¸,Ò¬À|¹ ƒÇDÇ ƒ¬…ÇÈ²ä². \n"
+ PEACEACCEPTOTHER_6:0 "pÈt¬NÇ ä²LÇü¬ ¬µÂÈ²ä²:\n \n $TERMS$"
+ PEACEACCEPTOTHER_LOG:0 "$RECIPIENT$ !ÎNÇ ä²LÇ pÈt¬<Çj¸ $ACTOR$ !Îü¬XÇ ÉÓTÖ|¹ ¼DÅä´ÆµÂÈ²ä²:\n \n $TERMS$"
+ PEACEWEACCEPT_4:0 "ä²LÇ pÈt¬<Çj¸ iÕXÇˆÕµÂÈ²ä²: \n \n"
+ PEACEWEINVOLVED_6:0 "0®¬NÇ ä²LÇü¬ ¬µÂÈ²ä²: \n \n $TERMS$"
+ PEACEWEINVOLVED_LOG:0 "$RECIPIENT$ !ÎNÇ ä²LÇ pÈt¬<Çj¸ $ACTOR$ !Îü¬XÇ ÉÓTÖ|¹ ¼DÅä´ÆµÂÈ²ä²:\n \n $TERMS$"
+ PEACEACCEPTENEMY_6:0 "0®¬NÇ ä²LÇü¬ ¬µÂÈ²ä²: \n \n $TERMS$"
+ TRANSFER_TRADE_POWER_TO_DESC:0 "$FROM$ !ÎNÇ $TO$ÐÅ ø­ä´XÇ Í 4»íÅ%¸ É $AMOUNT|Y%1$XÇ 4»íÅ%¸DÇ ±¨¬É ƒ¬…ÇÈ²ä². è², ±¨¬¼DÇ m­¬¬ 0µj¸ 4»íÅ%¸DÇ ¬ÀÉ »ºjÕ x±Ü´ÐÅÁ”² 4»íÅ%¸DÇ t¬2±¼DÇ Â ÆÅµÂÈ²ä². tÇ ÖÈNÇ 4×È0®¬tÇ ]° ° LµL®ÀÉ Ä¬Á.´ ƒ¬…ÇÈ²ä². \n"
+ HUMILIATE_RIVAL_PEACE_DESC:0 "$FROM$ !ÎNÇ t­•ÆDÇ ù²`Õ ƒ¬…ÇÈ²ä². \n"
+ ENFORCE_MILITARY_ACCESS:0 "$FROM$ !ÎNÇ 4×È ÖÈtÇ ]° ° LµL®ÀÉ $TO$ÐÅ p­¬À µÑ‰ÕŒ­DÇ Èõ¬XÕÄ³]¸ ¬”Æ¼DÇ ƒ¬…ÇÈ²ä². \n"
+ ENFORCE_FLEET_BASING_RIGHTS:0 "$FROM$ !ÎNÇ 4×È ÖÈtÇ ]° ° LµL®ÀÉ $TO$ÐÅ hÕ³ È¼Œ­DÇ Èõ¬XÕÄ³]¸ ¬”Æ¼DÇ ƒ¬…ÇÈ²ä². \n"
+ WAR_REPARATIONS_DESC:0 "$FROM$ !ÎNÇ $TO$ÐÅ ä¹ÔÆ Â…Ç $VALUE|0%$|¹ ÈÁÇ 0¼ÁÀ® …º©º<Çj¸ ÀÉ	®tÕ|Å `Õ ƒ¬…ÇÈ²ä². tÇ”² $YEARS$D± Ù³HÅ ÀÉÁ.´ ƒ¬…ÇÈ²ä². \n"
+ WEANNEX:0 "°Æ¬¹”² ø­ä´ÐÅŒ¬ DÆÈiÕÑ¼DÇ ”Æl­iÕÈ²ä². \n"
+ OTHERANNEX:0 "DÆÈiÕÑ¼DÇ ”Æl­¼µÂÈ²ä². \n"
+ TREATIES_TO_ANNUL:0 "$WHO$ !ÎNÇ $WHAT$ ¬XÇ ¨ºà´ pÈ‹ÅDÇ 4»¨ÖTÖ`Õ ƒ¬…ÇÈ²ä². \n"
+ TREATIES_TO_ANNUL_DESC:0 "$WHO$ !ÎNÇ $WHAT$ ¬XÇ ¨ºà´ pÈ‹ÅDÇ 4»¨ÖTÖ `Õ ƒ¬…ÇÈ²ä²: $LIST$. \n"
+ PEACE_EFFECT_PRESTIGE_MULTIPLE:0 "Í $VALUE$ ÇàÂtÇ §Y$WHO$§! !Îü¬ ø­ Ù³ù¹ÐÅ ˜°²´ÅÑÉÈ²ä². \n"
+ PEACEOFFER_INFLATION:0 "tÇ”² $ACTIVE$XÇ xÇÕ¸tÇXÁDÇ $INFLATION$ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä². \n"
+ GIVE_UP_CLAIMS_TOOLTIP:0 "$WHO$ !Îü¬ ø­ …ÈÁm­NÇ ¨ºP´ $TARGET$ÐÅ ³jÕ ¨ºà´ tÐ¸„ÇDÇ ìÓ0®`Õ ƒ¬…ÇÈ²ä². \n"
+ WHITE_PEACE:0 "4»pÈt¬ ÉÓTÖ. ²l­Ä³ 4»ÇÅDÇ »Åp¬˜° ƒÇÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ CONVERT_RELIGION:0 "$WHO$ !ÎNÇ $RELIGION$ ÿ»LÇ<Çj¸ ¬…È`Õ ƒ¬…ÇÈ²ä². \n"
+ BECOME_VASSAL_2:0 "$WHO$ !ÎNÇ $BOSS$XÇ …ÈÁm­tÇ .´ ƒ¬…ÇÈ²ä². \n"
+ BECOME_PROTECTORATE:0 "$WHO$ !ÎNÇ $BOSS$XÇ ô¼8Öm­tÇ .´ ƒ¬…ÇÈ²ä². \n"
+ BECOME_UNION:0 "$FIRST$ !Îü¬ $SECOND$ !Î ¬ÀtÇXÇ Ù³p­ ðÅiÕtÇ °¬1Á´à¬ $NAME$(tÇ)¬ $RULER$XÇ Ç©¬<Çj¸ ‘Åm­DÇ µÑXÎ`Õ ƒ¬…ÇÈ²ä². \n"
+ SECEDE_PROVINCES:0 "$WHO$ !ÎNÇ $WHAT$ ÀÉíÅDÇ $TO$ÐÅ ‘ÅÄ³`Õ ƒ¬…ÇÈ²ä². \n"
+ CORE_GIVEUP:0 "$WHO$ !ÎNÇ $WHAT$ÐÅ ³jÕ tÐ¸„ÇDÇ ìÓ0®`Õ ƒ¬…ÇÈ²ä². \n "
+ VASSAL_GIVEUP:0 "$WHO$ !ÎNÇ $WHAT$ÐÅ ³jÕ …ÈüÈm­<Çj¸ÁXÇ ÀÉÇ|¹ ìÓ0®`Õ ƒ¬…ÇÈ²ä²."
+ COUNTRY_RELEASE:0 "$WHO$ !ÎNÇ $WHAT$ !ÎDÇ Å³Ë¹m­<Çj¸ tÕ)¼`Õ ƒ¬…ÇÈ²ä². \n"
+ PAY_CASH:0 "$WHO$!ÎNÇ $WHAT$P´‡ÎDÇ ÀÉˆ´`Õ ƒ¬…ÇÈ²ä². \n"
+ PAY_CASH_TO:0 "$WHO$ !ÎNÇ §Y$WHAT$§!P´‡ÎDÇ $WHOM$ÐÅ ÀÉˆ´`Õ ƒ¬…ÇÈ²ä². \n"
+ PAY_CASH_TO_MULTIPLE:0 "$WHO$ !ÎNÇ §Y$WHAT$§!P´‡ÎDÇ $WHOM$ ¼ ø­ Ù³ù¹m­ÐÅ ˜°²´Å ÀÉˆ´`Õ ƒ¬…ÇÈ²ä². \n"
+ GET_PART_OF_CASH:0 "$WHO$ !ÎNÇ tÇ É §Y$WHAT$§!P´‡ÎDÇ ÖÝ´`Õ ƒ¬…ÇÈ²ä². \n"
+ CORE_RETURN:0 "$WHO$ !ÎNÇ $WHAT$ TÏ´Å ÀÉíÅDÇ $TO$ÐÅ É ƒ¬…ÇÈ²ä². \n"
+ PEACE_EFFECTS_BADBOY:1 "$THE$$CASUS$ ÈÁÇ …º„´<Çj¸, $ACTIVE$ !ÎNÇ $BADBOY$XÇ 0®ø¼ õ¬©¬È UÖ¥Ç ­Ä¬ ˜Ó±ðÒ|¹ ¼µÂÈ²ä². \n"
+ PEACE_DEFENDER_EFFECTS_BADBOY:1 ")¼´ÅÇj¸Á, $ACTIVE$ !ÎNÇ $BADBOY$XÇ 0®ø¼ õ¬©¬È UÖ¥Ç ­Ä¬ ˜Ó±ðÒ|¹ ¼µÂÈ²ä². \n"
+ PEACE_OFFER_POWER_COST:0 "tÇ ÉÓTÖ”² $WHO$ÐÅŒ¬ $COST|Y$£dip DÇ ŒÁ¨ºXÕŒ¬ `Õ ƒ¬…ÇÈ²ä². \n"
+ PEACE_EFFECT_PRESTIGE_DISHONORABLE:0 "$WHO$ !ÎNÇ ÈÁÇXÇ «Ì $MONTHS$¬ÔÆ Ù³HÅ $WS|Y$ tÇÁÀXÇ ¹ÂÈDÇ ÖÝ´XÕà¬ è²Å³ ÉÓTÖ ÖÈÐÅ Á…ºˆÕ0® Lµ8»ÐÅ $PRESTIGE$XÇ ÇàÂDÇ ”Í¬j¸ ÖÝ´iÕÈ²ä². \n"
+ PEACE_EFFECT_PRESTIGE:0 "$WHO$ !ÎNÇ $VALUE$XÇ ÇàÂDÇ ÖÝ´iÕÈ²ä². \n"
+ PEACE_EFFECT_AGGRESSIVE_EXP:1 "tÇ ÉÓTÖ”² $WHO$ !ÎtÇ $VALUE$XÇ 0®ø¼ õ¬©¬È UÖ¥Ç ­Ä¬ ˜Ó±ðÒ|¹ ¼Œ¬ Ì¹ä´ ƒ¬…ÇÈ²ä². \n"
+ PEACE_EFFECT_OVEREX:0 "tÇ ÉÓTÖ”² $WHO$ !ÎtÇ $VALUE$XÇ ü¬‰ÇUÖ¥Ç ˜Ó±ðÒ|¹ ¼Œ¬ Ì¹ä´ ƒ¬…ÇÈ²ä². \n"
+ SUBJECT_NEW_WAR:0 "$SUBJECT$ !ÎNÇ ø­ …ÈüÈm­xÇ $OVERLORD$ !ÎDÇ $LIST$ !Îü¬XÇ ÈÁÇÐÅ L°´Åä´|Ç ƒ¬…ÇÈ²ä². \n"
+ PEACE_GRANT_INDEPENDANCE:0 "$DEFENDER$ !ÎtÇ $ATTACKER$XÇ Å³Ë¹DÇ ‹ÅÁ`Õ ƒ¬…ÇÈ²ä². \n"
+ PEACE_DONT_GRANT_INDEPENDANCE:0 "§R$ATTACKER$ !ÎNÇ $DEFENDER$XÇ …ÈÁm­<Çj¸ ¨°DÇ ƒ¬…ÇÈ²ä².§! \n"
+ WHITE_PEACE_INDEPENDANCE:0 "4»pÈt¬ ÉÓTÖ. \n §R$ATTACKER$ !ÎNÇ $DEFENDER$XÇ …ÈÁm­<Çj¸ ¨°DÇ ƒ¬…ÇÈ²ä².§! \n"
+ PERSONAL_UNION_WITH:0 "§Y$OTHER$§W !Îü¬ Ù³p­ ðÅiÕDÇ °¬1Á É"

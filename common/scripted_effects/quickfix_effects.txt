@@ -1,0 +1,227 @@
+export_gov_cost = { #var ##exports governing cost to country and provinces
+	set_variable = { which = $var$ value = 0 }
+	every_owned_province = {
+		export_to_variable = { which = temp value = modifier:statewide_governing_cost }
+		export_to_variable = { which = $var$ value = modifier:local_governing_cost }
+		change_variable = { which = $var$ value = 1 }
+	}
+	if = {
+		limit = {
+			OR = {
+				has_reform = merchants_reform
+				has_reform = venice_merchants_reform
+			}
+		}
+		every_owned_province = {
+			change_variable = { which = $var$ value = 0.25 }
+		}
+	}
+	every_owned_province = {
+		area = {
+			limit = {
+				owned_by = PREV
+				NOT = { province_id = PREV }
+			}
+			PREV = {
+				change_variable = { which = temp which = PREV }
+			}
+		}
+		change_variable = { which = $var$ which = temp }
+		export_to_variable = { which = dev value = development }
+		multiply_variable = { which = $var$ which = dev }
+		PREV = {
+			change_variable = { which = $var$ which = PREV }
+		}
+	}
+}
+export_gov_cap = { #var ##exports governing cap
+	export_to_variable = { which = $var$ value = modifier:governing_capacity }
+	export_to_variable = { which = temp value = modifier:governing_capacity_modifier }
+	change_variable = { which = temp value = 1 }
+	multiply_variable = { which = $var$ which = temp }
+}
+unstate_above_limit = {
+	export_gov_cost = { var = gov }
+	export_gov_cap = { var = cap }
+	subtract_variable = { which = cap which = gov }
+	if = {
+		limit = {
+			check_variable = { which = cap value = 0 } #don't do anything if below cap already
+		}
+	}
+	else = {
+		random_neighbor_country = {
+			limit = {
+				ai = yes
+			}
+			save_event_target_as = replace #country to destate with
+		}
+		if = {
+			limit = {
+				NOT = { has_saved_event_target = replace }
+			}
+			random_country = {
+				limit = {
+					ai = yes
+				}
+				save_event_target_as = replace
+			}
+		}
+		
+		every_owned_province = { #set area representatives
+			limit = {
+				NOT = {
+					area_for_scope_province = {
+						has_province_flag = area_center
+					}
+				}
+			}
+			multiply_variable = { which = dev value = 0.01 }
+			multiply_variable = { which = gov value = 0.75 } #gov lost by turning to territory
+			if = { #minimum value
+				limit = {
+					NOT = { check_variable = { which = gov which = dev } }
+				}
+				set_variable = { which = gov which = dev }
+			}
+			multiply_variable = { which = dev value = 100 }
+			
+			set_province_flag = area_center
+			
+			area = { #collect dev & lost gov cost
+				limit = {
+					owned_by = ROOT
+					NOT = { province_id = PREV }
+				}
+				multiply_variable = { which = dev value = 0.01 }
+				multiply_variable = { which = gov value = 0.75 }
+				if = {
+					limit = {
+						NOT = { check_variable = { which = gov which = dev } }
+					}
+					set_variable = { which = gov which = dev }
+				}
+				multiply_variable = { which = dev value = 100 }
+				PREV = {
+					change_variable = { which = dev which = PREV }
+					change_variable = { which = gov which = PREV }
+				}
+			}
+		}
+		capital_scope = {
+			area = {
+				clr_province_flag = area_center
+			}
+		}
+		
+		set_variable = { which = gov which = cap } #will be useful later
+		set_variable = { which = dev value = 2000000 }
+		while = { #until below cap
+			limit = {
+				NOT = { check_variable = { which = gov value = 0 } }
+				any_owned_province = {
+					is_state = yes
+					NOT = {
+						is_capital = yes
+						area_for_scope_province = {
+							is_capital = yes
+						}
+					}
+				}
+			}
+			save_event_target_as = remove
+			every_owned_province = { #find lowest dev area
+				limit = {
+					has_province_flag = area_center
+					NOT = { check_variable = { which = dev which = event_target:remove } }
+				}
+				save_event_target_as = remove
+			}
+			event_target:remove = { #remove it
+				clr_province_flag = area_center
+				PREV = {
+					change_variable = { which = gov which = PREV }
+				}
+				area = {
+					limit = { owned_by = ROOT }
+					cede_province = event_target:replace
+					set_province_flag = temp
+				}
+				area = {
+					limit = { has_province_flag = temp }
+					cede_province = ROOT
+					clr_province_flag = temp
+				}
+			}
+		}
+	}
+	
+	every_owned_province = { #cleanup
+		clr_province_flag = area_center
+		set_variable = { which = dev value = 0 }
+		set_variable = { which = gov value = 0 }
+		set_variable = { which = temp value = 0 }
+	}
+	set_variable = { which = cap value = 0 }
+	set_variable = { which = gov value = 0 }
+}
+
+random_talented_daughter = {
+	custom_tooltip = random_talented_daughter_tt
+	hidden_effect = {
+		random_talented_daughter_h = { type = adm }
+		random_talented_daughter_h = { type = dip }
+		random_talented_daughter_h = { type = mil }
+	}
+}
+random_talented_daughter_h = { #type
+	random_list = {
+		33 = {
+			change_heir_$type$ = 1
+		}
+		33 = {
+			change_heir_$type$ = 2
+		}
+		33 = {
+			change_heir_$type$ = 3
+		}
+	}
+}
+add_disaster_progress_fix = {
+	trigger_switch = {
+		on_trigger = is_month
+		11 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		10 = { add_country_modifier = { name = add_disaster_progress_mod duration = 30 } }
+		9 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		8 = { add_country_modifier = { name = add_disaster_progress_mod duration = 30 } }
+		7 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		6 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		5 = { add_country_modifier = { name = add_disaster_progress_mod duration = 30 } }
+		4 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		3 = { add_country_modifier = { name = add_disaster_progress_mod duration = 30 } }
+		2 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+		1 = { add_country_modifier = { name = add_disaster_progress_mod duration = 28 } }
+		0 = { add_country_modifier = { name = add_disaster_progress_mod duration = 31 } }
+	}
+}
+add_heir_claim_increase = {
+	add_heir_claim_increase_helper = { num=2.048 }
+	add_heir_claim_increase_helper = { num=1.024 }
+	add_heir_claim_increase_helper = { num=0.512 }
+	add_heir_claim_increase_helper = { num=0.256 }
+	add_heir_claim_increase_helper = { num=0.128 }
+	add_heir_claim_increase_helper = { num=0.064 }
+	add_heir_claim_increase_helper = { num=0.032 }
+	add_heir_claim_increase_helper = { num=0.016 }
+	add_heir_claim_increase_helper = { num=0.008 }
+	add_heir_claim_increase_helper = { num=0.004 }
+	add_heir_claim_increase_helper = { num=0.002 }
+	add_heir_claim_increase_helper = { num=0.001 }
+}
+add_heir_claim_increase_helper = {
+	if = {
+		limit = { check_variable = { which = temp value = $num$ } }
+		subtract_variable = { which = temp value = $num$ }
+		add_heir_claim = $num$
+	}
+}

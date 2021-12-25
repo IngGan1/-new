@@ -1,0 +1,22 @@
+#4608 - Gabra
+
+owner = GAR
+controller = GAR
+add_core = GAR
+culture = borana
+religion = shamanism
+capital = "Gabra"
+trade_goods = livestock
+is_city = yes
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+discovered_by = east_african
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+
+1550.1.1 = { discovered_by = TUR }

@@ -1,0 +1,1462 @@
+namespace = dai_viet
+normal_or_historical_nations = yes
+
+# Nam Tiên
+country_event = {
+	id = dai_viet.1
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		2373 = {
+			culture = vietnamese
+		}
+		1022 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = cham
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		1022 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.2
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		1022 = {
+			culture = vietnamese
+		}
+		607 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = cham
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		607 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.3
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		607 = {
+			culture = vietnamese
+		}
+		2374 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = cham
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		2374 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.4
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		2374 = {
+			culture = vietnamese
+		}
+		606 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = cham
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		606 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.5
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		606 = {
+			culture = vietnamese
+		}
+		605 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = khmer
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		605 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.6
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		605 = {
+			culture = vietnamese
+		}
+		2376 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = khmer
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		2376 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.7
+	title = dai_viet.1.t
+	desc = dai_viet.1.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = vietnamese
+		2376 = {
+			culture = vietnamese
+		}
+		2377 = {
+			owned_by = ROOT
+			is_core = ROOT
+			culture = khmer
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.1.a
+		2377 = {
+			change_culture = vietnamese
+			change_religion = root
+		}
+	}
+}
+
+# The Mac Rebellion
+country_event = {
+	id = dai_viet.8
+	title = dai_viet.8.t
+	desc = dai_viet.8.d
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = DAI
+		2372 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		613 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		616 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		2371 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		610 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		num_of_cities = 10
+		is_year = 1520
+		NOT = {
+			exists = TOK
+			legitimacy = 50
+		}
+		OR = {
+			is_subject = no
+			is_subject_of_type = tributary_state
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = cruel_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = indulgent_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = malevolent_personality
+		}
+		modifier = {
+			factor = 0.5
+			ruler_has_personality = sinner_personality
+		}
+	}
+
+	immediate = {
+		add_stability = -2
+		hidden_effect = {
+			2372 = {
+				add_core = TOK
+				cede_province = TOK
+			}
+			613 = {
+				add_core = TOK
+				cede_province = TOK
+			}
+			616 = {
+				add_core = TOK
+				cede_province = TOK
+			}
+			2371 = {
+				add_core = TOK
+				cede_province = TOK
+			}
+			every_owned_province = {
+				add_core = TOK
+			}
+			TOK = {
+				change_government = monarchy
+				add_government_reform = autocracy_reform
+				adopt_reform_progress = ROOT
+				set_capital = 613
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				define_ruler = {
+					dynasty = "Mac"
+					claim = 30
+					age = 31
+				}
+				define_ruler_to_general = {
+					fire = 3
+					shock = 3
+					manuever = 3
+					siege = 0
+				}
+			}
+			if = {
+				limit = {
+					is_subject_of = MNG
+					is_subject_of_type = tributary_state
+				}
+				MNG = {
+					create_subject = {
+						subject_type = tributary_state
+						subject = TOK
+					}
+				}
+			}
+			set_capital = 610
+			declare_war_with_cb = {
+				who = TOK
+				casus_belli = cb_core
+				war_goal_province = 613
+			}
+		}
+	}
+
+	option = {
+		name = dai_viet.8.a
+		add_country_modifier = {
+			name = vietnamese_warlord_era
+			duration = -1
+		}
+	}
+}
+
+# The Nguyên Lords
+country_event = {
+	id = dai_viet.9
+	title = dai_viet.9.t
+	desc = dai_viet.9.d
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		tag = DAI
+		TOK = {
+			exists = yes
+		}
+		has_country_modifier = vietnamese_warlord_era
+		610 = {
+			is_capital = yes
+		}
+		1016 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		2373 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		1022 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		607 = {
+			owned_by = DAI
+			is_core = DAI
+			controlled_by = DAI
+		}
+		NOT = {
+			exists = ANN
+			legitimacy = 50
+		}
+		OR = {
+			is_subject = no
+			is_subject_of_type = tributary_state
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			1016 = {
+				add_core = ANN
+			}
+			2373 = {
+				add_core = ANN
+			}
+			1022 = {
+				add_core = ANN
+			}
+			607 = {
+				add_core = ANN
+			}
+			if = {
+				limit = {
+					2374 = {
+						owned_by = ROOT
+					}
+				}
+				2374 = {
+					add_core = ANN
+				}
+			}
+			if = {
+				limit = {
+					606 = {
+						owned_by = ROOT
+					}
+				}
+				606 = {
+					add_core = ANN
+				}
+			}
+			if = {
+				limit = {
+					605 = {
+						owned_by = ROOT
+					}
+				}
+				605 = {
+					add_core = ANN
+				}
+			}
+			if = {
+				limit = {
+					2376 = {
+						owned_by = ROOT
+					}
+				}
+				2376 = {
+					add_core = ANN
+				}
+			}
+			if = {
+				limit = {
+					2377 = {
+						owned_by = ROOT
+					}
+				}
+				2377 = {
+					add_core = ANN
+				}
+			}
+			if = {
+				limit = {
+					2375 = {
+						owned_by = ROOT
+					}
+				}
+				2375 = {
+					add_core = ANN
+				}
+			}
+		}
+	}
+
+	option = {
+		name = dai_viet.9.a
+		release = ANN
+		ANN = {
+			change_government = monarchy
+			add_government_reform = autocracy_reform
+			adopt_reform_progress = ROOT
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.8
+					cavalry = 0.2
+				}
+			}
+			define_ruler = {
+				dynasty = "Nguyên"
+				age = 31
+				claim = 75
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = resisting_the_mac
+			}
+			set_country_flag = nguyen_lords
+		}
+		add_opinion = {
+			who = ANN
+			modifier = resisting_the_mac
+		}
+		if = {
+			limit = {
+				is_subject_of = MNG
+				is_subject_of_type = tributary_state
+			}
+			MNG = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = ANN
+				}
+			}
+		}
+		create_alliance = ANN
+	}
+
+	option = {
+		name = dai_viet.9.b
+		2373 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 3
+				friend = ANN
+				win = yes	
+			}
+		}
+	}
+}
+
+# The Decline of the Mac
+country_event = {
+	id = dai_viet.10
+	title = dai_viet.10.t
+	desc = dai_viet.10.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MNG
+		is_emperor_of_china = yes
+		TOK = {
+			exists = yes
+			is_subject_of = MNG
+			NOT = {
+				num_of_cities = 3
+			}
+		}
+		DAI = {
+			exists = yes
+			has_country_modifier = vietnamese_warlord_era
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			exists = ANN
+		}
+	}
+
+	option = {
+		name = dai_viet.10.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				alliance_with = DAI
+			}
+			modifier = {
+				factor = 100
+				is_rival = DAI
+			}
+		}
+		TOK = {
+			grant_independence = yes
+		}
+		create_guarantee = TOK
+		TOK = {
+			add_opinion = {
+				who = MNG
+				modifier = grateful_for_protection
+			}
+			country_event = {
+				id = dai_viet.11
+				days = 1
+			}
+		}
+		DAI = {
+			add_opinion = {
+				who = MNG
+				modifier = resentful_of_interference
+			}
+			country_event = {
+				id = dai_viet.12
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = dai_viet.10.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				alliance_with = DAI
+			}
+			modifier = {
+				factor = 0
+				is_rival = DAI
+			}
+		}
+		add_prestige = 5
+	}
+}
+
+# Ming Protects Mac
+country_event = {
+	id = dai_viet.11
+	title = dai_viet.11.t
+	desc = dai_viet.11.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = dai_viet.11.a
+		add_legitimacy = 5
+	}
+}
+
+country_event = {
+	id = dai_viet.12
+	title = dai_viet.12.t
+	desc = dai_viet.12.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = dai_viet.12.a
+		add_legitimacy = -5
+	}
+}
+
+# End of the Mac War
+country_event = {
+	id = dai_viet.13
+	title = dai_viet.13.t
+	desc = dai_viet.13.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		TOK = {
+			exists = no
+		}
+		has_country_modifier = vietnamese_warlord_era
+		613 = {
+			owned_by = DAI
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.13.a
+		add_stability = 1
+		add_legitimacy = 100
+		if = {
+			limit = {
+				ANN = {
+					exists = yes
+				}
+			}
+			ANN = {
+				every_owned_province = {
+					add_core = DAI
+				}
+			}
+		}
+		remove_country_modifier = vietnamese_warlord_era
+	}
+}
+
+# Rise of the Trinh Lords
+country_event = {
+	id = dai_viet.14
+	title = dai_viet.14.t
+	desc = dai_viet.14.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_country_modifier = vietnamese_warlord_era
+		NOT = {
+			legitimacy = 50
+			adm = 3
+			dip = 3
+			mil = 3
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = dai_viet.14.a
+		ai_chance = {
+			factor = 75
+		}
+		define_heir = {
+			dynasty = "Trinh"
+			age = 31
+			adm = 3
+			dip = 3
+			mil = 3
+			claim = 75
+		}
+		kill_ruler = yes
+	}
+
+	option = {
+		name = dai_viet.14.b
+		ai_chance = {
+			factor = 25
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+			}
+		}
+	}
+}
+
+# The Question of the Nguyen Lords
+country_event = {
+	id = dai_viet.15
+	title = dai_viet.15.t
+	desc = dai_viet.15.d
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		NOT = {
+			has_country_modifier = vietnamese_warlord_era
+		}
+		ANN = {
+			exists = yes
+			has_country_flag = nguyen_lords
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = dai_viet.15.a
+		ai_chance = {
+			factor = 100
+		}
+		ANN = {
+			country_event = {
+				id = dai_viet.16
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = dai_viet.15.b
+		ai_chance = {
+			factor = 0
+		}
+		add_legitimacy = -25
+	}
+}
+
+country_event = {
+	id = dai_viet.16
+	title = dai_viet.16.t
+	desc = dai_viet.16.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	option = {
+		name = dai_viet.16.a
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 0
+				is_rival = DAI
+			}
+		}
+		DAI = {
+			inherit = ROOT
+			country_event = {
+				id = dai_viet.17
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = dai_viet.16.b
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 100
+				is_rival = DAI
+			}
+		}
+		add_historical_rival = DAI
+		DAI = {
+			add_historical_rival = ROOT
+			country_event = {
+				id = dai_viet.18
+				days = 1
+			}
+			every_owned_province = {
+				add_core = ROOT
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.17
+	title = dai_viet.17.t
+	desc = dai_viet.17.d
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = dai_viet.17.a
+		add_legitimacy = 25
+	}
+}
+
+country_event = {
+	id = dai_viet.18
+	title = dai_viet.18.t
+	desc = dai_viet.18.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = dai_viet.18.a
+		add_legitimacy = -25
+	}
+}
+
+# The Empress Dowager
+country_event = {
+	id = dai_viet.19
+	title = dai_viet.19.t
+	desc = dai_viet.19.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Thi Anh"
+		dynasty = "Nguyên"
+		has_ruler_flag = empress_dowager
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.19.a
+		custom_tooltip = dai_viet.19.a.tooltip
+	}
+}
+
+# The Death of Lê Bang Co
+country_event = {
+	id = dai_viet.20
+	title = dai_viet.20.t
+	desc = dai_viet.20.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Thi Anh"
+		dynasty = "Nguyên"
+		has_ruler_flag = empress_dowager
+		NOT = {
+			has_heir = "Bang Co"
+		}
+		is_year = 1457
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.20.a
+		ai_chance = {
+			factor = 100
+		}
+		define_heir = {
+			name = "Tu Thành"
+			dynasty = "Lê"
+			adm = 5
+			dip = 4
+			mil = 5
+			birth_date = 8.5.1442
+		}
+		kill_ruler = yes
+		hidden_effect = {
+			add_ruler_personality = lawgiver_personality
+		}
+	}
+
+	option = {
+		name = dai_viet.20.b
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -3
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Tu Thành Lê"
+			}
+		}
+		if = {
+			limit = {
+				religion_group = buddhist
+			}
+			add_karma = -100
+		}
+	}
+}
+
+# The Coup Against the Empress Dowager
+country_event = {
+	id = dai_viet.21
+	title = dai_viet.21.t
+	desc = dai_viet.21.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Thi Anh"
+		dynasty = "Nguyên"
+		has_ruler_flag = empress_dowager
+		is_year = 1459
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		hidden_effect = {
+			define_heir = {
+				name = "Nghi Dân"
+				dynasty = "Lê"
+				max_random_adm = 0
+				max_random_dip = 0
+				max_random_mil = 0
+				birth_date = 1439.6.1
+			}
+			kill_ruler = yes
+			hidden_effect = {
+				add_ruler_personality = cruel_personality
+			}
+			set_ruler_flag = dai_viet_coup
+		}
+	}
+
+	option = {
+		name = dai_viet.21.a
+		add_stability = -3
+		if = {
+			limit = {
+				religion_group = buddhist
+			}
+			add_karma = -100
+		}
+	}
+}
+
+# The Counter-Coup Against Nghi Dân
+country_event = {
+	id = dai_viet.22
+	title = dai_viet.22.t
+	desc = dai_viet.22.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Nghi Dân"
+		dynasty = "Lê"
+		has_ruler_flag = dai_viet_coup
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = dai_viet.22.a
+		ai_chance = {
+			factor = 100
+		}
+		define_heir = {
+			name = "Tu Thành"
+			dynasty = "Lê"
+			adm = 5
+			dip = 4
+			mil = 5
+			birth_date = 8.5.1442
+		}
+		kill_ruler = yes
+		hidden_effect = {
+			add_ruler_personality = lawgiver_personality
+		}
+	}
+
+	option = {
+		name = dai_viet.22.b
+		ai_chance = {
+			factor = 0
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# Lê Bang Co Dies Early
+country_event = {
+	id = dai_viet.23
+	title = dai_viet.23.t
+	desc = dai_viet.23.d
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Thi Anh"
+		dynasty = "Nguyên"
+		has_ruler_flag = empress_dowager
+		NOT = {
+			has_heir = "Bang Co"
+		}
+		NOT = {
+			is_year = 1457
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.23.a
+		ai_chance = {
+			factor = 75
+		}
+		define_heir = {
+			name = "Nghi Dân"
+			dynasty = "Lê"
+			max_random_adm = 0
+			max_random_dip = 0
+			max_random_mil = 0
+			birth_date = 1439.6.1
+		}
+		kill_ruler = yes
+		if = {
+			limit = {
+				has_ruler = "Nghi Dân"
+			}
+			hidden_effect = {
+				add_ruler_personality = cruel_personality
+			}
+		}
+		set_country_flag = nghi_dan_cruelty
+	}
+
+	option = {
+		name = dai_viet.23.b
+		ai_chance = {
+			factor = 25
+		}
+		add_stability = -3
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Nghi Dân Lê"
+			}
+		}
+	}
+}
+
+# The Cruelty of Nghi Dân
+country_event = {
+	id = dai_viet.24
+	title = dai_viet.24.t
+	desc = dai_viet.24.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Nghi Dân"
+		dynasty = "Lê"
+		has_country_flag = nghi_dan_cruelty
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = dai_viet.24.a
+		ai_chance = {
+			factor = 100
+		}
+		define_heir = {
+			name = "Tu Thành"
+			dynasty = "Lê"
+			adm = 5
+			dip = 4
+			mil = 5
+			birth_date = 8.5.1442
+		}
+		kill_ruler = yes
+		hidden_effect = {
+			add_ruler_personality = lawgiver_personality
+		}
+		clr_country_flag = nghi_dan_cruelty
+	}
+
+	option = {
+		name = dai_viet.24.b
+		ai_chance = {
+			factor = 0
+		}
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Tu Thành Lê"
+			}
+		}
+		clr_country_flag = nghi_dan_cruelty
+	}
+}
+
+# The Rulership of Lê Bang Co
+country_event = {
+	id = dai_viet.25
+	title = dai_viet.25.t
+	desc = dai_viet.25.d
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		has_ruler = "Thi Anh"
+		dynasty = "Nguyên"
+		has_ruler_flag = empress_dowager
+		has_heir = "Bang Co"
+		heir_age = 15
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.25.a
+		ai_chance = {
+			factor = 0
+		}
+		kill_ruler = yes
+		add_stability = 1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 15
+		}
+	}
+
+	option = {
+		name = dai_viet.25.b
+		ai_chance = {
+			factor = 100
+		}
+		add_legitimacy = -50
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
+	}
+}
+
+# The Might of Esen Choros
+country_event = {
+	id = dai_viet.26
+	title = dai_viet.26.t
+	desc = dai_viet.26.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = OIR
+		has_ruler_modifier = the_might_of_esen_choros
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.26.a
+		custom_tooltip = dai_viet.26.a.tooltip
+	}
+}
+
+country_event = {
+	id = dai_viet.27
+	title = dai_viet.26.t
+	desc = dai_viet.26.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		is_subject_of = OIR
+		OIR = {
+			has_ruler_modifier = the_might_of_esen_choros
+		}
+		NOT = {
+			has_country_flag = heard_of_esen
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = heard_of_esen
+	}
+
+	option = {
+		name = dai_viet.27.a
+		custom_tooltip = dai_viet.27.a.tooltip
+	}
+}
+
+country_event = {
+	id = dai_viet.28
+	title = dai_viet.26.t
+	desc = dai_viet.26.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MNG
+		OIR = {
+			has_ruler = "Esen"
+			dynasty = "Choros"	
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.28.a
+		custom_tooltip = dai_viet.28.a.tooltip
+	}
+}
+
+country_event = {
+	id = dai_viet.29
+	title = dai_viet.29.t
+	desc = dai_viet.29.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		OR = {
+			tag = MNG
+			tag = OIR
+			is_subject_of = OIR
+		}
+		OIR = {
+			NOT = {
+				has_ruler_modifier = the_might_of_esen_choros
+			}
+		}
+		NOT = {
+			has_country_flag = heard_of_esen_2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_country_flag = heard_of_esen_2
+	}
+
+	option = {
+		name = dai_viet.29.a
+		custom_tooltip = dai_viet.29.a.tooltip
+	}
+}
+
+country_event = {
+	id = dai_viet.30
+	title = dai_viet.30.t
+	desc = dai_viet.30.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = OIR
+		has_ruler_modifier = the_might_of_esen_choros
+		MNG = {
+			has_disaster = empire_of_china_nomadic_border
+		}
+		NOT = {
+			war_with = MNG
+		}
+		is_at_war = no
+		ai = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.30.a
+		declare_war_with_cb = {
+			who = MNG
+			casus_belli = cb_horde_vs_civ
+		}
+	}
+}
+
+country_event = {
+	id = dai_viet.31
+	title = dai_viet.31.t
+	desc = dai_viet.31.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = OIR
+		has_country_flag = tumu_crisis_victory
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = dai_viet.31.a
+		every_subject_country = {
+			add_liberty_desire = -100
+		}
+		add_prestige = 50
+		add_horde_unity = 25
+		add_yearly_manpower = 10
+		add_country_modifier = {
+			name = the_new_khanate
+			duration = 9125
+		}
+	}
+}

@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = hessian
+religion = catholic
+technology_group = western
+capital = 4023	# Ziegenhain
+fixed_capital = 4023
+
+
+1442.1.1 = {
+	monarch = {
+		name = "Johan II"
+		dynasty = "von Ziegenhain"
+		birth_date = 1380.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	queen = {
+		country_of_origin = WLD
+		name = "Elisabeth"
+		dynasty = "von Waldeck"
+		birth_date = 1399.1.1
+		death_date = 1460.2.18
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

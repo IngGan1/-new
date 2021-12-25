@@ -1,0 +1,51 @@
+namespace = vic_flavor_hab
+normal_or_historical_nations = yes
+
+# Prince Midnight
+country_event = {
+	id = vic_flavor_hab.1
+	title = "vic_flavor_hab.1.t"
+	desc = "vic_flavor_hab.1.d"
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = metternich_advisor }
+		OR = {
+			tag = HAB
+			tag = AUE
+			tag = AHE
+		}
+		is_year = 1805
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		set_global_flag = metternich_advisor
+	}
+	
+	option = {
+		name = "vic_flavor_hab.1.a"
+		define_advisor = {
+			name = "Klemens Wenzel Lothar von Metternich"
+			culture = austrian
+			religion = ROOT
+			type = statesman
+			skill = 4
+			discount = yes
+		}
+		add_prestige = 20
+		add_absolutism = 5
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = "vic_flavor_hab.1.b"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}

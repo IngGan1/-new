@@ -1,0 +1,344 @@
+﻿l_english:
+ NOT_STARTED_HEIR_EDUCATION: "ÄÖÄ¬Ç”² DÅÁÉ P­!ÇDÇ ÜÂ‘ÇXÕÀÉ JÅXÅµÂÈ²ä²."
+ HEIR_EDUCATION_PROGRESS: "[Root.heirEducationalLevel.GetName]: §G[Root.heirEducationalLevel.GetValue]"
+ HEIR_EDUCATION_PROGRESS_LOW: "[Root.heirEducationalLevel.GetName]: §R‹Å¬XÇ ÄÉÄ³ ([Root.heirEducationalLevel.GetValue])"
+ HEIR_EDUCATION_PROGRESS_MEDIUM: "[Root.heirEducationalLevel.GetName]: §YÈù²jÕ ÄÉÄ³ ([Root.heirEducationalLevel.GetValue])"
+ HEIR_EDUCATION_PROGRESS_HIGH: "[Root.heirEducationalLevel.GetName]: §GÌÖm¹jÕ ÄÉÄ³ ([Root.heirEducationalLevel.GetValue])"
+ HEIR_EDUCATION_PROGRESS_CLERICAL: "§WP­!Ç Ž´8»: 1ÁÁÉ"
+ HEIR_EDUCATION_PROGRESS_ADMINISTRATIVE: "§WP­!Ç Ž´8»: ‰ÕÈ"
+ HEIR_EDUCATION_PROGRESS_SCHOLASTIC: "§WP­!Ç Ž´8»: ²ÂjÏ|·  ÌYÕ"
+ HEIR_EDUCATION_PROGRESS_DIPLOMACY: "§WP­!Ç Ž´8»: xÆP­"
+ HEIR_EDUCATION_PROGRESS_INTRIGUE: "§WP­!Ç Ž´8»: LÇ¨º"
+ HEIR_EDUCATION_PROGRESS_TRADE: "§WP­!Ç Ž´8»: 4»íÅ"
+ HEIR_EDUCATION_PROGRESS_MARTIAL: "§WP­!Ç Ž´8»: 4».Â"
+ HEIR_EDUCATION_PROGRESS_LOGISTICS: "§WP­!Ç Ž´8»: |±¬¹YÕ"
+ HEIR_EDUCATION_PROGRESS_NAVAL: "§WP­!Ç Ž´8»: tÕp­"
+ string_christian_religion_building: "P­ŒÖ"
+ string_muslim_religion_building: "¨º²ÂlÐ"
+ string_other_religion_building: "¬ÀÐÆ"
+ TINY_EDUCATION_GAIN: "P­!Ç ÄÉÄ³|¹ DÅüÈ pÈ® É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä² (§G+5§W)"
+ SMALL_EDUCATION_GAIN: "P­!Ç ÄÉÄ³|¹ pÈ® É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä² (§G+10§W)"
+ MEDIUM_EDUCATION_GAIN: "P­!Ç ÄÉÄ³|¹ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä² (§G+15§W)"
+ LARGE_EDUCATION_GAIN: "P­!Ç ÄÉÄ³|¹ Î¹tÇ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä² (§G+20§W)"
+ HUGE_EDUCATION_GAIN: "P­!Ç ÄÉÄ³|¹ DÅüÈ Î¹tÇ É¬ÜÂ¬Ð ƒ¬…ÇÈ²ä² (§G+25§W)"
+ TINY_EDUCATION_LOSS: "P­!Ç ÄÉÄ³¬ DÅüÈ pÈ® ¨µ´ÅÀÉŒ¬ .´ ƒ¬…ÇÈ²ä² (§R-5§W)"
+ SMALL_EDUCATION_LOSS: "P­!Ç ÄÉÄ³¬ pÈ® ¨µ´ÅÀÉŒ¬ .´ ƒ¬…ÇÈ²ä² (§R-10§W)"
+ MEDIUM_EDUCATION_LOSS: "P­!Ç ÄÉÄ³¬ ¨µ´ÅÀÉŒ¬ .´ ƒ¬…ÇÈ²ä² (§R-15§W)"
+ LARGE_EDUCATION_LOSS: "P­!Ç ÄÉÄ³¬ Î¹tÇ ¨µ´ÅÀÉŒ¬ .´ ƒ¬…ÇÈ²ä² (§R-20§W)"
+ HUGE_EDUCATION_LOSS: "P­!Ç ÄÉÄ³¬ DÅüÈ Î¹tÇ ¨µ´ÅÀÉŒ¬ .´ ƒ¬…ÇÈ²ä² (§R-25§W)"
+ HEIR_CHANGE_EDUCATION_SUBCATEGORY: "tÇƒ¬NÇ [Root.Heir.GetName]XÇ 8ÁŽ´ P­!Ç Ž´8»DÇ ¼À¯ Â ˆÇŒ¬ iÕÈ²ä²."
+ HEIR_CHANGE_EDUCATION_CATEGORY: "tÇƒ¬NÇ [Root.Heir.GetName]XÇ P­!Ç Ž´8»DÇ DÆÈˆ× ¼À¯ Â ˆÇŒ¬ iÕÈ²ä²."
+ he_opinion_tutoring_heir: "P­µÂ ¼NÇ ÄÖÄ¬Ç"
+ he_heir_religion: "…ÈP­È P­°Æ"
+ he_heir_religion_offended: "°Æ¬¹ …ÈP­XÇ ­µÂDÇ tÇè²tÇ|· D¾œ°ˆÕä²!"
+ heirEducationalLevel: "ÄÖÄ¬Ç P­!Ç ÄÉ‰ÕÄ³"
+ educate_heir_title: "ÄÖÄ¬Ç P­!Ç"
+ educate_heir_desc: "°Æ¬¹XÇ ÄÖÄ¬Çä´tÇ µÑXÎ`Õ Lµ¬ ´ÈÅDÇ Lµ ø­ä´ÐÅŒ¬ Ä³ÀÆtÇ .´ P­!ÇDÇ ÜÂ‘ÇXÕíÂÜÂ2Æ."
+ view_heir_education_title: "ÄÖÄ¬Ç P­!Ç ÄÉ‰ÕÄ³"
+ view_heir_education_desc: "UÖxÇ ¼²ÂÐÅÁ P­!Ç ÈÄ³|¹ UÖxÇ ¬¥²iÕÈ²ä². 20 tÇXÕ”² 0®ÍÈxÇ, 20-50NÇ ­.ÌNÇ, 50-80NÇ ‹ÈNÇ, ø­¬¹à¬ 80 tÇÁÀNÇ ÌÖm¹jÕ P­!Ç<Çj¸ ÉÓ¬)´È²ä².."
+ cato_education_events_setup_hereditary.0.title: "Hidden Event"
+ cato_education_events_setup_hereditary.0.desc: "Hello! You shouldn't be seeing this event. If you are, then either you've forced it to fire through console or something is broken. Please report this to Catoscar, who will bang his head against his keyboard until this is hopefully fixed!"
+ cato_education_events_setup_hereditary.1.title: "P­!Ç ÜÂ‘Ç"
+ cato_education_events_setup_hereditary.1.desc: "ÄÖÄ¬Ç¬ ´Å²µ „´|Å|¹ P­!Ç¼DÇ ÀÉ|¹ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä². ¶”² [Root.Heir.GetSheHe]¬ ²Â²Âj¸ .ÁÝÐXÕÄ³k¸ `Õ ÂÄ³ ˆÇµÂÈ²ä². ²Â²Âj¸ .ÁÝÐXÕ”² Ë¬°Æ P­!Ç ­(¸ tÇ²¼¸ÒÐÅÁ ÁÉÈ .ÁÝÐDÇ `Õ Â ÆÅŒ¬ ´ÀÉÌ¹ ÄÖÄ¬Ç¬ ²Â²Âj¸ ‹ÈDÅXÕ”² „´|ÅÐÅÁ 0¼ÀÆDÇ »Å<ÇÀ»j¸ T³ ‹ÈNÇ °¬ü¬|¹ »Å0® ‹ÂµÂÈ²ä²."
+ cato_education_events_setup_hereditary.1.a: "‰ÕÈ P­!Ç"
+ cato_education_events_setup_hereditary.1.b: "xÆP­ P­!Ç"
+ cato_education_events_setup_hereditary.1.c: "p­¬À P­!Ç"
+ cato_education_events_setup_hereditary.1.d: "[Root.Heir.GetName]XÇ .ÁÝÐÐÅ á¹0®Ç."
+ cato_education_events_setup_hereditary.2.title: "‰ÕÈ P­!Ç"
+ cato_education_events_setup_hereditary.2.desc: "‰ÕÈ P­!ÇDÇ ÇtÕ °Æ¬¹”² ÄÖÄ¬ÇÐÅŒ¬ Å³äÂhÕü¬ àÂYÕ, m­¬|¹ ´ÆÆXÕ”² |ÇÁÀÈxÇ ,ÒÁÇ ¶”² T³ Î¹NÇ YÕ8»È ðÅl­|¹ ”Íl­XÕ”² )¼•¼ÐÅ ³tÕ 0¼°ÆÄ³k¸ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä². <»`¸ [Root.Heir.GetHerHim]¬ .ÁÝÐXÕÄ³k¸ `Õ ÂÄ³ ˆÇµÂÈ²ä². DÆÈjÕ .ÁÝÐXÇ Ç.Ç|¹ É LµÌ¹|ÐNÇ DÅÈ²T³|·Ä³ °Æ¬¹¬ ÄÖÄ¬ÇÐÅŒ¬ .ÁÝÐŒ­DÇ Éä²tº ìÅÈˆ× T³ ˜°NÇ 1Áü¬|¹ ¼° ƒ¬…ÇÈ²ä²."
+ cato_education_events_setup_hereditary.2.a: "àÂYÕ P­!Ç"
+ cato_education_events_setup_hereditary.2.b: "‰ÕÈYÕ P­!Ç"
+ cato_education_events_setup_hereditary.2.c: " ÌYÕ P­!Ç"
+ cato_education_events_setup_hereditary.2.e: "°ÀÅÅ P­!Ç"
+ cato_education_events_setup_hereditary.2.d: "[Root.Heir.GetName]XÇ .ÁÝÐÐÅ á¹0®Ç."
+ cato_education_events_setup_hereditary.3.title: "xÆP­ P­!Ç"
+ cato_education_events_setup_hereditary.3.desc: "xÆP­ P­!ÇDÇ ÇtÕ °Æ¬¹”² ÄÖÄ¬ÇÐÅŒ¬ xÆP­XÇ 8ÁŽ´ ¬ÀmÕ, TÅ´Àù²XÕÀÉ JÅ”² )¼•¼ ¶”² ä²x¹ ¬ÀŒ·ä´ü¬XÇ ­Ä¬|¹ tÇ¬ÈÉXÕà¬ T³ ˜°NÇ p¬˜·|¹ ˆÕä²à¬ ÝÀ¬XÕŒ¬ Ì¹Ü´”² )¼•¼DÇ 0¼°ÆÄ³k¸ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä². <»`¸ [Root.Heir.GetHerHim]¬ .ÁÝÐXÕÄ³k¸ `Õ ÂÄ³ ˆÇµÂÈ²ä². DÆÈjÕ .ÁÝÐXÇ Ç.Ç|¹ É LµÌ¹|ÐNÇ DÅÈ²T³|·Ä³ °Æ¬¹¬ ÄÖÄ¬ÇÐÅŒ¬ .ÁÝÐŒ­DÇ Éä²tº ìÅÈˆ× T³ ˜°NÇ 1Áü¬|¹ ¼° ƒ¬…ÇÈ²ä²."
+ cato_education_events_setup_hereditary.3.a: "xÆP­YÕ P­!Ç"
+ cato_education_events_setup_hereditary.3.b: "Ä¬µ· P­!Ç"
+ cato_education_events_setup_hereditary.3.c: "4»íÅYÕ P­!Ç"
+ cato_education_events_setup_hereditary.3.e: "ÝÂü» P­!Ç"
+ cato_education_events_setup_hereditary.3.d: "[Root.Heir.GetName]XÇ .ÁÝÐÐÅ á¹0®Ç."
+ cato_education_events_setup_hereditary.4.title: "p­¬À P­!Ç"
+ cato_education_events_setup_hereditary.4.desc: "p­¬À P­!ÇXÇ Ë¬°Æ ÁÀÁxÇtÇ p­³ ÝÀjÖ, tÕp­ ¶”² 0®Ä¬ÈxÇ ÈÁÇ ²´ÐÅ ˆÇ”² <»X¹ÐÅ ³tÕ 0¼°Æ”² p³ ÑÉÉXÕÄ³k¸ .ÁÝÐ`Õ Â ˆÇµÂÈ²ä². <»`¸ [Root.Heir.GetHerHim]¬ .ÁÝÐXÕÄ³k¸ `Õ ÂÄ³ ˆÇµÂÈ²ä². DÆÈjÕ .ÁÝÐXÇ Ç.Ç|¹ É LµÌ¹|ÐNÇ DÅÈ²T³|·Ä³ °Æ¬¹¬ ÄÖÄ¬ÇÐÅŒ¬ .ÁÝÐŒ­DÇ Éä²tº ìÅÈˆ× T³ ˜°NÇ 1Áü¬|¹ ¼° ƒ¬…ÇÈ²ä²."
+ cato_education_events_setup_hereditary.4.a: "p­¬ÀYÕ P­!Ç"
+ cato_education_events_setup_hereditary.4.b: "tÕp­ P­!Ç"
+ cato_education_events_setup_hereditary.4.c: "p­Â P­!Ç"
+ cato_education_events_setup_hereditary.4.e: "TÖ0® P­!Ç"
+ cato_education_events_setup_hereditary.4.d: "[Root.Heir.GetName]XÇ .ÁÝÐÐÅ á¹0®Ç."
+ cato_education_events_setup_hereditary.10.title: "P­!Ç DÆÌ¸"
+ cato_education_events_setup_hereditary.10.desc.a: "2Æœ· YÕÅÅ k°ÐÅ ÄÖÄ¬Ç”² 1Áõ¬È<Çj¸ [Root.Heir.GetHerHis] P­!ÇDÇ k°È¹äÌä². tÇÈ [Root.Heir.GetHerHim]XÇ P­!ÇtÇ ¸Å.È¬ i¾DÇ ¼XÕ8® 0®³tÕô¼Ç."
+ cato_education_events_setup_hereditary.10.desc.b: "[Root.Monarch.GetName]”² YÕÅÅ ÉÐÅ ¬Ç0® UÆÇ|¹ ¼Œ¬ ´tºÁ P­!ÇDÇ È³j¸ È¹XÎÀÉ|¹ »ºˆÕä². ^Å<Çj¸ tÕ|Å `Õ ÅÅ4» Lµ8»ÐÅ P­!Ç ¼DÇ ÜÂ¬DÇ ©Í„´ˆ× ¬ÀÉÀÉ »º XÕŒ¬ .´ ƒ¬tÇä². ä²‰ÕxÇ ƒ¬NÇ ÀÉ®L®ÀÉXÇ P­!ÇtÇ ÛÕ´ÀÉ”² JÅXÅä²”² ƒ¬tÇä²."
+ cato_education_events_setup_hereditary.10.a: "ÀÉ®L®ÀÉXÇ P­!ÇtÇ µÑXÎÐÅ Ä³ÀÆtÇ ´8®."
+ cato_education_events_setup_hereditary.11.title: "P­!ÇtÇ 1Áü¬|¹ »ÅÈÅä²."
+ cato_education_events_setup_hereditary.11.desc: "[Root.Monarch.GetName]tÇ [Root.Monarch.GetTitle]tÇ ´0® ÇjÕ «Ì x¬LÇDÇ ´°µ ³µÂÈ²ä². tÇÈ ø­ä´XÇ P­!ÇDÇ µÑtÕ ø­ä´tÇ 4»ÇÅDÇ »ÅÈÅ”²ÀÉ ¼× ÜÂ¬…ÇÈ²ä²."
+ cato_education_events_setup_hereditary.11.a: "ÜÂ¬Ì¹tÇ Ð¹tÕ üÈ ¬ÀÉ."
+ adm_education_bonus_1: "‰ÕÈ P­!Ç ô¼±²Â"
+ desc_adm_education_bonus_1: "tÇƒ¬NÇ ‹ÈNÇ ‰ÕÈ P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². ‰ÕÈ%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ adm_education_bonus_2: "‰ÕÈ P­!Ç ô¼±²Â"
+ desc_adm_education_bonus_2: "tÇƒ¬NÇ ‹ÈNÇ ‰ÕÈ P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². ‰ÕÈ%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ dip_education_bonus_1: "xÆP­ P­!Ç ô¼±²Â"
+ desc_dip_education_bonus_1: "tÇƒ¬NÇ ÌÖm¹jÕ xÆP­ P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². xÆP­%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ dip_education_bonus_2: "xÆP­ P­!Ç ô¼±²Â"
+ desc_dip_education_bonus_2: "tÇƒ¬NÇ ÌÖm¹jÕ xÆP­ P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². xÆP­%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ mil_education_bonus_1: "p­¬À P­!Ç ô¼±²Â"
+ desc_mil_education_bonus_1: "tÇƒ¬NÇ ÌÖm¹jÕ p­¬À P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². p­¬À%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ mil_education_bonus_2: "p­¬À P­!Ç ô¼±²Â"
+ desc_mil_education_bonus_2: "tÇƒ¬NÇ ÌÖm¹jÕ p­¬À P­!ÇDÇ ¼NÇ µÑXÎÇÐÅŒ¬ üÈ´ÅÀÉ”² ô¼±²Â…ÇÈ²ä². p­¬À%¸tÇ tÇø» 6xÇ Ë¬°Æ 0®ø¼ p­üÈ ÈÂÐÅ ³jÕ ô¼±²Âj¸ ³´ÌiÕÈ²ä²."
+ poor_clerical_education: "0®ÍÈxÇ àÂYÕ P­!Ç"
+ okay_clerical_education: "­.ÌNÇ àÂYÕ P­!Ç"
+ good_clerical_education: "ÌÖm¹jÕ àÂYÕ P­!Ç"
+ best_clerical_education: "DÆË¼jÕ àÂYÕ P­!Ç"
+ poor_administrative_education: "0®ÍÈxÇ ‰ÕÈYÕ P­!Ç"
+ okay_administrative_education: "­.ÌNÇ ‰ÕÈYÕ P­!Ç"
+ good_administrative_education: "ÌÖm¹jÕ ‰ÕÈYÕ P­!Ç"
+ best_administrative_education: "DÆË¼jÕ ‰ÕÈYÕ P­!Ç"
+ poor_scholastic_education: "0®ÍÈxÇ  ÌYÕ P­!Ç"
+ okay_scholastic_education: "­.ÌNÇ  ÌYÕ P­!Ç"
+ good_scholastic_education: "ÌÖm¹jÕ  ÌYÕ P­!Ç"
+ best_scholastic_education: "DÆË¼jÕ  ÌYÕ P­!Ç"
+ poor_industrial_education: "0®ÍÈxÇ °ÀÅÅ P­!Ç"
+ okay_industrial_education: "­.ÌNÇ °ÀÅÅ P­!Ç"
+ good_industrial_education: "ÌÖm¹jÕ °ÀÅÅ P­!Ç"
+ best_industrial_education: "DÆË¼jÕ °ÀÅÅ P­!Ç"
+ poor_diplomacy_education: "0®ÍÈxÇ xÆP­YÕ P­!Ç"
+ okay_diplomacy_education: "­.ÌNÇ xÆP­YÕ P­!Ç"
+ good_diplomacy_education: "ÌÖm¹jÕ xÆP­YÕ P­!Ç"
+ best_diplomacy_education: "DÆË¼jÕ xÆP­YÕ P­!Ç"
+ poor_intrigue_education: "0®ÍÈxÇ Ä¬µ· P­!Ç"
+ okay_intrigue_education: "­.ÌNÇ Ä¬µ· P­!Ç"
+ good_intrigue_education: "ÌÖm¹jÕ Ä¬µ· P­!Ç"
+ best_intrigue_education: "DÆË¼jÕ Ä¬µ· P­!Ç"
+ poor_trade_education: "0®ÍÈxÇ 4»íÅYÕ P­!Ç"
+ okay_trade_education: "­.ÌNÇ 4»íÅYÕ P­!Ç"
+ good_trade_education: "ÌÖm¹jÕ 4»íÅYÕ P­!Ç"
+ best_trade_education: "DÆË¼jÕ 4»íÅYÕ P­!Ç"
+ poor_colonial_education: "0®ÍÈxÇ ÝÂü» P­!Ç"
+ okay_colonial_education: "­.ÌNÇ ÝÂü» P­!Ç"
+ good_colonial_education: "ÌÖm¹jÕ ÝÂü» P­!Ç"
+ best_colonial_education: "DÆË¼jÕ ÝÂü» P­!Ç"
+ poor_martial_education: "0®ÍÈxÇ p­¬ÀYÕ P­!Ç"
+ okay_martial_education: "­.ÌNÇ p­¬ÀYÕ P­!Ç"
+ good_martial_education: "ÌÖm¹jÕ p­¬ÀYÕ P­!Ç"
+ best_martial_education: "DÆË¼jÕ p­¬ÀYÕ P­!Ç"
+ desc_best_martial_education: "Test 1, 2, 3..."
+ poor_naval_education: "0®ÍÈxÇ tÕp­ P­!Ç"
+ okay_naval_education: "­.ÌNÇ tÕp­ P­!Ç"
+ good_naval_education: "ÌÖm¹jÕ tÕp­ P­!Ç"
+ best_naval_education: "DÆË¼jÕ tÕp­ P­!Ç"
+ poor_logistics_education: "0®ÍÈxÇ |±¬¹YÕ P­!Ç"
+ okay_logistics_education: "­.ÌNÇ |±¬¹YÕ P­!Ç"
+ good_logistics_education: "ÌÖm¹jÕ |±¬¹YÕ P­!Ç"
+ best_logistics_education: "DÆË¼jÕ |±¬¹YÕ P­!Ç"
+ poor_modern_army_education: "0®ÍÈxÇ TÖ0® P­!Ç"
+ okay_modern_army_education: "ÌÖm¹jÕ TÖ0® P­!Ç"
+ good_modern_army_education: "DÆË¼jÕ TÖ0® P­!Ç"
+ best_modern_army_education: "DÆË¼jÕ TÖ0® P­!Ç"
+ cato_education_events_education_progress.0002.title: "tÕxÆÐÅÁXÇ ÈHÅ"
+ cato_education_events_education_progress.0002.desc: "°Æ¬¹˜°|·ÐÅÁÄ³ 0¼¸Æ 0®ŒÖ¬ Î¹ÀÉÌ¹ Ù³ù¹m­ É jÕ …ºtÇ [Root.Heir.GetName]|¹ Í­ÌXÕìÅ tÕxÆÐÅÁÄ³ õ¬Ž´`ÕÂ ˆÇÄ³k¸ ˆÕµÂÈ²ä². tÇƒ¬NÇ „´…ºˆ× °Æ¬¹ ÄÖÄ¬ÇXÇ P­!ÇÐÅ Ä³ÀÆtÇ .´ ƒ¬tÇpº °Æ¬¹ m­¬|¹ ø­ä´ü¬ T³ ¬k®Œ¬ Ì¹ä´ ƒ¬…ÇÈ²ä²!"
+ cato_education_events_education_progress.0002.a: "DÅüÈ ‹ÈNÇ 0®ŒÖä²"
+ cato_education_events_education_progress.0003.title: "­ìÂ Ž´qÈ"
+ cato_education_events_education_progress.0003.desc: "jÍü­, [Root.Heir.GetName]”² .ÁÝÐjÕ „´|ÅÐÅ e×ø»|¹ ƒÇà¬ YÕÅÅÐÅ ŒÁNÖXÕìÅ P­!ÇXÇ 1Áü¬¬ ¨µ´ÅÀÉà¬ ˆÇä²."
+ cato_education_events_education_progress.0003.a: "¸Å.È¬ [Root.Heir.GetSheHe]Ä³ e×ø»|¹ ¬ÀÉŒ¬ ´ÀÉ JÅDÇL®?"
+ cato_education_events_education_progress.0003.b: "[Root.Heir.GetSheHeCap]|¹ ù²¥Ç ˆ´ì·Á <ÖDÇ ´°|Å ¬p­!"
+ cato_education_events_education_progress.0004.title: "õ¬Ž´¬ É¹ˆ×ä²"
+ cato_education_events_education_progress.0004.desc: "[Root.Heir.GetName]”² jÍü­ õ¬Ž´XÕ”² „´|ÅÐÅÁ ‡º ¬ÀÉ ¬P±DÇ tÇtÕXÕ”² p³ÐÅ ´Å2¸ÀÆDÇ ª¬à¬ ˆÇä²."
+ cato_education_events_education_progress.0004.a: "[Root.Heir.GetSheHeCap]”² ´Å»µŒ¬à´ ù­õ¼tÕ¼° ƒ¬tÇä²."
+ cato_education_events_education_progress.0004.b: "[Root.Heir.GetHerHim]ÐÅŒ¬ Ä³ÀÆtÇ .´ Â ˆÇ”² ƒ¬tÇ|·tº È³DÇ DÅ|°ÀÉÈ¹|·."
+ cato_education_events_education_progress.0004.c: "tÇ Ž´„´NÇ ´°¬ ÁÉÈ ¬t¹ÐÌ É Â ˆÇ ¬p­"
+ cato_education_events_education_progress.0005.title: "ð¶´Åœ° 1Áü¬!"
+ cato_education_events_education_progress.0005.desc: "[Root.Heir.GetName]¬ jÍü­ YÕÅÅÐÅÁ `¾x¹ ÄÉÄ³|¹ ô¼ìÅüÈà¬ ˆÇä²."
+ cato_education_events_education_progress.0005.a: "‹ÈDÅ!"
+ cato_education_events_education_progress.0006.title: "P­!ÇÇNÆ ÄÖÄ¬Ç ¬XÇ ä²<Ò"
+ cato_education_events_education_progress.0006.desc: "[Root.Heir.GetName]NÇ jÍü­ÐÅ ÇàÂXÇ P­¬À É jÕ …ºü¬ ÈÈ µÑÈ¬ ˆ´¬¥²tÕÄÉ XÇ¬¬ ©ÍÌ³j¸ xÇtÕ ä²<ÒtÇ ÝÀ¼¬µÂÈ²ä². ÐÆ˜· l­Ë¬p¬¬¹ ÂÉtÇÈÅX³ tÇ ‘ÇNÇ ˆ´TÖ”² °Æ¬¹ ÄÖÄ¬ÇXÇ P­!ÇÐÅ Æ¥ÕDÇ ø»XÎ0® ÜÂ‘ÇˆÕ<Çpº ¼Ü´ÜÂ tÕ°¬´´Å|ÅÌ¹ `Õ 8»È¬ ´ÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.0006.a: "P­!ÇÇ|¹ ÀÉÀÉjÕä²"
+ cato_education_events_education_progress.0006.b: "[Root.Heir.GetName]|¹ ÀÉÀÉjÕä²"
+ cato_education_events_education_progress.0006.c: "ÀÐÖÈDÇ >ÌŒ¬ jÕä²"
+ cato_education_events_education_progress.0007.title: "YÕÅÅÐÅ ä¹ÄÉXÕä²"
+ cato_education_events_education_progress.0007.desc: "[Root.Heir.GetName]”² Ä¬ÁtÕÁ YÕÅÅÐÅ ä¹ÄÉXÕà¬ tÇƒ¬tÇ ÌÖm¹jÕ °¬ü¬<»j¸ ˜°ÀÐ˜°à¬ ˆÇµÂÈ²ä². tÇ”² UÖäÂˆ× P­!Ç ÄÉÄ³|¹ ¥ÕÁÀÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.0007.a: "ÌÖm¹XÕp­"
+ cato_education_events_education_progress.0008.title: "¬P± tÇtÕÐÅ ´Å2¸ÀÆDÇ ª¬ä²"
+ cato_education_events_education_progress.0009.title: "P­¬À¬ ¬À0®¼¯tÇÈÅä²!"
+ cato_education_events_education_progress.0009.desc: "°Æ¬¹ ÄÖÄ¬ÇXÇ üÈ”Æ P­¬À¬ ÐÆ˜· üÈ¥ÇjÕ³j¸ ø­XÇ „´|ÅÐÅÁ È…ºjÕ YÕÇ¬ DÅÈ²|· ˜Ç ÉD¾´ÀÉ JÅNÇ P­¬À„ÇtÇ °Æ¬¹ÐÅŒ¬ ¼ÖÀÉpº ÇàÂXÇ Ç©¬ÐÅ ³tÕ p¬ÓÉÐ¹DÇ jÕ ƒ¬tÇ Ü´ì·¬°µÂÈ²ä². [Root.Heir.GetName]ÐÅŒ¬ üÈ´ÅÄÉ ø­XÇ ¬)¼´ ÈÉ8»NÇ [Root.Heir.GetHerHim]¬ à¬0ÌXÕÄ³k¸ .ÇÄ³XÕ”² ƒ¬tÇ DÅÈ²|· ø­XÇ Ž´qÈjÕ YÕÝÂDÇ ¬”Í0® ÇjÕ ƒ¬tÇÈÅµÂÈ²ä². tÇ ÈÀj¸´Æ ¬ÀäÂÐÅ ³tÕ °Æ¬¹”² ´Å»µŒ¬ tÕ|Å iÕÈ²L®?"
+ cato_education_events_education_progress.0009.a: "‰ÉÜÂ ÈÀj¸´Æ P­¬À|¹ à¬©ÆXÕà¬ tÇÈXÇ P­¬À”² õ¬¬È<Çj¸ ˜ÌÖjÕä²."
+ cato_education_events_education_progress.0009.b: "°Æ¬¹”² ÀÉ® ù²¥Ç ÈÀj¸´Æ P­¬À|¹ à¬©Æ`Õ ìÅ.Ç¬ ÆÅ<Çpº P­¬À|¹ tÕà¬XÕ”² ƒ¬NÇ °Æ¬¹XÇ äÂÂ|¹ xÇÈXÕ”² ƒ¬tÇ .´ ƒ¬tÇä²."
+ cato_education_events_education_progress.0010.title: "2Æœ· jÎl­"
+ cato_education_events_education_progress.0010.desc: "[Root.Heir.GetName]¬ [Root.Monarch.GetName]tÇ ¼XÅX³ P­!ÇXÇ 8®DÇ õ²µÂXÕ”² Ä³ÉÐÅ, °Æ¬¹ µÑXÎÇXÇ 2Æœ· P­¬Àä´ É jÕ…ºtÇ ø­ä´tÇ ÆÈÐÅ µÑXÎÇ|¹ Ä³TÆï´tÇ [Root.Heir.GetName]ÐÅŒ¬ Ä³ÀÆDÇ üÈ ¬ä²à¬ iÕÈ²ä²."
+ cato_education_events_education_progress.0010.a: "ø­ä´tÇ [Root.Monarch.GetName]|¹ Ä³TÆÈÅä²tº, [Root.Heir.GetName] ¶jÕ Ä³¸Æ Â ˆÇDÇ ƒ¬tÇä²."
+ cato_education_events_education_progress.0010.b: "°Æ¬¹”² ø­ä´DÇ ä²ÜÂ p³2¸,Æ ìÅ%¸tÇ ÆÅä²."
+ cato_education_events_education_progress.0011.title: "ÄÖÄ¬Ç¬ ÀÐ‹·XÕä²"
+ cato_education_events_education_progress.0011.desc: "[Root.Heir.GetName]NÇ xÇÝÀXÇ Ép¬ÀÆü¬ .Â, LÇÝÂ ø­¬¹à¬ ÈÕ¬¹ ¼XÇ •ÆÝ¹ÐÅ ³jÕ )¼ÕÐtÇ YÕÅÅô¼ä² èÖ,Å É”ÆXÕä²à¬ °¬ÈjÕ ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.0011.a: "ä¹°Æ ˆ´‰ÕjÕ |ÇtÇä²."
+ cato_education_events_education_progress.0012.title: "ÄÖÄ¬Ç¬ ä²x¹ P­!ÇDÇ ÐÆXÕä²"
+ cato_education_events_education_progress.0012.desc: "[Root.Heir.GetName]tÇ P­!ÇÐÅ ³tÕ 4»­ìÂjÕ ƒ¬DÇ ø¼ ÄÖÐÅ, [Root.Heir.GetSheHe]¬ P­!ÇÐÅ ³jÕ ÍÈDÇ ¼À¯ 0®ŒÖ|¹ ”Æ­ÌjÕ ƒ¬NÇ ø­ä²ÀÉ Ž±·ÀÉ JÅXÅä²."
+ cato_education_events_education_progress.0012.a: "ø­¬ P­!ÇDÇ ‹ÈDÅXÕà´ Ð¹à´ È³ HÅ´ä²."
+ cato_education_events_education_progress.0012.b: "ø­¬ ä²x¹ „´|Å|¹ .ÁÝÐ`Õ Â ˆÇÀÉÌ¹ ¼Ü´ÜÂ D¾·ÂjÕ „´|Å|¹ .ÁÝÐtÕ|Å jÕä²."
+ cato_education_events_education_progress.0012.c: "ø­ƒ¬tÇ ø­¬ T³ 0¼¸Æ ÂˆÇÄ³k¸ Ä³NÆÉä²tº, ø­”² ÐÆXÕ”²³j¸ .ÁÝÐ`Õ Â ˆÇDÇ ƒ¬tÇä²."
+ cato_education_events_education_progress.1000.title: "…ÈP­È HÅt¬"
+ cato_education_events_education_progress.1000.desc: "°Æ¬¹ ˜°|·”² m­¬XÇ …ÈP­ 8»È|¹ jÍ°Æ.Á<Çj¸ XÕ”² p³ ÉÈDÇ P´à¬ ˆÇ0® Lµ8»ÐÅ [Root.Heir.GetName]NÇ [Root.Heir.GetHerHis] ðÅl­¬ ´Å»µŒ¬ äÂÈ È©Æ´”²ÀÉ ü¼ Â ˆÇ”² Î¹NÇ 0®ŒÖ|¹ ¬ÀÉà¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.1000.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.1001.title: "…ÈP­ ÉìÂÀÉ"
+ cato_education_events_education_progress.1001.desc: "°Æ¬¹ ÁÀÁxÇtÇ ôÅìÂˆ× 0¼°Æ”² Ù³HÅ ÂÄ³ÐÅ …ÈP­ ÉìÂÀÉ¬ ˆÇ<Çtº [Root.Heir.GetHerHim]tÇ …ÈP­|¹ ¬L®tÇÁ õ¬Ž´`Õ Â ˆÇ”² ‹ÈNÇ ¥ÇŒÁ¬ )´È²ä²."
+ cato_education_events_education_progress.1001.a: "ÌÖm¹tÕ"
+ cato_education_events_education_progress.1002.title: "pÈ¸Å¬¬ ÄÖÄ¬Ç|¹ ¬t¹XÎä²"
+ cato_education_events_education_progress.1002.desc: "°Æ¬¹ ÁÀÁxÇtÇ 1ÁÁÉÇ P­!ÇDÇ ¼à¬ ˆÇ0® Lµ8»ÐÅ …ÈP­ pÈ¸Å¬xÇ [Root.Adm_Advisor.GetName]¬ ø­ä´XÇ YÕÅÅDÇ ÀÉÐÆXÕ”² p³ ­ìÂDÇ ô¼xÇ ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1002.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.1003.title: "àÂYÕ ìÅ‰Õ"
+ cato_education_events_education_progress.1003.desc: "àÂYÕ P­!ÇDÇ ÇtÕÁ, [Root.Heir.GetName]XÇ P­¬Àä´NÇ ¬NÇ àÂYÅDÇ 0µt¹”² [same_religion_neighbor.GetName]j¸ [Root.Heir.GetHerHim]¬ ìÅ‰ÕDÇ ¬ Â ˆÇÄ³k¸ ÈÕ¬tÕ Éƒ¬DÇ ”Æ­ÌˆÕµÂÈ²ä². ø­ä´NÇ tÇ ìÅ‰ÕtÇ ‘Åm­ ¬XÇ ‹ÈNÇ ­Ä¬NÆ …ÈP­È 8»ÈÐÅ ³jÕ [Root.Heir.GetName]XÇ YÕµÂDÇ ÉÄÉÜÂ¬Ð ƒ¬<Çj¸ ÝÀ¬iÕÈ²ä²."
+ cato_education_events_education_progress.1003.a: "ø­ä´XÇ tÇ.Ç”² iÕù²XÕä². [Root.Heir.GetName]¬ ìÅ‰ÕDÇ ¬Ä³k¸ XÕ|·."
+ cato_education_events_education_progress.1003.b: "[Root.Heir.GetName]¬ [Root.GetName]ÐÅÁ YÕµÂXÕ”² ƒ¬<Çj¸Ä³ ©Í„´XÕä²."
+ cato_education_events_education_progress.1003.desc_christian: "[Root.Heir.GetName]XÇ …ÈP­ P­!ÇDÇ ÇtÕ, [same_religion_neighbor.GetName]XÇ P­ŒÖÐÅ )¼8»XÕ0® ÇtÕ ìÅ‰ÕDÇ  µ¬°µÂÈ²ä². Ù³Ì¸ [Root.Religion.GetName] àÂÇä´ü¬XÇ tÇ Ë¬ØÕNÇ [Root.Heir.GetHerHis] YÕÅÅÐÅÁ [Root.Heir.GetHerHim]XÇ ÄÉ™ÌDÇ Ä³TÆµÂÈ²ä²."
+ cato_education_events_education_progress.1003.desc_muslim: "[Root.Heir.GetName]XÇ …ÈP­ P­!ÇDÇ ÇtÕ, [same_religion_neighbor.GetName]XÇ ¨º²ÂlÐÐÅ )¼8»XÕ0® ÇtÕ ìÅ‰ÕDÇ  µ¬°µÂÈ²ä². Ù³Ì¸ [Root.Religion.GetName] àÂÇä´ü¬XÇ tÇ Ë¬ØÕNÇ [Root.Heir.GetHerHis] YÕÅÅÐÅÁ [Root.Heir.GetHerHim]XÇ ÄÉ™ÌDÇ Ä³TÆµÂÈ²ä²."
+ cato_education_events_education_progress.1004.title: "[same_religion_neighbor.GetName] )¼8»"
+ cato_education_events_education_progress.1005.title: "[same_religion_neighbor.GetName] )¼8»"
+ cato_education_events_education_progress.1005.desc_critical_success: "[same_religion_neighbor.GetName]<Çj¸XÇ ìÅ‰ÕNÇ ÌÖm¹ˆÕµÂÈ²ä². [Root.Heir.GetHerHis] YÕµÂÐÅÁ [Root.Heir.GetName]¬ ÄÉ™ÌDÇ tÇ¹DÇ Ð¿Ì¹ DÅÈ²|·, [same_religion_neighbor.GetName]XÇ [same_religion_neighbor.Monarch.GetTitle]NÆ ø­ä´XÇ ­ÈÐÅ ‹ÈNÇ xÇÁÀDÇ ¨°0®”² p³ÐÅ [Root.Heir.GetSheHe]”² 1Áõ¬ˆÕµÂÈ²ä². ¬ÀäÂ, ø­ä´ É jÕ…ºtÇ ä¹°Æ ¬…º ¼DÅ ø­ä´XÇ ­ÈÐÅ iÕX¹tÕÁ [Root.Monarch.GetTitle]XÇ …ÈP­È 8»ÈÐÅ ³jÕ ÀÉÄ³|¹ Ä³NÆÉ ƒ¬DÇ ÈHÅˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.1005.desc_success: "[same_religion_neighbor.GetName]<Çj¸XÇ ìÅ‰ÕNÇ ­.ÌXÅµÂÈ²ä². [Root.Heir.GetHerHis] YÕµÂÐÅÁ [Root.Heir.GetName]¬ ¼È`Õ Â ˆÇÈÅ<Çpº …ÈP­È 8»ÈÐÅ ³jÕ È1Áü¬ ÀÉÝÂ<Çj¸ [same_religion_neighbor.GetName]XÇ ­ÈÐÅ J®NÇ xÇÁÀDÇ ¨°¼¬µÂÈ²ä²."
+ cato_education_events_education_progress.1005.desc_neutral: "[same_religion_neighbor.GetName]<Çj¸XÇ ìÅ‰ÕNÇ Ž±„·Ì¹|Ð ÉÓ”¼ˆÕµÂÈ²ä². [Root.Heir.GetHerHis] P­!ÇÐÅ ˆÇ´ÅÁ [Root.Heir.GetName]”² pÈ® ÄÉ™ÌDÇ tÇ¹ÀÉÌ¹, [same_religion_neighbor.GetName]XÇ ­ÈNÇ °Æ¬¹¬ ÐÆˆÕX³ ƒ¬ô¼ä² j³ ¬…º¼XÅµÂÈ²ä²."
+ cato_education_events_education_progress.1005.desc_fail: "[same_religion_neighbor.GetName]<Çj¸XÇ ìÅ‰ÕNÇ àÂµÑXÎ JÅXÅµÂÈ²ä². [Root.Heir.GetName]”² [Root.Heir.GetHerselfHimself]XÇ äÂÂ|¹ ÈÈÉ¸DÇ Ð¿Ì¹ DÅÈ²|·, [Root.Heir.GetSheHe]”² [same_religion_neighbor.GetName] ­ÈÐÅÁ ø­ |ÇÐÆDÇ ¨º•ÆˆÕµÂÈ²ä². xÆP­ ­Ä¬|¹ Õ³0®”² äÎU±, ÁÀiÖDÇ T³±Æ EÅTÖÜÂ0ÏµÂÈ²ä²."
+ cato_education_events_education_progress.1005.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.1005.b: "‹ÈDÅ."
+ cato_education_events_education_progress.1005.c: "ø­˜·."
+ cato_education_events_education_progress.1005.d: ".È¥Ç!"
+ cato_education_events_education_progress.1006.title: "ä²x¹ àÂYÅXÇ Ö%¸Ç"
+ cato_education_events_education_progress.1006.desc: "°Æ¬¹”² Ù³Ì¸ [Root.Religion.GetName] àÂÇä´ü¬ hÕØ® |ÇXÕ”² ƒ¬DÇ .Á8ÖXÕÀÉÌ¹, ÁÀiÖÐÅ 0µ|· ä²x¹ ó¬ÐÅÁ ˆÇDÇ •¼XÕÀÉ JÅXÅX³ Ù³ù¹DÇ >ÌDÅ|Å iÕÈ²ä². tÇÐÅ ³jÕ jÕ ¬ÀÉ Æ”² [different_religion_ally.GetName]XÇ [different_religion_ally.GovernmentName]…ÇÈ²ä². [Root.Heir.GetName]XÇ P­¬À”² °Æ¬¹¬ tÇ ˆ´àÂÇä´XÇ ©ÆÄ³|¹ äÂÈj¸ >ÌDÇ Â ˆÇ<Çpº [Root.Heir.GetName]tÇ(¬) ø­ä´DÇ )¼8»XÕÄ³k¸ ÈÕ©ÆhÕ<Çj¸hÃ ø­XÇ P­!ÇÐÅ UÖäÂjÕ Ä³ÀÆtÇ .´ ƒ¬tÇ|·à¬ ÿ»µÂÈ²ä². ø­¬¹à¬ ´ÆtÇ ‹Èä²tº, Ù³ù¹ü¬XÇ ­Ä¬|¹ õ¬à¬ˆ× XÕ”² p³ Ä³ÀÆtÇ .´ ÂÄ³ ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.1006.a: "‹ÈNÇ Ä¬Ö ¬p­."
+ cato_education_events_education_progress.1006.b: "[Root.Heir.GetName]”² [Root.GetName]ÐÅÁ 0¼¸Æ ƒ¬tÇ Î¹ä²."
+ cato_education_events_education_progress.1007.title: "[different_religion_ally.GetName] )¼8»"
+ cato_education_events_education_progress.1008.title: "[different_religion_ally.GetName] )¼8»"
+ cato_education_events_education_progress.1008.desc_critical_success: "[different_religion_ally.GetNameReligiousBuilding]DÇ )¼8»XÕX³ É, [Root.Heir.GetName]NÇ(”²) ÀÉíÅ …ÈP­ ÀÉÄ³Çä´ü¬ àÂYÕÐÅ ³tÕ  Ñ`¸XÕ”² |ÇDÇ ÌÖm¹XÕŒ¬ tÕÈ°µÂÈ²ä². tÇƒ¬NÇ ø­XÇ P­!Ç ÄÉÄ³|¹ ¥ÕÁÀÜÂ²Ðà¬ °Æ¬¹ Ù³ù¹ü¬XÇ .Ç³|¹ ¬TÖˆÕDÇ Ð¿Ì¹ DÅÈ²|·, ÀÉíÅ …ÈP­ ÀÉÄ³Ç É jÕ …ºtÇ [Root.Heir.GetName]XÇ äÂ%¸ÐÅ J®NÇ xÇÁÀDÇ ¼DÅ °Æ¬¹ ­ÈÐÅ iÕX¹XÕ ¬ä²à¬ ÈHÅˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.1008.desc_success: "[different_religion_ally.GetName]<Çj¸XÇ ìÅ‰ÕNÇ ­.ÌXÅµÂÈ²ä². [Root.Heir.GetName]NÇ(”²) [Root.Heir.GetHerHis] YÕµÂÐÅÁ ¼È`Õ Â ˆÇÈÅ<Çpº …ÈP­È 8»ÈÐÅ ³jÕ È1Áü¬ ÀÉÝÂ<Çj¸ [different_religion_ally.GetName] ­ÈÐÅ J®NÇ xÇÁÀDÇ ¨°¼¬µÂÈ²ä²."
+ cato_education_events_education_progress.1008.desc_neutral: "[different_religion_ally.GetName]<Çj¸XÇ ìÅ‰ÕNÇ Ž±„·Ì¹|Ð ÉÓ”¼ˆÕµÂÈ²ä². [Root.Heir.GetHerHis] P­!ÇÐÅ ˆÇ´ÅÁ [Root.Heir.GetName]”² pÈ® ÄÉ™ÌDÇ tÇ¹ÀÉÌ¹, [different_religion_ally.GetName]XÇ ­ÈNÇ °Æ¬¹¬ ÐÆˆÕX³ ƒ¬ô¼ä² j³ ¬…º¼XÅµÂÈ²ä²."
+ cato_education_events_education_progress.1008.desc_fail: "[different_religion_ally.GetName]<Çj¸XÇ ìÅ‰ÕNÇ àÂµÑXÎ JÅXÅµÂÈ²ä². [Root.Heir.GetName]”² [Root.Heir.GetHerselfHimself]XÇ äÂÂ|¹ ÈÈÉ¸DÇ Ð¿Ì¹ DÅÈ²|·, [Root.Heir.GetSheHe]”² [different_religion_ally.GetName] ­ÈÐÅÁ ø­ |ÇÐÆDÇ ¨º•ÆˆÕµÂÈ²ä². xÆP­ ­Ä¬|¹ Õ³0®”² äÎU± ÁÀiÖDÇ T³±Æ EÅTÖÜÂ0ÏµÂÈ²ä²!"
+ cato_education_events_education_progress.1008.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.1008.b: "‹ÈDÅ."
+ cato_education_events_education_progress.1008.c: "ø­˜·."
+ cato_education_events_education_progress.1008.d: ".È¥Ç!"
+ cato_education_events_education_progress.1009.title: "…ÈP­È ôÅÈ"
+ cato_education_events_education_progress.1009.desc: "p¬ÓÉ´ àÂYÅ<Çj¸Ž´0Ñ 8ÁÁÀDÇ l­XÕ2¸”² ôÅÈtÇ P­!ÇDÇ µÑtÕÁ ¬TÖ´à¬,  [Root.Heir.GetName]XÇ ´°tºÐÅÁ ˆ´ÀÐ2Æt¹à¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.1009.a: "ôÅ1ÁÈxÇ [Root.Heir.GetName]ÐÅŒ¬ ø­ƒ¬NÇ ‹ÈNÇ ŒÁÝÂtÇÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.1010.title: "xÇ´°"
+ cato_education_events_education_progress.1010.desc: "[Root.Heir.GetName]tÇ(¬) ä²x¹ …ÈP­ÐÅ ³tÕ T³ Î¹tÇ 0¼ÀÆ<Çj¸hÃ, °Æ¬¹XÇ …ÈP­NÆ ø­ä´tÇ lÐŒ¬ ä²t¹ÀÉ JÅä²”² ƒ¬DÇ LÅ Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.1010.a: "ø­ä´tÇ?"
+ cato_education_events_education_progress.1011.title: "àÂYÅtÇ Ž´qÈjÕ m­¬"
+ cato_education_events_education_progress.1011.desc: "[Root.Monarch.GetName]NÇ „´…ºˆ× àÂäÂjÕ [Root.Religion.GetName]xÇtÇÀÉÌ¹, °Æ¬¹XÇ ¨ºà´ …ÈÁm­ä´tÇ ¬DÇ ƒ¬tÇ|·à¬ ¥Çô²`Õ Â ÆÅµÂÈ²ä². [Root.Heir.GetName]NÇ(”²) tÇ ˆ´àÂÇä´DÇ ¬…ÈÜÂ²Ð”² ƒ¬DÇ [Root.Heir.GetHerHis]XÇ P­!ÇXÇ |ÇXÖ<Çj¸ ¹ÂxÇtÕÉ ƒ¬DÇ ”Æ­ÌˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.1011.a: "ø­ƒ¬NÇ ‹ÈNÇ 0®ŒÖ¬ .´ ƒ¬tÇä²."
+ cato_education_events_education_progress.1011.b: "tÇ |ÇNÇ .ÁP­¬Àä´ÐÅŒ¬ á¹0®”²Œ¬ ˜°DÇ ƒ¬tÇä²."
+ cato_education_events_education_progress.1012.title: "àÂYÅtÇ Ž´qÈjÕ m­¬"
+ cato_education_events_education_progress.1013.title: "àÂYÅtÇ Ž´qÈjÕ m­¬"
+ cato_education_events_education_progress.1013.desc_critical_success: "[different_religion_province.GetName]XÇ ¬ÀŒ·ä´ÐÅŒ¬ [Root.Heir.GetName]NÇ(”²) Ç³jÕ (Ì0® …ÈP­ ÀÉÄ³Çj¸ ±¬¹ LÅ2¸8È ˆÇµÂÈ²ä². ø­ä´NÇ È¹XÎ v­üÈ°¹ ¬ÀŒ·tÇ àÂ.ÁjÕ u¾DÇ ÀÆÏPÉï´ [Root.Heir.GetSheHe]¬ ä´2¸üÈ”² ¨ºà´ Ð¹ü¬ tÇ|Å0®ÐÅ ôÅÉiÕÈ²ä². ø­ä´NÇ 2Æ˜·´ ÿ»LÇDÇ „¼¬¹à¬ °Æ¬¹XÇ àÂäÂjÕ p­è²ÐÅ iÕX¹ˆÕµÂÈ²ä²!"
+ cato_education_events_education_progress.1013.desc_success: "[Root.Heir.GetName]NÇ(”²) [different_religion_province.GetName]XÇ ÀÉíÅ üÈü»ä´DÇ °Æ¬¹ …ÈP­j¸ xÇÄ³XÕ”² p³ ÁÀù²jÕ ÄÉÈDÇ tÇ¹µÂÈ²ä². [Root.Heir.GetHerHis]XÇ Ð¹ÐÅ ¨ºà´ ÀÉíÅ üÈü»ä´tÇ T×ä´°¹ ƒ¬NÇ DÅÈ²ÀÉÌ¹, ^Å<Çj¸ °Æ¬¹ .ÁP­¬Àä´tÇ ¬…ÈXÕ0® èÖ,Å T³ lÂ¸Æ ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.1013.desc_neutral_1: "[Root.Heir.GetName]XÇ jÍ.ÁXÇ x±%¸ÐÅÄ³ ˆ´l­XÕà¬, [different_religion_province.GetName]XÇ ÀÉíÅ üÈü»ä´NÇ DÆà¬ˆÕµÂÈ²ä². ®ÈÈxÇ !ÎtºNÇ, tÇ Ë¬ØÕtÇ [Root.Heir.GetName]tÇ(¬) ^Å<Çj¸ àÂYÅÐÅ ­jÕ T³ ˜°NÇ |±XÇ|¹ XÕ”² p³ÐÅ Ä³ÀÆtÇ ´ÈÅä²”² ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.1013.desc_neutral_2: "[different_religion_province.GetName]XÇ ¬ÀŒ·ä´tÇ [Root.Heir.GetName]ô¼ä² T³ DÆà¬jÕ ƒ¬ ¬µÂÈ²ä². ÀÉíÅ üÈü»ä´DÇ ¬…ÈÜÂ²Ð2¸”² ©ºÈtÇÈÅLÇÐÅÄ³ ˆ´l­XÕà¬, [Root.Heir.GetName]NÇ(”²) 2Æˆ×2¸ [different_religion_province.GetName]XÇ …ÈP­ÐÅ J®tÇ ä¹Ì¸ü³„¼°¹ ƒ¬ ¬µÂÈ²ä². tÇj¸ xÇtÕ [Root.Heir.GetSheHe]¬ UÆäÂ ­ÈÐÅ ¬…ÈDÇ .Á¸ÅˆÕµÂÈ²ä².!"
+ cato_education_events_education_progress.1013.desc_fail: "¬ÇXÎ Ž´qÈ, 4»¥²hÕ ¶”² ÂÈjÕ 4»ÀÉj¸ xÇtÕÁ, [Root.Heir.GetName]XÇ ¬ÀŒ·ä´NÇ [different_religion_province.GetName]XÇ ÀÉíÅ üÈü»ä´DÇ ¬…ÈÜÂ²Ð”² p³ äÂ(ÓˆÕDÇ Ð¿Ì¹ DÅÈ²|· ÀÉíÅ üÈü»ä´XÇ àÂYÅü¬ ¬…ÈÐÅ ³jÕ DÆà¬jÕ ÈmÕDÇ T³ ¬TÖÜÂÏ „¼8¸µÂÈ²ä²."
+ cato_education_events_education_progress.1013.desc_critical_fail: "[Root.Heir.GetName]NÆ [different_religion_province.GetName](<Ç)j¸ ¬ 8ÖÇÑ¼ É ²l­Ä³ [Root.Heir.GetName]ü¬ ÀÉíÅ üÈü»ä´ ¬ÀtÇXÇ ³TÖÐÅ ³tÕ Ð¹`Õ Â ÆÅÈÅÀÉÌ¹ ø­ Æ¥ÕDÇ °Æ¬¹”² „´…ºˆ× LÅ Â ˆÇµÂÈ²ä². [Root.Heir.GetSheHe]”² ø­ ²l­Ä³ ¬…ÈÜÂ²ÐÀÉ »ºˆÕDÇ Ð¿Ì¹ DÅÈ²|·, ÀÉíÅ üÈü»ä´DÇ TÖ˜°Œ¬ XÕìÅ °Æ¬¹XÇ …ÈP­È ÄÐUÅÐÅ Þ¹Á 4»¥ÇDÇ XÕŒ¬ Ì¹ä´ÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.1013.d: "ø­ƒ¬NÇ ø­¬ 0¼ÌÆ|Å `Õ ƒ¬tÇ DÅÈ²ä²!"
+ cato_education_events_education_progress.1014.title: "Á8Áj¸Ž´0ÑXÇ NÇT´"
+ cato_education_events_education_progress.1014.desc: "[Root.Heir.GetName]NÇ(”²) P­!ÇDÇ ÉÀÉXÕà¬ äÂÈ Ë¬ØÕDÇ »ÅDÇ Â ˆÇÄ³k¸ ÈÕ¬tÕÉ ƒ¬DÇ ”Æ­ÌˆÕµÂÈ²ä². [Root.Heir.GetName]NÇ(”²) jÕÙ³HÅ 1ÁÁÉÇä´ü¬ hÕØ® NÇT´`Õ Œ­jÕDÇ ”Æ­ÌˆÕµÂÈ²ä². tÇƒ¬NÇ À­ÉjÕ 0®ŒÖ¬ .´ Â ˆÇ<Çpº 1ÁÁÉÇä´NÇ „´…ºˆ× tÇ 0®ŒÖ|¹ ŒÁÉXÕŒ¬ ìÅ8® ƒ¬…ÇÈ²ä²."
+ cato_education_events_education_progress.1015.title: "Á8Áj¸Ž´0ÑXÇ NÇT´"
+ cato_education_events_education_progress.1016.title: "NÇT´ÐÅÁXÇ À­XÖ"
+ cato_education_events_education_progress.1016.desc_critical_succes: "1Áõ¬ˆÕµÂÈ²ä²! [Root.Heir.GetName]NÇ(”²) ÇàÂXÇ 8ÁÔÆDÇ ÍÔÆjÕ ÀÉÝÂü¬ hÕØ® NÇT´ ÝÀjÖÐÅÁ —¼´Å˜° [Root.Religion.GetName] àÂYÅÐÅ ³jÕ h®ì²LÇDÇ »ÅÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.1016.desc_success: "NÇT´ ÝÀjÖÐÅÁ —¼´Å˜°tºÁ, [Root.Heir.GetName]”² ø­XÇ YÕµÂDÇ lÐŒ¬ ¼ÈÜÂ0ÏµÂÈ²ä²."
+ cato_education_events_education_progress.1016.desc_neutral: "NÇT´ ÝÀjÖÐÅÁ À­XÖXÕpº, [Root.Heir.GetName]NÇ(”²) P­!Ç ÄÉ™ÌDÇ lÐŒ¬ ¼ÈÜÂ¨Ð ƒ¬<Çj¸ ô¼…ÇÈ²ä². ø­ì·˜° [Root.Heir.GetSheHe]”² [Root.Heir.GetHerHis]XÇ J°„ÇÆÅ”² ÀÉÝÂÐÅ ³jÕ ÐÐl­j¸ à¬Ç 1ÁÁÉÇä´ÐÅŒ¬ ÈÉ8»DÇ X³ÀÉŒ¬ hÕ<Çj¸hÃ 1ÁÁÉÇä´DÇ TÖ˜°Œ¬ jÕ ƒ¬<Çj¸ ô¼…ÇÈ²ä². 1ÁÁÉÇä´NÇ [Root.Heir.GetName]tÇ(¬) tÇè²ü¬ àÂ1Á¨ºÅ³XÇ Ë¬Ä¬ÐÅ ˆÇä²à¬ D¾œ°XÕÀÉÌ¹, [Root.Heir.GetSheHe]”² [Root.Heir.GetSheHe]¬ è²Âˆ× [Root.Heir.GetHerHis]ÐÅ ³jÕ tÇtÕ|¹ ’±tÇ”² ÈÉ8»DÇ ˆÕä²à¬ UÖàÂiÕÈ²ä²."
+ cato_education_events_education_progress.1016.desc_fail: "tÇ ¨ºà´ NÇT´XÇ ü¬ÈNÇ ¬ÀäÂ ÈÜ­ ÂÅÅÐÅÁ —¼´Å˜°0® ÇjÕ EÌµ·tÇÈÅX³ ƒ¬ ¬µÂÈ²ä². [Root.Heir.GetName]NÇ(”²) p¬XÇ DÅ4»ƒ¬Ä³ 0¼°ÆÀÉ »ºˆÕµÂÈ²ä². 1ÁÁÉÇä´Ä³ ÇàÂä´tÇ ¼ô¼˜Ìü· èÍ	®´ ƒ¬ÐÅ ˆ´Ì¹DÇ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1016.desc_critical_fail: "ø­XÇ NÇT´ ÝÀjÖtÇ ±4» 1Áõ¬ÈtÇÈÅX³ ƒ¬ ¬µÂÈ²ä²...[Root.Heir.GetName]NÇ(”²) NÇT´ ÉÐÅ T³ ’±NÇ h®ì²LÇÐÅ Ä³ì²ˆÕ<Çpº T³ tÇÁÀ µÑXÎXÕ0®|¹ ÐÆXÕÀÉ JÅà¬ UÆŒÈÐÅ ³jÕ Œ­¬¹|¹ ìÓ0®jÕä²à¬ .Á¸ÅˆÕµÂÈ²ä². 1ÁÁÉÇä´NÇ tÇ ¼ÈÐÅ ä¹°Æ Ì¹qÈXÕpº, tÇ UÆäÂ ÄÖÄ¬Ç|¹ P´ Ó Œ¼2¸ XÖÆhÕ<Çj¸hÃ ˜°ÉÐÅ Œ­%¸DÇ »ÅDÇ Â ˆÇ”² 0®ŒÖj¸ ô¼à¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.1017.title: "[GetChurchOrFallbackName]XÇ ÀÉÐÆ"
+ cato_education_events_education_progress.1017.desc: "[Root.Heir.GetName]¬ …ÈP­È 8»ÈÐÅ ³tÕ YÕµÂXÕ”² Ä³ÉÐÅ, [GetChurchOrFallbackName]¬ ø­ÐÅ ³jÕ ÀÉÐÆDÇ Èõ¬ˆÕµÂä²."
+ cato_education_events_education_progress.1019.title: "ŒÁÂÇä´"
+ cato_education_events_education_progress.1019.desc_appease_heretic: "°Æ¬¹XÇ ÄÖÄ¬Ç¬ [Root.Religion.GetGroupName] ÖÈä´ ¬ÀtÇÐÅÁ „´…ºjÕ xÇ0®|¹ »ÅÈÅÀÉÌ¹, jÍü­ÐÅ èÍjÕ ‡º ¬ÀÉ ‰ÕÙ³<Çj¸ xÇtÕ [Root.Religion.GetName]XÇ ©ÍäÂjÕ …ÈtÇ DÅÈ²|·”² ¬ÀäÂtÇ üÈ©º¼XÅµÂÈ²ä². tÇƒ¬tÇ Æl­ÈxÇ À¼TÖ|¹ .Ç¼XÕÀÉ”² JÅDÇ ƒ¬tÇÀÉÌ¹, tÇè²Çä´NÇ Ö¬Ç ÄÉÈ´ ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1019.desc_appease_heathen: "°Æ¬¹XÇ ÄÖÄ¬Ç¬ jÍü­ÐÅ èÍjÕ ‡º ¬ÀÉ ‰ÕÙ³<Çj¸ xÇtÕ [Root.Religion.GetGroupName]tÇ DÅÌ² ¬ÀŒ·ä´ ¬ÀtÇÐÅÁ „´…ºjÕ xÇ0®|¹ »ÅÈÅµÂÈ²ä². tÇƒ¬tÇ Æl­ÈxÇ À¼TÖ|¹ ¬8È2ÆÀÉ”² JÅDÇ ƒ¬tÇÀÉÌ¹, tÇP­Ä³ä´NÇ ÀÉ®<Çj¸Á”² ÄÉÈ´ ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1019.desc_offend_heretic: "°Æ¬¹XÇ ÄÖÄ¬Ç¬ [Root.Heir.GetHerHis]XÇ jÍü­ ‰Õô¼|¹ Ö2Æ²Âì·ÌÆXÕ”² °Æ¬¹ EµXÇ |ÇŽ´ tÇè²Çä´ ¬ÀtÇÐÅ „´x±NÆ ˆ´Ì¹DÇ ˆ´ì·|Ç<Ç¨Ð ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1019.desc_offend_heathen: "°Æ¬¹XÇ ÄÖÄ¬Ç¬ [Root.Heir.GetHerHis]XÇ jÍü­ ‰Õô¼|¹ Ë¬xºXÕ”² °Æ¬¹ EµXÇ tÇP­Ä³ä´ ¬ÀtÇÐÅ „´…ºXÕŒ¬ „´x±NÆ ˆ´Ì¹DÇ .Ç¼jÕ ƒ¬ ¬µÂÈ²ä²."
+ cato_education_events_education_progress.1019.a: "ÌÖm¹tÕ"
+ cato_education_events_education_progress.1019.b: "Ý¹`Õ!"
+ cato_education_events_education_progress.2000.title: "m­¬j¸Ž´0Ñ 0¼°Æä²"
+ cato_education_events_education_progress.2000.desc: "°Æ¬¹XÇ m­¬ ‰ÕÈÐÅ ³jÕ ­ìÂNÇ UÖäÂˆ× [Root.Heir.GetName]ÐÅŒ¬ ²Âpºä´ÈÅµÂÈ²ä². ÄÖÄ¬Ç|¹ ÁÉÈ YÕµÂÜÂ¬Ð Â ˆÇ”² äÂÈ ÇÌ¸|¹ °Æ¬¹”² Î¹tÇ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.2000.a: "¸Å.È¬ tÇ EµDÇ ä²²Â2¸|Å `Õ LÑÈ²L®."
+ cato_education_events_education_progress.2001.title: "õ¬4»ÐÆü¬XÇ ³TÖ"
+ cato_education_events_education_progress.2001.desc: "UÆm­XÇ ‰ÕÈ ÅÅ4»ÐÅ ³jÕ P­!ÇDÇ µÑtÕ [Root.Heir.GetName]NÇ ÀÉ)¼ ÈŽ´ t¬<»ÐÅÁ ÜÂ¬DÇ ô¼´°pº [Root.Heir.GetHerHis]XÇ YÕµÂ´°©ÆtÇ äÂÈj¸ ´Å»µŒ¬ tÇè¸´ÅÀÉà¬ ˆÇ”²ÀÉ|¹ ÀÉÏô¼à¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.2001.a: "ä²‰Õˆ× ˜Ç 0¼°Æà¬ ˆÇp­."
+ cato_education_events_education_progress.2002.title: "pÈ¸Å¬¬ ÄÖÄ¬Ç|¹ ¬t¹XÎä²"
+ cato_education_events_education_progress.2002.desc: "‰ÕÈ pÈ¸Å¬ É jÕ …ºxÇ [Root.Adm_Advisor.GetName]¬ [Root.Heir.GetName]XÇ P­!ÇÐÅ ¹ÒÄ¼jÕ ­ìÂDÇ ô¼ÆµÂÈ²ä². ø­ä´NÇ [Root.Heir.GetHerHim]ÐÅŒ¬ ø­ä´tÇ DÅ”² ¨ºà´ ƒ¬DÇ ¬t¹XÎ0® ÇtÕ ¬xÇÈ<Çj¸ ¬…ÇˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.2002.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.3000.title: "ÄÉô¼ÈxÇ ÀÉíÅ"
+ cato_education_events_education_progress.3000.desc: "°Æ¬¹ ˜°|·”² µÑXÎ, m­È ¶”² p­¬À 8»È „´|ÅÐÅÁ ¼ÈDÇ Ç‘·²Âý·Œ¬ ÝÀ¬iÕÈ²ä². ø»˜·ÐÅ ³jÕ tÇì·jÕ ÍÈNÇ [Root.Heir.GetName]XÇ [Root.Heir.GetHerHis] P­!ÇÐÅ UÖäÂˆ× Ä³ÀÆtÇ ´ÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.3000.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.3001.title: ""
+ cato_education_events_education_progress.3001.desc: "[Root.Capital.GetCapitalName]NÇ …º8» ³YÕXÇ ÉìÂtÇpº [Root.Heir.GetName]¬ ¨ºà´ …ÈX¹XÇ ÈÀm¸à¬ ÖàÂÈxÇ ¬ÀÁÀ¬ÐÅŒ¬ Èü­`Õ Â ˆÇÄ³k¸ XÕìÅ P­!ÇXÇ ÈÉDÇ ¥ÕÁÀÜÂµÐÈ²ä²."
+ cato_education_events_education_progress.3001.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.3002.title: "³  Ñ`¸ŒÖ"
+ cato_education_events_education_progress.3002.desc: "°Æ¬¹XÇ ÀÉÈ ¬Ç¥² ˆÇ”² pÈ¸Å¬ É jÕ …ºxÇ [Root.Adm_Advisor.GetName]¬ °Æ¬¹ ÄÖÄ¬ÇÐÅŒ¬ ­ìÂDÇ ¬8È [Root.Heir.GetHerHim]DÇ  Ñ`¸ÐÅ Í³ˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.3002.a: "tÇt¬ UÖäÂˆ× Ä³ÀÆtÇ ´ ¬p­!"
+ cato_education_events_education_progress.4000.title: "²ÐÅ”² ², tÇÐÅ”² tÇ"
+ cato_education_events_education_progress.4000.desc: "[Root.GetName]XÇ xÆP­è²NÇ m­´°xÆÐÅ ˜Ç LÅ2¸8È ˆÇµÂÈ²ä². [Root.Heir.GetName]NÇ jÍü­ÐÅ [Root.Heir.GetHerHis] P­!ÇÐÅ Ä³ÀÆtÇ .´ ƒ¬tÇ|·à¬ üÈ¥ÇXÕpº xÆP­è²XÇ jÍü­ „Ç4»ÐÅ iÕX¹XÕÄ³k¸ ÈÕ¬|¹ ”Æ­ÌˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.4000.a: "‹ÈNÇ ÝÀ¬tÇ|Å!"
+ cato_education_events_education_progress.4001.title: "m­È ´ÆÆDÇ 0¼°Æä²"
+ cato_education_events_education_progress.4001.desc: "°Æ¬¹XÇ xÆP­È pÈ¸ÅÇ É jÕ …ºxÇ [Root.Dip_Advisor.GetName]NÇ [Root.Heir.GetName]XÇ P­!ÇDÇ LÅŒ¬ ´ÈÅà¬ [Root.Heir.GetHerHim]XÇ ¬xÇ ÀÉÄ³|¹ ÈHÅˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.4001.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.5000.title: "ø­¼¹Ç"
+ cato_education_events_education_progress.5000.desc: "²ÂÓtÇ jÖÙ³ÐÅ ³jÕ °Æ¬¹XÇ ­”¼ÇjÕ ÍÈNÇ [Root.Heir.GetName]¬ ¨ºà´ ƒ¬ü¬ ä²x¹ ¨ºà´ ¬ÀŒ·ÐÅ ³jÕ 0®k¸DÇ .ÇÀÉXÕ”² ƒ¬tÇ ¼ÅÈ¹˜° É”ÆjÕÀÉ UÖäÂˆ× ¬t¹ÐÌüÈÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.5000.a: "tÇt¬ [Root.Heir.GetHerHis] P­!ÇÐÅ UÖäÂˆ× Ý´tÇ ´ ¬ÀÉ!"
+ cato_education_events_education_progress.5001.title: "©Ìô¼³¥ÇXÇ pÈ¸Å"
+ cato_education_events_education_progress.5001.desc: "°Æ¬¹ ©Ìô¼ ³¥ÇxÇ [Root.Dip_Advisor.GetName]NÇ [Root.Heir.GetName]NÆ ÇüÈ ³TÖ|¹ ˜°²pº ÿÅô¼”² ²DÇ <ÕXÕ”² )¼•¼ÐÅ ³jÕ D¾¼²Âì·´Æ P­ÈÖDÇ üÈ”² ƒ¬<Çj¸ ˜°ÀÐ¬°µÂÈ²ä²."
+ cato_education_events_education_progress.5001.a: "‹ÈDÅ! ø­ð·p³ ©Ìô¼³¥ÇtÇ|·tº, tÇƒ¬pÈ(ÌÄ³ °Æ¬¹¬ °º|·|Å XÕ”² p¬ DÅÌ²¬?"
+ cato_education_events_education_progress.6000.title: "4»íÅXÇ P×„¹"
+ cato_education_events_education_progress.6000.desc: "È³NÇ 8ÁÁÀDÇ ÀÆÁÉtÇŒ¬ XÕà¬ tÇuÇÐÅ ³jÕ °Æ¬¹XÇ ÍÈNÇ [Root.Heir.GetName]ÐÅŒ¬ 4»íÅXÇ ‘ÇÙ³)¼ÝÂÐÅ ³jÕ µÑ0Ì%¸DÇ Èõ¬ˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.6000.a: "tÇŒ¬ ¼j¸ °Æ¬¹¬ XÕ”² |ÇtÇ|Å."
+ cato_education_events_education_progress.6001.title: "´ÈtÇ”² ÜÂ¥Ç"
+ cato_education_events_education_progress.6001.desc: "[Root.Heir.GetName]NÇ ŽÈ T³ äÂ©ÆÈxÇ p¬˜· 0®.ÂDÇ 0¼°Æ0® ÇtÕ [Root.Capital.GetCapitalName]ÐÅÁ ÜÂ¬DÇ ô¼´°pº ÜÂ¥ÇXÇ ÁÀxÇä´DÇ tº¼ˆ× ­0ÌˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.6001.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.6002.title: "­È ÁÀxÇXÇ pÈ¸Å"
+ cato_education_events_education_progress.6002.desc: "­È ÁÀxÇ [Root.Dip_Advisor.GetName]”² [Root.Heir.GetName]ÐÅŒ¬ [Root.Dip_Advisor.GetSheHe]¬ LÅà¬ ˆÇ”² ¨ºà´ ƒ¬DÇ ¬t¹äÌµÂÈ²ä²."
+ cato_education_events_education_progress.6002.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.7000.title: "p­¬ÀÐÅ ÑÉÉXÕ”² m­¬"
+ cato_education_events_education_progress.7000.desc: "ô¼	®ˆÔÐÅÁ ÈÖ(¸ÐÅ tÇt¹0®L®ÀÉ p­¬À 8»ÈÐÅ ³jÕ °Æ¬¹˜°|·XÇ ÍÈNÇ [Root.Heir.GetName]ÐÅŒ¬ p­³|¹ ÈÈXÕŒ¬ ­¬¹XÕ”² )¼•¼ÐÅ ³jÕ À­ÉjÕ P­ÈÖDÇ ¬t¹äÌµÂÈ²ä²."
+ cato_education_events_education_progress.7000.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.7001.title: "p­¬À ÜÂ2Á )¼8»"
+ cato_education_events_education_progress.7001.desc: "T³ ˜°NÇ P­!ÇDÇ ÇtÕ [Root.Heir.GetName]NÇ ÂÄ³ ´°XÇ ìÅì· p­¬À YÕŽ´|¹ )¼8»XÕìÅ ¬¬XÇ ‘ÇÙ³ )¼ÝÂDÇ ­0ÌˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.7001.a: "ÌÖm¹tÕ"
+ cato_education_events_education_progress.7002.title: "p­¬À pÈ¸Å¬¬ ÄÖÄ¬Ç|¹ ¬t¹XÎä²"
+ cato_education_events_education_progress.7002.desc: "°Æ¬¹XÇ p­¬À à¬8»xÇ [Root.Mil_Advisor.GetName]¬ [Root.Heir.GetName]ÐÅŒ¬ p­³|¹ T³ ˜Ç ÈÖ(¸ÜÂ²Ðà¬ tÇD°”² )¼•¼ÐÅ ³jÕ pÈ¸ÅDÇ Èõ¬ˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.7002.a: "ÌÖm¹tÕ"
+ cato_education_events_education_progress.7003.title: "p­¬À pÈ¸Å¬¬ ÄÖÄ¬Ç|¹ ¬t¹XÎä²"
+ cato_education_events_education_progress.7003.desc: "°Æ¬¹XÇ p­¬À à¬8» [Root.Mil_Advisor.GetName]¬ [Root.Heir.GetName]ÐÅŒ¬ ô¼	®ˆÔ ¼ 0®ÀÐ É”ÆjÕ p­¬À ÀÉÐÆ ÜÂ²ÂjÑDÇ ­¬¹XÕ”² )¼•¼ÐÅ ³jÕ Èô¼|¹ Èõ¬ˆÕµÂÈ²ä²."
+ cato_education_events_education_progress.7003.a: "ÌÖm¹tÕ"
+ cato_education_events_education_progress.8000.title: "tÕp­ÐÅ ÑÉÉXÕ”² m­¬"
+ cato_education_events_education_progress.8000.desc: "tÕp­ÐÅ ³jÕ °Æ¬¹XÇ m­¬È ÍÈNÇ [Root.Heir.GetName]XÇ P­!ÇDÇ ¬.ÁXÕ”² p³ Ä³ÀÆtÇ ´ÈÅµÂÈ²ä²."
+ cato_education_events_education_progress.8000.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.8001.title: "ÄÖÄ¬Ç¬ .ÁKÌDÇ )¼8»XÕä²"
+ cato_education_events_education_progress.8001.desc: "[Root.Heir.GetName]NÇ jÍü­ [Root.Capital.GetCapitalName] Ž´P´ÐÅÁ d¯ Î¹NÇ ÜÂ¬DÇ ô¼´°pº tÕp­ È(ÌÐÅ ³tÕ jÍ³jÕ Î¹tÇ ðÅl­XÕà¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.8001.a: "ÌÖm¹tÕ!"
+ cato_education_events_education_progress.8002.title: "tÕp­ pÈ¸Å¬¬ ÄÖÄ¬Ç|¹ ¬t¹XÎä²"
+ cato_education_events_education_progress.8002.desc: "°Æ¬¹ tÕp­ pÈ¸Å¬ É jÕ …ºxÇ [Root.Dip_Advisor.GetName]¬ tÕp­ 8»ÈÐÅ ³tÕ °Æ¬¹ ÄÖÄ¬Ç|¹ ¬xÇÈ<Çj¸ ÀÉÄ³XÕà¬ ˆÇµÂÈ²ä²."
+ cato_education_events_education_progress.8002.a: "ÌÖm¹tÕ"
+ Cato_Grand_Tour_Event_Chain.0001.title: "8ÁÄ¬ ÂŒÖ ìÅ‰Õ"
+ Cato_Grand_Tour_Event_Chain.0001.desc: "°Æ¬¹XÇ ÁÀÁÇ [Root.Heir.GetName]”² P­!Çü¬ hÕØ® ¼ÈtÕ TÆµÂÈ²ä². ø­ì·˜° ø­”² 8ÁÄ¬ ìÅ‰ÕDÇ µÑtÕ ô¼ä² ¬¬8»DÇ ±ˆ×à¬Ç iÕÈ²ä². ø­¸Œ¬ XÕtº P­!Ç 0®ŒÖ|¹ ’±tÇà¬  Ç¬ÇÈ<Çj¸ tÕxÆ ­Ä¬|¹ ¬.Á`Õ Â ˆÇµÂÈ²ä²."
+ Cato_Grand_Tour_Event_Chain.0001.a: "[Root.Heir.GetSheHe]|¹ 8ÁÄ¬j¸ ô¼´°|·!"
+ Cato_Grand_Tour_Event_Chain.0001.b: "DÅÈ² ø­¬ ÐÆXÕ”² ƒ¬NÇ [Root.GetName] HÅÐÅÁÄ³ »ÅDÇ Â ˆÇä²."
+ Cato_Grand_Tour_Event_Chain.0002.title: "«Ìˆ¼øÉ ¥ÇŒÁ"
+ Cato_Grand_Tour_Event_Chain.0002.desc: "[Root.Heir.GetName]¬ œÍ¼DÇ ^ÅP´à¬ ˆÇ”²p³, <ºÈ ´Å² ˜°|·|¹ )¼8»XÕŒ¬ .´L®”Æ...?"
+ Cato_Grand_Tour_Event_Chain.0002.a: "[world_tour_country_1.GetName]"
+ Cato_Grand_Tour_Event_Chain.0002.b: "[world_tour_country_2.GetName]"
+ Cato_Grand_Tour_Event_Chain.0002.c: "[world_tour_country_3.GetName]"
+ Cato_Grand_Tour_Event_Chain.0003.title: "P´ ˆ¼øÉ ¥ÇŒÁ"
+ Cato_Grand_Tour_Event_Chain.0003.desc: "...ø­¬¹à¬..."
+ Cato_Grand_Tour_Event_Chain.0003.a: "[world_tour_country_1.GetName]"
+ Cato_Grand_Tour_Event_Chain.0003.b: "[world_tour_country_2.GetName]"
+ Cato_Grand_Tour_Event_Chain.0003.c: "[world_tour_country_3.GetName]"
+ Cato_Grand_Tour_Event_Chain.0004.title: "8Á ˆ¼øÉNÆ È¹ÀÉÉ¹ ¥ÇŒÁ"
+ Cato_Grand_Tour_Event_Chain.0004.desc: "...ø­¬¹à¬ ø­ä´XÇ ìÅ‰ÕXÇ È¹ÀÉÉ¹ üÈ”Æ ¥ÇŒÁ”²?"
+ Cato_Grand_Tour_Event_Chain.0004.a: "[world_tour_country_1.GetName]"
+ Cato_Grand_Tour_Event_Chain.0004.b: "[world_tour_country_2.GetName]"
+ Cato_Grand_Tour_Event_Chain.0004.c: "[world_tour_country_3.GetName]"
+ Cato_Grand_Tour_Event_Chain.0005.title: " µ ° ÉD¾¬ ´ä²"
+ Cato_Grand_Tour_Event_Chain.0005.desc: "ìÅ‰Õ Ä¬ÖDÇ ÜÉà¬ [Root.Heir.GetName]”² 8ÁÄ¬ ìÅ‰ÕDÇ  µ ° ÉD¾|¹ È¹äÌµÂÈ²ä². ¨°NÇ |ÇNÇ ø­ä´ÐÅŒ¬ ìÅ‰ÕDÇ ÇjÕ ®ü¬ 8ÖÇ|¹ üÈ”² ƒ¬ Ð¿…ÇÈ²ä². °Æ¬¹”² 4»¨Â |ÇtÇ |Ç´Å °ÀÉ ¨ºt¹0® Lµ8»ÐÅ ¨ºà´ ƒ¬tÇ Ä¬Ö³j¸ ÄÉ‰Õ´Ä³k¸ [Root.Heir.GetName]ÐÅŒ¬ DÕ”ÆjÕ ƒ¬ô¼ä² T³ Î¹tÇ üÈ”² ƒ¬tÇ Ö…º`Õ Â ˆÇµÂÈ²ä²."
+ Cato_Grand_Tour_Event_Chain.0005.a: "[Root.Heir.GetName]¬ DÕ”ÆXÕp¬˜° ÐÆXÕ”² ƒ¬NÇ P»à´ÀÉ É|·!"
+ Cato_Grand_Tour_Event_Chain.0005.b: "[Root.Heir.GetName]ÐÅŒ¬ Èù²jÕ Ë¬D¾NÆ 8ÖÇ|¹ ™´ìÅÉ|·."
+ Cato_Grand_Tour_Event_Chain.0005.c: "°Æ¬¹”² ¬ÀÈtÇ 	±	±XÕÀÉ JÅä², -¯ DÕ”ÆjÕ ƒ¬Ì¹ ô¼´°|·."
+ Cato_Grand_Tour_Event_Chain.0006.title: "[world_tour_country_1.GetName]ÐÅ Ä³)Ì"
+ Cato_Grand_Tour_Event_Chain.0006.desc: "[Root.Heir.GetName]¬ Ü´µ´Å [world_tour_country_1.GetName]XÇ ÂÄ³ [world_tour_country_1.Capital.GetName]ÐÅ Ä³)ÌˆÕµÂÈ²ä². ìÅ0®ÐÅ”² 4»ÇÅtÇ ø­ä´DÇ 0®ä²¬¹à¬ ˆÇDÇL®”Æ?"
+ Cato_Grand_Tour_Event_Chain.0006.a: "4»¬Àˆ× Ä³)ÌˆÕä²È² ä²‰ÕtÇp­."
+ fe_education_clerical_upset_local: "„´x±jÕ ÀÉíÅü»"
+ fe_education_clerical_inspired_local: "Æ¬DÇ ¼NÇ ÀÉíÅü»"
+ FEE_heathens_offended: "¨º•Æ¼NÇ tÇP­Ä³"
+ FEE_heretics_offended: "¨º•Æ¼NÇ tÇè²"
+ FEE_heretics_appeased: "Çj¸¼NÇ tÇè²"
+ FEE_heathens_appeased: "Çj¸¼NÇ tÇP­Ä³"

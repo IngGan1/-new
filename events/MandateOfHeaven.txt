@@ -1,0 +1,109 @@
+namespace = mandate
+
+#Demand Vassalege
+
+country_event = {
+    id = mandate.996
+	title = "mandate.996.t"
+	desc = "mandate.996.d"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	option = { #We have to accept...
+	     name = "mandate.996.a"
+		 ai_chance = {
+		    factor = 60
+			modifier = {
+			     factor = 0.8
+				 liberty_desire = 10
+				 NOT = { liberty_desire = 20 }
+			}
+			modifier = {
+			     factor = 0.6
+				 liberty_desire = 20
+				 NOT = { liberty_desire = 30 }
+			}
+			modifier = {
+			     factor = 0.4
+				 liberty_desire = 30
+				 NOT = { liberty_desire = 40 }
+			}
+			modifier = {
+			     factor = 0.2
+				 liberty_desire = 40
+				 NOT = { liberty_desire = 50 }
+			}
+			modifier = {
+			     factor = 0
+				 liberty_desire = 50
+			}
+			modifier = {
+			     factor = 0
+				 check_variable = { which = cr_dev value = 0.5 }
+			}
+		 }
+		 add_prestige = -20
+		 add_liberty_desire = 10
+		 overlord = { country_event = { id = mandate.998 } }
+		 
+	}
+	option = {
+	     name = "mandate.996.b" #Defend our independence!
+	     ai_chance = {
+		    factor = 40
+		 }
+	     add_liberty_desire = 20
+		 overlord = {
+		      add_opinion = { who = ROOT modifier = opinion_celestial_vassalege_rejected }
+		      country_event = { id = mandate.997 }
+		 }
+		 
+	}
+}
+
+#Tributary Refused
+
+country_event = {
+    id = mandate.997
+	title = "mandate.997.t"
+	desc = "mandate.997.d"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	option = { #War!
+	     name = "mandate.997.a"
+		 declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_vassalize_mission
+		 }
+		 ai_chance = {
+		    factor = 50
+		 }
+	}
+	
+	option = { #Leave them be
+	     name = "mandate.997.b"
+		 add_prestige = -10
+		 add_mandate = -5
+		 ai_chance = {
+		    factor = 25
+		 }
+	}
+}
+
+#Tributary Submits
+
+country_event = {
+    id = mandate.998
+	title = "mandate.998.t"
+	desc = "mandate.998.d"
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = { #Great!
+	     name = "mandate.998.a"
+		 add_prestige = 5
+		 create_subject = {
+			subject_type = vassal
+			subject = FROM
+		}
+	}
+}

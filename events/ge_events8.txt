@@ -1,0 +1,221 @@
+namespace = ge_events
+# Ming intervention in Manchuria 
+country_event = {
+	id = ge_events.22
+	title = "ge_events.22.t"
+	desc = "ge_events.22.d"
+	picture = BATTLE_eventPicture
+	
+	
+	trigger = {
+		OR = {
+            tag = KOR
+			tag = JOS
+		}
+		has_global_flag = governments_extended_historical_yes
+		not = { has_global_flag = no_ge22 }
+		manchuria_region = {
+			is_colony = no
+            or = {
+				and = { owned_by = KOR not = { is_core = KOR } }
+				and = { owned_by = JOS not = { is_core = JOS } }
+			}
+        }
+		NOT = {
+            truce_with = MNG
+		}
+		NOT = {
+			has_global_flag = deny_cede_manchu_flag
+			has_global_flag = admit_korean_manchu_flag
+			KOR = {
+				total_development = 600
+			}
+			JOS = {
+				total_development = 600
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {		
+		name = "ge_events.22.a"
+		ai_chance = { factor = 100 }
+		manchuria_region = {
+			limit = {
+				or = {
+					owned_by = KOR
+					owned_by = JOS
+				}
+				not = { is_core = KOR }
+				not = { is_core = JOS }
+				is_colony = no
+			}
+			remove_core = KOR
+			remove_core = JOS
+			cede_province = MJZ
+			if = {
+				limit = { MCH = { exists = yes } }
+				cede_province = MCH
+			}
+		}
+		add_prestige = -20
+	}
+
+	option = {		
+		name = "ge_events.22.b"
+		ai_chance = { factor = 0 }
+		MNG = { country_event = { id = ge_events.23 } }
+		set_global_flag = deny_cede_manchu_flag
+		add_prestige = 20
+	}
+}
+
+country_event = {
+        id = ge_events.23
+	title = "ge_events.23.t"
+	desc = "ge_events.23.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.23.a  
+		ai_chance = { factor = 100 }
+		declare_war_with_cb = {
+		    who = KOR
+			casus_belli = cb_force_tributary
+		}
+		declare_war_with_cb = {
+		    who = JOS
+			casus_belli = cb_force_tributary
+		}
+	}
+}
+
+country_event = {
+	id = ge_events.24
+	title = "ge_events.24.t"
+	desc = "ge_events.24.d"
+	picture = BATTLE_eventPicture
+	
+	trigger = {
+		OR = {
+        tag = KOR
+		tag = JOS
+		}
+		manchuria_region = {
+			OR = {
+                owned_by = KOR
+				owned_by = JOS
+			}
+		}
+		NOT = {
+            war_with = MNG
+		}
+		NOT = {
+            truce_with = MNG
+		}
+		NOT = {
+			has_global_flag = admit_korean_manchu_flag
+		}
+		has_global_flag = deny_cede_manchu_flag
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {		
+		name = "ge_events.24.a"
+		ai_chance = { factor = 0 }
+		clr_global_flag = deny_cede_manchu_flag
+		add_prestige = 20
+	}
+
+	option = {		
+		name = "ge_events.24.b"
+		ai_chance = { factor = 100 }
+		manchuria_region = {
+			limit = {
+				or = {
+					owned_by = KOR
+					owned_by = JOS
+				}
+			}
+            remove_core = KOR
+			remove_core = JOS
+			cede_province = MJZ
+		}
+		clr_global_flag = deny_cede_manchu_flag
+	}
+}
+
+country_event = {
+	id = ge_events.25
+	title = "ge_events.25.t"
+	desc = "ge_events.25.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MNG
+		manchuria_region = {
+			OR = {
+				owned_by = KOR
+				owned_by = JOS
+			}
+		}
+		NOT = {
+			OR = {
+		    war_with = KOR
+		    war_with = JOS
+			}
+		}
+		OR = { 
+            NOT = {
+		        total_development = 2000
+		    }
+		    KOR = {
+		        total_development = 600
+		    }
+			JOS = {
+		        total_development = 600
+		    }
+        }
+		NOT = {
+			has_global_flag = admit_korean_manchu_flag
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {		
+		name = "ge_events.25.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = admit_korean_manchu_flag
+		add_prestige = -20
+		KOR = { country_event = { id = ge_events.26 } }
+		JOS = { country_event = { id = ge_events.26 } }
+	}
+}
+
+country_event = {
+	id = ge_events.26
+	title = "ge_events.26.t"
+	desc = "ge_events.26.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = ge_events.26.a  
+		ai_chance = { factor = 100 }
+		add_prestige = 20
+	}
+}

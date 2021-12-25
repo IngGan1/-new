@@ -1,0 +1,288 @@
+﻿l_english:
+ besseres_hrr_events.EVTNAME1: "iÖÈXÇ ³­ÝÂ"
+ besseres_hrr_events.EVTDESC1: "Finally we were crowned emperor by the Pope. From now on [Root.Monarch.GetName] can not only call himself \"§YKing of the Romans§!\", but \"§YHoly Roman Emperor§!\"."
+ besseres_hrr_events1.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_events.EVTNAME2: "³Ë¹P­iÖDÇ ´°8Á°Æ”² [Root.Monarch.GetTitle] §Y[Root.Monarch.GetName]§!"
+ besseres_hrr_events.EVTDESC2: "[Root.Monarch.GetTitle] §Y[Root.Monarch.GetName]§! has won the war against [PAP.GetName]. [Root.Monarch.GetSheHeCap] put a new Pope, the antipope to [PAP.Monarch.GetName], on the Holy See."
+ besseres_hrr_events2.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_events.EVTNAME4: "[PAP.Capital.GetName]XÇ ¼Ž·"
+ besseres_hrr_events.EVTDESC4: "It seems that the Pope we placed in [PAP.Capital.GetName] has major problems. If we don't help him, he may be deposed and replaced by another Pope. This would lead to us losing much influence on the curia!"
+ besseres_hrr_events4.EVTOPT1: ".È¥Ç!"
+ besseres_hrr_events.EVTNAME5: "[Root.Capital.GetName]XÇ ¼Ž·"
+ besseres_hrr_events.EVTDESC5: "The Pope [From.Monarch.GetName] that was placed on the Holy See by the [GetHREemperorKing] is not longer save in Rome! If this revolt is not crushed, he may be exiled or even killed!"
+ besseres_hrr_events5.EVTOPT1: ".È¥Ç!"
+ besseres_hrr_events.EVTNAME6: "§Y[Root.Monarch.GetName]§! P­iÖXÇ ýÈLÇ"
+ besseres_hrr_events.EVTDESC6: "The Pope §Y[Root.Monarch.GetName]§! that was placed on the Holy See by the [GetHREemperorKing] was killed and another Pope was \"elected\". \nThis is a black day for the [GetHREemperorKing] and the church!"
+ besseres_hrr_events6.EVTOPT1: ".È¥Ç!"
+ besseres_hrr_events.EVTNAME7: ".Áp¬Œ­XÇ tÇ‘Å"
+ besseres_hrr_events.EVTDESC7: "Since we rule [grands_elector_to_ROOT.GetName] in personal union under our ruler [Root.Monarch.GetName], their right to elect the Holy Roman Emperor is transferred to us. We can reject this though."
+ besseres_hrr_events7.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_events7.EVTOPT2: "p¬ÈXÕ|·."
+ besseres_hrr_events.EVTNAME8: "àÂ1Á j¸È¹ Èm­ÐÅ iÕX¹"
+ besseres_hrr_events.EVTDESC8: "[Root.GetName] is a subject of a HRE member ([Root.Overlord.GetName]), but is not a member of the HRE itself. This has changed now. [Root.GetName] is a member of the HRE from now on."
+ besseres_hrr_events8.EVTOPT1: "‹ÈDÅ."
+ besseres_hrr_events.EVTNAME10: "®xÇYÎÁ .Á¸Å"
+ besseres_hrr_events.EVTDESC10: "The Golden Bull is an Imperial Code. From 1356 it was the most important \"basic law\" of the Holy Roman Empire. It regulated the circumstances of the election of the kings and emperors in the HRE by the prince-electors til the end of the Holy Roman Empire in 1806. \n\nThe Golden Bull of 1356 was a decree issued by the Imperial Diet at Nuremberg and Metz (Diet of Metz (1356/57)) headed by the Emperor Charles IV which fixed, for a period of more than four hundred years, important aspects of the constitutional structure of the Holy Roman Empire. It was named the Golden Bull for the golden seal it carried. \n\nOnly the prince-electors had the right to elect the Holy Roman king. The Golden Bull introduced the plurality voting system. Now the king needed the majority of  prince-electors to vote for him, instead of all. \nThe territory of the prince-electors were declared to be indivisible, to prevent having to split or increase the amount of electorships. The real goal of the Golden Bull was to prevent the rising of anti-kings. This was finally achieved."
+ besseres_hrr_events10.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_events.EVTNAME11: "®xÇYÎÁ .Á¸Å"
+ besseres_hrr_events.EVTDESC11: "The [GetHREemperorKing] §Y[From.Monarch.GetName]§! has proclaimed some kind of basic law, the §YGolden Bull§!, on the last court council. These laws are valid for all nations in the HRE and also regulate the laws regarding the election of the king and grant of elector statuses."
+ besseres_hrr_events11.EVTOPT1: "e×ø»m¸p­..."
+ besseres_hrr_events.EVTNAME12: "®xÇYÎÁ ÐÓÀÉ"
+ besseres_hrr_events.EVTDESC12: "The [GetHREemperorKing] §Y[Root.Monarch.GetName]§! has annulled the laws of the §YGolden Bull§!!. This probably weakens [Root.Monarch.GetHerHis] position in the HRE, but [Root.Monarch.GetSheHe] probably had good reasons for doing it..."
+ besseres_hrr_events12.EVTOPT1: "Our reasons are good enough."
+ besseres_hrr_events.EVTNAME14: "[hre_erzkanzler.Monarch.GetName] ³¬ÇÁÀtÇ -ÁÈDÇ tÇL°ä²"
+ besseres_hrr_events.EVTDESC14: "The Archchancellor of the Empire now leads the regency councile til the emperor comes of age."
+ besseres_hrr_events14.EVTOPT1: "‹ÈDÅ."
+ besseres_hrr_events.EVTNAME15: "ÈÄÖm­ÐÅ Ä³ÀÆ ”Æ­Ì"
+ besseres_hrr_events.EVTDESC15: "We are at war for some time and our reserves are exhausted. Request aid from [hre_member_gives_manpower.GetName], to reinforce the Imperial Regiments at the frontline!"
+ besseres_hrr_events15.EVTOPT1: "àÂÑ¼DÇ ô¼´°|·à¬ ÈXÕ|·."
+ besseres_hrr_events15.EVTOPT2: "ÈÄÖm­ÐÅ ¬¥Ç ð¶´Åœ° ¥Çp­DÇ ”Æ­ÌXÕÇ."
+ besseres_hrr_events15.EVTOPT3: "°Æ°¹ Ä³ÀÆtÇ DÕ”ÆÆÅä²!"
+ besseres_hrr_events.EVTNAME16: "Ä³ÀÆtÇ DÕ”ÆjÕ [GetHREemperorKing]"
+ besseres_hrr_events.EVTDESC16.1: "The [GetHREemperorKing] needs our help in a war. The Imperial Regiments need more recruits and as a HRE member it theoratically is our obligation to send recruits to the ruler of the Holy Roman Emperor. Admittedly he currently is not in the situation to force us..."
+ besseres_hrr_events.EVTDESC16.2: "The [GetHREemperorKing] needs our help. He asked us, the Arch-Marshal of the Empire, to send them our best general. To secure our position, we should fulfill his demand, on the other hand he currently is not in the situation to force us..."
+ besseres_hrr_events16.EVTOPT1: "[From.GetName]ÐÅ àÂÑ¼DÇ ô¼´°Ç."
+ besseres_hrr_events16.EVTOPT2: "[From.GetName]ÐÅ °Æ¬¹XÇ ¥Çp­DÇ ô¼´°Ç."
+ besseres_hrr_events16.EVTOPT3: "[GetHREemperorKing]ÐÅ jÆ °Æ¬¹¬ àÂË¬hÃ|Å XÕÀÉ? °Æ¬¹ °Æ¬¹ 8»ÈÌ¹<Çj¸Ä³ ¼XÀä²."
+ besseres_hrr_events.EVTNAME17: "ÀÉÐÆDÇ ô¼¸° [From.GetName]"
+ besseres_hrr_events.EVTDESC17: "The ruler of [From.GetName] has proved himself to be a honorable member of the HRE and fulfilled our demands."
+ besseres_hrr_events17.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_events.EVTNAME18: "ÀÉÐÆDÇ p¬Ž´jÕ [From.GetName]"
+ besseres_hrr_events.EVTDESC18: "The ruler of [From.GetName] has proved himself to be an unhonorable member of the HRE and refused to fulfill our demands!"
+ besseres_hrr_events18.EVTOPT1: "ÄÖŒÖXÕŒ¬ Ì¹ä´´Å üÈ ¬´Å..."
+ besseres_hrr_events.EVTNAME19: ".Áp¬Œ­DÇ tÇ‘Å`ÕL®”Æ?"
+ besseres_hrr_events.EVTDESC19: "The prince-elector of §Y[could_revoke_elector.GetName]§! fights in a war against us and we have weakened him enough to revoke his electorship. But we need to appoint another elector afterwards, it would be best to transfer the elector status to a league friend."
+ besseres_hrr_events19.EVTOPT1: "@[could_revoke_elector.GetTag] [could_revoke_elector.GetAdjective]XÇ .Áp¬Œ­DÇ @[could_grant_elector.GetTag] §Y[could_grant_elector.GetName]§!ÐÅ tÇ‘ÅXÕ|·."
+ besseres_hrr_events19.EVTOPT2: "@[could_revoke_elector.GetTag] §Y[could_revoke_elector.GetName]§!ÐÅ .Áp¬Œ­DÇ .ÇÀÉXÕÇ."
+ besseres_hrr_events.EVTNAME20: ".Áp¬Œ­XÇ õ¼ÐÆ"
+ besseres_hrr_events.EVTDESC20: "During the league war the emperor at that time (@[emperor_while_league_war.GetTag] §Y[emperor_while_league_war.GetName]§!) transferred the electorship of at least one prince-elector to another HRE member. The emperor lost the war now or a religious peace treaty was signed, that's why these former prince-electors become electors again. Because we can't just revoke the electorship of the other prince-electors, there could be more than §Y7§! electors afterwards."
+ besseres_hrr_events20.EVTOPT1: "‹ÈDÅ."
+ besseres_hrr_events.EVTNAME22: "j¸È¹j¸  µœ° [Root.Monarch.GetName]"
+ besseres_hrr_events.EVTDESC22: "Our ruler [Root.Monarch.GetName] now travels to Rome to be crowned emperor by the Pope. This journey takes quite a while and is not really safe in these times..."
+ besseres_hrr_events22.EVTOPT1: "‹ÈDÅ."
+ besseres_hrr_events.EVTNAME23: "j¸È¹j¸ ¬”² É ¬ÀÝ¹jÕ §Y[Root.Monarch.GetName]§!"
+ besseres_hrr_events.EVTDESC23.1: "We just received the message that the [Root.Monarch.GetTitle] of the Romans has died on the way to [Root.Monarch.GetHerHis] coronation in Rome. In order to get to Rome, [Root.Monarch.GetName] had to travel through hostile territory. [Root.Monarch.GetSheHeCap] and the troops, which accompanied [Root.Monarch.GetHerHim], were drawn into a battle and [Root.Monarch.GetName] was killed in action."
+ besseres_hrr_events.EVTDESC23.2: "We just received the message that the [Root.Monarch.GetTitle] of the Romans has died on the way to [Root.Monarch.GetHerHis] coronation in Rome. The [Root.Monarch.GetTitle] and [Root.Monarch.GetHerHis] bodyguards were ambushed and killed."
+ besseres_hrr_events.EVTDESC23.3: "We just received the message that the [Root.Monarch.GetTitle] of the Romans has died on the way to [Root.Monarch.GetHerHis] coronation in Rome. During the long journey [Root.Monarch.GetName] contracted a disease. Some priests of the court think that [Root.Monarch.GetSheHe] died [Root.GetHolyRomanKingGetDeathDisease]."
+ besseres_hrr_events.EVTDESC23.4: "We just received the message that the [Root.Monarch.GetTitle] of the Romans has died on the way to [Root.Monarch.GetHerHis] coronation in Rome. The journey turned out to be too difficult and exhausting for [Root.Monarch.GetName]. [Root.Monarch.GetSheHeCap] died of old age / weakness."
+ besseres_hrr_events.EVTDESC23.5: "We just received the message that the [Root.Monarch.GetTitle] of the Romans has died on the way to [Root.Monarch.GetHerHis] coronation in Rome. The death of [Root.Monarch.GetName] can't be explained. We can't even rule out an assassination..."
+ besseres_hrr_events23.EVTOPT1: "D¾ù­tÇ|Å!"
+ besseres_hrr_events.EVTNAME24: "”Í¬ 8Á®XÇ Ž´ü¬"
+ besseres_hrr_events.EVTDESC24: "It's been a while since the \"Gemeine Pfennig\" was introduced. It's time now to get even more money from our subjects in the HRE. For longer time that may lead to problems, but they have to accept additonal taxes for a short amount of time."
+ besseres_hrr_events24.EVTOPT1: "8Á®DÇ Ž´ü¬XÕ”² 0®¬tÇŽ· t¬ ¼ÅÈ¹à´ ¼° Â ˆÇÀÉ."
+ besseres_hrr_events24.EVTOPT2: "È³DÇ T³ Î¹tÇ ¼DÅÁ ÁtÕü¼ t¬ ÆÅÀÉ..."
+ besseres_hrr_events24.EVTOPT3: "°Æ¬¹¬ 8Á®DÇ T³ w¬DÇ Âk¸ ø­ä´XÇ ÀÉÀÉ|¹ ƒÇŒ¬ .´ p¬|Å."
+ besseres_hrr_events.EVTNAME26: "iÖÈXÇ ³­tÇ p¬Ž´´ä²"
+ besseres_hrr_events.EVTDESC26: "The Pope refused to crown our ruler. Although this is pretty shameful, [Root.Monarch.GetName] can try another time, when we have more influence on the curia."
+ besseres_hrr_events26.EVTOPT1: "tÇt¬ ‹ÈÀÉ JÅNÇp³."
+ besseres_hrr_events.EVTNAME27: "À­qÈtÇ ‹ÅÈÐDÇ ”Æl­XÕä²"
+ besseres_hrr_events.EVTDESC27: "The nobles of our border provinces to the Holy Roman Empire demand that we start a raid on [raided_hre_province.GetName]. We could use some of their riches for our own, however this will anger the Emperor and might lead to a war."
+ besseres_hrr_events27.EVTOPT1: "§Y[raided_hre_province.GetName]§! ‹ÅÈÐDÇ ¬ÜÂXÕà¬ ¬ÈÉ Â ˆÇ”² t¬ P»à´ ¬8È¬Ç."
+ besseres_hrr_events27.EVTOPT2: "tÇt¬ ‹ÈNÇ ÝÀ¬tÇ DÅÐ°..."
+ besseres_hrr_events.EVTNAME28: "§Y[raided_hre_province.GetName]§!XÇ ‹ÅÈÐ"
+ besseres_hrr_events.EVTDESC28: "[raided_hre_province.GetName] has been raided, plundered and pillaged by slavic pagans - namely [From.GetName]. Our subjects blame us for not being able to protect it. \n\nWe should consider to revenge this slavic behaviour and additionally stop these raids by forcing them to convert to the [Root.Religion.GetName] faith!"
+ besseres_hrr_events28.EVTOPT1: "ù²¥Ç Hº°Í|Å tÕ!"
+ besseres_hrr_events.EVTNAME29: "àÂ1Á j¸È¹ Èm­ iÖÈXÇ ³­ÝÂ"
+ besseres_hrr_events.EVTDESC29: "The situation in the world has changed. The influence of the Pope in the Holy Roman Empire has decreased and the power of the Emperor is not reliant on the Coronation through the Pope anymore. \n\nBecause of the changing religious situation in the Holy Roman Empire and in the world, with the appearance of the Protestant faith, the Pope agreed to a Coronation through the Electors and not in Rome."
+ besseres_hrr_events29.EVTOPT1: "e×ø»m¸p­."
+ besseres_hrr_events.EVTNAME30: "§Y[add_country_to_hre_target.GetName]§!XÇ p¬È"
+ besseres_hrr_events.EVTDESC30: "§Y[add_country_to_hre_target.GetName]§! has declined our invitation into the HRE, but they are too large to be forced into the HRE by war."
+ besseres_hrr_events30.EVTOPT1: "Ž´D°ì·´Æ |ÇtÇp­."
+ besseres_hrr_anti_king_events.EVTNAME1: "³Ë¹iÖÈ¬ àÂ1Á j¸È¹ Èm­XÇ õ¬ÝÂÈxÇ µÑXÎÇ¬ ´ÈÅä²"
+ besseres_hrr_anti_king_events.EVTDESC1: "The ruler of §Y[Root.GetName]§! ([Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]), who had the support of the prince-electors and declared himself to be anti-king, was able to defeat the current emperor and was now crowned official ruler of the Holy Roman Empire."
+ besseres_hrr_anti_king_events1.EVTOPT1: "ÌÖm¹tÕ."
+ besseres_hrr_anti_king_events.EVTNAME2: "³Ë¹iÖÈ¬ ¡Çˆ×ä²"
+ besseres_hrr_anti_king_events.EVTDESC2: "The ruler of @[Root.GetTag] §Y[Root.GetName]§! (§Y[Root.Monarch.GetName]§!) has declared himself to be anti-king and tried to push the emperor from the Holy Roman throne by war. Now he was captured by the rightful emperor @[From.GetTag] §Y[From.GetName]§! (§Y[From.Monarch.GetName]§!)!"
+ besseres_hrr_anti_king_events2.EVTOPT1: ".È¥Ç!"
+ besseres_hrr_anti_king_events.EVTNAME3: "l­Á É ¬ÀÝ¹"
+ besseres_hrr_anti_king_events.EVTDESC3: "Our former ruler, who got in [country_that_imprisoned_our_ruler.GetAdjective] captivity in the war of §Y[Root.ruler_imprisoned_date.GetValue]§!, recently died there."
+ besseres_hrr_anti_king_events3.EVTOPT1: "¼Ü´ÜÂ tÇ ³¬|¹ ¼Œ¬ .´p¬|Å..."
+ besseres_hrr_anti_king_events.EVTNAME5: "l­ÁÐÅÁ ŽÔ2¸˜°ä²"
+ besseres_hrr_anti_king_events.EVTDESC5: "Our former ruler, who got in [From.GetAdjective] captivity in the war of §Y[Root.ruler_imprisoned_date.GetValue]§!, could be freed successfully. He will now rule our country again!"
+ besseres_hrr_anti_king_events5.EVTOPT1: "ÌÖm¹tÕ!"
+ besseres_hrr_anti_king_events.EVTNAME6: "l­ÁÐÅÁ ŽÔ2¸˜°ä²"
+ besseres_hrr_anti_king_events.EVTDESC6: "Our former ruler, who got in [From.GetAdjective] captivity in the war of §Y[Root.ruler_imprisoned_date.GetValue]§!, was released by [From.Monarch.GetName]. He will now rule our country again!"
+ besseres_hrr_anti_king_events6.EVTOPT1: "ÌÖm¹tÕ!"
+ besseres_hrr_events_call_for_reichstag_events.EVTNAME2: "[target_of_reichstag.GetName]ÐÅ ³jÕ Reichstag"
+ besseres_hrr_events_call_for_reichstag_events.EVTDESC2.1: "§Y[initiator_of_reichstag.GetName]§! demanded that we call for a Reichstag to discuss, and probably sanction, the aggressive behavior of §Y[target_of_reichstag.GetName]§!. \nThe matter of this Reichstag will be, whether §Y[province_target_of_reichstag.GetName]§! shall be given back to its rightful owner, §Y[initiator_of_reichstag.GetName]§!, or if the new owner, §Y[target_of_reichstag.GetName]§!, is allowed to keep it. \n\nHow will the emperor, §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§!, decide?"
+ besseres_hrr_events_call_for_reichstag_events.EVTDESC2.2: "§Y[initiator_of_reichstag.GetName]§! demanded that we call for a Reichstag to discuss our aggressive behavior. \nThe matter of this Reichstag will be, whether §Y[province_target_of_reichstag.GetName]§! shall be given back to §Y[initiator_of_reichstag.GetName]§! or if we will keep it. \n\nHow will the emperor, §Y[Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]§!, decide?"
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT1: "tÇ EµNÇ §Y[initiator_of_reichstag.GetName]§!XÇ ŒÁ.Çä². ¼Ü´ÜÂ Ì³2¸É|Å tÕ!"
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT2: "P»¬ 8»ÈÀÉ? §Y[province_target_of_reichstag.GetName]§!XÇ Èù²jÕ ŒÁ.ÇÇ”² §Y[target_of_reichstag.GetName]§!ä²!"
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT3: "ù²¥ÇNÇ ´°¬ àÂË¬ øÄ 8»È¬ DÅÈ²|Å."
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT4: "§Y[province_target_of_reichstag.GetName]§!|¹ Ì³2¸É|·."
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT5: "tÇt¬ °Æ¬¹XÇ EµtÇä². ²¬ ´° EµÐÅ ÈµÑ1ÁDÇ I»”² t¬¬?"
+ besseres_hrr_events_call_for_reichstag_events2.EVTOPT6: "|±ÁÇDÇ XÕ2¸tº Ép¬Ž´0Ñ ˆÇ´Å|ÅÀÉ..."
+ besseres_hrr_events_call_for_reichstag_events.EVTNAME3: "Reichstag: ˆ´•¼ È9¸  ÑÀÉXÇ ¼XÖ"
+ besseres_hrr_events_call_for_reichstag_events.EVTDESC3: "The emperor, [From.GetName], demands that we return [province_target_of_reichstag.GetName] to [initiator_of_reichstag.GetName]. Although it obviously is our rightful province, we might should return it to them, if we don't want to suffer the emperor's sanctions."
+ besseres_hrr_events_call_for_reichstag_events3.EVTOPT1: "ù²¥ÇNÇ...Ì³2¸üÈÄ³k¸ XÕÀÉ."
+ besseres_hrr_events_call_for_reichstag_events3.EVTOPT2: "tÇt¬ °Æ¬¹ ÆÀÉtÇä². ÐÆXÕtº ÁÉÈ NÆÁ ¬8È¬ ô¼|·à¬ XÕÀÉ."
+ besseres_hrr_imperial_diet_events.EVTNAME1: "Èm­ XÇŒÖ"
+ besseres_hrr_imperial_diet_events.EVTDESC1.1: "iÖÈ¬ [imperial_diet_place.GetName]ÐÅ Èm­ XÇŒÖ|¹ üÈjÍXÕÆä². iÖÈ”² Èm­ XÇŒÖÐÅ ÁÀÈ`Õ XÇHÅDÇ È`Õ Æ­DÇ °Æ¬¹ÐÅŒ¬ üÈÈÅä²."
+ besseres_hrr_imperial_diet_events.EVTDESC1.2: "iÖÈ¬ [imperial_diet_place.GetName]XÇ Èm­ XÇŒÖÐÅÁ ÁÀÈ`Õ XÇHÅDÇ È`Õ Æ­DÇ üÈÈÅä². EÌ„ÇÇj¸Á, °Æ¬¹¬ ÐÆXÕ”² üÈÈ|¹ XÇŒÖÐÅ ÁÀÈ`Õ Â ˆÇä²."
+ besseres_hrr_imperial_diet_events1.EVTOPT1: "Æ­²Âì·´Æ |ÇtÇÀÉÌ¹ |±XÇXÕà¬ öÂNÇ üÈÈ¬ ÆÅp­."
+ besseres_hrr_imperial_diet_events1.EVTOPT2: "§YÇ.ÇÜÂ§!ÐÅ ³jÕ ,ÒÇ|¹ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT3: "§YÀ¼Ë¬1¼§!ü¬ §YÈm­ À¼Ë¬m­§!ÐÅ ³jÕ ÀÉÐÆDÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT4: "§Y.ÁÈÄÖ§!|¹ ÇjÕ ”Í¬ 8Á®DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT5: "­8Á|¹ É¬ÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT6: "­8Á|¹ ¬ŒÁÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT7: "UÖ¥ÇXÇ ÈµÑ1ÁÐÅ ­tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT8: "À­qÈ Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT9: "1ÁÁÉÇ Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT10: "ÜÂü» Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT11: "À­qÈ Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT12: "1ÁÁÉÇ Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT13: "ÜÂü» Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬DÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT14: "³Ü­¨º ,ÒÇ|¹ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT15: "Èm­ ³œÍDÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT16: "Æ Ñ ˆ¼ÆDÇ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT17: "Ä¬5Î  ÑÀÉ °ºÂÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT18: "4»íÅðÅiÕXÇ Œ­jÕÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT19: "…ÈP­•¼ÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT20: "¼ …ÈP­¬ÖÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT21: "xÇŒ­•¼ÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT22: "xÆŽ´XÇ Èü¬ øÂ°Æ”² m­¬|¹ ÇjÕ ÈÁÇ 8Á®ÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT23: "Èm­ xÆP­ÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT24: "Èm­ °¬<ÖÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT25: "p­¬ÀTÖ Ü­ÈÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT26: "D¾4»¥ÇTÖ Ü­ÈÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT27: "8»TÖÈ à¬Ë¹ÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT28: "Ä³ÜÂ 0®¼ÜÂ2ÁÐÅ ³jÕ ,ÒÇ|¹ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT29: "p­¬À 0®¼ÜÂ2ÁÐÅ ³jÕ ,ÒÇ|¹ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events1.EVTOPT30: "­Ì¸ÈXÇ ÉYÅÑÉŒ­TÖÐÅ ³tÕ |±XÇXÕÇ."
+ besseres_hrr_imperial_diet_events.EVTNAME2: "Èm­ XÇŒÖXÇ |±XÇ"
+ besseres_hrr_imperial_diet_events.EVTDESC2.1: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Ç.ÇÜÂÐÅ ³jÕ ,ÒÇtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.2: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ À¼Ë¬1¼ü¬ Èm­ À¼Ë¬m­ÐÅ ³jÕ ÀÉÐÆtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.3: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ .ÁÈÄÖ|¹ ÇjÕ ”Í¬ 8Á®tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.4: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ­8ÁXÇ É¬ä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.5: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ­8ÁXÇ ¬ŒÁä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.6: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ UÖ¥ÇXÇ ÈµÑ1ÁtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.7: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ À­qÈ Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.8: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ 1ÁÁÉÇ Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.9: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ÜÂü» Œ­jÕDÇ ‹ÅTÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.10: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ À­qÈ Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.11: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ 1ÁÁÉÇ Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.12: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ÜÂü» Œ­jÕDÇ ¬TÖÜÂ²Ð”² ƒ¬tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.13: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ³Ü­¨º ,ÒÇtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.14: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Èm­ ³œÍtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.15: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Æ Ñ ˆ¼ÆtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.16: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Ä¬5Î  ÑÀÉ °ºÂtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.17: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ 4»íÅðÅiÕXÇ Œ­jÕtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.18: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ …ÈP­•¼tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.19: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ¼ …ÈP­¬ÖtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.20: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ xÇŒ­•¼tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.21: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ xÆŽ´XÇ Èü¬ øÂ°Æ”² m­¬|¹ ÇjÕ ÈÁÇ 8Á®tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.22: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Èm­ xÆP­ä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.23: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Èm­ °¬<ÖtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.24: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ p­¬ÀTÖ Ü­ÈtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.25: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ D¾4»¥ÇTÖ Ü­ÈtÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.26: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ 8»TÖÈ à¬Ë¹tÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.27: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ Ä³ÜÂ 0®¼ÜÂ2ÁÐÅ ³jÕ ,ÒÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.28: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ p­¬À 0®¼ÜÂ2ÁÐÅ ³jÕ ,ÒÇä²."
+ besseres_hrr_imperial_diet_events.EVTDESC2.29: "Èm­ XÇŒÖÐÅ XÇHÅtÇ ÁÀÈ´ÈÅä². [imperial_diet_organiser.GetName]XÇ XÇHÅNÇ ­Ì¸ÈXÇ ÉYÅÑÉŒ­TÖä²."
+ besseres_hrr_imperial_diet_events2.EVTOPT1: "tÇ XÇHÅDÇ §GÀÉÀÉ§! XÕÇ."
+ besseres_hrr_imperial_diet_events2.EVTOPT2: "tÇ XÇHÅDÇ §R¼³§!XÕÇ."
+ besseres_hrr_imperial_diet_events.EVTNAME3: "Èm­ XÇŒÖXÇ °¬`¸"
+ besseres_hrr_imperial_diet_events.EVTDESC3.1: "§YÈm­ XÇŒÖ§!XÇ  Ñ`¸ °¬ü¬ §G[REB.imperial_diet_yes_votes.GetValue]§!XÇ ÀÉÀÉjÔNÆ §R[REB.imperial_diet_no_votes.GetValue]§!XÇ ¼³jÔj¸ XÇHÅtÇ µÑü¬´ÈÅä²."
+ besseres_hrr_imperial_diet_events.EVTDESC3.2: "§YÈm­ XÇŒÖ§!XÇ  Ñ`¸ °¬ü¬ §G[REB.imperial_diet_yes_votes.GetValue]§!XÇ ÀÉÀÉjÔNÆ §R[REB.imperial_diet_no_votes.GetValue]§!XÇ ¼³jÔj¸ XÇHÅtÇ Ž´°¬´ÈÅä²."
+ besseres_hrr_imperial_diet_events3.EVTOPT1: "°¬`¸tÇ ¬°p­."
+ besseres_hrr_italian_war_events.EVTNAME1: "l­ØÅÕNÆ 0®¨¼°¹"
+ besseres_hrr_italian_war_events.EVTDESC1: "The term Ghibelline continued to indicate attachment to the declining Imperial authority in Italy, and saw a brief resurgence during the Italian campaigns of Emperors Henry VII (1310) and Louis IV (1327). Pope John XXII was under French control through the Avignon Papacy and therefore aligned with the French-allied House of Luxembourg against the German King Louis IV. The Pope accordingly threatened heresy charges against the Ghibellines and excommunicated Louis IV in 1324. The Ghibellines then supported Louis' invasion of Italy and coronation as King of Italy and Holy Roman Emperor. Nowadays the Divine and Imperial power have found themselves on the edge once again, we shall decide what should happen."
+ besseres_hrr_italian_war_events1.EVTOPT1: "°Æ¬¹”² tÇÈÐ¬¹DÅ|¹ ä²ÜÂ jÕ ˆ¼ ÀÉ0¼`Õ ƒ¬tÇä²."
+ besseres_hrr_italian_war_events1.EVTOPT2: "tÇÈÐ¬¹DÅXÇ ÈÄÖä´NÇ iÖÈNÆ hÕØ® `Õ ƒ¬tÇÀÉ Å³Ë¹`Õ ƒ¬xÇÀÉ .ÁÝÐtÕ|Å jÕä²."
+ besseres_hrr_italian_war_events.EVTNAME2: "Èm­ü¬ tÇÈÐ¬¹DÅ... ø­¬¹à¬ P­iÖ"
+ besseres_hrr_italian_war_events.EVTDESC2: "Pope [PAP.Monarch.GetName] has announced [PAP.Monarch.GetHerHis] ambition of ruling over Italy. Emperor [besseres_hrr_italian_war_emperor_target.Monarch.GetName] has decided to fight over Italy, now we can decide on which side we want to fight or whether we want to stay neutral."
+ besseres_hrr_italian_war_events2.EVTOPT1: "iÖÈXÇ ¸ÓÐÅ .Áä²."
+ besseres_hrr_italian_war_events2.EVTOPT2: "P­iÖXÇ ¸ÓÐÅ .Áä²."
+ besseres_hrr_italian_war_events2.EVTOPT3: "ÉË¹DÇ .ÇÀÉXÕÇ."
+ besseres_hrr_italian_war_events.EVTNAME3: "Èm­ü¬ tÇÈÐ¬¹DÅ... ø­¬¹à¬ P­iÖ"
+ besseres_hrr_italian_war_events.EVTDESC3: "Pope [PAP.Monarch.GetName] has announced [PAP.Monarch.GetHerHis] ambition of ruling over Italy. The Imperial influence in Italy has declined over the past years, yet we decided to try to keep them in the Empire. Now we only have two choices, fight the Pope and the Italians, or give them up."
+ besseres_hrr_italian_war_events3.EVTOPT1: "tÇÈÐ¬¹DÅXÇ Æ Ñ|¹ .ÇÀÉXÕ2¸tº ÈÁÇtÇ DÕ”ÆXÕä²."
+ besseres_hrr_italian_war_events3.EVTOPT2: "¹Â°ÀtÇ ÆÅä². "
+ remove_salic_monarchy_from_subject_title: "…ÈÁm­ ÁÀÁ•¼XÇ À¼Ë¬"
+ remove_salic_monarchy_from_subject_desc: "At least one of our subjects follows the laws of inheritance of the §YSalic Monarchy§!, which states that the country is devided equally between all sons instead of only giving it to the oldest son. Since we follow that law of inheritance, we should introduce it in our subject nations as well."
+ emperor_dismantle_hre_title: "ÆÐÆjÕ iÖÈXÇ ÈÇ"
+ emperor_dismantle_hre_desc: "Since §Y[Root.GetName]§! is the only member of the §YHoly Roman Empire§!, we could convince the Pope to give our rulers the emperor title for ever."
+ free_imprisoned_ruler_decision_title: "™´¡ÇŒ× iÖÈ|¹ ŽÔ´ÅüÈä²"
+ free_imprisoned_ruler_decision_desc: "We have captured the former ruler of another country after a war. We now could release him and show them that we are willing to forget their betrayel."
+ emperor_enact_golden_bull_title: "\"®xÇYÎÁ\" .Á¸Å"
+ emperor_enact_golden_bull_desc: "Proclaim the laws of the imperial \"basic law\", the §YGolden Bull§!. These regulate the laws regarding the election of the king and the grant of electors among other things."
+ emperor_remove_golden_bull_title: "\"®xÇYÎÁ\" ÐÓÀÉ"
+ emperor_remove_golden_bull_desc: "Annul the laws of the imperial \"basic law\", the §YGolden Bull§!. These regulate the laws regarding the election of the king and the grant of electors among other things."
+ emperor_reichstuerkenhilfe_title: "Demand Reichstürkenhilfe"
+ emperor_reichstuerkenhilfe_desc: "Charge a tax for defending the empire against the muslim nations at the empires borders. This will not exactly please the HRE princes, but it's still better than being overrun by the turks..."
+ send_ruler_to_rome_for_coronation_title: "P­iÖÐÅŒ¬ ³­ÝÂ ”Æ­Ì"
+ send_ruler_to_rome_for_coronation_desc: "§Y[Root.Monarch.GetName]§! is the §Y[Root.Monarch.GetTitle] of the Romans§!. But it's not enough, we need to gain the emperorship. \n§Y[Root.Monarch.GetName]§! has to travel to Rome and ask the Pope to crown [Root.Monarch.GetHerHim] emperor."
+ hre_german_duchy_decision_bavaria_title: "The @BAV §YKingdom of [BAV.GetName]§!"
+ hre_german_duchy_decision_bavaria_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @BAV §Y[BAV.GetName]§!."
+ hre_german_duchy_decision_swabia_title: "The @SWA §YDuchy of [SWA.GetName]§!"
+ hre_german_duchy_decision_swabia_desc: "We should combine all the smaller duchies in the region into a larger one, @SWA §Y[SWA.GetName]§!."
+ hre_german_duchy_decision_franconia_title: "The @FKN §YDuchy of [FKN.GetName]§!"
+ hre_german_duchy_decision_franconia_desc: "We should combine all the smaller duchies in the region into a larger one, @FKN §Y[FKN.GetName]§!."
+ hre_german_duchy_decision_hanover_title: "The @HAN §YDuchy of [HAN.GetName]§!"
+ hre_german_duchy_decision_hanover_desc: "We should combine all the smaller duchies in the region into a larger one, @HAN §Y[HAN.GetName]§!."
+ hre_german_duchy_decision_prussia_title: "The @PRU §YKingdom of [PRU.GetName]§!"
+ hre_german_duchy_decision_prussia_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @PRU §Y[PRU.GetName]§!."
+ hre_german_duchy_decision_westphalia_title: "The @WES §YDuchy of [WES.GetName]§!"
+ hre_german_duchy_decision_westphalia_desc: "We should combine all the smaller duchies in the region into a larger one, @WES §Y[WES.GetName]§!."
+ hre_german_duchy_decision_cologne_title: "The @KOL §YArchbishopric of [KOL.GetName]§!"
+ hre_german_duchy_decision_cologne_desc: "We should combine all the smaller duchies in the region into a larger archbishopric, @KOL §Y[KOL.GetName]§!."
+ hre_german_duchy_decision_pomerania_title: "The @POM §YDuchy of [POM.GetName]§!"
+ hre_german_duchy_decision_pomerania_desc: "We should combine all the smaller duchies in the region into a larger one, @POM §Y[POM.GetName]§!."
+ hre_german_duchy_decision_silesia_title: "The @SIL §YDuchy of [SIL.GetName]§!"
+ hre_german_duchy_decision_silesia_desc: "We should combine all the smaller duchies in the region into a larger one, @SIL §Y[SIL.GetName]§!."
+ hre_german_duchy_decision_saxony_title: "The @SAX §YKingdom of [SAX.GetName]§!"
+ hre_german_duchy_decision_saxony_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @SAX §Y[SAX.GetName]§!."
+ hre_german_duchy_decision_bohemia_title: "The @BOH §YKingdom of [BOH.GetName]§!"
+ hre_german_duchy_decision_bohemia_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @BOH §Y[BOH.GetName]§!."
+ hre_german_duchy_decision_switzerland_title: "The @SWI §YDuchy of [SWI.GetName]§!"
+ hre_german_duchy_decision_switzerland_desc: "We should combine all the smaller duchies in the region into a larger one, @SWI §Y[SWI.GetName]§!."
+ hre_german_duchy_decision_netherlands_title: "The @NED §YKingdom of [NED.GetName]§!"
+ hre_german_duchy_decision_netherlands_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @NED §Y[NED.GetName]§!."
+ hre_german_duchy_decision_austria_title: "The @HAB §YArchduchy of [HAB.GetName]§!"
+ hre_german_duchy_decision_austria_desc: "We should combine all the smaller duchies in the region into a larger one, @HAB §Y[HAB.GetName]§!."
+ hre_french_duchy_decision_normandy_title: "The @NRM §YDuchy of [NRM.GetName]§!"
+ hre_french_duchy_decision_normandy_desc: "We should combine all the smaller duchies in the region into a larger one, @NRM §Y[NRM.GetName]§!."
+ hre_french_duchy_decision_auvergne_title: "The @AUV §YDuchy of [AUV.GetName]§!"
+ hre_french_duchy_decision_auvergne_desc: "We should combine all the smaller duchies in the region into a larger one, @AUV §Y[AUV.GetName]§!."
+ hre_french_duchy_decision_burgundy_title: "The @BUR §YDuchy of [BUR.GetName]§!"
+ hre_french_duchy_decision_burgundy_desc: "We should combine all the smaller duchies in the region into a larger one, @BUR §Y[BUR.GetName]§!."
+ hre_french_duchy_decision_lorraine_title: "The @LOR §YDuchy of [LOR.GetName]§!"
+ hre_french_duchy_decision_lorraine_desc: "We should combine all the smaller duchies in the region into a larger one, @LOR §Y[LOR.GetName]§!."
+ hre_french_duchy_decision_gascony_title: "The @GUY §YDuchy of [GUY.GetName]§!"
+ hre_french_duchy_decision_gascony_desc: "We should combine all the smaller duchies in the region into a larger one, @GUY §Y[GUY.GetName]§!."
+ hre_french_duchy_decision_provence_title: "The @PRO §YDuchy of [PRO.GetName]§!"
+ hre_french_duchy_decision_provence_desc: "We should combine all the smaller duchies in the region into a larger one, @PRO §Y[PRO.GetName]§!."
+ hre_italian_duchy_decision_sardinia_piedmont_title: "The @SPI §YKingdom of [SPI.GetName]§!"
+ hre_italian_duchy_decision_sardinia_piedmont_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @SPI §Y[SPI.GetName]§!."
+ hre_italian_duchy_decision_milan_title: "The @MLO §YKingdom of [HRE_DUCHY_LOMBARDY]§!"
+ hre_italian_duchy_decision_milan_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @MLO §Y[HRE_DUCHY_LOMBARDY]§!."
+ hre_italian_duchy_decision_tuscany_title: "The @TUS §YDuchy of [TUS.GetName]§!"
+ hre_italian_duchy_decision_tuscany_desc: "We should combine all the smaller duchies in the region into a larger one, @TUS §Y[TUS.GetName]§!."
+ hre_italian_duchy_decision_sicily_title: "The @SIC §YKingdom of [SIC.GetName]§!"
+ hre_italian_duchy_decision_sicily_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @SIC §Y[SIC.GetName]§!."
+ hre_iberian_duchy_decision_catalonia_title: "The @CAT §YKingdom of [CAT.GetName]§!"
+ hre_iberian_duchy_decision_catalonia_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @CAT §Y[CAT.GetName]§!."
+ hre_iberian_duchy_decision_asturias_title: "The @ASU §YKingdom of [ASU.GetName]§!"
+ hre_iberian_duchy_decision_asturias_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @ASU §Y[ASU.GetName]§!."
+ hre_iberian_duchy_decision_castile_title: "The @CAS §YKingdom of [CAS.GetName]§!"
+ hre_iberian_duchy_decision_castile_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @CAS §Y[CAS.GetName]§!."
+ hre_eastern_duchy_decision_hungary_title: "The @HUN §YKingdom of [HUN.GetName]§!"
+ hre_eastern_duchy_decision_hungary_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @HUN §Y[HUN.GetName]§!."
+ hre_eastern_duchy_decision_mazovia_title: "The @MAZ §YDuchy of [MAZ.GetName]§!"
+ hre_eastern_duchy_decision_mazovia_desc: "We should combine all the smaller duchies in the region into a larger one, @MAZ §Y[MAZ.GetName]§!."
+ hre_eastern_duchy_decision_moldavia_title: "The @MOL §YDuchy of [MOL.GetName]§!"
+ hre_eastern_duchy_decision_moldavia_desc: "We should combine all the smaller duchies in the region into a larger one, @MOL §Y[MOL.GetName]§!."
+ hre_balkans_duchy_decision_cilli_title: "The @CLI §YDuchy of [CLI.GetName]§!"
+ hre_balkans_duchy_decision_cilli_desc: "We should combine all the smaller duchies in the region into a larger one, @CLI §Y[CLI.GetName]§!."
+ hre_balkans_duchy_decision_bulgaria_title: "The @BUL §YKingdom of [BUL.GetName]§!"
+ hre_balkans_duchy_decision_bulgaria_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @BUL §Y[BUL.GetName]§!."
+ hre_balkans_duchy_decision_greece_title: "The @GRE §YKingdom of [GRE.GetName]§!"
+ hre_balkans_duchy_decision_greece_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @GRE §Y[GRE.GetName]§!."
+ hre_nordic_duchy_decision_denmark_title: "The @DAN §YKingdom of [DAN.GetName]§!"
+ hre_nordic_duchy_decision_denmark_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @DAN §Y[DAN.GetName]§!."
+ hre_nordic_duchy_decision_norway_title: "The @NOR §YKingdom of [NOR.GetName]§!"
+ hre_nordic_duchy_decision_norway_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @NOR §Y[NOR.GetName]§!."
+ hre_nordic_duchy_decision_sweden_title: "The @SWE §YKingdom of [SWE.GetName]§!"
+ hre_nordic_duchy_decision_sweden_desc: "We should combine all the smaller duchies in the region into a larger kingdom, @SWE §Y[SWE.GetName]§!."
+ hre_nordic_duchy_decision_finland_title: "The @FIN §YDuchy of [FIN.GetName]§!"
+ hre_nordic_duchy_decision_finland_desc: "We should combine all the smaller duchies in the region into a larger one, @FIN §Y[FIN.GetName]§!."

@@ -1,0 +1,21 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 0 0 0 }
+
+historical_idea_groups = {
+
+}
+
+historical_units = {
+
+}
+
+leader_names = {
+
+}
+
+ship_names = {
+
+}

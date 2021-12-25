@@ -1,0 +1,73 @@
+namespace = et
+
+# The Schism Mended
+country_event = {
+	
+	id = et.10
+	title = "et.EVTNAME10"
+	desc = "et.EVTDESC10"
+	picture = ORTHODOX_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "et.EVTOPTA10" # Become Orthodox
+		add_stability = -2
+		add_prestige = -5
+		add_legitimacy = 10
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_opinion = { who = BYZ value = 30 }
+					has_opinion = { who = ROM value = 30 }
+					has_opinion = { who = PAP value = -30 }
+					has_country_modifier = excommunication
+				}
+			}
+		}
+		change_religion = orthodox
+		random_owned_province = {
+			limit = {
+				religion = catholic
+				can_spawn_rebels = catholic_rebels
+			}
+			spawn_rebels = {
+				type = catholic_rebels
+				size = 3
+			}
+		}
+	}
+	option = {
+		name = "et.EVTOPTB10" # Remain Catholic
+		add_stability = -1
+		add_prestige = -30
+		add_legitimacy = -30
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_opinion = { who = BYZ value = -50 }
+					has_opinion = { who = ROM value = -50 }
+					has_opinion = { who = PAP value = 100 }
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = excommunication
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = orthodox
+				can_spawn_rebels = orthodox_rebels
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 3
+			}
+		}
+	}
+}

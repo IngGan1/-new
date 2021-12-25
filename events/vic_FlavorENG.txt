@@ -1,0 +1,678 @@
+namespace = vic_flavor_eng
+normal_or_historical_nations = yes
+
+# birth of Queen Victoria
+country_event = {
+	id = vic_flavor_eng.1
+	title = "vic_flavor_eng.1.t"
+	desc = "vic_flavor_eng.1.d"
+	picture = VICTORIA_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1819
+		NOT = { is_year = 1821 }
+		is_lesser_in_union = no
+		has_heir = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "vic_flavor_eng.1.a"
+		define_heir = {
+			name = "Victoria"
+			#dynasty = "von Hannover"
+			dynasty = ROOT
+			adm = 5
+			dip = 5
+			mil = 3
+			claim = 100
+			female = yes
+		}
+		if = {
+			limit = {
+				exists = HAN
+			}
+			reverse_add_opinion = { who = HAN modifier = queen_victoria }	
+		}
+		set_country_flag = queen_victoria_birth
+		set_heir_flag = queen_victoria
+	}
+}
+
+# Prince Consort Albert
+country_event = {
+	id = vic_flavor_eng.2
+	title = "vic_flavor_eng.2.t"
+	desc = "vic_flavor_eng.2.d"
+	picture = ALBERT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_ruler_flag = queen_victoria
+		is_year = 1840
+		NOT = { is_year = 1842}
+		has_consort = no
+		is_female = yes
+		is_lesser_in_union = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "vic_flavor_eng.2.a"
+		define_consort = {
+			name = "Albert"
+			dynasty = "of Saxe-Coburg and Gotha"
+			if = {
+				limit = {
+					HAN = exists
+				}
+				country_of_origin = HAN
+			}
+			culture = hannoverian
+			religion = ROOT
+			age = 21
+			adm = 5
+			dip = 4
+			mil = 3
+		}
+		add_prestige = 10
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_ruler_personality = kind_hearted_personality }
+		}
+	}
+}
+
+# Queen Victoria becomes heir
+country_event = {
+	id = vic_flavor_eng.3
+	title = "vic_flavor_eng.3.t"
+	desc = "vic_flavor_eng.3.d"
+	picture = VICTORIA_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { has_country_flag = queen_victoria_birth }
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1830
+		NOT = { is_year = 1831 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "vic_flavor_eng.3.a"
+		kill_heir = {}
+		define_heir = {
+			name = "Victoria"
+			dynasty = "von Hannover"
+			#dynasty = ROOT
+			age = 10
+			adm = 5
+			dip = 5
+			mil = 3
+			claim = 100
+			female = yes
+		}
+		set_heir_flag = queen_victoria
+	}
+}
+
+# Queen Victoria Coronation
+country_event = {
+	id = vic_flavor_eng.4
+	title = "vic_flavor_eng.4.t"
+	desc = "vic_flavor_eng.4.d"
+	picture = VICTORIA_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_ruler_flag = queen_victoria
+		NOT = { has_country_flag = victoria_becomes_queen }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "vic_flavor_eng.4.a"
+	}
+
+}
+
+# Queen Victoria 
+country_event = {
+	id = vic_flavor_eng.5
+	title = "vic_flavor_eng.5.t"
+	desc = "vic_flavor_eng.5.d"
+	picture = VICTORIA_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_heir_flag = queen_victoria
+		is_year = 1837
+		ruler_age = 50
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "vic_flavor_eng.5.a"
+		kill_ruler = yes
+		set_country_flag = victoria_becomes_queen
+	}
+
+}
+
+# The Great Potato Famine
+
+province_event = {
+	id = vic_flavor_eng.6
+	title = "vic_flavor_eng.6.t"
+	desc = "vic_flavor_eng.6.d"
+	picture = FAMINE_eventPicture
+
+	major = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1844
+		OR = {
+			province_id = 373
+			province_id = 374
+			province_id = 376
+			province_id = 3026		 
+			province_id = 3027		 
+			province_id = 3028		 
+			province_id = 3995		 
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "vic_flavor_eng.6.a"
+		add_province_modifier = {
+			name = "irish_potato_famine"
+			duration = 1460
+		}	
+		if = {
+			limit = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
+				}
+			}	
+			add_province_modifier = {
+				name = "local_severe_famine"
+				duration = 1460
+			}
+		}
+		every_neighbor_province = {
+			limit = {
+				is_core = ROOT
+			}
+			add_province_modifier = {
+				name = "irish_potato_famine"
+				duration = 1460
+			}	
+			if = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
+					}
+				}	
+				add_province_modifier = {
+					name = "local_severe_famine"
+					duration = 1460
+				}
+			}
+		}
+		hidden_effect = {
+			set_global_flag = potato_famine_happened
+			owner = {
+				country_event = { id = vic_flavor_eng.9 days = 1095 }
+			}	
+		}
+	}
+}
+
+province_event = {
+	id = vic_flavor_eng.7
+	title = "vic_flavor_eng.7.t"
+	desc = "vic_flavor_eng.7.d"
+	picture = FAMINE_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = potato_famine_happened
+		NOT = { has_province_modifier = potato_famine }
+		NOT = { has_province_modifier = irish_potato_famine }
+		any_neighbor_province = {
+			OR = {
+				has_province_modifier = potato_famine
+				has_province_modifier = irish_potato_famine
+			}
+		}
+		culture = irish
+		NOT = { owner = { primary_culture = ROOT } }
+		
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 2
+			NOT = { region = britain_region }
+		}
+		modifier = {
+			factor = 4
+			NOT = { continent = europe }
+		}
+	}
+
+	option = {
+		name = "vic_flavor_eng.7.a"
+		add_province_modifier = {
+			name = "irish_potato_famine"
+			duration = 1460
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
+				}
+			}	
+			add_province_modifier = {
+				name = "local_severe_famine"
+				duration = 1460
+			}
+		}
+		every_neighbor_province = {
+			limit = {
+				is_core = ROOT
+				NOT = { has_province_modifier = irish_potato_famine }
+				NOT = { has_province_modifier = potato_famine }
+			}
+			add_province_modifier = {
+				name = "irish_potato_famine"
+				duration = 1460
+			}
+			if = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
+					}
+				}	
+				add_province_modifier = {
+					name = "local_severe_famine"
+					duration = 1460
+				}
+			}	
+		}
+	}
+}
+
+province_event = {
+	id = vic_flavor_eng.8
+	title = "vic_flavor_eng.8.t"
+	desc = "vic_flavor_eng.8.d"
+	picture = FAMINE_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = potato_famine_happened
+		NOT = { has_province_modifier = potato_famine }
+		NOT = { has_province_modifier = irish_potato_famine }
+		any_neighbor_province = {
+			OR = {
+				has_province_modifier = potato_famine
+				has_province_modifier = irish_potato_famine
+			}
+		}
+		OR = {
+			NOT = { 
+				culture = irish
+			}	
+			owner = { primary_culture = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 2
+			NOT = { region = britain_region }
+		}
+		modifier = {
+			factor = 4
+			NOT = { continent = europe }
+		}
+	}
+
+	option = {
+		name = "vic_flavor_eng.8.a"
+		add_province_modifier = {
+			name = "potato_famine"
+			duration = 1460
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
+					trade_goods = potato
+					trade_goods = maize
+					trade_goods = rice
+				}
+			}	
+			add_province_modifier = {
+				name = "local_famine"
+				duration = 1460
+			}
+		}
+		every_neighbor_province = {
+			limit = {
+				is_core = ROOT
+				NOT = { has_province_modifier = irish_potato_famine }
+				NOT = { has_province_modifier = potato_famine }
+			}
+			add_province_modifier = {
+				name = "potato_famine"
+				duration = 1460
+			}
+			if = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
+						trade_goods = potato
+						trade_goods = maize
+						trade_goods = rice
+					}
+				}	
+				add_province_modifier = {
+					name = "local_famine"
+					duration = 1460
+				}
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = vic_flavor_eng.9
+	title = "vic_flavor_eng.9.t"
+	desc = "vic_flavor_eng.9.d"
+	picture = FAMINE_eventPicture
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "vic_flavor_eng.9.a"
+		clr_global_flag = potato_famine_happened
+
+	}
+}
+
+province_event = {
+	id = vic_flavor_eng.10
+	title = "vic_flavor_eng.10.t"
+	desc = "vic_flavor_eng.10.d"
+	picture = FAMINE_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		has_global_flag = potato_famine_happened
+		NOT = { has_province_modifier = potato_famine }
+		NOT = { has_province_modifier = irish_potato_famine }
+		OR = {
+			region = france_region
+			region = iberia_region
+			region = low_countries_region
+			region = north_german_region
+			region = south_german_region
+			region = italy_region
+			region = poland_region
+			region = baltic_region
+		}
+		trade_goods = grain
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "vic_flavor_eng.10.a"
+		add_province_modifier = {
+			name = "potato_famine"
+			duration = 1460
+		}
+		if = {
+			limit = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
+					trade_goods = potato
+					trade_goods = maize
+					trade_goods = rice
+				}
+			}	
+			add_province_modifier = {
+				name = "local_famine"
+				duration = 1460
+			}
+		}
+		every_neighbor_province = {
+			limit = {
+				is_core = ROOT
+				NOT = { has_province_modifier = irish_potato_famine }
+				NOT = { has_province_modifier = potato_famine }
+			}
+			add_province_modifier = {
+				name = "potato_famine"
+				duration = 1460
+			}
+			if = {
+				limit = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
+						trade_goods = potato
+						trade_goods = maize
+						trade_goods = rice
+					}
+				}	
+				add_province_modifier = {
+					name = "local_famine"
+					duration = 1460
+				}
+			}	
+		}
+	}
+}
+
+country_event = {
+	id = vic_flavor_eng.11
+	title = "vic_flavor_eng.11.t"
+	desc = "vic_flavor_eng.11.d"
+	picture = PARLIAMENT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "vic_flavor_eng.11.a"
+		trigger = {
+			NOT = { has_reform = english_monarchy }
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_CORN_LAWS_NOBLES
+			influence = 15
+			duration = 3650
+		}
+		add_estate_loyalty = {  				
+			estate = estate_nobles
+  			loyalty = 15
+   		}
+   		add_mercantilism = 10
+   		add_country_modifier = {
+   			name = corn_laws_nobles
+   			duration = -1
+   		}
+   		add_estate_loyalty = {  				
+			estate = estate_burghers
+  			loyalty = -15
+   		}
+   		set_country_flag = corn_laws
+   		ai_chance = {
+   			factor = 1
+   		}
+	}
+
+	option = {
+		name = "vic_flavor_eng.11.b"
+		trigger = {
+			has_reform = english_monarchy
+		}
+		add_mercantilism = 10
+		add_country_modifier = {
+   			name = corn_laws_nobles_eng
+   			duration = -1
+   		}
+   		add_estate_loyalty = {  				
+			estate = estate_burghers
+  			loyalty = -15
+   		}
+   		set_country_flag = corn_laws
+   		ai_chance = {
+   			factor = 1
+   		}
+	}
+
+	option = {
+		name = "vic_flavor_eng.11.c"
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_CORN_LAWS_BURGHERS
+			influence = 15
+			duration = 3650
+		}
+		add_estate_loyalty = {  				
+			estate = estate_burghers
+  			loyalty = 15
+   		}
+   		add_mercantilism = -5
+   		add_country_modifier = {
+   			name = corn_laws_burghers
+   			duration = -1
+   		}
+   		add_estate_loyalty = {  				
+			estate = estate_nobles
+  			loyalty = -15
+   		}
+   		set_country_flag = corn_laws
+   		ai_chance = {
+   			factor = 1
+   		}
+	}
+
+	option = {
+		name = "vic_flavor_eng.11.d"
+		ai_chance = {
+   			factor = 0
+   		}
+	}
+}
+
+# Young Ireland
+
+country_event = {
+	id = vic_flavor_eng.12
+	title = "vic_flavor_eng.12.t"
+	desc = "vic_flavor_eng.12.d"
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		is_year = 1846
+		NOT = { tag = IRE }
+		any_owned_province = {
+			culture = irish
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = vic_flavor_eng.12.a
+		every_province = {
+			limit = { culture = irish }
+			add_core = IRE
+		}
+		random_owned_province = { 
+			limit = {
+				is_capital = no
+				culture = irish
+			}
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 1		
+				win = yes
+				unrest = 5
+			}
+		}
+		add_prestige = -5
+	}
+}

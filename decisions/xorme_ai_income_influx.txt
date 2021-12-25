@@ -1,0 +1,40 @@
+country_decisions = {
+#################
+##INCOME INFLUX##
+#################
+	xorme_ai_income_influx = {
+		potential = {
+			num_of_loans = 5
+			ai = yes
+			NOT = { has_country_modifier = xorme_ai_income_influx_cooldown }
+		}
+
+		allow = {
+			is_at_war = no
+			NOT = { inflation = 5 }
+			NOT = { corruption = 5 }
+		}
+
+		effect = {
+			add_years_of_income = 1.0
+			add_corruption = 1.5
+			add_inflation = 1.5
+			add_country_modifier = {
+				name = xorme_ai_income_influx_cooldown
+				duration = 912
+			}
+		}
+
+		ai_will_do = {
+			factor = 1.0
+			modifier = {
+				factor = 0
+				inflation = 4
+			}
+			modifier = {
+				factor = 0
+				corruption = 4
+			}
+		}
+	}
+}

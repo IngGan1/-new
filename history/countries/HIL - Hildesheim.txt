@@ -1,0 +1,168 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = hannoverian
+religion = catholic
+technology_group = western
+capital = 4498
+
+1331.1.1 = {
+	monarch = {
+		name = "Heinrich III von Welf"
+		birth_date = 1296.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1363.1.1 = {
+	monarch = {
+		name = "Johann II Schadland"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1365.1.1 = {
+	monarch = {
+		name = "Gerhard von Berg"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1399.1.1 = {
+	monarch = {
+		name = "Johann III von Hoya"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "Magnus Askanier"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1452.1.1 = {
+	monarch = {
+		name = "Bernhard II von Welf"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1458.1.1 = {
+	monarch = {
+		name = "Ernst von Schauenburg"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1471.1.1 = {
+	monarch = {
+		name = "Henning vom Haus"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1481.1.1 = {
+	monarch = {
+		name = "Berthold II von Landsberg"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1502.1.1 = {
+	monarch = {
+		name = "Erich Askanier"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1503.1.1 = {
+	monarch = {
+		name = "Johann IV Askanier"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1527.1.1 = {
+	monarch = {
+		name = "Balthasar Merklin"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1531.1.1 = {
+	monarch = {
+		name = "Otto III von Schauenburg"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1537.1.1 = {
+	monarch = {
+		name = "Valentin von Teutleben"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1542.1.1   = {
+	religion = protestant
+	set_legacy_government = administrative_monarchy
+}
+
+1551.1.1 = {
+	monarch = {
+		name = "Friedrich von Oldenburg"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1557.1.1 = {
+	monarch = {
+		name = "Burchard von Oberg"
+		birth_date = 1520.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+
+1573.1.1 = {
+	monarch = {
+		name = "Ernst II von Wittelsbach"
+		ADM = 3
+		DIP = 3
+		MIL = 3
+	}
+}
+

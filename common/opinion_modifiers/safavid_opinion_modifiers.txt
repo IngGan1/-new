@@ -1,0 +1,17 @@
+qoyunlu_feud = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+forced_pirbudag = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}
+
+timurid_succession_crisis = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}

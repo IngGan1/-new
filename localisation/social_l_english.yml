@@ -1,0 +1,148 @@
+﻿l_english:
+ SOCIAL_BUTTON_STATUS_DISCONNECTED:0 "§Yj¸ø­DÅÃÆ§!"
+ SOCIAL_BUTTON_STATUS_FAILED:0 "§RÆÁÀXÎ »ºjÕ 2ÆX¹§!"
+ SOCIAL_ALREADY_FRIENDS:0 "tÇÈ jÎl­…ÇÈ²ä²"
+ SOCIAL_NEW_MESSAGE:0 "§GÈÀj¸´Æ TºÜÂÀÉ¬ ˆÇµÂÈ²ä²!§!"
+ INVITE_RECEIVED:0 "Í³ ¼LÇ"
+ INVITE_SUCCESS_RESOLUTION:0 "Í³ Â‹·(´"
+ INVITE_DECLINED_RESOLUTION:0 "Í³ p¬È(´"
+ INVITE_ALREADY_CONNECTED_RESOLUTION:0 "tÇø» ðÅ°¬(´"
+ INVITE_UNKNOWN_RESOLUTION:0 "2ÆX¹ ¼ÝÀ"
+ INVITATION_SENT:0 "Í³ ¼LÇ"
+ SOCIAL_NEW_FRIEND:0 "§GjÎl­ ”Í¬ ”Æ­ÌtÇ ä´´ÅTÆµÂÈ²ä²!§!"
+ SOCIAL_DSTATUS_PLAYING:0 "Œ¬„Ç É"
+ SOCIAL_INPUT_WINDOW_OK:0 "UÖxÇ"
+ SOCIAL_INPUT_WINDOW_CANCEL:0 "èÍŒÁ"
+ SOCIAL_ADDFRIEND_WINDOW:0 "jÎl­ ”Í¬"
+ SOCIAL_ADDFRIEND_WINDOW_ADD:0 "jÎl­ ”Í¬"
+ SOCIAL_ADDFRIEND_WINDOW_SEARCH:0 "Ž¬ÉÀ"
+ SOCIAL_STATUS_AVAILABLE:0 "¬¥²hÕ"
+ SOCIAL_STATUS_UNAVAILABLE:0 "³TÖ`Õ Â ÆÅLÇ"
+ SOCIAL_STATUS_OFFLINE:0 "2ÆÕ|·xÇ"
+ SOCIAL_STATUS_DO_NOT_DISTURB:0 ")¼tÕ ®ÀÉ"
+ SOCIAL_STATUS_AWAY:0 "Ž´¬ÇÉ"
+ SOCIAL_SEND_INVITE:0 "Œ¬„ÇÐÅ Í³"
+ SOCIAL_SEND_JOIN:0 "Œ¬„Ç 8ÌìÅ"
+ SOCIAL_SEND_MESSAGE:0 "TºÜÂÀÉ ô¼´°0®"
+ SOCIAL_REMOVE_FRIEND:0 "jÎl­ ­ÀÈ"
+ SOCIAL_REMOVE_FRIEND_DESC:0 "$FRIEND|H$ Ø²DÇ jÎl­ÐÅÁ ­ÀÈXÕÜÂ ¬µÂÈ²L®?"
+ SOCIAL_SEND_FRIENDREQUEST:0 "jÎl­ ”Æ­Ì ô¼´°0®"
+ SOCIAL_BUTTON:0 "§YjÎl­§!\njÎl­ ©ºk¸ ô¼0®\n§YÁÀÜÐ§!: $STATUS$"
+ ACCEPT_AND_SUBMIT:1 "Ä¬È ÝÀ1Á"
+ ADDRESS:0 "üÈŒÁ"
+ ADDRESS_CITY:0 "Ä³ÜÂ"
+ ADDRESS_CITY_HINT:0 "ÜÂ, p­, l­|¹ …Ç%¸XÕ8Á”Æ"
+ ADDRESS_LINE_1:0 "ÁÀ8Á üÈŒÁ1"
+ ADDRESS_LINE_2:0 "ÁÀ8Á üÈŒÁ2"
+ ADDRESS_STATE:0 "üÈ(Ä³)"
+ ADDRESS_STATE_HINT:0 "üÈ(Ä³)|¹ …Ç%¸XÕ8Á”Æ"
+ ADDRESS_ZIP_CODE:0 "°Æ¸Óˆ¼8Ö"
+ ADDRESS_ZIP_CODE_HINT:0 "°Æ¸Óˆ¼8Ö|¹ …Ç%¸XÕ8Á”Æ"
+ CLICK_TO_OPEN_IN_BROWSER:0 "tÐ­¹tÕÁ ¾|·°ÆÈÐÅÁ ôÅ0®:"
+ COUNTRY_HINT:0 "m­¬|¹ …Ç%¸XÕ8Á”Æ"
+ COUNTRY_REQUIRED:0 "m­¬"
+ CREATE_ACCOUNT:0 "Ä¬È ÝÀ1Á"
+ CREATE_MOD:0 "¨ºÜ´ ÝÀ1Á"
+ DATE_OF_BIRTH_HINT:0 "YYYY-MM-DD"
+ DATE_OF_BIRTH_REQUIRED:0 "ÝÀD±ÔÆ|Ç"
+ DUPLICATE_MOD_TAGS:0 "¨ºÜ´ ÜÐø­¬ õ¼È(´"
+ EMAIL:0 "Email"
+ EMAIL_HINT:1 "tÇTº|Ç üÈŒÁ"
+ EMAIL_REQUIRED:0 "Email"
+ FETCH_INFO:0 "Èô¼|¹ ¬8È2Æä²"
+ FILE_ALREADY_EXISTS:0 "tÇ µ	¸ Ñ¬¹XÇ ¨ºÜ´¬ tÇø» tÈ¬ÇiÕÈ²ä²."
+ FIRST_NAME:0 "tÇ„¹"
+ FORGOT_PASSWORD:0 "D¾¼ˆ¼8Ö|¹ ŠÇ<ÇhÁ˜°”Æ?"
+ HAVE_READ_TOS:0 "tÇ©Æ‹Å­DÇ ‹ÇÈÅà¬ Ù³XÇiÕÈ²ä²"
+ HAVE_READ_PP:0 "¬xÇÈô¼ô¼8ÖÈEÌDÇ ‹ÇÈÅà¬ tÇtÕˆÕµÂÈ²ä²"
+ INVALID_EMAIL:0 "§RtÇTº|Ç üÈŒÁ|¹ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²§!"
+ INVALID_PASSWORD:0 "§RD¾¼ˆ¼8Ö|¹ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²§!"
+ LANGUAGE_HINT:0 "¸Å´Å|¹ …Ç%¸XÕ8Á”Æ"
+ LANGUAGE_REQUIRED:0 "¸Å´Å"
+ LAST_NAME:0 "1Á"
+ LOGGED_IN:0 "ÈÁÉ"
+ LOGIN_DESCRIPTION:0 "Paradox Ä¬È<Çj¸ NºðÒÕ¸tÇ, tÐ|·°ÆÜ´ 8ÁtÇ¾, Ä³Èü¬È ñ´ ä²‘ÅjÕ ÖÝÐDÇ ²¬¹8Á”Æ."
+ LOGIN_DESCRIPTION_BOLD:1 "Paradox Ä¬ÈÐÅ j¸ø­xÇ XÕ8Á”Æ"
+ LOGIN_EMAIL_INVALID:0 "§R.Ç¨ÖjÕ tÇTº|Ç üÈŒÁ|¹ …Ç%¸XÕ8Á”Æ§!"
+ LOGIN_NO_EMAIL:0 "§RtÇTº|Ç üÈŒÁ¬ ¬À|·ÐÉ§!"
+ LOGIN_NO_PASSWORD:0 "§RD¾¼ˆ¼8Ö¬ ¬À|·ÐÉ§!"
+ LOGIN_PASSWORD_INVALID:0 "§RjÍŒÁ 6Ç¬¹ tÇÁÀXÇ D¾¼ˆ¼8Ö|¹ …Ç%¸XÕ8Á”Æ§!"
+ LOGIN_TIMEOUT:0 "§Rj¸ø­xÇ ÜÂ¬ Íü¬§!"
+ LOG_IN:0 "j¸ø­xÇ"
+ LOG_IN_NO:0 "j¸ø­xÇ"
+ LOG_OUT:0 "j¸ø­DÅÃÆ"
+ MISSING_REQUIRED_FIELD:0 "§Rõ²À¼´ÀÉ JÅNÇ mÕ©ºtÇ ˆÇµÂÈ²ä²§!"
+ MODTOOLS:0 "¨ºÜ´ Ä³l­"
+ MOD_CREATE_SUCCESS:0 "$PATH$§GÐÅ 1Áõ¬È<Çj¸ ¨ºÜ´Ó|ÇDÇ ÝÀ1ÁXÕÆµÂÈ²ä²§!"
+ MOD_DETAILS:0 "8ÁŽ´¬ÀmÕ:"
+ MOD_DIRECTORY:0 "µ	¸ Ñ¬¹:"
+ MOD_DIRECTORY_HELP:0 "¨ºÜ´XÇ XÕÇ µ	¸ Ñ¬¹ (õ¬¬ Ž´qÈ 9ÖNÇ ­ÀÈ)"
+ MOD_ID:0 "¨ºÜ´ ID:"
+ MOD_PATH:0 "Ë¬j¸:"
+ MOD_TITLE_HELP:0 "¨ºÜ´XÇ È´Ì tÇ„¹"
+ NEWSFEED_LOADING:0 "t²²Â<ÕÜ´ ˆ´ì·2Æ”² É..."
+ NOT_LOGGED_IN:0 "ÈÁ ÉtÇ DÅÙ²È²ä²"
+ NOT_READ_TOS_ERROR:0 "§RÄ¬ÈDÇ ÝÀ1ÁXÕ0® ÇtÕ tÇ©Æ ‹Å­DÇ ‹Ç´Å|Å iÕÈ²ä²§!"
+ NOT_READ_PP_ERROR:0 "§RÄ¬ÈDÇ ÝÀ1ÁXÕ0® ÇtÕ ¬xÇÈô¼ô¼8ÖÈEÌDÇ ‹Ç´Å|Å iÕÈ²ä²§!"
+ NO_MOD_DIRECTORY:0 "µ	¸ Ñ¬¹¬ …Ç%¸´ÀÉ JÅXÅµÂÈ²ä²"
+ NO_MOD_TAGS:0 "¨ºÜ´ ÜÐø­¬ .ÁÝÐ´ÀÉ JÅXÅµÂÈ²ä²"
+ NO_MOD_TITLE:0 "È©ºtÇ …Ç%¸´ÀÉ JÅXÅµÂÈ²ä²."
+ NO_MOD_VERSION:0 "ÀÉÐÆ´ÀÉ JÅ”² „¼ÈtÇ …Ç%¸´ÈÅµÂÈ²ä²."
+ ONE_MOMENT:0 " ÇÜÂÌ¹ 0®ä²2¸üÈ8Á”Æ..."
+ PARADOX_ACCOUNT:0 "Paradox Ä¬È"
+ PASSWORD:0 "D¾¼ˆ¼8Ö"
+ PASSWORDS_DONT_MATCH:0 "§RD¾¼ˆ¼8Ö¬ ä²…¹È²ä²§!"
+ PASSWORD_DONT_MATCH:0 "§RD¾¼ˆ¼8Ö¬ ä²…¹È²ä²§!"
+ PASSWORD_HINT:0 "D¾¼ˆ¼8Ö …Ç%¸"
+ PASSWORD_REQUIRED:0 "D¾¼ˆ¼8Ö"
+ PDXO_BACK:0 "²´j¸"
+ PDXO_CANCEL:0 "èÍŒÁ"
+ PDXO_CLOSE:0 "ë²0®"
+ PDXO_NAME:0 "tÇ„¹"
+ PDXO_OK:0 "Æ"
+ PEEK_PASSWORD:0 "D¾¼ˆ¼8Ö ô¼tÇ0®"
+ PERFORMING_LOGIN:0 "ÈÁXÕ”²É..."
+ PHONE:0 "ÈTÖˆ¼8Ö"
+ PHONE_HINT:0 "ÈTÖˆ¼8Ö/4×³ÈTÖˆ¼8Ö …Ç%¸"
+ REPEAT_PASSWORD_HINT:0 "D¾¼ˆ¼8Ö UÖxÇ"
+ REPEAT_PASSWORD_REQUIRED:0 "D¾¼ˆ¼8Ö ä²ÜÂ …Ç%¸"
+ REQUIRED_FIELD_DESCRIPTION:0 "§R* §! ´°©ÆDÇ …Ç%¸tÕüÈ8Á”Æ"
+ SELECT_MOD:0 ".ÁÝÐ´ ¨ºÜ´:"
+ SELECT_TAGS:0 "¨ºÜ´ ÜÐø­"
+ SUCCESS_VERIFICATION_EMAIL_SENT:0 "ô¼¸° Tº|ÇDÇ xÇÉtÕ üÈíÂÜÂ2Æ"
+ SUPPORTED_VERSION:0 "ÀÉÐÆ „¼È:"
+ SUPPORTED_VERSION_HELP:0 "tÕù² ´°©ÆtÇ ÆÅä²tº 0®ø¼2ÁÈDÇ .ÇÀÉtÕüÈ8Á”Æ."
+ TERMS_OF_USE:0 "tÇ©Æ ‹Å­"
+ UPLOAD:0 "ÅÅj¸Ü´"
+ UPLOAD_MOD:0 "¨ºÜ´ ÅÅj¸Ü´"
+ WRONG_DOB_FORMAT:0 "ÝÀD±ÔÆ|ÇDÇ ¬À©Æ`Õ Â ÆÅµÂÈ²ä²"
+ CREATE_PARADOX_ACCOUNT:0 "Paradox Ä¬È ÝÀ1Á"
+ CREATE_PARADOX_ACCOUNT_DESCRIPTION:1 ""
+ CREATE_PARADOX_ACCOUNT_FEATURES:0 "Paradox Ä¬ÈDÇ ÝÀ1ÁjÕä²tº:\n - È©Æ .Çj¸Ó4 ÍÁÀTÖ|¹ ÖÝ´iÕÈ²ä²\n - lÐj¸²Â Õ«·üÓ NºðÒÕ¸tÇ´Å|¹ tÇ©Æ`Õ Â ˆÇµÂÈ²ä²\n - Ä³Èü¬È|¹ ì²1Á`Õ Â ˆÇµÂÈ²ä²\n - 8ÁtÇ¾|¹ tÐ|·°ÆÜ´ÐÅ 1¼ÅÅiÕÈ²ä²\n - Paradox ìÓü·DÇ tÇ©Æ¬¥²iÕÈ²ä²\n - ¹ÒÄ¼jÕ ÈHÅü¬ `ÕxÇDÇ ¼DÇ Â ˆÇµÂÈ²ä²"
+ NEWSLETTER_DESCRIPTION:1 "Paradox Interactive ÐÅÁ ô¼´°”² t²²ÂNÆ ÈHÅä´DÇ ¼à¬ öÂµÂÈ²ä²"
+ LOGIN_REQUIRED:0 "j¸ø­xÇ DÕ”Æ"
+ LOGIN:0 "j¸ø­xÇ"
+ CREATEACCOUNT_CONDITIONS_TEXT:0 ""Ä¬È ÝÀÁÀ"DÇ tÐ­¹XÕ”² ƒ¬NÇ tÇ©Æ ‹Å­ü¬ ¬xÇÈô¼ô¼8ÖÈEÌDÇ ‹Çà¬, tÇtÕˆÕ<Çpº, Ù³XÇˆÕä²”² I·…ÇÈ²ä²."
+ LINK_ACCOUNTS_TITLE:0 "Ä¬È ðÅ°¬"
+ LINK_ACCOUNTS:0 "HÅU±XÕ8Á”Æ! ù²àÂtÇ ÀÉ® SteamÐÅÁ äÂ‰ÕXÕà¬ ˆÇä²à¬ LÅ2¸Ü´Ë¹È²ä². Steam Ä¬ÈDÇ Paradox Ä¬Èü¬ ðÅ°¬tÕP´ÈÅä²tº Œ¬„ÇDÇ 2ÏLµÈ¹ä² ÇÙ³<Çj¸ Paradox Ä¬È<Çj¸ j¸ø­xÇ)´È²ä²."
+ LINK_ACCOUNTS_DONT_REMIND:0 "ä²ÜÂ µÑô¼`Õ DÕ”Æ”² ÆÅµÂÈ²ä².\n(Paradox ùÆ¬ÀtÇ¸ÒÐÅÁ Ä¬ÁtÕÁ Ä¬È ðÅÙ³DÇ ¬À©ÆiÕÈ²ä²)"
+ SKIP_LINK_ACCOUNTS:0 "ðÅ°¬ t¬±ð¶0®"
+ AGREE_LINK_ACCOUNTS:0 "Ä¬È ðÅ°¬"
+ CREATE_PROFILE_TITLE:0 "¬À©ÆÇ…º .ÁÝÐ"
+ CREATE_PROFILE_DESCRIPTION:1 "¨ºà´ ¥Çp­ÐÅŒ¬”² tÇ„¹tÇ DÕÂ…ÇÈ²ä². tÇ .ÇÈ…ºNÇ ¨ºà´ Paradox Œ¬„Çü¬ (Æ|·xÇÐÅ ¬À©Æ.´ ƒ¬tÇpº, °¬È ÄÖÐÅ”² À¼Ë¬`Õ Â ÆÅµÂÈ²ä².\n\nÖ…ºXÕŒ¬ à¬t¹8Á”Æ!"
+ CREATE_PROFILE_USERNAME:0 "¬À©ÆÇ…º"
+ CREATE_PROFILE_CONFIRM:0 "¹ÂxÇ"
+ SOCIAL_JOIN_REQUEST_SENT:0 "8Ì¬ ”Æ­ÌDÇ ô¼È°µÂÈ²ä²"
+ SOCIAL_JOIN_REQUEST_RECEIVED:0 "8Ì¬ ”Æ­ÌtÇ Ä³)ÌˆÕµÂÈ²ä²"
+ SOCIAL_JOIN_REQUEST_SUCCESS_RESOLUTION:0 "8Ì¬ ”Æ­ÌtÇ ¹ÂxÇ´ÈÅµÂÈ²ä²"
+ SOCIAL_JOIN_REQUEST_DECLINED_RESOLUTION:0 "8Ì¬ ”Æ­ÌtÇ p¬Ž´´ÈÅµÂÈ²ä²"
+ SOCIAL_JOIN_REQUEST_UNKNOWN_RESOLUTION:0 "2ÆX¹¬ |Ç´Å¬°µÂÈ²ä²"
+ SOCIAL_INVITE_EXPIRED:0 "Í³¬ Ì¹Ì¸´ÈÅµÂÈ²ä²"
+ SOCIAL_JOIN_REQUEST_EXPIRED:0 "8Ì¬ ”Æ­ÌtÇ Ì¹Ì¸´ÈÅµÂÈ²ä²"
+ SOCIAL_INVITE_ACCEPTED:0 "Í³¬ ¹ÂxÇ´ÈÅµÂÈ²ä²"
+ SOCIAL_INVITE_DECLINED:0 "Í³¬ p¬Ž´´ÈÅµÂÈ²ä²"
+ SOCIAL_JOIN_ACCEPTED:0 "ù²àÂXÇ 8Ì¬ ”Æ­ÌtÇ ¹ÂxÇ´ÈÅµÂÈ²ä²"
+ SOCIAL_JOIN_DECLINED:0 "ù²àÂXÇ 8Ì¬ ”Æ­ÌtÇ p¬Ž´´ÈÅµÂÈ²ä²"
+ SOCIAL_INCOMPATIBLE_VERSION:0 "¨ºÜ´˜° Œ¬„Ç „¼<ÈtÇ 8ÖXÖ´ÀÉ JÅ”²ï´ iÕÈ²ä². ÄÈ¡ÁXÕÀÉÌ¹, tÇˆ¼ÐÅ”² hÕØ® Œ¬„ÇDÇ É0®äÂ Â ÅÅµÂÈ²ä²."
+ INVITE_CANTCONNECT_RESOLUTION:0 "Í³|¹ ˜Ì¬¹`Õ Â ÆÅµÂÈ²ä². Í³|¹ ¼0® ÇtÕÁ”² TºxÇ Tºt²˜° NºðÒÕ¸tÇ´Å TÖtºÐÅ ˆÇ´Å|Å iÕÈ²ä²."
+ JOIN_CANTCONNECT_RESOLUTION:0 "8Ì¬ ”Æ­ÌDÇ ˜Ì¬¹`Õ Â ÆÅµÂÈ²ä². 8Ì¬ ”Æ­ÌDÇ XÕ0® ÇtÕÁ”² TºxÇ Tºt²˜° NºðÒÕ¸tÇ´Å TÖtºÐÅ ˆÇ´Å|Å iÕÈ²ä²."

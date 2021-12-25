@@ -1,0 +1,34 @@
+boo_boho = {
+	potential = {
+		has_country_modifier = boho_world
+	}
+	
+	can_start = {
+		has_country_modifier = boho_world
+	}
+	
+	can_stop = {
+		not = { has_country_modifier = boho_world }
+	}
+	
+	progress = {
+		modifier = {
+			factor = 100
+			has_dlc = "Mandate of Heaven"
+			is_emperor_of_china = yes
+		}
+	}
+	
+	can_end = {
+		not = { has_country_modifier = boho_world }
+	}
+	
+	modifier = {
+	}
+	
+	on_start = 
+	on_end = 
+	
+	on_monthly = {
+	}
+}

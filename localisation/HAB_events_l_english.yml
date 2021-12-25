@@ -1,0 +1,66 @@
+﻿l_english:
+ HAB_HungaryArea_1_title: "¼Ì¸XÇ 1¼‘Ç"
+ HAB_HungaryArea_1_desc: "1456D±, |·tÇŒ¼tÇX³ ÄÖN±µ |Åx±ÜÂXÇ ýÈLÇ tÇÄÖ (Ç¬¹ˆ× 28Á”² ÝÕ¬¬¹XÇ Í¬À9¸­ ÁÉEÌDÇ Ä¬¹ÂˆÕµÂÈ²ä².\ntÇ”² ÄÖN±µ ¬8»tÇ (Ç¬¹ˆ× 28ÁÐÅ ³mÕXÕ”² LÇ¨º|¹ ÜÂ‘ÇXÕŒ¬ Ì¹ä´ÈÅà¬, °¬m­ ø­”² ÄÖN±µ |Åx±ÜÂXÇ DÅä´ |·Éj¸XÇ Ž´XÕÐÅ XÇtÕ 11ÔÆ 8|Ç  ¼2Æø­|·Ü´ÐÅÁ TÅ´Àù²XÕà¬ Ù¹È²ä².\n"
+ HAB_HungaryArea.1.op1: "LÇ¨º|¹ ÜÂ‘ÇXÕ|·"
+ HAB_HungaryArea.1.op2: ".´³j¸ ´Œ¬ tÕ|·"
+ HAB_HungaryArea.1.op3: "­ìÂÆÅä²"
+ HAB_HungaryArea_2_title: "à¬¬¹XÎDÅ 1¼‘ÇXÇ Ñ¼XÖ"
+ HAB_HungaryArea_2_desc: "à¬¬¹XÎDÅXÇ ¸2Æ˜°t¹Ü´ (1440 - 1500 4ÔÆ 12|Ç) ”² È¹xÇXÕt¹¸Ò ¬8» jÍÄÖXÇ à¬¬¹XÎDÅ 1¼‘Ç<Çj¸, 1454D±Ž´0Ñ ýÈDÇ LµL®ÀÉ ¬¹ÔÅ.ÎNÆ à¬¬¹XÎDÅ|¹ ä²²Â8¸µÂÈ²ä²."
+ HAB_HungaryArea.2.op1: "HÅÀÐk®p­"
+ HAB_HungaryArea_3_title: "à¬¬¹XÎDÅXÇ ´Æ…º"
+ HAB_HungaryArea_3_desc: "¬8»XÇ xºÝ¹DÇ ÁÉtºXÕŒ¬ ´tºÁ, Ñ¼‹ÅjÕ ¸2Æ˜°t¹Ü´ 1¼‘ÇNÇ ø­XÇ .Ç°ÀDÇ P´à¬ Ë¬ÁÇXÕ”² iÕ²ÂŽ´t¹lÐ UÆpÈNÆ  ¼2±XÎDÅ õ¬TÖm­XÇ Ë¬ÁÇÈ UÅ%¸XÇ ³ÁÀtÇ ´ÈÅµÂÈ²ä²."
+ HAB_HungaryArea.3.op1: "à¬¬¹XÎDÅXÇ EµÐÅ ³jÕ …º„´DÇ üÈ¥ÇXÕÇ"
+ HAB_HungaryArea.3.op2: "­ìÂÆÅä²"
+ HAB_HungaryArea_4_title: "à¬¬¹XÎDÅXÇ ´Æ…º"
+ HAB_HungaryArea_4_desc: "2Æ²Â¸Ò¬¹DÅ¬ à¬¬¹XÎDÅÐÅ ³jÕ …º„´DÇ üÈ¥ÇˆÕä². tÇ ÁÀiÖÐÅÁ °Æ¬¹¬ X» T³ `Õ Â ˆÇDÇL®?"
+ HAB_HungaryArea.4.op1: "üÈ¥ÇXÕÇ!"
+ HAB_HungaryArea.4.op2: "­ìÂÆÅä²"
+ HAB_HungaryArea_5_title: "à¬¬¹XÎDÅXÇ ´Æ…º"
+ HAB_HungaryArea_5_desc: " ¼2±XÎDÅ¬ à¬¬¹XÎDÅÐÅ ³jÕ …º„´DÇ üÈ¥ÇˆÕä². tÇ ÁÀiÖÐÅÁ °Æ¬¹¬ X» T³ `Õ Â ˆÇDÇL®?"
+ HAB_HungaryArea.5.op1: "üÈ¥ÇXÕÇ!"
+ HAB_HungaryArea.5.op2: "­ìÂÆÅä²"
+ colonial_system_1_title: "ÈÀj¸´Æ ÝÂü»ÀÉXÇ 0®ŒÖ"
+ colonial_system_1_desc: "´Ž´ Î˜°ä², YÅè¬|·NÆ ¬tÇDÅ˜°ÐÅ ˆÇ”² ÀÉíÅä´NÇ tÇÈ ÝÂü»ÀÉj¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ colonial_system.op1: "DÅüÈ ‹ÈDÅ"
+ colonial_system_2_title: "ÈÀj¸´Æ ÝÂü»ÀÉXÇ 0®ŒÖ"
+ colonial_system_2_desc: "T³ Î¹NÇ Î˜°ä²XÇ ÀÉíÅä´, ÁÀDÅ tÕHÅü¬ l×Ý¹	´XÇ ÀÉíÅä´NÇ tÇÈ ÝÂü»ÀÉj¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ colonial_system_3_title: "ÈÀj¸´Æ ÝÂü»ÀÉXÇ 0®ŒÖ"
+ colonial_system_3_desc: "¨°DÅTº¬¹tÎ ´°Ž´XÇ ÀÉíÅä´NÇ tÇÈ ÝÂü»ÀÉj¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ colonial_system.op3: "DÅüÈ ‹ÈDÅ"
+ colonial_system_4_title: "ÈÀj¸´Æ ÝÂü»ÀÉXÇ 0®ŒÖ"
+ colonial_system_4_desc: "tÇÈ T³ Î¹NÇ ÀÉíÅä´DÇ ÝÂü»ÀÉj¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ colonial_system_5_title: "ÈÀj¸´Æ ÝÂü»ÀÉXÇ 0®ŒÖ"
+ colonial_system_5_desc: "tÇÈ ¨ºà´ ÀÉíÅä´DÇ ÝÂü»ÀÉj¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ colonial_system.op5: "DÅüÈ ‹ÈDÅ"
+ colonial_system.op4: "DÅüÈ ‹ÈDÅ"
+ colonial_system_6_title: "´ËÊXÇ 2Á°Àä´"
+ colonial_system_6_desc: "The country of Samis is made of vast wirgin and frozen lands. For centuries, we have conducted a fructuous and pacific trade with them. However, numerous advisors are frightened by the idea that our neighbour could easily take these lands and increase its power at our expense. To protect ourselves, it may be useful to establish our domination in this province."
+ colonial_system.op0: "Let's go for it!"
+ colonial_system.op2: "These lands are not worth what we would have to pay..."
+ colonial_system_7_title: "The snowy forests of Laponia"
+ colonial_system_7_desc: "The country of Samis is made of vast wirgin and frozen lands. For centuries, we have conducted a fructuous and pacific trade with them. However, numerous advisors are frightened by the idea that our neighbour could easily take these lands and increase its power at our expense. To protect ourselves, it may be useful to establish our domination in this province."
+ colonial_system_8_title: "The frozen lands of Carelia"
+ colonial_system_8_desc: "The country of Samis is made of vast wirgin and frozen lands. For centuries, we have conducted a fructuous and pacific trade with them. However, numerous advisors are frightened by the idea that our neighbour could easily take these lands and increase its power at our expense. To protect ourselves, it may be useful to establish our domination in this province."
+ moulins.1_title: "<»­· YÎ9¸"
+ moulins.1_desc: "The edict of Moulins is a royal edict enforced by the king of France Charles IX in February 1566. Written by his chancellor Michel de L'Hospital, it had to definitely regulate how lands could or could not be alienated from the royal domain. To achieve it, lawyers distinguished the fixed domain (all the goods and lands acquired by the Crown upon the upcoming of a king) and the casual domain (everything that is gained or lost by the king). It was signe at Moulins, in the Bourbonnais. The edict of Moulins is as reglementation of the royal domain considered as the historical source of the public domain, as it clearly defines what territories can not be taken apart from the kingdom. The greater nobles could therefore not claim lands as their personal property anymore."
+ moulins.1.op1: "°Æ¬¹ÐÅ¬ ‹ÈNÇ |ÇtÇä²."
+ flavourNED.1.t: "¾<¹tÕXÇ mÕl­ÐÅ ÃtÇ”² ¨º˜·"
+ flavourNED.1.d: "Strengthened by its communal independance, Bruges become one a naval, financial and trading hub in medieval Europe, linking merchants from the North Sea, the Baltic Sea and the Mediterranean. Wealthy merchants from Bruges are trading with all Europe. The first stock exchange in history is therefore born in Bruges during the XIIIth century. During the XVth, it is still the first financial marketplace in Europe. This litteral golden age sets the frame for a cultural and artistic blooming, especially with the first renowned flemish painters, who revolutionnized Occidental painting, and whose artworks are still admired today in the world's greatest museums. However, the Zwin river ensilted gradually between the XVth and XVIth centuries, which repelled the city from its littoral, and, with the Flemish blocus on English wool, it provocked an irrevocable economic downfall to the benefit of its neighbour, Antwerp. Bruges came back to its former rank of peripheral provincial city."
+ flavourNED.1.a: "àÁôÑXÕ”² ó¬tÇ ˆÇ<Çtº ¼ÈXÕ”² ó¬Ä³ ˆÇ”² •¼."
+ flavourNED.1.b: "¾<¹tÕ|¹ l­tÕ´°|Å jÕä²!"
+ flavourNED.2.t: "TÅ²ÂLÑt¹ô²XÇ iÖ®0®"
+ flavourNED.2.d: "In the middle of religious wars all over Europe, Amsterdam is the embodiment of religious tolerance, added to a geographical situation which allows to rival any harbour. It provocked the immigration of numerous Jewish families from Iberia, of Lutheran merchants from Flanders and also French huguenots. Mer specifically, many wealthy and prosperous families from other provinces still under Spanish control joined Amsterdam to find security. Moreover, the capture of Antwerp by Spain, after which it was blockaded by the Netherlands, will favour the blossoming of Amsterdam to the expense of Antwerp. A century later, the city was so rich that the per capita income of Amsterdam is more than four times the per capita income in Paris."
+ flavourNED.2.a: "àÁôÑXÕ”² ó¬tÇ ˆÇ<Çtº ¼ÈXÕ”² ó¬Ä³ ˆÇ”² •¼."
+ flavourNED.2.b: "dÅ¸ÒÌÆÕ|¹ l­tÕ´°|Å jÕä²!"
+ comm_speed.1.t: "Communication Speed Calculus"
+ comm_speed.1.d: ""
+ comm_speed.1.a: ""
+ comm_speed.12.t: "µÑàÂ¨Ö(Ç ô¼0®"
+ prices_marcin.1.t: "å¹üÈ ÂÂ9¸"
+ prices_marcin.1.d: "The Reinheitsgebot was adopted, perhaps the oldest food regulation. The Gebot ordered that the ingredients of beer be restricted to water, barley, and hops. Food regulation law was applied throughout Germany And made beer making more restricted."
+ prices_marcin.1.a: "Yes, Please"
+ REIN: "å¹üÈ ÂÂ9¸"
+ prices_marcin.2.t: "ÁÀÅÅÈ à¬˜·¡ÇtÇ"
+ prices_marcin.2.d: "In the 1600s regular voyages were made into the Arctic to practice whaling. They were led by Basque specialists, who became the first to practice commecial whaling. The demand for whale goods and competition between whaling nations ensured prices remained high."
+ prices_marcin.2.a: "Yes, Please"
+ COMMERCIAL_WHALING: "ÁÀÅÅÈ à¬˜·¡ÇtÇ"

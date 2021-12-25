@@ -1,0 +1,137 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 0.1
+technology_group = western
+primary_culture = northern_english
+add_accepted_culture = english
+religion = catholic
+capital = 245	# York
+
+1415.1.1 = {
+	monarch = {
+		name = "Richard III"
+		dynasty = "of York"
+		birth_date = 1411.1.1
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}
+
+1424.1.1 = {
+	queen = {
+		country_of_origin = YRK
+		name = "Cecily"
+		dynasty = "Neville"
+		birth_date = 1415.1.1
+		death_date = 1495.1.1
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
+1442.1.1 = {
+	heir = {
+		name = "Edward"
+		monarch_name = "Edward IV"
+		dynasty = "of York"
+		birth_date = 1442.1.1
+		death_date = 1483.1.1
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+
+1460.12.30 = {
+	monarch = {
+		name = "Edward IV"
+		dynasty = "of York"
+		birth_date = 1442.1.1
+		adm = 4
+		dip = 3
+		mil = 4
+		leader = {	name = "Edward IV"             	type = general	fire = 2	shock = 4	manuever = 4	siege = 0 }
+	}
+}
+
+1471.4.11 = {
+	heir = {
+		name = "Edward"
+		monarch_name = "Edward V"
+		dynasty = "of York"
+		birth_date = 1470.11.2
+		death_date = 1483.6.25
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+1471.4.11 = { leader = {	name = "Richard Plantagenet"	type = general	fire = 2	shock = 4	manuever = 4	siege = 1	death_date = 1483.6.25 } }
+1478.1.18 = { leader = {	name = "Thomas Howard"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0	death_date = 1513.10.1 } }
+1483.4.9 = {
+	monarch = {
+		name = "Edward V"
+		dynasty = "of York"
+		birth_date = 1470.11.1
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}
+
+1483.4.9 = {
+	heir = {
+		name = "Richard"
+		monarch_name = "Richard III"	
+		dynasty = "of York"
+		birth_date = 1473.8.17
+		death_date = 1483.6.26
+		claim = 95
+		adm = 2
+		mil = 2
+		dip = 1
+	}
+}
+
+1483.6.26 = {
+	monarch = {
+		name = "Richard III"
+		dynasty = "of York"
+
+		adm = 3
+		dip = 2
+		mil = 4
+		leader = {	name = "Richard III"             	type = general	fire = 2	shock = 4	manuever = 4	siege = 1 }
+	}
+	queen = {
+		country_of_origin = ENG
+		name = "Anne"
+		dynasty = "Neville"
+		birth_date = 1465.6.11
+		death_date = 1485.3.16
+		female = yes
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}
+
+1483.6.26 = { # Edward of Middleham
+	heir = {
+		name = "Edward"
+		monarch_name = "Edward VI"
+		dynasty = "of York"
+		birth_date = 1473.12.8
+		death_date = 1484.3.31
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+}

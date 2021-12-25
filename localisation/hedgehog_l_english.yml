@@ -1,0 +1,129 @@
+﻿l_english:
+ THREE_FIRES_FEDERATION:0 "8Á ˆ´XÇ XÇŒÖ"
+ SIO_FEDERATION:0 "³ Â°ÆqÈ"
+ iroquois_federation_name:0 "tÇj¸üÏtÇ ðÅù¹"
+ huron_federation_name:0 "4×`¸ ðÅù¹"
+ illini_federation_name:0 "|Ç¬¹x±tÇ ðÅù¹"
+ SIO_federation_name:0 "³ Â°ÆqÈ"
+ FEDERATION_ADVANCEMENTS_HEADER:0 "ðÅ)¼ ¼È"
+ MUST_BE_FEDERATION_LEADER:0 "§RðÅ)¼ ÀÉÄ³ÇìÅ|ÅÌ¹ iÕÈ²ä²§!\n"
+ COHESION_REQUIREMENT:0 "§RðÅ)¼NÇ $COHESION|Y$§!XÇ °¬ÁÄ³|¹ DÕ”Æj¸ iÕÈ²ä².\n"
+ CONFIRM_FEDERATION_ADVANCEMENT:0 "ðÅ)¼ ¼È .ÁÝÐ"
+ CONFIRM_FEDERATION_ADVANCEMENT_DESC:0 "$NAME|Y$ ¼ÈDÇ ÈÈXÕÜÂ ¬µÂÈ²L®? tÇ ¼ÈNÇ ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\n§R¼ÈDÇ ÈÈXÕtº §Y°¬ÁÄ³§!|¹ §Y20§!<Çj¸ ®°¥ÍÈ²ä²!§!"
+ DISBAND_FEDERATION_EFFECT:0 "$NAME|Y$(tÇ)¬ tÕ´Ì.´ ƒ¬…ÇÈ²ä².\n"
+ INTEGRATE_FEDERATION_MEMBERS:0 "¨ºà´ ðÅ)¼ ŒÁÁm­tÇ µÑiÕ)´È²ä²."
+ FORM_FEDERATION_NATION:0 ""
+ NUM_LESS_FEDERATION_ADVANCEMENTS_TRIGGER:0 "jÍŒÁ $NUM|Y$¬XÇ ðÅ)¼ ¼ÈtÇ ÈÈ´´Å|Å iÕÈ²ä²."
+ NUM_MORE_OR_EQUAL_FEDERATION_ADVANCEMENTS_TRIGGER:0 "$NUM|Y$¬ tÇÁÀXÇ ðÅ)¼ ¼ÈtÇ ÈÈ´´Å|Å iÕÈ²ä²."
+ ANY_FEDERATION_MEMBER:0 "ðÅ)¼ ŒÁÁm­ É jÍŒÁ XÕ˜°:\n"
+ ALL_FEDERATION_MEMBER:0 "¨ºà´ ðÅ)¼ ŒÁÁm­:\n"
+ FEDERATION_SIZE_LESS_THAN:0 "ðÅ)¼ ŒÁÁm­ Â¬ $SIZE|Y$¬ ø»Ì¹.\n"
+ FEDERATION_SIZE_MORE_THAN:0 "ðÅ)¼ ŒÁÁm­ Â¬ $SIZE|Y$¬ tÇÁÀ.\n"
+ ENABLE_FEDERATION_OFFENSIVE_WARS:0 "ðÅ)¼ õ¬©¬ ÈÁÇ ÈÕ©Æ\n"
+ DISABLE_FEDERATION_OFFENSIVE_WARS:0 "ðÅ)¼ õ¬©¬ ÈÁÇ D¾ÈÕ©Æ\n"
+ MODIFIER_YEARLY_FEDERATION_FAVOR_GROWTH:0 "ä¹D± ðÅ)¼ 8ÖXÇ É¬"
+ MODIFIER_MONTHLY_REFORM_PROGRESS_MODIFIER:0 "ä¹ÔÆ ÈŽ´ ¬Ö ÄÉ‰ÕÄ³ À¼Ù³XÎ"
+ TRIBAL_DEVELOPMENT_VALUE:0 "Ž´qÈ ¬¼Ä³j¸Ž´0Ñ: $VAL|Y0$"
+ TRIBAL_DEVELOPMENT_INCREASE_EXPLANATION:0 "$POWER|$ mÕ©ºtÇ $VAL|+3Ì¹|Ð É¬:\n"
+ PROVINCE_SETTLE_TOOLTIP_DESC:0 "°Æ¬¹ Ž´qÈDÇ tÇ ÀÉíÅÐÅ È)ÌÜÂ²Ðtº DÆÈˆ× °Æ¬¹ ŒÁ.Ç ÀÉíÅtÇ ´à¬, $ADM|Y$£adm£, $DIP|Y$£dip£, $MIL|Y$£mil£ XÇ ¬¼Ä³¬ tÇ ÀÉíÅÐÅ ¬Ç0¼È)´È²ä².\n\n"
+ SETTLE_PROVINCE_COST:0 "$COST|Y$ $POWER|$ ŒÁ¨º\n"
+ MIGRATE_PROVINE_NOT_LAND:0 "§R$PROV|Y$ ÀÉíÅNÇ È)Ì ¬¥²jÕ EµtÇ DÅÙ²È²ä².\n"
+ DEVASTATION_FROM_PASSIVE:0 "ÇðÅÈ ŒÖõ¼: $VAL|-$\n"
+ COHESION_FEDERATION_ADVANCEMENT:0 "§Y$NUM$¬XÇ ðÅ)¼ ¼È§!: $VAL|+1$\n"
+ MODIFIER_SETTLE_COST:0 "È)Ì D¾©Æ"
+ MODIFIER_MONTHLY_FEDERATION_FAVOR_GROWTH:0 "ä¹ÔÆ ðÅ)¼ 8ÖXÇ É¬"
+ federal_constitution:0 "ðÅù¹ ÌÕ•¼"
+ unified_warbands:0 "µÑiÕ´ ÈÁÇ4»¬¹"
+ mutual_trust:0 "ÁÀ8Ö àÂ°¸"
+ joint_grain_depots:0 "õ¬Ù³ á¬<» KÌà¬"
+ pax_americana:0 "Ó²Â DÅTº¬¹tÎ˜°"
+ united_resistance:0 "µÑiÕ´ ÈmÕ"
+ chartered_settlements:0 "õ¬xÇ´ È)ÌÀÉ"
+ shared_knowledge:0 "õ¬.Ç´ ÀÉÝÂ"
+ FEDERATION_ADVANCEMENT_ALREADY_PICKED:0 "§RtÕù² ¼ÈNÇ tÇø» .ÁÝÐ´´ÅµÂÈ²ä².§!\n"
+ FEDERATION_LEADER_LOW_COHESION:0 "\nðÅ)¼ °¬ÁÄ³¬ §Y0%§!<Çj¸ ¨µ´ÅÀÉtº ðÅ)¼ ÀÉÄ³Ç¬ À¼Ë¬)´È²ä². ðÅ)¼ÐÅÁ ¬¥Ç ¬%¸jÕ m­¬¬ ÈÀj¸´Æ ÀÉÄ³Ç¬ ´pº, ¬¥Ç ¬%¸jÕ m­¬¬ Ö¬Ç ÀÉÄ³Çtº ðÅ)¼tÇ tÕ´Ì)´È²ä²."
+ RELIGION_DONT_HAVE_ANCESTORS:1 "ù²àÂXÇ …ÈP­”² pÈÁÀ 0®¥²DÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ IS_NOT_OUR_PREV_MONARCH:1 "$WHO|Y$(NÇ)”² °Æ¬¹XÇ tÇÈ p­üÈ É XÕ˜°¬ DÅÙ²È²ä²."
+ IS_ALREADY_ANCESTOR:1 "$WHO|Y$(NÇ)”² tÇø» pÈÁÀ…ÇÈ²ä²."
+ ANCESTOR_DIP_COST:1 "ù²àÂNÇ $VAL|Y$£dip£ DÇ ¬ÀÉà¬ ˆÇÀÉ JÅµÂÈ²ä²."
+ CONFIRM_PICK_ANCESTOR_DESC:0 "$MONARCH|Y$(DÇ)|¹ °Æ¬¹XÇ pÈÁÀ tÇ|Å0® É XÕ˜°j¸ Ì¹Ü´ÜÂ ¬µÂÈ²L®? tÇ”² ä²LÇü¬ ¬NÇ ¨Öü¬|¹ ÉÈ²ä²:\n$EFFECT$\n\ntÇ 0®¥²NÇ $COST|Y$£dip£ DÇ ŒÁ¨ºiÕÈ²ä²."
+ CONFIRM_PICK_ANCESTOR:0 "pÈÁÀ .ÁÝÐ UÖxÇ"
+ SETTLE_PROVINCE_EFFECT:0 "$TAG$ !ÎNÇ $PROV$ ÀÉíÅÐÅ È)ÌiÕÈ²ä².\n"
+ ALREADY_TRIBAL_LAND_OF:0 "§R$PROV|Y$ ÀÉíÅNÇ tÇø» $WHO|Y$XÇ Ž´qÈ Æ Ñ…ÇÈ²ä².§!\n"
+ MIGRATORY_TRIBE_NOT_ON_PROVINCE:0 "§!Ž´qÈNÇ Ö¬Ç $PROV|Y$ ÀÉíÅÐÅ ˆÇÀÉ JÅµÂÈ²ä².§!\n"
+ IS_NOT_NEIGHBOR_TO_SETTLED:0 "§R$PROV|Y$ ÀÉíÅNÇ °Æ¬¹¬ È)ÌjÕ ÀÉíÅü¬ xÇÈXÕÀÉ JÅµÂÈ²ä².§!\n"
+ IS_NOT_CONNECTED_TO_TRIBAL_LAND:0 "§RÀÉíÅNÇ Ž´qÈ Æ ÑNÆ ðÅ°¬´´ÅˆÇÀÉ JÅµÂÈ²ä².§!\n"
+ MODIFIER_ADD_TRIBAL_LAND_COST:0 "Ž´qÈ Æ Ñ ”Í¬ D¾©Æ"
+ ADD_TRIBAL_LAND_COL_WIN:0 "Ž´qÈ ”Í¬"
+ MUST_BE_IN_TRIBAL_LAND_TO_SETTLE:0 "È)ÌXÕ0® ÇtÕÁ”² Ž´qÈ Æ ÑÐÅ ÁtÕ|Å iÕÈ²ä²."
+ TRIBAL_LAND_OF:0 "\n$WHO|Y$ !ÎXÇ Ž´qÈ Æ Ñ.\n"
+ FEDERATION_PROV_TOOLTIP:0 "\n$NAME|Y$XÇ |ÇŽ´."
+ native_chiefdom_reform:0 "”Í¥Çm­"
+ native_federation_reform:0 "ðÅ)¼"
+ native_clan_council_reform:0 "(ÅqÈ XÇŒÖ"
+ native_martial_tradition_reform:0 "p­xÇ ÈµÑ"
+ native_oral_tradition_reform:0 "l­È ÈµÑ"
+ native_land_tradition_reform:0 " ÑÀÉ ÈµÑ"
+ native_war_band_reform:0 "ÈÁÇ 4»¬¹"
+ native_seasonal_travel_reform:0 "Ä¬È tÇüÈ"
+ native_settle_down_reform:0 "È)Ì"
+ native_codified_power_reform:0 "1Á8»TÖ´ Œ­%¸"
+ native_trading_with_foreigners_reform:0 "xÆm­xÇä´ü¬XÇ p¬˜·"
+ native_becomes_monarchy_reform:0 "UÆäÂ ÖµÑ"
+ native_becomes_republic_reform:0 "³ÉÐÅ XÇjÕ µÑXÎ"
+ native_becomes_theocracy_reform:0 "àÂYÅXÇ m­¬"
+ native_becomes_horde_reform:0 "³ÉÓÐÆtÇ °Æ¬¹|¹ Ž´x¹ä²"
+ tribe_organization:0 "Ž´qÈ pÈÁÉTÖ"
+ story_tradition:0 "tÇ|Å0® ÈµÑ"
+ legal_basis:0 "•¼È ü­p¬"
+ national_identity:0 "ü»qÈ È´Ì1Á"
+ mechanic_enable_settled_mechanics_yes:1 "¬¼Ä³|¹ Ž´qÈ Æ ÑÐÅ È)ÌÜÂ¬Ð Â ˆÇµÂÈ²ä²"
+ mechanic_enable_tribal_grazing_no:0 "T³ tÇÁÀ )¼©ºtÇ iÖÐÓÄ³|¹ .Ç¼XÕÀÉ JÅµÂÈ²ä²"
+ MIGRATORY_TRIBE_CULTURE_CONV:0 "§RtÇüÈ Ž´qÈNÇ 8»TÖ|¹ À¼Ë¬`Õ Â ÆÅµÂÈ²ä².§!"
+ vassal_overlord_title:0 "…ÈüÈm­"
+ cb_native_american_tribal_feud_desc:0 "°Æ¬¹”² tÇÃÆXÇ Ž´qÈ Æ Ñ|¹ (ÌÀÉ`Õ Â ˆÇµÂÈ²ä²."
+ MIGRATE_AT_WAR:0 "§RÈÁÇ ÉÐÅ”² tÇüÈ¬ ˆ´¬¥²iÕÈ²ä²!§!"
+ PEACEOFFER_MIGRATORY_NOT_TRIBAL_LAND:0 "§RtÇüÈ Ž´qÈXÇ Ž´qÈ Æ ÑXÇ |ÇŽ´¬ DÅÙ²È²ä², tÇüÈ ¬”Æ pÈ‹ÅDÇ ³àÂ ¬À©ÆXÕíÂÜÂ2Æ!§!"
+ ancestor_just_personality:0 "õ¬ÈhÕ"
+ ancestor_righteous_personality:0 "ÈXÇj¸ÀÆ"
+ ancestor_tolerant_personality:0 "­³jÕ Ç"
+ ancestor_kind_hearted_personality:0 "jÎÈhÕ"
+ ancestor_free_thinker_personality:0 "Ç.Çj¸´Æ ¬ÀÁÀ¬"
+ ancestor_well_connected_personality:0 "È¹ù²¼"
+ ancestor_calm_personality:0 "hÎ)ÌhÕ"
+ ancestor_careful_personality:0 "àÂÉhÕ"
+ ancestor_secretive_personality:0 "D¾¼²Âì·ÀÆ"
+ ancestor_intricate_web_weaver_personality:0 "XÎ¼jÕ 2ÁÄ¬Ç"
+ ancestor_benevolent_personality:0 "Ç`Åj¸ÀÆ"
+ ancestor_zealot_personality:0 "­àÂÇ"
+ ancestor_pious_personality:0 "Ë¬t¬hÕ"
+ ancestor_lawgiver_personality:0 "…Ç•¼Ç"
+ ancestor_midas_touched_personality:0 "È¹tÇä²²ÂXÇ Á"
+ ancestor_incorruptible_personality:0 "­Ì4¸hÕ"
+ ancestor_architectural_visionary_personality:0 "t¬•ÍYÕÄ¬XÇ .ÁÀÉÇ"
+ ancestor_scholar_personality:0 "YÕÇ"
+ ancestor_entrepreneur_personality:0 "¬ÀÅÅ¬"
+ ancestor_industrious_personality:0 "ü­tºhÕ"
+ ancestor_expansionist_personality:0 "UÖ¥ÇüÈXÇÇ"
+ ancestor_charismatic_negotiator_personality:0 "ä¹%¸ÈxÇ ÖÁÀ¬"
+ ancestor_silver_tongue_personality:0 "ì²À¼¬"
+ ancestor_conqueror_personality:0 "Èõ¼Ç"
+ ancestor_tactical_genius_personality:0 "È.ÂXÇ œÌ¬Ç"
+ ancestor_bold_fighter_personality:0 "©Æ¬jÕ È¬À"
+ ancestor_strict_personality:0 "ÄÅ©¬hÕ"
+ ancestor_inspiring_leader_personality:0 "à¬4»ÜÂ²Ð”² ÀÉ×­"
+ ancestor_martial_educator_personality:0 "p­¬À P­!ÇÇ"
+ ancestor_navigator_personality:0 "mÕtÕ¬À"
+ ancestor_fierce_negotiator_personality:0 "¬À˜°´Æ ÖÁÀ¬"
+ MIGRATION_BASE_COST:0 "0®ø¼: §Y50§!\n"
+ MIGRATION_MULTIPLIER:0 "Ž´qÈ Æ Ñ xÆŽ´: §Yx§!$MULT|Y$\n"
+ MIGRATION_MODIFIER:0 "ìÅ0®Á ”Í¬j¸ ä²LÇÐÅ XÇtÕ À¼Ù³)´È²ä²:\n$MOD$"
+ NATIVE_TRIBES_CANT_COLONISE:0 "§RÐÆüÈü» Ž´qÈNÇ ¬™ÌDÇ `Õ Â ÆÅµÂÈ²ä².§!"
+ FEDERATION_ADVANCEMENT_NO_FEDERATION:0 "§RðÅ)¼XÇ |ÇŽ´¬ DÅÙ²È²ä².§!"
+ NOT_MIGRATORY_TRIBE_TRIGGER:0 "tÇüÈ Ž´qÈtÇ DÅÙ²È²ä²\n"
+ MIGRATORY_TRIBE_TRIGGER:0 "tÇüÈ Ž´qÈ…ÇÈ²ä²\n"
+ native_diplomatic_cermonies_reform:0 "xÆP­ ÆÝÂ"
+ native_hereditary_reform:0 "8ÁµÂ ÀÉ0¼"
+ SETTLE_PROVINCE_NO_DEVELOPMENT:0 "§RÀÉíÅÐÅ È)ÌXÕ0®ÐÅ Ž´qÈ ¬¼Ä³¬ ©Í„´XÕÀÉ JÅµÂÈ²ä².§!"
+ BUILDING_SLOT_NATIVE_IN_NON_NATIVE:0 "ÐÆüÈü»NÇ D¾-ÐÆüÈü» ÀÉíÅÐÅ t¬2Á`Õ Â ÆÅµÂÈ²ä²"
+ BUILDING_SLOT_NON_NATIVE_IN_NATIVE:0 "D¾-ÐÆüÈü»NÇ ÐÆüÈü» ÀÉíÅÐÅ t¬2Á`Õ Â ÆÅµÂÈ²ä²"

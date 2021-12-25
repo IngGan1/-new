@@ -1,0 +1,15 @@
+#Bushubi
+
+owner = KRW
+controller = KRW
+add_core = KRW
+culture = rwandan
+religion = shamanism #Fetishism
+capital = "Bushubi"
+trade_goods = wool
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 2
+is_city = yes
+discovered_by = central_african

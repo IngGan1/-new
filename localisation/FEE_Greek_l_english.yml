@@ -1,0 +1,16 @@
+﻿l_english:
+ FEE_Greek_Events.1.T: "ø­ä´tÇ Ä³˜·XÕä²"
+ FEE_Greek_Events.1.D: "\"Miklagaard has been our home for twenty years or more, we've lent our axes, spears and swords in service of the emperor. \nWe are loyal warriors that's the oath we gave, to protect the emperor even to a violent grave. \nOur loyalty was always firm we kept our given word, on these southern battlefields our northern war cries roared. \nBattles have been fought and many gave their lives, but all who died by axe and sword were called to hall up high.\" \nChanting and singing their anthem a strong group of heathens from Northern Europe have arrived in our [Capital.GetCapitalName], they offer their service to our king [Root.Monarch.GetName], from this day until their last day."
+ FEE_Greek_Events.1.OPT1: "ø»tÐ|·¬t¹Ü´ÐÅ (Æ ¼‘·xÇDÇ XÖÆjÕä²"
+ FEE_Greek_Events.1.OPT2: "°Æ¬¹”² tÇP­Ä³NÆ hÕØ®`Õ Â ÆÅä²!"
+ FEE_Greek_Events.2.T: "pÈ¼È² üÈ²ÂðÒÈ²DÅÈ²XÇ Ä³)Ì"
+ FEE_Greek_Events.2.D: "2Æ²ÂÌ¹ Èm­XÇ ÇÖtÇ °Æ¬¹XÇ 8» ^ÅL®ÀÉ ä²¬2ÆÇ, Î¹NÇ xÆm­xÇtÇ °Æ¬¹ C®¼ DÅ˜·ÐÅ ÑÉ°¬ˆÕµÂÈ²ä². ø­ì·jÕ tÇä´ É jÕ ¬ÀŒ·tÇ pÈ¼È² üÈ²ÂðÒÈ²DÅÈ² `¸à¬…ÇÈ²ä². ø­”² Èx±¼XÇ …º¬ œÍàÂ<Çj¸, °Æ¬¹NÆ hÕØ® øÂ°Æ0® ÇtÕ ˆ×2Æ²Â ,ÁÐÅÁ ÂœÌXÇ ÈÆ Ñ¼%¸DÇ tÇL°à¬ TÆµÂÈ²ä²."
+ FEE_Greek_Events.2.OPT1: "ø­”² ÌÖm¹jÕ ¥Çp­tÇ .´ ƒ¬tÇä²."
+ FEE_Greek_Events.2.OPT2: "ø­”² °Æ¬¹XÇ ÈÁÇXÇ ¥Õ)¼ÐÅ ³tÕ pÈ¸ÅtÕ|Å jÕä²."
+ FEE_Greek_Events.2.OPT3: "ø­”² tÎ¬¹²ÂÈ¹¬ ˆÇ”² ƒ¬˜Ìü· ô¼tÇ”²p­."
+ FEE_Greek_Events.3.T: "|·²ÂtÎ¬¹˜° Ž´ˆ´¬¹˜°"
+ FEE_Greek_Events.3.D: "Placeholder"
+ FEE_Greek_Events.3.OPT1: "ø­N±”² Ç³jÕ ÈÅ³tÇ .´ ƒ¬tÇä²."
+ FEE_Greek_Events.3.OPT2: "ø­N±XÇ Ë¬ØÕNÇ ø»˜·XÇ °Æ¬¹ÐÅŒ¬ Ä³ÀÆtÇ .´ ÀÉ ¨ºx¹ä²."
+ FEE_Greek_Events.3.OPT3: "ø­N±”² ÌÖm¹jÕ tÕÈ ìÅUÆtÇ .´ ƒ¬tÇä²."
+ FEE_greek_varangian: "¼‘·xÇXÇ p­üÈ"

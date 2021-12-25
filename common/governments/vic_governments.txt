@@ -1,0 +1,22 @@
+####################################
+#
+#Victorian Government Types
+#
+####################################
+
+pre_dharma_mapping = {
+	parliamentary_monarchy = {
+		government = monarchy
+		legacy_government = parliamentary_monarchy
+	}
+	parliamentary_democracy = {
+		government = republic
+		legacy_government = parliamentary_democracy
+	}
+
+#Special for Soviet Union
+	proletarian_dictatorship = {
+		government = monarchy
+		legacy_government = proletarian_dictatorship
+	}
+}	

@@ -1,0 +1,15 @@
+#Ndorwe
+
+owner = NKO
+controller = NKO
+add_core = NKO
+culture = ganda
+religion = shamanism #Fetishism
+capital = "Virunga"
+trade_goods = livestock
+hre = no
+base_tax = 0
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = central_african

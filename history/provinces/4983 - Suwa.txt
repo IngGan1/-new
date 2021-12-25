@@ -1,0 +1,23 @@
+#4983 - Suwa
+
+owner = SUW
+controller = SUW
+culture = togoku
+religion = shinto
+capital = "Suwa"
+trade_goods = sulfur
+hre = no
+base_tax = 4
+base_manpower = 4
+base_production = 3
+is_city = yes
+add_core = SUW
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = ANU
+
+1561.1.1 = { add_core = ODA }
+1573.7.3 = { add_core = TKG owner = TKG controller = TKG remove_core = ODA }

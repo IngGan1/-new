@@ -1,0 +1,15 @@
+tributary_state_join_war = {
+
+	copy_from = tributary_state
+	count = tributary_state
+	
+	# Graphics:
+	sprite = GFX_subject_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadtributary
+	diplomacy_subject_sprite = GFX_diplomacy_amtributary
+
+	# Properties:
+	joins_overlords_wars = yes
+	takes_diplo_slot = yes
+
+}

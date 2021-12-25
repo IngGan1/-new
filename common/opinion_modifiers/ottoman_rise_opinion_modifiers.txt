@@ -1,0 +1,119 @@
+wallachia_submits = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+wallachia_impales = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+betrayed_poland = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+moldavia_submits = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+moldavia_accepted = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+moldavia_rejected = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+accepted_venetian_queen = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+denied_venetian_queen = {
+    opinion = -50
+    years = 25
+    yearly_decay = 2
+}
+
+venetian_claim_to_cyprus = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+benevolent_gifts = {
+    opinion = 25
+    years = 25
+    yearly_decay = 1
+}
+
+turkish_enemies = {
+    opinion = 50
+    years = 25
+    yearly_decay = 2
+}
+
+not_turkish_enemies = {
+    opinion = -25
+    years = 25
+    yearly_decay = 1
+}
+
+defended_wallachia = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+abandoned_wallachia = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+moldavia_sent_aid = {
+    opinion = 50
+    years = 25
+    yearly_decay = 2
+}
+
+returned_wallachia = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}
+
+kept_wallachia = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+impaled_saxons = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+supported_sahkulu = {
+    opinion = -100
+    years = 50
+    yearly_decay = 2
+}
+
+executed_cem = {
+    opinion = 100
+    years = 50
+    yearly_decay = 2
+}

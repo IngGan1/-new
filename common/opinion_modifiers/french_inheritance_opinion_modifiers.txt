@@ -1,0 +1,41 @@
+forced_breton_inheritance_brittany = {
+opinion = -50
+years = 50
+yearly_decay = 1
+}
+
+forced_breton_inheritance_rm = {
+opinion = -25
+years = 25
+yearly_decay = 1
+}
+
+no_forced_breton_inheritance = {
+opinion = 25
+years = 25
+yearly_decay = 1
+}
+
+fra_claimed_milan = {
+opinion = -75
+years = 75
+yearly_decay = 1
+}
+
+fra_did_not_claim_milan = {
+opinion = 30
+years = 10
+yearly_decay = 3
+}
+
+accepted_treaty_of_senlis = {
+opinion = 50
+years = 25
+yearly_decay = 2
+}
+
+refused_treaty_of_senlis = {
+opinion = -50
+years = 25
+yearly_decay = 2
+}

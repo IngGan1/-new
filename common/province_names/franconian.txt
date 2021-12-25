@@ -1,0 +1,7 @@
+66 = "Bambärch"
+67 = "Närmberch"
+71 = "Onolzbach"
+79 = "Wiazbuag"
+2957 = "Ratispona"
+3725 = "Aschebersch"
+4491 = "Bareid"

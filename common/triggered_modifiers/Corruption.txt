@@ -1,0 +1,221 @@
+dev_section_100 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 100
+		NOT = {
+		total_development = 200
+		}
+	}
+	trigger = {
+		total_development = 100
+		NOT = { 
+		total_development = 200
+		}
+	}
+	yearly_corruption = 0.02
+	global_colonial_growth = 5
+	colonist_placement_chance = 0.05
+}
+
+dev_section_200 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 200
+		NOT = {
+		total_development = 300
+		}
+	}
+	trigger = {
+		total_development = 200
+		NOT = { 
+		total_development = 300
+		}
+	}
+	yearly_corruption = 0.04
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.01
+}
+
+dev_section_300 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 300
+		NOT = {
+		total_development = 400
+		}
+	}
+	trigger = {
+		total_development = 300
+		NOT = { 
+		total_development = 400
+		}
+	}
+	yearly_corruption = 0.06
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.015
+}
+
+dev_section_400 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 400
+		NOT = {
+		total_development = 500
+		}
+	}
+	trigger = {
+		total_development = 400
+		NOT = { 
+		total_development = 500
+		}
+	}
+	yearly_corruption = 0.1
+	global_colonial_growth = 15
+	colonist_placement_chance = 0.02
+}
+
+dev_section_500 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 500
+		NOT = {
+		total_development = 600
+		}
+	}
+	trigger = {
+		total_development = 500
+		NOT = {
+		total_development = 600
+		}
+	}
+	yearly_corruption = 0.15
+	global_colonial_growth = 15
+	colonist_placement_chance = 0.025
+}
+
+dev_section_600 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 600
+		NOT = {
+		total_development = 700
+		}
+	}
+	trigger = {
+		total_development = 600
+		NOT = {
+		total_development = 700
+		}
+	}
+	yearly_corruption = 0.2
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.03
+}
+
+dev_section_700 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 700
+		NOT = {
+		total_development = 800
+		}
+	}
+	trigger = {
+		total_development = 700
+		NOT = {
+		total_development = 800
+		}
+	}
+	yearly_corruption = 0.25
+	global_colonial_growth = 20
+	colonist_placement_chance = 0.035
+}
+
+dev_section_800 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 800
+		NOT = {
+		total_development = 1000
+		}
+	}
+	trigger = {
+		total_development = 800
+		NOT = {
+		total_development = 1000
+		}
+	}
+	yearly_corruption = 0.3
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.04
+}
+
+dev_section_1000 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 1000
+		NOT = {
+		total_development = 1200
+		}
+	}
+	trigger = {
+		total_development = 1000
+		NOT = {
+		total_development = 1200
+		}
+	}
+	yearly_corruption = 0.35
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.045
+}
+
+dev_section_1200 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 1200
+		NOT = {
+		total_development = 1500
+		}
+	}
+	trigger = {
+		total_development = 1200
+		NOT = {
+		total_development = 1500
+		}
+	}
+	yearly_corruption = 0.4
+	global_colonial_growth = 30
+	colonist_placement_chance = 0.05
+}
+
+dev_section_1500 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 1500
+		NOT = {
+		total_development = 2000
+		}
+	}
+	trigger = {
+		total_development = 1500
+		NOT = {
+		total_development = 2000
+		}
+	}
+	yearly_corruption = 0.45
+	global_colonial_growth = 35
+	colonist_placement_chance = 0.055
+}
+
+dev_section_2000 = {
+	potential = {
+		or = { has_global_flag = hard_mode has_global_flag = hard2_mode }
+		total_development = 2000
+	}
+	trigger = {
+		total_development = 2000
+	}
+	yearly_corruption = 0.5
+	global_colonial_growth = 40
+	colonist_placement_chance = 0.06
+}

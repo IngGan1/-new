@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = veche_republic
+mercantilism = 0.25
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 1079
+government_rank = 1

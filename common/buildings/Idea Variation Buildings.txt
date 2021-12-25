@@ -1,0 +1,3646 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new buildings, make sure they are uniquely named.
+
+# cost = x #==> cost in $ to build (subject to other modifiers)
+# time = x #==> number of months to build.
+# modifier = m # a modifier on the province that the building gives
+# trigger = t # an and trigger that needs to be fullfilled to build and keep the building
+# one_per_country = yes/no # if yes, only one of these can exist in a country
+# manufactory = { trade_good trade_good } # list of trade goods that get a production bonus
+# onmap = yes/no # show as a sprite on the map
+
+# FROM = owner
+# ROOT = province
+
+# AI will consider buildings it does not have the tech for at 20% of scripted AI weight (in case it wants to save slots)
+
+
+################################################
+# Infrastructure / Infrastruktur
+################################################
+infrastructure_lvl_1 = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		local_tax_modifier = 0.125
+		province_trade_power_modifier = 0.25
+		supply_limit_modifier = 0.25
+		local_friendly_movement_speed = 0.1
+		local_hostile_movement_speed = 0.05
+		allowed_num_of_buildings = 2
+		local_state_maintenance_modifier = 0.125
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = infrastructure_lvl_1
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = infrastructure_lvl_1
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 23 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 25 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 27 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 29 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 31 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 33 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 35 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 37 } }
+		}
+		modifier = {
+			factor = 0.1
+			check_variable = { which = "Distance" value = 40 }
+		}
+	}
+}
+
+infrastructure_lvl_2 = {
+	cost = 200
+	time = 12
+	
+	make_obsolete = infrastructure_lvl_1
+	
+	modifier = {
+	local_tax_modifier = 0.25
+		province_trade_power_modifier = 0.5
+		supply_limit_modifier = 0.5
+		local_friendly_movement_speed = 0.2
+		local_hostile_movement_speed = 0.1
+		allowed_num_of_buildings = 2
+		local_state_maintenance_modifier = 0.25
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = infrastructure_lvl_2
+			obsolete_building = infrastructure_lvl_1
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = infrastructure_lvl_2
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 23 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 25 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 27 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 29 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 31 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 33 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 35 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 37 } }
+		}
+		modifier = {
+			factor = 0.1
+			check_variable = { which = "Distance" value = 40 }
+		}
+	}
+}
+
+infrastructure_lvl_3 = {
+	cost = 300
+	time = 12
+	
+	make_obsolete = infrastructure_lvl_2
+	
+	modifier = {
+		local_tax_modifier = 0.375
+		province_trade_power_modifier = 0.75
+		supply_limit_modifier = 0.75
+		local_friendly_movement_speed = 0.3
+		local_hostile_movement_speed = 0.15
+		allowed_num_of_buildings = 3
+		local_state_maintenance_modifier = 0.375
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_infrastructure_lvl_2
+			}
+			add_development_from_building = {
+				building = infrastructure_lvl_3
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_infrastructure_lvl_1
+			}
+			add_development_from_building = {
+				building = infrastructure_lvl_3
+				type = tax
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = infrastructure_lvl_3
+				type = tax
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = infrastructure_lvl_3
+			type = tax
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 23 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 25 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 27 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 29 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 31 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 33 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 35 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 37 } }
+		}
+		modifier = {
+			factor = 0.1
+			check_variable = { which = "Distance" value = 40 }
+		}
+	}
+}
+
+infrastructure_lvl_4 = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = infrastructure_lvl_3
+	
+	modifier = {
+		local_tax_modifier = 0.5
+		province_trade_power_modifier = 1.0
+		supply_limit_modifier = 1.0
+		local_friendly_movement_speed = 0.4	
+		local_hostile_movement_speed = 0.2
+		allowed_num_of_buildings = 3
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_infrastructure_lvl_3
+			}
+			add_development_from_building = {
+				building = infrastructure_lvl_4
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_infrastructure_lvl_2
+			}
+			add_development_from_building = {
+				building = infrastructure_lvl_4
+				type = tax
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_infrastructure_lvl_1
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = tax
+				value = 3
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = infrastructure_lvl_4
+				type = tax
+				value = 4
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = infrastructure_lvl_4
+			type = tax
+			value = 4
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 23 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 25 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 27 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 29 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 31 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 33 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 35 } }
+		}
+		modifier = {
+			factor = 1.1
+			NOT = { check_variable = { which = "Distance" value = 37 } }
+		}
+		modifier = {
+			factor = 0.1
+			check_variable = { which = "Distance" value = 40 }
+		}
+	}
+}
+
+################################################
+# END Infrastructure
+################################################
+
+################################################
+# Government / Regierung
+################################################
+courthouse = {
+	cost = 250
+	time = 12
+	
+	
+	build_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = courthouse
+					has_construction = courthouse
+					has_building = town_hall
+					has_construction = town_hall
+					has_building = government_lvl_3
+					has_construction = government_lvl_3
+					has_building = government_lvl_4
+					has_construction = government_lvl_4
+				}
+			}
+		}
+	}
+	
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = courthouse
+					has_construction = courthouse
+					has_building = town_hall
+					has_construction = town_hall
+					has_building = government_lvl_3
+					has_construction = government_lvl_3
+					has_building = government_lvl_4
+					has_construction = government_lvl_4
+				}
+			}
+		}
+	}
+	
+	modifier = {
+	
+	local_state_maintenance_modifier = -0.25
+	local_autonomy = -0.05
+	local_monthly_devastation = -0.05
+	statewide_governing_cost = -0.1
+	#allowed_num_of_buildings = 1
+		
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = courthouse
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 200 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 300 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				any_province = {
+					area = PREV
+					is_capital_of = FROM
+				}
+			}
+		}
+	}
+}
+
+#government_lvl_2 = {
+town_hall = {
+	cost = 500
+	time = 12
+
+	
+	build_trigger = {
+		has_building = courthouse
+	}
+	
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = courthouse
+					has_construction = courthouse
+					has_building = town_hall
+					has_construction = town_hall
+					has_building = government_lvl_3
+					has_construction = government_lvl_3
+					has_building = government_lvl_4
+					has_construction = government_lvl_4
+				}
+			}
+		}
+	}
+	
+	#make_obsolete = government_lvl_1
+	make_obsolete = courthouse
+	
+	modifier = {
+		local_state_maintenance_modifier = -0.5
+		local_missionary_strength = 0.01
+		local_autonomy = -0.1
+		local_monthly_devastation = -0.1
+		statewide_governing_cost = -0.2
+		#allowed_num_of_buildings = 1
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = town_hall
+			obsolete_building = courthouse
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = town_hall
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 200 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 300 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				is_capital_of = FROM
+			}
+		}
+	}
+}
+
+government_lvl_3 = {
+	cost = 750
+	time = 12
+
+	
+	build_trigger = {
+		OR = {
+			has_building = courthouse
+			has_building = town_hall
+		}	
+	}
+	
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = courthouse
+					has_construction = courthouse
+					has_building = town_hall
+					has_construction = town_hall
+					has_building = government_lvl_3
+					has_construction = government_lvl_3
+					has_building = government_lvl_4
+					has_construction = government_lvl_4
+				}
+			}
+		}
+	}
+	
+	#make_obsolete = government_lvl_2
+	make_obsolete = town_hall
+	
+	modifier = {
+		local_state_maintenance_modifier = -0.75
+		local_missionary_strength = 0.02
+		local_autonomy = -0.1
+		local_monthly_devastation = -0.15
+		statewide_governing_cost = -0.3
+		
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_town_hall
+			}
+			add_development_from_building = {
+				building = government_lvl_3
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_courthouse
+			}
+			add_development_from_building = {
+				building = government_lvl_3
+				type = tax
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = government_lvl_3
+				type = tax
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = government_lvl_3
+			type = tax
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 200 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 300 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				any_province = {
+					area = PREV
+					is_capital_of = FROM
+				}
+			}
+		}
+	}
+}
+
+government_lvl_4 = {
+	cost = 1000
+	time = 12
+
+	
+	build_trigger = {
+		OR = {
+			has_building = courthouse
+			has_building = town_hall
+			has_building = government_lvl_3
+		}
+	}
+	
+	keep_trigger = {
+		NOT = {
+			area_for_scope_province = {
+				NOT = { province_id = root }
+				owner = {
+					tag = ROOT
+				}
+				OR = {
+					has_building = courthouse
+					has_construction = courthouse
+					has_building = town_hall
+					has_construction = town_hall
+					has_building = government_lvl_3
+					has_construction = government_lvl_3
+					has_building = government_lvl_4
+					has_construction = government_lvl_4
+				}
+			}
+		}
+	}
+	
+	make_obsolete = government_lvl_3
+	
+	modifier = {
+		local_state_maintenance_modifier = -1.0
+		local_missionary_strength = 0.03
+		local_autonomy = -0.15
+		local_monthly_devastation = -0.2
+		statewide_governing_cost = -0.4	
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_government_lvl_3
+			}
+			add_development_from_building = {
+				building = government_lvl_4
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_town_hall
+			}
+			add_development_from_building = {
+				building = government_lvl_4
+				type = tax
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_courthouse
+			}
+			add_development_from_building = {
+				building = government_lvl_4
+				type = tax
+				value = 3
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = government_lvl_4
+				type = tax
+				value = 4
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = government_lvl_4
+			type = tax
+			value = 4
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0.5
+			NOT = { development = 10 }
+		}
+		modifier = {
+			factor = 2
+			FROM = { governing_capacity_percentage = 0.8 }
+		}
+		modifier = {
+			factor = 3
+			FROM = { governing_capacity_percentage = 1 }
+		}
+		modifier = {
+			factor = 5
+			FROM = { governing_capacity_percentage = 1.1 }
+		}
+		modifier = {
+			factor = 0.75
+			FROM = { num_of_loans = 1 }
+		}
+		modifier = {
+			factor = 0.25
+			FROM = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0
+			FROM = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { is_in_deficit = yes }
+		}
+		modifier = {
+			factor = 1.25
+			development = 10
+		}
+		modifier = {
+			factor = 1.25
+			development = 20
+		}
+		modifier = {
+			factor = 1.25
+			development = 30
+		}
+		modifier = {
+			factor = 0.5
+			FROM = { NOT = { treasury = 200 } }
+		}
+		modifier = {
+			factor = 1.25
+			FROM = { treasury = 300 }
+		}
+		#Provinces in the Capital Area don't need a courthouse
+		modifier = {
+			factor = 0
+			area_for_scope_province = {
+				any_province = {
+					area = PREV
+					is_capital_of = FROM
+				}
+			}
+		}
+	}
+}
+
+#government_lvl_5 = {    # uni
+university = {
+	cost = 400
+	time = 18
+	
+	modifier = {
+		local_development_cost = -0.1
+		local_institution_spread = 0.25
+		allowed_num_of_buildings = 2
+		allowed_num_of_manufactories = 1
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = university
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 2
+		modifier = {
+			factor = 2.5
+			not = { num_free_building_slots = 1 }
+		}
+	}
+}
+
+################################################
+# END Government
+################################################
+
+################################################
+# Terrain / Terrain
+################################################
+terrain_special = {
+	cost = 300
+	time = 12
+	
+	build_trigger = {
+		NOT = {
+			OR = {
+				has_terrain = farmlands
+				has_terrain = grasslands
+				has_terrain = drylands
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = desert
+				has_terrain = desert_mountain
+				has_terrain = steppe
+				has_terrain = savannah
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = glacier
+				has_terrain = mountain
+				has_terrain = jungle
+				has_terrain = marsh
+				has_terrain = coastline
+				has_terrain = coastal_desert 
+				has_terrain = mountains_himalaya
+				has_terrain = mountains_rocky_mountains
+				has_terrain = mountains_ural
+				has_terrain = mountains_appalachian_hills
+				has_terrain = sweden_forest
+				has_terrain = finnmark_forest
+				has_terrain = generic_isle
+				has_terrain = scottish_highlands
+				has_terrain = coast_north_sea
+				has_terrain = urban_nordjylland
+				has_terrain = coast_baltic_sea
+				has_terrain = coast_america
+				has_terrain = bohemian_grasland
+				has_terrain = bohemian_highlands
+				has_terrain = bohemian_forest
+				has_terrain = bohemian_mountains
+				has_terrain = urban_steiermark
+				has_terrain = urban_tirol
+				has_terrain = thuringian_woods
+				has_terrain = urban_loire
+				has_terrain = urban_westernghats
+				has_terrain = urban_westernghats2
+				has_terrain = 19xichangcheng
+				has_terrain = 20zhongchangcheng
+				has_terrain = 21dongchangcheng
+			}
+		}
+	}
+	
+	
+	modifier = {
+	
+		local_development_cost = -0.3      
+		allowed_num_of_buildings = 2
+		
+	}
+	
+	ai_will_do = {
+		factor = 15
+		
+	}	
+}
+
+terrain_land = {
+	cost = 150
+	time = 12
+	
+	build_trigger = {
+	OR = {
+	has_terrain = farmlands
+	has_terrain = grasslands
+	has_terrain = drylands
+	has_terrain = urban_nordjylland
+	has_terrain = bohemian_grasland
+	has_terrain = urban_loire
+	}
+	}
+	
+	
+	modifier = {
+	
+		local_development_cost = -0.05      
+		allowed_num_of_buildings = 2
+		
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+terrain_woodland = {
+	cost = 200
+	time = 18
+	
+	build_trigger = {
+	OR = {
+	has_terrain = forest
+	has_terrain = woods
+	has_terrain = sweden_forest
+	has_terrain = finnmark_forest
+	has_terrain = bohemian_forest
+	has_terrain = thuringian_woods
+	}
+	
+	}
+	
+	
+	modifier = {
+	
+		local_development_cost = -0.15  
+		allowed_num_of_buildings = 2	
+		
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+
+
+terrain_desert = {
+	cost = 300
+	time = 18
+	
+	build_trigger = {
+	OR = {
+	has_terrain = desert
+	has_terrain = desert_mountain
+	has_terrain = steppe
+	has_terrain = savannah
+	
+	
+	}
+	
+	}
+	
+	modifier = {
+	
+		local_development_cost = -0.20
+		allowed_num_of_buildings = 2	
+		
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+
+
+terrain_hills = {
+	cost = 300
+	time = 18
+	
+	
+	build_trigger = {
+	OR = {
+	has_terrain = hills
+	has_terrain = highlands
+	has_terrain = scottish_highlands
+	has_terrain = mountains_appalachian_hills	
+	has_terrain = bohemian_highlands
+	has_terrain = urban_westernghats
+	has_terrain = urban_westernghats2
+	}
+	
+	}
+	
+	
+	modifier = {
+	
+		local_development_cost = -0.15
+		allowed_num_of_buildings = 2	
+		
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+
+
+terrain_art = {
+	cost = 350
+	time = 24
+	
+	
+	build_trigger = {
+	OR = {
+	has_terrain = glacier
+	has_terrain = mountain
+	has_terrain = mountains_himalaya
+	has_terrain = mountains_rocky_mountains
+	has_terrain = mountains_ural
+	has_terrain = bohemian_mountains
+	has_terrain = urban_steiermark
+	has_terrain = urban_tirol
+	has_terrain = 19xichangcheng
+	has_terrain = 20zhongchangcheng
+	has_terrain = 21dongchangcheng
+	}
+	
+	}
+	
+	modifier = {
+	
+		local_development_cost = -0.3
+		allowed_num_of_buildings = 2	
+		
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+
+terrain_jungle = {
+	cost = 300
+	time = 18
+	
+	build_trigger = {
+	
+	has_terrain = jungle
+	
+	}
+	
+	modifier = {
+		local_development_cost = -0.35
+		allowed_num_of_buildings = 2	
+	}
+
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+
+terrain_swamp = {
+	cost = 300
+	time = 12
+	
+	build_trigger = {
+	has_terrain = marsh
+	
+	}
+	
+	modifier = {
+		local_development_cost = -0.2
+		allowed_num_of_buildings = 2	
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+terrain_coastal = {
+	cost = 250
+	time = 12
+	
+	build_trigger = {
+	OR = {
+	has_terrain = coastline
+	has_terrain = coastal_desert 
+	has_terrain = generic_isle
+	has_terrain = coast_north_sea
+	has_terrain = coast_baltic_sea
+	has_terrain = coast_america
+	}
+	}
+	
+	
+	modifier = {
+		local_development_cost = -0.15
+		allowed_num_of_buildings = 2	
+	}
+	
+	ai_will_do = {
+		factor = 10
+		
+	}	
+}
+
+################################################
+# END Terrain
+################################################
+
+
+################################################
+# Production / Produktion
+################################################
+#production_lvl_1 = {
+workshop = {
+	cost = 100
+	time = 12
+	
+	modifier = {	
+		local_production_efficiency = 0.25
+		local_state_maintenance_modifier = 0.125
+	}
+	on_built = {
+		add_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = workshop
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	allow_in_gold_provinces = no
+	
+	ai_will_do = {
+		factor = 35
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+production_lvl_2 = {
+	cost = 300
+	time = 12
+	
+	#make_obsolete = production_lvl_1
+	make_obsolete = workshop
+	
+	modifier = {
+		local_production_efficiency = 0.5
+		local_state_maintenance_modifier = 0.25
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = production_lvl_2
+			obsolete_building = workshop
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = production_lvl_2
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	allow_in_gold_provinces = no
+	
+	ai_will_do = {
+		factor = 35
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+production_lvl_3 = {
+	cost = 500
+	time = 12
+	
+	make_obsolete = production_lvl_2
+	
+	modifier = {
+		local_production_efficiency = 0.75
+		local_state_maintenance_modifier = 0.375
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_production_lvl_2
+			}
+			add_development_from_building = {
+				building = production_lvl_3
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_workshop
+			}
+			add_development_from_building = {
+				building = production_lvl_3
+				type = production
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = production_lvl_3
+				type = production
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = production_lvl_3
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	allow_in_gold_provinces = no
+	
+	ai_will_do = {
+		factor = 35
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+#production_lvl_4 = {
+counting_house = {
+	cost = 600
+	time = 12
+	
+	allow_in_gold_provinces = no
+	
+	make_obsolete = production_lvl_3
+	
+	modifier = {
+		local_production_efficiency = 1
+		local_state_maintenance_modifier = 0.5	
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_production_lvl_3
+			}
+			add_development_from_building = {
+				building = counting_house
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_production_lvl_2
+			}
+			add_development_from_building = {
+				building = counting_house
+				type = production
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_workshop
+			}
+			add_development_from_building = {
+				building = counting_house
+				type = production
+				value = 3
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = counting_house
+				type = production
+				value = 4
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = counting_house
+			type = production
+			value = 4
+		}
+	}
+	on_obsolete = {
+	}
+	
+	allow_in_gold_provinces = no
+	
+	ai_will_do = {
+		factor = 35
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+steam_factory = {
+	cost = 1000
+	time = 12
+	
+	build_trigger = {
+		FROM = {
+			any_owned_province = {	
+				trade_goods = steam_engine
+			}
+		}
+			
+		FROM = {
+			OR = {
+				innovativeness = 35
+				NOT = { has_dlc = "Rule Britannia" }
+			}
+		}
+
+	}
+	
+	make_obsolete = counting_house
+	
+	modifier = {
+		local_production_efficiency = 1.5
+		local_state_maintenance_modifier = 0.75
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_counting_house
+			}
+			add_development_from_building = {
+				building = steam_factory
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_production_lvl_3
+			}
+			add_development_from_building = {
+				building = steam_factory
+				type = production
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_production_lvl_2
+			}
+			add_development_from_building = {
+				building = steam_factory
+				type = production
+				value = 3
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_workshop
+			}
+			add_development_from_building = {
+				building = steam_factory
+				type = production
+				value = 4
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = steam_factory
+				type = production
+				value = 5
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = steam_factory
+			type = production
+			value = 5
+		}
+	}
+	on_obsolete = {
+	}
+	
+	allow_in_gold_provinces = no	
+		
+	ai_will_do = {
+		factor = 45
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+################################################
+# END Production
+################################################
+
+
+################################################
+# Taxation / Steuern
+################################################
+#taxation_lvl_1 = {
+	temple = {
+	cost = 100
+	time = 12
+
+	modifier = {
+		local_tax_modifier = 0.25
+		local_state_maintenance_modifier = 0.125
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+		add_development_from_building = {
+			building = temple
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = temple
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = { 
+			factor = 3
+			base_tax = 5
+		}
+		modifier = { 
+			factor = 2
+			base_tax = 8
+		}
+	}
+}
+
+taxation_lvl_2 = {
+	cost = 250
+	time = 12
+	
+	#make_obsolete = taxation_lvl_1
+	
+	make_obsolete = temple
+	
+	modifier = {	
+		local_tax_modifier = 0.5
+		local_state_maintenance_modifier = 0.25
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = taxation_lvl_2
+			obsolete_building = church
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = taxation_lvl_2
+			type = tax
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = { 
+			factor = 2
+			base_tax = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_tax = 8
+		}
+	}
+}
+
+cathedral = {
+#taxation_lvl_3 = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = taxation_lvl_2
+	
+	modifier = {
+		local_tax_modifier = 0.75
+		local_state_maintenance_modifier = 0.375
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+		if = {
+			limit = {
+				has_province_flag = built_dev_taxation_lvl_2
+			}
+			add_development_from_building = {
+				building = cathedral
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_temple
+			}
+			add_development_from_building = {
+				building = cathedral
+				type = tax
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = cathedral
+				type = tax
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = cathedral
+			type = tax
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = { 
+			factor = 2
+			base_tax = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_tax = 8
+		}
+	}
+}
+
+taxation_lvl_4 = {
+	cost = 500
+	time = 12
+	
+	#make_obsolete = taxation_lvl_3
+	make_obsolete = cathedral
+	
+	modifier = {
+		local_tax_modifier = 1
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = 3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = 3
+			}
+		}
+		if = {
+			limit = {
+				has_province_flag = built_dev_cathedral
+			}
+			add_development_from_building = {
+				building = taxation_lvl_4
+				type = tax
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_taxation_lvl_2
+			}
+			add_development_from_building = {
+				building = taxation_lvl_4
+				type = tax
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_temple
+			}
+			add_development_from_building = {
+				building = taxation_lvl_4
+				type = tax
+				value = 3
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = taxation_lvl_4
+				type = tax
+				value = 4
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						religion = buddhism
+						religion = mahayana
+						religion = vajrayana
+					}
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				add_karma = -3
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					religion = catholic
+					has_estate_privilege = estate_church_influence_temples
+				}
+			}
+			FROM = {
+				add_papal_influence = -3
+			}
+		}
+		remove_development_from_building = {
+			building = taxation_lvl_4
+			type = tax
+			value = 4
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 15
+		modifier = { 
+			factor = 2
+			base_tax = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_tax = 8
+		}
+	}
+}
+
+################################################
+# END Taxation
+################################################
+
+################################################
+# Trade / Handel
+################################################
+
+
+#trade_lvl_1 = {
+marketplace = {
+	cost = 100
+	time = 12
+	
+	modifier = {
+		province_trade_power_value = 2.0
+		trade_value_modifier = 0.1
+		local_state_maintenance_modifier = 0.125	
+	}
+	on_built = {
+		add_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = marketplace
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	ai_will_do = {
+		factor = 1.5
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+trade_lvl_2 = {
+	cost = 200
+	time = 12
+	
+	#make_obsolete = trade_lvl_1
+	make_obsolete = marketplace
+	
+	modifier = {
+		province_trade_power_value = 4.0
+		trade_value_modifier = 0.2
+		local_state_maintenance_modifier = 0.25	
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = trade_lvl_2
+			obsolete_building = marketplace
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_lvl_2
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+#trade_lvl_3 = {
+trade_depot = {
+	cost = 400
+	time = 12
+	
+	make_obsolete = trade_lvl_2
+	
+	modifier = {
+		province_trade_power_value = 6.0
+		trade_value_modifier = 0.3
+		local_state_maintenance_modifier = 0.375
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_trade_lvl_2
+			}
+			add_development_from_building = {
+				building = trade_depot
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_marketplace
+			}
+			add_development_from_building = {
+				building = trade_depot
+				type = production
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = trade_depot
+				type = production
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_depot
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+#trade_lvl_4 = {
+stock_exchange = {
+	cost = 500
+	time = 12
+	
+	#make_obsolete = trade_lvl_3
+	make_obsolete = trade_depot
+	
+	modifier = {
+		province_trade_power_value = 8.0
+		trade_value_modifier = 0.4
+		local_state_maintenance_modifier = 0.5
+	}	
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_trade_depot
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 1
+			}
+		}
+		if = {
+			limit = {
+				has_province_flag = built_dev_trade_lvl_2
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 2
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_marketplace
+			}
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 3
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = stock_exchange
+				type = production
+				value = 4
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = trade_depot
+			type = production
+			value = 4
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 1.5
+		modifier = { 
+			factor = 2
+			base_production = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_production = 8
+		}
+	}
+}
+
+################################################
+# END Trade
+################################################
+
+
+################################################
+# Army / Armee Manpower
+################################################
+manpower_lvl_1 = {
+	cost = 100
+	time = 12
+	
+	
+	
+	modifier = {
+		local_manpower_modifier = 0.5
+		local_state_maintenance_modifier = 0.25
+	}
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+		add_development_from_building = {
+			building = manpower_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+		remove_development_from_building = {
+			building = manpower_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = { 
+			factor = 2
+			base_manpower = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_manpower = 10
+		}
+	}
+}
+
+#manpower_lvl_2 = {
+barracks = {
+	cost = 250
+	time = 12
+	
+	make_obsolete = manpower_lvl_1
+	
+	modifier = {
+		local_manpower_modifier = 1.0
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = barracks
+			obsolete_building = manpower_lvl_1
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+	}
+	on_obsolete = {
+		remove_development_from_building = {
+			building = barracks
+			type = manpower
+			value = 2
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = { 
+			factor = 2
+			base_manpower = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_manpower = 10
+		}
+	}
+}
+
+#manpower_lvl_3 = {
+training_fields = {
+	cost = 400
+	time = 12
+	
+	#make_obsolete = manpower_lvl_2
+	make_obsolete = barracks
+	
+	modifier = {
+		local_manpower_modifier = 1.5
+		local_state_maintenance_modifier = 0.75
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = 1
+			}
+		}
+		if = {
+			limit = {
+				has_province_flag = built_dev_barracks
+			}
+			add_development_from_building = {
+				building = training_fields
+				type = manpower
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_manpower_lvl_1
+			}
+			add_development_from_building = {
+				building = training_fields
+				type = manpower
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = training_fields
+				type = manpower
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_manpower = -1
+			}
+		}
+	}
+	on_obsolete = {
+		remove_development_from_building = {
+			building = training_field
+			type = manpower
+			value = 2
+		}
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = { 
+			factor = 2
+			base_manpower = 5
+		}
+		modifier = { 
+			factor = 1.5
+			base_manpower = 10
+		}
+	}
+}
+
+
+################################################
+# Army Forcelimit / Armee Forcelimit
+################################################
+
+forcelimit_lvl_1 = {
+	cost = 200
+	time = 12
+	
+	
+	build_trigger = {
+		OR = {
+			has_building = forcelimit_lvl_1
+			is_state = yes
+		}
+	}
+	
+	modifier = {	
+		land_forcelimit = 1	
+		regiment_recruit_speed = -0.1
+		local_state_maintenance_modifier = 0.5	
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = forcelimit_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = forcelimit_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 2
+			local_autonomy = 10
+		}
+	}
+}
+
+#forcelimit_lvl_2 = {
+regimental_camp = {
+	cost = 300
+	time = 12
+	
+	build_trigger = {
+	OR = {
+	has_building = regimental_camp
+	is_state = yes
+	}
+	development = 20
+	}
+	
+	make_obsolete = forcelimit_lvl_1
+	
+	modifier = {
+		land_forcelimit = 1.5
+		regiment_recruit_speed = -0.2
+		local_state_maintenance_modifier = 1	
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = regimental_camp
+			obsolete_building = forcelimit_lvl_1
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = regimental_camp
+			type = manpower
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 2
+			local_autonomy = 10
+		}
+	}
+}
+
+#forcelimit_lvl_3 = {
+conscription_center = {
+	cost = 500
+	time = 12
+	
+	build_trigger = {
+	OR = {
+	has_building = conscription_center
+	is_state = yes
+	}
+	development = 20
+	}
+	
+	#make_obsolete = forcelimit_lvl_2
+	make_obsolete = regimental_camp
+	
+	modifier = {
+		land_forcelimit = 2
+		regiment_recruit_speed = -0.3
+		local_state_maintenance_modifier = 1.5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_regimental_camp
+			}
+			add_development_from_building = {
+				building = conscription_center
+				type = manpower
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_forcelimit_lvl_1
+			}
+			add_development_from_building = {
+				building = conscription_center
+				type = manpower
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = conscription_center
+				type = manpower
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = conscription_center
+			type = manpower
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { army_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 2
+			local_autonomy = 10
+		}
+	}
+}
+
+################################################
+# END Army
+################################################
+
+################################################
+# Navy # Galeeren und Handelsschiffe
+################################################
+#navymanpower_lvl_1 = {
+dock = {
+	cost = 100
+	time = 12
+	
+	build_trigger = {
+		has_port = yes		
+	}
+	
+	modifier = {
+		naval_forcelimit = 0.5
+		ship_recruit_speed = -0.05
+		local_sailors_modifier = 0.6
+		local_state_maintenance_modifier = 0.25
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = dock
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		
+	}
+}
+
+navymanpower_lvl_2 = {
+	cost = 250
+	time = 12
+	
+	build_trigger = {
+		has_port = yes
+		
+		OR = {
+		has_idea = handel5
+		has_idea = galle1
+		has_idea = merchant_marine_2
+		
+		}
+		NOT = { 
+		OR = {
+		 has_building = navyforcelimit_lvl_2
+		 has_building = grand_shipyard
+		 #has_building = navyforcelimit_lvl_3
+		}
+
+		}
+	}
+	
+	#make_obsolete = navymanpower_lvl_1
+	make_obsolete = dock
+	
+	modifier = {
+		naval_forcelimit = 0.75
+		ship_recruit_speed = -0.1
+		local_sailors_modifier = 1
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		add_development_from_upgrading_or_building = {
+			building = navymanpower_lvl_2
+			obsolete_building = dock
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = navymanpower_lvl_2
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		
+	}
+}
+
+#navymanpower_lvl_3 = {
+drydock = {
+	cost = 400
+	time = 12
+	
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = handel5
+			has_idea = galle1
+		}
+		NOT = { 
+			OR = {
+			 has_building = navyforcelimit_lvl_2
+			 has_building = grand_shipyard
+			#has_building = navyforcelimit_lvl_3
+			}
+		}
+	}
+	
+	make_obsolete = navymanpower_lvl_2
+	
+	modifier = {
+		naval_forcelimit = 1
+		ship_recruit_speed = -0.15
+		local_sailors_modifier = 1.5
+		local_state_maintenance_modifier = 0.75	
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = 200
+			}
+		}
+		if = {
+			limit = {
+				has_province_flag = built_dev_navymanpower_lvl_2
+			}
+			add_development_from_building = {
+				building = drydock
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_dock
+			}
+			add_development_from_building = {
+				building = drydock
+				type = production
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = drydock
+				type = production
+				value = 3
+			}
+		}
+	}
+	
+	on_destroyed = {
+		if = {
+			limit = {
+				FROM = {
+					has_reform = corvee_reform
+				}
+			}
+			FROM = {
+				add_sailors = -200
+			}
+		}
+		remove_development_from_building = {
+			building = drydock
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		
+	}
+}
+
+################################################
+# Navy # Großschiffe
+################################################
+
+#navyforcelimit_lvl_1 = {
+shipyard = {
+	cost = 100
+	time = 12
+	
+	build_trigger = {
+		has_port = yes
+	}
+	
+	modifier = {
+		naval_forcelimit = 1
+		local_ship_repair = 0.05
+		local_sailors_modifier = 0.5
+		local_state_maintenance_modifier = 0.25	
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = shipyard
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+navyforcelimit_lvl_2 = {
+	cost = 250
+	time = 12
+
+	build_trigger = {
+		has_port = yes
+		OR = {
+			has_idea = gross6
+			has_idea = grand_navy_2
+		}
+		
+		NOT = { 
+			OR = {	
+				has_building = navymanpower_lvl_2
+				has_building = drydock
+				#has_building = navymanpower_lvl_3
+			}
+		}
+	}
+	
+	#make_obsolete = navyforcelimit_lvl_1
+	make_obsolete = shipyard
+	
+	modifier = {
+		naval_forcelimit = 2
+		local_ship_repair = 0.1
+		local_sailors_modifier = 0.75
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = navyforcelimit_lvl_2
+			obsolete_building = shipyard
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navyforcelimit_lvl_2
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+#navyforcelimit_lvl_3 = {
+grand_shipyard = {
+	cost = 400
+	time = 12
+	
+	build_trigger = {
+		has_port = yes
+		has_idea = gross6
+		
+		NOT = { 
+			OR = {
+				has_building = navymanpower_lvl_2
+				has_building = drydock
+				#has_building = navymanpower_lvl_3
+			}
+		}
+	}
+	
+	make_obsolete = navyforcelimit_lvl_2
+	
+	modifier = {
+		naval_forcelimit = 3
+		local_ship_repair = 0.15
+		local_sailors_modifier = 1
+		local_state_maintenance_modifier = 0.75
+	}
+	
+	on_built = {
+		if = {
+			limit = {
+				has_province_flag = built_dev_navyforcelimit_lvl_2
+			}
+			add_development_from_building = {
+				building = grand_shipyard
+				type = production
+				value = 1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_flag = built_dev_shipyard
+			}
+			add_development_from_building = {
+				building = grand_shipyard
+				type = production
+				value = 2
+			}
+		}
+		else = {
+			add_development_from_building = {
+				building = grand_shipyard
+				type = production
+				value = 3
+			}
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = grand_shipyard
+			type = production
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2 # Little above build cost
+			FROM = { navy_size_percentage = 0.95 }
+		}
+		modifier = {
+			factor = 1.1
+			local_autonomy = 50
+		}
+	}
+}
+
+
+
+navalbase_lvl_1 = {
+	cost = 400
+	time = 36
+	
+	build_trigger = {
+		has_port = yes
+		has_idea = flottenbasis2
+	}
+	
+	onmap = yes
+	influencing_fort = yes
+	
+	modifier = {
+		fort_level = 1
+		local_manpower = 0.5
+		local_sailors = 500
+		naval_forcelimit = 1.5
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = navalbase_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navalbase_lvl_1
+			type = manpower
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 2
+		
+	}
+}
+
+navalbase_lvl_2 = {
+	cost = 800
+	time = 36
+	
+	build_trigger = {
+		has_port = yes
+		has_idea = flottenbasis2
+	}
+	
+	onmap = yes
+	influencing_fort = yes
+	
+	make_obsolete = navalbase_lvl_1 
+	
+	modifier = {
+		fort_level = 2
+		local_manpower = 0.75
+		local_sailors = 1000
+		naval_forcelimit = 3
+		local_state_maintenance_modifier = 1
+	}
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = navalbase_lvl_2
+			obsolete_building = navalbase_lvl_1
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = navalbase_lvl_2
+			type = manpower
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 2
+		
+	}
+}
+
+
+################################################
+# END Navy
+################################################
+
+################################################
+# Fortress
+################################################
+fortress_keep = {
+	cost = 25
+	time = 12
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+	
+	
+	modifier = {
+	local_hostile_attrition = 0.25
+	local_defensiveness = 0.1
+	allowed_num_of_buildings = 1
+	max_attrition = 0.25
+	local_state_maintenance_modifier = 0.1
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+fortress_barracks = {
+	cost = 50
+	time = 12
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+	
+	
+	make_obsolete = fortress_keep
+	
+	modifier = {
+	local_hostile_attrition = 0.5
+	local_defensiveness = 0.1
+	local_manpower = 0.25
+	allowed_num_of_buildings = 1
+	max_attrition = 0.5
+	local_state_maintenance_modifier = 0.2
+		
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+fortress_towers = {
+	cost = 75
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+	
+	
+	make_obsolete = fortress_barracks
+	
+	modifier = {
+		local_hostile_attrition = 0.75
+		local_defensiveness = 0.15
+		local_manpower = 0.25
+		allowed_num_of_buildings = 1
+		max_attrition = 0.75
+		local_state_maintenance_modifier = 0.3
+		
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+fortress_artillery = {
+	cost = 500
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+
+	
+	make_obsolete = fortress_towers 
+	
+	modifier = {
+	local_hostile_attrition = 1
+	local_defensiveness = 0.2
+	local_manpower = 0.33
+	allowed_num_of_buildings = 1
+	max_attrition = 1
+	local_state_maintenance_modifier = 0.4
+		
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+fortress_wall = {
+	cost = 750
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+	
+	
+	make_obsolete = fortress_artillery
+	
+	modifier = {
+		local_hostile_attrition = 1.25
+		local_defensiveness = 0.25
+		local_manpower = 0.33
+		allowed_num_of_buildings = 1
+		max_attrition = 1.25
+		local_state_maintenance_modifier = 0.5
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+fortress_supply = {
+	cost = 1000
+	time = 24
+	
+	build_trigger = {
+		OR = {
+			has_building = fort_15th
+			has_building = fort_16th
+			has_building = fort_17th
+			has_building = fort_18th
+			has_building = fort_19th
+		}
+		has_idea = festung4
+	}
+	
+	
+	make_obsolete = fortress_wall
+	
+	modifier = {
+		local_hostile_attrition = 1.5
+		local_defensiveness = 0.3
+		local_manpower = 0.5
+		allowed_num_of_buildings = 1
+		max_attrition = 1.5
+		local_state_maintenance_modifier = 0.6
+		
+	}
+	
+	ai_will_do = {
+		factor = 25
+		modifier = {
+			factor = 3
+			OR = {
+			has_terrain = forest
+			has_terrain = woods
+			has_terrain = desert_mountain
+			has_terrain = hills
+			has_terrain = mountain
+			has_terrain = jungle
+			has_terrain = marsh
+			has_terrain = highlands
+			has_terrain = glacier
+			has_terrain = thuringian_woods
+			has_terrain = bohemian_mountains
+			has_terrain = bohemian_forest
+			has_terrain = bohemian_highlands
+			has_terrain = sweden_forest
+			has_terrain = finnmark_forest
+			has_terrain = scottish_highlands
+			has_terrain = mountains_himalaya
+			has_terrain = mountains_rocky_mountains
+			has_terrain = mountains_appalachian
+			has_terrain = mountains_appalachian_hills
+			has_terrain = mountains_ural
+			has_terrain = 20zhongchangcheng
+			has_terrain = 19xichangcheng
+			has_terrain = 21dongchangcheng
+			}
+		}
+		modifier = {
+			factor = 3
+			development = 10
+		}
+		modifier = {
+			factor = 3
+			development = 20
+		}
+	}
+}
+
+
+################################################
+# END Fortress
+################################################
+

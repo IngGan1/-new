@@ -1,0 +1,6 @@
+#4626 - Karamoja
+culture = bantu #tonga
+religion = shamanism
+capital = "Karamoja"
+discovered_by = central_african
+discovered_by = east_african

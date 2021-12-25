@@ -1,0 +1,14 @@
+country_decisions = {
+	the_fix = {
+		potential = {
+			ai = no
+			not = { has_global_flag = no_decision }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+}

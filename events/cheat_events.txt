@@ -1,0 +1,326 @@
+namespace = cheat_events
+
+country_event = {
+	id = cheat_events.1
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		if = { limit = { not = { has_country_flag = start_man } }
+			add_yearly_manpower = 2
+			if = { limit = { tag = ATH }
+				ATH = {
+					add_opinion = {
+						who = BYZ
+						modifier = opinion_good_relations
+					}
+					add_trust = {
+						who = BYZ
+						value = 50
+						mutual = yes
+					}
+				}
+			}
+			change_estate_land_share = {
+					estate = all
+					share = -0.5
+			}
+			change_estate_land_share = {
+					estate = jewish_estate
+					share = -0.1
+			}
+			if = { limit = { or = { technology_group = western technology_group = eastern technology_group = ottoman technology_group = muslim } }
+				4771 = {
+				undiscover_country = ROOT
+				}
+				4751 = {
+				undiscover_country = ROOT
+				}
+				lower_volta_area = {
+				undiscover_country = ROOT
+				}
+				4710 = {
+				undiscover_country = ROOT
+				}
+				lower_niger_area = {
+				undiscover_country = ROOT
+				}
+				4712 = {
+				undiscover_country = ROOT
+				}
+				1149 = {
+				undiscover_country = ROOT
+				}
+				4723 = {
+				undiscover_country = ROOT
+				}
+				4715 = {
+				undiscover_country = ROOT
+				}
+				2287 = {
+				undiscover_country = ROOT
+				}
+				1116 = {
+				undiscover_country = ROOT
+				}
+			}
+			if = { limit = { is_emperor = yes }
+				add_yearly_manpower = 1
+				add_ruler_modifier = {
+					name = besseres_hrr_crowned_emperor
+					duration = -1
+				}
+			}
+			if = { limit = { not = { or = { technology_group = chinese technology_group = nomad_group tag = TIM } } }
+				add_adm_power = 350
+				add_dip_power = 350
+				add_mil_power = 350
+				add_stability = 1
+			}
+			else = {
+				add_adm_power = 250
+				add_dip_power = 250
+				add_mil_power = 250
+				add_stability = 1
+			}
+			set_ruler_flag = no_education
+			set_country_flag = start_man
+			set_country_flag = use_missions_expanded_missions_instead_of_paradox
+			swap_non_generic_missions = yes
+			if = {
+				limit = { tag = ENG }
+				country_event = { id = ge_events.100 days = 1 }
+			}
+			if = {
+				limit = { ai = no }
+				set_global_flag = $mod$_expanded_mod_active
+				set_global_flag = $mod$_exapanded_mod_active
+				set_global_flag = tradegood_marcin
+				add_country_modifier = {
+					name = start_of_game
+					duration = 15
+					hidden = yes
+				}
+				country_event = { id = New_TradeGood_Events.2 }
+			}
+			else_if = {
+				limit = { primitives = no }
+				xorme_ai_estates_initialization_effect = yes
+				xorme_ai_create_court = yes
+				xorme_ai_set_crown_land = yes
+				if = {
+					limit = { is_emperor_of_china = yes }
+					xorme_ai_add_main_3_land_rights = yes
+					change_estate_land_share = {
+						estate = all
+						share = -15
+					}
+				}
+				if = {
+					limit = { is_free_or_tributary_trigger = yes }
+					country_event = {
+						id = xorme_ai_initialization.2
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cheat_events.2
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		num_of_loans = 10
+		not = { has_country_modifier = debt_force_repay }
+		not = { any_country = { truce_with = ROOT } }
+		ai = yes
+		or = {
+			has_global_flag = hard_mode
+			has_global_flag = hard2_mode
+		}
+	}
+	
+	option = {
+		add_years_of_income = 5
+		add_country_modifier = {
+			name = "debt_force_repay"
+			duration = 1800
+		} 
+	}
+}
+
+province_event = {
+	id = cheat_events.3
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		religion = noreligion
+	}
+	
+	option = {
+		if = {
+			limit = {
+				any_neighbor_province = {
+					religion = anglican
+				}
+			}
+		change_religion = anglican
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = catholic
+				}
+			}
+		change_religion = catholic
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = protestant
+				}
+			}
+		change_religion = protestant
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = hussite
+				}
+			}
+		change_religion = hussite
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = sunni
+				}
+			}
+		change_religion = sunni
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = shiite
+				}
+			}
+		change_religion = shiite
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = shinto
+				}
+			}
+		change_religion = shinto
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = confucianism
+				}
+			}
+		change_religion = confucianism
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = coptic
+				}
+			}
+		change_religion = coptic
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = tengri_pagan_reformed
+				}
+			}
+		change_religion = tengri_pagan_reformed
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = dharmic
+				}
+			}
+		change_religion = dharmic
+		}
+		else_if = {
+			limit = {
+				any_neighbor_province = {
+					religion = dharmic
+				}
+			}
+		change_religion = dharmic
+		}
+		else = { change_religion = capital }
+	}
+}
+
+country_event = {
+	id = cheat_events.4
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		primary_culture = noculture
+	}
+	
+	option = {
+		change_primary_culture = capital
+	}
+}
+
+province_event = {
+	id = cheat_events.5
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		culture = noculture
+	}
+	
+	option = {
+		change_culture = capital
+	}
+}
+
+country_event = {
+	id = cheat_events.6
+	title = "EVTNAME729"
+	desc = "EVTDESC729"
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	hidden = yes
+	
+	trigger = {
+		tag = SPA
+		ai = yes
+		CAS = { exists = yes is_subject = no ai = yes }
+	}
+	
+	option = {
+		inherit = CAS
+	}
+}

@@ -1,0 +1,695 @@
+﻿l_english:
+ personality_options.710.a:1 "°Æ¬¹XÇ [Root.GetLowLevelOfficialForCountry]ÐÅ Þ¹Á”² Ç”² ²l­à´ ÀÉ ¬ÐÅ 4»±(·2¸|·."
+ personality_options.711.a:0 "°Æ¬¹”² ¨ºP´ÐÅŒ¬ Ç0®Ì¹XÇ )¼ÝÂtÇ ˆÇä²”² x¬ 0¼ÌÆ|ÅÌ¹ tÕ."
+ personality_options.714.a:0 "P´ YÕÓXÇ ¥ÇÈÌ¹ pÈiÕtÕô¼Ç."
+ personality_options.714.b:0 "[Root.Monarch.GetTitle]NÇ(”²) õ¬©¬DÇ .Á8ÖjÕä²."
+ personality_options.714.c:0 "[Root.Monarch.GetTitle]NÇ(”²) )¼´Å|¹ .Á8ÖjÕä²."
+ personality_options.715.a:0 "©Í©¬DÇ ÉtÇ2¸ ÜÂÄ³tÕ|·"
+ personality_options.717.a:0 "[Root.Monarch.GetTitle]ÐÅŒ¬ Ë¬È|¹ ¬Ö`Õ Â ˆÇÄ³k¸ ÈŒ­DÇ üÈ´Å|·."
+ personality_options.718.a:0 "È ˆ´ÃjÕ Çä´..."
+ personality_options.719.a:0 "°Æ¬¹ô¼ä² »ºjÕ Çä´ÐÅŒ¬ÁÄ³ 0®¼®tÇ 0¼ÌÆ|ÅÌ¹ jÕä²."
+ personality_options.720.a:0 "¨ºà´ ¬ÀŒ·ä´tÇ ¼ä²ÐÅ ÑÉÉtÕ|ÅÌ¹ jÕä²."
+ personality_options.722.a:0 "[Root.Monarch.GetTitle]XÇ .Ç¥²jÕ !Îü­ä´tÇ ¬¥Ç ˜Ç µÑXÎ`Õ ƒ¬tÇä²."
+ personality_options.724.a:0 "°Æ°¹ ø­È ­©ÆDÇ  ¼ŽÔ´Å|ÅÌ¹ jÕä²."
+ personality_options.725.a:0 "ÄÉÈXÕà¬ <ÕtÕ ìÅŽ´|¹ UÖxÇXÕÇ."
+ personality_options.726.a:0 "4»ÇD¾XÕä²à¬? ´°¬?"
+ personality_options.726.b:0 "tÇŒ¬ ¬ÀäÂtÇ DÅÈ²|·à¬ ©°Ý´ÜÂÏô¼Ç."
+ personality_options.729.a:0 "[Root.Monarch.GetTitle]Ø®Á jÎˆ× tÇ Ä¬ÖDÇ ¬Å³XÕäÂ ƒ¬tÇä²."
+ personality_options.729.b:0 "[Root.Monarch.GetTitle]Ø®Á jÎˆ× tÇ Ä¬ÖDÇ ¬Å³XÕäÂ ƒ¬tÇä²."
+ personality_options.730.a:0 "ÄÉô¼|¹ )¼tÕXÕ”² Ç”² ©Æ©°`Õ Â ÆÅä²."
+ personality_options.734.a:0 "°Æ¬¹XÇ ÈEÌtÇ DÕ”ÆXÕä²”² x¬ ø­ä´ÐÅŒ¬ ©°Ý´ÜÂÏ|·."
+ personality_options.734.b:0 "ÀÉÄ³Çä´tÇ ”Æl­|¹ p¬X´ Ì¹jÕ 4»¸Å¬|¹ ÈHÅtÕ|·."
+ personality_options.734.c:0 "<»ì·ÁÀÉ JÅ<Çtº ø­ä´XÇ D¾¼DÇ íÓj¸XÕ ¬ä²à¬ Ö¼jÕä²."
+ personality_options.735.a:0 "²<» ÈNÇ ìÉ%¼DÇ 9º<Çtº ø­ä´Ä³ ä²ÜÂ ¬tÕÈÉ ƒ¬tÇä²!"
+ personality_options.736.a:0 "œ° ²¬ °Æ¬¹XÇ ÄÖÐÆDÇ ¼DÅ|Å `ÕÀÉ LÅà¬ ˆÇä²."
+ personality_options.736.b:0 "œ° ²¬ °Æ¬¹XÇ ÄÖÐÆDÇ ¼DÅ|Å `ÕÀÉ LÅà¬ ˆÇä²."
+ personality_options.737.b:0 "tÇƒ¬NÇ ø­ÐÅŒ¬ ÌÖm¹jÕ 0®ŒÖ¬ .´ ƒ¬tÇä²."
+ personality_options.738.a:0 "°Æ¬¹”² ø­¬ DÅ4»ƒ¬Ä³ ¨ºt¹Ä³k¸ tÕ|ÅÌ¹ jÕä²."
+ personality_options.740.a:0 "[Root.Monarch.GetTitle]Ø®Á”² ´ÌÈ|¹ EÅ©ÆXÕ”² T°ÌjÕ )¼•¼ä´DÇ ü­È`Õ )¼HÅDÇ LÅà¬ ˆÇä²."
+ personality_options.740.b:0 "ø­ä´tÇ °Æ¬¹XÇ tÇuÇDÇ ÁÉÈÈ<Çj¸ tÕXÎÀÉ JÅ”² jÕNÇ..."
+ personality_options.741.a:0 "°Æ¬¹ [Root.Monarch.GetTitle]XÇ ä²‘ÅjÕ ÝÀ¬ä´tÇ |ÓÀÉ”² ƒ¬Ä³ ‹ÈÀÉ."
+ personality_options.742.a:0 "°Æ¬¹”² ø­å° Î¹NÇ ¬ÀŒ·ä´tÇ DÅÈ²|·, ÇÈÉˆÇ”² ¬ÀŒ·ä´tÇ Î¹0®|¹ ÐÆjÕä²."
+ personality_options.742.b:0 "[Root.Monarch.GetTitle]¬ ÁÉÈ ÕÉÑ¼ Ö¥ÇÐÅ ¬Ä³k¸ XÕÇ."
+ personality_options.806.a:0 "ŽÈ T³ pÈìÂXÕ0®”² XÕ ¬ÀÉÌ¹, ø­˜·Ä³ Œ­%¸DÇ |ÇŽ´ Ç„ÇtÕ|ÅÌ¹ jÕä²."
+ personality_options.836.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ø­ä´tÇ 8º<»Ä³k¸ 2ÁÝ´ `Õ Â ˆÇDÇ ƒ¬tÇä²."
+ personality_options.837.a:0 "T³ Î¹NÇ |ÇÇ¬¹|¹ Ì¹ä´´Å´°2¸ x±%¸XÕÇ."
+ personality_options.850.a:0 "­ÌÉä´ ¨ºP´ÐÅŒ¬ LÅ2¸|·."
+ personality_options.851.a:0 "0Ñ4»È²ÆÅ”² ŒÁ¬¹!"
+ personality_options.851.a.tt:0 "°Æ¬¹ p­üÈXÇ ¬xÇÈxÇ xÇ0® U³„´ÐÅ ø­ D¾ôÅjÕ ŒÁ8»ä´NÇ ¬è²ˆ× 4»ÜÂ`Õ Â ˆÇä²."
+ personality_options.852.a:0 "ø­ƒ¬ ô¼ä² T³ ˜ÇtÕ|ÅÌ¹ tÕ!"
+ personality_options.852.b:0 "[Root.Monarch.GetTitle]NÇ(”²) ÈŽ´|¹ ¬TÖXÕÄ³k¸ ÈÕ©ÆtÕ|Å jÕä²!"
+ personality_options.853.a:0 "°Æ¬¹ [Root.Monarch.GetTitle]Ø®Á T³ Î¹NÇ ÇÐÆä´j¸ 4»ÇÅDÇ `Õ Â ˆÇDÇÀÉ ÁÀÁÀtÕô¼|·..."
+ personality_options.854.a:0 "tÇƒ¬<Çj¸ .ÇÝ¹jÕ Æ.Â¬ä´DÇ ­È<Çj¸ .ÇxÇXÕÇ"
+ personality_options.855.a:0 "ø­ä´NÇ è²ÀÉ ÈÁÀTÖ.´ DÕ”Æ¬ ˆÇä²."
+ personality_options.857.a:0 "NÇ Ð¹tÇ|Å, ®tÇ DÅÈ²|·!"
+ personality_options.859.a:0 "Éj¸ Ì³DÅ¬|·!"
+ personality_options.860.a:0 "¼j¸ ø­ð· ÈàÂtÇ|Å!"
+ personality_options.861.a:0 "ÌÖm¹jÕ 0®ŒÖä²!"
+ personality_options.862.a:0 "œ° X´ ä²!"
+ personality_options.864.a:0 "ÀÉ® |Ç¼ÈxÇ xÆP­ õ¬8Áj¸ ˜°ÁÇ!"
+ personality_options.865.a:0 "°Æ¬¹ [Root.Monarch.GetTitle]Ø®.Á äÂÈj¸ 1ÁxÇtÇä²."
+ personality_options.866.a:0 "‹Å¬tÇ|·à¬? ¬¥²jÕ jÍ³jÕDÇ »ÅDÇ Â ˆÇDÇ ƒ¬tÇä²."
+ personality_options.867.a:0 "tÇÈ tÇƒ¬tÇ °Æ¬¹XÇ jÍ°Æ.Á ü¬Èä²!"
+ personality_options.872.a:1 "[Root.Capital.GetCapitalName]ÐÅÁXÇ ¶ÀtÇ ø­XÇ jÍà¬ ­ìÂ¬À¬ .´ƒ¬„ÇDÇ ©°Ý´ÜÂ²ÐÇ."
+ personality_options.881.a:0 "ø­ä´XÇ x±%¸ÐÅ x¬Þ¹”² ³¥ÇDÇ >ÌÄ³k¸ Ä³NÆüÈ´Å|·."
+ personality_options.883.a:0 "°Æ°¹ t¹2±ÁÀ²ÂÐÅ DÆÈˆ× ÈP±tÕ|Å jÕä²."
+ personality_options.884.a:0 "•¼`¹DÇ ÈÈXÕìÅ ø­XÇ Æ¥Õ%¸DÇ ‹ÅTÖÜÂ²ÐÇ."
+ personality_options.884.b:0 "À­qÈü¬ ÖÁÀXÕÇ"
+ personality_options.884.c:0 "À­qÈDÇ ÇÖjÕä²"
+ personality_options.885.a:0 "´°¬ ô¼tº ‹ÈNÇ 0®ŒÖ|¹ HÅä²."
+ personality_options.5008.c:0 "0®ìÅ`Õ Â ˆÇ”² T³ Î¹NÇ ¬ÀŒ·ä´DÇ ´°¬ LÅà¬ ˆÇä²."
+ personality_options.5008.dd:0 "tÇ È³ä´DÇ ´Åµä² l´|Å`ÕÀÉ LÅÀÉ..."
+ personality_options.5008.e:0 "¬œ°jÕ Çä´DÇ ÇtÕ 0®Ž´tÕ|Å jÕä²."
+ personality_options.5014.c:0 "´Æ‹ÈŒ¬Ä³ °Æ°¹ °Æ¬¹¬ ÿ»DÇ Â ˆÇ”² ¬ÀŒ·ä´ÐÅŒ¬ X´ì·ÃìÅ ˆÇä²."
+ personality_options.5015.c:0 "ø­XÇ EÌ„ÇDÇ UÖ³XÕÇ!"
+ personality_options.5017.c:0 "ù²iÖXÕÀÉ È¹!"
+ personality_options.5017.e:0 "ÄÉìÂ<Çj¸ Ž±Ž· ¬ÀŒ· ˆÇ´Å?"
+ personality_options.5017.dd:0 "©Í©¬DÇ DÆTÖXÕ2¸ x±%¸XÕÇ"
+ personality_options.5018.c:0 "°Æ¬¹”² tÇì·jÕ D¾­ÈxÇ ”Í8ÁÐÅ ³QÇXÕ0® ÇtÕ m­¬ ÇÐÆDÇ °ÆŒÖÜÂÏ|Å jÕä²."
+ personality_options.5018.dd:0 "ø­ä´XÇ 4»ÀÉhÕDÇ tÇ©ÆXÕÇ!"
+ personality_options.5018.f:0 "tÇ )¼•¼<Çj¸ °Æ¬¹ …ÈÁm­ä´tÇ DÅ4»ƒ¬Ä³ ¨ºt¹Œ¬ `Õ Â ˆÇä²..."
+ personality_options.5019.c:0 ".ÇÝ¹jÕ àÂ ¬ÀÅÅÐÅ ,ÒÇXÕÇ."
+ personality_options.5019.dd:0 "°Æ¬¹ m­à¬ÐÅ ¬¥²jÕ jÕ Î¹NÇ È³DÇ ä´ìÅ“±DÅ|·."
+ personality_options.5022.c:0 "tÇƒ¬DÇ jÍ³jÕ jÖ©ÆXÕÇ, 0®%¶,Ì àÂ8ÁÄ¬|Å!"
+ personality_options.5023.c:0 "ø­ä´tÇ T³ ‹ÈNÇ pÈt¬<Çj¸ ÖÁÀXÕÄ³k¸ m­¬¬ Ä³NÆ|Å jÕä²."
+ personality_options.5023.dd:0 "°Æ¬¹”² T³ ˜°NÇ .Á¼ÐÅ ,ÒÇhÕ<Çj¸hÃ ø­ä´DÇ ÀÉÐÆ`Õ Â ˆÇä²."
+ personality_options.5060.a:0 "e×ø»m¸p­!"
+ personality_options.5024.c:0 "´° µÑÈ|¹ —¼´Åœ° t¬ ÆÅä²!"
+ personality_options.5024.dd:0 "°Æ¬¹”² xÆP­ ¬m­tÇä²!"
+ personality_options.5025.c:0 "°Æ°¹ [Root.Monarch.GetTitle]ÐÅŒ¬ ¬¬ÀtÕ|ÅjÕä²."
+ personality_options.5027.c:0 "ŽÈ T³ |ÅìÂ,Ì Õj¸ø­¨·DÇ ”ÍÄÉtÕ ô¼Ç."
+ personality_options.5027.dd:0 "[Root.Monarch.GetName]”² tÇ 0®ŒÖ|¹ jÖ©Æ`Õ ƒ¬tÇä²."
+ personality_options.5040.a:0 "°Æ¬¹ ÈŽ´XÇ Ž´(Ó|¹ Ì¿¬¹ Q¿DÅ|·."
+ personality_options.5040.b:0 "¥ÇP­ ÈÖ(¸ äÎ¬¹XÐü·DÇ ¬.ÁXÕ|·."
+ personality_options.5040.c:0 "[Root.Monarch.GetTitle]Ø®Á 1Á,ÌDÇ ÐÆXÕàÂä²..."
+ personality_options.5040.d:0 "[Root.Monarch.GetTitle]tÇ(¬) Ç®DÇ ¬xÇÈ<Çj¸ ¬Å³XÕäÂ Â ˆÇÄ³k¸ ÈÕ©ÆXÕÇ."
+ personality_options.5040.e:0 "[Root.Monarch.GetTitle]XÇ ‘ÇNÇ ¬ÀÅÅDÇ ÄÉ‰ÕXÕ0® 1µ ‹ÈNÇ  °(Åp­."
+ personality_options.5045.a:0 "[Root.Monarch.GetTitle]XÇ .ÁjÕ ø¼1Áü¬ »º ü³9ºNÇ Ç8»è²ä´NÇ D¾œ°¼DÅ È¹EµXÕä²."
+ personality_options.5050.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ø­ä´DÇ ŒÖ.ÇXÕÄ³k¸ XÕÇ."
+ personality_options.5050.b:0 "[Root.Monarch.GetTitle]tÇ(¬) ¬xÇÈ<Çj¸ D¾œ° ¼Ä³k¸ XÕÇ."
+ personality_options.5051.a:0 "tÇ Ð¹‹Ã¼¯ä´DÇ ¼´À´°|·!"
+ personality_options.5051.b:0 "ø­ä´tÇ ä²x¹ ¬ÀÅÅÐÅ ÄÉœÍXÕÄ³k¸ Å³2¸jÕä²."
+ personality_options.5051.c:0 "ˆ´ÉÓ ˆ´Ì¹NÇ ø­ä´XÇ ÅÅ4»ÐÅ ³jÕ ÌÕàÂtÇ Ž´qÈXÕä²”² ƒ¬DÇ XÇø»jÕä²."
+ personality_options.5053.a:0 "[Root.Monarch.GetTitle]tÇ(¬) 4»íÅ ¬ÖDÇ ¬Å³XÕÄ³k¸ XÕ|·."
+ personality_options.5054.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ©Í©¬DÇ DÆTÖXÕ2¸ ÜÂÄ³XÕÄ³k¸ XÕÇ."
+ personality_options.5054.b:0 "[Root.Monarch.GetTitle]tÇ(¬) ¨ºP´¬ ‰Õõ¼tÕÈÉ Â ˆÇ”² tÕ°¬EÌtÇ ˆÇ”²ÀÉ ´À´Óô¼Ä³k¸ ÈÕ©ÆXÕÇ."
+ personality_options.5055.a:0 "[Root.Monarch.GetTitle]tÇ(¬) Ž´(ÓXÇ ÕÉÄÖ|¹ tÕ°¬XÕÄ³k¸ ÈÕ©ÆXÕÇ."
+ personality_options.5055.b:0 "[Root.Monarch.GetTitle]tÇ(¬) tÕù² à¬Ç ­¬¹|¹ P­´ÌXÕÄ³k¸ XÕÇ."
+ personality_options.5056.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ¬xÇÈ<Çj¸ ä²è¸Ä³k¸ XÕÇ."
+ personality_options.5062.a:0 "[Root.Monarch.GetTitle]tÇ(¬) °Æ¬¹|¹ ³àÂXÕìÅ ¼¸ÅXÕÄ³k¸ XÕÇ."
+ personality_options.5062.c:0 "°Æ¬¹”² ø­ ÖÝÐDÇ ±NÇ ”¼Çj¸ UÖ³tÕ|Å jÕä²."
+ personality_options.5073.a:0 "ÝÀ°À ¼ 8Á® É¬."
+ personality_options.5073.b:0 "ÝÀ°À ¼ xÇ%¸ É¬."
+ personality_options.5073.c:0 "8Á® ¼ xÇ%¸ É¬."
+ personality_options.5058.a:0 "ø­ä´DÇ øÄ´Å„¼¬¹Ç!"
+ personality_options.5058.b:0 "[Root.Monarch.GetTitle]tÇ(¬) jÆ ø­ä´tÇ `ÅÍŽ´0Ñ ø­ì·jÕ Œ­¬¹|¹ ¬ÈÉ Â ÆÅ”²ÀÉ 2Á…ºXÕÄ³k¸ XÕÇ."
+ personality_options.5059.a:0 "ø­ä´ÐÅŒ¬ m­¬ ¬ÀÅÅÐÅ ­tÕ Ö%¸ ­Ä¬|¹ ÈHÅXÕÇ."
+ personality_options.5061.a:0 "°Æ¬¹”² tÇƒ¬DÇ hÃ9ºDÇ )¼•¼DÇ >ÌDÅ|Å jÕä²."
+ personality_options.5064.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ø­ä´DÇ ÇÖXÕÄ³k¸ XÕÇ."
+ personality_options.5065.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ø­ä´XÇ ÉÓTÖ|¹ ÇtÕ ø­ä´DÇ ÇÖ`Õ Â ˆÇä²."
+ personality_options.5065.b:0 "[Root.Monarch.GetTitle]”² ¬ñ´DÇ tÕ°¬tÕ|Å jÕä²."
+ personality_options.5066.a:0 "°Æ¬¹”² ø­ä´DÇ ü¬ŒÁÉÓ¬XÕà¬ ˆÇÈÅä²."
+ personality_options.5068.a:0 "°Æ¬¹”² °Æ¬¹XÇ T×ÈDÇ T³ ˜Ç (Â¨¬|Å jÕä²."
+ personality_options.5071.a:0 "[Root.Monarch.GetTitle]tÇ(¬) T³ ˜°NÇ pÈt¬<Çj¸ ÖÁÀXÕÄ³k¸ XÕÇ."
+ personality_options.5075.a:0 "[Root.Monarch.GetTitle]”² ÈÀj¸´Æ Œ­¬¹ ©ºk¸DÇ Ì¹ä´´Å|Å jÕä²."
+ personality_options.5077.a:0 "[Root.Monarch.GetTitle]tÇ(¬) ä²ð¸ ƒ¬tÇä²."
+ personality_options.5082.a:0 "0®tÈ à¬Ç5Îä´DÇ Çù­XÕÀÉ JÅà¬ ÈÀj¸´Æ 0®ŒÖ|¹ KÌœÍtÕô¼Ç."
+ personality_options.5083.a:0 "¬©¬DÇ e×ÈXÕ|·"
+ personality_options.5085.a:0 "ø­t¬ èÖ,Å T³ äÎ|Å tÕ!"
+ personality_options.5085.b:0 "[Root.Monarch.GetTitle]Ø®Á jÎˆ× tÇ ¬ÀÅÅDÇ ¬Å³XÕäÂ ƒ¬tÇä²."
+ personality_options.5086.a:0 "ø­”² ÈÐ¹ ¬Çø» ˆÇ”² DÅtÇµ´Å|¹ ¬ÀÉà¬ ˆÇä²!"
+ personality_options.5088.a:0 "tÇ 0®ŒÖ|¹ tÇ©ÆtÕÁ °Æ¬¹ tÇÃÆä´ü¬ TÖtÕXÕÇ."
+ personality_options.5092.a:0 "tÇ 0®ŒÖ|¹ ÈÒÀÐ xÆm­ 4»íÅÅÅÇä´ÐÅŒ¬ 8Á®DÇ Ž´ü¬XÕÇ."
+ personality_options.5097.a:0 "É¬Ç|¹ ÜÂÄ³XÕÇ."
+ personality_options.5098.a:0 "m­¬¬ È «ºDÇ ¼DÇ Â ˆÇä²tº|Å."
+ personality_options.5098.b:0 "[Root.Monarch.GetTitle]”² tÇ ÄÈxÇä´DÇ ÄÅÉˆ× è²Á`Õ ƒ¬tÇä²."
+ personality_options.6000.a:0 "tÕp­DÇ ¥Ç2¸XÕ|·."
+ personality_options.6001.a:0 "[Root.Monarch.GetTitle]Ø®Á T³ ˜°NÇ ƒ¬DÇ 0®³XÕàÂä²!"
+ personality_options.6004.a:0 "[Root.Monarch.GetTitle]”² °Æ¬¹XÇ È³DÇ jÍ³jÕ jÖ©Æ`Õ Â ˆÇ”² )¼•¼DÇ LÅŒ¬ .´ ƒ¬tÇä²."
+ personality_options.6013.a:0 "²l­à´ ¼Ü´ÜÂ p¬0®ÐÅ ˆÇ´Å|ÅÌ¹ jÕä²."
+ personality_options.6015.a:0 "[Root.Monarch.GetTitle]Ø®Á”² tÇ|¹ 1Á,Ìü¬ °¬iÕXÕ8® ÐÆXÕàÂä²."
+ personality_options.random.3.a:0 "[Root.Monarch.GetTitle]XÇ ”ÆÐÆä´tÇ ˜Ì¬¹`Õ ƒ¬tÇä²."
+ personality_options.random.8.a:0 "[Root.Monarch.GetTitle]¬ ˜Ì¬¹`Õ ƒ¬tÇä²."
+ personality_options.random.14.a:0 "ä¹9ÖÈxÇ <»t¬ä´!"
+ personality_options.random.15.a:0 "4»0®¬ DÅÌ² ©Æ0®¬ ¹Â(Ó|¹ °¬ÈjÕä²."
+ excellent_diplomacy_modifier:0 "ð¶´Åœ° xÆP­"
+ desc_excellent_diplomacy_modifier:0 "°Æ¬¹”² ÌÖm¹jÕ xÆP­È …º1ÁXÇ °¬äÂDÇ É0®à¬ ˆÇä²."
+ indulgent_feast:0 "µÑXÎÇ¬ 1Á,ÌÐÅ Í³¼ä²"
+ opinion_more_eased_tension:0 "ä¹°Æ à¬pÈ´ 4®¥Ç¬"
+ personality_events.1.t:0 "[Root.Monarch.GetName]XÇ ä²‘ÅjÕ ­ìÂ¬À"
+ personality_events.1.d:0 "°Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) Ç|·tºÁ È(Ì ¬jÕ ÀÉÈ 8Ö0®ìÂDÇ ¬ÀÉŒ¬ ´ÈÅà¬, ­ÈXÇ YÕÇä´ü¬  Ñ`¸XÕpº ÜÂ¬DÇ ô¼È°µÂÈ²ä². [Root.Monarch.GetSheHe]”² [Root.Monarch.GetHerHim]¬ °ÆüÈNÆ xÇ¬XÇ ÄÉ¬¹|¹ T³ ˜Ç tÇtÕ`Õ Â ˆÇÄ³k¸ )¼)¼á¬á¬XÇ YÕÇä´DÇ ÍY¾XÕ0® ÜÂ‘ÇˆÕµÂÈ²ä². \nÌ¹‹Å [Root.Monarch.GetSheHe]¬ ©Í„´jÕ ÜÂ¬ü¬ ÇÐÆDÇ [Root.Monarch.GetHerHis] .ÁÝÐ „´|ÅÐÅ ,ÒÇ`Õ Â ˆÇä²tº, ø­³j¸ 1Á¥ÇXÕìÅ [Root.Monarch.GetName] [Root.Monarch.GetHerselfHimself] [Root.Monarch.GetHerHis] x±%¸DÇ µÑtÕ Œ­ÇÇ¬ .´ Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ personality_events.1.a:0 "°Æ¬¹”² °Æ¬¹ üÈÀ¼XÇ <»¬¹È ÖÁÀDÇ tÇtÕXÕ0® ÇtÕ x±%¸tÕ|Å jÕä²."
+ personality_events.1.a.tt:0 "°Æ¬¹XÇ µÑXÎÇ”² [Root.Monarch.GetHerHis] ¶ÀÐÅÁ ¬¥Ç pÐ ­ìÂ¬À|¹ ”Íl­XÕpº [Root.Monarch.GetHerHis] ÜÂ¬ü¬ ˜°|·XÇ ÇÐÆDÇ È¹LÇÏ® øÄ ƒ¬…ÇÈ²ä².\n2ÆÁÉ ÜÂ¬Ì¹tÇ [Root.Monarch.GetSheHe]¬ [Root.Monarch.GetHerselfHimself] YÕÄ¬ÐÅ tÇ„¹DÇ ¨°8® Â ˆÇDÇÀÉ Ð¹tÕÉ ƒ¬…ÇÈ²ä²."
+ personality_events.1.b:0 "µÑXÎÇ”² àÂü¬ xÇ¬XÇ •¼YÎDÇ tÇtÕtÕ|ÅÌ¹ jÕä²."
+ personality_events.1.c:0 "ø­4µƒ¬ÐÅ ËÅä¹ìÅ [Root.Monarch.GetHerHis] ÜÂ¬ü¬ È³DÇ ­°D¾XÕÀÉ Ð¹Ç."
+ personality_events.2.t:0 "ÀÉÄ³ È‘Ç•¼XÇ ¼È"
+ personality_events.2.d:0 "[Root.Monarch.GetHerHim] 8ÁÁÀÐÅ ä¹Ì¸´ 1ÁäÂjÕ YÕÝÀxÇ [Root.Monarch.GetName]NÇ(”²) ÀÉÄ³ÐÅ yÔ `¾8È ˆÇµÂÈ²ä². [Root.Owner.Capital.GetCapitalName]XÇ [Root.Monarch.GetHerHisCap] ­ÈÐÅ”² [Root.Monarch.GetHerHis] ÀÉÄ³ ìÎ	¸XÁ<Çj¸ ²´ n³xÇ )¼ä´tÇ ìÅÿ· ˆÇà¬, °Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) ø­ƒ¬ä´DÇ ¼|·ô¼p¬˜° È¬¹XÕ”²p³ ÜÂ¬DÇ ä´tÇä¬ iÕÈ²ä².\nÀÉÄ³ä´j¸ xÇtÕ [Root.Monarch.GetHerHim] ¼|·ô¼”² [Root.Monarch.GetHerHis] àÂXÕä´(ø­¬¹à¬ UÆäÂ ŒÖÄ¬ ô²ù²Ç)XÇ XÇl­ìÂÄ³ ÏLÈÀÉÌ¹ °Æ¬¹ m­¬”² [Root.Monarch.GetSheHe]¬ üÈÀ¼ 8ÁÄ¬ÐÅ ³tÕ ÉD¾jÕ Ä¬Öä´DÇ µÑjÕ p¬³jÕ 1ÁèÍj¸Ž´0Ñ ÖÝÐDÇ ¼à¬ ˆÇµÂÈ²ä²."
+ personality_events.2.a:0 "8ÁÁÀNÇ 8Ì ±NÇ ó¬tÇp­."
+ personality_events.3.t:0 "ÍìÓ È‘Ç.ÂXÇ ¼È"
+ personality_events.3.d:0 "[Root.Monarch.GetName]NÇ ÍXÇ 0®¥²ü¬ ÖÜÐÐÅ pÐ ­ìÂDÇ ô¼ÆµÂÈ²ä². ¹ÒtÇXÕp¬˜° ÖàÂÈxÇ Í0®|¹ …ÇÂXÕ0® ÇtÕ Î¹NÇ x±%¸DÇ  0®¸ÆÆà¬ [Root.Monarch.GetName]NÇ [Root.Monarch.GetHerHim]ÐÅŒ¬ ¬8È(Æ ¨ºà´ 4»0®|¹ 0®XÀŒ¬ „´tÕXÕà¬ ¬ÇpÈË¹iÕÈ²ä².\n|ÇŽ´ ¬ÀŒ·ä´NÇtÇ ä¹%¸DÇ Ñ¼È xÇ ƒ¬<Çj¸ ¬üÈ `Õ ƒ¬…ÇÈ²ä² (D¾üÂ ƒ¬NÇ Ð¹`Õ ƒ¬Ä³ ÆÅµÂÈ²ä²). ø­ì·˜° 2Æ˜·Ä³k¸ ÀÉÁ´ tÇ Õj¸È¸ÒXÇ °¬ü¬j¸ °Æ¬¹ [Root.Monarch.GetTitle]NÇ(”²) [Root.Monarch.GetSheHe]¬ üÈ¥ÇjÕ DÆË¼jÕ Í0®|¹ KÌHÅ `Õ Â ˆÇµÂÈ²ä²."
+ personality_events.3.a:0 "8ÁÄ¬|¹ ¨µŒ¬XÕ|·!"
+ gun_designer_ruler:0 "Í0® 2ÁÄ¬Ç"
+ desc_gun_designer_ruler:0 "°Æ¬¹ p­NÇ µÑXÎÇ¬ 2ÁÄ¬jÕ ¹ÒÂjÕ .ÇÖXÇ Í0®|¹ ¬”Íà¬ ˆÇä²."
+ personality_events.4.t:0 "iÖ® ”Íl­"
+ personality_events.4.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ´Å°¹ ÜÂÈŽ´0Ñ ®DÇ KÌpÈ`Õ Â ˆÇ”² ¬¥²1ÁÐÅ ä¹Ì¸´ÈÅ<Çpº, ÈŽ´XÇ ®à¬¬ [Root.Monarch.GetHerHim]ÐÅŒ¬ ôÅ¬¹tºÁ tÇ ­ìÂNÇ ÑÉ)Ì ÂÉL®ÀÉ äÎLÈµÂÈ²ä². tÇNÆ ­(¸´ ¨ºà´ EÌä´ü¬ 'È8»¬'|·”² Çä´tÇ [Root.Capital.GetCapitalName]ÐÅ ¨ºìÅ Ž¬ Ñ´à¬ ÐÐl­´ÈÅµÂÈ²ä². [Root.Monarch.GetName] [Root.Monarch.GetHerselfHimself]Ä³ [Root.Monarch.GetHerHis] äÂØÕäÂÐÅÁ Î¹NÇ  °DÇ ô¼È°ÀÉÌ¹, ìÅÈˆ× À­®Á KÌpÈNÆ”² p¬¬¹¬ NºÈÅµÂÈ²ä².\n´Å²µ ¬ÀŒ·ä´NÇ tÇ x±%¸ä´DÇ ÛÕà¬ÝÀtÇ|·à¬ Ð¹XÕÀÉÌ¹, TÖYÕÐÅ ³jÕ °Æ¬¹XÇ ÀÉÝÂNÇ UÖäÂˆ× ˜²ÈÅµÂÈ²ä²."
+ personality_events.4.a:0 "‹ÈDÅ, tÇÈ ÄÉÈXÕÄ³k¸ x±%¸XÕÇ."
+ personality_events.4.b:0 "®DÇ... Ì¹ä´´Å|Å tÕ..."
+ personality_events.4.b.tt:0 "ðÅ®.ÂÐÅ ˆÇ´ÅÁ [Root.Monarch.GetHerHis] ©ºjÔ|¹ ÓÊÄ³k¸ °Æ¬¹ p­üÈ|¹ Ç.Çm¸Œ¬ ”±a´È²ä². 1Áõ¬ UÖ`¹NÇ ä¹°Æ ®°µÂÈ²ä²."
+ personality_events.5.t:0 "èÍø»|¹ ”Íl­XÕä²"
+ personality_events.5.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] µÑXÎ 0®¬ Ù³HÅ ¨ºà´ ÀÉÈ ÐÐl­ÐÅ pÐ ­ìÂDÇ ô¼ÆÀÉÌ¹ [Root.Monarch.GetHerselfHimself]XÇ tÇ„¹DÇ ¨µXÎ ¬ä²”² [Root.Monarch.GetHerHis] |ÅÝ¹NÇ 8ÁÄ¬XÇ YÕÇä´ ¬ÀtÇÐÅÁ ø­ä²ÀÉ 1Áõ¬XÕÀÉ »ºˆÕµÂÈ²ä². [Root.Monarch.GetHerHis] äÂ(ÓjÕ |ÅÝ¹tÇ [Root.Monarch.GetTitle]ÐÅ¬ ðÄ|·°¹ ƒ¬<Çj¸ ¨°T³|·Ä³ Ç³jÕ ÀÉ1Áä´ÐÅ ³jÕ [Root.Monarch.GetHerHisCap] ÄÖÐÆNÇ ¥ÇÈtÇ ÆÅÄÉ JÅµÂÈ²ä²."
+ personality_events.5.a:0 "'°Æ¬¹”² p¬xÇä´XÇ ´Åh® ÇÐÅ .Á œ°ÁÇtÇä´ü¬ ¬ä².'"
+ personality_events.5.b:0 "˜°”² °Æ¬¹ ÜÂ³XÇ Ç³jÕ ÈàÂDÇ HÅà¬ ´ÀDÅ¬ ƒ¬tÇä²!"
+ personality_events.6.t:0 "•¼È ¸Ó,Ì"
+ personality_events.6.d:0 "©¬,¸jÕ ðÅl­NÆ |±XÇ k°ÐÅ [Root.GetName]XÇ [Root.Monarch.GetName] [Root.Monarch.GetName]NÇ(”²) [Root.GetName] ÈíÅXÇ Â Î¹NÇ ÖÀÉ •¼`¹ü¬ •¼`¹ ÈµÑä´NÇ [Root.Monarch.GetHerHis] ÈÀj¸´Æ •¼È<Çj¸ ³´Ì.´ ƒ¬„ÇDÇ õ¬jÔXÕÆµÂÈ²ä².\ntÇ •¼ÈNÇ °Æ¬¹ UÆm­ ÈíÅü¬, ¬NÇ …ÈP­|¹ ÿ»”² ä²x¹ m­¬XÇ •¼`¹DÇ ÑÉ³1ÁˆÕà¬, ä²LÇ 8Á³|¹ ÇjÕ ÓN¸¬ .´ ƒ¬…ÇÈ²ä²."
+ personality_events.6.a:0 "¨ºà´ ¬ÀŒ·NÇ õ¬ÈjÕ ¬ÇÓDÇ ¼DÇ Œ­¬¹¬ ˆÇä²."
+ personality_events.6.b:0 "ÈQÇ ´ ¬ÀÉ..."
+ personality_events.7.t:0 "[Root.Owner.Capital.GetCapitalName]XÇ Ç³jÕ  Ñ`¸"
+ personality_events.7.d:0 "Æ ÑNÆ ø­ üÈü»ä´DÇ µÑXÎXÕ”² ÐÆ¬¹¬ 4»ÇÅxÇÀÉ DÆÈˆ× tÇtÕXÕ0® ÇtÕ [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerselfHimself]|¹ àÂYÕü¬  ÌYÕÐÅ ³jÕ ÄÅ­Ìœ° ðÅl­ÐÅ °º…ÇÜÂ0ÏµÂÈ²ä². Î¹NÇ YÕÇä´ íÅÜÂ [Root.Capital.GetCapitalName]ÐÅ ô¼´°8ÈÁ 8ÁÄ¬ Ì¹<»XÇ ÈÉÁÐÅ ³jÕ ¬¬tÕ|¹ ¼ˆ×à¬ ˆÇµÂÈ²ä².\ntÇì·jÕ ÀÉÄ³ÇXÇ ”Íl­”² tÇÈ [Root.Owner.Capital.GetCapitalName]ÐÅ ˆÇ”² [Root.Monarch.GetTitle] [Root.Monarch.GetHerselfHimself]¬ üÈjÍjÕ Ç³jÕ  Ñ`¸ÐÅÁ ÈÈÐÅ tÇt¹¸µÂÈ²ä²."
+ personality_events.7.a:0 "õ¬Ž´XÕ0® 1µ ‹ÈNÇ  °(Åp­!"
+ personality_events.7.b:0 "°Æ¬¹”² T³ Î¹NÇ õ²DÇ >ÌDÅ|Å jÕä²."
+ personality_events.8.t:0 "ÈÁÇü¬ ÉÓTÖÐÅ ˆÇ´ÅÁ ,Æ¼x¹ ƒ¬NÇ 4»ÇÅxÇ¬"
+ personality_events.8.d:0 "[Root.Monarch.GetHerHis] ÈXÇÐÅ ³jÕ ”Íl­”² [Root.Monarch.GetName]tÇ(¬) ³m­ä´ ¬XÇ ­Ä¬ÐÅ [Root.Monarch.GetHerselfHimself]¬ ­ìÂDÇ ¬Œ¬ Ì¹ä´ÈÅµÂÈ²ä². ÈÁÇtÇ˜° ¼ä² ¶”² ø¼m­ÐÅÁ Nº¬¹ ¨µ´ÅÄÉ ó¬ÐÅÁXÇ m­¬XÇ ‰ÕÙ³NÇ pÈ® ¼ÐÅ ÆÅ”² •¼ä´ÐÅ XÇtÕÁ¬ DÅÈ²|· Î¹NÇ ÈµÑä´ÐÅ XÇtÕ ÈtÕÑÉÈ²ä². [Root.Monarch.GetName]NÇ(”²) ÈÁÇ, ÉÓTÖ ¼ m­È ‰ÕÙ³XÇ •¼ÐÅ ­jÕ EÌDÇ ðÄ0® ÇtÕ [Root.Monarch.GetSheHe]¬ ¼¬¬jÕ ¨ºà´ ÇÌ¸|¹ ¼ÕÐ<Çj¸ tÇ 8»ÈÐÅ ­jÕ m­ÈÈxÇ  Ñ`¸DÇ tÇL°´Å È°µÂÈ²ä². tÇƒ¬tÇ [Root.Monarch.GetTitle]tÇ(¬) ¼|·”² (ÌtÇÈDÇ Ì¹ä´ Â ˆÇDÇÀÉ”² UÖäÂXÕÀÉ JÅÀÉÌ¹ ä²x¹ m­¬ä´ü¬ D¾P­`Õ Lµ °Æ¬¹ m­¬XÇ ÇÁÀÐÅ „´…ºˆ× (ÌtÇ|¹ ¬8ÈTÆµÂÈ²ä²."
+ personality_events.8.a:0 "iÕù²jÕ ¬È …º„´?"
+ personality_events.9.t:0 "È¹%¸ <»‹Å?"
+ personality_events.9.d:0 "T³ ¬XÎ¬ ®°NÇ <»ÈÉÐÅÁ ®DÇ Ì¹Ü´”² D¾¼NÇ [Root.Monarch.GetName]DÇ(|¹) <ÕtÕ¬ÀÉÌ¹ [Root.Monarch.GetHerHis] äÂØÕÐÅÁ [Root.Monarch.GetSheHe]”² 4»¸Å¬|¹ Ì¹ä´ Â ˆÇÈÅ”²p³ [Root.Monarch.GetSheHe]”² tÇ ƒ¬DÇ 'È¹˜° <»‹Å'tÇ|· ˆ´¸µÂÈ²ä². °Æ¬¹XÇ [Root.Monarch.GetName]NÇ(”²) tÇ <»‹ÅDÇ È¹ÜÂ”² ƒ¬tÇ ÇàÂÐÅŒ¬ ÝÀ…º%¸ü¬ jÖ%¸DÇ ¬8È,Æ ƒ¬tÇ|·à¬ üÈ¥ÇiÕÈ²ä², °Æ¬¹XÇ m­¬|¹ ÇtÕÁ Ç³jÕ |ÇDÇ `Õ Â ˆÇ”² ˜×NÇ Ð¹`Õ ƒ¬Ä³ ÆÅtÇ”Æ."
+ personality_events.9.a:0 "È¹%¸ <»‹ÅDÇ È¹àÂä²."
+ personality_events.10.t:0 "ÀÉíÅ ¼©º"
+ personality_events.10.d:0 "ÀÉíÅ Œ­%¸ÇNÆ ø­XÇ ŒÁ‘ÇxÇä´ É |ÇŽ´ ¬ÀtÇXÇ Ä¼p¬ DÅÌ² „´ÁÇ<Çj¸ ÜÂ‘Ç´ ƒ¬NÇ ´ÅÌ´ |ÇxÇÀÉ m­¬È<Çj¸ É”ÆjÕ |±ÁÇ<Çj¸ 1Á¥ÇˆÕµÂÈ²ä². 1ÁÁÉÇ, YÕÇ, À­qÈü¬ p¬¬¹XÇ .ÁÙ³¬ä´tÇ ¨ºP´ ¬¥²jÕ jÕ pÐ ŒÁ¬¹j¸ XÇ¬¬DÇ ˜°² Lµ, „´ÁÇ ù²¬ÀÇä´NÇ È¹hÎ´° „´ÁÇDÇ tÕ°¬XÕ0® ÇtÕ [Root.Monarch.GetName]ÐÅŒ¬ TÆµÂÈ²ä².\nù²¬ÀÇä´tÇ ÇàÂä´XÇ …Ç¥ÇÐÅ ³tÕ ¬­ÌXÕ”² ƒ¬DÇ ã´à¬ ˜°Á °Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) ø­ä´XÇ D¾8ÌjÕ ÁÀiÖÐÅÄ³ ˆ´l­XÕà¬ ŒÁ‘ÇxÇä´tÇ ˜Ç»ºˆÕä²”² ƒ¬DÇ UÖàÂˆÕµÂÈ²ä². õ¬ÈXÕà¬ ˜Ç |±XÇ´ Ó°¬NÇ ²l­Ä³ TÖ˜°Œ¬ XÕÀÉ JÅDÇ ƒ¬tÇÀÉÌ¹, tÇ Œ­%¸Ç|¹ l×ÝÀ<Çj¸ ø­ ÀÉíÅÐÅ ³jÕ °Æ¬¹XÇ Œ­%¸DÇ UÖ¥ÇÜÂ²Ð0® ÇtÕ ìÅ`¸DÇ ¬À©ÆXÕ”² ƒ¬NÇ DÅüÈ .Ç9ÖÈ…ÇÈ²ä²."
+ personality_events.10.a:0 "ø­ 8»È|¹ õ¬ÈXÕŒ¬ tÕ°¬XÕ2¸à¬ x±%¸XÕÇ."
+ personality_events.10.b:0 "°Æ¬¹”² tÇ ÁÀiÖDÇ tÇ©ÆtÕ|Å jÕä²!"
+ personality_events.10.b.tt:0 "tÇ §YÀÉ)¼§!ÐÅ ŒÁ.ÇXÕà¬ ˆÇ”² ¨ºà´ ÀÉíÅä´NÇ 30D± Ù³HÅ §G-0.05§!XÇ ÇXÎÄ³ ¬ŒÁ ô¼±²Â|¹ ¼DÇ ƒ¬tÇà¬, jÍŒÁ ÇXÎÄ³ÐÅ tÇt¹ÀÉ »ºjÕ ¨ºà´ ÀÉíÅä´NÇ ‰ÉÜÂ §G15§!Ì¹|Ð ÀÉíÅ ÇXÎÄ³¬ ¬ŒÁiÕÈ²ä²."
+ increasing_local_authority:0 "ÀÉíÅ ÇXÎÄ³ ÁÀ¹Â"
+ desc_increasing_local_authority:0 "°Æ¬¹”² ÀÉíÅXÇ Œ­%¸Çä´DÇ „´ÄÁXÕà¬ ø­ä´XÇ ŒÁ‘ÇxÇä´DÇ (ÌÀÉtÕÁ tÇ ÀÉíÅÐÅ ³jÕ °Æ¬¹XÇ Œ­%¸DÇ `¾t¹Œ¬ UÖ¥ÇÜÂ²Ðà¬ ˆÇµÂÈ²ä²."
+ just_settlement_modifier:0 "¬ñ´ DÆTÖ"
+ desc_just_settlement_modifier:0 "°Æ¬¹”² °Æ¬¹ m­¬XÇ jÕ üÈÐÅÁ |Ç´Åœ° ÀÉíÅ ¬ñ´DÇ õ¬ÈXÕŒ¬ ä²¹à¬, ¨ºà´ m­ü»ä´ÐÅŒ¬ J®NÇ xÇÁÀDÇ üÈÈÅµÂÈ²ä²."
+ personality_events.11.t:0 "õ¬ÈjÕ [Root.Monarch.GetTitle]"
+ personality_events.11.d:0 "[Root.Monarch.GetName]Ì¹|Ð ôÅ,¸jÕ ÀÉÀÉÇä´DÇ P¿¼° Â ˆÇ”² p­üÈ”² ‡º ÆÅµÂÈ²ä². ø­ì·˜°, [Root.Monarch.GetHerHisCap] ³¬¹xÇä´tÇ mÕÁÀ 1Áõ¬XÕ”² ƒ¬NÇ DÅÙ²È²ä². Lµj¸”² m­ü»ä´tÇ ¹ÒÈjÕ ­¬¹Ç˜° 8Á4»­, DÅÈ²tº ä²x¹ ÈŽ´ ­¬¹ä´tÇ [Root.Monarch.GetName]XÇ ³¬¹xÇ<Çj¸ jÖÙ³XÕ”² x¬ p¬Ž´XÕ0®Ä³ iÕÈ²ä². tÇð· ­¬¹ÐÅ ³jÕ ÄÐÐÆÁ XÕ˜°¬ °Æ¬¹ÐÅŒ¬ Ä³)ÌˆÕµÂÈ²ä². ³Éä´NÇ ø­¬ °Æ¬¹XÇ .ÁXÇ|¹ EÅ©ÆXÕà¬, m­ü»ä´DÇ à¬µÑÐÅ `¾¸Ò°¹ä²à¬ ÿ»µÂÈ²ä²."
+ personality_events.11.a:0 "­¬¹|¹ 8»EÌjÕä²."
+ personality_events.11.a.tt:0 "tÇ §YÀÉ)¼§!NÇ 30D± Ù³HÅ §G-2§!XÇ ˆ´Ì¹Ä³ ¬ŒÁNÆ §R25%§!XÇ 8Á® ¬ŒÁ|¹ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ personality_events.11.b:0 "­¬¹|¹ 9Æ8ÖjÕä²."
+ personality_events.11.b.tt:0 "tÇ §YÀÉ)¼§!NÇ 30D± Ù³HÅ §R1§!XÇ ˆ´Ì¹Ä³ É¬NÆ §G25%§!XÇ 8Á® É¬|¹ »ÅDÇ ƒ¬…ÇÈ²ä²."
+ personality_events.11.c:0 "ÀÉíÅü»ä´tÇ tÕ°¬XÕŒ¬ Å°P´Ç."
+ chastised_governor:0 "ÀÉíÅ ­¬¹|¹ 8»EÌˆÕä²"
+ desc_chastised_governor:0 "tÇ ÀÉ)¼XÇ üÈü»ä´j¸Ž´0Ñ ÄÐÐÆÁ¬ Ä³)ÌjÕ ²´, °Æ¬¹”² ÀÉ)¼ ­¬¹|¹ 8»EÌˆÕµÂÈ²ä². 8Á®DÇ ¨Ö(ÇÈ<Çj¸ ÕÉÂXÕŒ¬ tÕÉ ø­XÇ Œ­Ç”² h®LÈÀÉÌ¹, ÀÉ)¼ üÈü»ä´ÐÅŒ¬  °Æ¬¹XÇ xÇ0®”² UÖà¬tÕLÈµÂÈ²ä²."
+ defended_governor:0 "ÀÉíÅ ­¬¹|¹ ÀÉÀÉˆÕä²"
+ desc_defended_governor:0 "tÇó¬XÇ ÀÉíÅ ­¬¹”² ø­ä²ÀÉ xÇ0®¬ ÆÅÀÉÌ¹, °Æ¬¹”² UÆäÂXÇ ¨ºà´ Œ­Ç|¹ ø­|¹ ÀÉÀÉXÕ0® ÇtÕ tÇ©ÆˆÕµÂÈ²ä². U³„´ÐÅ Î¹NÇ È³tÇ °Æ¬¹XÇ ®à¬j¸ X×ì·ä´´Å5ÆÈ²ä²."
+ personality_events.12.t:0 "[Root.Monarch.GetTitle]XÇ ø»U³"
+ personality_events.12.d:0 "[Root.Monarch.GetName]XÇ µÑXÎ”² ­Ì¸ÐÅÁ Ž´0Ñ è²ÂjÕ ÁÀxÇä´, ìÂÀÉ´Å õ¬TÖm­ À­qÈL®ÀÉ ¨ºP´XÇ Ž±„·Ì¹jÕ ÖpÈj¸ ¹ÒÕÉÀÉ´ÅÀÉà¬, ¨ºà´ ¬ÀŒ·ä´NÇ °Æ¬¹XÇ [Root.Monarch.GetTitle]tÇ(¬) .ÁjÕ È¹LÇ(Å|¹ ¬ÀÉà¬ ˆÇä²à¬ ÝÀ¬iÕÈ²ä². ø­ì·˜° [Root.Monarch.GetName]tÇ(¬) ø­ä´DÇ äÂÝ¹ÜÂ0Ïä²à¬ ÝÀ¬XÕ”² jÕ ÑÉè²tÇ ˆÇµÂÈ²ä². [Root.Monarch.GetHerHisCap] ÇàÂXÇ ¬qÈü¬ ÀÉÀÉÇä´NÇ °Æ¬¹¬ ­õ¬Á|¹ ©Í„´ˆ× jÖ©ÆXÕÀÉ »ºtÕTÆä²à¬ ÝÀ¬iÕÈ²ä². D¾k¸ [Root.Monarch.GetHerHis] µÑXÎ 0®¬ Ù³HÅ tÇä´tÇ ­õ¬ÁÐÅÁ Î¹tÇ 1Á¥ÇXÕÀÉ JÅXÅT³|·Ä³ ø­ä´XÇ ¬Ç°Àü¬ Æ¥Õ%¸NÇ ÁÀù²iÕÈ²ä². ø­¬¹à¬ Î¹NÇ ¬ÀŒ·ä´NÇ ø­ä´tÇ õ¬TÖm­DÇ ÇtÕ Î¹NÇ |Çä´DÇ `Õ Â ˆÇä²à¬ üÈ¥ÇiÕÈ²ä²."
+ personality_events.12.a:0 "°Æ¬¹”² ¨ºà´ ÖÜÐXÇ ðÅà¬üÈXÇ|¹ ÀÐÓtÕ|ÅjÕä²!"
+ personality_events.12.b:0 "°Æ¬¹ ÖqÈä´NÇ ÿ»DÇ Â ˆÇä²."
+ personality_events.12.c:0 "[Root.Monarch.GetName]XÇ jÎ™Ìä´DÇ Ä¬Á <ÕtÕä²È²Ç"
+ true_republican_virtues_modifier:0 "8Ì´ õ¬TÖm­XÇ ø»U³"
+ desc_true_republican_virtues_modifier:0 "°Æ¬¹XÇ ÀÉÀÉÇä´ÐÅŒ¬ Œ­jÕDÇ Ž´ìÅXÕÄ³k¸ XÕ”² ¨ºà´ ”Æ­ÌDÇ <»¬¹hÎ<Çj¸hÃ, °Æ¬¹”² Ž´ÈŽ´(ÓXÇ ¬ÀEÅjÕ Æ¥ÕÐÅÁ Ž´0Ñ °Æ¬¹ õ¬TÖÈÄ³|¹ ÀÉÏ´°à¬ ˆÇµÂÈ²ä²."
+ personality_events.13.t:0 "[Root.Monarch.GetName]XÇ ˜Ç ÿ»”² ø¼1Á"
+ personality_events.13.d:0 "°Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) °Æ¬¹ ˜°|·XÇ D¾ [Root.Religion.GetName] õ¬Ù³´Ìä´ÐÅ ³tÕ ä¹°Æ ­³iÕÈ²ä². ´Å²µ ¬ÀŒ·ä´NÇ ìÂÀÉ´Å [Root.Monarch.GetSheHe]¬ ±4» ¬ÀŒ·DÇ ˜Ç ÿ»´ÅÁ ˆ´àÂÇä´tÇ [Root.Monarch.GetHerHis] Óè²DÇ P×¬¹Ä³k¸ ´°„¼2¸ T´ä²à¬L®ÀÉ Ð¹iÕÈ²ä². [Root.Monarch.GetHerHisCap] ÈjÎjÕ jÎl­ $TREASURER$$NATURAL_SCIENTIST$$PHILOSOPHER$$ARTIST$$THEOLOGIAN$$MASTER_OF_MINT$$INQUISITOR$NÇ(”²) ¹Òˆ× Î¹NÇ ÜÂØÀü¬ EÅXÇXÇ ³ÁÀtÇ ´ÈÅµÂÈ²ä². °Æ¬¹XÇ jÎ`ÅXÕ”² pÈ¸ÅÇNÆ $TREASURER_POSS_PRONOUN$$PHILOSOPHER_POSS_PRONOUN$$ARTIST_POSS_PRONOUN$$THEOLOGIAN_POSS_PRONOUN$$MASTER_OF_MINT_POSS_PRONOUN$$INQUISITOR_POSS_PRONOUN$$NATURAL_SCIENTIST_POSS_PRONOUN$ jÎqÈä´tÇ àÂäÂjÕ Çä´DÇ LÇtÕXÕ0® ÇtÕ ÈŽ´ÐÅ hÎ,ÒˆÕä²”² ŒÁ8»tÇ  µÌ³0® ÜÂ‘ÇˆÕµÂÈ²ä²."
+ personality_events.13.a:0 "ÈÕ¼Ò ŒÁ¬¹!"
+ tolerance_backlash:0 "ô¼ÂüÈXÇ ¼Ù³"
+ desc_tolerance_backlash:0 "m­P­|¹ ÿ»ÀÉ JÅ”² Ç|¹ à¬ÇÁÉÐÅ „Ç…ºXÕ”² ÈEÌNÇ m­¬XÇ Å³äÂjÕ Çä´DÇ TÖ˜°Œ¬ Ì¹ä´ÈÅä². ø­ä´NÇ °Æ¬¹¬ ÿ»DÇ Â ÆÅ”² ‘ÇÇä´DÇ ÉìÂŽ´ÐÅ )¼XÎˆÕ<Çpº ç¬ ø­ä´tÇ ÇàÂä´XÇ àÂÄ³ä´DÇ ÇtÕ °Æ¬¹|¹ 0¼àÂ`Õ ƒ¬tÇ|·à¬ üÈ¥ÇˆÕä²."
+ personality_events.13.b:0 "´°¬ ² ,· ¥ÇØ²tÇÈÅä²È²!?"
+ intolerant_tolerance:0 "Ç.ÁÈxÇ µÑXÎÇ"
+ desc_intolerant_tolerance:0 "°Æ¬¹XÇ µÑXÎÇ”² ¨ºà´ xÆm­ àÂYÅÐÅ ³tÕ ­³XÕä²à¬ üÈ¥ÇXÕÀÉÌ¹, ‰ÕÙ³NÇ äÂÈNÆ ì²·à¬ °Æ¬¹ 	´àÂä´NÇ 2Æ«·Ù³HÅ 0®µÅ`Õ ƒ¬…ÇÈ²ä²."
+ personality_events.13.b.tt:0 "[Root.Monarch.GetName]XÇ ¹Ò1ÁÐÅ ¼XÕ”² ‰ÕÇ|¹ ˆÕ0® Lµ8»ÐÅ, ø­XÇ ­©ÆÄ³ ô¼±²Â”² ä²LÇ À¼Ù³XÎÐÅ XÇtÕ 4»¨ÖTÖ.´ ƒ¬…ÇÈ²ä²:"
+ personality_events.14.t:0 "ÈÁÇXÇ <ÕtÕ"
+ personality_events.14.d:0 "ÈÁÇNÇ T°ÌjÕ ƒ¬tÇà¬, ÉÓTÖ¬ È)Ì´à¬ Î¹NÇ 8ÁÔÆtÇ ÀÉœ° ÄÖÐÅÄ³ ÈÀj¸´Æ àÂü»ä´NÇ Èp­tÇ Ä³)ÌXÕ0® ÈÐÅ ÁÀ³ÈxÇ ÉÓ(ÆDÇ ¬Ý¹`Õ ƒ¬…ÇÈ²ä². ÈÁÇXÇ <ÕtÕ¬ ¬¥Ç ìÂ¬ˆÕX³ ó¬ÐÅÁ”² tÇÈ ÈŽ´˜° ³¬qÈä´XÇ T×ÈtÇ p¬XÇ ¨°DÅˆÇÀÉ JÅµÂÈ²ä². tÇð· ÀÉíÅä´ÐÅÁ”² .ÁÙ³¬ä´tÇ Á‹ÂŒ¬ „´¬¹üÈXÇNÆ ˆ´TÖ|¹ pÈ¥ÇXÕpº, ÀÉíÅtÇ m­¬XÇ |ÇŽ´j¸ µÑiÕ´”² x¬ )¼tÕ`Õ Â ˆÇµÂÈ²ä²."
+ personality_events.14.a:0 "°Æ¬¹”² tÇ ˆ´ÃjÕ ¬ÀŒ·ä´tÇ ø­ä´XÇ ¶ÀDÇ ¬Çt¬XÕ”² ƒ¬DÇ Ä³NÆ|ÅÌ¹ tÕ!"
+ personality_events.14.a.tt:0 "tÇ §YÀÉ)¼§!ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅNÇ ^Å<Çj¸ 15D± Ù³HÅ §G-5§!XÇ ˆ´Ì¹Ä³ ¬ŒÁNÆ §R-15%§!XÇ 8Á® Â…Ç ¬ŒÁ|¹ ª¬DÇ ƒ¬…ÇÈ²ä²."
+ kind_hearted_healing_ravages_of_war:0 "ÈÁÇ <ÕtÕXÇ XÎ.Ç"
+ desc_kind_hearted_healing_ravages_of_war:0 "8Á® ¬tºü¬ Èù­ÈxÇ ¬Çt¬ ÈEÌñ´DÇ µÑtÕ °Æ¬¹”² ÈÁÇ<Çj¸ ²<»ÓÉ”² ÀÉíÅÐÅ ÈÉÁNÆ ÉÓTÖ|¹ ŒÖõ¼XÕ2¸à¬ ÜÂÄ³ˆÕµÂÈ²ä²."
+ personality_events.14.b:0 "°Æ¬¹XÇ tÇuÇDÇ ÇtÕ tÇ ÁäÂDÇ tÇ©ÆtÕô¼Ç!"
+ personality_events.14.b.tt:0 "tÇ §YÀÉ)¼§!ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅNÇ ^Å<Çj¸ 15D± Ù³HÅ §G-2§!XÇ ÀÉíÅ ÇXÎÄ³ ¬ŒÁ|¹ ª¬DÇ ƒ¬tÇà¬, ¶jÕ ÇXÎÄ³¬ ‰ÉÜÂ §G25§!L®ÀÉ ¬ŒÁ.´ ƒ¬…ÇÈ²ä²."
+ personality_events.14.c:0 "ÀÉ)¼ ù²m­tÇ ˜Ì¬¹ÉtÇä²."
+ not_so_kind_hearted:0 "àÂÁjÕ µÅÈ ‘ÇÈ"
+ desc_not_so_kind_hearted:0 "ÀÉíÅ ¬ÀŒÖ¬ ÇðÅÈ<Çj¸ ŒÖõ¼´8® 0®ä²¬¹0®ô¼ä² °Æ¬¹”² tÇ ÀÉíÅXÇ ¨ºà´ „´¬¹üÈXÇÈxÇ ÖÜÐ|¹ ù¹,¸ˆ× µÅUÅXÕà¬ ˆÇä²."
+ personality_events.15.t:0 "tÇP­Ä³ °ÆP´8º¬¹?"
+ personality_events.15.d:0 "¯°.Á ¨°Ç XÕ˜°¬ ÀÉ)¼ ìÅ0®È0®Á ©º©¬´à¬ ˆÇµÂÈ²ä². ø­”² .ÇŒÏjÕ Ì¹ô²DÇ µÑtÕ ¨ºà´ ¬ÀŒ·ä´ÐÅŒ¬ ¬¥Ç tÇè²ÈxÇ ÖÜÐXÇ 8ÁÄ¬ KÌpÈÐÅ ³tÕ ¬t¹XÎà¬ ˆÇµÂÈ²ä². ´Å²µ ¬ÀŒ·ä´XÇ Ð¹ÐÅ 0µt¹tº ø­”² 1ÁË¬ÐÅ ³jÕ ÇØÕXÕà¬ Ž´Ä³U³jÕ tÕÁDÇ ÈÓXÕà¬ ˆÇä²à¬ XÕÀÉÌ¹, tÇP­XÇ ,¯„ÇÐÅ ±´Å¬ ¬ÀŒ·NÇ p¬XÇ ÆÅ”² ƒ¬ ¬µÂÈ²ä². 2Æˆ×2¸ Î¹NÇ ¬ÀŒ·ä´NÇ tÇ ¬ÀtÇD¾ .ÁÀÉÇNÆ ø­XÇ ¬ÀÁÀDÇ É0®”² ƒ¬<Çj¸ ô¼…ÇÈ²ä².\nÇ.Çm¸Œ¬ ¬À.ÇXÕ”² [Root.Monarch.GetWomanMan]tÇ|·”² [Root.Monarch.GetName]XÇ …º1ÁÐÅ 9ÖXÕìÅ, ø­ .ÁÀÉÇ”² [Root.Monarch.GetName]|¹ ÁÉÈ Ì¹˜° ÆÈxÇ 8»ÈÐÅ ³jÕ pÈ¸ÅÇ¬ .´ Â ˆÇ0®|¹ ¼|·à¬ ˆÇµÂÈ²ä²."
+ personality_events.15.a:0 "tÇ 8ÁÁÀtÇ XÎˆÉ ÁÐÅ ÀÉ¸tÇ¬ ¬Ý´jÕ ƒ¬ü¬ ¬ä²à¬? Ž±|·´Æ ¼ÁÀxÇp³!"
+ personality_events.15.a.tt:0 "Ç.Çj¸´Æ ¬ÀÁÀ¬j¸Á, ù²àÂXÇ µÑXÎÇ”² tÇ ¨°ÇNÆXÇ ³TÖ|¹ µÑtÕ Î¹NÇ ƒ¬DÇ »Åp¬˜°, 9ÖNÇ ø­XÇ ÝÀ¬tÇ ¬ÀäÂ Ä¼ ¬XÎ ÆÅä²”² ƒ¬DÇ ¼Ö¼° ÂÄ³ ˆÇµÂÈ²ä². ³Éä´XÇ XÇ¬¬NÇ ¬9Ö`Õ ƒ¬…ÇÈ²ä²."
+ personality_events.15.b:0 "ø­¬ °Æ¬¹XÇ àÂYÅDÇ D¾ÃÆ”² ƒ¬DÇ ÈÕ‹·`Õ Â ÆÅä²!"
+ personality_events.15.b.tt:0 "¬jÕ Ö2Æ¬ÐÅ ¬Ý´(Ì ø­|¹ D¾œ°XÕ”² ƒ¬NÇ …ÈP­Ä¬ÐÅ „´…º J®NÇ xÇÁÀDÇ üÈ ¬ÀÉÌ¹, °Æ¬¹ µÑXÎÇ¬ ÈÀj¸´Æ ¬ÀÁÀü¬ àÂ.ÁjÕ ¬À.Ç|¹ µÅ²t¹0® ÜÂ‘ÇXÕtº [Root.Monarch.GetSheHe] ¶jÕ ø­ƒ¬ä´ÐÅ ³jÕ ¬Ý¹DÇ ƒÇDÇ ÂÄ³ ˆÇµÂÈ²ä²."
+ personality_events.15.c:0 "ø­å° ´°„¼2¸ P´´Å|·."
+ inspiring_spiritual_guide:0 "ÖàÂÈxÇ ­È"
+ desc_inspiring_spiritual_guide:0 "°Æ¬¹XÇ µÑXÎÇ”² ­ÈDÇ ÖàÂÈxÇ ¬ÀŒ·ä´j¸ DÌ°Æà¬ ˆÇµÂÈ²ä². pÈ® ¹ÒtÇjÕ 1Á©¬DÇ ¬LÈT³|·Ä³ °Æ¬¹XÇ m­¬ÐÅ T³ Î¹NÇ 0®ìÅ|¹ `Õ Â ˆÇä²tº ÁÀ­ÆÅµÂÈ²ä²."
+ personality_events.16.t:0 "[Root.Monarch.GetName]XÇ jÖ¼jÕ ´°¬"
+ personality_events.16.d:0 "[Root.Monarch.GetName]NÇ(”²) tÇ ÜÂ³XÇ °ÆÂjÕ xÇ<»ä´DÇ LÅDÅ¬”² ƒ¬DÇ [Root.Monarch.GetHerHis] |Çü¬j¸ ¼ÀXÅµÂÈ²ä². tÇ”² [Root.Monarch.GetHerHim]¬ [Root.GetName] jÍà¬XÇ ÀÉ1Áä´DÇ ´°¬ÐÅ ¨ºDÇ Â ˆÇŒ¬ tÕüÈÈÅµÂÈ²ä². [Root.Monarch.GetName]XÇ ÈjÎjÕ jÎl­ä´NÇ tÇƒ¬tÇ tÇÄÖXÇ ¶ÀÐÅ ˆÇ´Å ¼ÅÈ¹˜° ‹ÈNÇ 0®ŒÖxÇÀÉ h®ì²XÅà¬, °Æ¬¹ÐÅŒ¬ Èü­XÕìÅ ø­ä´XÇ ÄÖ0¼ XÕ˜°|¹ Œ­%¸XÇ uÕìÂÐÅ |°ÌÆì²|·à¬ ”Æ­ÌˆÕä². ø­ ÈNÇ xÇ¬ÇÐÅŒ¬ X» É Â ˆÇDÇL®?"
+ personality_events.16.a:0 "Ç2±ä´NÇ ÌÖm¹jÕ P´Ì±|¹ ¬ÀÉà¬ ˆÇà¬, œ° ø­x¬ ¾à¬ öÂ2±."
+ personality_events.16.b:0 "°Æ¬¹ ‰ÕÈŽ´ ´Åµ¬ÐÅ Ç2±|¹ ÇjÕ õ¬¬DÇ Ì¹ä´ Â ˆÇDÇ x¬8Á..."
+ personality_events.17.t:0 "ÀÐxÇXÇ ¨º”¼tÇ ´ä²"
+ personality_events.17.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ÉÓÈDÇ ‹ÂŒ¬ ƒÇ”² [Root.Monarch.GetWomanMan]tÇ DÅÙ²È²ä². ¬ÀŒÖ ©¬À¼tÇ˜° ¬ñ´tÇ ˆÇ´ÅÄ³ [Root.Monarch.GetSheHe]”² ù²iÖXÕÀÉ JÅà¬ ä²x¹ ¬ÀŒ·ä´DÇ ÄÉÈÜÂ²Ðpº mÕÁÀ è²8ÖXÕà¬ s­t¬XÕŒ¬ ÁˆÇµÂÈ²ä². tÇð· ÜÐÄ³”² ÜÂ¬tÇ P×t¹pº ÈŽ´XÇ ¬¥Ç ®°NÇ ó¬L®ÀÉ ²Âpºä´ÈÅà¬, U³„´ÐÅ °Æ¬¹ ˜°|·”² èÖ,Å T³ HÅÈÈ<Çj¸ ¼°ÈÅµÂÈ²ä²."
+ personality_events.17.a:0 "ù²iÖXÕÀÉ È¹|·"
+ personality_events.18.t:0 "àÂÉjÕ ÀÆÁÉ„Ç"
+ personality_events.18.d:0 "|ÅìÂ,Ì Í0® ü­³ m­¬XÇ µÑXÎÇÐÅŒ¬ ¨ºP´NÆ jÎl­¬ ´ä²”² t¬ ˜×à´ |Ç…ÇÈ²ä². XÕÀÉÌ¹ m­È ¬ÀŒÖ¬ ´Å»µŒ¬ Ì³DÅ¬à¬ ˆÇ”²ÀÉ 8ÁìÂXÕŒ¬ àÂË¬DÇ ðÄtº ÀÉœ° ¨º•Æä´XÇ ©Í©¬DÇ É|Ç Â ˆÇµÂÈ²ä². tÇÃÆ m­¬XÇ µÑXÎÇä´ÐÅŒ¬ ô¼¸° [Root.Monarch.GetHerHis] ¬xÇÈ ÁàÂDÇ µÑtÕÁ, [Root.Monarch.GetName]NÇ(”²) m­È ¬ÀŒÖÐÅÁXÇ °Æ¬¹ …ÇÀÉ|¹ pÈ®)Å ¬.Á`Õ Â ˆÇ0®|¹ ¼·È²ä²."
+ personality_events.18.a:0 "°Æ°¹ ÈÐ¹ 2ÆtÕ¼NÇ p¬|Å."
+ careful_diplomatic_manouvering:0 "àÂÉjÕ xÆP­È ÀÆÁÉ„Ç"
+ personality_events.19.t:0 "[Root.Monarch.GetName]XÇ ÌÖm¹jÕ TÅ8Ö"
+ personality_events.19.d:0 "´Å°¹ ÜÂÈŽ´0Ñ TÅ8ÖYÕNÇ [Root.Monarch.GetName]XÇ èÍø»Æà¬, [Root.Monarch.GetSheHe]¬ Ç|·tºÁ [Root.Monarch.GetHerHis] D¾¼ä´DÇ (Â¨¬É [Root.Monarch.GetHerHis] TÅ8Ö ¬À©Æ•¼ ¶jÕ ÌÖm¹tÕLÈµÂÈ²ä². =·¨¬ÄÉ ¸ÓÀÉ ìÅì·¬|¹ ¼¬¬hÕ<Çj¸hÃ ²p­¬¬ ÀÉíÅ ­¬¹Çä´ü¬ °Æ¬¹ ¬ÀtÇXÇ ÁàÂDÇ ‹Çà¬ ˆÇä²”² Œ¬ „´…ºtÕLÈµÂÈ²ä². °Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) [Root.Monarch.GetSheHe]¬ ô¼HÅ1ÁDÇ lÐŒ¬ ’±|Ç Â ˆÇä²à¬ UÖàÂiÕÈ²ä²."
+ personality_events.19.a:0 "tÇƒ¬tÇ °Æ¬¹XÇ jÍ°Æ.Á ü¬Èä²!"
+ personality_events.19.b:0 "tÇð· ƒ¬ÐÅ ˜×DÇ ­°D¾XÕÀÉ Ð¹Ç. ø­ )¼•¼Ä³ °¬m­ LÅ2¸ÈÉ ƒ¬tÇä²."
+ secretive_new_cipher:0 "ÈÀj¸´Æ TÅ8Ö"
+ desc_secretive_new_cipher:0 "°Æ¬¹XÇ µÑXÎÇ”² m­¬XÇ ¹ÒÈjÕ ‰ÕÈ ÁÉ4»ÐÅÁÌ¹ ðÄ|Ç ÈÀj¸´Æ TÅ8Ö|¹ ÁÉÈ Ì¹ä´´ÅÁ Ä³…ÇˆÕµÂÈ²ä². tÇÈ m­¬XÇ …º9¸ä´tÇ ÂàÂxÇÐÅŒ¬ Ä³ì²XÕ0®L®ÀÉ T³ ÈNÇ ¬ÀŒ·ä´tÇ ø­ƒ¬DÇ ÿÅô¼Œ¬ .´ ƒ¬tÇà¬, U³„´ÐÅ °Æ¬¹”² Ž´(Ó|¹ ÉtÇà¬ 0®¼ Èô¼ä´XÇ 2Æ©ÆDÇ É¹DÇ Â ˆÇŒ¬ ´ÈÅµÂÈ²ä². XÕÀÉÌ¹ ÈÈ T³ Î¹NÇ ¬ÀŒ·ä´tÇ °Æ¬¹XÇ ÈÀj¸´Æ TÅ8ÖTÖ 0®.ÂDÇ 0¼°ÆŒ¬ ´tº tÇ TÅ8ÖXÇ ¨Ö%¸NÇ ÈÈ É´Åä´ ƒ¬…ÇÈ²ä²."
+ personality_events.20.t:0 "H¾ü»¬XÇ jÎl­ä´"
+ personality_events.20.d:0 "ŒÁ8»ÐÅ 0µt¹tº Ë¬ÁÇm­XÇ ÂÄ³ÐÅ ˆÇ”² ¨ºà´ ðÅ0®Ç˜° Æ.Â¬, Ä³Q´ä´NÇ ¬ÀäÂ [Root.Monarch.GetName]XÇ Èô¼ÐÆä´tÇ|·à¬ iÕÈ²ä². pÈ®tÇ|·Ä³ Æ¥Õ%¸ ˆÇ”² ¨ºà´ xÇ<»ä´XÇ UÆ˜·|¹ üÈXÇJ®Œ¬ ­0ÌhÕ<Çj¸hÃ, °Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) LµLµj¸ ©Ìô¼ÐÆä´ô¼ä² èÖ,Å <ºÈ 0®ŒÖ|¹ ìÓ)ÌiÕÈ²ä². jÍü­ [Root.Monarch.GetName]XÇ ÀÉxÇä´NÇ °Æ¬¹¬ m­uÇDÇ ÇtÕ tÇ©Æ`Õ Â ˆÇ”² 0®ŒÖä´tÇ ˆÇä²”² ƒ¬DÇ LÅ2¸üÈÈÅµÂÈ²ä². <»`¸ tÇä´DÇ ÇtÕÁ m­à¬|¹ pÈ® ôÅ´Å|Å `Õ DÕ”Æ”² ˆÇµÂÈ²ä²."
+ personality_events.20.a:0 "È³NÇ ø­È +ÂÇ|Ç Ð¿tÇ|Å."
+ personality_events.20.b:0 "©ÌÇÈÉNÇ È8»¬ÐÅŒ¬ á¹0®Ç."
+ personality_events.21.t:0 "Ãe´tÇXÇ ÄÐÝÀ"
+ personality_events.21.d:0 "àÂä´ÐÅŒ¬ ¬¬À|¹! [Root.Monarch.GetName]”² t¬¬jÕ Ãe´tÇ|¹ œÍ°ÀˆÕµÂÈ²ä². XÕÀÉÌ¹, ŒÁÙ³ ÁÐÅÁ ²¬ ÈÀj¸´Æ ÄÖÄ¬Ç¬ .´ÀÉ”² ˆ´„´…ºiÕÈ²ä²..."
+ personality_events.21.a:0 "X´ É T³ ¬tÕô¼tÇ”² DÅtÇ."
+ personality_events.21.b:0 "¶¶jÕ ²i¾DÇ ¬ÄÉ DÅtÇÀÉ, <»`¸."
+ personality_events.22.t:0 "Ãe´tÇXÇ ÄÐÝÀ"
+ personality_events.22.d:0 "àÂä´ÐÅŒ¬ ¬¬À|¹! [Root.Monarch.GetName]”² t¬¬jÕ Ãe´tÇXÇ DÅ„¼ÀÉ¬ ´ÈÅµÂÈ²ä². XÕÀÉÌ¹, ŒÁÙ³ ÁÐÅÁ ²¬ ÈÀj¸´Æ ÄÖÄ¬Ç¬ .´ÀÉ”² ˆ´„´…ºiÕÈ²ä²..."
+ personality_events.22.a:0 "X´ É T³ ¬tÕô¼tÇ”² DÅtÇ."
+ personality_events.22.b:0 "¶¶jÕ ²i¾DÇ ¬ÄÉ DÅtÇÀÉ, <»`¸."
+ personality_events.23.t:0 "ä²x¹ ¬ÀŒ·ä´XÇ äÂÂÐÅÁ 0¼°Æ0®"
+ personality_events.23.d:0 "[Root.Monarch.GetName]NÇ(”²) mÕÁÀ üÈÇÐÅ Ë¬ØÕÎ¹NÇ pÈ¸ÅÇä´DÇ P´à¬ ø­ä´XÇ pÈ¸ÅDÇ Ë¬­ÌXÕ”² x¬ ø»U³<Çj¸ ¼ÀDÅTÆµÂÈ²ä². XÕÀÉÌ¹ [Root.Heir.GetName]tÇ(¬) [Root.GetName]DÇ(|¹) µÑXÎXÕ”² Œ¬ ´Å²µ XÇø»xÇÀÉ ÄÉÈ<Çj¸ h®ë²ÄÉ »º`Õ ÀÉÄ³ ¨ºx¹ä²”² ¬ÀäÂNÇ [Root.Monarch.GetHerHim]|¹ q¬È²Âý·Œ¬ iÕÈ²ä². ´Å²µ tºÐÅÁ tÇ”² [Root.Heir.GetName]tÇ(¬) ÊÉ´Å8È|ÅÌ¹ `Õ EÌ„ÇtÇà¬, ø­ Lµ¬ TÆDÇ Lµ [Root.Heir.GetName]tÇ(¬) µÑXÎXÇ 4»Œ¬|¹ DÆÈˆ× tÇtÕ`Õ Â ˆÇÄ³k¸ XÕ”² ƒ¬tÇ ‹ÈDÇ ƒ¬…ÇÈ²ä²."
+ personality_events.23.a:0 "°Æ¬¹”² [Root.Heir.GetHerHim]ÐÅŒ¬ ‰ÕÈDÇ P­!ÇtÕ|Å jÕä²."
+ personality_events.23.b:0 "°Æ¬¹”² [Root.Heir.GetHerHim]ÐÅŒ¬ xÆP­|¹ P­!ÇtÕ|Å jÕä²."
+ personality_events.23.c:0 "°Æ¬¹”² [Root.Heir.GetHerHim]ÐÅŒ¬ p­¬À|¹ P­!ÇtÕ|Å jÕä²."
+ personality_events.23.dd:0 "[Root.Heir.GetSheHeCap]”² [Root.Heir.GetHerHis]¬ ÐÆXÕ”²³j¸ 0¼¸Æ ƒ¬tÇä²."
+ personality_events.24.t:0 "0¼ÀÆÐÅ”² ¦²LÇtÇ ÆÅDÇL®?"
+ personality_events.24.d:0 "ù²àÂ ÇàÂXÇ °¬ÈDÇ h®ë²à¬ ù²àÂXÇ ¥²%¸DÇ ô¼©ÍtÕÉ Â ˆÇ”² .Ç¥²jÕ ¬ÀŒ·ä´ÐÅŒ¬ Œ­jÕDÇ Ç„ÇXÕ”² ƒ¬NÇ ‹ÈNÇ µÑXÎXÇ ¬¥Ç É”ÆjÕ ¹ÒÕÉ É XÕ˜°…ÇÈ²ä². [Root.Monarch.GetName]NÇ(”²) T³ Ë¬ØÕ Î¹NÇ ¬ÀŒ·ä´ÐÅŒ¬ ‹ÈNÇ pÈ¸ÅDÇ ä´´Å [Root.Monarch.GetHerselfHimself]XÇ °¬ÈDÇ ô¼©ÍXÕ”² )¼•¼DÇ s­Œ¬ ÿ»µÂÈ²ä². XÕÀÉÌ¹ ÜÂ¬tÇ P×t¹tº ø­ä´XÇ .ÁœÌÈ ¹Ò1Áä´DÇ 0¼°Æ”² ƒ¬Ä³ ¬¥²`ÕÀÉ ¨º…¹È²ä². Ì¹‹Å [Root.Monarch.GetName]tÇ(¬) pÈ¸ÅÇXÇ ¬t¹hÎÐÅ [Root.Monarch.GetHerselfHimself]|¹ DÆÈˆ× ¼`Î Â ˆÇä²tº, [Root.GetName] m­¬¬ Ì³DÅ¬”² à¬Ä³XÇ ÐÆ¬¹ÐÅ ³jÕ tÇtÕ|¹ ¥ÕÁÀÜÂ¬Ð Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ personality_events.24.a:0 "[Root.Monarch.GetName]¬ [Root.GetAdjective] ‰ÕÈDÇ õ¬Ž´XÕÄ³k¸ XÕÇ."
+ personality_events.24.b:0 "[Root.Monarch.GetName]¬ xÆP­|¹ õ¬Ž´XÕÄ³k¸ XÕÇ."
+ personality_events.24.c:0 "[Root.Monarch.GetName]¬ p­¬À|¹ õ¬Ž´XÕÄ³k¸ XÕÇ."
+ personality_events.24.dd:0 "[Root.Monarch.GetHerHisCap] ÜÂ¬NÇ ä²x¹ ó¬ÐÅÁ T³ ˜Ç øÄ Â ˆÇDÇ ƒ¬tÇä²."
+ personality_events.25.t:0 "Èù²XÕÀÉ JÅNÇ ÈÁÇ"
+ personality_events.25.d:0 "ÈÁÇÐÅÁ ÖÁÀtÇ ÈÈ ¬L®ÌÆÀÉtºÁ [Root.Monarch.GetName]NÇ(”²) Áj¸XÇ jÎl­NÆ Ë¬ÁÇÇä´XÇ ¬ÀÈä´ü¬ Ì¹˜°²|· ¼iÀÈ²ä². Ž´ù²jÕ hÎµ· ÈÁÇÐÅ ³mÕXÕ”² )¼´ÅÇj¸Á °Æ¬¹”² m­È ¬ÀŒÖXÇ ÀÉÀÉ|¹ ¼à¬ ˆÇµÂÈ²ä². DÅÁÉ DÅ4»ƒ¬Ä³ tÕ°¬´ÀÉ”² JÅXÅÀÉÌ¹, °Æ¬¹”² ä²¬,Æ ÖÁÀÐÅÁ Î¹NÇ tÇÈDÇ ¬ÈÉ p¬|· UÖàÂ`Õ Â ˆÇµÂÈ²ä²."
+ personality_events.25.a:0 "ÖÁÀ`Õ ÜÂ¬tÇä²."
+ silver_tongued_leverage:0 "ÖÁÀXÇ tÇÈ"
+ desc_silver_tongued_leverage:0 "Áj¸ ¶¬NÇ ƒ¬DÇ ÐÆ`Õ Lµ ÁÀ³|¹ 2ÁÝ´XÕ”² °Æ¬¹ µÑXÎÇXÇ ¥²%¸NÇ ÖÁÀ`Õ Lµ Î¹NÇ tÇÈDÇ Èõ¬iÕÈ²ä²."
+ personality_events.25.b:0 "°Æ¬¹¬ DÕ”ÆjÕ ƒ¬NÇ ¬Çt¬DÇ Õ³”² ƒ¬tÇä²."
+ personality_events.26.t:0 "[Root.Religion.GetName] ÿ»LÇXÇ UÖ³"
+ personality_events.26.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Religion.GetName] ÿ»LÇDÇ ÈÓXÕ”² ƒ¬DÇ [Root.Monarch.GetHerHis] ÝÀXÇ ÅÅ<Çj¸ ÈˆÕà¬, ˜°|· ÈíÅXÇ …ÈP­ ¬ÀŒÖÐÅÁ [Root.Monarch.GetHerselfHimself]XÇ tÇ„¹tÇ ¸Æ2¸|ÓLÈµÂÈ²ä². [Root.GetName] $ESTATE_CHURCH$NÆ [Root.Monarch.GetHerHisCap] J®NÇ .Ç³”² ä²‘ÅjÕ …ÈX¹XÇ 1ÁÁÉÇä´DÇ [Root.Capital.GetCapitalName]ÐÅÁ T×ˆ× ô¼tÇÄ³k¸ XÕà¬, ø­ä´tÇ Œ­%¸XÇ uÕìÂÐÅ Æ¥Õ%¸DÇ ¼×`Õ Â ˆÇŒ¬ Ì¹ä´ÈÅµÂÈ²ä². ÜÂ¬tÇ P×t¹pº °Æ¬¹ [Root.Monarch.GetTitle]XÇ …º1ÁNÇ m­Ë¬ ±8ºL®ÀÉ |Ó8È˜°¬<Çpº, °Æ¬¹XÇ ©ÌÇä´NÇ Ë¬ÁÇm­XÇ àÂü»ä´ ¬ÀtÇÐÅ ˆÇ”² …ÈP­È ŒÁÂÓä´tÇ ø­ä´ Eµ<Çj¸XÇ p­¬ÀÈ UÖ¥ÇDÇ ÀÉÐÆ`Õ p¬|·à¬ ô¼à¬ˆÕµÂÈ²ä²."
+ personality_events.26.a:0 "°Æ¬¹ àÂÄ³ä´DÇ ô¼8ÖtÕ|Å jÕä²!"
+ zealot_reputation_opinion:0 "1ÁÈ¬À"
+ personality_events.26.b:0 "ˆ´DÕ”ÆjÕ .ÇÖ ¬ÀÜÐ|¹ <ÕXÕÄ³k¸ XÕÇ."
+ personality_events.27.t:0 "Å³äÂjÕ Ç|¹ ÇjÕ ÀÉÐÆ"
+ personality_events.27.d:0 "Î¹NÇ ¬ÀŒ·ä´tÇ ˜°|·NÆ Å³äÂjÕ ÀÉÄ³Ç|¹ ÀÉÐÆXÕìÅ ˆ´àÂÇä´DÇ ÁÀ³j¸ XÕ”² [Root.Monarch.GetHerHis] ,ÒÁÇDÇ Õ³0® ÇtÕ ‘ÇNÇ ˜×tÇ˜°È¹ ô¼ÜÐà¬ ˆÇµÂÈ²ä². ÀÉíÅ 1ÁÁÉÇä´Ä³ àÂYÅXÇ Èä´ü¬ øÂ°Æ0® ÇtÕ 4»0®|¹ ä´ ÉD¾¬ ´ ÂÎ¹NÇ ÀÉÐÆÇä´tÇ ¼2¸ä´à¬ ˆÇä²à¬ ô¼à¬ˆÕµÂÈ²ä²."
+ personality_events.27.a:0 "°Æ¬¹XÇ 0®Ä³ÐÅ QÇõ²XÕhÁ²È²."
+ personality_events.28.t:0 "[Root.Capital.GetCapitalName]XÇ ä¹%¸"
+ personality_events.28.d:0 "Ám­ü¬ …ÈüÈm­XÇ ­Ä¬”² Áj¸ÐÅŒ¬ .ÇuÇjÕ ƒ¬<Çj¸, ‘Å!ÎNÇ hÕØ®hÕ<Çj¸hÃ T³ Î¹NÇ tÇÝ´DÇ »ÅDÇ Â ˆÇµÂÈ²ä². [Root.Monarch.GetName]XÇ UÖà¬jÕ µÑÈ XÕÐÅ Î¹NÇ m­¬ä´NÇ °Æ¬¹XÇ ô¼8Ö|¹ É0®pº ˆ¼1ÁiÕÈ²ä². tÇ ­Ä¬¬ ¬8Èä² üÈ”² Î¹NÇ tÇÈ É XÕ˜°”², …ÈÁm­ä´j¸Ž´0Ñ (Æ ÈNÇ UÆqÈä´ü¬ .Ç%¸Çä´tÇ [Root.GetName]DÇ(|¹) Ë¬%¸DÇ Ã0®ÐÅ ‹ÈNÇ ó¬<Çj¸ ÝÀ¬XÕŒ¬ ´ä²”² ƒ¬…ÇÈ²ä²."
+ personality_events.28.a:0 "°Æ¬¹ ‰ÕÈŽ´ÐÅÁ |Ç`Õ Â ˆÇ”² Æ­DÇ P´à¬ ø­ä´tÇ Ë¬ÁÇXÕÄ³k¸ P´´Å|·."
+ personality_events.28.b:0 "¬¥Ç ¬Ç¥²ˆÇ”² Çä´NÇ °Æ¬¹XÇ p­ÐÅ õ¼4»`Õ Œ­¬¹¬ üÈ´ÅÈÉ ƒ¬tÇä²."
+ demanded_support:0 "”Æl­´ ÀÉÐÆ"
+ personality_events.29.t:0 "•¼`¹ ¬Ö"
+ personality_events.29.d:0 "D¾·ÂjÕ Ü­¨ºXÇ ä²x¹ Î¹NÇ m­¬ä´˜Ìü·, ‰¬<Çj¸ ô¼tÇ”² [Root.GetName]XÇ µÑiÕNÇ äÂNÇ àÂ0®è¸¬NÇ ƒ¬…ÇÈ²ä². ÀÉ)¼XÇ ´Å²µ Ä³ÜÂ˜° ¬À.ÇÀÉ, ìÂÀÉ´Å ‘ÇNÇ È¹DÇpÈ(ÌÄ³ DÅüÈ Æ °Ž´0Ñ ¬ÇXÇ •¼ü¬ ÐÆYÎDÇ ¬ÀÉà¬ ˆÇÈÅµÂÈ²ä². tÇì·jÕ |Ç­1Á ÆÅ”² •¼`¹ä´DÇ ÉtÇ0® ÇtÕ [Root.Monarch.GetTitle]NÇ(”²) ¬…È ¹ÒŒ­ä´DÇ ÆÅ`Åà¬ ÈÀm¸à¬ Èm­ÈxÇ ÜÂ‰Õ9¸ä´DÇ ¼jÔXÕìÅ <ÖŽ·DÇ …ÈÝÂÜÂ²Ðà¬Ç ˆÕµÂÈ²ä². XÕÀÉÌ¹ tÇì·jÕ ÜÂ‰ÕÐÅ mÕÁÀ ‰É¬ÈxÇ 1Áõ¬tÇ ²´0µ·X³ ƒ¬NÇ DÅÙ²È²ä². ´Å²µ ÀÉ)¼ÐÅÁ”² ÈŽ´XÇ jÍü­ ÜÂ‰Õ9¸tÇ DÆÈˆ× 4»ÜÂù²ˆÕà¬, [Root.Monarch.GetName]XÇ Œ­Ç¬ T×ä´¬¹à¬ ˆÇµÂÈ²ä²."
+ personality_events.29.a:0 "ø­ä´XÇ tÇXÇ|¹ „´ÁXÕà¬ °Æ¬¹XÇ •¼`¹ ÈÈÐÅ ¼ÆjÕä²."
+ local_legal_reform:0 "ÀÉíÅ •¼`¹ ¬Ö"
+ desc_local_legal_reform:0 "°Æ¬¹”² tÇ ÀÉ)¼ÐÅÁXÇ ä²‘ÅXÕà¬ 0®tÇjÕ •¼`¹ä´tÇ Èm­ÈxÇ •¼ü¬ ÐÆYÎÐÅ iÕXÎ`Õ Â ˆÇÄ³k¸ ÈÈjÕ 0®ÉDÇ È¹(¸XÕÆµÂÈ²ä²."
+ personality_events.29.b:0 "˜×DÇ øÄ ÜÂ¬tÇ TÆp­!"
+ personality_events.29.b.tt:0 "tÇ §YÀÉ)¼§!ÐÅ ŒÁ.ÇjÕ ¨ºà´ ÀÉíÅXÇ ÇXÎÄ³¬ ‰ÉÜÂ §G-15§!Ì¹|Ð ¬ŒÁ`Õ ƒ¬…ÇÈ²ä²."
+ personality_events.29.c:0 "°Æ¬¹¬ »º ø¼ ™Ì tÕüÈ”² Œ¬ ¨ºP´ÐÅŒ¬ jÍ.ÁtÇä²."
+ personality_events.30.t:0 "ÆÁÀXÎ »ºjÕ ó¬ÐÅÁXÇ Â…Ç"
+ personality_events.30.d:0 "[Root.Monarch.GetName]NÇ(”²) ÈÖ ¬¥²1Á ÆÅ´Å ô¼tÇ”² ó¬ÐÅÁ ÈÀj¸´Æ m­¬ Â…ÇÐÆDÇ >ÌDÅ´°”² ƒ¬ÐÅ ­jÕ ÀÐXÇ ”Í…ÈDÇ ˆ´ÈÕXÕ”² [Root.Monarch.GetHerHis] ¥²%¸<Çj¸ .Ç…ºiÕÈ²ä². jÍü­ [Root.Monarch.GetHerHisCap] ÀÉíÅ ŒÖÄ¬ ¬¬À”² °Æ¬¹ Æ Ñ É jÕ ó¬ÐÅÁ DÆÈˆ× ÈÀj¸´Æ Â…ÇÐÆDÇ XÕ˜° >ÌDÅÈ°µÂÈ²ä². ²¬¹ÀÉÌ¹ UÖäÂXÕŒ¬ m­à¬ Â…ÇÐÆtÇ É¬XÕà¬ ˆÇµÂÈ²ä²."
+ personality_events.30.a:0 "È³tÇä²!"
+ personality_events.31.t:0 "•¼DÇ ÉÂXÕ|·"
+ personality_events.31.d:0 "2Ç¬¹È ‰ÕÇNÆ Ž´(ÓÐÅ ­jÕ [Root.Monarch.GetName]XÇ ÄÅ©¬jÕ ¬¬tÕNÆ ¬”Æ”² °Æ¬¹ ˜°|·|¹ T³ ÈÁÉjÕ ó¬<Çj¸ Ì¹Ü´”² p³ |ÇpÈˆÕµÂÈ²ä². <»`¸ tÇð· ÈEÌä´NÇ °Æ¬¹ õ¬4»ÐÆä´tÇ [Root.Monarch.GetHerHim]|¹ ‹ÈDÅXÕÄ³k¸ Ì¹ä´ÀÉ”² »ºˆÕµÂÈ²ä². °Æ¬¹¬ Î¹NÇ Ì±<» ÂÂ|¹ ÈÀÉXÕ4® ˆÕÀÉÌ¹, ìÅÈˆ× Î¹NÇ ¬ÀŒ·ä´tÇ ¬¥²jÕ ¨ºà´ Âè²DÇ tÇ©ÆXÕìÅ ÈŽ´ pÈÁÉXÇ ±ÑÈ²¼4Ð|¹ ¦²”Í0® ÇtÕ ˜×ðÄà¬ ˆÇµÂÈ²ä²."
+ personality_events.31.a:0 "tÇ 0®ŒÖÐÅ ˆ±ä´DÇ ¨ºpÈ¬¹ Ì¿¬¹ Q¿DÅ|Å jÕä²."
+ personality_events.31.b:0 "°Æ¬¹”² °Æ¬¹XÇ -Âà¬jÕ ÐÆYÎDÇ ‹Å¬ ‹­× ÂÄ³ ˆÇä²."
+ corrupted_incorruptible_ruler:0 "Ž´(Ó ‰ÕÇ|¹ 4»ÜÂXÕä²"
+ desc_corrupted_incorruptible_ruler:0 "‰ÕÈ­ä´ü¬ ­Ä¬¬ Nº´ÅÀÉ”² x¬ <ÕXÕ0® ÇtÕ, °Æ¬¹”² ÈŽ´ pÈÁÉÐÅÁ ©ÆxÇ`Õ Ì¹jÕ Ž´(Ó |ÇŽ´ÐÅ ³tÕÁ”² ²DÇ ¬0®j¸ ˆÕµÂÈ²ä². ÇàÂXÇ Ž´|¹ ˜²´¹ Â ˆÇ”² Î¹NÇ )¼•¼ä´NÇ °¬m­ ÈŽ´ õ¬4»ÐÆXÇ ¹ÒŒ­…ÇÈ²ä²."
+ personality_events.32.t:0 "[Root.Capital.GetCapitalName] .ÇÓ"
+ personality_events.32.d:0 "°Æ¬¹ ÂÄ³”² ´Å² Lµô¼ä²Ä³ Î¹NÇ 0®É0®NÆ ÈÀj¸´Æ t¬•Í<»ä´j¸ ¬Ý´ (Ìà¬ ˆÇµÂÈ²ä². [Root.Monarch.GetName]XÇ XÎ8Á”² ˜°|· ó¬ó¬ÐÅÁ J°„ÇÆÅtÇ É¬XÕ”² t¬•Í¬ÀÅÅ<Çj¸ ÁÀÕÉ)´È²ä².\n[Root.Monarch.GetTitle]XÇ èÍ¥ÕÐÅ Þ¹”² ³Ö t¬•Í<»ä´DÇ 2ÁÄ¬XÕà¬ t¬•ÍXÕ0® ÇtÕ à¬©Æ´ ÂÎ¹NÇ ¬ÀŒ·ä´NÇ ÈÀm¸à¬ Å³¹ÒjÕ t¬•Í 0®•¼XÇ ¼ÈDÇ tÇL°ÈÅµÂÈ²ä². [Root.Capital.GetCapitalName] .ÇÓXÇ Ç³jÕ t¬•Í¬ä´ÐÅ ³jÕ m­ÈÈ Â”Æ”² É¬XÕà¬ ˆÇ<Çpº, ‡º‡º xÆm­ Ä³ÜÂä´NÇ tÇÈ ¼j¸ °Æ¬¹XÇ )¼ÝÂDÇ tÇ©ÆtÕ °Æ¬¹NÆ Ë¬ÁÇXÕà¬ ˆÇµÂÈ²ä²."
+ personality_events.32.a:0 "[Root.Capital.GetCapitalName]”² jÍà¬XÇ Ä³ÜÂj¸ ¨°DÇ ƒ¬tÇä²!"
+ personality_events.32.b:0 "°Æ¬¹ YÕÇä´tÇ tÇ ‘ÅÝÂDÇ tÕxÆj¸ ±¬¹ ÈÓXÕÄ³k¸ ¥Ç2¸XÕÇ."
+ opinion_school_of_capital:0 "8»TÖÈ À­¬"
+ monumental_architecture:0 "0®P±D¾È t¬•Í"
+ desc_monumental_architecture:0 "tÇ ÀÉíÅXÇ ÂÄ³”² |ÅìÂ,Ì t¬•Í<»j¸ .Ç…ºXÕä²."
+ personality_events.33.t:0 "õ¬È³XÇ .Ç9Ö"
+ personality_events.33.d:0 "ìÅì· Ë¬È ,ÒÇÇä´tÇ [Root.Monarch.GetName]ÐÅŒ¬ Èü­XÕìÅ °Æ¬¹¬ ÀÉ0¼XÕ”² ÀÉ)¼ É jÕ ó¬DÇ ¬¼`Õ Œ­¬¹|¹ ”Æ­ÌˆÕµÂÈ²ä². ø­ä´NÇ °Æ¬¹ EµÐÅÁ Â…ÇDÇ p¬X´ Œ­¬¹ÐÅ ÁÀù²jÕ È³DÇ ÀÉˆ´`Õ ƒ¬tÇà¬, ø­ì·tº Â…ÇDÇ p¬P´”² ƒ¬NÇ °Æ¬¹ ³àÂ ø­ä´XÇ |ÇtÇ .´ ƒ¬…ÇÈ²ä². ,ÒÇÇä´NÇ ø­ä´tÇ ø­ Œ­¬¹ÐÅ ³tÕ ÀÉˆ´jÕ ƒ¬ô¼ä² T³ Î¹NÇ Â…ÇDÇ »Å0® ÇtÕ ÀÉíÅ 0®¼ÜÂ2ÁÐÅ ,ÒÇXÕ2¸ jÕä²à¬ Ð¹ˆÕµÂÈ²ä²."
+ personality_events.33.a:0 "´°¬ 1µ ô¼È²L® È³ .´ ƒ¬ ¬T³|·È²L®!"
+ personality_events.33.b:0 "HÅÈXÕŒ¬ x±”² ¸ÓtÇ «°ä²."
+ economic_development_entrepreneur:0 "1Á¥ÇXÕ”² ¬ÀÅÅ"
+ desc_economic_development_entrepreneur:0 ",ÒÇjÕ ƒ¬<Çj¸Ž´0Ñ jÍ³jÕXÇ tÇuÇDÇ »Å´Å´°à¬Ç XÕ”² 8Á® ÕÉÂ ³¬¹xÇä´ÐÅŒ¬ tÇ ÀÉ)¼XÇ Ë¬È|¹ á¹0®Ç, Ë¬È¬ `¾t¹Œ¬ 1Á¥ÇXÕ0® ÜÂ‘ÇˆÕµÂÈ²ä². ø­ä´NÇ ø­ä´ ÇàÂXÇ Ç°ÀDÇ ÈÀj¸´Æ 0®.Âü¬ Ë¬ÈÈ 0®¼ÐÅ ,ÒÇˆÕà¬, ÀÉíÅ È´Ì¬ ˆ¼ÆXÕÄ³k¸ Ì¹ä´ÈÅµÂÈ²ä²."
+ economic_downturn_modifier:0 "4»¨ºjÕ Ë¬È ÈEÌ"
+ desc_economic_downturn_modifier:0 "¥Ç0®È 1Á¥ÇÐÅ”² Ä¼ ­ìÂtÇ ÆÅ”² 8Á® ÕÉÂ ³¬¹xÇä´ÐÅŒ¬ tÇ ÀÉ)¼XÇ Ë¬È|¹ á¹0®Ç, ÀÉíÅ Ë¬È 0®¼NÇ ÂÝÂ¬ÐÅ Ó4­´ÈÅµÂÈ²ä². ŒÖõ¼ÐÅ”² ÜÂ¬tÇ x¬´¹ ƒ¬…ÇÈ²ä²."
+ personality_events.34.t:0 "[Root.Monarch.GetTitle]XÇ Ë¬ÈYÕ"
+ personality_events.34.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] k°ÆÅ”² ÐÅ±ÀÉNÆ |Ç ÉÅ³<Çj¸ .Ç…ºiÕÈ²ä². ø­XÇ )¼ÐÅ ˆ´tÇ ¼®8È ˆÇ”² ÜÂ¬NÇ p¬XÇ ÆÅà¬, ¬…È YÎ9¸ü¬ ìÓà¬ä´NÇ 2¼®°DÇ ¬¬¹ÀÉ JÅà¬ [Root.Capital.GetCapitalName]ÐÅÁ œÍ¼iÕÈ²ä². [Root.Monarch.GetSheHeCap]”² ¶jÕ ˜°|·XÇ ¨ºà´ Ë¬È Ž´8»ÐÅ ³tÕÁÄ³ ²8®DÇ p¬P´ÀÉ JÅDÅÁ, xÆm­xÇä´NÇ DÆÈˆ× ÈÀj¸´Æ ¬ÀÅÅ „´|ÅÐÅ ³tÕÁÄ³ [Root.Monarch.GetSheHe]¬ ÁÉÈ ­(¸´ Ü­ÈDÇ Ì¹ä´ p¬|·”² ¬ÀäÂDÇ LÅà¬ Ž±|·ä¬ iÕÈ²ä².\n°Æ¬¹XÇ jÎ`ÅXÕ”² [Root.Monarch.GetTitle]NÇ(”²) ˜°|·|¹ 1Á¥ÇÜÂ8® ÈÀj¸´Æ )¼HÅDÇ >Ìà¬ ˆÇ”²p³, .Ç|ÇjÕ 8»È”² °Æ¬¹¬ [Root.Monarch.GetSheHe]¬ ÐÆXÕ”² ¨ºà´ ƒ¬DÇ jÕˆ¼ÐÅ `Õ Â ˆÇDÇ Ì¹|ÐXÇ ÇÐÆDÇ ¬ÀÉà¬ ˆÇÐ°”² ƒ¬…ÇÈ²ä²."
+ personality_events.34.a:0 "È³NÇ 8»È¬ HÅü³."
+ personality_events.34.b:0 "[Root.Monarch.GetSheHeCap]”² [Root.Monarch.GetSheHe]¬ ÐÆˆÕX³ ƒ¬ ø­ tÇÁÀDÇ ðÄŒ¬ .´ ƒ¬tÇä²."
+ personality_events.34.c:0 "ä²LÇ 0®ŒÖÐÅ."
+ industrious_boost:0 "ÈpÈÅÅ ¬¼"
+ desc_industrious_boost:0 "tÇ ÀÉíÅXÇ Ë¬È”² 1Á¥ÇDÇ 	ÍÄÉXÕ0® ÇjÕ |Ç(¸XÇ •¼9¸DÇ ÈÈjÕ ÄÖ 	®ÁÄ³j¸ ¼ÈXÕà¬ ˆÇä²."
+ personality_events.35.t:0 "àÂ8ÁÄ¬XÇ .Ç9Ö"
+ personality_events.35.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ´Å°¹ ÜÂÈŽ´0Ñ 8º˜°<º ó¬ä´XÇ tÇ|Å0®ÐÅ ä¹9Ö´ÈÅà¬, [Root.Monarch.GetTitle](<Ç)j¸Á [Root.Monarch.GetSheHe]”² Èù­È<Çj¸ ÐÐØÕü¬ ÝÂü» mÕtÕ|¹ ÀÉÐÆtÕTÆµÂÈ²ä². ÀÉ® °Æ¬¹XÇ ÝÂü»ÀÉ ‰ÕÈ­NÇ ¼ä² t¬±¸ÓÐÅÁ °Æ¬¹XÇ |ÅÝ¹DÇ 1ÁèÍ`Õ Â ˆÇÄ³k¸ T³ Î¹NÇ ÀÉÐÆDÇ ”ÆXÕˆÕà¬, [Root.Monarch.GetHerHis]NÇ(”²) m­à¬ÐÅ Ž´ô²DÇ ÀÉ°ÆÀÉ JÅà¬ [Root.Monarch.GetHerHis] ¬ÀÈxÇ Ç®DÇ tÇ©ÆtÕ DÕ”ÆjÕ ÇÐÆä´DÇ È¹(¸tÕ TÆµÂÈ²ä²."
+ personality_events.35.a:0 "¬¥Ç DÕ”ÆjÕ ó¬ÐÅ ³tÕ ÁÉÈÈxÇ ÀÉÐÆDÇ tÕüÈÇ."
+ personality_events.35.b:0 "tÇÈ ÐÐØÕDÇ `Õ ÜÂ¬tÇä²!"
+ personality_events.35.c:0 "tÕÄ³|¹ Ì¹ä´Ç."
+ personality_events.35.dd:0 "°Æ¬¹”² <ºÈ ø¼ ÑÐÅ ÝÂü» 0®¼ ÜÂ2ÁDÇ ¬¼`Õ DÕ”Æ¬ ˆÇä²."
+ personality_events.36.t:0 "ÈŽ´ ¬…Ç"
+ personality_events.36.d:0 "[Root.Monarch.GetName]tÇ(¬) ¬ÄÉ ÖÁÀü¬ É¬XÇ ¬Ç¥²NÇ m­ÈÈ ÖÁÀÐÅÁ”² T×jÕ ¥²%¸tÇÀÉÌ¹, Lµj¸”² tÇ|¹ µÑtÕ °Æ¬¹ ÁÀxÇä´DÇ Ä³¸Æ Â ˆÇ”² 0®ŒÖ¬ ÝÀ0®0®Ä³ iÕÈ²ä². jÍü­ xÆm­ ¬ÀÈü¬XÇ ðÅÁ´ Ì¹¨°NÇ m­´° ÁÀxÇä´tÇ xÆm­ ÜÂ¥ÇÐÅ ÁÀˆÔDÇ ÂœÍ`Õ Lµ tÇuÇDÇ ü¼ Â ˆÇ”² 0®ŒÖ|¹ Ì¹ä´´ÅÈ°µÂÈ²ä²."
+ personality_events.36.a:0 "ÌÖm¹tÕ!"
+ personality_events.36.b:0 "[Root.Monarch.GetTitle]NÇ(”²) tÇð· ¬ÀŒÁjÕ 8»Èä´DÇ àÂË¬ðÄÀÉ JÅ”²ä²."
+ personality_events.37.t:0 "©Í©¬ü¬ õ¬ìÓ"
+ personality_events.37.d:0 "[Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] XÎ8Á Ù³HÅ Ð¹ü¬ ‰ÕÙ³ ¨ºP´j¸ Èõ¼ÐÅ ³jÕ [Root.Monarch.GetHerHis] |ÅìÂDÇ É…ºˆÕµÂÈ²ä². p­ |ÅÆÀÉÐÅ ³jÕ ‰ÉÁ )¼8»NÇ p­³XÇ tÈË¬DÇ ³°XÅ<Çpº, Ñ¼¬Àä´XÇ ¬´Â ÁÐÅ Æ­²Âð· ¹Â¬¹ÐÅ ³jÕ ôÅÝ¹DÇ ˆ´´Å1±à¬ ˆÇµÂÈ²ä²."
+ personality_events.37.a:0 "[Root.Monarch.GetTitle]Ø®Á ø­ä´DÇ ¹Â¬¹j¸ tÇL°´Å üÈäÂ ƒ¬tÇä²!"
+ personality_events.37.b:0 "[Root.Monarch.GetHerHis] tÇ„¹<Çj¸ ‰Õp­¬|¹ ‘Çá¬XÕÇ!"
+ personality_events.38.t:0 "ÈÁÇXÇ 0®.Â"
+ personality_events.38.d:0 "tÇ ÜÂ³, °Æ¬¹XÇ Ç³jÕ [Root.Monarch.GetTitle], [Root.Monarch.GetName]XÇ È.ÂÈ ÝÂ¬¬DÇ 0µ|·¬ Â ˆÇ”² Çä´NÇ ù­ˆ× Ü´E»È²ä². [Root.Monarch.GetSheHeCap]”² ÈÁÇÐÅ ³jÕ ¬Àà¬)¼ÝÂXÇ ÖàÂDÇ |Ç<Ç0Ï<Çpº, °Æ¬¹”² °Æ¬¹ [Root.GovernmentName]XÇ ø»˜·ÐÅ ÂÎ¹NÇ Ç³jÕ ¹Â¬¹ä´tÇ 0®ä²´¹ p¬|· ÿ»µÂÈ²ä². [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] p­¬À tÇ`¸ÐÅ ³jÕ EÌDÇ ðÄ”² ƒ¬DÇ à¬2¸XÕà¬ ˆÇµÂÈ²ä². tÇ”² °Æ¬¹ p­³¬ p­¬À È.ÂÐÅ ³jÕ ÀÉÝÂDÇ uÇˆ×”² p³ .Ç©ÆXÕ ¬ÀÉÌ¹, °Æ¬¹XÇ tÇÃÆä´Ä³ tÇ|¹ 0¼¸Æ ƒ¬tÇ „´…ºiÕÈ²ä²."
+ personality_events.38.a:0 "tÇ ÄÉô¼|¹ õ¬.ÇXÕÀÉ JÅ”² ƒ¬NÇ xÇX¹ÐÅ ¼XÕ”² ”¼ÄÈ¬ .´ ƒ¬tÇä²!"
+ personality_events.38.a.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!tÇ(¬) p­¬À È.ÂÐÅ ­jÕ EÌDÇ ÅÈ²ä²."
+ personality_events.38.b:0 "ø­ä´tÇ 2Æ˜²NÇ °Æ¬¹|¹ °Æì·ì· ü¼ÀÉ °º|·Ä³, ´°|ÇNÇ °Æ¬¹XÇ ²´µÑÂ|¹ `Î Ð¿tÇä²."
+ personality_events.38.b.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]s§!XÇ tÇ`¸ä´DÇ °Æ¬¹Ì¹XÇ ƒ¬<Çj¸ ¬ÁÉiÕÈ²ä²."
+ personality_events.39.t:0 "ÀÉè¸jÕ ÉÓTÖ"
+ personality_events.39.d:0 "jÍü­ [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] )¼ ü­˜Ì|¹ Á1Áp¬¬¹ä¬ iÕÈ²ä². `Õ|ÇÆÅ”² Âä²ÁÇtÇä´NÇ [Root.Monarch.GetTitle]tÇ(¬) à¬ìÂXÕ”² Œ¬ ¬À‘· Lµ8»tÇ|·à¬ä´ Ð¹XÕÀÉÌ¹, tÇ [Root.Monarch.GetWomanMan]NÆ jÎjÕ ¨ºà´ ¬ÀŒ·ä´NÇ ¬ÀäÂ ˜°|·XÇ ÀÉÁ´ ÉÓTÖ Lµ8»tÇ|·”² ƒ¬DÇ LÅà¬ ˆÇµÂÈ²ä². [Root.Monarch.GetSheHe] ¬NÇ ©Æ¬jÕ È¬À”², Èµ·DÇ äÉ ÈÁÇtÇ ÆÅDÇ Lµ”² È¹XÎ [Root.Monarch.GetHerHis] )¼tÇ|·”² í²¥Ç HÅÐÅ ¬Œ× í²˜Ìü· õ²õ²tÕiÕÈ²ä². XÕÀÉÌ¹ jÕ ¸Ó<Çj¸, [Root.Monarch.GetSheHe]”² [Root.Monarch.GetTitle]…ÇÈ²ä²... [Root.Monarch.GetSheHe]¬ tÇ|¹ tÕŒÁXÕ0® ÇtÕ T»¬ `Õ Â ˆÇÀÉ JÅDÇL®”Æ?"
+ personality_events.39.a:0 "[Root.Monarch.GetTitle]NÇ(”²)  Ñ±<º¸Ò|¹ üÈjÍtÕ|Å jÕä²!"
+ personality_events.39.b:0 "[Root.Monarch.GetTitle]NÇ(”²) [Root.Monarch.GetHerHis] p­³|¹ ÈÖ(¸XÕ”² p³ T³±Æ ˜×hÃ|Å jÕä²."
+ hosting_tournament:0 " Ñ±<º¸Ò üÈjÍ"
+ desc_hosting_tournament:0 "°Æ¬¹XÇ µÑXÎÇ”² Ö¬Ç 8ÌìÅjÕ, ¹Òˆ× °Æ¹ÂDÇ (ÌÀÉjÕ, ©Æ¬jÕ È¬Àä´ÐÅŒ¬ jÔKÌtÕ Ç…ºDÇ ¨µXÎà¬ ˆÇä². Èm­ ¬ÀÉXÇ ¬ÀŒ·ä´NÇ ø­ä´XÇ (Ó0®|¹ É…ºXÕÄ³k¸ à¬èÍ´ÈÅä²."
+ drilling_troops:0 "p­¬À ÈÖ(¸"
+ desc_drilling_troops:0 "°Æ¬¹XÇ µÑXÎÇ”² ÂÄ³XÇ p­¬À ÈÖ(¸ÐÅ ¬xÇÈxÇ ­ìÂDÇ ¬ÀÉà¬ ˆÇ<Çpº, ÈÖ(¸¥ÇÐÅÁ ³(¸XÕp¬˜° Ñ¼¬Àä´DÇ ÈÖ(¸ÜÂ²Ð”² ƒ¬tÇ …È…È ô¼ìÅÄÉä²."
+ personality_events.40.t:0 "ÄÅ©¬jÕ ÆXÇ"
+ personality_events.40.d:0 "´Å² ° ÈA±, [Root.Heir.GetName]NÇ(”²) [Root.Monarch.GetName]NÆ hÕØ® ÝÂ¬ÀˆÕµÂÈ²ä². ŒÁ8»ÐÅ XÇXÕtº ø­ Ì¹,ÌNÇ ‹ÈŒ¬ k°˜°ÄÉ JÅNÇ ƒ¬ ¬µÂÈ²ä². ˜ÌLÇÐÅ”² „´…º ÆXÇÐÅ ³jÕ ‘ÇNÇ |±ÁÇ<Çj¸ ÜÂ‘ÇˆÕX³ ƒ¬tÇ, mÕÁÀ ÆXÇ ¼x¹ ¬ÀŒ·tÇÈÅX³ ÄÖÄ¬Ç”² ÝÂ¬À Ä³ÉÐÅ ð¶ÐÌ˜°¬à¬, [Root.Monarch.GetName]NÇ(”²) È Ý¹˜°È²¬ [Root.Monarch.GetHerHim]|¹ Å³´ÀXÕ2¸ ˆÕä²pº ŒÁ¬¹ÀÉt¹”² ƒ¬<Çj¸ k°˜°à¬ Ð¹XÅµÂÈ²ä²!"
+ personality_events.40.a:0 "©Æ©°`Õ Â ÆÅä²! [Root.Heir.GetName]NÇ ³¬|¹ XÎð¸ ƒ¬tÇä²."
+ personality_events.40.a.tt:0 "[Root.Monarch.GetName]NÇ §Y[Root.Heir.GetName]§!NÆ XÇÈ`Õ ƒ¬tÇä²!\n"
+ personality_events.40.b:0 "2ÆtÕ¬ ˆÇÈÅDÇ ƒ¬tÇä²."
+ personality_events.41.t:0 "ì²À¼XÇ ˜×"
+ personality_events.41.d:0 "jÍü­ ÈiÖÐÅ à¬ìÂXÕX³ [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ÀÉjÎ p­³ÐÅŒ¬ ôÅÈÈxÇ ðÅ2ÁDÇ ˆÕµÂÈ²ä². tÇÈ À­qÈü¬ Áü»DÇ ¬¬¹ÀÉ JÅà¬ ŒÁ8»tÇ |ÓÀÉ0® ÜÂ‘ÇˆÕµÂÈ²ä² - [Root.Monarch.GetHerHis] Ð¹ jÕÈ¹µ jÕÈ¹µ”² p­xÇä´ÐÅŒ¬ ÈÀj¸´Æ l×Ý¹DÇ ìÂ´Å üÈÈÅà¬, ÜÐ‘ÅNÇ [Root.Monarch.GetHerHis] ¬7ÆÐÅ ¼¬À´´Å i¾¬°<ÇÈ², [Root.Monarch.GetSheHe]”² ´Å`´ ÁXÇ ñ´ˆ´˜Ìü· ø­ä´XÇ ^ÅÐÅ Á ˆÇÈÅä²à¬!"
+ personality_events.41.a:0 "°Æ¬¹”² ø­ä´XÇ ÝÀ¬ô¼ä² ¬XÕä²."
+ personality_events.42.t:0 "ÈÀj¸´Æ 8Á³"
+ personality_events.42.d:0 "Â D± Ù³HÅ, [Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) p­³|¹ pÈÁÉXÕ”² ƒ¬ÐÅ Î¹NÇ ­ìÂDÇ ô¼ìÅàÆ<Çpº, p­³ÐÅÁ ÂÎ¹NÇ ¬Ç¥²ˆÇ”² ÈNÇtÇä´DÇ ¬xÇÈ<Çj¸ ÈÖ(¸ÜÂÏ TÆµÂÈ²ä². tÇä´DÇ tÇ©ÆtÕ [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ÝÀ¬ä´DÇ p­³ ÁÀŽ´ÐÅ |Ó¸Ò´¹ Â ˆÇÈÅµÂÈ²ä². [Root.Monarch.GetTitle]NÇ(”²) ¬¥Ç jÍü­ÐÅ p¬T´ [Root.Monarch.GetHerHis] ÈÇ XÕ˜°¬ tÇÈ  °¬|¹ ¼Ó`Î Lµ¬ TÆä²à¬ ÿ»µÂÈ²ä². ø­|¹ ´Å»µŒ¬ ä²¹|Å °Æ¬¹ [Root.GovernmentName]tÇ(¬) ¬¥Ç pÐ ¨Öü¬|¹ ü¼ Â ˆÇDÇL®”Æ?"
+ personality_events.42.a:0 "ø­”² p­XÇ ¬À0®|¹ ’±tÇ0® ÇjÕ ¬ÖÐÅ ÍÈDÇ Þ¹”Í´Å|Å jÕä²."
+ personality_events.42.a.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y3§! !Çp­ ¬Ö¬|¹ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.42.b:0 "ø­”² °Æ¬¹ p­³|¹ 8ÁÄ¬ÐÅÁ ¬¥Ç Ü­(Ç¡ÇŒ× Ñ¼¬Àä´j¸ ÈÖ(¸ÜÂ¬Ð ƒ¬tÇä²!"
+ personality_events.42.b.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y3§! ¬À9¸­DÇ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.42.c:0 "°Æ¬¹”² mÕÁÀ xÇ%¸tÇ T³ DÕ”ÆXÕä². ø­”² ÌÖm¹jÕ  ¨ºÑÉ¥ÇP­¬ .´ ƒ¬tÇä²!"
+ personality_events.42.c.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y3§! ¨ºÑÉ ¥ÇP­|¹ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.42.d.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y2§! !Çp­ ¬Ö¬|¹ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.42.e.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y2§! ¬À9¸­DÇ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.42.f.tooltip:0 "[Root.GetName]ÐÅÁ ²Â¬Ð §Y2§! ¨ºÑÉ ¥ÇP­|¹ ÖÝ´iÕÈ²ä². tÇ pÈ¸ÅÇ”² ù²àÂ m­¬¬ à¬©Æ`Õ Lµ §G50%§! È4¸iÕÈ²ä²."
+ personality_events.43.t:0 "¬¬äÂjÕ .ÁÐÆ"
+ personality_events.43.d:0 "°Æ¬¹”² tÕp­ÐÅÁ `¾t¹Œ¬ tÕp­ ÁÀŽ´ÐÅ 2Æx¹ jÕ ¨°ÇÐÅ ³jÕ tÇ|Å0®|¹ ä´ÈÅµÂÈ²ä². ¸¬ÁXÕtºÁÄ³ ÀÐà¬œ° ÀÉ×­xÇ ø­ C¼¬ÀŒ·NÇ, Ù³Ì¸ .ÁÐÆä´XÇ ”ÍœÌ<Çj¸ °Æ¬¹XÇ üÈXÇ|¹ L°Œ¬ ´µÂÈ²ä². ø­ä´NÇ È¹XÎ ø»àÂÐÅ ¬Àj¸¡ÇŒ× ƒ¬˜Ìü·, ø­”² ÀÐà¬œ° ¼ä²¬À˜°tÇà¬ ø­|¹ ¹ÂÄÉÜÂ²ÐÀÉ JÅ”² ƒ¬NÇ DÅüÈ pÐ ­°D¾|·à¬ üÈ¥ÇiÕÈ²ä²."
+ personality_events.43.a:0 "ø­”² ÌÖm¹jÕ ÈÅ³tÇ .´ ƒ¬tÇä²!"
+ personality_events.43.b:0 "°Æ¬¹”² ø­|¹ ÐÐØÕ¬j¸ à¬©Æ`Õ Â ˆÇä²!"
+ personality_events.43.c:0 "ÀÉ® ù²¥Ç ø­¬ DÕ”ÆXÕÀÉ”² JÅä²."
+ personality_events.44.t:0 "É°9ÖjÕ ÖÁÀ"
+ personality_events.44.d:0 "Â D± Ù³HÅ Î¹NÇ tÇä´tÇ °Æ¬¹XÇ [Root.Monarch.GetTitle] [Root.Monarch.GetName]DÇ(|¹) ÖÁÀ LÑtÇ¾ÐÅÁ È¹üÈXÕ8® P´2¸ÌÆXÕŒ¬ ´ÈÅµÂÈ²ä². [Root.Monarch.GetSheHeCap]”² |ÇÐ¹XÇ ÇD¾ìÂÄ³ ÆÅtÇ, ¬ÀÇ˜Ìü· I×íÓXÕà¬ N¼˜Ìü·  °tÎm¸Œ¬ ÁÀ³|¹ ä²ù¸È²ä². °¬m­ÐÅ”² ³Ž´„´XÇ ¬ÀŒ·ä´tÇ ø­È [Root.Monarch.GetName]XÇ É°9ÖjÕ ÜÂ.ÁÐÅÁ —¼´Å˜°0® ÇtÕ [Root.Monarch.GetSheHe]¬ ÐÆXÕ”² ¨ºà´ ƒ¬DÇ t¬2±üÈà¬ Ù¹È²ä². [Root.Monarch.GetTitle]tÇ(¬) ˜°|·XÇ ³œÍÐÅ ³tÕ ¬ÇÖÁÀXÕ0® ÇtÕ NÇ‰Õ¬ä´DÇ ŒÁXÖˆÕDÇ Lµ, °Æ¬¹ ¨ºP´ ø­ ŒÖô²tÇ ´Å»µŒ¬ k° °ÀÉ LÅà¬ ˆÇÈÅµÂÈ²ä²."
+ personality_events.44.a:0 "NÇ‰Õ¬ä´NÇ ^Å<Çj¸ Â ¬ÔÆ Ù³HÅ È³j¸  ÇDÇ tÇè¸ÀÉ »º`Õ ƒ¬tÇä²!"
+ renegotiated_loans:0 "¬ÇÖÁÀ´ ³œÍ"
+ desc_renegotiated_loans:0 "°Æ¬¹XÇ ¬À˜°´Æ µÑXÎÇ”² °Æ¬¹¬ L¾°¹ ³œÍXÇ tÇ(ÇDÇ ®°”Í”² p³ 1Áõ¬ˆÕµÂÈ²ä²."
+ personality_events.45.t:0 "T³ tÇÁÀ 8ÌDÇ Â ÆÅ”² ƒ¬"
+ personality_events.45.d:0 "2Æ«· Ù³HÅ °Æ¬¹XÇ xÆP­­ä´NÇ [Root.Monarch.GetTitle] [Root.Monarch.GetName]ü¬(NÆ) ¨ºP´|¹ ¨º•ÆXÕà¬ È¹”² [Root.Monarch.GetHerHis] „¼‡¹DÇ pÈìÂtÕ TÆµÂÈ²ä². ø­ä´NÇ °Æ¬¹XÇ [Root.Monarch.GetTitle]tÇ ÈÀÉx¹ ¬Àà¬ä´XÇ ²´XÎå²p¬¬¹|¹ XÕ²|· è² jÕÂ¬Ä³ tÂ Â¬ ÆÅµÂÈ²ä². [angry_country.GetName] [angry_country.Monarch.GetTitle]xÇ [angry_country.Monarch.GetName]XÇ ¬ÀÈtÇ )¼8»jÕ Ù³HÅ, °Æ¬¹XÇ [Root.Monarch.GetTitle]tÇ(¬) ø­ ¬ÀÈXÇ TÖ|¹ ±4» Ë³´Æ ˜°8ºÀÉ ø­¬ (Æ¬ ÜÉÉDÇ 0Ñ¸Ò¬¹à¬ Ð¹XÅµÂÈ²ä². °Æ¬¹XÇ ­ÈÐÅÁ °¬TÏ tÇð· ¨º•Æä´DÇ ´°I¼´ÅÁ”² HÅ)´È²ä²!"
+ personality_events.45.a:0 "°Æ¬¹”² Ç³jÕ [Root.GovernmentName]XÇ …ºÆ|¹ ÀÉÏ|Å jÕä²!"
+ personality_events.46.t:0 "PÉl­MºÐÅÄ³ Õ¼ä´  ° ˆÇä²"
+ personality_events.46.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]XÇ pÈ¸ÅÇ É XÕ˜°xÇ $TREASURER$$MASTER_OF_MINT$NÇ(”²) jÍü­ 0®®XÇ |ÇŽ´¬ m­à¬ÐÅÁ X×ì·˜°¬à¬ ˆÇä²”² ƒ¬DÇ ¼¬¬ˆÕµÂÈ²ä². $TREASURER_CAP_S_PRONOUN$$MASTER_OF_MINT_CAP_S_PRONOUN$NÇ(”²) ø­ È³tÇ ²l­ üÈ8ºÈ²j¸ ä´´Å¬”²ÀÉ LÅà¬ Ä¼j¸ Ž±|·ÀÉÄ³ JÅXÅµÂÈ²ä². ˜ÌLÇÔÅ $TREASURER_S_PRONOUN$$MASTER_OF_MINT_S_PRONOUN$Ä³ [Root.Monarch.GetTitle]XÇ 0®„´tÇ ÁÀXÕÀÉ JÅ”² õ²DÇ >Ì<Ç2¸à¬ à¬ìÂˆÕÀÉÌ¹, tÇÈ $TREASURER_S_PRONOUN$$MASTER_OF_MINT_S_PRONOUN$”² DÅüÈ e×ø»j¸´Æ ÝÀ¬DÇ ¬Œ¬ ´ÈÅµÂÈ²ä². ®à¬|¹ ä²ÜÂ DÌ°Æ0® ÇtÕ [Root.Monarch.GetTitle]XÇ '¬Ç¥²'DÇ jÖ©ÆtÕô¼”² t¬ ´Å¨µL®”Æ?"
+ personality_events.46.a:0 "[Root.GovernmentName]XÇ tÇuÇDÇ ÇtÕ!"
+ personality_events.46.a.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!NÇ(”²) m­à¬|¹ ä²ÜÂ DÌ°Æ0® ÇtÕ §Y$TREASURER$$MASTER_OF_MINT$§!ü¬(NÆ) ¡Ö9¸ Ä¬ÖDÇ ÜÉ”² p³ Ù³XÇiÕÈ²ä²."
+ personality_events.46.b:0 "EÅDÇ EÅ<Çj¸ ¬DÅ´|Å ‹ÈDÇŒ¬ ÆÅä²"
+ personality_events.46.b.tooltip:0 "°Æ¬¹”² Ç® ÁäÂDÇ xÇÈXÕà¬ ´Å µjÕ XÇìÂ²Âì·´Æ )¼•¼<Çj¸Ä³ ø­ƒ¬DÇ ¼j¸¡Ç<Ç2¸ XÕÀÉ JÅ”²ä²."
+ personality_events.47.t:0 "‰ÇlÐ”² <Õô¼ä² ÄÉXÕä²"
+ personality_events.47.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]ÐÅŒ¬ DÅtÇ¬ ÆÅ0® Lµ8»ÐÅ, ø»˜·”² ä¹°Æ ˆ´UÖäÂtÕLÈµÂÈ²ä². jÕ tÕ jÕ tÕ¬ ÀÉ ° LµÈ¹ä² °Æ¬¹XÇ [Root.Monarch.GetTitle]NÇ(”²) ™²´Å¬ Ð¿tÇà¬, ÄÖÄ¬ÇXÇ ¬¥²1ÁNÇ ÈÈ ¬À|·ÀÉà¬ ˆÇµÂÈ²ä². °Æ¬¹”² [Root.Monarch.Dynasty.GetName]XÇ ¬Ä¬Ä³|¹ ÅÀÅÀtÇ ²´8È [Root.Monarch.GetTitle]tÇ(¬) …Ç‘Å`Õ Â ˆÇ”² jÎqÈä´tÇ ˆÇ”²ÀÉ >ÌXÅµÂÈ²ä². ø­ä´XÇ ÈµÑ1ÁNÇ ŽÈ ¨µ´ÅÀÉ ¬ÀÉÌ¹, jÍŒÁjÕ °Æ¬¹ÐÅŒ¬ HÅÈ¬NÇ É ƒ¬…ÇÈ²ä²."
+ personality_events.47.a:0 "[adoptive_country_1.GetName]XÇ [adoptive_country_1.Monarch.Dynasty.GetName] MariaÐÅ ³tÕ xÇÁÀÈxÇ ŒÁ8»DÇ ä´DÇ Â ˆÇÈÅä²."
+ personality_events.47.b:0 "[adoptive_country_2.GetName]XÇ [adoptive_country_2.Monarch.Dynasty.GetName] Alexander”² tÈË¬¼”² ¬À9¸­tÇ|·à¬ jÕä²."
+ personality_events.47.c:0 "[adoptive_country_3.GetName]XÇ [adoptive_country_3.Monarch.Dynasty.GetName] StephanosÐÅ ³tÕ ²l­Ä³ ØÕô²DÇ XÕÀÉ JÅ”²ä²."
+ personality_events.47.e:0 "UÆŒÈÐÅ D¾ôÅjÕ xÆm­xÇNÇ DÕ”ÆÆÅä²!"
+ personality_events.47.e.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!NÇ(”²) ÄÖÄ¬Ç¬ ÆÅ”² ÁÀÜÐj¸ ¨°µÂÈ²ä²."
+ personality_events.48.t:0 "x±Ù³ü¬ Ép¬ÀÆ"
+ personality_events.48.d:0 "°Æ¬¹XÇ [Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] Ë¬Ý¹²Âý·à¬ ¦ÇNÇ ”Í8»DÇ Z¾”² ÝÀjÖ )¼ÝÂ<Çj¸ .Ç…ºiÕÈ²ä². ìÅÜÐL®ÀÉ ¬¥Ç ÂXÎ²Âì·´Æ D¾¼ä´NÇ (Â¨¬8È TÆµÂÈ²ä²Ì¹, jÍü­ÔÅ ÁÀiÖtÇ ¼°à¬ ˆÇ”² ƒ¬ ¬µÂÈ²ä². [Root.Monarch.GetName]NÇ(”²) ¬À0®¼¯tÇ|·à¬ LÅ2¸ÄÉ [Root.Monarch.GetHerHis] ¬À‘·²Âð· `ÅxÇDÇ ­<Çj¸ p³2¸2Æà¬ Ð¹XÅµÂÈ²ä²..."
+ personality_events.48.a:0 "ø­N±”² „´…ºˆ× ¬Ç¥²tÇ ˆÇä². ø­N±|¹ |ÇXÕŒ¬ tÕ."
+ personality_events.48.b:0 "ø­”² „´…ºˆ× ¬Ç¥²tÇ ˆÇä². ø­|¹ |ÇXÕŒ¬ tÕ."
+ personality_events.48.c:0 "tÇt¬ DÅÌ² ƒ¬ ¬p­."
+ personality_events.48.c.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!XÇ `ÅxÇNÇ ³ÉXÇ tÇ©ºDÇ L°à¬ ˆÇµÂÈ²ä²."
+ personality_events.49.t:0 "0®µÅ`Õ Ì¹jÕ 2¼"
+ personality_events.49.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] 4»ÈÈjÕ 1Á©¬ü¬ 8ÖTÖj¸´Æ ÝÀjÖ ‘ÅÝÂ<Çj¸ .Ç…º- ø­Œ¬ EÅ…º|ÇÀÉ|·Ä³- iÕÈ²ä². ‰ÕÈ­ä´NÇ …È…È tÇ ¬ÀXÎä´tÇ ÈŽ´ 0®®ÐÅ üÈ”² Ž´ô²ÐÅ ³tÕ ˆ´ÉÓXÕÀÉÌ¹, xÇÁÀJ®NÇ ÓðÒä´DÇ ´Å»µŒ¬ üÈjÍXÕ”²ÀÉ DÅ”² ƒ¬NÇ ø­ Ç´Ìj¸Ä³ d¯ .Ç©ÆjÕ Ç°À…ÇÈ²ä². [Root.Monarch.GetName]NÇ(”²) [Root.Monarch.GetHerHis] ÓðÒNÆ ðÅŒÖä´DÇ µÑtÕ °Æ¬¹ [Root.GovernmentName]ÐÅ Î¹NÇ jÎl­|¹ Ì¹ä´´ÅüÈÈÅµÂÈ²ä². tÇÈ [Root.Monarch.GetSheHe]”² ¶ä²x¹ ³Ü­¨º ‰Õ¬À|¹ Ä¬ÖXÕà¬ ˆÇµÂÈ²ä²Ì¹, üÈH¾ä´NÇ DÅÁÉ °¬È´ÀÉ JÅXÅµÂÈ²ä²."
+ personality_events.49.a:0 "[invitee_1.GetName]XÇ [invitee_1.Monarch.GetName] [invitee_1.Monarch.GetTitle]tÇ(¬) •ÍÈ|¹ É8® ƒ¬tÇä²."
+ personality_events.49.b:0 "[invitee_2.GetName]XÇ [invitee_2.Monarch.GetTitle]xÇ [invitee_2.Monarch.GetName]DÇ(|¹) ¬…º¼Œ¬ tÕô¼Ç."
+ personality_events.49.c:0 "[invitee_3.Monarch.GetTitle] [invitee_3.Monarch.GetName]DÇ(|¹) Í³tÕ [invitee_3.GetName]NÆ(ü¬)XÇ ­Ä¬|¹ ¬.ÁÜÂ²ÐÇ."
+ personality_events.49.e:0 "ø­ä´NÇ ¨ºP´ ÀÉè¸tÕ! ø­ä´tÇ ÆÅ<Çtº T³ Ép¬¸Æ ƒ¬tÇä²."
+ personality_events.49.e.tooltip:0 "tÇˆ¼ ‰Õ¬ÀÔÅ xÆm­ µÑXÎÇä´NÇ Í³XÕÀÉ JÅ”²ä²."
+ personality_events.50.t:0 "Q×Ç ÈXÖ"
+ personality_events.50.d:0 "„´…º [Root.Monarch.GetTitle] [Root.Monarch.GetName]XÇ •ÆÝ¹tÇ ˜°|· Ë¬ÈÐÅ ÀÐ©¬DÇ üÈà¬ ˆÇ0®”² XÕÀÉÌ¹, lÂ´Æ È³ÐÅ ³jÕ[Root.Monarch.GetHerHis] k°ÆÅ”² •ÆÝ¹tÇ mÕÁÀ ÛÕÂà¬xÇ ƒ¬NÇ DÅÙ²È²ä². Lµj¸”² [Root.Monarch.GetSheHe]¬ ,ÒÇjÕ ¨ºØÕÈ ¬ÀÅÅä´tÇ 1Áõ¬XÕìÅ ÂuÇDÇ ´°0®Ä³ XÕ”²p³, 2Æ˜²tÇ ¼j¸ ø­ð·  °…ÇÈ²ä²."
+ personality_events.50.a:0 "ÀÉ® tÇ Â¬NÇ 8Ì<Çj¸ ì²dÏXÕl­˜°!"
+ personality_events.51.t:0 " ÌŒ­"
+ personality_events.51.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) [lazy_province.GetName]XÇ jÍü­ ô¼à¬¬ Ì¹qÈ²Âý·ÀÉ JÅä². [Root.Monarch.GetSheHeCap]”² øÄ¨ºÆÅ”² ±ü»ä´tÇ 8»È|·à¬ UÖàÂjÕä². ´ÅLÊtº ä²x¹ ±Ž´ä´tÇ ôÅìÂˆ× |ÇXÕÄ³k¸ ‡º‡ºDÇ ø¼ô¼0®j¸ ¼ÀDÇ Â ˆÇDÇÀÉÄ³?"
+ personality_events.51.a:0 "Œ¬<Ç„¹XÇ ³¬|¹ ô¼ìÅÉ|·!"
+ personality_events.51.b:0 "DÅ4»Ä³ |ÇXÕÀÉ JÅDÇ LÑÈ² °Æ°¹ ¼Ž·DÇ ¬Â`Õ Â ÆÅä²."
+ personality_events.51.b.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]s§!XÇ <ÕÐÅ ³jÕ ¬Ý¹tÇ HºÄÍµÂÈ²ä²... ÀÉ®NÇ."
+ cruel_overlord:0 "”Ç9ÖjÕ ÀÉ0¼Ç"
+ desc_cruel_overlord:0 "tÇ ÀÉíÅXÇ ¬ÀŒ·ä´NÇ ø­ä´XÇ ÆüÈÐÅŒ¬ ”ÇxÇXÕŒ¬ ³°Æ ¼XÅà¬, °¬m­ Î¹NÇ ˆ´‰Õü¬ ˆ´HÅDÇ |Å0®ÜÂ0Ïä²."
+ personality_events.52.t:0 "ô¼0® Ü´8» à¬©ÆüÈ"
+ personality_events.52.d:0 "[Root.Monarch.GetTitle] [Root.Monarch.GetName]tÇ(¬) mÕÁÀ ä²è¸0® lÂ´Æ ¬ÀŒ·NÇ DÅÙ²È²ä² - [Root.Monarch.GetHerHis] ÝÀ¬ÆÅ”² Èü­ü¬ „´Ä¼ÆÅ”² ‰ÕÙ³NÇ Â D± Ù³HÅ Î¹NÇ tÇä´DÇ 0®„´ ÁÀXÕŒ¬ ˆÕµÂÈ²ä². XÕÀÉÌ¹, [Root.Monarch.GetName]XÇ ÂÄÉhÕDÇ à¬ÉÓ¬XÕ”² ¬ÀŒ·ä´Ä³ ˆÇµÂÈ²ä². [Root.Monarch.GetHerHisCap] pÈ¸ÅÇä´NÇ °Æ¬¹XÇ [Root.Monarch.GetTitle]tÇ(¬) ˜Ç 2ÁÝ´ù²XÕà¬, ´Å²µ HÅt¬ÐÅÄ³ ‹ÂŒ¬ ä´,·ä²”² ƒ¬DÇ h®ì²XÅµÂÈ²ä². ø­ä´tÇ Ì¹qÈXÕtºÁ ø­ä´XÇ 	´	®Ä³ ä²ŒÁ ®°œÍ Â ˆÇŒ¬ ´ÈÅµÂÈ²ä². Í…ºjÕ ÄÖô¼Çä´tÇ ÉÀÉ´Å °Æ¬¹|¹ 0®ä²¬¹à¬ ˆÇµÂÈ²ä²!"
+ personality_events.52.a:0 "‹Å¬XÇ Ë¬ÁÇtÇ ø­ä´DÇ T³±Æ ôÅìÂˆ× |ÇXÕŒ¬ Ì¹à´ä²!"
+ naive_employer:0 "ÂÄÉjÕ à¬©ÆüÈ"
+ desc_naive_employer:0 "°Æ¬¹ ˜°|·XÇ µÑXÎÇ”² ‹Â¬À¬¹ ä´(·à¬ ÈÀj¸´Æ DÅtÇµ´Å|¹ 0®¼®tÇ ÜÂÄ³XÕ0®ÐÅ, pÈ¸ÅÇä´ ¬ÀtÇÐÅÁ xÇ0®¬ Î¹µÂÈ²ä²."
+ personality_events.53.t:0 "¬ÁÇtÇXÇ ‰Õ´Æ"
+ personality_events.53.d:0 "tÇt¬ Ä³|¹ ÀÉ˜°äÌµÂÈ²ä². XÕÀÉÌ¹ È ¬ÀEÅjÕ [assassination_nation.GetName]XÇ [assassination_nation.Monarch.GetTitle] [assassination_nation.Monarch.GetName]|·tº ù²ðÅjÕ |ÇtÇÈÅDÇÀÉÄ³ ¨ºt¹ÀÉ”Æ. ÀÉœ° 2¼, °Æ¬¹XÇ [Root.Monarch.GetTitle] [Root.Monarch.GetName]tÇ TÅ´À õ¬©¬<Çj¸Ž´0Ñ ¬àÂˆ× ´ÀDÅ¨°XÅµÂÈ²ä². tÇˆ¼Ì¹NÇ [Root.Monarch.GetHerHis] ¬ Î¹NÇ 1Á©¬ÐÅ ¬¬ÀtÕ|Å `Õ ¬È²ä², ø­Œ¬ DÅÈ²ÈÅä²tº Å³ I»NÇ è²Ž¬tÇ „´…º ø­|¹ Ìt¹à¬ Ð¹XÅDÇ LÑÈ²L®”Æ. ü­Ç³”² TÅ´ÀÇ|¹ ¡Ç”² p³ 1Áõ¬ˆÕà¬, ìÂ8»­XÇ x±%¸<Çj¸ ²¬ TÅ´ÀDÇ …º9¸ˆÕ”²ÀÉ ¼ÖÈ°µÂÈ²ä²..."
+ personality_events.53.a:0 "´° ñ´ÐÅ D¾Â|¹ K¯<Ç2¸ tÕ? tÇ ¨º•ÆDÇ ¬¼¼tÇ ìÅ0®ÀÉ JÅ<Ç¬¹|·!"
+ personality_events.54.t:0 "°ÆðÅjÕ mÎ,Ì"
+ personality_events.54.d:0 "ðÅŒÖ ÉÐÅ [Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) Û¹ˆÇ”² ”Æ¬¹ÐÅ ³jÕ  Ñ`¸ÐÅ `¾8Èä´ÈÅµÂÈ²ä². ÓðÒ 8Ì¬ÇXÇ ³Ž´„´NÇ ÀÉíÅ ”Æ¬¹¬ «°ä²”² ø­ä´XÇ ÉÓ¬|¹ à¬ÂˆÕ”²p³, [Root.Monarch.GetTitle]NÇ(”²) [Root.Monarch.GetHerHis]¬¬DÇ ¬ÂMÊ X×¬¹pº ä¹°Æ ù²iÖ²Âð· jÕÈ¹µ|¹ ¨°¼¬µÂÈ²ä². "œ° jÍà¬XÇ XÎˆÉ”² [cool_neighbor_country.GetName]ÐÅÁ œ°ä²à¬ mÕÁÀ ÝÀ¬ˆÕ´Å! ø­ÐÅ D¾XÕtº ø­ÐÅ D¾XÕtº DÅ4» Û¹Ä³ ÆÅÀÉ!"\n\ntÇ |Çj¸ °Æ¬¹XÇ ”Æ¬¹¬À”² pÐ KÌ<Õ|¹ ù²ˆÕµÂÈ²ä². ¶, [cool_neighbor_country.GetName]XÇ [cool_neighbor_country.Monarch.GetTitle] [cool_neighbor_country.Monarch.GetName]NÇ(”²) ø­ ðÅŒÖÐÅ ©ÌÇ|¹ (Â¨¬¨±X³ Œ¬ ÀÒ¼¹ÆÅµÂÈ²ä². [cool_neighbor_country.Monarch.GetHerHis] ¬ÀÈ É XÕ˜°¬ ˜°ÉÐÅ pÐ XÎˆÉ ÁÀÇ XÕ˜°|¹ õ¬ÜÉj¸ ô¼´°,Ép¬à´”Æ."
+ personality_events.54.a:0 "DÅ, ´Å¬¹ÁNÇ [Root.Monarch.GetName]ìÅ!"
+ personality_events.54.a.tt:0 "[cool_neighbor_country.Monarch.GetName]NÇ(”²) [Root.Monarch.GetTitle]XÇ ²XÎÆÅLÇÐÅ ÃÆÈÅµÂÈ²ä²."
+ personality_events.55.t:0 "p­³ N®”² [Root.GetName]"
+ personality_events.55.d:0 "2ÆÁÉ ¬¥Ç ÌÖm¹jÕ [Root.GetAdjective] Ñ¼¬Àä´Ì¹tÇ Ç³jÕ [Root.GovernmentName] !Çp­DÇ(|¹) ÇtÕ 	´¬À`Õ Â ˆÇDÇ ƒ¬…ÇÈ²ä²! [Root.Monarch.GetTitle] [Root.Monarch.GetName]NÇ(”²) °Æ¬¹ p­XÇ ^Å °ÐÅ ³tÕ à¬ìÂXÕpº ÂÎ¹NÇ 2¼DÇ ÜÀà¬, È¹hÎ´° °Æ¬¹¬ T³ ’±NÇ 0®ÉDÇ 8ÁÌÆ|ÅÌ¹ jÕä²”² °¬`¸DÇ ´°8¸µÂÈ²ä². øÄ Â ˆÇ”² Ñ¼¬Àä´NÇ „´…º T³ È´ÅÀÉ ¬ÀÉÌ¹, È¥ÇÐÅÁ”² èÖ,Å T³ ˜Ç øÂ¸Æ ƒ¬…ÇÈ²ä²."
+ personality_events.55.a:0 "ø­˜·, °Æ°¹ ‘Åô¼ä² ÈÉtÇ|Å!"
+ personality_events.55.b:0 "NºaÊjÕ ¬À´°ä´DÇ xÆtº`Õ ìÅ.Ç”² ÆÅä²."
+ personality_events.55.b.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!XÇ XÇ¬¬NÇ 0®¬´ÈÅµÂÈ²ä²."
+ military_perfectionism:0 "p­¬ÀÈ DÆË¼üÈXÇ"
+ desc_military_perfectionism:0 "°Æ¬¹XÇ µÑXÎÇ”² 2ÆÁÉ jÍà¬XÇ p­xÇä´Ì¹tÇ p­³ÐÅ …Ç³`Õ Â ˆÇÄ³k¸ ÈÕ‹·tÕ p­³XÇ È¼ÈxÇ ÈÉNÇ ÁÀ¹ÂXÕÀÉÌ¹ Ü­¨º”² ¬ŒÁiÕÈ²ä²."
+ personality_events.56.t:0 "pÈ¸ÅÇXÇ pÈ¸Å"
+ personality_events.56.d:0 "[Root.Monarch.GetTitle]tÇ(¬) ­È ¬ÀŒ·ä´ÐÅŒ¬ ø­¬¹ xÇ0®¬ ÆÅä²”² t¬ ¨ºP´¬ LÅà¬ ˆÇµÂÈ²ä². ³Ž´„´XÇ ¬ÀŒ·ä´NÇ ô¼õ¼ÐÅ ³jÕ P´2¸ÀÆ Lµ8»ÐÅ [Root.Monarch.GetHerHis] ²´k°ˆÇ”² 1Á©¬DÇ 8Ìà¬ ±´Å¬ÀÉÌ¹, jÕ pÈ¸ÅÇ˜° jÍü­ °Æ¬¹XÇ µÑXÎÇNÆ ìÅì·ˆ¼XÇ |±ÁÇDÇ Œ¼ÆµÂÈ²ä². "tÇt¬ ø­å° |Ç Lµ8»…ÇÈ²ä²" 2ÁÝ´%¸ ÆÅ”² Ð¹DÇ ´°I¼<Çpº, $TREASURER$$NATURAL_SCIENTIST$$PHILOSOPHER$$ARTIST$$THEOLOGIAN$$MASTER_OF_MINT$$INQUISITOR$NÇ(”²) tÇÈ ­ÈDÇ  µ˜°2¸ XÕà¬ ˆÇµÂÈ²ä². XÕÀÉÌ¹ ¨ºà´ tÇä´tÇ tÇtÕ`Õ Â ˆÇ”² Ð¹tÇ ˆÇÀÉ”Æ..."
+ personality_events.56.a:0 "È³<Çj¸ '³TÖ'|¹ tÕü¼L®."
+ personality_events.56.a.tt:0 "tÇ pÈ¸ÅÇ”² ø­ |±ÁÇÐÅ ³tÕ ŠÇ´Å„¼2¸|Å `Õ p¬|Å."
+ personality_events.56.b:0 "°Æ°¹ $TREASURER$$NATURAL_SCIENTIST$$PHILOSOPHER$$ARTIST$$THEOLOGIAN$$MASTER_OF_MINT$$INQUISITOR$tÇ(¬) DÕ”ÆÆÅ´Å."
+ personality_events.57.t:0 "È¥ÇXÇ Ž´„¹"
+ personality_events.57.d:0 "[Root.Monarch.GetName]XÇ tÇ„¹NÇ °Æ¬¹ [Root.GovernmentName] m­Ë¬ ±8ºL®ÀÉÄ³ LÅ2¸8È ˆÇµÂÈ²ä². ø­N±”² °Æ¬¹XÇ à¬À­jÕ [Root.Monarch.GetTitle]tÇ0®Ä³ XÕÀÉÌ¹, Ù³ÜÂÐÅ ø­N±XÇ p­¬ÀÈ 0®É·<Çj¸Ä³ .Ç…ºiÕÈ²ä². ìÅÜÐL®ÀÉ ø­N±”² HÅÈjÕ ‘ÇÈŒÖXÇäÂÐÅÁ ÈÁÇDÇ Ä³TÆµÂÈ²ä²Ì¹, ø­N±¬ È¥ÇÐÅ Á0®|¹ ÐÆXÕ”² ©ºŒÁ¬¹Ä³ ˆÇµÂÈ²ä². tÇ ©ºŒÁ¬¹”² ˜° °tÇ äÎÀÉà¬ ¬tÕÀÉà¬ ˆÇµÂÈ²ä²."
+ personality_events.57.a:0 "ø­N±|¹ 4»d³L®ÀÉ 0µt¹¬¹|·!"
+ personality_events.57.a.tooltip:1 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!NÇ(”²) ¥Çp­tÇ ´ÈÅµÂÈ²ä²."
+ personality_events.57.b:0 "[Root.Monarch.GetTitle]XÇ ÝÀ…ºDÇ ÇÜÐm¸Œ¬ `Õ Â”² ÆÅä²."
+ personality_events.57.b.tooltip:0 "§Y[Root.Monarch.GetTitle] [Root.Monarch.GetName]§!NÇ(”²) ¥Çp­tÇ ´ÀÉ JÅµÂÈ²ä²."
+ personality_events.58.t:0 "È¥ÇXÇ Ž´„¹"
+ personality_events.58.d:0 "[Root.Heir.GetName]NÇ(”²) °Æ¬¹ [Root.Monarch.GetTitle]XÇ ÄÖÄ¬ÇtÇà¬, [Root.GovernmentName]XÇ ¨ºà´ üÈ”Æ xÇ¬Àä´tÇ ø­N±XÇ tÇ„¹DÇ LÅà¬ ˆÇµÂÈ²ä². LÅà¬ ˆÇ”² ¬ÀŒ·NÇ Ä¼j¸ ÆÅÀÉÌ¹, ø­N±”² Ž±|·´Æ p­¬ÀÈ ÖHÅÄ³ ô¼.ÇXÕà¬ ˆÇµÂÈ²ä². ìÅÜÐL®ÀÉ ø­N±”² HÅÈjÕ ‘ÇÈŒÖXÇäÂÐÅÁ ÈÁÇDÇ Ä³TÆµÂÈ²ä²Ì¹, ø­N±¬ È¥ÇÐÅ Á0®|¹ ÐÆXÕ”² ©ºŒÁ¬¹Ä³ ˆÇµÂÈ²ä². tÇ ©ºŒÁ¬¹”² ˜° °tÇ äÎÀÉà¬ ¬tÕÀÉà¬ ˆÇµÂÈ²ä²."
+ personality_events.58.a:0 "ø­N±XÇ 4»d³L®ÀÉ 0µt¹¬¹|·!"
+ personality_events.58.a.tooltip:0 "§Y[Root.Heir.GetName]§!NÇ(”²) ¥Çp­tÇ )´È²ä²."
+ personality_events.58.b:0 "[Root.Monarch.GetTitle]XÇ ÄÖÄ¬ÇXÇ ÝÀ…ºDÇ ÇÜÐm¸Œ¬ `Õ Â ÆÅä²."
+ personality_events.58.b.tooltip:0 "§Y[Root.Heir.GetName]§!NÇ(”²) ¥Çp­tÇ ´ÀÉ JÅµÂÈ²ä²."
+ NO_LOCATION:0 "ø­ä´XÇ ÑÉ"
+ DEATH_IN_BATTLE:0 "[Root.Monarch.GetSheHeCap]”² $NAME$ ÀÉíÅÐÅÁ p­³|¹ ÀÉ×XÕX³ É ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_IN_SIEGE:0 "[Root.Monarch.GetSheHeCap]”² $NAME$ ÀÉíÅÐÅÁ õ¬1ÁÈDÇ ÀÉ×XÕX³ É È¬ÀˆÕµÂÈ²ä²."
+ DEATH_WHILE_MARCHING:0 "[Root.Monarch.GetSheHeCap]”² $NAME$ ÀÉíÅÐÅÁ p­³|¹ tÇL°à¬ ‰Õp­XÕX³ É ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_WHILE_CAMP:0 "[Root.Monarch.GetSheHeCap]”² $NAME$ ÀÉíÅÐÅÁ p­³|¹ tÇL°à¬ üÈT´XÕX³ É ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_OLD_AGE:0 "[Root.Monarch.GetSheHeCap]”² x±9¸<Çj¸ ÇðÅ¬ÀˆÕµÂÈ²ä²."
+ DEATH_RANDOM_0:0 "[Root.Monarch.GetSheHeCap]”² ÈÉÝÂ<Çj¸ 	®¬ÀˆÕµÂÈ²ä²."
+ DEATH_RANDOM_1:0 "[Root.Monarch.GetSheHeCap]”² ´ÆÙ³ Ä³É …ÇNÇ ÁÀ˜Ì¬ g³˜° ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_RANDOM_2:0 "[Root.Monarch.GetSheHeCap]”² Ä¬è²ÐÅÁ ¨µ´Å8È äÂqÈ¬ÀˆÕµÂÈ²ä²."
+ DEATH_RANDOM_3:0 "[Root.Monarch.GetSheHeCap]”² …È‘ÅXÇ üÅÉtÇ EÅTÖ´´Å ¬‘Ç²Â¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_RANDOM_4:0 "[Root.Monarch.GetSheHeCap]”² |Ç¼ÈxÇ ¬0®j¸ xÇjÕ ÐÓ4¸<Çj¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_RANDOM_5:0 "¬‘Ç²Âð· Ñ¼8Á¬ [Root.Monarch.GetHerHim]XÇ ¶ÀDÇ ±4»Ä³ |ÇÌ WÅDÅ¬à¬ Ð¹XÅµÂÈ²ä²."
+ DEATH_RANDOM_6:0 "[Root.Monarch.GetSheHeCap]”² ÆÁÀXÎ »ºjÕ ÝÂÉÅ³<Çj¸ ¬ÀÝ¹‡ÕµÂÈ²ä²."
+ DEATH_RANDOM_7:0 "[Root.Monarch.GetSheHeCap]”² ¬‘Ç²Âð· ¬Àå° ¬Àà¬XÇ l×ÝÀÇ¬ ´ ƒ¬<Çj¸ ô¼…ÇÈ²ä²."
+ DEATH_RANDOM_8:0 "[Root.Monarch.GetSheHeCap]”² ìÂŽ´ÈÉ<Çj¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ DEATH_RANDOM_9:0 "[Root.Monarch.GetSheHeCap]”² tÇÈÉÐÅ x¬2¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_accident:0 "[GetSheHeCap]”² [GetHerHis] p­³|¹ ÀÉ×XÕpº ÈÖ(¸XÕX³ Ä³É ¬Àà¬j¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_age:0 "[GetSheHeCap]”² è² jÕˆ¼Ä³ ÇØÕÐÅ ÁÉtºjÕ ÈtÇ ÆÅÈÅµÂÈ²ä²Ì¹, 8ÁÔÆtÇ °¬m­ [GetHerHim]|¹ p³2¸¬à¬ Ð¹XÅµÂÈ²ä²."
+ leader_death_reason_disease:0 "[GetSheHeCap]”² È¥ÇÐÅÁ x¬°¹ Ñ¼<Çj¸ xÇtÕ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_siege:0 "[GetSheHeCap]”² õ¬1Á Ä³É ©Æ¬XÕŒ¬ 8Ì8Ö|¹ Â0ÌXÕä²¬ ÈXÇ .ÇÄÐDÇ Þ¹à¬ Ð¹XÅµÂÈ²ä²."
+ leader_death_reason_naval_battle:0 "[GetSheHeCap]”² ÄÉÈjÕ .Á¥Ç˜Ìü· [GetHerHis] hÕ.Áü¬ hÕØ® ¬|·IÅXÅµÂÈ²ä²."
+ leader_death_reason_land_battle:0 "[GetSheHeCap]”² Èp­ü¬XÇ P­È É ÈÄÉ jÕ¬´Æp³Á ©Æù¹XÕŒ¬ øÂ°Æä² ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_navy_moving:0 "[GetSheHeCap]”² ˆ´‰ÕXÕŒ¬Ä³ Ñ¼ÐÅ x¬2¸ ¼ä² ÇÐÅÁ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_land_moving:0 "[GetSheHeCap]”² $PROVINCE$|¹ ÀÉ˜° ‰Õp­XÕX³ Ä³É ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_navy_idle:0 "[GetSheHeCap]”² ˆ´‰ÕXÕŒ¬Ä³ Ñ¼ÐÅ x¬2¸ ¼ä² ÇÐÅÁ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_land_idle:0 "[GetSheHeCap]”² $PROVINCE$XÇ Ñ¼ÆÐÅÁ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_event_default:0 "[GetSheHeCap]”² $PROVINCE$ÐÅÁ LÅ Â ÆÅ”² tÇ.Çj¸ ¬ÀÝ¹ˆÕµÂÈ²ä²."
+ leader_death_reason_drilling:1 "[GetSheHeCap]”² p­³ ÈÖ(¸ Ä³É ¬Àà¬j¸ ¬ÀÝ¹ˆÕµÂÈ²ä².\nÈÖ(¸NÇ tÇÈ Éè²´ÈÅµÂÈ²ä²."
+ just_personality_die_desc:0 "°Æ¬¹ UÆm­NÇ [Root.Monarch.GetHerHis] õ¬…ºÈ³jÕ Ó°¬DÇ ø­¬¹ÌÆ`Õ ƒ¬…ÇÈ²ä²."
+ righteous_personality_die_desc:0 "°Æ¬¹ m­ü»ä´NÇ °Æ¬¹ ÝÀ`ÅÐÅÁ ¬¥Ç .ÁˆÕX³ [Root.Monarch.GetTitle]XÇ ýÈLÇDÇ `ÅÄ³XÕà¬ ˆÇµÂÈ²ä²."
+ kind_hearted_personality_die_desc:0 "°Æ¬¹ m­ü»ä´NÇ [Root.Monarch.GetHerHim]|¹ jÎÈXÕà¬ ¬À‘·¼”² µÑXÎÇj¸ 0®µÅ`Õ ƒ¬…ÇÈ²ä²."
+ free_thinker_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² °Æ¬¹XÇ ©ºjÔÐÅ Ä³ì²XÕ0® ÇtÕ Æ ÈµÑDÇ h®(·¬¹”² ƒ¬DÇ P´2¸ÌÆXÕÀÉ JÅXÅä²."
+ well_connected_personality_die_desc:0 "[Root.Monarch.GetSheHe]”² ¬ÀÄÖ 8ÁÄ¬ÐÅÁ Œ¼hÃŽ´0Ñ É”ÆjÕ È	ÍDÇ XÕà¬ ˆÇDÇŒ¬ ÀÒ¼¹ ÆÅµÂÈ²ä²."
+ calm_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² °Æ¬¹ UÆm­ÐÅ ÉÓTÖNÆ ÈÉÁ|¹ ¬8ÈTÆµÂÈ²ä²."
+ secretive_personality_die_desc:0 "[Root.Monarch.GetSheHe]”² [Root.Monarch.GetHerHis] Â Î¹NÇ D¾¼ä´DÇ [Root.Monarch.GetHerHis] 4»d³<Çj¸ ¬8È¬DÇ ƒ¬tÇ ÀÒ¼¹ÆÅµÂÈ²ä²."
+ intricate_web_weaver_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² p­ Èô¼ÐÆä´XÇ `ÅÄ³|¹ ¼à¬ ˆÇµÂÈ²ä²."
+ fertile_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² [Root.Monarch.GetHerHis]  Î¹NÇ ÇÁä´j¸Ž´0Ñ `ÅÄ³|¹ ¼à¬ ˆÇµÂÈ²ä²."
+ well_advised_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] pÈ¸ÅÇä´tÇ tÇƒ¬tÇ jÍ.Á„ÇDÇ ¥Çô²iÕÈ²ä²."
+ benevolent_personality_die_desc:0 "°Æ¬¹ …ÈÁm­ä´NÇ ´ÅÄÉ üÈp­XÇ ¬ÀÝ¹DÇ `ÅµÑtÕ iÕÈ²ä²."
+ zealot_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ôÅÈü¬ àÂP±NÇ ÂÎ¹NÇ ˆ´àÂÇä´XÇ ÝÀ¬DÇ ¼Ô¯“±XÅµÂÈ²ä²."
+ pious_personality_die_desc:0 "°Æ¬¹”² tÇì·jÕ ø»U³ü¬ ÈàÂ%¸XÇ ŒÁ.ÇÇ|¹ ä²àÂ Ì¹ ° Â ÆÅDÇ ƒ¬…ÇÈ²ä²."
+ careful_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ˜Ç Ä¬Ö´ °¬Èä´NÇ °Æ¬¹XÇ …ÇÀÉ|¹ lÐŒ¬ ¬TÖÜÂÏüÈÈÅµÂÈ²ä²."
+ lawgiver_personality_die_desc:0 "°¬m­ °Æ¬¹”² ¨ºP´ ìÂÓ¼DÇ ƒ¬…ÇÈ²ä²."
+ midas_touched_personality_die_desc:0 "´ÅµÁà´ È³ Ä°ÈÀ|¹ ˜Ç á¹”² [Root.Monarch.GetHerHisCap] ¬Ç¥²NÇ °Æ¬¹ m­¬|¹ Ž´.ÇXÕŒ¬ Ì¹ä´ÈÅµÂÈ²ä²."
+ incorruptible_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ¬ÁÉjÕ 1ÁˆÔ U³„´ÐÅ °Æ¬¹ ˜°|·”² T³±Æ T³ ÄÉ”ÁjÕ ó¬tÇ ´ÈÅµÂÈ²ä²."
+ architectural_visionary_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] 0®µÅNÇ [Root.Monarch.GetSheHe]¬ ¨°4® t¬•Í<»ä´DÇ µÑtÕ ÆÐÆ`Õ ƒ¬…ÇÈ²ä²."
+ scholar_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] YÕ8»È ôÅÈNÇ °Æ¬¹ UÆm­ÐÅ ÖàÂü¬ …º1ÁDÇ ¬8Èä² ,ÉµÂÈ²ä²."
+ entrepreneur_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² [Root.Monarch.GetHerHis] ÝÀ`ÅÐÅ x¬ÐÌ Ë¬ÈÈ ÝÀÜÐÄ¬|¹ Ö1ÁˆÕµÂÈ²ä²."
+ industrious_personality_die_desc:0 "°Æ¬¹ Ë¬È|¹ ¬.ÁXÕ0® ÇjÕ [Root.Monarch.GetHerHisCap] Ž´è²jÕ x±%¸tÇ ¹ºÜÂ ø­¬¹¸Æ ƒ¬ …ÇÈ²ä²."
+ expansionist_personality_die_desc:0 "°Æ¬¹XÇ ÝÂü»ÀÉ ¬™ÌÇä´NÇ ø­ä´XÇ Ç³jÕ ÄÖÐÆÇXÇ ÁäÂDÇ `ÅÁtÕ `Õ ƒ¬…ÇÈ²ä²."
+ charismatic_negotiator_personality_die_desc:0 "[Root.Monarch.GetHerHim]XÇ Ž´¬Çj¸ xÆm­ µÑXÎÇNÆXÇ ÖÁÀNÇ ŒÁ¬ÁÀÜÐÐÅ È´Åä´ ƒ¬<Çj¸ ô¼…ÇÈ²ä²."
+ silver_tongue_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ì²dÏjÕ Ð¹ä´NÇ Ç0®ÐÅ `¾LÈDÇ LµÄ³ °Æ¬¹|¹ ÀÉÏüÈÈÅµÂÈ²ä². tÇÈ”² ²¬ °Æ´¹ ÀÉÏÉL®”Æ?"
+ tactical_genius_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ÖŽ·jÕ 0®Ù³NÇ °Æ¬¹XÇ Èä´DÇ MºXÕà¬ <ÖŽ·²Âý·Œ¬ Ì¹ä´ä¬ ˆÕµÂÈ²ä²."
+ bold_fighter_personality_die_desc:0 "ÈÄÉDÇ ¥ÕjÕ [Root.Monarch.GetHerHisCap] ³ô²jÕ Ì³©¬NÇ [Root.Monarch.GetHerHis] 8Á³XÇ ¨ºà´ Ñ¼¬Àä´ÐÅŒ¬ ŠÇ0® ˜×à´ xÇÁÀDÇ ¨°¼¬µÂÈ²ä²."
+ fierce_negotiator_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] XÎôÅjÕ ÖÁÀNÇ °Æ¬¹ Eµ Ä³˜ÌÐÅ ¨°DÅ ˆÇ”² ©ÆÑ¼ ³¥Çä´DÇ ­MÕXÕŒ¬ Ì¹ä´ÈÅµÂÈ²ä²."
+ strict_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] J°„Ç ÆÅ”² ¬ÜÂ”² mÕÁÀ °Æ¬¹|¹ )¼ìÂ`Õ Â ÆÅŒ¬ ˆÕµÂÈ²ä²."
+ inspiring_leader_personality_die_desc:0 "[Root.Monarch.GetSheHeCap]”² °Æ¬¹XÇ Èä´DÇ ¥ÕtÕ 4»0®|¹ ä´Ä³k¸ °Æ¬¹ 8Á³|¹ à¬èÍÜÂ0ÏµÂÈ²ä²."
+ martial_educator_personality_die_desc:0 "[Root.Monarch.GetSheHe]¬ °Æ¬¹XÇ ¥ÇP­ä´DÇ ÇtÕ Ì¹à´ P­!Çü¬ÈNÇ Â 8Á³ÐÅ x¬ÐÌ ¬À©Æ.´ ƒ¬tÇä²."
+ navigator_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ¼ä²ÐÅ ³jÕ ôÅ­NÇ °Æ¬¹ÐÅŒ¬ ¬jÕ tÕp­DÇ ¨°¼¬ä²."
+ babbling_buffoon_personality_die_desc:0 "°Æ¬¹XÇ jÎl­ä´NÇ 2Æ˜²DÇ ŒÁÉˆ× ìÅ8® ƒ¬tÇä²."
+ embezzler_personality_die_desc:0 "°Æ¬¹ ŒÖÄ¬¬Àä´NÇ [Root.Monarch.GetHerHim]|¹ ø­¬¹ÌÆ XÕÀÉ JÅ ¬ÀÉÌ¹, [Root.Monarch.GetHerHis] pÈtÎä´NÇ „´…º ä²|¹ ¬È²ä²."
+ infertile_personality_die_desc:0 "°Æ¬¹”² [Root.Monarch.GetHerHis] ÄÖÄ¬Ç¬ UÆpÈ|¹ tÈÁÜÂ²Ð0® ÇtÕ T³ Î¹NÇ ƒ¬DÇ `Õ Â ˆÇ0®|¹ l×Ý¹iÕÈ²ä²."
+ drunkard_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] .ÂüÈÈü¬ ¬ÀXÎ²Âð· èÍ¥ÕtÇ [Root.Monarch.GetSheHe]¬ ‰ÉÇ`Õ Lµô¼ä² m­¬|¹ ¬œ°XÕà¬ ìÂ¬XÕŒ¬ Ì¹ä´ÈÅµÂÈ²ä²."
+ sinner_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] (Ój¹ÈxÇ ¶ÀNÇ °Æ¬¹ ˜°|·ÐÅ XÎ•ÆDÇ HÅ¨¬ üÈÈÅµÂÈ²ä²."
+ greedy_personality_die_desc:0 "Ž´ÐÅ ³jÕ [Root.Monarch.GetHerHisCap] ¨ºà´ ÐÐ•ÆNÇ tÇÈ k°¬°µÂÈ²ä²."
+ tolerant_personality_die_desc:0 "…ÈP­È ŒÁÂÇä´NÇ 8Ì<Çj¸ ­³ˆÕX³ [Root.Monarch.GetHerHis] ýÈLÇDÇ `ÅÄ³`Õ ƒ¬…ÇÈ²ä²."
+ cruel_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] ¬ÀEÅjÕ ‰ÕÇ”² ÄÖ8ÁÐÅ ÈtÕ8È|Å `Õ ƒ¬…ÇÈ²ä²."
+ naive_personality_die_desc:0 "xÆP­ÐÅ ­jÕ [Root.Monarch.GetHerHisCap] ÂÄÉjÕ ¬-ÁNÇ ø­È 2ÆtÕNÆ ÈÀj¸´Æ Èä´Ì¹ ˆ´ì·2Æà¬ Ð¹XÅµÂÈ²ä²."
+ craven_personality_die_desc:0 "È¥ÇÐÅÁ [Root.Monarch.GetHerHisCap] D¾¬jÕ ‰ÕÙ³NÇ ÆÐÆˆ× [Root.Monarch.GetHerHis] ðÅ³0®|¹ 0µ|·ä²Ð² ƒ¬…ÇÈ²ä²."
+ loose_lips_personality_die_desc:0 "[Root.Monarch.GetHerHisCap] pÈìÂ1Á ÆÅ”² 0®¼ ­¬¹”² °Æ¬¹XÇ 0®¼ Èô¼ä´DÇ õ¬õ¬ðÅjÕ ÁÀÝÂ<Çj¸ Ì¹ä´´Å „¼8¸µÂÈ²ä²."
+ obsessive_perfectionist_personality_die_desc:0 "¨ºà´ ¬ÀŒÖ0®¼ÜÂ2Á t¬2ÁÐÅ ³jÕ [Root.Monarch.GetHerHisCap] J°„ÇÆÅ”² ¬-ÁNÇ, ²l­Ä³ ¼0®ÀÉ JÅDÇ 4® ÀÉœÍ ©ºk¸DÇ ˜°|·ÐÅ ¨°¼¬µÂÈ²ä²."
+ malevolent_personality_die_desc:0 "°Æ¬¹XÇ …ÈÁm­NÇ [Root.Monarch.GetHerHis] EÅ„·jÕ µÑXÎ¬ k°¬°ä²”² ƒ¬DÇ LÅà¬˜°Á|Å È¹LÇDÇ “±DÇ Â ˆÇÈÅµÂÈ²ä²."
+ conqueror_personality_die_desc:0 "°Æ¬¹XÇ Èä´NÇ „´…º [Root.Monarch.GetHerHis] ¬ÀÝ¹ ŒÁÝÂtÇ ä´2¸|Å HÅÄ³`Õ ƒ¬…ÇÈ²ä²."
+ no_personality_die_desc:0 "[GetSheHeCap]”² 4»¸Å¬ 0®k¸`Õ Â ˆÇDÇ Ì¹|Ð 1ÁèÍ|¹ tÇè¸ÀÉ »ºXÕà¬ ¬ÀÝ¹XÕÆµÂÈ²ä²."
+ glory_seeker_personality_die_desc:0 "[GetHerHisCap] ©Æ¬jÕ õ¬©¬NÇ °Æ¬¹ p­ÐÅ XÇtÕ ŒÖÇ.´ ƒ¬…ÇÈ²ä²."
+ born_to_the_saddle_personality_die_desc:0 "[GetHerHisCap] 0®Ñ¼³”² [GetHerHim]XÇ ¬ÀÝ¹DÇ ÇàÂXÇ |Ç˜Ìü· ¬Â|ÓiÕÈ²ä²."
+ defensive_planner_personality_die_desc:0 "°Æ¬¹ p­³”² ø­ä´XÇ HÅÈÐÅ ³jÕ [GetHerHis] ­ìÂDÇ ³è²ˆ× ø­¬¹ÌÆ`Õ ƒ¬…ÇÈ²ä²."
+ battlefield_medic_personality_die_desc:0 "°Æ¬¹ p­³”² ø­ä´XÇ t¬¬ÐÅ ³jÕ [GetHerHis] ­ìÂDÇ ³è²ˆ× ø­¬¹ÌÆ`Õ ƒ¬…ÇÈ²ä²."
+ ruthless_personality_die_desc:0 "[GetHerHisCap] ”Ç9ÖjÕ È.ÂNÇ °Æ¬¹XÇ Èä´ ¬ÀtÇÐÅ ÄÅ­Ìœ° õ¬ìÓ|¹ ˆ´´Å 1±ÈÅµÂÈ²ä²."
+ inspirational_leader_general_personality_die_desc:0 "[GetHerHisCap] à¬4»ÈxÇ ðÅ2ÁNÇ Â8Á³XÇ p­xÇä´ÐÅŒ¬ ŒÖÇ.´ ƒ¬…ÇÈ²ä²."
+ master_of_arms_personality_die_desc:0 "[GetHerHisCap] ô¼Ñ¼³”² [GetHerHim] ¬ÀÝ¹DÇ ÇàÂXÇ |Ç˜Ìü· ¬Â|ÓiÕÈ²ä²."
+ goal_oriented_personality_die_desc:0 "[GetHerHisCap] ÜÂ0®ÈÈjÕ Ä³)ÌNÇ Â Î¹NÇ È,Ò|¹ ¹Â¬¹j¸ tÇL°ÈÅµÂÈ²ä²."
+ hardy_warrior_personality_die_desc:0 "è²Âˆ× [GetHerHisCap] tÈ¬ÇÌ¹<Çj¸Ä³ jÍEÅXÇ Â¬ä´tÇ ù­õ¼´”² ƒ¬ ¬XÅµÂÈ²ä²."
+ siege_specialist_personality_die_desc:0 "õ¬1Á 0®.ÂÐÅ ³jÕ [GetHerHisCap] ­ìÂNÇ ¨ºà´ ,ÒÇ|¹ ¬XÎˆÇŒ¬ Ì¹ä´ÈÅµÂÈ²ä²."
+ cannoneer_personality_die_desc:0 "[GetHerHisCap] ìÓÑ¼³”² [GetHerHis] ¬ÀÝ¹DÇ [GetSheHe]¬ ÇàÂxÇ ƒ¬˜Ìü· ¬Â|ÓiÕÈ²ä²."
+ extortioner_personality_die_desc:0 "[GetHerHisCap] ¬ÀÝ¹NÇ °Æ¬¹|¹ ÈxÆjÕ ¨ºà´ ˜°|·XÇ ÁÀxÇä´ÐÅŒ¬ pÐ 0®hÀDÇ É ƒ¬…ÇÈ²ä²."
+ ruthless_blockader_personality_die_desc:0 "ðÅHÅ ÈíÅXÇ mÕl­ üÈü»ä´NÇ tÇÈ T³ ¸Óˆ× ´À Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ buccaneer_personality_die_desc:0 "[GetHerHim] ¬ÀÝ¹ tÇÄÖ °Æ¬¹ Èä´NÇ mÕj¸ÐÅÁ HÅÈXÕä²à¬ ²|°Œ¬ .´ ¬È²ä²."
+ prize_hunter_personality_die_desc:0 "[GetHerHisCap] 4»õ¬NÇ °Æ¬¹ÐÅŒ¬ È¬¹ˆÔ Î¹|Ð Î¹NÇ 0¼ä´DÇ ˜°ìÓtÕ,Æ ƒ¬…ÇÈ²ä²."
+ ironside_personality_die_desc:0 ")¼´Å È.ÂÐÅ ­jÕ [GetHerHisCap] ŒÁàÂNÇ [GetHerHis] ÀÉ× DÅ˜· ˆÇX³ Çä´ÐÅŒ¬ ¬jÕ xÇÁÀDÇ ¨°¼¬ä²."
+ naval_engineer_personality_die_desc:0 "[GetHerHis] ÀÉ× XÕÐÅ ˆÇ”² hÕ.Áä´ÐÅ ³jÕ ­ìÂNÇ [GetHerHisCap] ¬ÇÇ Ù³HÅ hÕ.Áä´XÇ ´°l­Ä³|¹ lÐŒ¬ É¬ÜÂ0ÏµÂÈ²ä²."
+ naval_showman_personality_die_desc:0 "[GetHerHisCap] ³ô²jÕ ÀÆÁÉ„ÇNÇ °Æ¬¹ ¹Â4»ÐÆä´ÐÅŒ¬ Æ­ü¬ Ë¬ØÕDÇ üÈÈÅµÂÈ²ä²."
+ ram_raider_personality_die_desc:0 "[GetHerHisCap] ³ô²jÕ ÀÆÁÉ„ÇNÇ °Æ¬¹ ¹Â4»ÐÆä´ÐÅŒ¬ Æ­ü¬ Ë¬ØÕDÇ üÈÈÅµÂÈ²ä²."
+ naval_gunner_personality_die_desc:0 "ìÓ©¬ .ÁÐÆä´ÐÅ ³jÕ [GetHerHisCap] ÀÉÁÈxÇ ÈÖ(¸ U³„´ÐÅ [GetHerHis] ÝÀ`Å Ù³HÅ °Æ¬¹XÇ tÕp­%¸tÇ lÐŒ¬ ¼ÈˆÕµÂÈ²ä²."
+ accomplished_sailor_personality_die_desc:0 "mÕtÕ.ÂÐÅ ³jÕ [GetHerHisCap] ’±NÇ tÇtÕ”² [GetHerHis] ¹Â4»ÐÆä´ÐÅŒ¬ tÈË¬¼XÅµÂÈ²ä²."
+ level_headed_personality_die_desc:0 "ìÂ¬jÕ ÇØÕÐÅÄ³ ˆ´l­XÕà¬ hÎ)ÌhÕDÇ .ÇÀÉ`Õ Â ˆÇ”² [GetHerHisCap] ¥²%¸NÇ Î¹tÇ ø­¬¹¸Æ ƒ¬…ÇÈ²ä²."
+ just_personality:0 "õ¬ÈhÕ"
+ righteous_personality:0 "ÈXÇj¸ÀÆ"
+ kind_hearted_personality:0 "jÎÈhÕ"
+ free_thinker_personality:0 "Ç.Çj¸´Æ ¬ÀÁÀ¬"
+ fierce_negotiator_personality:0 "¬À˜°´Æ ÖÁÀ¬"
+ calm_personality:0 "hÎ)ÌhÕ"
+ careful_personality:0 "àÂÉhÕ"
+ secretive_personality:0 "D¾¼²Âì·ÀÆ"
+ intricate_web_weaver_personality:0 "XÎ¼jÕ 2ÁÄ¬Ç"
+ fertile_personality:0 "È%¸tÇ ±hÎ"
+ well_advised_personality:0 "Ö…ºhÕ"
+ benevolent_personality:0 "Ç`Åj¸ÀÆ"
+ tolerant_personality:0 "­³jÕ Ç"
+ zealot_personality:0 "­àÂÇ"
+ pious_personality:0 "Ë¬t¬hÕ"
+ lawgiver_personality:0 "…Ç•¼Ç"
+ midas_touched_personality:0 "È¹tÇä²²ÂXÇ Á"
+ incorruptible_personality:0 "­Ì4¸hÕ"
+ architectural_visionary_personality:0 "t¬•ÍYÕÄ¬XÇ .ÁÀÉÇ"
+ scholar_personality:0 "YÕÇ"
+ entrepreneur_personality:0 "¬ÀÅÅ¬"
+ industrious_personality:0 "ü­tºhÕ"
+ expansionist_personality:0 "UÖ¥ÇüÈXÇÇ"
+ charismatic_negotiator_personality:0 "ä¹%¸ÈxÇ ÖÁÀ¬"
+ silver_tongue_personality:0 "ì²À¼¬"
+ tactical_genius_personality:0 "È.ÂXÇ œÌ¬Ç"
+ bold_fighter_personality:0 "©Æ¬jÕ È¬À"
+ well_connected_personality:0 "È¹ù²¼"
+ strict_personality:0 "ÄÅ©¬hÕ"
+ inspiring_leader_personality:0 "à¬4»ÜÂ²Ð”² ÀÉ×­"
+ martial_educator_personality:0 "p­¬À P­!ÇÇ"
+ navigator_personality:0 "mÕtÕ¬À"
+ babbling_buffoon_personality:0 "¡Ö2ÁÂ2ÁXÕ”² Mº­ÌtÇ"
+ conqueror_personality:0 "Èõ¼Ç"
+ embezzler_personality:0 "¡Ö9¸Ç"
+ infertile_personality:0 "ˆ´„Ç"
+ drunkard_personality:0 "4»ÈÈhÕ"
+ sinner_personality:0 "ÄÈxÇ"
+ greedy_personality:0 "ÐÐ•Æ²Âì·´Æ Ç"
+ cruel_personality:0 "”Ç9ÖjÕ Ç"
+ naive_personality:0 "ÂÄÉjÕ ôÅ1Á¬"
+ craven_personality:0 "¬ÁÇtÇ"
+ loose_lips_personality:0 "¬¼¼´Æ …Ç"
+ obsessive_perfectionist_personality:0 "¬¼ÈxÇ DÆË¼üÈXÇÇ"
+ malevolent_personality:0 "EÅ„·jÕ"
+ desc_conqueror_personality:0 "tÇ µÑXÎÇ”² Èõ¼Ç…ÇÈ²ä². ø­XÇ µÑXÎ DÅ˜· °Æ¬¹”² T³ ¨Ö(ÇÈ<Çj¸ ÈÀj¸´Æ Æ Ñ|¹ °Æ¬¹XÇ UÆm­ÐÅ ¸Ó…ÇÜÂ¬Ð Â ˆÇµÂÈ²ä²."
+ desc_tolerant_personality:0 "tÇ µÑXÎÇ”² ­³iÕÈ²ä². ø­XÇ µÑXÎ DÅ˜· …ÈP­È ŒÁÂ ÑÉè²NÇ  ˆ¼KÌ`Õ ƒ¬…ÇÈ²ä²."
+ desc_just_personality:0 "tÇ µÑXÎÇ”² õ¬ÈiÕÈ²ä². ø­XÇ UÆm­XÇ Î¹NÇ •¼ü¬ ­µÂÐÅ ³jÕ J®NÇ tÇtÕ U³„´ÐÅ °Æ¬¹ …ÈÁm­ä´NÇ °Æ¬¹¬ È•¼XÕà¬ Èù²XÕŒ¬ ÀÉ0¼jÕä²à¬ ÿ»µÂÈ²ä²."
+ desc_righteous_personality:0 "tÇ µÑXÎÇ”² ÈXÇm¸µÂÈ²ä². °Æ¬¹ m­ü»ä´NÇ ÈXÇj¸´Æ µÑXÎÇ¬ ¸ÅÈ˜° m­ü»ä´XÇ tÇuÇDÇ jÍ°Æ.Á<Çj¸ T´ ä²”² ƒ¬DÇ LÅ0®ÐÅ °Æ¬¹XÇ Œ­Ç|¹ XÇìÂXÕÀÉ JÅDÇ ƒ¬…ÇÈ²ä²."
+ desc_kind_hearted_personality:0 "tÇ µÑXÎÇ”² jÎÈiÕÈ²ä². UÆm­XÇ ¨ºà´ m­ü»ÐÅ ³jÕ pÐ ­ìÂtÇ °Æ¬¹ µÑXÎÇ|¹ ¬À‘·¼Œ¬ Ì¹ä´ÈÅà¬ ˜×à´ ÜÂ0®NÆ ¹Òˆ× ÈÁÇXÇ 8ÌTÖj¸Ž´0Ñ °Æ¬¹ m­¬|¹ T³±Æ s­t¬ˆ× Ì¹ä´ÈÅµÂÈ²ä²."
+ desc_free_thinker_personality:0 "tÇ µÑXÎÇ”² Ç.Çj¸´Æ ¬ÀÁÀ¬…ÇÈ²ä². ÄÅ©¬jÕ P­¬¹ÐÅ ËÅä¹tÇÀÉ JÅ”² µÑXÎÇ”² ÈÀj¸´Æ ƒ¬ÐÅ Ä³È`Õ ƒ¬DÇ ¥Ç2¸XÕà¬ ¥Ç˜·ÐÅ °Æ¬¹XÇ Ç³jÕ m­¬|¹ ´Åµj¸ tÇL°´Å ¬ ƒ¬xÇÀÉÐÅ ³tÕ Ç.Çm¸Œ¬ ¬Àà¬`Õ ƒ¬DÇ Å³2¸iÕÈ²ä²."
+ desc_well_connected_personality:0 "tÇ µÑXÎÇ”² È¹ù²¼…ÇÈ²ä². °Æ¬¹XÇ ­Èü¬ ´°¬NÇ tÇ µÑXÎÇ¬ ÜÂ³XÇ Ç³jÕ ÀÉ1Áä´ü¬ ¬ÄÉ ±NÇ ðÅÉXÇ ÂÖ|¹ ¼DÇ ƒ¬…ÇÈ²ä²."
+ desc_calm_personality:0 "tÇ µÑXÎÇ”² hÎ)ÌiÕÈ²ä². TÖ|¹ ´°ÀÉ JÅp¬˜° ´ÌtºDÇ ƒÇÀÉ JÅLÇ<Çj¸hÃ µÑXÎÇ”² ÀÐxÇXÇ À­¬tÇ ´à¬ ìÂ¬ÀÂà¬ k°ÐÅ °¬ÈDÇ ´°´¹ Â ˆÇ<Çpº, tÇ|¹ µÑtÕ 8ÁÄ¬¬ °Æ¬¹ÐÅŒ¬ É ´Å µjÕ ÜÂ(¸Ä³ àÂÁXÕŒ¬ ù­õ¼`Õ Â ˆÇµÂÈ²ä²."
+ desc_careful_personality:0 "tÇ µÑXÎÇ”² àÂÉiÕÈ²ä². m­È ­Ä¬XÇ ìÅì·¬ÀÉ TÅ5»ÈxÇ Ü­YÎä´DÇ üÈXÇ J®Œ¬ ´À´Ó´<Çj¸hÃ °Æ¬¹ p­üÈ”² °Æ¬¹XÇ äÂÈ ˆ´•¼‰ÕÇj¸ xÇjÕ Æ¥ÕDÇ É|Ç Â ˆÇµÂÈ²ä²."
+ desc_secretive_personality:0 "tÇ µÑXÎÇ”² D¾¼²Âý·µÂÈ²ä². 8»DÇ ë²à¬ ÁàÂDÇ TÅ8ÖTÖXÕ”² ÇðÅ²Âð· ø¼¥²tÇ ¬ÀŒÖ È¼<Çj¸ |ÓÀÉpº °Æ¬¹XÇ ÈŽ´ÐÅ Èä´tÇ hÎ,ÒXÕ0® T³ ´Å5¸Œ¬ Ì¹ä´ ƒ¬…ÇÈ²ä²."
+ desc_intricate_web_weaver_personality:0 "tÇ µÑXÎÇ”² XÎ¼jÕ 2ÁÄ¬Ç…ÇÈ²ä². ÀÉÁÈ<Çj¸ ÈÀj¸´Æ LÇ¨º|¹ ¸¯¼<Çj¸hÃ µÑXÎÇ”² tÕxÆ Èô¼ÐÅ ­jÕ „Ç4»XÇ pÐ Ž´„´DÇ ¬xÇÈ<Çj¸ ô²ù²`Õ Â ˆÇµÂÈ²ä²."
+ desc_fertile_personality:0 "tÇ µÑXÎÇ”² È%¸tÇ ±iÎÈ²ä². ÀÐà¬œ° ´ÌÈÉ U³„´ÐÅ µÑXÎÇ”² Î¹NÇ DÅtÇ|¹ ¬ÈÉ Â ˆÇà¬ °Æ¬¹”² 2Æ«·Ù³HÅ ÄÖÄ¬Ç¬ ÆÅ”² ÇØÕÐÅ ÁÉtºXÕÀÉ JÅDÇ ¬È²ä²."
+ desc_well_advised_personality:0 "tÇ µÑXÎÇ”² Ö…ºiÕÈ²ä². mÕÁÀ Ç8»ŒÖXÇ Ö…ºjÕ tÇä´ÐÅŒ¬ À­0®¸Æ|Ç ÉD¾¬ ´ °Æ¬¹ µÑXÎÇ”² ­Èü¬ ´°¬ÐÅ Î¹NÇ ¬ÀŒ·ä´DÇ L°´Åä´…ÇÈ²ä²."
+ desc_benevolent_personality:0 "tÇ µÑXÎÇ”² Ç`Åm¸µÂÈ²ä². ‹ÈNÇ |ÇDÇ XÕà¬ öÂä²”² ƒ¬<Çj¸ ô¼ìÅÀÉ”² ƒ¬NÇ °Æ¬¹XÇ …ÈÁm­DÇ HÅÈÈ<Çj¸ .ÇÀÉXÕ”² p³ ˆÇ´ÅÁ I­¥ÇjÕ Ç°À…ÇÈ²ä²."
+ desc_zealot_personality:0 "tÇ µÑXÎÇ”² ­àÂÇ…ÇÈ²ä². 8Ì´ ÿ»LÇÐÅ ³jÕ ­àÂÈ<Çj¸ ÌÕàÂXÕ”² ø­XÇ ÜÐÄ³”² Î¹NÇ ¬ÀŒ·ä´tÇ °Æ¬¹XÇ m­P­j¸ ¬…ÈXÕà¬ …ÇŒÖXÕÄ³k¸ .ÇÄ³iÕÈ²ä²."
+ desc_pious_personality:0 "tÇ µÑXÎÇ”² Ë¬t¬iÕÈ²ä². ÌÕàÂÈtÇà¬ ÆÈtÇpº …ÈP­ÈxÇ µÑXÎÇ”² °Æ¬¹ m­¬¬ ˜°DÅ¬ 8®DÇ ÈÜÂXÕpº °Æ¬¹XÇ ÿ»LÇÐÅ Ç®ìÂDÇ ˆ´´Å1±DÇ ƒ¬…ÇÈ²ä²."
+ desc_lawgiver_personality:0 "tÇ µÑXÎÇ”² …Ç•¼Ç…ÇÈ²ä². •¼`¹ ÈÈNÇ UÆm­DÇ l­1ÁXÕà¬ è²iÕÜÂµÐÈ²ä². µÑXÎÇ”² °Æ¬¹ UÆm­ ´° Â Î¹NÇ ÀÉíÅXÇ Â 1¼XÇ •¼ü¬ ­µÂDÇ |ÇÐÆTÖXÕìÅ |Ç(¸XÇ •¼<Çj¸ ÑÉ³1ÁXÕ2¸iÕÈ²ä²."
+ desc_midas_touched_personality:0 "tÇ µÑXÎÇ”² È¹tÇä²²ÂXÇ ÁDÇ ¬ÀÉà¬ ˆÇµÂÈ²ä². ¨ºà´ Ä¬ÖÐÅÁ tÇ2ÇDÇ ´°”² ¬Ç¥²NÇ m­¬XÇ µÑXÎÇÐÅŒ¬ pÐ Ç°À…ÇÈ²ä². °Æ¬¹ m­à¬”² ø­¬ ˆÇ”² jÕ È³tÇ È¹|¹  °tÇ ÆÅDÇ ƒ¬…ÇÈ²ä²."
+ desc_incorruptible_personality:0 "tÇ µÑXÎÇ”² ­Ì4¸iÕÈ²ä². Î¹NÇ tºÐÅÁ Ö³ÈxÇ m­¬|¹ t¬2ÁXÕ”² ƒ¬NÇ ÀÉÁÈxÇ Ž´(ÓNÆXÇ ÈÁÇ…ÇÈ²ä². m­¬ õ¬4»ÐÆä´NÇ mÕÁÀ Ì±<»DÇ ¼Ä³k¸ .Ç9Öù²XÕà¬, jÎl­NÆ jÎ™Ìä´DÇ Õ³à¬Ç XÕ”² ƒ¬NÇ ÇðÅ²Âð· xÇ¬XÇ ø¼¥²…ÇÈ²ä². tÇð· ¨ºà´ ÝÀ¬ä´DÇ è²8Öˆ× p¬Ž´XÕà¬ Ë¬xº²Âì·´Æ Ž´(ÓNÆ øÂÀÆ<Çj¸hÃ µÑXÎÇ”² m­¬ È´Ì¬ ø¼¼DÇ Ì¹jÕ ø¼ô¼0®¬ )´È²ä²."
+ desc_architectural_visionary_personality:0 "tÇ µÑXÎÇ”² t¬•ÍYÕÄ¬XÇ .ÁÀÉÇ…ÇÈ²ä². ¬ÀŒÖ0®¼ÜÂ2ÁDÇ ¬.ÁXÕ”² ƒ¬NÇ °Æ¬¹ ÜÂ³XÇ ´Å²µ m­¬à´ DÕÂ¬ÀmÕtÇpº tÇ µÑXÎÇ”² ø­x¬ tÕ¼° Â ˆÇµÂÈ²ä². ’±NÇ tÇtÕÄ³NÆ ¬Ç¥²tÇ °¬iÕ´  ð¶´Åœ° D¾Èü¬ D¾©ÆDÇ È¬XÕŒ¬ tÕüÈ”² tÇ µÑXÎÇXÇ ¥²%¸NÇ °Æ¬¹ÐÅŒ¬ pÐ Ç°ÀtÇ )´È²ä²."
+ desc_scholar_personality:0 "tÇ µÑXÎÇ”² YÕÇ…ÇÈ²ä². xÇ¬ü¬ ÇðÅDÇ ÀÉ0¼XÕ”² •¼YÎä´ü¬ 8ÁÁÀÐÅ ³tÕ 0¼°Æà¬Ç XÕ”² |ÅÝ¹NÇ µÑXÎÇj¸ XÕìÅ® ä²x¹tÇä´tÇ `Õ Â ˆÇ”² ƒ¬ ô¼ä² T³±Æ ¨Ö(ÇÈ<Çj¸ àÂ0®.ÂDÇ tÇtÕXÕà¬ l­Ö`Õ Â ˆÇŒ¬ tÕ ÉÈ²ä²."
+ desc_entrepreneur_personality:0 "tÇ µÑXÎÇ”² ¬ÀÅÅ¬…ÇÈ²ä². ¥Ç`Å<»tÇ˜° 0®ŒÖ|¹ ¬ÄÉ ÈÀ Ä¬ÖXÇ  Ç¬Ç%¸DÇ ð¯«¶´Å´<Çj¸hÃ µÑXÎÇ”² °Æ¬¹ Ë¬È|¹ Ž´‘ÅXÕ0® ÇtÕ É¬XÕ”² Ä¬Öä´ÐÅ tÇ¼ÀÉ`Õ Â ˆÇµÂÈ²ä²."
+ desc_industrious_personality:0 "tÇ µÑXÎÇ”² ü­tºiÕÈ²ä². È³ È¹LÇÏ® lÂÀÉ JÅà¬ ÈÈ T³ 4® ÜÂ¬DÇ |ÇXÕ”² µÑXÎÇ”² UÆm­XÇ ¨ºà´ ÀÉíÅÐÅ ³jÕ ÁÀ8ÁjÕ Èô¼|¹ ÀÉÁÈ<Çj¸ ­¬¹XÕà¬ m­¬ µÑÈ XÕÐÅ ˆÇ”² ¨ºà´ ÇÐÆXÇ ÂuÇDÇ ù­³TÖXÕ0® ÇtÕ J°„ÇÆÅtÇ x±%¸XÕà¬ ˆÇµÂÈ²ä²."
+ desc_expansionist_personality:0 "tÇ µÑXÎÇ”² UÖ¥ÇüÈXÇÇ…ÇÈ²ä². µÑXÎÇ”² ÈÀj¸´Æ Eµü¬ ÝÂü»ÀÉ ¬™ÌÇä´XÇ üÈ¥ÇÐÅ ¬xÇÈ<Çj¸ ,ÒÇ|¹ XÕà¬ ˆÇ<Çpº, ÝÂü»ÀÉ UÖ¥ÇtÇ °Æ¬¹ m­¬XÇ jÍ°Æ.Á ü¬Èj¸ ¨°DÅ ˆÇÄ³k¸ ô¼¥ÇXÕ0® ÇtÕ ÈP±XÕà¬ ˆÇä²."
+ desc_charismatic_negotiator_personality:0 "tÇ µÑXÎÇ”² ä¹%¸ÈxÇ ÖÁÀ¬…ÇÈ²ä². m­¬XÇ xÆP­NÆ ÖÁÀÐÅ ¬xÇÈ<Çj¸ ­ìÅhÕ<Çj¸hÃ µÑXÎÇ”² ä²x¹ ¬ÀŒ·ä´tÇ °Æ¬¹XÇ ­ÈÐÅÁ ÖÁÀDÇ ¼|·ô¼Ä³k¸ Ì¹ä´ Â ˆÇµÂÈ²ä²."
+ desc_silver_tongue_personality:0 "tÇ µÑXÎÇ”² ì²À¼¬j¸ ìÅ¨¬ÑÉÈ²ä². ä²x¹ m­¬NÆXÇ P­X¹ÐÅ ˆÇ´Å µÑXÎÇ”² °Æ¬¹XÇ ÀÉœ° ‰ÕÙ³ä´DÇ T³±Æ Ë³ô¼tÇŒ¬ ÈÜÂ`Õ Â ˆÇµÂÈ²ä². °Æ¬¹ tÇÃÆä´tÇ °Æ¬¹ ‰ÕÙ³XÇ tÇ.Ç|¹ LÅŒ¬ ´tº ø­ä´NÇ °Æ¬¹XÇ ´Å²µ ˜Ç»ºtÇà´ °¬m­ÐÅ”² ©ÆÁXÕŒ¬ .´ ƒ¬…ÇÈ²ä²."
+ desc_tactical_genius_personality:0 "tÇ µÑXÎÇ”² È.ÂXÇ œÌ¬Ç…ÇÈ²ä².  È¥ÇÐÅÁXÇ 0®Ù³%¸ü¬ Á„ÇÂÐÅ ³jÕ ³è²jÕ ¬xÇÈxÇ ­ìÂü¬ ,ÒÇ”² °Æ¬¹XÇ ¨ºà´ ¥Çp­ä´ÐÅŒ¬ èÖ,Å pÐ tÇÝ´ü¬ Ë¬ØÕDÇ ¬8Èä² Éƒ¬ …ÇÈ²ä²."
+ desc_bold_fighter_personality:0 "tÇ µÑXÎÇ”² ©Æ¬jÕ È¬À…ÇÈ²ä². ©Í©¬È.ÂtÇ È¥ÇÐÅÁ ¬¥Ç É”ÆXÕä²à¬ ÿ»”² µÑXÎÇ”² °¬ü¬|¹ P´2¸ÌÆXÕÀÉ JÅ<Çpº DÕ”ÆjÕ ÁÀiÖtÇ|·tº Èä´XÇ ÉìÂŽ´j¸ p­³|¹ tÇL°à¬ Ì³©¬XÕÄ³k¸ ¨ºà´ tÇ|¹ Å³2¸iÕÈ²ä²."
+ desc_fierce_negotiator_personality:0 "tÇ µÑXÎÇ”² ¬À˜°´Æ ÖÁÀ¬…ÇÈ²ä². °Æ¬¹”² °Æ¬¹XÇ ³XÇ|¹ ÇtÕ ©ÆÑ¼ ³¥Çä´tÇ ÉÓŒÁÐÅ ”Æl­XÕ”² ƒ¬ ô¼ä² T³ È4¸jÕ ¬©¬ÐÅ øÂ¸Æ Â ˆÇÄ³k¸ 2ÁÝ´XÕ0® ‹ÂµÂÈ²ä²."
+ desc_strict_personality:0 "tÇ µÑXÎÇ”² ÄÅ©¬iÕÈ²ä². °Æ¬¹ p­³XÇ ‰ÕÙ³ÐÅ pÐ ­ìÂDÇ ¬à¬ ˆÇ0®ÐÅ µÑXÎÇ”² ¬¥Ç ®°NÇ Ä¬	®Ž´0Ñ ¬¥Ç ’±NÇ Ä¬	®L®ÀÉ, Ä¬	®DÇ É¹`¸XÕà¬ ÄÅ©¬jÕ Ü­(ÇDÇ üÈ…Ç`Õ Â ˆÇµÂÈ²ä²."
+ desc_inspiring_leader_personality:0 "°Æ¬¹ µÑXÎÇ”² à¬4»ÜÂ²Ð”² ÀÉ×­…ÇÈ²ä². Ç³jÕ ¬xÇXÇ ÀÉ×”² ¬¥Ç ¬ Î¹NÇ ÇL®ÀÉÄ³ ©Æ0®|¹ ¬Ä³k¸ `Õ Â ˆÇµÂÈ²ä²."
+ desc_martial_educator_personality:0 "tÇ µÑXÎÇ”² p­¬À P­!ÇÇ…ÇÈ²ä². Ö¬Ç ðÅ³ÐÅÁ”² ¥ÇP­è²XÇ P­!Çü¬ ÈÖ(¸tÇ °Æ¬¹XÇ jÍ°Æ.Á ü¬È É XÕ˜°…ÇÈ²ä²."
+ desc_navigator_personality:0 "tÇ µÑXÎÇ”² mÕtÕ¬À…ÇÈ²ä². ¥ÇP­ P­!ÇŽ´0Ñ <»Ç pÈì² ¼ ´Æ¡Á Ü­YÎü¬ •¼ÐÅ tÇt¹”² ¨ºà´ ƒ¬ÐÅ ³jÕ ¬xÇÈxÇ ­ìÅ”² °Æ¬¹ tÇÃÆä´ô¼ä² 0¼|¹ j³ ƒÇÄ³k¸ iÕÈ²ä²."
+ desc_babbling_buffoon_personality:0 "tÇ µÑXÎÇ”² ¡Ö2ÁÂ2ÁXÕ”² Mº­ÌtÇj¸ ìÅ¨¬ÑÉÈ²ä². µÑXÎÇ”² ¬xÇÈxÇ .ÁXÇ|¹ ¬ÀÉà¬ °Æ¬¹ tÇÃÆü¬ xÆP­|¹ ¼ÓXÎÀÉÌ¹ ÖÁÀ XÕ”² ¬Ç¥²NÇ ÆÅµÂÈ²ä². ²l­˜° °Æ¬¹¬ ÐÆXÕ”² ”ÆÈDÇ LÅDÅDÌ”²p³ à¬ÝÀ`Õ ƒ¬tÇà¬, Î¹NÇ ÂXÇ ÖÁÀä´NÇ °Æ¬¹ µÑXÎÇXÇ Á,Ò„¹<Çj¸ xÇtÕ ÄÉµÑDÇ ª¬DÇ ƒ¬…ÇÈ²ä²."
+ desc_embezzler_personality:0 "tÇ µÑXÎÇ”² ¡Ö9¸Ç…ÇÈ²ä². °Æ¬¹ µÑXÎÇ¬ ¬¥Ç ‹ÈDÅXÕà¬ ˜ÇXÕ”² |ÇNÇ m­¬ ¬ÇÈDÇ tÇ©ÆtÕ ²Â²Âj¸XÇ üÈ8ºÈ²|¹ DÌ°Æ”² |Ç…ÇÈ²ä²."
+ desc_infertile_personality:0 "tÇ µÑXÎÇ”² ˆ´„Ç…ÇÈ²ä². °Æ¬¹¬ µÑÈ`Õ Â ÆÅ”² tÇ.Ç Lµ8»ÐÅ °Æ¬¹ p­üÈ”² ÄÖÄ¬Ç|¹ ¬ÄÉ ô¼µÑ ¬ÀŒ·ä´ô¼ä² èÖ,Å T³ ˜×à´ ÜÂ¬DÇ ô¼´°”² ƒ¬ ¬µÂÈ²ä²."
+ desc_drunkard_personality:0 "tÇ µÑXÎÇ”² 4»ÈÈiÕÈ²ä². ³ÉXÇ 4»­ìÂ<Çj¸Ž´0Ñ HÅÄ³¬DÇ »Å0® ÇtÕ µÑXÎÇ”² ÄÅ­Ìœ° ‘ÅXÇ .ÂÐÅ TÊ´Å ÀÉÅ°È²ä². 4»ÈÈjÕ µÑXÎÇ”² Èm­ÐÅ Ž´ÈÈxÇ Æ¥ÕDÇ |°iÎÈ²ä²."
+ desc_sinner_personality:0 "tÇ µÑXÎÇ”² ÄÈxÇ<Çj¸ ±¬¹ LÅ2¸8È ˆÇµÂÈ²ä². m­¬ µÑXÎÐÅ ˆÇ´ÅÁ tÇð· ¬xÇÈ °¬ÈNÇ …ÈP­Ä¬¬ °Æ¬¹ÐÅŒ¬ ñ´DÇ Ì³¬¹Ä³k¸ Ì¹ä´ÈÅµÂÈ²ä²."
+ desc_greedy_personality:0 "tÇ µÑXÎÇ”² ÐÐ•Æ²Âý·µÂÈ²ä². m­¬XÇ 8ÁÂ”² ¬9ÖXÕŒ¬ ˜²´Å¬à¬ ˆÇà¬ ü­ÜÂHÅÈxÇ µÑXÎÇ DÅ˜·Á °Æ¬¹XÇ Â…ÇDÇ ˜²¬¹0® ÇjÕ ´Å²µ |ÇÄ³ Á´ÂXÎ JÅµÂÈ²ä². 8Á…ÇXÇ ¨ºà´ ÐÆœÌDÇ Ó4­XÕp¬˜° tÕ|¹ |°hÎ<Çj¸hÃ tÇð· ü­ÜÂHÅÈxÇ ‰ÕÙ³NÇ ¥Ç0®È<Çj¸ 8Á…ÇDÇ lÐŒ¬ ¬ŒÁÜÂ¬Ð ƒ¬…ÇÈ²ä²."
+ desc_cruel_personality:0 "tÇ µÑXÎÇ”² ”ÇxÇtÕ ô¼…ÇÈ²ä².°Æ¬¹ µÑXÎÇXÇ ¬xÇÈxÇ Å³.Áü¬ ”Ç9ÖjÕ ‰ÕÇÐÅ ³tÕ ±¬¹ |ÓÄÉ tÇ|Å0®ä´NÇ °Æ¬¹ …ÈÁm­ä´DÇ ä¹°Æ TÖ˜°Œ¬ ˆÕµÂÈ²ä². tÇ tÇ|Å0® Ì¹<Çj¸”² ¼Ž·tÇ |Ç´Å˜°0®ÔÅ ©Í„´XÕÄÉ JÅÀÉÌ¹ ´Å²µ Ç0®¬ å²ÐÌ2Ætº ìÅ`¸NÇ ä´S°DÇ ƒ¬…ÇÈ²ä²."
+ desc_naive_personality:0 "tÇ µÑXÎÇ”² ÂÄÉjÕ ôÅ1Á¬…ÇÈ²ä². ø­¬ ù¹©ºÈ<Çj¸ ÈÄÉXÕà¬ Ä¬ÁtÕÁ ø­ °¬ü¬|¹ ¬ü¬XÕ”² ƒ¬NÇ °¬ü¬È<Çj¸ °Æ¬¹ tÇÃÆä´tÇ 4»N¸hÕü¬ ÄÈ|¹ ©ÆÁXÕ”² ƒ¬DÇ ²¬¹Œ¬ Ì¹í´È²ä²."
+ desc_craven_personality:0 "tÇ µÑXÎÇ”² ¬ÁÇtÇ…ÇÈ²ä². äÂÈ È,Ò¬ üÈ”² ÈÝ¹ÈxÇ P´2¸ÀÆNÇ °Æ¬¹ µÑXÎÇ|¹ È¥ÇÐÅÁ ¬¥²jÕ Nº¬¹ ¨µ´ÅÄÉ ó¬ÐÅ 8º<»Œ¬ iÕÈ²ä². °Æ¬¹ p­³”² Ä³ÀÆtÇ ´0®”² äÎU± ø­ä´ ´°²Ð”²³j¸ `Õ Â ˆÇä²”² ƒ¬DÇ LÅŒ¬)´È²ä²."
+ desc_loose_lips_personality:0 "tÇ µÑXÎÇ”² ÇüÈ Èô¼|¹ x±œÍ, .ÇœÍÜÂ²Ð”² ¥Çø¼xÇ<Çj¸Á ³¬”² ¬ÀŒ·DÇ ±4» ˜Ç ÿ»p¬˜° ‹ÂŒ¬ Á”² ƒ¬|Ç ƒ¬…ÇÈ²ä². .Ç¬²Âý·Œ¬Ä³, °Æ¬¹XÇ )¼©Ì jÖÙ³ÐÅ Ý´ ô¼ä²”² äÂtÇ ´à¬ Ð¹XÅµÂÈ²ä²."
+ desc_obsessive_perfectionist_personality:0 "tÇ µÑXÎÇ”² ÑÉ)ÌÈ DÆË¼üÈXÇÇ …ÇÈ²ä². 8Á8ÁjÕ ƒ¬ü¬ ¬ÀŒÁjÕ ƒ¬ÐÅ ³jÕ J®NÇ ­ìÂNÇ mÕÁÀ ø­ì·jÕ ƒ¬ÐÅ ³jÕ ¬Ç¥²tÇ ·´¼hÎ´ÀÉ”² JÅµÂÈ²ä². ÀÉÁÈxÇ ¬-Áü¬ ÀÉðÅDÇ .Ç¼ÜÂ²Ð”² °Æ¬¹ µÑXÎÇ”² m­´° 0®¼ÜÂ2ÁDÇ ¬¼XÕ”²p³ ˆÇ´Å Ý´ô¼ä² pÐ ÁäÂtÇ ´ÈÅµÂÈ²ä²."
+ desc_malevolent_personality:0 "tÇ µÑXÎÇ”² EÅ„·iÕÈ²ä². ù²àÂ µÑXÎÇXÇ ‰ÕÙ³ä´NÇ EÅXÇ˜° È³È XÇÄ³ÐÅÁ D¾o¸´ ƒ¬<Çj¸ ô¼…ÇÈ²ä². °¬ü¬È<Çj¸ °Æ¬¹ °ÀXÕXÇ …ÈÁm­ä´NÇ °Æ¬¹XÇ ´Å²µ ‰ÕÙ³ÐÅÄ³ ‹ÂŒ¬ „´x±XÕp¬˜° P´2¸ÌÆiÕÈ²ä²."
+ glory_seeker_personality:0 "Æ­ ”Íl­Ç"
+ desc_glory_seeker_personality:0 "tÇ ¥Çp­NÇ Æ­DÇ ”Íl­iÕÈ²ä². tÇ ¥Çp­tÇ tÇD°”² p­³”² ¸ÅÈ˜° ¬¥Ç ²ÐÅ D·”² (ÌtÇ|¹ Ì¹ä´ Â ˆÇ”² ó¬ÐÅ 0¼XÎ´pº, U³„´ÐÅ T³ Î¹NÇ ÇàÂü¬ !Çp­ ÈµÑDÇ »ÅDÇ Â ˆÇµÂÈ²ä²."
+ born_to_the_saddle_personality:0 "Ð¹ ÇÐÅÁ ÜÐ´Åœ° Ç"
+ desc_born_to_the_saddle_personality:0 "tÇ ¥Çp­NÇ Ð¹ ÇÐÅÁ ÜÐ´Å¬°µÂÈ²ä². tÇ ¥Çp­tÇ tÇD°”² 0®Ñ¼³”² ø­ä´XÇ !Îtº õ¬©¬ tÇÈDÇ T³ ˜Ç jÖ©Æ`Õ Â ˆÇDÇ ƒ¬ …ÇÈ²ä²."
+ defensive_planner_personality:0 ")¼´Å Ä¬ÖÇ"
+ desc_defensive_planner_personality:0 "tÇ ¥Çp­NÇ )¼´Å Ä¬ÖÇ…ÇÈ²ä². tÇ ¥Çp­XÇ ÀÉ×|¹ ¼”² p­³”² ©Í©¬ÐÅ T³±Æ ˜Ç ÈmÕiÕÈ²ä²."
+ battlefield_medic_personality:0 "È¥Ç p­XÇ­"
+ desc_battlefield_medic_personality:0 "tÇ ¥Çp­NÇ È¥Ç p­XÇ­<Çj¸ LÅ2¸8È ˆÇµÂÈ²ä². tÇ ¥Çp­XÇ ÀÉ×|¹ ¼<Çtº ÉÓŒÁô¼ä² T³ Î¹NÇ ÂXÇ Ñ¼¬Àä´tÇ È,Ò¬ k°œ° ÄÖ ŒÖõ¼`Õ Â ˆÇDÇ ƒ¬…ÇÈ²ä²."
+ ruthless_personality:0 "4»ÇD¾hÕ"
+ desc_ruthless_personality:0 "tÇ ¥Çp­NÇ 4»ÇD¾iÕÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² Ñ¼%¸NÇ T³ ’±NÇ ¬À©¬ <ÕtÕ|¹ …Ç× ƒ¬…ÇÈ²ä²."
+ inspirational_leader_general_personality:0 "Æ¬DÇ üÈ”² ÀÉ×­"
+ desc_inspirational_leader_general_personality:0 "tÇ ¥Çp­NÇ Æ¬DÇ üÈ”² ÀÉ×­…ÇÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² Ñ¼%¸NÇ (Ó0¼XÇ XÎ•ÆÐÅÁ T³ `¾t¹Œ¬ ¬À0®|¹ ŒÖõ¼`Õ ƒ¬…ÇÈ²ä²."
+ master_of_arms_personality:0 "4»0® È8»¬"
+ desc_master_of_arms_personality:0 "tÇ ¥Çp­NÇ 4»0® È8»¬…ÇÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² ô¼Ñ¼NÇ T³ ¨Ö(ÇÈtÇà¬ T³ Î¹NÇ <ÕtÕ|¹ É Â ˆÇµÂÈ²ä²."
+ goal_oriented_personality:0 "©ºjÔ ÀÉ¥ÕÈ"
+ desc_goal_oriented_personality:0 "tÇ ¥Çp­NÇ ©ºjÔ ÀÉ¥ÕÈ…ÇÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² Ñ¼%¸NÇ ©ºjÔ|¹ ¥ÕtÕ T³ `¾t¹Œ¬ ‰Õp­`Õ ƒ¬…ÇÈ²ä²."
+ hardy_warrior_personality:0 "¬xÇjÕ È¬À"
+ desc_hardy_warrior_personality:0 "tÇ ¥Çp­NÇ ¬xÇjÕ È¬Àj¸ LÅ2¸8È ˆÇµÂÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² Ñ¼%¸NÇ ¬9ÖjÕ XÖË¬ÐÅÁ T³ h¾¬¹ ŒÖõ¼XÕà¬ ÈŒ¬ ŒÁ¨º.´ ƒ¬…ÇÈ²ä²."
+ siege_specialist_personality:0 "õ¬1Á È8»¬"
+ desc_siege_specialist_personality:0 "tÇ ¥Çp­NÇ õ¬1Á È8»¬…ÇÈ²ä². tÇ ÀÉ×­XÇ ÀÉ×|¹ ¼”² õ¬1ÁNÇ T³ ¨Ö(ÇÈxÇ )¼ÝÂ<Çj¸ Â‰Õ.´ ƒ¬tÇà¬ T³ h¾¬¹ k° ° ƒ¬…ÇÈ²ä²."
+ cannoneer_personality:0 "ìÓÑ¼"
+ desc_cannoneer_personality:0 "tÇ ¥Çp­NÇ ìÓÑ¼…ÇÈ²ä². TÖ‹Åü¬ ³ìÓ|¹ ðÄ”² tÇ ³è²ˆ× ä¹%¸È<Çj¸ LÅ2¸ÄÉ ìÓÑ¼³”² tÇ ÀÉ×­tÇ ÀÉ×hÕ<Çj¸hÃ T³±Æ ¨Ö(ÇÈ|Ç ƒ¬…ÇÈ²ä²."
+ extortioner_personality:0 "‹ÅÈÐÇ"
+ desc_extortioner_personality:0 "tÇ ÈÅ³NÇ ‹ÅÈÐÇ …ÇÈ²ä². ˜×XÇ ¥ÇÈDÇ jÍ³jÕ jÖ©Æ`Õ Â ˆÇ”² )¼•¼DÇ LÅtº ÀÉ×­tÇ T³ ÈNÇ ÇÐÆ<Ç T³ Î¹NÇ tÇÈDÇ ²´¹ Â ˆÇµÂÈ²ä². ‹ÅÈÐÇ ÀÉ×­ä´tÇ ÀÉ×XÕ”² .Áè²NÇ Ë¬ÁÇÇä´tÇ `Õ Â ˆÇ”² ‘Åô¼ä² T³ pÐ 4»íÅ%¸DÇ Èõ¬`Õ ƒ¬…ÇÈ²ä²."
+ ruthless_blockader_personality:0 "4»ÇD¾jÕ 	´ÄÁÇ"
+ desc_ruthless_blockader_personality:0 "tÇ ÈÅ³NÇ 4»ÇD¾jÕ 	´ÄÁÇ…ÇÈ²ä².  tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² hÕ³”² tÕHÅ	´ÄÁ|¹ T³±Æ ¨Öü¬È<Çj¸ äÂÜÂ`Õ Â ˆÇµÂÈ²ä²."
+ buccaneer_personality:0 "tÕÈ"
+ desc_buccaneer_personality:0 "tÇ ÈÅ³NÇ tÕÈ…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² ¬Àµ·.Áè²NÇ T³±Æ ¨Öü¬È<Çj¸ ‹ÅÈÐ`Õ Â ˆÇµÂÈ²ä²."
+ prize_hunter_personality:0 "ÖÁÀ® ¬Àå°¼¯"
+ desc_prize_hunter_personality:0 "tÇ ÈÅ³NÇ ÖÁÀ® ¬Àå°¼¯…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .Á¥Çä´NÇ T³ Î¹NÇ ÖÁÀ®DÇ =·´Å´°à¬ ä²x¹tÇä´ ô¼ä² T³ Î¹NÇ 0¼|¹  ˜°ìÓiÕÈ²ä²."
+ ironside_personality:0 "s­<Á Ç"
+ desc_ironside_personality:0 "tÇ ÈÅ³NÇ s­<Á Ç…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .Á¼ä´NÇ ä²x¹ ÈÅ³ä´ÐÅ XÇtÕ ÀÉ×¼”² .Á¼ä´ ô¼ä² <ÕtÕ|¹ j³ ¼µÂÈ²ä²."
+ naval_engineer_personality:0 "tÕp­ õ¬YÕÇ"
+ desc_naval_engineer_personality:0 "tÇ ÈÅ³NÇ tÕp­ õ¬YÕÇ…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .Á¼ä´NÇ tÇÙ³ É ŒÁ¨º˜° tÕÈ<Çj¸ Ž´0Ñ ¼”² <ÕtÕÐÅÁ `¾t¹Œ¬ ŒÖõ¼iÕÈ²ä²."
+ naval_showman_personality:0 "tÕp­ ÂDÆ¬"
+ desc_naval_showman_personality:0 "tÇ ÈÅ³NÇ tÕp­ ÂDÆ¬…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .Á¼ä´NÇ È,ÒÐÅÁ ÇàÂü¬ tÕp­ ÈµÑDÇ T³ Î¹tÇ ÖÝ´iÕÈ²ä²."
+ ram_raider_personality:0 "©Í¬ Ì³©¬ È8»¬"
+ desc_ram_raider_personality:0 "tÇ ÈÅ³NÇ ©Í¬ Ì³©¬ È8»¬…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² 2¬¬¹.Áä´NÇ tÕÈÐÅÁ T³ Î¹NÇ <ÕtÕ|¹ …Ç™×È²ä²."
+ naval_gunner_personality:0 "tÕp­ ìÓ©¬ È8»¬"
+ desc_naval_gunner_personality:0 "tÇ ÈÅ³NÇ tÕp­ ìÓ©¬ È8»¬…ÇÈ²ä². tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .ÁÐÆä´NÇ ¼õ¼ÈxÇ ìÓ©¬ ÈÖ(¸DÇ ¼DÅ ³Ö.Á(heavy ships)tÇ ÈÐÅŒ¬ T³ pÐ <ÕtÕ|¹ …Ç× Â ˆÇµÂÈ²ä²."
+ accomplished_sailor_personality:0 "ð¶´Åœ° mÕtÕ¬"
+ desc_accomplished_sailor_personality:0 "tÇ ÈÅ³NÇ ð¶´Åœ° mÕtÕ¬…ÇÈ²ä². ¬À2Á mÕtÕ È8»¬ä´NÇ tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² ¨ºà´ .Á¥Çä´XÇ ¥²%¸DÇ ¥ÕÁÀÜÂ²Ðpº, tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² hÕ.Áä´NÇ ø­ä´XÇ ©ºÈÀÉÐÅ T³±Æ h¾¬¹ Ä³ì²`Õ ƒ¬…ÇÈ²ä²."
+ level_headed_personality:0 "àÂÉhÕ"
+ desc_level_headed_personality:0 "tÇ ÈÅ³NÇ àÂÉiÕÈ²ä². àÂÉjÕ ÈÖ(¸ü¬ hÎ)ÌjÕ È¹LÇ¬ÐÉ<Çj¸ xÇtÕ tÇ ÈÅ³XÇ ÀÉ×|¹ ¼”² .ÁÐÆä´NÇ tÕÈÐÅÁ ¼NÇ ÀÐ©¬<Çj¸ xÇtÕ …Ç”² ¬À0® <ÕtÕÐÅ T³ ¬iÕÈ²ä²."
+ immortal_personality:0 "ˆ´xºÇ"
+ desc_immortal_personality:0 "tÇ µÑXÎÇ”² ýÈLÇDÇ ÁtÇà¬ ÆÐÆˆ× ´À Â ˆÇ”² )¼•¼DÇ >ÌXÅµÂÈ²ä². ÈÉÑ¼ü¬ x±TÖÐÅÁ Ç.Çm¸µÂÈ²ä²Ì¹ <»¬¹ÈxÇ ”ÆxÇ<Çj¸ ¬ÀÝ¹`Õ Â ˆÇµÂÈ²ä²."
+ immortal_personality_die_desc:0 "…º1¼ˆ×, ø­ä´XÇ ˆ´xºÐÅ ³jÕ ô¼à¬”² ³è²ˆ× ü¬¥Ç´ÈÅX³ ƒ¬ ¬µÂÈ²ä²."

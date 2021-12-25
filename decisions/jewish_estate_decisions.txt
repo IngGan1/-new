@@ -1,0 +1,170 @@
+country_decisions = {
+	
+	ghetto = {
+		potential = { 
+			has_estate = jewish_estate
+			not = { has_global_flag = no_decision }
+			NOT = { has_country_flag = my_decisionflag_j_e }
+		}
+		allow = {
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+			religion_group = christian
+			is_in_deficit = no
+			papacy_active = yes
+			uses_papacy = yes
+		}
+		effect  = {
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = -30
+			}
+			add_estate_influence_modifier = {
+				  estate = jewish_estate
+				desc = jewish_influence_modifier
+				influence = -10
+				duration = 3650
+			}
+			every_owned_province = { add_unrest = -1 }
+			add_papal_influence = 5
+			set_country_flag = my_decisionflag_j_e
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				average_unrest = 3
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { years_of_income = 2 }
+			}
+			modifier = {
+				factor = 5
+				OR = {
+					tag = VEN
+					tag = PAP
+					tag = FRN
+				}
+			}
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+			modifier = {
+				factor = 2
+				estate_influence = {
+					estate = estate_burghers
+					influence = 70
+				}
+			}
+			modifier = {
+				factor = 0.1
+				estate_loyalty = {
+					estate = jewish_estate
+					loyalty = 50
+				}
+			}
+		}
+	}
+	
+	the_great_synagogue = {
+		potential = { 
+			is_year = 1618
+			has_estate = jewish_estate
+			tag = NED
+			not = { has_global_flag = no_decision }
+			NOT = { has_country_flag = synagogue_flag_j_e }
+		}
+		allow = {
+			estate_influence = {
+				estate = jewish_estate
+				influence = 30
+			}
+			97 = { num_free_building_slots = 1 }
+		}
+		effect  = {
+			add_treasury = -120
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = 10
+			}
+			set_country_flag = synagogue_flag_j_e
+			97 = { add_building = synagogue }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	
+	exile_jews = {
+		potential = { 
+			has_estate = jewish_estate
+			not = { has_global_flag = no_decision }
+			NOT = { has_country_flag = exile_jews_j_e }
+			
+		}
+		allow = {
+			NOT = {
+				estate_influence = {
+					estate = jewish_estate
+					influence = 27.5
+				}
+			}
+		}
+		effect  = {
+			change_estate_land_share = {
+				estate = jewish_estate
+				share = -15
+			}
+			add_estate_loyalty = {
+				estate = jewish_estate
+				loyalty = -50
+			}
+			set_country_flag = exile_jews_j_e
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_influence = {
+						estate = jewish_estate
+						influence = 30
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				estate_influence = {
+					estate = jewish_estate
+					influence = 50
+				}
+			}
+			modifier = {
+				factor = 0.5
+				reform_desire = 1
+			}
+			modifier = {
+				factor = 0.8
+				reform_desire = 0.8
+			}
+			modifier = {
+				factor = 0.2
+				reform_desire = 1.5
+			}
+			modifier = {
+				factor = 0.1
+				estate_loyalty = {
+					estate = jewish_estate
+					loyalty = 50
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,5 @@
+
+
+plundered_by_nomad = {
+	local_monthly_devastation = 0.03
+}

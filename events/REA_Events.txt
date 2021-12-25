@@ -1,0 +1,1968 @@
+
+namespace = rea_events
+
+
+#Esen died! (For Oirat)
+country_event = {
+	id = rea_events.102
+	title = "rea_events.102.t"
+	desc = "rea_events.102.d"
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+		tag = OIR
+		NOT = { has_ruler = "Esen" }
+		#KHA = { is_subject_of = ROOT }
+		has_country_flag = esen_exist
+		#is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.102.a"
+		#set_government_rank = 2
+		if = {
+			limit = { is_nomad = yes }
+			add_horde_unity = -20
+		}
+		if = {
+			limit = { has_country_flag = esen_killed_the_khan }
+			break_union = KHA
+			KHA = { set_government_rank = 2 }
+			random_owned_province = {
+				limit = { }
+				spawn_rebels = {
+					type = tribal_rebels
+					size = 3
+					friend = KHA
+				}
+			}
+			random_owned_province = {
+				limit = { }
+				spawn_rebels = {
+					type = tribal_rebels
+					size = 2
+					friend = KHA
+				}
+			}
+			hidden_effect = {
+				KHA = {
+					if = {
+						limit = { NOT = { has_country_flag = indep.mongolia_rea } }
+						country_event = { id = rea_events.103 }
+					}
+				}
+			}
+			#every_province = {
+			#	limit = {
+			#		owned_by = OIR
+			#		area = uliastai_area
+			#		NOT = { province_id = 719 }
+			#	}
+			#	set_province_flag = oir_to_kha_province
+			#	cede_province = KHA
+			#}
+		}
+		if = {
+			limit = { NOT = { has_country_flag = esen_killed_the_khan } NOT = { has_country_flag = oir_no_esen_but_kha } }
+			KHA = { grant_independence = yes }
+			KHA = { set_government_rank = 2 }
+			random_owned_province = {
+				limit = { }
+				spawn_rebels = {
+					type = tribal_rebels
+					size = 1
+					friend = KHA
+				}
+			}
+			random_owned_province = {
+				limit = { }
+				spawn_rebels = {
+					type = tribal_rebels
+					size = 1
+					friend = KHA
+				}
+			}
+			hidden_effect = {
+				KHA = { country_event = { id = rea_events.103 } }
+			}
+			every_province = {
+				limit = {
+					owned_by = OIR
+					area = uliastai_area
+					NOT = { province_id = 719 }
+				}
+				set_province_flag = oir_to_kha_province
+				cede_province = KHA
+			}
+		}
+		if =  {
+			limit = { has_country_flag = oir_no_esen_but_kha }
+			tooltip = { KHA = { grant_independence = yes } }
+		}
+	}
+}
+
+#Esen died! (For Mongolia) B
+country_event = {
+	id = rea_events.104
+	title = "rea_events.104.t"
+	desc = "rea_events.104.d"
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KHA
+		OIR = { NOT = { has_ruler = "Esen" } }
+		started_in = 1434.1.1
+		is_year = 1434
+		NOT = { started_in = 1454.1.1 }
+		OIR = { overlord_of = ROOT }
+		OIR = { NOT = { has_country_flag = esen_exist } }
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_horde_unity = -100
+			add_horde_unity = 30
+			if = {
+				limit = { ai = yes }
+				add_years_of_income = 2
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.104.a"
+		if = {
+			limit = { is_subject = yes }
+			KHA = { grant_independence = yes }
+		}
+		OIR = {
+			hidden_effect = { set_country_flag = oir_no_esen_but_kha }
+			country_event = { id = rea_events.102 }
+		}
+		set_government_rank = 2
+	}
+}
+
+
+
+
+#Dai Viet: Mac's Usurpation
+country_event = {
+	id = rea_events.109
+	title = "rea_events.109.t"
+	desc = "rea_events.109.d"
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAI
+		613 = { owned_by = ROOT }
+		NOT = { is_year = 1600 }
+		NOT = { has_country_flag = dai_have_mac }
+		is_at_war = no
+		has_regency = yes
+		NOT = { exists = TOK }
+		num_of_cities = 2
+
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "rea_events.109.a"
+		hidden_effect = {
+			every_owned_province = {
+				limit = { or = { area = champa_area area = tay_nguyen_area } }
+				add_core = TOK
+			}
+			If = {
+				limit = { owns = 2373 }
+				2373 = { add_core = TOK }
+			}
+			if = {
+				limit = { all_owned_province = { NOT = { is_core = TOK } } }
+				random_owned_province = { add_core = TOK }
+			}
+		}
+		release = TOK
+		TOK = { change_government = monarchy }
+		hidden_effect = {
+			every_owned_province = {
+				limit = { is_core = TOK }
+				cede_province = TOK
+			}
+			every_province = {
+				limit = {
+					is_core = DAI
+				}
+				add_core = TOK
+			}
+			TOK = {
+				capital_scope = {
+					add_unit_construction = {
+						type = infantry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+				}	
+			}
+		}
+		define_ruler = { dynasty = "Mac" }
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = {}
+		}
+		#DAI = { declare_war = TOK }
+		hidden_effect = {
+			TOK = {
+				define_ruler = {
+					dynasty = "Nguyen"
+				}
+				add_legitimacy = 100
+				set_ruler_flag = nguyen_huong_will_happen
+				set_country_flag =  nguyen_huong_will_happen2
+				add_manpower = 30
+				add_treasury = 500
+				add_army_tradition = 50
+				every_province = {
+					limit = {
+						owned_by = ROOT
+						is_capital = yes
+					}
+					add_unit_construction = {
+						type = infantry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+					add_unit_construction = {
+						type = cavalry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = "rea_events.109.b"
+		hidden_effect = {
+			every_owned_province = {
+				limit = { or = { area = champa_area area = tay_nguyen_area } }
+				add_core = TOK
+			}
+			If = {
+				limit = { owns = 2373 }
+				2373 = { add_core = TOK }
+			}
+			if = {
+				limit = { all_owned_province = { NOT = { is_core = TOK } } }
+				random_owned_province = { add_core = TOK }
+			}
+		}
+		release = TOK
+		TOK = { change_government = monarchy }
+		hidden_effect = {
+			every_owned_province = {
+				limit = { is_core = TOK }
+				cede_province = TOK
+			}
+			every_province = {
+				limit = {
+					is_core = DAI
+				}
+				add_core = TOK
+			}
+			TOK = {
+				capital_scope = {
+					add_unit_construction = {
+						type = infantry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+				}	
+			}
+		}
+		switch_tag = TOK
+		hidden_effect = {
+			every_province = {
+				limit = {
+					is_core = TOK
+				}
+				add_core = DAI
+			}
+			DAI = {
+				capital_scope = {
+					add_unit_construction = {
+						type = infantry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+				}	
+			}
+		}
+		define_ruler = { dynasty = "Nguyen" }
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = {}
+		}
+		hidden_effect = {
+			add_legitimacy = 100
+		}
+		set_ruler_flag = nguyen_huong_will_happen
+		set_country_flag =  nguyen_huong_will_happen2
+		#declare_war = DAI
+		hidden_effect = {
+			DAI = {
+				define_ruler = {
+					dynasty = "Mac"
+				}
+				every_province = {
+					limit = {
+						owned_by = ROOT
+						is_capital = yes
+					}
+					add_unit_construction = {
+						type = infantry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+					add_unit_construction = {
+						type = cavalry
+						amount = 10
+						speed = 0.01
+						cost = 0
+					}
+				}
+			}
+		}
+	}
+}
+
+#Dai Viet: The Separation of Nguyens
+country_event = {
+	id = rea_events.110
+	title = "rea_events.110.t"
+	desc = "rea_events.110.d"
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		#is_year = 1500
+		tag = TOK
+		is_at_war = no
+		NOT = { has_country_flag = tok_have_nuyen }
+		NOT = { exists = ANN }
+		num_of_cities = 2
+		NOT = { has_ruler_flag = nguyen_huong_will_happen }
+		has_country_flag =  nguyen_huong_will_happen2
+
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+
+	option = {
+		name = "rea_events.110.a"
+		hidden_effect = {
+			every_owned_province = {
+				limit = { or = { area = champa_area area = tay_nguyen_area } }
+				add_core = ANN
+			}
+			if = {
+				limit = { all_owned_province = { NOT = { is_core = ANN } } }
+				random_owned_province = { add_core = ANN }
+			}
+		}
+		release = ANN
+		hidden_effect = { ANN = { change_government = monarchy } }
+		hidden_effect = {
+			every_province = {
+				limit = {
+					is_core = TOK
+				}
+				add_core = ANN
+			}
+		}
+		define_ruler = { dynasty = "Trinh" }
+		hidden_effect = {
+			add_legitimacy = 100
+			ANN = {
+				define_ruler = {
+					dynasty = "Nguyen"
+				}
+				add_legitimacy = 100
+			}
+		}
+	}
+	option = {
+		name = "rea_events.110.b"
+		hidden_effect = {
+			every_owned_province = {
+				limit = { or = { area = champa_area area = tay_nguyen_area } }
+				add_core = ANN
+			}
+			if = {
+				limit = { all_owned_province = { NOT = { is_core = ANN } } }
+				random_owned_province = { add_core = ANN }
+			}
+		}
+		release = ANN
+		switch_tag = ANN
+		hidden_effect = { ANN = { change_government = monarchy } }
+		hidden_effect = {
+			every_province = {
+				limit = {
+					is_core = ANN
+				}
+				add_core = TOK
+			}
+		}
+		define_ruler = { dynasty = "Nguyen" }
+		hidden_effect = {
+		add_legitimacy = 100
+		}
+		hidden_effect = {
+			TOK = {
+				define_ruler = {
+					dynasty = "Trinh"
+				}
+				add_legitimacy = 100
+			}
+		}
+	}
+}
+
+#Start of Wokou Raid
+country_event = {
+	id = rea_events.111
+	title = "rea_events.111.t"
+	desc = "rea_events.111.d"
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		NOT = { has_country_flag = wokou_in_ming }
+		has_disaster = mng_wokou_disaster
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.111.a"
+		hidden_effect = { set_country_flag = wokou_in_ming }
+		custom_tooltip = the_wokou_desc_1
+	}
+}
+
+#End of Wokou Raid
+country_event = {
+	id = rea_events.112
+	title = "rea_events.112.t"
+	desc = "rea_events.112.d"
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		has_country_flag = wokou_in_ming
+		OR = {
+			exists = JAP
+			NOT = { has_reform = celestial_empire }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					has_port = yes
+					superregion = china_superregion
+					NOT = {
+						has_winter = mild_winter
+						has_winter = normal_winter
+						has_winter = severe_winter
+					}
+				}
+			}
+			check_variable = {
+				which = num_of_wokou_raid
+				value = 10
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.112.a"
+		custom_tooltip = the_wokou_desc_2
+		hidden_effect = { clr_country_flag = wokou_in_ming }
+	}
+}
+
+#Wokou Raid!
+country_event = {
+	id = rea_events.113
+	title = "rea_events.113.t"
+	desc = "rea_events.113.d"
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		tag = MNG
+		has_country_modifier = ming_wokou_disaster_modifier
+		any_owned_province = {
+			has_port = yes
+			superregion = china_superregion
+			NOT = {
+				has_winter = mild_winter
+				has_winter = normal_winter
+				has_winter = severe_winter
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 40
+		modifier = {
+			factor = 0.8
+			any_country = {
+				OR = {
+					has_reform = daimyo
+					has_reform = indep_daimyo
+					has_reform = indep_daimyo_legacy
+					has_reform = shogunate
+				}
+				any_country = {
+					OR = {
+						has_reform = daimyo
+						has_reform = indep_daimyo
+						has_reform = indep_daimyo_legacy
+						has_reform = shogunate
+					}
+					war_with = PREV
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1500
+		}
+		modifier = {
+			factor = 0.8
+			is_year = 1550
+		}
+		modifier = {
+			factor = 3
+			num_of_rebel_controlled_provinces = 1
+		}
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+
+	option = {
+		name = "rea_events.113.a"
+		ai_chance = { factor = 9 }
+		change_variable = {
+			which = num_of_wokou_raid
+			value = 1
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				superregion = china_superregion
+				NOT = {
+					has_winter = mild_winter
+					has_winter = normal_winter
+					has_winter = severe_winter
+				}
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 3
+			}
+		}
+		if = {
+			limit = { num_of_owned_provinces_with = { value = 2 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					superregion = china_superregion
+					NOT = {
+						has_winter = mild_winter
+						has_winter = normal_winter
+						has_winter = severe_winter
+					}
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 1
+				}
+			}
+		}
+		if = {
+			limit = { num_of_owned_provinces_with = { value = 3 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					superregion = china_superregion
+					NOT = {
+						has_winter = mild_winter
+						has_winter = normal_winter
+						has_winter = severe_winter
+					}
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 1
+				}
+			}
+		}
+		if = {
+			limit = { num_of_owned_provinces_with = { value = 4 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					superregion = china_superregion
+					NOT = {
+						has_winter = mild_winter
+						has_winter = normal_winter
+						has_winter = severe_winter
+					}
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = "rea_events.113.b"
+		ai_chance = { factor = 1 }
+		change_variable = {
+			which = num_of_wokou_raid
+			value = 1
+		}
+		add_mil_power = -100
+		random_owned_province = {
+			limit = {
+				has_port = yes
+				superregion = china_superregion
+				NOT = {
+					has_winter = mild_winter
+					has_winter = normal_winter
+					has_winter = severe_winter
+				}
+			}
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 1
+			}
+		}
+		random = { 
+			chance = 75
+			if = {
+				limit = { num_of_owned_provinces_with = { value = 2 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						superregion = china_superregion
+						NOT = {
+							has_winter = mild_winter
+							has_winter = normal_winter
+							has_winter = severe_winter
+						}
+					}
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 1
+					}
+				}
+			}
+			if = {
+				limit = { num_of_owned_provinces_with = { value = 3 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						superregion = china_superregion
+						NOT = {
+							has_winter = mild_winter
+							has_winter = normal_winter
+							has_winter = severe_winter
+						}
+					}
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 1
+					}
+				}
+			}
+			if = {
+				limit = { num_of_owned_provinces_with = { value = 4 has_port = yes superregion = china_superregion NOT = { has_winter = mild_winter has_winter = normal_winter has_winter = severe_winter } } }
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						superregion = china_superregion
+						NOT = {
+							has_winter = mild_winter
+							has_winter = normal_winter
+							has_winter = severe_winter
+						}
+					}
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+#Tianzi Disaster 1
+country_event = {
+	id = rea_events.114
+	title = "rea_events.114.t"
+	desc = "rea_events.114.d"
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rea_events.114.a"
+		hidden_effect = { set_country_flag = tianzi_disater_flag }
+	}
+}
+
+#Tianzi Disaster 2
+country_event = {
+	id = rea_events.115
+	title = "rea_events.115.t"
+	desc = "rea_events.115.d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		has_country_flag = tianzi_disater_flag
+		OR = {
+			NOT ={ has_reform = celestial_empire }
+			AND = {
+				adm = 4
+				dip = 4
+				mil = 4
+			}
+			AND = {
+				adm = 5
+				dip = 3
+				mil = 3
+			}
+			AND = {
+				adm = 3
+				dip = 5
+				mil = 3
+			}
+			AND = {
+				adm = 3
+				dip = 3
+				mil = 5
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.115.a"
+		hidden_effect = { clr_country_flag = tianzi_disater_flag }
+	}
+}
+
+#Borjigin Again
+country_event = {
+	id = rea_events.116
+	title = "rea_events.116.t"
+	desc = "rea_events.116.d"
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	#fire_only_once = yes
+
+	trigger = {
+		tag = KHA
+		is_nomad = yes
+		has_regency = no
+		is_lesser_in_union = no
+		NOT = {
+			check_variable = {
+				which = borjigin_again_rea
+				value = 2
+			}
+		}
+		NOT = { has_disaster = kha_internal_conflict_disaster } 
+		NOT = { dynasty = "Borjigin" }
+		NOT = { has_heir_flag = borjigin_heir }
+
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = borjigin_again_rea
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "rea_events.116.a"
+		ai_chance = { factor = 50 }
+		define_ruler = { dynasty = "Borjigin" }
+		add_horde_unity = 10
+	}
+
+	option = {
+		name = "rea_events.116.b"
+		ai_chance = { factor = 50 }
+		define_heir = {
+			claim = 100
+			dynasty = "Borjigin"
+			age = 15
+		}
+		hidden_effect = { set_heir_flag = borjigin_heir }
+		add_stability = 1
+	}
+
+	option = {
+		name = "rea_events.116.c"
+		ai_chance = { factor = 10 }
+		add_prestige = -10
+	}
+}
+
+
+#KHA DISASTER 1
+country_event = {
+	id = rea_events.117
+	title = "rea_events.117.t"
+	desc = "rea_events.117.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rea_events.117.a"
+		hidden_effect = { set_global_flag = kha_conflict_disater }
+	}
+}
+
+#KHA DISASTER 2
+country_event = {
+	id = rea_events.118
+	title = "rea_events.118.t"
+	desc = "rea_events.118.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rea_events.118.a"
+		add_prestige = 30
+		change_adm = 3
+		change_dip = 3
+		change_mil = 3
+	}
+}
+
+
+#kha conflict 1
+country_event = {
+	id = rea_events.119
+	title = "rea_events.119.t"
+	desc = "rea_events.119.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		tag = KHA
+		has_disaster = kha_internal_conflict_disaster
+		NOT = { num_of_rebel_armies = 1 }
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "rea_events.119.a"
+		if = {
+			limit = { ai = yes }
+			add_years_of_income = 0.2
+			add_manpower = 1
+		}
+		add_horde_unity = 5
+		add_prestige = 3
+		random_owned_province = {
+			limit = { }
+			spawn_rebels = {
+				type = tribal_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = { }
+			spawn_rebels = {
+				type = tribal_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+#kha conflict 2
+country_event = {
+	id = rea_events.120
+	title = "rea_events.120.t"
+	desc = "rea_events.120.d"
+	picture = ASSASSINATION_eventPicture
+
+	trigger = {
+		tag = KHA
+		has_disaster = kha_internal_conflict_disaster
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "rea_events.120.a"
+		kill_ruler = yes
+		add_prestige = -5
+		hidden_effect = { add_stability = 1 }
+	}
+}
+
+#kha conflict 3
+country_event = {
+	id = rea_events.121
+	title = "rea_events.121.t"
+	desc = "rea_events.121.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		tag = KHA
+		has_disaster = kha_internal_conflict_disaster
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = "rea_events.121.a"
+		add_horde_unity = 10
+		if = {
+			limit = { ai = yes }
+			add_years_of_income = 0.3
+		}
+	}
+}
+
+#kha conflict 4
+country_event = {
+	id = rea_events.122
+	title = "rea_events.122.t"
+	desc = "rea_events.122.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	trigger = {
+		tag = KHA
+		has_disaster = kha_internal_conflict_disaster
+		NOT = { num_of_rebel_armies = 1 }
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "rea_events.122.a"
+		if = {
+			limit = { ai = yes }
+			add_years_of_income = 0.1
+		}
+		add_horde_unity = 3
+		add_prestige = 1
+		random_owned_province = {
+			limit = { }
+			spawn_rebels = {
+				type = tribal_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+
+
+#MCH: battle of sarhu
+province_event = {
+	id = rea_events.133
+	title = "rea_events.133.t"
+	desc = "rea_events.133.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		OR = {
+			region = manchuria_region
+			region = mongolia_region
+		}
+		OR = {
+			unit_in_siege = yes
+			unit_in_battle = yes
+		}
+		is_year = 1500
+		NOT = { is_year = 1700 }
+		owner = {
+			tag = MCH
+			NOT = { total_development = 500 }
+		}
+		MNG = {
+			has_reform = celestial_empire
+			war_with = ROOT
+			any_owned_province = { region = manchuria_region }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.1
+			unit_in_battle = yes
+		}
+	}
+
+	option = {
+		name = "rea_events.133.a"
+		add_prestige = 15
+		MNG = {
+			country_event = { id = rea_events.134 }
+			white_peace = ROOT
+			every_owned_province = {
+				limit = { region = manchuria_region }
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+	}
+}
+
+
+#MNG: battle of sarhu
+country_event = {
+	id = rea_events.134
+	title = "rea_events.134.t"
+	desc = "rea_events.134.d"
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "rea_events.134.a"
+		add_prestige = -15
+		add_stability = -1
+		custom_tooltip = mng_lose_manchuria_tooltip
+	}
+}
+
+
+#transfer the capital to shenyang
+country_event = {
+	id = rea_events.135
+	title = "rea_events.135.t"
+	desc = "rea_events.135.d"
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MCH
+		is_at_war = no
+		726 = {
+			is_capital = no
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = "rea_events.135.a"
+		add_country_modifier = { 
+		    name = realea_rise_of_manchu
+		    duration = 10950
+		}
+		set_capital = 726
+		726 = { 
+			change_province_name = "Mukden"
+			rename_capital = "Mukden"
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 3
+		}
+	}
+
+	option = {
+		name = "rea_events.135.b"
+		add_country_modifier = { 
+		    name = realea_rise_of_manchu
+		    duration = 10950
+		}
+		add_adm_power = 100
+		add_horde_unity = 10
+	}
+}
+
+#Shogunate diplomacy 1
+country_event = {
+	id = rea_events.136
+	title = "rea_events.136.t"
+	desc = "rea_events.136.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rea_events.136.a"
+		add_prestige = 5
+	}
+}
+
+#Shogunate diplomacy 2
+country_event = {
+	id = rea_events.137
+	title = "rea_events.137.t"
+	desc = "rea_events.137.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		any_country = {
+			has_reform = shogunate
+			tag = ASK
+			legitimacy = 40
+		}
+		has_reform = daimyo
+		is_subject = yes
+		ai = yes
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "rea_events.137.a"
+		ai_chance = { factor = 100 }
+		every_country = {
+			limit = {
+				tag = ASK
+				overlord_of = ROOT
+			}
+			ROOT = {
+				add_trust = {
+					who = PREV
+					value = 0.5
+				}
+			}
+			if = {
+				limit = { PREV = { prestige = 0 } }
+				ROOT = {
+					add_trust = {
+						who = PREV
+						value = 0.25
+					}
+				}
+			}
+			if = {
+				limit = { PREV = { prestige = 10 } }
+				add_trust = {
+					who = PREV
+					value = 0.25
+				}
+			}
+
+			if = {
+				limit = { PREV = { prestige = 20 } }
+				add_trust = {
+					who = PREV
+					value = 0.25
+				}
+			}
+			if = {
+				limit = { ROOT = { liberty_desire = 0 } }
+				ROOT = {
+					add_trust = {
+						who = PREV
+						value = 1.5
+					}
+				}
+			}
+			if = {
+				limit = {
+					military_strength = {
+						who = ROOT
+						value = 2.0
+					}
+				}
+				ROOT = {
+					add_trust = {
+						who = PREV
+						value = 0.5
+					}
+				}
+			}
+			if = {
+				limit = {
+					military_strength = {
+						who = ROOT
+						value = 3.0
+					}
+				}
+				ROOT = {
+					add_trust = {
+						who = PREV
+						value = 0.5
+					}
+				}
+			}
+			if = {
+				limit = {
+					military_strength = {
+						who = ROOT
+						value = 4.0
+					}
+				}
+				ROOT = {
+					add_trust = {
+						who = PREV
+						value = 0.5
+					}
+				}
+			}
+		}
+	}
+}
+
+##Shogunate diplomacy 3 for Ai
+country_event = {
+	id = rea_events.138
+	title = "rea_events.138.t"
+	desc = "rea_events.138.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		tag = ASK
+		legitimacy = 40
+		any_country = {
+			has_reform = daimyo
+			is_subject = yes
+			ai = no
+			ROOT = { overlord_of = PREV }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "rea_events.138.a"
+		ai_chance = { factor = 100 }
+		every_country = {
+			limit = {
+				has_reform = daimyo
+				is_subject = yes
+				ai = no
+				ROOT = { overlord_of = PREV }
+			}
+
+			add_trust = {
+					who = ROOT
+					value = 0.5
+			}
+			if = {
+				limit = { ROOT = { prestige = 0 } }
+				add_trust = {
+					who = ROOT
+					value = 0.25
+				}
+			}
+
+			if = {
+				limit = { ROOT = { prestige = 10 } }
+				add_trust = {
+					who = ROOT
+					value = 0.25
+				}
+			}
+
+			if = {
+				limit = { ROOT = { prestige = 20 } }
+				add_trust = {
+					who = ROOT
+					value = 0.25
+				}
+			}
+
+			if = {
+				limit = { liberty_desire = 0 }
+				add_trust = {
+					who = ROOT
+					value = 1.5
+				}
+			}
+
+
+			if = {
+				limit = {
+					ROOT = {
+						military_strength = {
+							who = PREV
+							value = 2.0
+						}
+					}
+				}
+				add_trust = {
+					who = ROOT
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						military_strength = {
+							who = PREV
+							value = 3.0
+						}
+					}
+				}
+				add_trust = {
+					who = ROOT
+					value = 0.5
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						military_strength = {
+							who = PREV
+							value = 4.0
+						}
+					}
+				}
+				add_trust = {
+					who = ROOT
+					value = 0.5
+				}
+			}
+
+
+		}
+
+	}
+}
+
+#Asikaga Clan
+country_event = {
+	id = rea_events.139
+	title = "rea_events.139.t"
+	desc = "rea_events.139.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ASK
+		dynasty = "Ashikaga"
+		is_year = 1400
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "rea_events.139.a"
+		add_ruler_modifier = { 
+		    name = realea_ashikaga_clan
+		    duration = -1  
+		}
+		hidden_effect = {
+			MNG = {
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			KOR = {
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			JOS = {
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			random_subject_country = {
+				limit = { has_reform = daimyo }
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			random_subject_country = {
+				limit = { has_reform = daimyo }
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			random_subject_country = {
+				limit = { has_reform = daimyo }
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			random_subject_country = {
+				limit = { has_reform = daimyo }
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+			random_subject_country = {
+				limit = { has_reform = daimyo }
+				set_ai_personality = {
+					personality = ai_capitalist
+					locked = no
+				}
+			}
+		}
+	}
+}
+
+
+
+#For ming: korea aims manchuria
+country_event = {
+	id = rea_events.140
+	title = "rea_events.140.t"
+	desc = "rea_events.140.d"
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MNG
+		any_country = {
+			OR = {
+		tag = KOR
+		tag = JOS
+		}
+			is_subject_of = ROOT
+			OR = {
+				num_of_owned_provinces_with = { value = 3 region = manchuria_region }
+				calc_true_if = {
+					all_province = {
+						culture = manchu
+						or = {
+							owned_by = KOR
+							owned_by = JOS
+						}
+					}
+					amount = 3
+				}
+			}
+			any_country = {
+				is_neighbor_of = PREV
+				is_subject_of = ROOT
+				is_nomad = yes
+				primary_culture = manchu
+				any_province = {
+					is_core = PREV
+					or = {
+						owned_by = KOR
+						owned_by = JOS
+					}
+					culture = manchu
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		#They never get manchuria!
+		name = "rea_events.140.a"
+		ai_chance = { factor = 90 }
+		KOR = {
+			add_liberty_desire = 20
+			country_event = { id = rea_events.141 days = 10 }
+		}
+		JOS = {
+			add_liberty_desire = 20
+			country_event = { id = rea_events.141 days = 10 }
+		}
+	}
+	option = {
+		#remain neutral
+		name = "rea_events.140.b"
+		ai_chance = { factor = 10 }
+		add_prestige = -10
+	}
+}
+
+#For ming: korea aims manchuria2
+country_event = {
+	id = rea_events.141
+	title = "rea_events.141.t"
+	desc = "rea_events.141.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rea_events.141.a"
+		ai_chance = { factor = 85 }
+		add_prestige = -10
+		random_neighbor_country = {
+			limit = {
+				is_nomad = yes
+				is_subject_of = MNG
+				primary_culture = manchu
+				any_province = {
+					culture = manchu
+					is_core = PREV
+					owned_by = ROOT
+				}
+			}
+			every_province = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						region = manchuria_region
+						culture = manchu
+					}
+				}
+				cede_province = PREV
+				add_core = PREV
+				remove_core = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = "rea_events.141.b"
+		ai_chance = { factor = 15 }
+		MNG = {
+			country_event = { id = rea_events.142 days = 3 }
+			tooltip = {
+				add_trust = {
+					who = ROOT
+					value = -50
+				}
+			}
+		}
+	}
+}
+
+#For ming: korea aims manchuria3
+country_event = {
+	id = rea_events.142
+	title = "rea_events.142.t"
+	desc = "rea_events.142.d"
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "rea_events.142.a"
+		add_prestige = -10
+		add_trust = {
+			who = KOR
+			value = -50
+		}
+		add_trust = {
+			who = JOS
+			value = -50
+		}
+	}
+}
+
+
+
+#ming ai personality
+country_event = {
+	id = rea_events.143
+	title = "rea_events.143.t"
+	desc = "rea_events.143.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		total_development = 1000
+		ai = yes
+		tag = MNG
+		has_reform = celestial_empire
+		NOT = { personality = ai_capitalist }
+		NOT = {
+			check_variable = {
+				which = mng_saikoku_variable
+				value = 3
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = {
+		name = "rea_events.143.a"
+		change_variable = {
+			which = mng_saikoku_variable
+			value = 1
+		}
+		set_ai_personality = {
+			personality = ai_capitalist
+			locked = no
+		}
+	}
+}
+
+
+#ming reduces war exhaustion
+country_event = {
+	id = rea_events.144
+	title = "rea_events.144.t"
+	desc = "rea_events.144.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		tag = MNG
+		ai = yes
+		total_development = 1000
+		has_reform = celestial_empire
+		war_exhaustion = 2
+		dip_power = 100
+		NOT = { imperial_mandate = 50 }
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 3
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 4
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 6
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 7
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 8
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 9
+		}
+		modifier = {
+			factor = 0.5
+			war_exhaustion = 10
+		}
+	}
+	
+	option = {
+		name = "rea_events.144.a"
+		add_dip_power = -100
+		add_war_exhaustion = -3
+	}
+}
+
+
+#MNG FOR MANDATE OF HEAVEN
+country_event = {
+	id = rea_events.145
+	title = "rea_events.145.t"
+	desc = "rea_events.145.d"
+	picture = COURT_eventPicture
+	
+	trigger = {
+		tag = MNG
+		ai = yes
+		total_development = 1000
+		has_reform = celestial_empire
+		num_of_rebel_controlled_provinces = 3
+		NOT = { imperial_mandate = 40 }
+		has_dlc = "Mandate of Heaven"
+		is_year = 1400
+		NOT = { is_year = 1550 }
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.5
+			num_of_rebel_controlled_provinces = 6
+		}
+		modifier = {
+			factor = 0.5
+			num_of_rebel_controlled_provinces = 9
+		}
+		modifier = {
+			factor = 0.5
+			num_of_rebel_controlled_provinces = 12
+		}
+		modifier = {
+			factor = 0.5
+			num_of_rebel_controlled_provinces = 15
+		}
+	}
+	
+	option = {
+		name = "rea_events.145.a"
+		add_mandate = 20
+		change_adm = -1
+		change_dip = -1
+		change_mil = -1
+	}
+}
+
+
+#CUNGSAN
+country_event = {
+	id = rea_events.146
+	title = "rea_events.146.t"
+	desc = "rea_events.146.d"
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = MJZ
+		has_ruler = "Cungsan"
+		dynasty = "Aisin Gioro"
+		started_in = 1432.1.1
+		is_year = 1433
+		NOT = { is_year = 1466 }
+
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "rea_events.146.a"
+		add_prestige = 10
+		add_ruler_modifier = {
+			name = realea_awesome_cungsan
+			duration = -1
+		}
+		if = {
+			limit = { ai = yes }
+			add_ruler_personality = strict_personality
+			add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+		}
+	}
+}
+
+
+
+#March Across the Great Wall!
+country_event = {
+	id = rea_events.147
+	title = "rea_events.147.t"
+	desc = "rea_events.147.d"
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+
+	major = yes
+
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = MCH
+		}
+		NOT ={ started_in = 1645.1.1 }
+		is_at_war = yes
+		all_owned_province = { NOT = { superregion = china_superregion } }
+		any_province = {
+			superregion = china_superregion
+			NOT = { owned_by = ROOT }
+			controlled_by = ROOT
+			fort_level = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "rea_events.147.a"
+		add_prestige = 15
+		add_army_tradition = 5
+		add_war_exhaustion = -5
+	}
+}
+
+
+#Foundation of a New Great Empire
+country_event = {
+	id = rea_events.148
+	title = "rea_events.148.t"
+	desc = "rea_events.148.d"
+	picture = COURT_eventPicture
+
+	major = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				NOT = { tag = MNG }
+				NOT = { tag = QNG }
+			}
+			AND = {
+				tag = MNG
+				NOT = { started_in = 1398.6.24 }
+			}
+			AND = {
+				tag = QNG
+				NOT = { started_in = 1661.2.5 }
+			}
+		}
+		is_at_war = no
+		has_reform = celestial_empire
+		NOT = {
+			has_ruler_modifier = founder_of_the_empire_ruler_modifier
+			has_country_flag = Foundation_of_a_New_Great_Empire
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "rea_events.148.a"
+		hidden_effect = {
+			every_country = {
+				limit = { has_country_flag = Foundation_of_a_New_Great_Empire }
+				clr_country_flag = Foundation_of_a_New_Great_Empire
+			}
+			set_country_flag = Foundation_of_a_New_Great_Empire
+		}
+		add_prestige = 15
+		add_meritocracy = 65
+		add_ruler_modifier = { 
+			name = founder_of_the_empire_ruler_modifier
+			duration = -1
+			hidden = yes
+		}
+	}
+}
+
+
+#Rename the family name Aisin Gioro
+country_event = {
+	id = rea_events.149
+	title = "rea_events.149.t"
+	desc = "rea_events.149.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MCH
+		has_regency = no
+		NOT = { dynasty = "Aisin Gioro" }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	option = {
+		name = "rea_events.149.a"
+		set_dynasty = "Aisin Gioro"
+		add_prestige = 5
+	}
+
+	option = {
+		name = "rea_events.149.b"
+	}
+}

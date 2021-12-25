@@ -1,0 +1,648 @@
+namespace = succession
+
+#Pomeranian Succession
+country_event = {
+	id = succession.1
+	title = "succession.1.t"
+	desc = "succession.1.d"
+	picture = CITY_VIEW_eventPicture
+	
+	immediate = {
+		every_owned_province = { 
+			limit = {
+				is_core = ROOT
+				}
+			remove_core = ROOT
+			}
+		}
+	
+	trigger = {
+		ai = yes
+		primary_culture = pommeranian
+		OR = {
+			tag = STE
+			tag = STP
+			tag = WOL
+		}
+		is_subject = no
+		government = monarchy
+		any_country = {
+			NOT = {
+				tag = ROOT
+			}
+			primary_culture = pommeranian
+			dynasty = "Gryf"
+			government = monarchy
+		}
+		OR = {
+			has_regency = yes
+			NOT = { legitimacy = 75 }
+			NOT = { dynasty = "Gryf" }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 0.2
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { dynasty = "Gryf" }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 35 }
+		}
+	}
+	
+	option  = { #Get inherited
+		name = "succession.1.a"
+		random_country = {
+			limit = {
+				primary_culture = pommeranian
+				government = monarchy
+				dynasty = "Gryf"
+				NOT = { tag = ROOT }
+			}
+			inherit = ROOT
+			country_event = { 
+				id = succession.2
+				days = 1
+			}
+		}		
+	}
+}
+	
+country_event = {
+	id = succession.2
+	title = "succession.2.t"
+	desc = "succession.2.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #That's good
+		name = "succession.2.a"
+		every_province = {
+			limit = {
+				culture = pommeranian
+				owned_by = ROOT
+				NOT = {
+					is_core = ROOT
+				}
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+#Spi?Pledge
+country_event = {
+	id = succession.3
+	title = "succession.3.t"
+	desc = "succession.3.d"
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		1318 = { #Lubowla
+			owned_by = POL
+			controlled_by = POL
+			}
+		}
+	
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			is_year = 1460
+		}
+		modifier = {
+			factor = 0.3
+			is_year = 1470
+		}
+	}
+	
+	option  = { #Try to pay
+		name = "succession.3.a"
+		ai_chance = {
+			factor = 100
+			}
+		POL = {
+			country_event = { 
+				id = succession.4
+				days = 30
+				}
+		}
+	}
+	option  = { #Give Lubowla up
+		name = "succession.3.b"
+		ai_chance = {
+			factor = 0
+			}
+		1318 = {
+			remove_core = HUN
+			}
+		add_prestige = -20
+	}
+}
+
+
+# Hungary tries to pay
+country_event = {
+	id = succession.4
+	title = "succession.4.t"
+	desc = "succession.4.d"
+	picture = ECONOMY_eventPicture
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = { #Accept the payment
+		name = "succession.4.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_years_of_income = 1.5
+		HUN = { country_event = { id = succession.5 }
+			}
+	}
+	option = { #Deny
+		name = "succession.4.b"
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = -10
+		HUN = { country_event = { id = succession.6 }
+		}
+	}
+}
+
+
+
+# Poland accepts
+country_event = {
+	id = succession.5
+	title = "succession.5.t"
+	desc = "succession.5.d"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "succession.5.a"
+		add_prestige = 10
+		add_years_of_income = -1
+		1318 = {
+			remove_core = POL
+			cede_province = HUN
+			}
+		}
+	}
+
+# Poland denies
+country_event = {
+	id = succession.6
+	title = "succession.6.t"
+	desc = "succession.6.d"
+	picture = BANKRUPTCY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = { #Fight for it
+		name = "succession.6.a"
+		ai_chance = {
+			factor = 10
+		}
+		declare_war = POL
+		}
+	option = { #Give up
+		name = "succession.6.b"
+		ai_chance = {
+			factor = 90
+		}
+		add_prestige = -5
+		1318 = { #Lubowla
+			remove_core = HUN
+			}
+		}
+	}
+
+#Bavarian Succession
+country_event = {
+	id = succession.7
+	title = "succession.7.t"
+	desc = "succession.7.d"
+	picture = CITY_VIEW_eventPicture
+	
+	immediate = {
+		every_owned_province = { 
+			limit = {
+				is_core = ROOT
+			}
+			remove_core = ROOT
+		}
+	}
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = PAL
+			tag = UBV
+			tag = ING
+			tag = LBV
+			tag = BAS
+		}
+		is_subject = no
+		government = monarchy
+		any_country = {
+			NOT = {
+				tag = ROOT
+			}
+			primary_culture = bavarian
+			dynasty = "von Wittelsbach"
+			government = monarchy
+		}
+		OR = {
+			NOT = { legitimacy = 75 }
+			NOT = { dynasty = "von Wittelsbach" }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 50}
+		}
+		modifier = {
+			factor = 0.2
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { dynasty = "von Wittelsbach" }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 35 }
+		}
+	}
+	
+	option  = { #Get inherited
+		name = "succession.7.a"
+		random_country = {
+			limit = {
+				primary_culture = bavarian
+				government = monarchy
+				dynasty = "von Wittelsbach"
+				NOT = {
+					tag = ROOT
+				}
+			}
+			inherit = ROOT
+			country_event = { 
+				id = succession.8
+				days = 1
+			}
+		}		
+	}
+}
+	
+country_event = {
+	id = succession.8
+	title = "succession.8.t"
+	desc = "succession.8.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #That's good
+		name = "succession.8.a"
+		every_province = {
+			limit = {
+				culture = bavarian
+				owned_by = ROOT
+				NOT = { is_core = ROOT }
+			}
+			add_core = ROOT
+		}
+		every_owned_province = {
+			limit = {
+				area = palatinate_area
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+#Braunschweig Succession
+country_event = {
+	id = succession.9
+	title = "succession.9.t"
+	desc = "succession.9.d"
+	picture = CITY_VIEW_eventPicture
+	
+	immediate = {
+		every_owned_province = { 
+			limit = {
+				is_core = ROOT
+			}
+			remove_core = ROOT
+		}
+	}
+	
+	trigger = {
+		ai = yes
+		OR = {
+			tag = GBU
+			tag = WLF
+			tag = GTT
+			tag = CLB
+			tag = LUN
+		}
+		government = monarchy
+		any_country = {
+			NOT = {
+				tag = ROOT
+			}
+			dynasty = "von Welf"
+			government = monarchy
+		}
+		OR = {
+			NOT = { legitimacy = 75 }
+			NOT = { dynasty = "von Welf" }
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 50}
+		}
+		modifier = {
+			factor = 0.2
+			has_heir = no
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { dynasty = "von Welf" }
+		}
+		modifier = {
+			factor = 0.7
+			NOT = { legitimacy = 35 }
+		}
+	}
+	
+	option  = { #Get inherited
+		name = "succession.9.a"
+		random_country = {
+			limit = {
+				government = monarchy
+				dynasty = "von Welf"
+				NOT = {
+					tag = ROOT
+				}
+			}
+			inherit = ROOT
+			country_event = { 
+				id = succession.10
+				days = 1
+			}
+		}		
+	}
+}
+	
+country_event = {
+	id = succession.10
+	title = "succession.10.t"
+	desc = "succession.10.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #That's good
+		name = "succession.10.a"
+		every_province = {
+			limit = {
+				culture = hannoverian
+				owned_by = ROOT
+				NOT = { is_core = ROOT }
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+#French Succession
+country_event = {
+	id = succession.11
+	title = "succession.11.t"
+	desc = "succession.11.d"
+	picture = CITY_VIEW_eventPicture
+	
+	immediate = {
+		every_owned_province = { 
+			limit = {
+				is_core = ROOT
+			}
+			remove_core = ROOT
+		}
+	}
+	
+	trigger = {
+		ai = yes
+		or = {
+			tag = ALE
+			tag = ANG
+			tag = ORL
+		}
+		is_subject_of_type = french_fealty
+		is_subject_of = FRA
+		government = monarchy
+		OR = {
+			has_regency = yes
+			NOT = { 
+				dynasty = "de Valois"
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option  = { #Get inherited
+		name = "succession.11.a"
+		FRA = {
+			inherit = ROOT
+			country_event = { 
+				id = succession.12
+				days = 1
+			}
+		}		
+	}
+}
+	
+country_event = {
+	id = succession.12
+	title = "succession.12.t"
+	desc = "succession.12.d"
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { #That's good
+		name = "succession.12.a"
+		every_province = {
+			limit = {
+				OR = {
+					culture_group  = french
+					culture_group  = oc
+				}
+				owned_by = ROOT
+				NOT = {
+					is_core = ROOT
+				}
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = succession.13
+	title = "succession.13.t"
+	desc = "succession.13.d"
+	picture = CITY_VIEW_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		is_lesser_in_union = no
+		not = { is_year = 1508 }
+		ORL = {
+			exists = yes
+			ai = yes
+			}
+		NOT = { dynasty = "de Valois" }
+	}
+	
+	option = { #That's good
+		name = "succession.13.a"
+		FRA = {
+			inherit = ORL
+			define_ruler = {
+				name = "Louis XII 'le Pillipe du peuple'"
+				dynasty = "de Valois"
+				adm = 5
+				dip = 3
+				mil = 2
+				age = 32
+				claim = 95
+			}
+			clear_scripted_personalities = yes
+			add_ruler_personality = calm_personality
+			add_ruler_personality = just_personality
+		}
+	}
+}
+
+#Habsburg Succession
+country_event = {
+	id = succession.15
+	title = "succession.15.t"
+	desc = "succession.15.d"
+	picture = CITY_VIEW_eventPicture
+	
+	major = yes
+
+	trigger = {
+		always = no
+		tag = STY
+		dynasty = "von Habsburg"
+		AUT = {
+			ai = yes
+			exists = yes
+			or = {
+				is_subject_of = STY
+				is_subject = no
+			}
+		}
+		is_year = 1459
+		HUN = {
+			NOT = {
+				has_heir = "Ladislaus Postumus"
+				has_ruler = "Ladislaus Postumus"
+			}
+		}
+		STY = {
+			NOT = {
+				has_heir = "Ladislaus Postumus"
+				has_ruler = "Ladislaus Postumus"
+			}
+		}
+		AUT = {
+			NOT = {
+				has_heir = "Ladislaus Postumus"
+				has_ruler = "Ladislaus Postumus"
+			}
+		}
+		BOH = {
+			NOT = {
+				has_heir = "Ladislaus Postumus"
+				has_ruler = "Ladislaus Postumus"
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+		
+	option  = {	
+		name = "succession.15.a"
+		inherit = AUT
+		add_government_reform = arch_duchy_reform
+		134 = {
+			move_capital_effect = yes
+		}
+		if = {
+			limit = {
+				134 = {	
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
+			}
+			134 = {
+				add_center_of_trade_level = 1
+			}
+		}		
+		define_heir = {
+			name = "Maximilian"
+			dynasty = "von Habsburg"
+			claim = 100
+			adm = 3
+			dip = 5
+			mil = 3
+		}
+		if = {
+			limit = {
+				exists = TIR
+				TIR = { vassal_of = STY }
+			}
+			inherit = TIR
+		}
+	}
+} 

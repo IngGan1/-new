@@ -1,0 +1,49 @@
+# Peace Treaties:
+pte_protect_religious_bretheren_modifier = {
+	global_heretic_missionary_strength = -1
+	tolerance_heretic = 2
+}
+
+pte_fleet_disarmament_modifier = {
+	naval_forcelimit_modifier = -0.5
+	global_ship_cost = 0.1
+}
+
+pte_army_disarmament_modifier = {
+	land_forcelimit_modifier = -0.33
+	global_regiment_cost = 0.1
+}
+
+pte_force_bankrupt_modifier = {
+	interest = 3
+	advisor_cost = 0.33
+	global_tax_modifier = -0.5
+	production_efficiency = -0.25
+	global_trade_power = -0.25
+	global_trade_goods_size_modifier = -0.25
+}
+
+pte_demonstrate_military_supremacy_modifier = {
+	global_manpower_modifier = -0.25
+	manpower_recovery_speed = -0.25
+	land_morale = -0.1
+	army_tradition = -0.5
+	shock_damage_received = 0.25
+	fire_damage_received = 0.25
+	merc_maintenance_modifier = 0.5
+}
+
+# Decisions:
+pte_culture_group_hegemony_modifier = {
+	culture_conversion_cost = -0.25
+	num_accepted_cultures = 1
+	promote_culture_cost = -0.5
+	same_culture_advisor_cost = -0.15
+	war_exhaustion = -0.02
+	accept_vassalization_reasons = 5
+	manpower_in_true_faith_provinces = 0.1
+	global_unrest = -2
+}
+
+pte_culture_group_hegemony_cooldown_modifier = {
+}

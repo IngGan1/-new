@@ -1,0 +1,236 @@
+#BUILDINGS
+xorme_has_every_essential_building_trigger = {
+	AND = {
+		has_manufactory_trigger = yes
+		has_courthouse_building_trigger = yes
+		OR = {
+			has_tax_building_trigger = yes
+			has_production_building_trigger = yes
+		}
+	}
+}
+
+#TERRAIN
+xorme_flat_terrain_trigger = {
+	OR = {
+		has_terrain = farmlands
+		has_terrain = grasslands
+		has_terrain = steppe
+		has_terrain = drylands
+		has_terrain = savannah
+		has_terrain = marsh
+		has_terrain = coastal_desert
+		has_terrain = coastline
+	}
+}
+
+xorme_high_terrain_trigger = {
+	OR = {
+		has_terrain = mountain
+		has_terrain = hills
+		has_terrain = highlands
+	}
+}
+
+xorme_high_terrain_not_mountain_trigger = {
+	OR = {
+		has_terrain = hills
+		has_terrain = highlands
+	}
+}
+
+xorme_forest_terrain_trigger = {
+	OR = {
+		has_terrain = forest
+		has_terrain = woods
+		has_terrain = jungle
+	}
+}
+
+xorme_bad_terrain_trigger = {
+	OR = {
+		has_terrain = glacier
+		has_terrain = desert
+	}
+}
+
+#TRADE GOODS QUALITY
+xorme_lowest_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = grain
+		trade_goods = fish
+		trade_goods = naval_supplies
+		trade_goods = slaves
+		trade_goods = wine
+		trade_goods = wool
+		trade_goods = livestock
+		trade_goods = tropical_wood
+	}
+}
+
+xorme_low_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = iron
+		trade_goods = copper
+		trade_goods = chinaware
+		trade_goods = salt
+		trade_goods = sugar
+		trade_goods = coffee
+		trade_goods = tobacco
+	}
+}
+
+xorme_medium_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = fur
+		trade_goods = ivory
+		trade_goods = cloth
+		trade_goods = incense
+		trade_goods = tea
+		trade_goods = cotton
+	}
+}
+
+xorme_high_quality_trade_goods_trigger = {
+	OR = {
+		trade_goods = glass
+		trade_goods = paper
+		trade_goods = gems 
+		trade_goods = silk
+		trade_goods = dyes
+		trade_goods = cocoa
+		trade_goods = spices
+	}
+}
+#DIPLOMACY
+xorme_ai_is_valid_for_alliance_trigger = {
+	is_free_or_tributary_trigger = yes
+	OR = {
+		ai_attitude = {
+			who = ROOT
+			attitude = attitude_neutral
+		}
+		ai_attitude = {
+			who = ROOT
+			attitude = attitude_friendly
+		}
+	}
+	has_opinion = {
+		who = ROOT
+		value = 25
+	}
+	NOT = {
+		OR = {
+			alliance_with = ROOT
+			is_rival = ROOT
+		}
+	}
+}
+
+xorme_ai_is_valid_target = {
+	NOT = {
+		OR = {
+			is_subject_of = ROOT
+			overlord_of = ROOT
+			alliance_with = ROOT
+			truce_with = ROOT
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+	}
+}
+
+xorme_ai_in_or_out_hre_valid_target = {
+	NOT = { hre_reform_passed = landfriede }
+	NOT = { has_reform = free_city }
+	OR = {
+		AND = {
+			is_part_of_hre = no
+			ROOT = { is_part_of_hre = no }
+		}
+		AND = {
+			is_part_of_hre = yes
+			ROOT = { is_part_of_hre = yes }
+		}
+	}
+}
+#FORT
+xorme_ai_has_any_fort_trigger = {
+	OR = {
+		has_building = fort_15th
+		has_building = fort_16th
+		has_building = fort_17th
+		has_building = fort_18th
+		has_building = fort_19th
+	}
+}
+
+xorme_ai_is_building_fort_trigger = {
+	OR = {
+		has_construction = fort_15th
+		has_construction = fort_16th
+		has_construction = fort_17th
+		has_construction = fort_18th
+		has_construction = fort_19th
+	}
+}
+
+xorme_ai_fort_dev_requirements_trigger = {
+	OR = {
+		if = {
+			limit = { has_terrain = mountain }
+			development = 4
+		}
+		else_if = {
+			limit = { xorme_high_terrain_not_mountain_trigger = yes }
+			development = 5
+		}
+		else_if = {
+			limit = { xorme_forest_terrain_trigger = yes }
+			development = 6
+		}
+		else = {
+			development = 8
+		}
+	}
+}
+
+xorme_ai_can_build_fort = {
+	if = {
+        limit = {
+			mil_tech = 25
+            treasury = 825
+            monthly_income = 30
+            current_income_balance = 30
+        }
+    }
+    else_if = {
+        limit = {
+			mil_tech = 19
+            treasury = 625
+            monthly_income = 25
+            current_income_balance = 20
+        }
+    }
+    else_if = {
+        limit = {
+			mil_tech = 14
+            treasury = 425
+            monthly_income = 20
+            current_income_balance = 10
+        }
+    }
+    else_if = {
+        limit = { 
+			mil_tech = 1
+            treasury = 225
+            monthly_income = 15
+            current_income_balance = 5
+        }
+    }
+	else = {
+		always = no
+	}
+}

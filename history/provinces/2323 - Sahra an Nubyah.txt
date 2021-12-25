@@ -1,0 +1,21 @@
+#2323 - Sahra an Nübyah
+
+owner = SHK
+controller = SHK
+add_core = SHK
+culture = shilluk
+religion = shamanism
+capital = "Sahra an Nübyah"
+is_city = yes
+base_manpower = 1
+trade_goods = slaves
+hre = no
+base_tax = 1
+base_production = 1
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = east_african
+
+1633.1.1 = { unrest = 6 } #Jieng migrations disrupt region
+1696.1.1 = { unrest = 3 } #Disruptions caused by Shilluk migrations from famine areas to South

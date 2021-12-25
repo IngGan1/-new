@@ -1,0 +1,41 @@
+### Nation specific idea groups
+
+SVU_ideas = {
+	start = {
+		infantry_power = 0.10 # agincourt
+		global_unrest = -1 # magna carta, parliament
+	}
+
+	bonus = {
+		movement_speed = 0.33
+	}
+	
+	trigger = {
+		tag = SVU
+	}
+	free = yes		#will be added at load.
+	
+	table_of_ranks = {
+		advisor_cost = -0.10
+		army_tradition = 0.25
+	}
+	jobs_for_everyone = {
+		global_manpower_modifier = 0.5
+	}
+	the_red_army = {
+		land_forcelimit_modifier = 0.5
+	}
+	curriculum_of_the_cadet_corps = {
+		land_morale = 0.05
+		fire_damage_received = -0.1
+	}
+	army_rations = {
+		global_supply_limit_modifier = 0.5
+	}
+	socialist_economy = {
+		global_tax_modifier = 0.2
+	}
+	workers_party = {
+		reinforce_cost_modifier = -0.25
+	}
+}
